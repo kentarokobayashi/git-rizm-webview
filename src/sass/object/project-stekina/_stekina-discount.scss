@@ -1,0 +1,633 @@
+@mixin text-gradient {
+    @include rizm-gradient();
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin font-size-stekina-discount-ss {
+    font-size: 8px;
+}
+
+@mixin font-size-stekina-discount-s {
+    font-size: 11px;
+}
+
+@mixin font-size-stekina-discount-m {
+    font-size: 16px;
+}
+
+@mixin font-size-stekina-discount-l {
+    font-size: 26.5px;
+}
+
+@mixin font-size-stekina-discount-xl {
+    font-size: 32px;
+}
+
+@mixin font-size-stekina-discount-xxl {
+    font-size: 40px;
+}
+
+@mixin font-size-stekina-discount-xxxl {
+    font-size: 50px;
+}
+
+
+/* layout */
+
+.stekina-discount-announcement {
+    width: 95%;
+    margin: 0 auto 20px;
+    border-radius: 4px;
+    padding: 22px 12px 12px;
+    box-shadow: 0 3px 6px #aaa;
+    background: white;
+    .stekina-discount-announcement-text-bottom {
+        display: flex;
+        align-items: flex-end;
+    }
+    .stekina-discount-announcement-text-bottom-01 {
+        position: relative;
+        &:after {
+            width: 100%;
+            content: "";
+            display: block;
+            background: $cl-red;
+            height: 2.5px;
+        }
+    }
+    .stekina-discount-announcement-text-bottom-02 {
+        margin: 0 0 5px;
+    }
+    .stekina-discount-accountment-text-normal {
+        @include font-size-stekina-discount-m();
+        font-family: "k-6", KoburinaGoStd-W6;
+        color: $cl-gray-dark;
+    }
+    .stekina-discount-accountment-text-normal-red-middle {
+        @include font-size-stekina-discount-xl();
+        font-family: "k-6", KoburinaGoStd-W6;
+        color: $cl-red;
+    }
+    .stekina-discount-accountment-text-normal-red-large {
+        @include font-size-stekina-discount-xxl();
+        font-family: "k-6", KoburinaGoStd-W6;
+        color: $cl-red;
+    }
+    .stekina-discount-announcement-button {
+        display: flex;
+        justify-content: flex-end;
+        a {
+            margin: 7px 0 0;
+            @include font-size-stekina-discount-s();
+            padding: 6px 13px;
+            font-family: "k-6", KoburinaGoStd-W6;
+            border: 1.5px solid $cl-red;
+            display: inline-block;
+            border-radius: 4px;
+            color: $cl-red;
+            text-decoration: none;
+        }
+    }
+}
+
+
+/* stekina-discount-bar */
+
+.stekina-discount-bar {
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    padding: 4px 4px;
+    width: 92.5%;
+    margin: 10px auto 15px;
+    border-radius: 4px;
+    justify-content: flex-end;
+    display: flex;
+    @include rizm-gradient();
+    .stekina-discount-bar-text-small {
+        @include font-size-stekina-discount-s();
+        font-family: "k-6", KoburinaGoStd-W6;
+    }
+    .stekina-discount-bar-text-large {
+        @include font-size-stekina-discount-l();
+        font-family: "k-6", KoburinaGoStd-W6;
+    }
+    .stekina-discount-bar-text-yen {
+        font-family: "k-6", KoburinaGoStd-W6;
+        font-size: 21px;
+    }
+    .stekina-discount-bar-left {
+        position: absolute;
+        left: 7px;
+        top: 0;
+        bottom: -4px;
+        color: white;
+        margin: auto;
+        z-index: 10;
+        display: inline-table;
+        div {
+            display: inline-block;
+            font-family: "k-6", KoburinaGoStd-W6;
+        }
+        .stekina-discount-bar-text {}
+        img {
+            width: 26px;
+            margin: 0 4px -2px 0;
+        }
+    }
+    .stekina-discount-bar-right {
+        position: absolute;
+        display: inline-table;
+        right: 9.5px;
+        top: 0;
+        bottom: -4px;
+        margin: auto;
+        color: white;
+        z-index: 10;
+        div {
+            display: inline-block;
+        }
+        .stekina-discount-bar-right-text {}
+    }
+    .stekina-discount-bar-bg {
+        background: $cl-gray-dark;
+        height: 100%;
+        display: inline-block;
+    }
+}
+
+
+/* .stekina-discount-content */
+
+.stekina-discount-content {
+    width: 95%;
+    margin: 0px auto 45px;
+    .stekina-discount-content-head {
+        /*display: flex;
+        justify-content: space-between;
+        align-items: flex-end;*/
+        position: relative;
+        font-size: 12px;
+        height: 58px;
+        .stekina-discount-content-head-left {
+            text-align: left;
+            position: absolute;
+            bottom: 8px;
+            left: 3px;
+            margin: auto;
+            @include font-size-stekina-discount-s();
+            color: $cl-gray-light;
+            letter-spacing: -0.5px;
+        }
+        .stekina-discount-content-head-right {
+            text-align: right;
+            position: absolute;
+            bottom: 0;
+            right: 3px;
+            margin: auto;
+            div {
+                display: inline-block;
+            }
+            .stekina-discount-content-head-right-price-number {
+                @include font-size-stekina-discount-xxl();
+                font-family: "k-6", KoburinaGoStd-W6;
+                @include text-gradient();
+            }
+            .stekina-discount-content-head-right-text {
+                font-family: "k-6", KoburinaGoStd-W6;
+                color: $cl-gray-dark;
+            }
+            .stekina-discount-content-head-right-price-yen {
+                font-size: 30px;
+                font-family: "k-6", KoburinaGoStd-W6;
+                @include text-gradient();
+            }
+            .stekina-discount-content-head-right-text {
+                letter-spacing: -0.5px;
+            }
+        }
+    }
+    .stekina-discount-content-mainbg {
+        @include rizm-gradient();
+        position: relative;
+        border-radius: 4px;
+        margin: 0px auto;
+        padding: 5px;
+        box-shadow: 0 3px 6px #aaa;
+    }
+    .stekina-discount-content-main-leftright-5 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .stekina-discount-content-main-leftright-10 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .stekina-discount-content-main {
+        background: white;
+        border-radius: 4px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        .stekina-discount-content-main-box {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 60px;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+            .stekina-discount-content-main-box-title {
+                display: flex;
+                align-items: flex-end;
+                .stekina-discount-content-main-box-title-sub {
+                    margin: 0 0 22px 4px;
+                    color: $cl-gray-light;
+                    font-size: 11px;
+                }
+            }
+            /* checklist */
+            .stekina-discount-content-main-box-checklist {
+                padding: 0 0 3px;
+                margin-left: 6px;
+                margin-right: 6px;
+                border-bottom: 1px solid #ccc;
+                /* top */
+                span.stekina-discount-content-main-box-checklist-shiny {
+                    font-size: 14px;
+                }
+                .stekina-discount-content-main-box-checklist-top {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    position: relative;
+                    .stekina-discount-content-main-box-checklist-top-button-personal {
+                        left: 39%;
+                        top: 0;
+                        bottom: 3px;
+                    }
+                    .stekina-discount-content-main-box-checklist-top-button {
+                        position: absolute;
+                        display: flex;
+                        align-items: flex-end;
+                        a {
+                            background: transparent;
+                            display: inline-block;
+                            font-size: 8.5px;
+                            padding: 2px 3px;
+                            border-radius: 4px;
+                            border: $cl-lime 1.5px solid;
+                            color: $cl-lime;
+                            padding: 5px 3px;
+                            text-decoration: none;
+                            font-family: "k-6", KoburinaGoStd-W6;
+                        }
+                    }
+                    .stekina-discount-content-main-box-checklist-top-left {
+                        text-align: left;
+                        margin: 0 0 3px 0px;
+                    }
+                    .stekina-discount-content-main-box-checklist-top-left-text {
+                        font-family: "k-6", KoburinaGoStd-W6;
+                        letter-spacing: -1.3px;
+                        color: $cl-stekina-black !important;
+                        @include font-size-stekina-discount-m();
+                    }
+                    div {
+                        display: inline-block;
+                    }
+                    .stekina-discount-content-main-box-checklist-top-left-count {
+                        font-family: "k-6", KoburinaGoStd-W6;
+                        @include font-size-stekina-discount-l();
+                    }
+                    .stekina-discount-content-main-box-checklist-top-right {
+                        text-align: right;
+                        margin: 0 -6px 0 0;
+                        div,
+                        span {
+                            font-family: "k-6", KoburinaGoStd-W6;
+                        }
+                        .stekina-discount-content-main-box-checklist-top-right-text {
+                            @include font-size-stekina-discount-m();
+                        }
+                        .stekina-discount-content-main-box-checklist-top-right-price {
+                            @include font-size-stekina-discount-l();
+                            color: $cl-gray-light !important;
+                        }
+                    }
+                }
+            }
+            /* bottom */
+            .stekina-discount-content-main-box-checklist-bottom {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                margin: 10px 0 0;
+                position: relative;
+                div {
+                    display: inline-block;
+                }
+                .stekina-discount-content-main-box-checklist-bottom-left {
+                    color: $cl-gray-light;
+                    @include font-size-stekina-discount-s();
+                    margin: 0 0 7px;
+                }
+                .stekina-discount-content-main-box-checklist-bottom-right {
+                    margin: 0 -6px 4px 0;
+                    .stekina-discount-content-main-box-checklist-bottom-right-text {
+                        color: $cl-stekina-black;
+                        font-family: "k-6", KoburinaGoStd-W6;
+                        @include font-size-stekina-discount-m();
+                    }
+                    .stekina-discount-content-main-box-checklist-bottom-right-price {
+                        font-family: "k-6", KoburinaGoStd-W6;
+                        @include font-size-stekina-discount-l();
+                        color: $cl-gray-light;
+                    }
+                }
+                .stekina-discount-content-main-box-checklist-bottom-button {
+                    position: absolute;
+                    display: flex;
+                    align-items: flex-end;
+                    left: 87px;
+                    top: 0;
+                    bottom: 2px;
+                    a {
+                        background: transparent;
+                        display: inline-block;
+                        font-size: 8.5px;
+                        padding: 3px 4.5px 3px 6px;
+                        border-radius: 4px;
+                        border: $cl-lime 1.5px solid;
+                        color: $cl-lime;
+                        text-decoration: none;
+                        font-family: "k-6", KoburinaGoStd-W6;
+                    }
+                }
+            }
+            .stekina-discount-content-main-box-checklist-bottom-salon {
+                display: flex !important;
+                width: 100%;
+                justify-content: flex-end;
+                align-items: flex-end;
+                margin: 4px 0 0;
+                .stekina-discount-content-main-box-checklist-bottom-right-text-salon {
+                    font-size: 12.5px;
+                    font-family: "k-6", KoburinaGoStd-W6;
+                    color: $cl-gray-light;
+                }
+                .stekina-discount-content-main-box-checklist-bottom-right-price-salon {
+                    font-size: 18px;
+                    font-family: "k-6", KoburinaGoStd-W6;
+                    color: $cl-gray-light;
+                    line-height: 1;
+                    margin: 4px 0 0;
+                }
+            }
+        }
+    }
+}
+
+.stekina-discount-content-main-box-checklist-top-left-icon {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    margin: 0px 3px -3px 0;
+    border: $cl-red solid 1px;
+    /*
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    */
+    img {
+        position: absolute;
+        width: 70%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+}
+
+.stekina-discount-about {
+    .stekina-discount-about-title {
+        text-align: center;
+        font-family: "k-6", KoburinaGoStd-W6;
+        font-size: 20px;
+        margin: 0 0 20px;
+        animation-name: fuwafuwa;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease;
+        .stekina-discount-about-title-gradient {
+            @include text-gradient();
+            font-family: "k-6", KoburinaGoStd-W6;
+        }
+    }
+    .stekina-discount-about-block {
+        background: white;
+        border-radius: 4px;
+        padding: 25px 15px 15px;
+        width: 95%;
+        margin: 0 auto 30px;
+    }
+    .stekina-discount-about-block-box {
+        margin: 0 auto 60px;
+        &:last-child {
+            margin: 0 auto 15px;
+        }
+        .stekina-discount-about-block-box-title {
+            @include font-size-stekina-discount-l();
+            color: $cl-stekina-black;
+            font-family: "k-6", KoburinaGoStd-W6;
+            letter-spacing: -0.5px;
+            margin: 0 0 5px;
+        }
+        .stekina-discount-about-block-box-text {
+            @include font-size-stekina-discount-m();
+            color: $cl-gray-dark;
+            letter-spacing: -0.5px;
+            line-height: 1.5;
+            font-family: "k-6", KoburinaGoStd-W6;
+            a:link,
+            a:visited {
+                color: $cl-red;
+                text-decoration: underline;
+                font-family: "k-6", KoburinaGoStd-W6;
+            }
+            /*
+            b {
+                font-weight: bold;
+                font-family: "k-6", KoburinaGoStd-W6;
+            }
+            */
+            strong,
+            span {
+                font-family: "k-6", KoburinaGoStd-W6;
+                color: $cl-gray-dark;
+            }
+        }
+        .stekina-discount-about-block-box-button a {
+            position: relative;
+            display: block;
+            border-radius: 6px;
+            text-align: center;
+            text-decoration: none;
+            color: $cl-red;
+            border: 2px $cl-red solid;
+            margin: 10px 0 0;
+            letter-spacing: -0.5px;
+            padding: 10px 10px;
+            font-size: 14px;
+            display: inline-block;
+            font-weight: bold;
+            font-family: "k-6";
+            /*  background: linear-gradient(-60deg, #e6417a 0%, #ff595b 100%);*/
+            /* box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2); */
+            &::before {
+                /*
+                display: none;
+                position: absolute;
+                height: 10px;
+                width: 10px;
+                border: 1px solid $cl-red;
+                border-width: 2px 2px 0 0;
+                content: "";
+                right: 20px;
+                top: 35%;
+                
+                transform: rotate(45deg);
+                */
+            }
+        }
+    }
+}
+
+@-webkit-keyframes fuwafuwa {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(13px);
+        transform: translateY(13px);
+    }
+    60% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-13px);
+        transform: translateY(-13px);
+    }
+    60% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes scroll-x {
+    0% {
+        transform: translateX(10px) rotate(45deg);
+    }
+    50% {
+        transform: translateX(0px) rotate(45deg);
+    }
+    100% {
+        transform: translateX(10px) rotate(45deg);
+    }
+}
+
+.stekina-discount-content-main-box-checklist-bottom-right
+/* アクティブ時の挙動 */
+
+
+/* 共通要素 */
+
+.common-bold {
+    font-family: "k-6", KoburinaGoStd-W6;
+    font-weight: bold;
+}
+
+.common-stekina-discount-title {
+    @include rizm-gradient();
+    @include font-size-stekina-discount-l();
+    border-radius: 4px;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    padding: 8px 14px;
+    margin: 0 0 15px;
+    letter-spacing: -1px !important;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-25 {
+    margin-bottom: 25px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+.active {
+    .stekina-discount-content-main-box-checklist-top-right-price,
+    .stekina-discount-content-main-box-checklist-bottom-right-price,
+    .stekina-discount-content-main-box-checklist-top-left-count {
+        @include text-gradient();
+    }
+    .stekina-discount-content-main-box-checklist-top-left-icon {
+        @include rizm-gradient();
+    }
+    .stekina-discount-content-main-box-checklist-bottom-salon {
+        .stekina-discount-content-main-box-checklist-bottom-right {
+            border-radius: 4px;
+            @include rizm-gradient();
+            padding: 5px 7px;
+            color: white;
+            margin: 3px 0 3px !important;
+            font-size: 13.5px;
+            font-family: "k-6", KoburinaGoStd-W6;
+        }
+    }
+}
+
+
+/* AB Testing */
+
+
+/*
+.stekina-discount-personal-B {
+    .stekina-discount-content-main-box-checklist-top-right-price {
+        color: $cl-gray-light !important;
+    }
+    .stekina-discount-content-main-box-checklist-bottom-right-price {
+        color: $cl-gray-light !important;
+    }
+}
+*/

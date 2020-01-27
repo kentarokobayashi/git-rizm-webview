@@ -1,0 +1,122 @@
+.wrapper-form {
+    .header-form {
+        display: flex;
+        align-content: center;
+        height: 135px;
+        border-bottom: 2px solid $cl-gray-lightest;
+    }
+    .header-form-left {
+        flex: 3.2;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        div {
+            align-self: center;
+        }
+        .header-post-comment-left-img {
+            img {
+                border-radius: 100px;
+                width: 65px;
+                height: 65px;
+                margin: 0 0 5px;
+            }
+        }
+        .header-post-comment-left-name {
+            margin: 0 0 5px;
+        }
+        .header-post-comment-left-salon {
+            font-size: 10px;
+        }
+    }
+    .header-form-right {
+        flex: 6.2;
+        line-height: 1.55;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        letter-spacing: -0.5px;
+        flex-direction: column;
+        color: #4d4d4d;
+    }
+    .content-form {
+        margin: 20px 20px;
+        .content-form-section {
+            margin: 0 auto 60px;
+        }
+        .content-form-section-title {
+            margin: 0 10px 5px;
+            span {
+                display: inline-block;
+                margin: 0 3px 0 0;
+            }
+        }
+        .content-form-section-notes {
+            margin: 5px 10px 0px;
+            line-height: 1.35;
+        }
+        textarea {
+            -webkit-appearance: none;
+            height: auto;
+            max-width: 600px;
+            color: #4d4d4d;
+            font-weight: 400;
+            font-size: 15px;
+            /* resize: none; */
+            width: 90%;
+            height: 160px;
+            background: #fff;
+            border-radius: 8px;
+            line-height: 1.7;
+            border: 2px solid #27beab;
+            padding: 10px 10px;
+            @include mq-down(iphone5) {
+                height: 180px;
+            }
+        }
+        .content-form-section-tag {
+            background: #fff;
+            border-radius: 8px;
+            line-height: 1.5;
+            border: 2px solid #27beab;
+            padding: 16px 16px 6px;
+            max-width: 600px;
+            @include mq-down(iphone5) {
+                padding: 10px 10px;
+            }
+        }
+    }
+}
+
+.content-form-section-second-tag {
+    margin: 15px 0 0;
+    display: flex;
+    .content-form-section-sample-tag-left {
+        flex: 1;
+    }
+}
+
+.content-form-section-second-tag-right {
+    flex: 7.5;
+    display: flex;
+    flex-wrap: wrap;
+    button {
+        margin: 0 6px 12px 0;
+        @include mq-down(iphone5) {
+            margin: 0 6px 10px 0;
+        }
+        &:last-child {
+            margin: 0 0px 12px 0;
+        }
+    }
+}
+
+.content-form-submit {
+    div {
+        margin: 0 0 15px;
+    }
+    button {
+        width: 70% !important;
+    }
+}

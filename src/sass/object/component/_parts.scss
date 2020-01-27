@@ -1,0 +1,67 @@
+// -----------------------------------------------------------------
+// title
+// -----------------------------------------------------------------
+.c-module-title {
+    letter-spacing: 1px;
+    padding: 0 0 7px 0;
+    border-bottom: 0.5px solid $cl-gray-light;
+    ;
+    margin: 0 0 15px;
+    @include desktop-width();
+}
+
+.c-module-title-m {
+    font-size: calc(14px + 0.5vw);
+}
+
+.c-module-title-l {
+    font-size: calc(20px + 0.5vw);
+}
+
+.c-module-title-xl {
+    font-size: calc(20px + 0.5vw);
+}
+
+// -----------------------------------------------------------------
+// sns
+// -----------------------------------------------------------------
+.c-sns-block {
+    padding: 15px;
+    margin: 10px auto;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    border: 0.5px solid $cl-gray-light;
+    overflow: hidden;
+    z-index: 100;
+    .c-sns-block-head {
+        display: flex;
+        margin: 0 0 10px;
+        .c-sns-block-head-image {
+            margin: 0 10px 0 0;
+            img {
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .c-sns-block-head-profile {
+            margin: 3px 0 0;
+            .c-sns-block-head-profile-data {
+                color: $cl-gray-light;
+                font-size: $sz-ft-xs;
+            }
+        }
+    }
+}
+
+// -----------------------------------------------------------------
+// link
+// -----------------------------------------------------------------
+.c-sublink {
+    text-align: right;
+    margin: 10px 0 0;
+    a {
+        text-decoration: underline;
+    }
+}

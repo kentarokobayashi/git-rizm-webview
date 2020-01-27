@@ -1,0 +1,56 @@
+/* 写真一覧のscss */
+
+#rizm-photos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#rizm-photos li {
+    list-style: none;
+    flex: 0 0 33.33%;
+    position: relative;
+    a {
+        &:before {
+            content: "";
+            display: block;
+            padding-top: 100%;
+        }
+        &:after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: "";
+            display: block;
+            border-bottom: 1.5px solid white;
+            border-right: 1.5px solid white;
+            z-index: 100;
+            box-sizing: border-box;
+        }
+    }
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.bg-lime {
+    background: $cl-lime !important;
+}
+
+.bg-gray-lightest {
+    background: $cl-gray-lightest !important;
+}
+
+.bg-white {
+    background: white !important;
+}
+
+.bg-lime-gradient {
+    @include lime-gradient();
+}

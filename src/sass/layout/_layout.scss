@@ -1,0 +1,108 @@
+.dummy-header,
+.dummy-footer {
+    width: 100%;
+    max-width: 500px;
+    img {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+.dummy-header img {
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+}
+
+.dummy-footer img {
+    position: fixed;
+    bottom: 0;
+    z-index: 99999;
+}
+
+
+/**********
+ここから本題
+***********/
+
+div,
+p {
+    /* font-family: "mplus-2c-regular";*/
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto !important;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.wrapper {
+    padding: 0 0 180px;
+    // background: $cl-lime !important;
+}
+
+.pages-search_stylist .wrapper {
+    padding: 0 0 0px !important;
+}
+
+.section {
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    padding: 15px 18px 15px;
+    margin: 0 15px 15px;
+    background: white;
+    border-radius: 10px;
+    @include mq-down(iphone5) {
+        margin: 0 12.5px 12px;
+        padding: 12.5px 12.5px 13px;
+    }
+}
+
+.section .section-block:last-child {
+    margin: 0 0 0px !important;
+}
+
+.section-block {
+    margin: 0 0 30px;
+}
+
+.section-block-title-sub {
+    margin: 3px 0 3px;
+}
+
+.section-block-title-undersub {
+    margin: 15px 0;
+}
+
+.section-block-title {
+    margin: 0 0 10px;
+    position: relative;
+    .section-block-title-main {
+        @include u-bold();
+        font-size: 30px;
+        line-height: 1.5;
+        @include mq-down(iphone5) {
+            font-size: 24px;
+        }
+        display: table;
+    }
+    //ランキングってなに？の要素
+    .section-block-title-sub-news {
+        position: absolute;
+        right: 0px;
+        bottom: -10px;
+        @include mq-down(iphone5) {
+            right: 0px;
+        }
+    }
+    //ランキングってなに？の要素
+    .section-block-title-sub-ranking {
+        position: absolute;
+        right: 0;
+        bottom: -5px;
+        @include mq-down(iphone5) {
+            bottom: -7px;
+        }
+    }
+}

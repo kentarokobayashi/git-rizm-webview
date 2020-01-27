@@ -1,0 +1,34 @@
+doctype html
+html(lang='jp')
+  head
+    title 連絡先を登録しよう！
+    link(href='static/css/application.css?'+dateNow rel='stylesheet')
+    meta(name='viewport', content='width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    meta(charset='UTF-8')
+    meta(name='robots', content='noindex,nofollow')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js')
+    script(src='//jpostal-1006.appspot.com/jquery.jpostal.js', type='text/javascript')
+  body.A-mykarte-tutorial-02.bg-gray-lightest(data-action='tutorial', data-controller='ken')
+    .mykarte-tutorial-wrapper-02
+      form
+       .mykarte-tutorial-02-section
+          .mykarte-tutorial-02-title
+            |連絡先を登録しよう！
+          .mykarte-tutorial-02-block
+              .mykarte-tutorial-02-block-title
+                |電話番号
+              .mykarte-tutorial-02-block-input-text
+                    input(name='tel', type='tel', value='', placeholder='090-4940-8933')
+          .mykarte-tutorial-02-block
+              .mykarte-tutorial-02-block-title-center 
+                  .mykarte-tutorial-02-block-title
+                    |メールアドレス
+              .mykarte-tutorial-02-block-input-text
+                    input(name='email', type='email', value='')
+              .mykarte-tutorial-02-block-note
+                    |メールでキャンペーンを
+                    br
+                    |発行しているサロンもあります！
+       //▼▼▼submit
+       button.button-tutorial-submit.button-tutorial-submit-active(type='submit' value='Submit') 次へ
+       button.button-tutorial02-skip(type='button', onclick="location.href='A-mykarte-tutorial-04.html'") スキップ

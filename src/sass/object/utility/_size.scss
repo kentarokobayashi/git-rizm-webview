@@ -1,0 +1,89 @@
+.u-fsz-xs {
+  font-size: $sz-ft-xs;
+  line-height: $sz-ft-xs;
+  letter-spacing: ($sz-ft-xs * $ls-ratio);
+}
+
+.u-fsz-s {
+  font-size: $sz-ft-s;
+  line-height: $sz-ft-s;
+  letter-spacing: ($sz-ft-s * $ls-ratio);
+}
+
+.u-fsz-m {
+  font-size: $sz-ft-m;
+  line-height: $sz-ft-m;
+  letter-spacing: ($sz-ft-m * $ls-ratio);
+}
+
+.u-fsz-l {
+  font-size: $sz-ft-l;
+  line-height: $sz-ft-l;
+  letter-spacing: ($sz-ft-l * $ls-ratio);
+}
+
+.u-fsz-xl {
+  font-size: $sz-ft-xl;
+  line-height: $sz-ft-xl;
+  letter-spacing: ($sz-ft-xl * $ls-ratio);
+}
+
+.u-lh-plus-xs {
+  line-height: ($sz-ft-xs * $lh-ratio);
+}
+
+.u-lh-plus-s {
+  line-height: ($sz-ft-s * $lh-ratio);
+}
+
+.u-lh-plus-m {
+  line-height: ($sz-ft-m * $lh-ratio);
+}
+
+.u-lh-plus-l {
+  line-height: ($sz-ft-l * $lh-ratio);
+}
+
+.u-lh-plus-xl {
+  line-height: ($sz-ft-xl * $lh-ratio);
+}
+
+.u-fwt-light {
+  font-weight: 100;
+}
+
+.u-fwt-bold {
+  font-weight: 600;
+}
+
+.u-width-50 {
+  width: 50px;
+}
+
+.u-width-100 {
+  width: 100px;
+}
+
+.u-width-200 {
+  width: 200px;
+}
+
+.u-width-400 {
+  width: 400px;
+}
+
+.u-width-600 {
+  width: 600px;
+}
+
+.u-width-5pct {
+  width: 5%;
+}
+
+.u-width-20pct {
+  width: 20%;
+}
+
+.u-width-25pct {
+  width: 25%;
+}

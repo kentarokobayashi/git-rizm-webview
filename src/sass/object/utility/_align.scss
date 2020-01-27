@@ -1,0 +1,134 @@
+// -----------------------------------------------------------------
+// display
+// -----------------------------------------------------------------
+.display-pc {
+    @include mq-down(tablet) {
+        display: none !important;
+    }
+}
+
+.display-sp {
+    @include mq-down(desktop) {
+        display: none !important;
+    }
+}
+
+// -----------------------------------------------------------------
+// vertial align
+// -----------------------------------------------------------------
+.u-va-t {
+    vertical-align: top !important;
+}
+
+.u-va-m {
+    vertical-align: middle !important;
+}
+
+.u-va-b {
+    vertical-align: bottom !important;
+}
+
+// -----------------------------------------------------------------
+// text-align
+// -----------------------------------------------------------------
+.u-ta-l {
+    text-align: left !important;
+}
+
+.u-ta-c {
+    text-align: center !important;
+}
+
+.u-ta-r {
+    text-align: right !important;
+}
+
+@include mq-down(tablet) {
+    .u-sp-ta-l {
+        text-align: left !important;
+    }
+    .u-sp-ta-c {
+        margin: 0 auto;
+        text-align: center !important;
+    }
+    .u-sp-ta-r {
+        text-align: right !important;
+    }
+}
+
+@include mq-down(desktop) {
+    .u-pc-ta-l {
+        text-align: left !important;
+    }
+    .u-p {
+        margin: 0 auto;
+        text-align: center !important;
+    }
+    .u-pc-ta-r {
+        text-align: right !important;
+    }
+}
+
+// -----------------------------------------------------------------
+// position
+// -----------------------------------------------------------------
+.u-pos-a {
+    position: absolute;
+}
+
+.u-pos-r {
+    position: relative;
+}
+
+.u-pos-f {
+    position: fixed;
+}
+
+// -----------------------------------------------------------------
+// float
+// -----------------------------------------------------------------
+.u-flt-l {
+    float: left;
+}
+
+.u-flt-r {
+    float: right;
+}
+
+.u-flt-c {
+    clear: both;
+}
+
+// -----------------------------------------------------------------
+// block-align
+// -----------------------------------------------------------------
+.u-ba-c {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.u-ba-m {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.u-ba-cm {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.u-ba-r {
+    position: absolute;
+    right: 0;
+}

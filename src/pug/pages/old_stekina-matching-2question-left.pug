@@ -1,0 +1,41 @@
+- var dateNow = Date.now();
+doctype html
+html(lang='jp')
+  head
+    title 質問はあと２つです！もう少し！
+    link(href='static/css/matching.css?'+dateNow, rel='stylesheet')
+    meta(name='viewport', content='width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    meta(charset='UTF-8')
+    meta(name='robots', content='noindex,nofollow')
+    //script(src='https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js')
+    script(src='//jpostal-1006.appspot.com/jquery.jpostal.js', type='text/javascript')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
+  body
+    .matching-questions-wrapper
+      .matching-questions-head
+        .matching-questions-head-ai
+          img(src='https://stekina.com/wp-content/uploads/icon_stekina-ai-illust.png')
+        .matching-questions-head-speech
+          |質問はあと２つです！もう少し！
+      .matching-questions-content
+            .matching-questions-content-question-box(style="margin:0 0 500px !important;")
+                .matching-questions-content-question-box-subtitle
+                  |相性の良い美容師を紹介するのに重要な質問です！
+                .matching-questions-content-question-box-title
+                  span.matching-questions-content-question-box-title-large
+                    |思い当たること全てにチェックをしてください。
+
+                .matching-questions-content-question-box-checkboxs
+                  .matching-questions-content-checkbox
+                    input.checkbox-input(name='checkbox1-1', type='checkbox')
+                    label(for='checkbox1-1')
+                      span ああああ
+
+
+      .matching-questions-footer
+        .matching-questions-footer-text
+           |次で最後の質問です！
+        .common-btn
+          a(href='stekina-matching-1question-left.html')
+           |次へ

@@ -1,0 +1,162 @@
+      // -----------------------------------------------------------------
+      // card
+      // -----------------------------------------------------------------
+      .c-recommend-stylist .c-card:hover {
+          transition: 0.25s;
+          opacity: 0.9;
+          box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.20);
+      }
+      
+      .c-card {
+          margin: 0px auto 20px;
+          width: 100%;
+          background: #fff;
+          border-radius: 10px;
+          border: 0.5px solid $cl-gray-dark;
+          overflow: hidden;
+          z-index: 100;
+          //スタイル写真の画像
+          .c-card-img img {
+              width: 100%;
+              height: calc(8vw + 150px);
+              object-fit: cover;
+          }
+          .c-card-content {
+              padding: 0px 8px 5px;
+              @include mq-down(iphone5) {
+                  padding: 0px 6px 5px;
+              }
+              border-bottom: 0.5px solid $cl-gray-dark;
+              .c-card-content-title {
+                  font-size: calc(10px + 0vw);
+                  color: $cl-gray;
+                  margin: 0 0 4px;
+                  letter-spacing: -1px;
+              }
+          }
+          .c-card-content-user {
+              padding: 5px 7px;
+              font-size: 10px;
+              @include mq-down(iphone5) {
+                  font-size: 8.5px;
+              }
+              color: $cl-gray-light;
+              li.c-card-content-user-value {
+                  display: inline-block;
+                  &:not(:last-child) {
+                      margin: 0 10px 0 0px;
+                  }
+              }
+          }
+          .c-card-content-status-count {
+              padding: 3px 14px;
+              font-size: 13px;
+              @include mq-down(iphone5) {
+                  font-size: 10.5px;
+              }
+              color: $cl-gray-dark;
+              display: -webkit-flex;
+              display: flex;
+              justify-content: flex-start;
+              li {
+                  display: block;
+                  margin: 0 10px 0 0;
+              }
+          }
+      }
+      
+      // -----------------------------------------------------------------
+      // stylist
+      // -----------------------------------------------------------------
+      .c-card-salonname {
+          font-size: $sz-ft-xxs;
+          text-align: center;
+          padding: 1px 0;
+          color: $cl-gray-dark;
+      }
+      
+      .c-card-header {
+          position: relative;
+          height: 78px;
+          @include mq-down(iphone5) {
+              height: 70px;
+          }
+          background-size: cover;
+          background-repeat: no-repeat;
+          .c-card-header-image img {
+              position: absolute;
+              border: 1px solid $cl-white;
+              left: 6px;
+              top: 15px;
+              z-index: 1000;
+              object-fit: cover;
+              @include circle(48px);
+              @include mq-down(iphone5) {
+                  @include circle(40px);
+              }
+          }
+          .c-card-header-name {
+              font-size: 12px;
+              background-color: rgba(0, 0, 0, 0.6);
+              padding: 6px 0px;
+              letter-spacing: 2px;
+              position: absolute;
+              right: 0px;
+              top: 25px;
+              @include mq-down(desktop) {
+                  width: 83%;
+              }
+              @include mq-down(tablet) {
+                  width: 93%;
+              }
+              @include mq-down(iphone6) {
+                  width: 78%;
+              }
+              @include mq-down(iphone5) {
+                  font-size: 6px;
+              }
+              .c-card-header-name-txt {
+                  text-align: left;
+                  color: $cl-white;
+                  margin: 0 0 0 25px;
+                  font-size: $sz-ft-m;
+                  @include mq-down(iphone5) {
+                      font-size: $sz-ft-s;
+                  }
+                  @include mq-down(tablet) {
+                      margin: 0 0 0 40px;
+                  }
+                  @include mq-down(iphone6) {
+                      margin: 0 0 0 25px;
+                  }
+              }
+          }
+      }
+      
+      .c-card-stylephoto {
+          display: flex;
+          margin: 0;
+          padding: 0;
+          .c-card-stylephoto-left,
+          .c-card-stylephoto-right {
+              display: inline-block;
+              width: 50%;
+          }
+          .c-card-stylephoto-left img,
+          .c-card-stylephoto-right img {
+              width: 100%;
+              height: 125px;
+              object-fit: cover;
+              @include mq-down(iphone5) {
+                  height: 100px;
+              }
+          }
+      }
+      
+      .c-stylist-card-stylistdata {
+          @extend .c-card-content-status-count;
+          .c-stylist-card-stylistdata-value {
+              display: inline-block;
+              @extend .c-card-content-status-count;
+          }
+      }

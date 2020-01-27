@@ -1,0 +1,50 @@
+    // -----------------------------------------------------------------
+    // tag
+    // -----------------------------------------------------------------
+    ul.c-tag-middle {
+      max-height :52px;
+      overflow:hidden;
+      li {
+        display: inline-block;
+        a {
+          @include tag;
+          border-radius: 5px;
+          padding: calc(0.25vw + 1px) calc(0.25vw + 7px);
+          margin: 0 8px 9px 0;
+          color: $cl-gray;
+          background: $cl-white;
+          box-sizing: content-box;
+          font-size: calc(12px + 0.25vw);
+          &:hover {
+            @include tag;
+            background: $cl-gray-lightest;
+            color: $cl-gray;
+          }
+        }
+      }
+    }
+
+    ul.c-tag-small {
+      li {
+        display: inline-block;
+        a {
+          @include tag;
+          border-radius: 4px;
+          padding: calc(0.05vw + 2px) calc(0.2vw + 2px);
+          margin: 0px 4px 2px 0;
+          color: $cl-gray;
+          background: $cl-white;
+          box-sizing: content-box;
+          font-size: 8px;
+          @include mq-down(iphone5) {
+            font-size: 6px;
+            margin: 0px 3px 1.5px 0;
+          }
+          &:hover {
+            @include tag;
+            background: $cl-gray-lightest;
+            color: $cl-gray;
+          }
+        }
+      }
+    }

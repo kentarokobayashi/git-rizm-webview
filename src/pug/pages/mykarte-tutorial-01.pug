@@ -1,0 +1,615 @@
+doctype html
+html(lang='jp')
+  head
+    title 自分のこだわりや好みを選択しよう！
+    link(href='static/css/application.css?'+dateNow rel='stylesheet')
+    meta(name='viewport', content='width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    meta(charset='UTF-8')
+    meta(name='robots', content='noindex,nofollow')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js')
+    script(src='//jpostal-1006.appspot.com/jquery.jpostal.js', type='text/javascript')
+  body.bg-gray-lightest(data-action='tutorial', data-controller='ken')
+   form
+    .mykarte-tutorial-wrapper-01
+      section.mykarte-tutorial-section
+        .mykarte-tutorial-head
+          .mykarte-tutorial-section-title-wrapper
+            .mykarte-tutorial-section-title-img
+              img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2019/12/icon-whitee.svg')
+            .mykarte-tutorial-section-title
+              |自分のこだわりや
+              br
+              |好みを選択しよう！
+          .mykarte-tutorial-head-text
+            | 記入した内容は美容師さんに共有され
+            br
+            | 施術担当時の参考になります！
+          .mykarte-tutorial-head-note
+            | 全て任意で入力いただけます
+      .mykarte-scroll 
+            |👇スクロールする
+      //▼▼▼サービスについて
+      section.mykarte-tutorial-section
+        .mykarte-tutorial-section-title-wrapper
+          .mykarte-tutorial-section-title-img
+            img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2019/12/icon-salon.svg')
+          .mykarte-tutorial-section-title
+            | サービスについて
+        //▼service-01
+        .mykarte-tutorial-section-block
+          .mykarte-tutorial-section-block-subtitle
+            .mykarte-tutorial-section-block-subtitle-number
+              | ❶
+            .mykarte-tutorial-section-block-subtitle-text
+              | サロンで過ごす時間は
+          .mykarte-tutorial-section-block-questions.mykarte-tutorial-section-block-questions-width-80
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='service-01-radio-value01', name='service-01-radio', type='radio')
+                label(for='service-01-radio-value01')
+                  span
+                    | できるだけ早くしたい
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='service-01-radio-value02', name='service-01-radio', type='radio')
+                label(for='service-01-radio-value02')
+                  span
+                    | ゆっくりくつろぎたい
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='service-01-radio-value03', name='service-01-radio', type='radio')
+                label(for='service-01-radio-value03')
+                  span 普通で良い
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='service-01-radio-value04', name='service-01-radio', type='radio')
+                label(for='service-01-radio-value04')
+                  span その時による
+        //▼service-02
+        .mykarte-tutorial-section-block
+          .mykarte-tutorial-section-block-subtitle
+            .mykarte-tutorial-section-block-subtitle-number
+              | ❷
+            .mykarte-tutorial-section-block-subtitle-text
+              | スタッフとの会話について
+          .mykarte-tutorial-section-block-questions.mykarte-tutorial-section-block-questions-width-60
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='service-02-radio-value01', name='service-02-radio', type='radio')
+                label(for='service-02-radio-value01')
+                  span
+                    |話すのは好き
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='service-02-radio-value02', name='service-02-radio', type='radio')
+                label(for='service-02-radio-value02')
+                  span
+                    |会話は苦手
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='service-02-radio-value03', name='service-02-radio', type='radio')
+                label(for='service-02-radio-value03')
+                  span 静かに過ごしたい
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='service-02-radio-value04', name='service-02-radio', type='radio')
+                label(for='service-02-radio-value04')
+                  span 普通で良い
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='service-02-radio-value05', name='service-02-radio', type='radio')
+                label(for='service-02-radio-value05')
+                  span その時による
+        //▼service-03
+        .mykarte-tutorial-section-block
+          .mykarte-tutorial-section-block-subtitle
+            .mykarte-tutorial-section-block-subtitle-number
+              |❸
+            .mykarte-tutorial-section-block-subtitle-text
+              |シャンプー時の会話について
+          .mykarte-tutorial-section-block-questions.mykarte-tutorial-section-block-questions-width-85
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='service-03-radio-value01', name='service-03-radio', type='radio')
+                label(for='service-03-radio-value01')
+                  span
+                    |静かに寝ていたい
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='service-03-radio-value02', name='service-03-radio', type='radio')
+                label(for='service-03-radio-value02')
+                  span
+                    |なるべく話しかけないで欲しい
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='service-03-radio-value03', name='service-03-radio', type='radio')
+                label(for='service-03-radio-value03')
+                  span たまになら話すのも良い
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='service-03-radio-value04', name='service-03-radio', type='radio')
+                label(for='service-03-radio-value04')
+                  span 話しかけられるのは嬉しい
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='service-03-radio-value05', name='service-03-radio', type='radio')
+                label(for='service-03-radio-value05')
+                  span 会話したい
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='service-03-radio-value06', name='service-03-radio', type='radio')
+                label(for='service-03-radio-value06')
+                  span その時による
+        //▼service-04
+        .mykarte-tutorial-section-block
+          .mykarte-tutorial-section-block-subtitle
+            .mykarte-tutorial-section-block-subtitle-number
+              |❹
+            .mykarte-tutorial-section-block-subtitle-text
+              |希望のヘアスタイルを
+              br
+              |伝えるのは苦手ですか？
+          .mykarte-tutorial-section-block-questions.mykarte-tutorial-section-block-questions-width-75
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='service-04-radio-value01', name='service-04-radio', type='radio')
+                label(for='service-04-radio-value01')
+                  span
+                    |YES
+              .mykarte-tutorial-section-block-questions-input.questions-margin-top-150
+                input.checkbox-input(id='service-04-radio-value02', name='service-04-radio', type='radio')
+                label(for='service-04-radio-value02')
+                  span
+                    |NO、伝えられる
+              .mykarte-tutorial-section-block-questions-child
+                .mykarte-tutorial-section-block-questions-input
+                  input.checkbox-input(id='service-04-child-radio-value01', name='service-04-child-radio', type='radio')
+                  label(for='service-04-child-radio-value01')
+                    span
+                      |苦手
+                .mykarte-tutorial-section-block-questions-input
+                  input.checkbox-input(id='service-04-child-radio-value02', name='service-04-child-radio', type='radio')
+                  label(for='service-04-child-radio-value02')
+                    span
+                      |うまく伝わらない
+                .mykarte-tutorial-section-block-questions-input
+                  input.checkbox-input(id='service-04-child-radio-value03', name='service-04-child-radio', type='radio')
+                  label(for='service-04-child-radio-value03')
+                    span
+                      |伝えられない
+        //▼service-05
+        .mykarte-tutorial-section-block
+          .mykarte-tutorial-section-block-subtitle
+            .mykarte-tutorial-section-block-subtitle-number
+              |❺
+            .mykarte-tutorial-section-block-subtitle-text
+              |どのようなカウンセリングが良いですか？
+          .mykarte-tutorial-section-block-questions.mykarte-tutorial-section-block-questions-width-70.mykarte-tutorial-section-block-questions-last        
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='service-05-radio-value01', name='service-05-radio', type='radio')
+                label(for='service-05-radio-value01')
+                  span
+                    |しっかり聞いて欲しい
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='service-05-radio-value02', name='service-05-radio', type='radio')
+                label(for='service-05-radio-value02')
+                  span
+                    |ある程度任せたい
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='service-05-radio-value03', name='service-05-radio', type='radio')
+                label(for='service-05-radio-value03')
+                  span アドバイスして欲しい
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='service-05-radio-value04', name='service-05-radio', type='radio')
+                label(for='service-05-radio-value04')
+                  span 普通で良い
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='service-05-radio-value05', name='service-05-radio', type='radio')
+                label(for='service-05-radio-value05')
+                  span その時による
+      //▼▼▼カットや施術について
+      section.mykarte-tutorial-section
+        .mykarte-tutorial-section-title-wrapper
+          .mykarte-tutorial-section-title-img
+            img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2019/12/icon-hasami.svg')
+          .mykarte-tutorial-section-title
+            |カットや
+            br
+            |施術について
+        //▼salonmenus-01
+        .mykarte-tutorial-section-block
+          .mykarte-tutorial-section-block-subtitle
+            .mykarte-tutorial-section-block-subtitle-number
+              |❶
+            .mykarte-tutorial-section-block-subtitle-text
+              |髪質での悩みはありますか？
+          .mykarte-tutorial-section-block-questions.mykarte-tutorial-section-block-questions-width-90
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='salonmenus-01-radio-value01', name='salonmenus-01-radio', type='radio')
+                label(for='salonmenus-01-radio-value01')
+                  span
+                    |YES
+              .mykarte-tutorial-section-block-questions-input.questions-margin-top-420
+                input.checkbox-input(id='salonmenus-01-radio-value02', name='salonmenus-01-radio', type='radio')
+                label(for='salonmenus-01-radio-value02')
+                  span
+                    |NO
+              .mykarte-tutorial-section-block-questions-note
+                 |※複数選択可能
+              .mykarte-tutorial-section-block-questions-child
+                .mykarte-tutorial-section-block-questions-input
+                  input.checkbox-input(id='salonmenus-01-child-radio-value01', name='salonmenus-01-child-radio', type='checkbox')
+                  label(for='salonmenus-01-child-radio-value01')
+                    span
+                      |くせ毛
+                .mykarte-tutorial-section-block-questions-input
+                  input.checkbox-input(id='salonmenus-01-child-radio-value02', name='salonmenus-01-child-radio', type='checkbox')
+                  label(for='salonmenus-01-child-radio-value02')
+                    span
+                      |ふくらむ
+                .mykarte-tutorial-section-block-questions-input
+                  input.checkbox-input(id='salonmenus-01-child-radio-value03', name='salonmenus-01-child-radio', type='checkbox')
+                  label(for='salonmenus-01-child-radio-value03')
+                    span
+                      |ボリュームがでない
+                .mykarte-tutorial-section-block-questions-input
+                  input.checkbox-input(id='salonmenus-01-child-radio-value04', name='salonmenus-01-child-radio', type='checkbox')
+                  label(for='salonmenus-01-child-radio-value04')
+                    span
+                      |乾燥しやすい
+                .mykarte-tutorial-section-block-questions-input
+                  input.checkbox-input(id='salonmenus-01-child-radio-value05', name='salonmenus-01-child-radio', type='checkbox')
+                  label(for='salonmenus-01-child-radio-value05')
+                    span
+                      |髪が細い
+                .mykarte-tutorial-section-block-questions-input
+                  input.checkbox-input(id='salonmenus-01-child-radio-value06', name='salonmenus-01-child-radio', type='checkbox')
+                  label(for='salonmenus-01-child-radio-value06')
+                    span
+                      |傷みが気になる
+                .mykarte-tutorial-section-block-questions-input
+                  input.checkbox-input(id='salonmenus-01-child-radio-value07', name='salonmenus-01-child-radio', type='checkbox')
+                  label(for='salonmenus-01-child-radio-value07')
+                    span
+                      |その他
+                textarea.mykarte-tutorial-section-block-questions-textarea(name='salonmenus-01-child-textarea' placeholder='その他、詳しくお聞かせください' rows='4' cols='24')
+        //▼salonmenus-02
+        .mykarte-tutorial-section-block
+          .mykarte-tutorial-section-block-subtitle
+            .mykarte-tutorial-section-block-subtitle-number
+              |❷
+            .mykarte-tutorial-section-block-subtitle-text
+              |シャンプーの時間は
+          .mykarte-tutorial-section-block-questions.mykarte-tutorial-section-block-questions-width-65
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='salonmenus-02-radio-value01', name='salonmenus-02-radio', type='radio')
+                label(for='salonmenus-02-radio-value01')
+                  span
+                    |じっくりやって欲しい
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='salonmenus-02-radio-value02', name='salonmenus-02-radio', type='radio')
+                label(for='salonmenus-02-radio-value02')
+                  span
+                    |短めがよい
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='salonmenus-02-radio-value03', name='salonmenus-02-radio', type='radio')
+                label(for='salonmenus-02-radio-value03')
+                  span 普通でよい
+
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='salonmenus-02-radio-value04', name='salonmenus-02-radio', type='radio')
+                label(for='salonmenus-02-radio-value04')
+                  span その時による
+        //▼salonmenus-03
+        .mykarte-tutorial-section-block
+          .mykarte-tutorial-section-block-subtitle
+            .mykarte-tutorial-section-block-subtitle-number
+              |❸
+            .mykarte-tutorial-section-block-subtitle-text
+              |シャンプーの力加減は
+          .mykarte-tutorial-section-block-questions.mykarte-tutorial-section-block-questions-width-65
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='salonmenus-03-radio-value01', name='salonmenus-03-radio', type='radio')
+                label(for='salonmenus-03-radio-value01')
+                  span
+                    |しっかり強めが好き
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='salonmenus-03-radio-value02', name='salonmenus-03-radio', type='radio')
+                label(for='salonmenus-03-radio-value02')
+                  span
+                    |弱めがよい
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='salonmenus-03-radio-value03', name='salonmenus-03-radio', type='radio')
+                label(for='salonmenus-03-radio-value03')
+                  span 普通でよい
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='salonmenus-03-radio-value04', name='salonmenus-03-radio', type='radio')
+                label(for='salonmenus-03-radio-value04')
+                  span その時による
+        //▼salonmenus-04
+        .mykarte-tutorial-section-block
+          .mykarte-tutorial-section-block-subtitle
+            .mykarte-tutorial-section-block-subtitle-number
+              |❹
+            .mykarte-tutorial-section-block-subtitle-text
+              |今までにカラー剤・パーマ液でかぶれたり
+              |ヒリヒリした事はありますか？
+          .mykarte-tutorial-section-block-questions.mykarte-tutorial-section-block-questions-width-90
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='salonmenus-04-radio-value01', name='salonmenus-04-radio', type='radio')
+                label(for='salonmenus-04-radio-value01')
+                  span
+                    |YES
+              .mykarte-tutorial-section-block-questions-input.questions-margin-top-150
+                input.checkbox-input(id='salonmenus-04-radio-value02', name='salonmenus-04-radio', type='radio')
+                label(for='salonmenus-04-radio-value02')
+                  span
+                    |NO
+              .mykarte-tutorial-section-block-questions-child
+                textarea.mykarte-tutorial-section-block-questions-textarea(name='salonmenus-04-child-textarea' placeholder='詳しくお聞かせください' rows='4' cols='29')
+        //▼salonmenus-05
+        .mykarte-tutorial-section-block
+          .mykarte-tutorial-section-block-subtitle-02
+            .mykarte-tutorial-section-block-subtitle-number
+              |❺
+            .mykarte-tutorial-section-block-subtitle-text
+              |お帰りの際は
+          .mykarte-tutorial-section-block-subtitle-02-note
+              |※複数選択可能
+          .mykarte-tutorial-section-block-questions.mykarte-tutorial-section-block-questions-width-85.mykarte-tutorial-section-block-questions-last
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='salonmenus-05-radio-value01', name='salonmenus-05-radio', type='checkbox')
+                label(for='salonmenus-05-radio-value01')
+                  span
+                    |スタイリング剤をつけて良い
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='salonmenus-05-radio-value02', name='salonmenus-05-radio', type='checkbox')
+                label(for='salonmenus-05-radio-value02')
+                  span
+                    |巻いて欲しい
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='salonmenus-05-radio-value03', name='salonmenus-05-radio', type='checkbox')
+                label(for='salonmenus-05-radio-value03')
+                  span ブローだけで良い
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='salonmenus-05-radio-value04', name='salonmenus-05-radio', type='checkbox')
+                label(for='salonmenus-05-radio-value04')
+                  span スタイリング剤をつけたくない
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='salonmenus-05-radio-value05', name='salonmenus-05-radio', type='checkbox')
+                label(for='salonmenus-05-radio-value05')
+                  span 自然で良い
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='salonmenus-05-radio-value06', name='salonmenus-05-radio', type='checkbox')
+                label(for='salonmenus-05-radio-value06')
+                  span その時による
+      //▼▼▼スタイリングやホームケアについて
+      section.mykarte-tutorial-section
+        .mykarte-tutorial-section-title-wrapper
+          .mykarte-tutorial-section-title-img
+            img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2019/12/icon-dryer.svg')
+          .mykarte-tutorial-section-title
+            |スタイリングや
+            br
+            |ホームケアについて
+        //▼styling-01
+        .mykarte-tutorial-section-block
+                  .mykarte-tutorial-section-block-subtitle
+                      .mykarte-tutorial-section-block-subtitle-number
+                        |❶
+                      .mykarte-tutorial-section-block-subtitle-text
+                        |普段お使いのシャンプーは
+                  .mykarte-tutorial-section-block-questions
+                      textarea.mykarte-tutorial-section-block-questions-textarea(name='styling-01-textarea' placeholder='お使いのシャンプーを入力してください' rows='5' cols='29')
+        //▼styling-02
+        .mykarte-tutorial-section-block
+          .mykarte-tutorial-section-block-subtitle
+            .mykarte-tutorial-section-block-subtitle-number
+              |❷
+            .mykarte-tutorial-section-block-subtitle-text
+              |普段お使いのスタイリング剤やヘアオイルはありますか？
+          .mykarte-tutorial-section-block-questions
+              textarea.mykarte-tutorial-section-block-questions-textarea(name='styling-02-textarea' placeholder='お使いのスタイリング剤・ヘアオイルを入力してください' rows='5' cols='29')
+        //▼styling-03
+        .mykarte-tutorial-section-block
+          .mykarte-tutorial-section-block-subtitle
+            .mykarte-tutorial-section-block-subtitle-number
+              |❸
+            .mykarte-tutorial-section-block-subtitle-text
+              |自宅でスタイリングやヘアセットはしますか？
+          .mykarte-tutorial-section-block-questions.mykarte-tutorial-section-block-questions-width-90
+            .mykarte-tutorial-section-block-questions-input
+              input.checkbox-input(id='styling-03-radio-value01', name='styling-03-radio', type='radio')
+              label(for='styling-03-radio-value01')
+                span
+                  |YES
+            .mykarte-tutorial-section-block-questions-input.questions-margin-top-250.questions-margin-bottom-200
+              input.checkbox-input(id='styling-03-radio-value02', name='styling-03-radio', type='radio')
+              label(for='styling-03-radio-value02')
+                span
+                  |NO  
+            //YESの場合の子要素
+            .mykarte-tutorial-section-block-questions-note
+              |※複数選択可能
+            .mykarte-tutorial-section-block-questions-child
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='styling-03-child-yes-radio-value01', name='styling-03-child-yes-checkbox', type='checkbox')
+                label(for='styling-03-child-yes-radio-value01')
+                  span
+                    |丸いコテアイロンを使います
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='styling-03-child-yes-radio-value02', name='styling-03-child-yes-checkbox', type='checkbox')
+                label(for='styling-03-child-yes-radio-value02')
+                  span
+                    |ストレートアイロンを使います
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='styling-03-child-yes-radio-value03', name='styling-03-child-yes-checkbox', type='checkbox')
+                label(for='styling-03-child-yes-radio-value03')
+                  span
+                    |ブラシを使ってブローをします
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='styling-03-child-yes-radio-value04', name='styling-03-child-yes-checkbox', type='checkbox')
+                label(for='styling-03-child-yes-radio-value04')
+                  span
+                    |カーラーを使います
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='styling-03-child-yes-radio-value05', name='styling-03-child-yes-checkbox', type='checkbox')
+                label(for='styling-03-child-yes-radio-value05')
+                  span
+                    |スタイリング剤をつけます
+            //NOの場合の子要素
+            .mykarte-tutorial-section-block-questions-child-02
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='styling-03-child-no-radio-value01', name='styling-03-child-no-radio', type='radio')
+                label(for='styling-03-child-no-radio-value01')
+                  span
+                    |ブローするくらいです
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='styling-03-child-no-radio-value02', name='styling-03-child-no-radio', type='radio')
+                label(for='styling-03-child-no-radio-value02')
+                  span
+                    |簡単に乾かす程度です
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='styling-03-child-no-radio-value03', name='styling-03-child-no-radio', type='radio')
+                label(for='styling-03-child-no-radio-value03')
+                  span
+                    |特に何もしません
+        //▼styling-04
+        .mykarte-tutorial-section-block
+          .mykarte-tutorial-section-block-subtitle
+            .mykarte-tutorial-section-block-subtitle-number
+              |❹
+            .mykarte-tutorial-section-block-subtitle-text
+              |自宅でのスタイリングで悩みはありますか？
+          .mykarte-tutorial-section-block-questions.mykarte-tutorial-section-block-questions-width-80
+              .mykarte-tutorial-section-block-questions-input
+                input.checkbox-input(id='styling-04-radio-value01', name='styling-04-radio', type='radio')
+                label(for='styling-04-radio-value01')
+                  span
+                    |YES
+              .mykarte-tutorial-section-block-questions-input.questions-margin-top-320
+                input.checkbox-input(id='styling-04-radio-value02', name='styling-04-radio', type='radio')
+                label(for='styling-04-radio-value02')
+                  span
+                    |NO
+              .mykarte-tutorial-section-block-questions-child
+                .mykarte-tutorial-section-block-questions-input
+                  input.checkbox-input(id='styling-04-child-radio-value01', name='styling-04-child-radio', type='radio')
+                  label(for='styling-04-child-radio-value01')
+                    span
+                      |うまくセットできない
+                .mykarte-tutorial-section-block-questions-input
+                  input.checkbox-input(id='styling-04-child-radio-value02', name='styling-04-child-radio', type='radio')
+                  label(for='styling-04-child-radio-value02')
+                    span
+                      |何をしたらいいかわからない
+                .mykarte-tutorial-section-block-questions-input
+                  input.checkbox-input(id='styling-04-child-radio-value03', name='styling-04-child-radio', type='radio')
+                  label(for='styling-04-child-radio-value03')
+                    span
+                      |スタイリングが面倒
+                .mykarte-tutorial-section-block-questions-input
+                  input.checkbox-input(id='styling-04-child-radio-value04', name='styling-04-child-radio', type='radio')
+                  label(for='styling-04-child-radio-value04')
+                    span
+                      |その他
+                textarea.mykarte-tutorial-section-block-questions-textarea(name='styling-04-child-textarea' placeholder='その他、スタイリングでのお悩みをご記入ください' rows='4' cols='29')
+        //▼styling-05
+        .mykarte-tutorial-section-block
+          .mykarte-tutorial-section-block-subtitle
+            .mykarte-tutorial-section-block-subtitle-number
+              |❺
+            .mykarte-tutorial-section-block-subtitle-text
+              |ホームケア用品やスタイリング剤について
+              |ご案内・提案させて頂いた方が良いですか？
+          .mykarte-tutorial-section-block-questions.mykarte-tutorial-section-block-questions-width-80
+                .mykarte-tutorial-section-block-questions-input
+                  input.checkbox-input(id='styling-05-child-radio-value01', name='styling-05-child-radio', type='radio')
+                  label(for='styling-05-child-radio-value01')
+                    span
+                      |教えて欲しいです
+                .mykarte-tutorial-section-block-questions-input
+                  input.checkbox-input(id='styling-05-child-radio-value02', name='styling-05-child-radio', type='radio')
+                  label(for='styling-05-child-radio-value02')
+                    span
+                      |自分で探すので大丈夫です
+                .mykarte-tutorial-section-block-questions-input
+                  input.checkbox-input(id='styling-05-child-radio-value03', name='styling-05-child-radio', type='radio')
+                  label(for='styling-05-child-radio-value03')
+                    span
+                      |その時によります
+                .mykarte-tutorial-section-block-questions-input
+                  input.checkbox-input(id='styling-05-child-radio-value04', name='styling-05-child-radio', type='radio')
+                  label(for='styling-05-child-radio-value04')
+                    span
+                      |どちらともいえない
+        //▼styling-06
+        .mykarte-tutorial-section-block
+          .mykarte-tutorial-section-block-subtitle
+            .mykarte-tutorial-section-block-subtitle-number
+              |❻
+            .mykarte-tutorial-section-block-subtitle-text
+              |１日のうち髪を濡らすタイミングはいつですか？
+          .mykarte-tutorial-section-block-questions.mykarte-tutorial-section-block-questions-width-90.mykarte-tutorial-section-block-questions-last                     
+                .mykarte-tutorial-section-block-questions-input
+                  input.checkbox-input(id='styling-06-child-radio-value01', name='styling-06-child-radio', type='radio')
+                  label(for='styling-06-child-radio-value01')
+                    span
+                      |朝必ず濡らしますor朝風呂派です
+                .mykarte-tutorial-section-block-questions-input
+                  input.checkbox-input(id='styling-06-child-radio-value02', name='styling-06-child-radio', type='radio')
+                  label(for='styling-06-child-radio-value02')
+                    span
+                      |夜風呂派です
+                .mykarte-tutorial-section-block-questions-input
+                  input.checkbox-input(id='styling-06-child-radio-value03', name='styling-06-child-radio', type='radio')
+                  label(for='styling-06-child-radio-value03')
+                    span
+                      |朝も夜も両方髪を濡らします
+      //▼▼▼その他
+      section.mykarte-tutorial-section
+        .mykarte-tutorial-section-title-wrapper
+          .mykarte-tutorial-section-title-img
+              img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2019/12/icon-note-03.svg')
+          .mykarte-tutorial-section-title
+            |その他
+        //▼other-01
+        .mykarte-tutorial-section-block
+                  .mykarte-tutorial-section-block-subtitle
+                      .mykarte-tutorial-section-block-subtitle-number
+                        |❶
+                      .mykarte-tutorial-section-block-subtitle-text
+                        |今までに美容室での失敗談や不快な体験がありましたら教えてください
+                        br
+                  .mykarte-tutorial-section-block-subtitle-02-note|※複数選択可能   
+                  .mykarte-tutorial-section-block-questions.mykarte-tutorial-section-block-questions-width-90
+                        .mykarte-tutorial-section-block-questions-input
+                          input.checkbox-input(id='other-01-checkbox-value01', name='other-01-checkbox', type='checkbox')
+                          label(for='other-01-checkbox-value01')
+                            span
+                              |技術が気に入らなかった
+                        .mykarte-tutorial-section-block-questions-input
+                          input.checkbox-input(id='other-01-checkbox-value02', name='other-01-checkbox', type='checkbox')
+                          label(for='other-01-checkbox-value02')
+                            span
+                              |短く切られすぎた
+                        .mykarte-tutorial-section-block-questions-input
+                          input.checkbox-input(id='other-01-checkbox-value03', name='other-01-checkbox', type='checkbox')
+                          label(for='other-01-checkbox-value03')
+                            span
+                              |パーマがかかりすぎた
+                        .mykarte-tutorial-section-block-questions-input
+                          input.checkbox-input(id='other-01-checkbox-value04', name='other-01-checkbox', type='checkbox')
+                          label(for='other-01-checkbox-value04')
+                            span
+                              |しゃべりかけられるのが嫌だった
+                        .mykarte-tutorial-section-block-questions-input
+                          input.checkbox-input(id='other-01-checkbox-value05', name='other-01-checkbox', type='checkbox')
+                          label(for='other-01-checkbox-value05')
+                            span
+                              |スタッフの匂いが気になった
+                        .mykarte-tutorial-section-block-questions-input
+                          input.checkbox-input(id='other-01-checkbox-value06', name='other-01-checkbox', type='checkbox')
+                          label(for='other-01-checkbox-value06')
+                            span
+                              |その他
+                        .mykarte-tutorial-section-block-questions-input-textarea
+                          textarea.mykarte-tutorial-section-block-questions-textarea(name='other-01-textarea' placeholder='その他、失敗談や不快であった体験をご記入ください' rows='4' cols='29')
+        //▼other-02
+        .mykarte-tutorial-section-block
+                  .mykarte-tutorial-section-block-subtitle
+                      .mykarte-tutorial-section-block-subtitle-number
+                        |❷
+                      .mykarte-tutorial-section-block-subtitle-text
+                        |その他、要望やお悩みなどありましたらご記入ください      
+                  .mykarte-tutorial-section-block-questions.mykarte-tutorial-section-block-questions-last                     
+                    textarea.mykarte-tutorial-section-block-questions-textarea(name='other-02-textarea' placeholder='些細なことでもなんでも構いませんので、ご記入ください' rows='5' cols='29')
+      //▼▼▼submit
+      button.button-tutorial-submit(type='button', onclick="location.href='mykarte-tutorial-02.html'") 次へ
+

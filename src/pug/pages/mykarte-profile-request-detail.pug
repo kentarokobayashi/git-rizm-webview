@@ -1,0 +1,108 @@
+doctype html
+html(lang='jp')
+  head
+    title 髪質：詳細編集
+    link(href='static/css/application.css?'+dateNow rel='stylesheet')
+    meta(name='viewport', content='width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    meta(charset='UTF-8')
+    meta(name='robots', content='noindex,nofollow')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js')
+    script(src='//jpostal-1006.appspot.com/jquery.jpostal.js', type='text/javascript')
+  body.bg-gray-lightest(data-action='tutorial', data-controller='ken')
+      form
+        .mykarte-tutorial-wrapper-01
+          //詳細ページはmykarte-tutorial-section-detailで必ず囲む
+          .mykarte-tutorial-section-detail
+            .mykarte-tutorial-section-block
+              .mykarte-tutorial-section-block-subtitle
+                .mykarte-tutorial-section-block-subtitle-number
+                  |❸
+                .mykarte-tutorial-section-block-subtitle-text
+                  |自宅でスタイリングや
+                  br
+                  |ヘアセットはしますか？
+              .mykarte-tutorial-section-block-questions.mykarte-tutorial-section-block-questions-width-85
+                .mykarte-tutorial-section-block-questions-input
+                  input.checkbox-input(id='styling-03-radio-value01', name='styling-03-radio', type='radio')
+                  label(for='styling-03-radio-value01')
+                    span
+                      |YES
+                .mykarte-tutorial-section-block-questions-input.questions-margin-top-250.questions-margin-bottom-200
+                  input.checkbox-input(id='styling-03-radio-value02', name='styling-03-radio', type='radio')
+                  label(for='styling-03-radio-value02')
+                    span
+                      |NO  
+                //YESの場合の子要素
+                .mykarte-tutorial-section-block-questions-note
+                  |※複数選択可能
+                .mykarte-tutorial-section-block-questions-child
+                  .mykarte-tutorial-section-block-questions-input
+                    input.checkbox-input(id='styling-03-child-yes-radio-value01', name='styling-03-child-yes-checkbox', type='checkbox')
+                    label(for='styling-03-child-yes-radio-value01')
+                      span
+                        |丸いコテアイロンを使います
+                  .mykarte-tutorial-section-block-questions-input
+                    input.checkbox-input(id='styling-03-child-yes-radio-value02', name='styling-03-child-yes-checkbox', type='checkbox')
+                    label(for='styling-03-child-yes-radio-value02')
+                      span
+                        |ストレートアイロンを使います
+                  .mykarte-tutorial-section-block-questions-input
+                    input.checkbox-input(id='styling-03-child-yes-radio-value03', name='styling-03-child-yes-checkbox', type='checkbox')
+                    label(for='styling-03-child-yes-radio-value03')
+                      span
+                        |ブラシを使ってブローをします
+                  .mykarte-tutorial-section-block-questions-input
+                    input.checkbox-input(id='styling-03-child-yes-radio-value04', name='styling-03-child-yes-checkbox', type='checkbox')
+                    label(for='styling-03-child-yes-radio-value04')
+                      span
+                        |カーラーを使います
+                  .mykarte-tutorial-section-block-questions-input
+                    input.checkbox-input(id='styling-03-child-yes-radio-value05', name='styling-03-child-yes-checkbox', type='checkbox')
+                    label(for='styling-03-child-yes-radio-value05')
+                      span
+                        |スタイリング剤をつけます
+                //NOの場合の子要素
+                .mykarte-tutorial-section-block-questions-child-02
+                  .mykarte-tutorial-section-block-questions-input
+                    input.checkbox-input(id='styling-03-child-no-radio-value01', name='styling-03-child-no-radio', type='radio')
+                    label(for='styling-03-child-no-radio-value01')
+                      span
+                        |ブローするくらいです
+                  .mykarte-tutorial-section-block-questions-input
+                    input.checkbox-input(id='styling-03-child-no-radio-value02', name='styling-03-child-no-radio', type='radio')
+                    label(for='styling-03-child-no-radio-value02')
+                      span
+                        |簡単に乾かす程度です
+                  .mykarte-tutorial-section-block-questions-input
+                    input.checkbox-input(id='styling-03-child-no-radio-value03', name='styling-03-child-no-radio', type='radio')
+                    label(for='styling-03-child-no-radio-value03')
+                      span
+                        |特に何もしません
+            //.mykarte-tutorial-section-block
+                    .mykarte-tutorial-section-block-subtitle
+                      .mykarte-tutorial-section-block-subtitle-number
+                        | ❶
+                      .mykarte-tutorial-section-block-subtitle-text
+                        | サロンで過ごす時間は
+                    .mykarte-tutorial-section-block-questions.mykarte-tutorial-section-block-questions-width-80
+                        .mykarte-tutorial-section-block-questions-input
+                          input.checkbox-input(id='service-01-radio-value01', name='service-01-radio', type='radio')
+                          label(for='service-01-radio-value01')
+                            span
+                              | できるだけ早くしたい
+                        .mykarte-tutorial-section-block-questions-input
+                          input.checkbox-input(id='service-01-radio-value02', name='service-01-radio', type='radio', checked)
+                          label(for='service-01-radio-value02')
+                            span
+                              | ゆっくりくつろぎたい
+                        .mykarte-tutorial-section-block-questions-input
+                          input.checkbox-input(id='service-01-radio-value03', name='service-01-radio', type='radio')
+                          label(for='service-01-radio-value03')
+                            span 普通で良い
+                        .mykarte-tutorial-section-block-questions-input
+                          input.checkbox-input(id='service-01-radio-value04', name='service-01-radio', type='radio')
+                          label(for='service-01-radio-value04')
+                            span その時による
+            //▼▼▼submit
+            //onclickはあくまで確認用の設定、実際は取ってOK
+            button.button-tutorial-submit.button-tutorial-submit-active(type='button', onclick="location.href='mykarte-profile-request.html'") 保存

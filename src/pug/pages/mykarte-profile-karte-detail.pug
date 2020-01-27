@@ -1,0 +1,198 @@
+mixin suteki-button
+                //love-button-wrapper配下が全てステキボタン
+                //挙動はsuteki.jsに定義。アニメーションはscssで定義。
+                .love-button-wrapper
+                      .love-button-area
+                          .love-button.like
+                            .love-button-heart
+                              .mask(style='background:#aaa; display:flex;   align-items: flex-end;\
+                              justify-content: center;')
+                                .mask-color(style='background:linear-gradient(-60deg,#E6417A 0%,#FF595B 100%) ; height:0%; width:100%;')
+                              // ハートのsvgくり抜き
+                              svg.shape(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewBox='0 0 30 25', xml:space='preserve')
+                                clippath#svgPath
+                                  path.st0(d='M16.3,0C12.6,0,11,2.7,11,2.7S9.5,0,5.7,0C2.6,0,0,2.7,0,5.9C0,13.1,11,19,11,19s11-5.9,11-13.1\
+                                  C22,2.7,19.4,0,16.3,0z')
+                          // ハートのsvgたち
+                          .suteki-counter(style='opacity:0;')
+                            span.suteki-counter-plus +
+                            span.suteki-counter-number 0
+                            .suteki-counter-bg
+                          .flush-heart
+                            svg.h.h-1(height='40', width='40', viewBox='0 0 320 320')
+                              path.path(d='M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90')
+                              defs
+                                lineargradient#MyGradient(gradientTransform='rotate(-60)')
+                                  stop(offset='0%', stop-color='#FF595B')
+                                  stop(offset='100%', stop-color='#E6417A')
+                            svg.h.h-2(height='40', width='40', viewBox='0 0 320 320')
+                              path.path(d='M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90')
+                              defs
+                                lineargradient#Gradient(gradientTransform='rotate(-60)')
+                                  | >
+                                  stop(offset='0%', stop-color='#fe8386')
+                                  stop(offset='100%', stop-color='#ec719c')
+                            svg.h.h-3(height='40', width='40', viewBox='0 0 320 320')
+                              path.path(d='M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90')
+                            svg.h.h-4(height='40', width='40', viewBox='0 0 320 320')
+                              path.path(d='M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90')
+                            svg.h.h-5(height='40', width='40', viewBox='0 0 320 320')
+                              path.path(d='M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90')
+                            svg.h.h-6(height='40', width='40', viewBox='0 0 320 320')
+                              path.path(d='M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90')
+                            svg.h.h-7(height='40', width='40', viewBox='0 0 320 320')
+                              path.path(d='M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90')
+                            svg.h.h-8(height='40', width='40', viewBox='0 0 320 320')
+                              path.path(d='M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90')
+                          .love-button-area-bg
+doctype html
+html(lang='jp')
+  head
+    title カルテ詳細
+    link(href='static/css/application.css?'+dateNow rel='stylesheet')
+    meta(name='viewport', content='width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    meta(charset='UTF-8')
+    meta(name='robots', content='noindex,nofollow')
+    //script(src='https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js')
+    script(src='//jpostal-1006.appspot.com/jquery.jpostal.js', type='text/javascript')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
+  body.bg-gray-lightest(data-action='tutorial', data-controller='ken')
+    .karte-detail
+        .custmer-area
+          //karte-detail-photo-area
+          .karte-detail-photomenu
+            .karte-detail-photo-area
+              .karte-detail-photo-area-main-photo
+                .karte-detail-photo-area-main-photo-img
+                  //画像が１枚もないときは下記のサムネイルを使ってください
+                  //画像は勝手に指定比率に切り抜かれる
+                  //img(src='https://stekina.com/wp-content/uploads/53653b3dbeaca5b9888b99bbc6f2bb54.png')
+                  //img(src='https://limeapp.s3.amazonaws.com/review/review_photo/1404/38d4c63d-7937-4474-b715-04cff8c0554a')
+                  //img(src='https://limeapp.s3.amazonaws.com/review/review_photo/1526/ca1ecb60-587c-40ad-a1b4-fe4d381c63b4')
+                  //img(src='https://limeapp.s3.amazonaws.com/review/review_photo/1516/3bd093c1-5a1d-47b4-8b1f-3ca6073c43bf')
+                  img(src='https://limeapp.s3.amazonaws.com/review/review_photo/518/7f3bafc9-cc52-4cd0-92b2-088856091cad')
+                +suteki-button
+                //.karte-detail-photo-area-main-photo-suteki.karte-detail-photo-area-main-photo-suteki-large
+                  a(href='#')
+                    img(src='https://stekina.com/wp-content/uploads/suteki-gray.svg')
+                  .karte-detail-photo-area-main-photo-suteki-bg
+              .karte-detail-photo-area-main-thumnail
+                //アクティブ状態の時はactiveというクラスをつける
+                //img画像は勝手に指定比率に切り抜かれる
+                li.active
+                  a(href='#')
+                    img(src='https://limeapp.s3.amazonaws.com/review/review_photo/518/7f3bafc9-cc52-4cd0-92b2-088856091cad')
+                li
+                  a(href='#')
+                    img(src='https://limeapp.s3.amazonaws.com/review/review_photo/518/4ada40c2-7fdc-43b7-908e-6df3b454537d')
+                li
+                  a(href='#')
+                    img(src='https://limeapp.s3.amazonaws.com/review/review_photo/518/80810da1-da89-42a6-ac08-eb0c7177cc88')
+                li
+                  a(href='#')
+                    img(src='https://limeapp.s3.amazonaws.com/review/review_photo/518/e25b5bcf-ad2b-4746-a9e6-21262265189e')
+                li
+                  a(href='#')
+                    img(src='https://stekina.com/wp-content/uploads/57e73fcda0b4d9bf4b255b1a525ea9b9.png')              
+                //karte-detail-menu-area
+            .karte-detail-menu-area
+                .karte-detail-menu-area-message-title
+                    .karte-detail-menu-area-message-title-center
+                      |メニュー
+                .karte-detail-menu-area-menu
+                  .karte-detail-menu-area-menu-box
+                    .karte-detail-menu-area-menu-title
+                      |●カラー
+                    .karte-detail-menu-area-menu-price
+                      |5000円
+                  .karte-detail-menu-area-menu-box
+                    .karte-detail-menu-area-menu-title
+                      |●カット
+                    .karte-detail-menu-area-menu-price
+                      |3000円
+                  .karte-detail-menu-area-menu-box
+                    .karte-detail-menu-area-menu-title
+                      |●ストレートパーマ
+                    .karte-detail-menu-area-menu-price
+                      |13000円
+                  .karte-detail-menu-area-menu-box
+                    .karte-detail-menu-area-menu-title-total|お支払い金額   
+                    .karte-detail-menu-area-menu-price-total|999999円           
+          //karte-detail-message-area
+          .karte-detail-message-area 
+              .karte-detail-menu-area-message
+                .karte-detail-menu-area-message-title
+                        .karte-detail-menu-area-message-title-center
+                                      |担当者からのメッセージ
+                .karte-detail-menu-area-message-message
+                  .karte-detail-menu-area-message-message-text
+                    
+                      |ブリーチカラーなので、今日はシャンプー我慢してくださいね！
+                      br
+                      |パサつきやすいので、オイルがオススメです✨😊
+                      br
+                      a(href="http://search.rakuten.co.jp/search/mall/%E3%83%98%")
+                       |http://search.rakuten.co.jp/search/mall/%E3%83%98%
+                      br
+                      br
+                      |色が落ちて来たら紫シャンプーを使ってみてください！
+                      a(href="http://search.rakuten.co.jp/search/mall/%E3%83%98%")
+                            |http://search.rakuten.co.jp/search/mall/%E3%83%98%
+                      br
+                      br
+                      br
+                      |本日はありがとうございました！
+
+                  .karte-detail-photo-area-main-photo-suteki.karte-detail-photo-area-main-photo-suteki-small
+                    +suteki-button
+              button.karte-detail-menu-area-btn
+                .karte-detail-menu-area-btn-icon
+                    img(src='https://stekina.com/wp-content/uploads/icn-edit-pencil.png')   
+                .karte-detail-menu-area-btn-text|レビューを書いて応援する
+              .karte-detail-message-area-note
+                //担当美容師さんの名前が入る
+                |XXXXさんへのお礼メッセージや
+                br
+                |オススメコメントを投稿しよう！
+        .private-area
+          .karte-detail-photo-area
+            .karte-detail-photo-area-title
+               |プライベートエリア
+            .karte-detail-photo-area-note
+               |プライベートエリアに保存した内容は
+               br
+               |担当者や外部には共有されません。               
+            .karte-detail-photo-area-main-photo
+              .karte-detail-photo-area-main-photo-img
+                //img(src='https://limeapp.s3.amazonaws.com/review/review_photo/518/7f3bafc9-cc52-4cd0-92b2-088856091cad')
+                
+                img(src='https://stekina.com/wp-content/uploads/carte_place_2.png')
+            .karte-detail-photo-area-main-thumnail
+              li.karte-detail-photo-area-main-thumnail-plus
+                a(href='#')         
+              li
+                a(href='#')
+                  img(src='https://stekina.com/wp-content/uploads/57e73fcda0b4d9bf4b255b1a525ea9b9.png')  
+              li.active
+                a(href='#')
+                  img(src='https://stekina.com/wp-content/uploads/57e73fcda0b4d9bf4b255b1a525ea9b9.png')  
+              li
+                a(href='#')
+                  img(src='https://stekina.com/wp-content/uploads/57e73fcda0b4d9bf4b255b1a525ea9b9.png')  
+              li
+                a(href='#')
+                  img(src='https://stekina.com/wp-content/uploads/57e73fcda0b4d9bf4b255b1a525ea9b9.png')  
+            .karte-detail-menu-area-message
+                .karte-detail-menu-area-message-title
+                   .karte-detail-menu-area-message-title-left
+                   .karte-detail-menu-area-message-title-center
+                     |My Memo
+                   .karte-detail-menu-area-message-title-right
+                     button
+                       |編集
+                .karte-detail-menu-area-message-message
+                    .karte-detail-menu-area-message-message-text
+                    .karte-detail-menu-area-message-message-suteki
+                    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+                    script(src='static/js/suteki.js')

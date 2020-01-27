@@ -1,0 +1,779 @@
+/* iphone5用サムネイル */
+
+.pages-index {
+    .review-card-thumbnail {
+        @include mq-down(iphone5) {
+            height: 210px !important;
+        }
+        .review-card-thumbnail-left {
+            img {
+                @include mq-down(iphone5) {
+                    height: 210px !important;
+                }
+            }
+        }
+        .review-card-thumbnail-right {
+            .review-card-thumbnail-right-thm {
+                @include mq-down(iphone5) {
+                    height: 105px !important;
+                }
+                img {
+                    @include mq-down(iphone5) {
+                        height: 105px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.review-card {
+    @import url("https://fonts.googleapis.com/css?family=M+PLUS+1p:400,700&display=swap");
+    font-family: "M PLUS 1p", sans-serif !important;
+    margin: 0 0 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.15), 0 0 4px 0 rgba(0, 0, 0, 0.15);
+    div {
+        font-family: "M PLUS 1p", sans-serif !important;
+    }
+    .review-card-header {
+        display: flex;
+        padding: 7px 10px 7px;
+        margin: 0 0 0px;
+    }
+    .review-card-header-stylist {
+        display: flex;
+        padding: 10px 10px 0px;
+        margin: 0 0 0px;
+    }
+    .review-card-header-title-tag-img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 48px;
+        height: auto;
+        img {
+            width: 100%;
+            width: 48px;
+        }
+    }
+    .review-card-header-title-tag {
+        color: white;
+        display: inline-block;
+        padding: 4px 0px;
+        font-size: 10px;
+        align-self: center;
+        border-radius: 0px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 48px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-family: "M PLUS 1p", sans-serif !important;
+    }
+    .review-card-header-thumbnail {
+        position: relative;
+        text-align: center;
+        img {
+            max-width: 40px;
+            max-height: 40px;
+            border-radius: 100px;
+            display: inline-block;
+        }
+    }
+    .review-card-header-thumbnail-hairstylist {
+        position: relative;
+        width: 72px;
+        height: 51px;
+        text-align: center;
+        margin: 0 0 0 0px;
+        text-align: center;
+        .review-card-header-thumbnail-hairstylist-img {
+            img {
+                max-width: 28px;
+                max-height: 28px;
+                border-radius: 100px;
+                display: inline-block;
+            }
+        }
+    }
+
+    .recommend-card-header-thumbnail {
+      position: relative;
+        width: 55px;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        img {
+          max-width: 40px;
+          max-height: 40px;
+          border-radius: 100px;
+        }
+
+        .recommend-card-header-title-tag {
+          text-align: center;
+          position: absolute;
+          top: 36px;
+          color: white;
+          display: block;
+          padding: 4px 5px;
+          font-size: 10px;
+          align-self: center;
+          border-radius: 1px;
+          @include u-bold();
+          @include mq-down(iphone5) {
+            font-size: 9px;
+            letter-spacing: -0.5px;
+          }
+        }
+    }
+    .review-card-thumbnail {
+        position: relative;
+        display: flex;
+        height: 250px;
+        margin: 0 0 10px;
+        width: 100%;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+        &:hover {
+            opacity: 0.9;
+        }
+        .review-card-thumbnail-left {
+            flex: 1;
+            img {
+                object-fit: cover;
+                height: 250px;
+                width: 100%;
+            }
+        }
+        .review-card-thumbnail-right {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            .review-card-thumbnail-right-thm {
+                width: 50%;
+                height: 125px;
+                img {
+                    object-fit: cover;
+                    height: 125px;
+                    width: 100%;
+                    padding: 1px;
+                }
+            }
+        }
+        .all a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-indent: -999px;
+        }
+    }
+    .review-card-header-title {
+        width: 80%;
+        align-self: center;
+        display: flex;
+        padding: 0 0 0 9px;
+        .review-card-header-title-name {
+            @include font-size-s;
+            color: $cl-gray;
+            // font-weight: bold;
+            display: inline-block;
+            align-self: center;
+            // margin: 0 8px 0 8px;
+            // letter-spacing: 1px;
+            // font-family: "M PLUS 1p", sans-serif !important;
+            white-space: nowrap
+        }
+
+        .recommend-card-header-title-salon-name {
+          @include font-size-ss;
+          color: $cl-gray-light;
+          margin: 3px 0 0 0px;
+          align-self: center;
+        }
+    }
+    .review-card-date {
+        font-size: 9px;
+        font-family: "Lato", sans-serif;
+        color: #b3b3b3;
+    }
+    .review-card-contents {
+        padding: 5px 15px;
+    }
+    .review-card-contents-bunsho {
+        @include font-size-s;
+        color: $cl-gray;
+        line-height: 1.5;
+    }
+    .review-card-contents-bunsho-readmore {
+        color: $cl-lime;
+        @include font-size-s;
+        text-decoration: none;
+        margin: 10px 0 0;
+        a {
+            color: $cl-lime;
+            text-decoration: none;
+        }
+    }
+}
+
+.review-card-articleinfo {
+    margin: 0 0 15px;
+}
+
+.review-card-compact-articleinfo {
+    position: absolute;
+    bottom: 25px;
+    left: 15px;
+}
+
+.c-tag-review-small {
+    margin: 10px 0 0;
+}
+
+.all a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-indent: -999px;
+    z-index: 9998;
+}
+
+.review-card-articleinfo {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+}
+
+.love-button-count {
+    margin: 8px 0 0px 10px;
+    color: #b3b3b3;
+}
+
+.love-button {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    margin: 0 0 0px;
+}
+
+.love-button-heart {
+    cursor: pointer;
+    padding: 8px 8px 4px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 0 15px;
+    color: #aaa;
+    transition: 0.2s;
+}
+
+.love-button-heart:hover {
+    color: #666;
+}
+
+.love-button-heart.press {
+    animation: size 0.4s;
+    color: #e23b3b;
+}
+
+@keyframes size {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#review-section div:last-of-type {
+    margin-bottom: 0;
+    /* 素敵なクチコミセクションの下の「素敵なクチコミ一覧」が遠かったので追加 */
+}
+
+.steki-scale .love-button-heart {
+    background: linear-gradient(-60deg, #e6417a 0%, #ff595b 100%) !important;
+    animation-name: scale;
+    animation-duration: 0.4s;
+}
+
+.love-button {
+    cursor: pointer;
+    z-index: 999;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 1;
+    transform: scale(0.9);
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    color: #aaa;
+    transition: 0.2s;
+    position: relative;
+    box-shadow: 0 0px 12px 1.5px rgba(0, 0, 0, 0.1);
+}
+
+.review-card-compact-articleinfo .love-button {
+    z-index: 9999999999;
+}
+
+.review-card-compact-articleinfo .love-button-area {
+    transform: scale(0.88);
+    transform-origin: left bottom 0;
+}
+
+.love-button-count {
+    margin: 0 0 0px 5px;
+    color: #b3b3b3;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.love-button-heart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    padding: 12px 12px 6px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 0 15px;
+    color: #aaa;
+    transition: 0.2s;
+}
+
+.love-button-heart:hover {
+    color: #666;
+}
+
+.love-button-heart.press {
+    animation: size 0.4s;
+    color: #e23b3b;
+}
+
+.mask {
+    -webkit-clip-path: url(#svgPath);
+    clip-path: url(#svgPath);
+    width: 23px;
+    height: 19px;
+    transform: scale(1.1);
+    margin: 3px 0 0;
+    background: #aaa;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.mask-color {
+    background: linear-gradient(-60deg, #e6417a 0%, #ff595b 100%);
+    height: 0%;
+    width: 100%;
+    &.max {
+        background: white;
+    }
+}
+
+.suteki-counter {
+    position: absolute;
+    top: -20px;
+    left: 40px;
+    z-index: 9999;
+    font-family: "Josefin Sans", sans-serif !important;
+    color: #ff595b;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 0;
+}
+
+.suteki-counter .suteki-counter-plus {
+    font-size: 16px;
+    margin: 0 3px 0 0;
+}
+
+.suteki-counter .suteki-counter-number {
+    font-size: 20px;
+}
+
+.suteki-scale {
+    background: linear-gradient(-60deg, #e6417a 0%, #ff595b 100%) !important;
+    animation-name: scale;
+    animation-duration: 0.4s;
+}
+
+.love-button-area {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 45px 0 0 -6px;
+    position: relative;
+}
+
+
+/* small animation hearts */
+
+svg.fly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: #ff595b;
+}
+
+svg.h {
+    position: absolute;
+    z-index: 8;
+    top: 7px;
+    left: 5px;
+    width: 34px;
+    height: 34px;
+}
+
+svg.h.h-1,
+svg.h.h-2,
+svg.h.h-3,
+svg.h.h-4 {
+    transform: scale(1.5);
+    fill: url(#MyGradient);
+}
+
+svg.h.h-5,
+svg.h.h-6,
+svg.h.h-7,
+svg.h.h-8 {
+    transform: scale(1.5);
+    fill: url(#Gradient);
+}
+
+.flush-heart {
+    position: absolute;
+    top: -2px;
+    left: 1px;
+}
+
+.liked .flush-heart {
+    opacity: 1 !important;
+}
+
+.liked svg.fly.fly-1 {
+    animation: fly-1 1s 0.1s;
+}
+
+.liked svg.fly.fly-2 {
+    animation: fly-2 1s 0.1s;
+}
+
+.liked svg.h {
+    transition: margin cubic-bezier(0.165, 0.84, 0.44, 1) 0.9s, transform 0.2s 1s, fill 0.2s 1s, opacity 0.3s 0.7s;
+    opacity: 0;
+}
+
+.liked svg.h.h-1,
+.liked svg.h.h-2,
+.liked svg.h.h-3,
+.liked svg.h.h-4 {
+    transform: scale(1.5);
+}
+
+.liked svg.h.h-5,
+.liked svg.h.h-6,
+.liked svg.h.h-7,
+.liked svg.h.h-8 {
+    transform: scale(1.5);
+}
+
+.liked svg.h.h-1 {
+    margin-top: -200px;
+}
+
+.liked svg.h.h-2 {
+    margin-left: 200px;
+}
+
+.liked svg.h.h-3 {
+    margin-top: 200px;
+}
+
+.liked svg.h.h-4 {
+    margin-left: -200px;
+}
+
+.liked svg.h.h-5 {
+    margin-top: -140px;
+    margin-left: 140px;
+}
+
+.liked svg.h.h-6 {
+    margin-top: 140px;
+    margin-left: 140px;
+}
+
+.liked svg.h.h-7 {
+    margin-top: -140px;
+    margin-left: -140px;
+}
+
+.liked svg.h.h-8 {
+    margin-top: 140px;
+    margin-left: -140px;
+}
+
+.liked div.dot {
+    opacity: 0;
+    transform: translateY(-100px);
+    background: #00e5ff;
+    transition: transform 1s, opacity 0.5s 1s, background 0.1s 0.2s;
+}
+
+.liked div.dot:after {
+    display: block;
+}
+
+.liked div.dot.dot-2 {
+    transform: rotate(45deg) translateY(-100px);
+}
+
+.liked div.dot.dot-3 {
+    transform: rotate(90deg) translateY(-100px);
+}
+
+.liked div.dot.dot-4 {
+    transform: rotate(135deg) translateY(-100px);
+}
+
+.liked div.dot.dot-5 {
+    transform: rotate(180deg) translateY(-100px);
+}
+
+.liked div.dot.dot-6 {
+    transform: rotate(225deg) translateY(-100px);
+}
+
+.liked div.dot.dot-7 {
+    transform: rotate(270deg) translateY(-100px);
+}
+
+.liked div.dot.dot-8 {
+    transform: rotate(305deg) translateY(-100px);
+}
+
+
+/* heart animation */
+
+@keyframes blink {
+    10% {
+        transform: scale(0.42);
+        background: #8815b7;
+    }
+    100% {
+        background: #e01f4f;
+    }
+}
+
+@keyframes fly-1 {
+    25% {
+        margin: -100px 0 0 100px;
+    }
+    75% {
+        margin: 100px 0 0 -100px;
+        z-index: 5;
+    }
+    100% {
+        z-index: 11;
+    }
+}
+
+@keyframes fly-2 {
+    25% {
+        margin: -100px 0 0 -100px;
+    }
+    75% {
+        margin: 100px 0 0 100px;
+        z-index: 5;
+    }
+    100% {
+        z-index: 11;
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1) translate(0, 0);
+    }
+    50% {
+        transform: scale(1.3) translate(0, 0px);
+    }
+    100% {
+        transform: scale(1) translate(0, 0);
+    }
+}
+
+
+/* small animation hearts */
+
+svg.fly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: #ff595b;
+}
+
+svg.h {
+    position: absolute;
+    z-index: 8;
+    top: 7px;
+    left: 5px;
+    width: 34px;
+    height: 34px;
+    &.h-1,
+    &.h-2,
+    &.h-3,
+    &.h-4 {
+        transform: scale(1.5);
+        fill: url(#MyGradient);
+    }
+    &.h-5,
+    &.h-6,
+    &.h-7,
+    &.h-8 {
+        transform: scale(1.5);
+        fill: url(#Gradient);
+    }
+}
+
+.love-button-area {
+    .flush-heart {
+        opacity: 0;
+        //z-index:9999;
+    }
+    &.liked {
+        .flush-heart.target {
+            opacity: 1;
+        }
+        svg.fly {
+            &.fly-1 {
+                animation: fly-1 1s 0.1s;
+            }
+            &.fly-2 {
+                animation: fly-2 1s 0.1s;
+            }
+        }
+        svg.h {
+            transition: margin cubic-bezier(0.165, 0.84, 0.44, 1) 0.9s, transform 0.2s 1s, fill 0.2s 1s, opacity 0.3s 0.7s;
+            opacity: 0;
+            &.h-1,
+            &.h-2,
+            &.h-3,
+            &.h-4 {
+                transform: scale(1.5);
+            }
+            &.h-5,
+            &.h-6,
+            &.h-7,
+            &.h-8 {
+                transform: scale(1.5);
+            }
+            &.h-1 {
+                margin-top: -200px;
+            }
+            &.h-2 {
+                margin-left: 200px;
+            }
+            &.h-3 {
+                margin-top: 200px;
+            }
+            &.h-4 {
+                margin-left: -200px;
+            }
+            &.h-5 {
+                margin-top: -140px;
+                margin-left: 140px;
+            }
+            &.h-6 {
+                margin-top: 140px;
+                margin-left: 140px;
+            }
+            &.h-7 {
+                margin-top: -140px;
+                margin-left: -140px;
+            }
+            &.h-8 {
+                margin-top: 140px;
+                margin-left: -140px;
+            }
+        }
+        div.dot {
+            opacity: 0;
+            transform: translateY(-100px);
+            background: #00e5ff;
+            transition: transform 1s, opacity 0.5s 1s, background 0.1s 0.2s;
+            &:after {
+                display: block;
+            }
+            &.dot-2 {
+                transform: rotate(45deg) translateY(-100px);
+            }
+            &.dot-3 {
+                transform: rotate(90deg) translateY(-100px);
+            }
+            &.dot-4 {
+                transform: rotate(135deg) translateY(-100px);
+            }
+            &.dot-5 {
+                transform: rotate(180deg) translateY(-100px);
+            }
+            &.dot-6 {
+                transform: rotate(225deg) translateY(-100px);
+            }
+            &.dot-7 {
+                transform: rotate(270deg) translateY(-100px);
+            }
+            &.dot-8 {
+                transform: rotate(305deg) translateY(-100px);
+            }
+        }
+    }
+}
+
+.sutekiscalenormal {
+    animation-name: scale;
+    animation-duration: 0.4s;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1) translate(0, 0);
+    }
+    50% {
+        transform: scale(1.3) translate(0, 0px);
+    }
+    100% {
+        transform: scale(1) translate(0, 0);
+    }
+}
+
+.suteki-scale .mask {
+    background: white !important;
+}

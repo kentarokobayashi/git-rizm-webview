@@ -1,0 +1,129 @@
+.mystylist-columns {
+    padding: 0px 0%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: white;
+    border-bottom: 1.5px solid #ddd;
+    .mystylist-columns-01 {
+        width: 51%;
+        margin: 0 0% 0 0%;
+        display: flex;
+        align-items: center;
+        padding: 18px 0 18px 2%;
+    }
+    .mystylist-columns-02 {
+        width: 17%;
+        margin: 0 1.5% 0 2%;
+    }
+    .mystylist-columns-03 {
+        width: 25.5%;
+    }
+    .mystylist-columns-01 {
+        position: relative;
+        .mystylist-columns-01-link a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-indent: -999px;
+            z-index: 10000;
+            display: block;
+            /* 必要であればリンク要素の重なりのベース順序指定 */
+        }
+        .mystylist-columns-01-profile {
+            width: 33.5%;
+            margin: 0 4.5% 0 0;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 100px;
+            }
+        }
+        .mystylist-columns-01-data {
+            width: 64%;
+            margin: 0 3% 0 0;
+            display: flex;
+            flex-flow: column;
+            .mystylist-columns-01-data-username {
+                font-size: 16.5px;
+                height: 21px;
+                @include mq-down(iphone5) {
+                    font-size: 14.5px;
+                    height: 17px;
+                }
+                letter-spacing: 0.3px;
+                color: $cl-gray-dark;
+                margin: 0 0 9px;
+            }
+            .mystylist-columns-01-data-salonname {
+                color: $cl-gray-light;
+                height: 14px;
+                font-size: 11px;
+                @include mq-down(iphone5) {
+                    font-size: 9px;
+                }
+            }
+        }
+    }
+    .mystylist-columns-02 {
+        color: $cl-lime;
+        text-decoration: none;
+        display: block;
+        button {
+            border: transparent;
+            background: none;
+            padding: 4px 0;
+            color: $cl-lime;
+            padding: 6px 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-flow: column;
+            letter-spacing: 0px;
+            position: relative;
+            font-size: 7px;
+            @include mq-down(iphone5) {
+                font-size: 6.3px;
+            }
+        }
+        img {
+            width: 34px;
+            text-align: center;
+        }
+    }
+    .mystylist-columns-03 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            background: $cl-red;
+            color: white;
+            border-radius: 8px;
+            padding: 13px 0px;
+            border: none;
+            @include tutorial-01-font-size-s;
+            width: 100%;
+            font-size: 14px;
+        }
+    }
+}
+
+.mystylist-add-button {
+    text-align: center;
+    button {
+        margin: 30px auto;
+        width: 59%;
+        background: white;
+        padding: 13px 0;
+        text-align: center;
+        border: 1.5px solid $cl-gray-dark;
+        color: $cl-gray-dark;
+        @include tutorial-01-font-size-m;
+        border-radius: 8px;
+        text-align: center;
+    }
+}

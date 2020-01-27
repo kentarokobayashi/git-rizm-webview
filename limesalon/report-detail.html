@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>サロンの売り上げレポート</title>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/report.css">
+    <link rel="stylesheet" href="https://limesalon.jp/static/css/soda.css?ver=2.1.1">
+</head>
+
+<body>
+    <div class="report-button-navi"><button class="state-default corner-right corner-left">←戻る</button></div>
+    <div class="p-report">
+        <div class="p-reportwrapper">
+            <div class="report-table">
+                <!--SP-限定!! 指定期間の来店顧客データ-->
+                <div class="report-table-tr display-sp">
+                    <div class="report-title-sp">
+                        <div class="staff-img"><img src="https://lh5.googleusercontent.com/-xevmoRrkv7s/AAAAAAAAAAI/AAAAAAAAEZA/nbSSXuNwdBk/photo.jpg" alt="Image"></div>
+                        <div class="staff-name"> <span class="report-bold">古木数馬の売上レポート</span></div>
+                    </div>
+                </div>
+                <div class="report-table-tr u-pc-border-bottom">
+                    <div class="report-table-th-left display-pc">
+                        <!--PC-限定!! 指定期間の来店顧客データ-->
+                        <div class="staff-img"><img src="https://lh5.googleusercontent.com/-xevmoRrkv7s/AAAAAAAAAAI/AAAAAAAAEZA/nbSSXuNwdBk/photo.jpg" alt="Image"></div>
+                        <div class="staff-name"> <span class="report-bold">古木数馬の売上レポート</span></div>
+                    </div>
+                    <div class="report-table-th-center">2017/1/26-2017/2/25</div>
+                    <div class="report-table-th-right">
+                        <div class="report-button"> <a href="#"><i aria-hidden="true" class="fa fa-download"></i>CSVダウンロード</a></div>
+                    </div>
+                </div>
+                <div class="report-table-tr u-border-bottom">
+                    <div class="report-table-td-name">
+                        <div class="display-pc">
+                            全体の売上合計<span class="usu-moji">(技術売上の合計+店販の合計)</span></div>
+                        <div class="display-sp">
+                            全体売上合計<span class="usu-moji">(技術+店販)</span></div>
+                    </div>
+                    <div class="report-table-td-price"> <span class="report-price">16,000,000</span>円</div>
+                </div>
+                <!-- PCの空白-->
+                <div class="report-table-tr u-border-bottom display-pc"></div>
+                <!-- 技術売上-->
+                <div class="report-table-tr u-pc-border-bottom">
+                    <div class="report-table-td-name">
+                        <div class="display-pc">
+                            技術の売上合計<span class="usu-moji">(指名売上+フリー売上)</span></div>
+                        <div class="display-sp">
+                            技術売上<span class="usu-moji">(指名+フリー)</span></div>
+                    </div>
+                    <div class="report-table-td-price"> <span class="report-price">11,600,000</span>円</div>
+                </div>
+                <!-- 技術の平均単価-->
+                <div class="report-table-tr u-pc-border-bottom">
+                    <div class="report-table-td-name">
+                        <div class="display-pc">
+                            技術の平均単価</div>
+                        <div class="display-sp">
+                            平均単価</div>
+                    </div>
+                    <div class="report-table-td-price"> <span class="report-price">11,600</span>円</div>
+                </div>
+                <!-- 技術の来店人数-->
+                <div class="report-table-tr u-border-bottom">
+                    <div class="report-table-td-name">
+                        <div class="display-pc">
+                            技術の来店人数</div>
+                        <div class="display-sp">
+                            来店人数</div>
+                    </div>
+                    <div class="report-table-td-price"> <span class="report-price">136</span>人</div>
+                </div>
+                <div class="report-table-tr u-border-bottom display-pc"></div>
+                <!-- 指名売上-->
+                <div class="report-table-tr u-pc-border-bottom">
+                    <div class="report-table-td-name">
+                        指名売上</div>
+                    <div class="report-table-td-price"> <span class="report-price">16,000</span>円</div>
+                </div>
+                <!-- 指名の平均単価-->
+                <div class="report-table-tr u-pc-border-bottom">
+                    <div class="report-table-td-name">
+                        <div class="display-pc">
+                            指名の平均単価</div>
+                        <div class="display-sp">
+                            平均単価</div>
+                    </div>
+                    <div class="report-table-td-price"> <span class="report-price">10,600</span>円</div>
+                </div>
+                <!-- 指名の来店人数-->
+                <div class="report-table-tr u-border-bottom">
+                    <div class="report-table-td-name">
+                        <div class="display-pc">
+                            指名の来店人数</div>
+                        <div class="display-sp">
+                            来店人数</div>
+                    </div>
+                    <div class="report-table-td-price"> <span class="report-price">1,600</span>人</div>
+                </div>
+                <!-- PCの空白-->
+                <div class="report-table-tr u-border-bottom display-pc"></div>
+                <!-- 指名-->
+                <div class="report-table-tr u-pc-border-bottom">
+                    <div class="report-table-td-name">
+                        フリー売上</div>
+                    <div class="report-table-td-price"> <span class="report-price">11,600,000</span>円</div>
+                </div>
+                <!-- フリーの平均単価-->
+                <div class="report-table-tr u-pc-border-bottom">
+                    <div class="report-table-td-name">
+                        <div class="display-pc">
+                            フリーの平均単価</div>
+                        <div class="display-sp">
+                            平均単価</div>
+                    </div>
+                    <div class="report-table-td-price"> <span class="report-price">60,000</span>円</div>
+                </div>
+                <!-- フリーの来店人数-->
+                <div class="report-table-tr u-border-bottom">
+                    <div class="report-table-td-name">
+                        <div class="display-pc">
+                            フリーの来店人数</div>
+                        <div class="display-sp">
+                            来店人数</div>
+                    </div>
+                    <div class="report-table-td-price"> <span class="report-price">6,000</span>人</div>
+                </div>
+                <!-- PCの空白-->
+                <div class="report-table-tr u-border-bottom display-pc"></div>
+                <!-- 店販売上の合計-->
+                <div class="report-table-tr u-pc-border-bottom">
+                    <div class="report-table-td-name">
+                        <div class="display-pc">
+                            店販売上の合計</div>
+                        <div class="display-sp">
+                            店販売上</div>
+                    </div>
+                    <div class="report-table-td-price"> <span class="report-price">11,600,000</span>円</div>
+                </div>
+                <!-- 店販の平均単価-->
+                <div class="report-table-tr u-pc-border-bottom">
+                    <div class="report-table-td-name">
+                        <div class="display-pc">
+                            店販の平均単価</div>
+                        <div class="display-sp">
+                            平均単価</div>
+                    </div>
+                    <div class="report-table-td-price"> <span class="report-price">60,000</span>円</div>
+                </div>
+                <!-- 店販の販売個数-->
+                <div class="report-table-tr">
+                    <div class="report-table-td-name">
+                        <div class="display-pc">
+                            店販の販売個数</div>
+                        <div class="display-sp">
+                            販売個数</div>
+                    </div>
+                    <div class="report-table-td-price"> <span class="report-price">6,000</span>個</div>
+                </div>
+            </div>
+        </div>
+        <div class="p-reportwrapper p-report-detail">
+            <div class="p-report-table">
+                <!--SP-限定!! 指定期間の来店顧客データ-->
+                <div class="report-table-tr display-sp">
+                    <div class="report-title-sp">
+                        <div class="staff-name"> <span class="report-bold">指定期間の来店顧客データ</span></div>
+                    </div>
+                </div>
+                <div class="report-table-tr u-border-bottom">
+                    <div class="report-table-th-left display-pc">
+                        <!--PC-限定!! 指定期間の来店顧客データ-->
+                        <div class="staff-name"> <span class="report-bold">指定期間の来店顧客データ</span></div>
+                    </div>
+                    <div class="report-table-th-center">2017/1/26-2017/2/25</div>
+                    <div class="report-table-th-right">
+                        <div class="report-button"> <a href="#"><i aria-hidden="true" class="fa fa-download"></i>CSVダウンロード</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--PC-限定!! 指定期間の来店顧客データ       -->
+            <table class="display-pc p-report-table-pc">
+                <tr>
+                    <th class="report-table-raiten-th raiten1">お客様名</th>
+                    <th class="report-table-raiten-th raiten2">来店時間</th>
+                    <th class="report-table-raiten-th raiten3">指名</th>
+                    <th class="report-table-raiten-th raiten4">担当者</th>
+                    <th class="report-table-raiten-th raiten5">メニュー</th>
+                    <th class="report-table-raiten-th raiten6">技術・店販の売上</th>
+                    <th class="report-table-raiten-th raiten7">合計売上</th>
+                </tr>
+                <tr>
+                    <td class="report-table-raiten-td">佐々木 ちえ様</td>
+                    <td class="report-table-raiten-td report-table-raiten-td-small">2017/12/25 10:00-12:00</td>
+                    <td class="report-table-raiten-td">指名</td>
+                    <td class="report-table-raiten-td">古木数馬</td>
+                    <td class="report-table-raiten-td report-table-raiten-td-small">カット・カラー・パーマ・トリートメント・ワックス カット・カラー・パーマ・トリートメント・ワックス・トリートメント・ワックス・トリートメント・ワックス </td>
+                    <td class="report-table-raiten-td">
+                        <dl class="sales"><dt>技術 </dt>
+                            <dd> <span class="report-bold">12,600</span>円</dd>
+                        </dl>
+                        <dl class="sales"><dt>店販 <dd> <span class="report-bold">12,600</span>円</dd></dt></dl>
+                    </td>
+                    <td class="report-table-raiten-td goukei"><span class="report-bold">12,600</span>円</td>
+                </tr>
+                <tr>
+                    <td class="report-table-raiten-td">佐々木 ちえ様</td>
+                    <td class="report-table-raiten-td report-table-raiten-td-small">2017/12/25 10:00-12:00</td>
+                    <td class="report-table-raiten-td">フリー</td>
+                    <td class="report-table-raiten-td">古木数馬</td>
+                    <td class="report-table-raiten-td report-table-raiten-td-small">カット・カラー・パーマ・トリートメント・ワックス カット・カラー・パーマ・トリートメント・ワックス </td>
+                    <td class="report-table-raiten-td">
+                        <dl class="sales"><dt>技術 </dt>
+                            <dd> <span class="report-bold">12,600</span>円</dd>
+                        </dl>
+                        <dl class="sales"><dt>店販 </dt>
+                            <dd> <span class="report-bold">12,600</span>円</dd>
+                        </dl>
+                    </td>
+                    <td class="report-table-raiten-td goukei"><span class="report-bold">12,600</span>円</td>
+                </tr>
+                <tr>
+                    <td class="report-table-raiten-td">佐々木 ちえ様</td>
+                    <td class="report-table-raiten-td report-table-raiten-td-small">2017/12/25 10:00-12:00</td>
+                    <td class="report-table-raiten-td">指名</td>
+                    <td class="report-table-raiten-td">古木数馬</td>
+                    <td class="report-table-raiten-td report-table-raiten-td-small">カット・カラー・パーマ・トリートメント・ワックス カット・カラー・パーマ・トリートメント・ワックス </td>
+                    <td class="report-table-raiten-td">
+                        <dl class="sales"><dt>技術 </dt>
+                            <dd> <span class="report-bold">12,600</span>円</dd>
+                        </dl>
+                        <dl class="sales"><dt>店販 <dd> <span class="report-bold">12,600</span>円</dd></dt></dl>
+                    </td>
+                    <td class="report-table-raiten-td goukei"><span class="report-bold">12,600</span>円</td>
+                </tr>
+            </table>
+            <!--SP-限定!! 指定期間の来店顧客データ-->
+            <div class="display-sp">
+                <div class="p-report-customer">
+                    <div class="p-report-customer-name"> <span class="report-bold">佐藤ちえ様</span></div>
+                    <div class="p-report-customer-data"><i aria-hidden="true" class="fa fa-clock-o"></i>2017/12/25 10:00-12:00</div>
+                    <p class="p-report-customer-clear"> </p>
+                    <div class="p-report-customer-staff"> <i aria-hidden="true" class="fa fa-user p-report-customer-staff-label"></i><span class="p-report-customer-staff-label">指名　</span><span class="p-report-customer-staff-name">古木数馬    </span></div>
+                    <!-- ろんくんへ！！ここは色つけられる？？？                    -->
+                    <div class="p-report-customer-menu">
+                        ●カット　●カラー　●パーマ　●トリートメント　●ワックス </div>
+                    <table>
+                        <tr>
+                            <td class="p-report-customer-menu-pname">技術</td>
+                            <td class="p-report-customer-menu-pvalue"><span class="report-bold">12,600</span>円</td>
+                        </tr>
+                        <tr>
+                            <td class="p-report-customer-menu-pname">店販</td>
+                            <td class="p-report-customer-menu-pvalue"><span class="report-bold">12,600</span>円</td>
+                        </tr>
+                        <tr>
+                            <td class="p-report-customer-menu-pname">合計金額</td>
+                            <td class="p-report-customer-menu-pvalue"><span class="report-bold">12,600</span>円</td>
+                        </tr>
+                    </table>
+                    <p class="p-report-customer-clear"> </p>
+                </div>
+                <div class="p-report-customer">
+                    <div class="p-report-customer-name"> <span class="report-bold">佐藤ちえ様</span></div>
+                    <div class="p-report-customer-data"><i aria-hidden="true" class="fa fa-clock-o"></i>2017/12/25 10:00-12:00</div>
+                    <p class="p-report-customer-clear"> </p>
+                    <div class="p-report-customer-staff"> <i aria-hidden="true" class="fa fa-user p-report-customer-staff-label"></i><span class="p-report-customer-staff-label">指名　</span><span class="p-report-customer-staff-name">古木数馬    </span></div>
+                    <!-- ろんくんへ！！ここは色つけられる？？？                    -->
+                    <div class="p-report-customer-menu">
+                        ●カット　●カラー　●パーマ　●トリートメント　●ワックス </div>
+                    <table>
+                        <tr>
+                            <td class="p-report-customer-menu-pname">技術</td>
+                            <td class="p-report-customer-menu-pvalue"><span class="report-bold">12,600</span>円</td>
+                        </tr>
+                        <tr>
+                            <td class="p-report-customer-menu-pname">店販</td>
+                            <td class="p-report-customer-menu-pvalue"><span class="report-bold">12,600</span>円</td>
+                        </tr>
+                        <tr>
+                            <td class="p-report-customer-menu-pname">合計金額</td>
+                            <td class="p-report-customer-menu-pvalue"><span class="report-bold">12,600</span>円</td>
+                        </tr>
+                    </table>
+                    <p class="p-report-customer-clear"> </p>
+                </div>
+                <div class="p-report-customer">
+                    <div class="p-report-customer-name"> <span class="report-bold">佐藤ちえ様</span></div>
+                    <div class="p-report-customer-data"><i aria-hidden="true" class="fa fa-clock-o"></i>2017/12/25 10:00-12:00</div>
+                    <p class="p-report-customer-clear"> </p>
+                    <div class="p-report-customer-staff"> <i aria-hidden="true" class="fa fa-user p-report-customer-staff-label"></i><span class="p-report-customer-staff-label">指名　</span><span class="p-report-customer-staff-name">古木数馬    </span></div>
+                    <!-- ろんくんへ！！ここは色つけられる？？？                    -->
+                    <div class="p-report-customer-menu">
+                        ●カット　●カラー　●パーマ　●トリートメント　●ワックス </div>
+                    <table>
+                        <tr>
+                            <td class="p-report-customer-menu-pname">技術</td>
+                            <td class="p-report-customer-menu-pvalue"><span class="report-bold">12,600</span>円</td>
+                        </tr>
+                        <tr>
+                            <td class="p-report-customer-menu-pname">店販</td>
+                            <td class="p-report-customer-menu-pvalue"><span class="report-bold">12,600</span>円</td>
+                        </tr>
+                        <tr>
+                            <td class="p-report-customer-menu-pname">合計金額</td>
+                            <td class="p-report-customer-menu-pvalue"><span class="report-bold">12,600</span>円</td>
+                        </tr>
+                    </table>
+                    <p class="p-report-customer-clear"> </p>
+                </div>
+                <div class="p-report-customer">
+                    <div class="p-report-customer-name"> <span class="report-bold">佐藤ちえ様</span></div>
+                    <div class="p-report-customer-data"><i aria-hidden="true" class="fa fa-clock-o"></i>2017/12/25 10:00-12:00</div>
+                    <p class="p-report-customer-clear"> </p>
+                    <div class="p-report-customer-staff"> <i aria-hidden="true" class="fa fa-user p-report-customer-staff-label"></i><span class="p-report-customer-staff-label">指名　</span><span class="p-report-customer-staff-name">古木数馬    </span></div>
+                    <!-- ろんくんへ！！ここは色つけられる？？？                    -->
+                    <div class="p-report-customer-menu">
+                        ●カット　●カラー　●パーマ　●トリートメント　●ワックス </div>
+                    <table>
+                        <tr>
+                            <td class="p-report-customer-menu-pname">技術</td>
+                            <td class="p-report-customer-menu-pvalue"><span class="report-bold">12,600</span>円</td>
+                        </tr>
+                        <tr>
+                            <td class="p-report-customer-menu-pname">店販</td>
+                            <td class="p-report-customer-menu-pvalue"><span class="report-bold">12,600</span>円</td>
+                        </tr>
+                        <tr>
+                            <td class="p-report-customer-menu-pname">合計金額</td>
+                            <td class="p-report-customer-menu-pvalue"><span class="report-bold">12,600</span>円</td>
+                        </tr>
+                    </table>
+                    <p class="p-report-customer-clear"> </p>
+                </div>
+                <div class="p-report-customer">
+                    <div class="p-report-customer-name"> <span class="report-bold">佐藤ちえ様</span></div>
+                    <div class="p-report-customer-data"><i aria-hidden="true" class="fa fa-clock-o"></i>2017/12/25 10:00-12:00</div>
+                    <p class="p-report-customer-clear"> </p>
+                    <div class="p-report-customer-staff"> <i aria-hidden="true" class="fa fa-user p-report-customer-staff-label"></i><span class="p-report-customer-staff-label">指名　</span><span class="p-report-customer-staff-name">古木数馬    </span></div>
+                    <!-- ろんくんへ！！ここは色つけられる？？？                    -->
+                    <div class="p-report-customer-menu">
+                        ●カット　●カラー　●パーマ　●トリートメント　●ワックス </div>
+                    <table>
+                        <tr>
+                            <td class="p-report-customer-menu-pname">技術</td>
+                            <td class="p-report-customer-menu-pvalue"><span class="report-bold">12,600</span>円</td>
+                        </tr>
+                        <tr>
+                            <td class="p-report-customer-menu-pname">店販</td>
+                            <td class="p-report-customer-menu-pvalue"><span class="report-bold">12,600</span>円</td>
+                        </tr>
+                        <tr>
+                            <td class="p-report-customer-menu-pname">合計金額</td>
+                            <td class="p-report-customer-menu-pvalue"><span class="report-bold">12,600</span>円</td>
+                        </tr>
+                    </table>
+                    <p class="p-report-customer-clear"> </p>
+                </div>
+                <div class="p-report-customer">
+                    <div class="p-report-customer-name"> <span class="report-bold">佐藤ちえ様</span></div>
+                    <div class="p-report-customer-data"><i aria-hidden="true" class="fa fa-clock-o"></i>2017/12/25 10:00-12:00</div>
+                    <p class="p-report-customer-clear"> </p>
+                    <div class="p-report-customer-staff"> <i aria-hidden="true" class="fa fa-user p-report-customer-staff-label"></i><span class="p-report-customer-staff-label">指名　</span><span class="p-report-customer-staff-name">古木数馬    </span></div>
+                    <!-- ろんくんへ！！ここは色つけられる？？？                    -->
+                    <div class="p-report-customer-menu">
+                        ●カット　●カラー　●パーマ　●トリートメント　●ワックス </div>
+                    <table>
+                        <tr>
+                            <td class="p-report-customer-menu-pname">技術</td>
+                            <td class="p-report-customer-menu-pvalue"><span class="report-bold">12,600</span>円</td>
+                        </tr>
+                        <tr>
+                            <td class="p-report-customer-menu-pname">店販</td>
+                            <td class="p-report-customer-menu-pvalue"><span class="report-bold">12,600</span>円</td>
+                        </tr>
+                        <tr>
+                            <td class="p-report-customer-menu-pname">合計金額</td>
+                            <td class="p-report-customer-menu-pvalue"><span class="report-bold">12,600</span>円</td>
+                        </tr>
+                    </table>
+                    <p class="p-report-customer-clear"> </p>
+                </div>
+                <div class="p-report-customer">
+                    <div class="p-report-customer-name"> <span class="report-bold">佐藤ちえ様</span></div>
+                    <div class="p-report-customer-data"><i aria-hidden="true" class="fa fa-clock-o"></i>2017/12/25 10:00-12:00</div>
+                    <p class="p-report-customer-clear"> </p>
+                    <div class="p-report-customer-staff"> <i aria-hidden="true" class="fa fa-user p-report-customer-staff-label"></i><span class="p-report-customer-staff-label">指名　</span><span class="p-report-customer-staff-name">古木数馬    </span></div>
+                    <!-- ろんくんへ！！ここは色つけられる？？？                    -->
+                    <div class="p-report-customer-menu">
+                        ●カット　●カラー　●パーマ　●トリートメント　●ワックス </div>
+                    <table>
+                        <tr>
+                            <td class="p-report-customer-menu-pname">技術</td>
+                            <td class="p-report-customer-menu-pvalue"><span class="report-bold">12,600</span>円</td>
+                        </tr>
+                        <tr>
+                            <td class="p-report-customer-menu-pname">店販</td>
+                            <td class="p-report-customer-menu-pvalue"><span class="report-bold">12,600</span>円</td>
+                        </tr>
+                        <tr>
+                            <td class="p-report-customer-menu-pname">合計金額</td>
+                            <td class="p-report-customer-menu-pvalue"><span class="report-bold">12,600</span>円</td>
+                        </tr>
+                    </table>
+                    <p class="p-report-customer-clear"> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="report-button-navi report-button-navi-bottom"><button class="state-default corner-right corner-left">←戻る</button></div>
+</body>
+
+</html>

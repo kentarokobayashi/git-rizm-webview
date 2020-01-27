@@ -1,0 +1,135 @@
+  // -----------------------------------------------------------------
+  // yoyaku-table
+  // -----------------------------------------------------------------
+  /* テーブルの大枠 */
+  
+  .c-yoyaku-table-row-normal {}
+  
+
+  .c-yoyaku-table {
+      border: 1px solid #aaa;
+      border-collapse: separate;
+      border-spacing: 0;
+      border-radius: 8px;
+      table-layout: fixed;
+      max-height: 100px;
+      color: $cl-gray;
+      overflow: hidden;
+      &-row-gray,
+      {
+          td,
+          th,
+          {
+              background: $cl-gray-lightest;
+              border-top: 1px solid $cl-gray-light;
+          }
+      }
+      &-row-time {
+          background: $cl-gray-lightest;
+          font-size:$sz-ft-xs;
+          color:$cl-gray;
+      }
+      &-row-normal {
+          td,
+          th{
+              border-top: 1px dashed $cl-gray-light;
+          }
+      }
+      /* 横線 */
+      .c-yoyaku-table-row td:not(:last-child),
+      .c-yoyaku-table-row th:not(:last-child) {
+          border-right: 1px solid $cl-gray-light;
+      }
+      .c-yoyaku-table-row {
+          th {
+              font-weight: 200;
+              line-height: 1.3;
+              padding: 0 0 5px 5px;
+              .c-yoyaku-table-row-day {
+                  font-size: 15px;
+              }
+              .c-yoyaku-table-row-week {
+                  font-size: $sz-ft-xs;
+              }
+              .c-yoyaku-table-row-sunday {
+                  color: $cl-red;
+              }
+          }
+      }
+      .c-yoyaku-table-row td {
+          padding: 3px 2px 2px 2px;
+          height: 20px;
+          text-align: center;
+          color: $cl-gray-light;
+          line-height:1;
+          vertical-align: middle;
+      }
+      .c-yoyaku-table-row-ng {
+          background: $cl-gray-dark;
+      }
+  }
+
+  .entry{
+    color:$cl-lime;
+  }
+  
+  // -----------------------------------------------------------------
+  // 予約のナビ
+  // -----------------------------------------------------------------
+  
+
+  .c-yoyaku-navi {
+      @include css3(display, flex);
+      -webkit-flex-flow: row wrap;
+      margin: 0 0 10px;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+
+      &-button a {
+          width: 50px;
+          padding: 6px 0 0px;
+          border-radius: 3px;
+          display: inline-block;
+          &:hover,&:active{
+            opacity:0.6;
+          }
+      }
+
+      .active a {
+          background: $cl-lime;
+      }
+      .disable a {
+          background: $cl-gray-dark;
+      }
+
+      .c-yoyaku-navi-left img{
+         transform: scale(-1, 1);
+      }
+
+
+      .c-yoyakunavi-center-date {
+          div {
+              display: inline-block;
+              line-height: 1;
+          }
+          &-big {
+              font-size: $sz-ft-m;
+              margin: 0 2px;
+          }
+          &-arrow {
+              margin: 0 5px;
+              & a{
+                color:$cl-gray;
+              }
+          }
+      }
+  }
+  
+
+
+.p-yoyaku-link a{
+  text-decoration: none;
+  color:$cl-gray;
+  vertical-align:3px;
+}

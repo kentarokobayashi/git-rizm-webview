@@ -1,0 +1,475 @@
+.dialog {
+    position: fixed;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    height: 100vh;
+    z-index: 100000000;
+    top: 0;
+    &:before {
+        background-color: rgba(0, 0, 0, 0.75);
+        z-index: 10000000;
+        width: 100%;
+        height: 100vh;
+        max-width: 500px;
+        content: "";
+        position: fixed;
+        display: block;
+    }
+    .dialog-window-vertical-center {
+        justify-content: center;
+        .dialog-window-wrapper {
+            padding: 15px 15px !important;
+        }
+    }
+    .dialog-window {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 999999999;
+        width: 84%;
+        height: 85%;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        border-radius: 12px;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto;
+        /* border: 7px white solid; */
+        box-sizing: border-box;
+        -webkit-overflow-scrolling: touch;
+    }
+    .dialog-window-wrapper {
+        padding: 15px 15px 60px;
+        @include mq-down(iphone5) {
+            padding: 12px 12px 45px;
+        }
+    }
+    .dialog-window::-webkit-scrollbar {
+        width: 10px;
+        margin: 0 5px 0 0;
+    }
+    /*バーの太さ*/
+    .dialog-window::-webkit-scrollbar-track {
+        //background: #dddddd;
+        border-radius: 10px;
+    }
+    /*バーの背景色*/
+    .dialog-window::-webkit-scrollbar-thumb {
+        background: $cl-gray-light;
+        border-radius: 10px;
+    }
+    .dialog-window-close {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    .dialog-title {
+        margin: 0 0 15px;
+        color: $cl-stekina-black;
+        @include u-bold();
+    }
+    .dialog-title-large {
+        font-size: 35px;
+        line-height: 1.35;
+        @include mq-down(iphone5) {
+            font-size: 32.5px;
+            letter-spacing: -0.5px;
+        }
+    }
+    .dialog-title-middle {
+        @include font-size-l;
+        line-height: 1.35;
+    }
+    .dialog-subtitle {
+        @include u-bold();
+        @include font-size-l;
+        margin: 0 0 12px;
+        line-height: 1.5;
+        color: $cl-stekina-black;
+    }
+    p {
+        @include font-size-m;
+        line-height: 1.5;
+        margin: 0 0 20px;
+    }
+    b {
+        color: $cl-stekina-black;
+        @include u-bold();
+    }
+    img {
+        width: 100%;
+        height: auto;
+        margin: 0 0 0px;
+    }
+}
+
+//checkbox
+
+/* サロンメニュー・タグ */
+
+.p-Resultmenu-input {
+    vertical-align: middle;
+}
+
+label,
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-input+label:before {
+    content: "";
+    display: inline-block;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    margin: 0 5px 0 0;
+    border-radius: 100px;
+    border: 1px solid #ccc;
+}
+
+.checkbox-input:checked+label:before {
+    content: "";
+    display: inline-block;
+    background-image: url("icn_check.svg");
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    margin: 0 5px 0 0;
+    border-radius: 100px;
+    border: 1px solid #fff;
+}
+
+.dialog-window-fixed-submit {
+    position: fixed;
+    bottom: 11%;
+    width: 80%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: 999999999999;
+}
+
+.p-Resultmenu-input {
+    margin: 15px auto 0;
+    width: 93%;
+    label {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $cl-gray-light;
+        padding: 13px 0 10px;
+        span {
+            width: 85%;
+        }
+    }
+}
+
+.dialog-window-title {
+    margin: 20px auto 0;
+}
+
+.dialog-window-header {
+    position: fixed;
+    top: 7.5%;
+    left: 0;
+    right: 0;
+    background: white;
+    width: 85%;
+    z-index: 9999;
+    margin: auto;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.dialog-window-header-wrapper {
+    position: relative;
+}
+
+.dialog-window-header-wrapper-left,
+.dialog-window-header-wrapper-right {
+    width: 70px;
+    align-self: center;
+}
+
+.dialog-window-header-wrapper-left img {
+    margin: 6px 0 0 6px;
+}
+
+.dialog-window-header-wrapper-center {
+    color: $cl-stekina-black;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: -1px;
+    margin: 4px 0 0;
+    align-self: center;
+    @include mq-down(iphone5) {
+        font-size: 18px;
+    }
+}
+
+.dialog-window-inputwrapper {
+    margin: 60px 0 78px 0;
+    width: 100%;
+    overflow-y: auto;
+    color: #262626;
+}
+
+button.p-Resultmenu-input-button {
+    color: #262626 !important;
+}
+
+.close {
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    width: 29px;
+    height: 29px;
+    opacity: 1;
+    text-indent: -9999px;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+.close:before,
+.close:after {
+    position: absolute;
+    left: 15px;
+    content: " ";
+    height: 29px;
+    width: 6px;
+    background-color: $cl-gray-light;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+.close {
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    width: 29px;
+    height: 29px;
+    opacity: 1;
+    text-indent: -9999px;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+.close:before,
+.close:after {
+    position: absolute;
+    left: 15px;
+    content: " ";
+    height: 29px;
+    width: 6px;
+    background-color: $cl-gray-light;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+
+/* first */
+
+.dialog-window-menus {
+    width: 90%;
+    margin: 16px auto 0;
+    @include mq-down(iphone5) {
+        margin: 11px auto 0;
+    }
+    .dialog-window-menus-subtitle {
+        color: $cl-gray-light;
+        @include font-size-s;
+        margin: 0 0 3px;
+        display: none;
+    }
+    .dialog-window-menus-link {
+        background: white;
+        box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 4px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        width: 100%;
+        padding: 16px 0px;
+        position: relative;
+        @include mq-down(iphone5) {
+            padding: 12px 0px;
+        }
+        .dialog-window-menus-link-link a {
+            position: absolute;
+            text-indent: -9999px;
+            z-index: 99;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+        .dialog-window-menus-link-title {
+            @include font-size-m;
+            margin: 0 0 0 10px;
+        }
+        .dialog-window-menus-link-arrow {
+            position: absolute;
+            right: 12px;
+            margin: auto;
+            i {
+                border: solid $cl-gray-light;
+                border-width: 0 3px 3px 0;
+                display: inline-block;
+                padding: 3px;
+            }
+            .right {
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+            }
+        }
+        .dialog-window-menus-link-arrow-text {
+            position: absolute;
+            right: 24px;
+            margin: auto;
+            text-align: right;
+            margin: 3px 0 0;
+            color: $cl-gray-light;
+        }
+    }
+}
+
+
+/* second */
+
+.p-Resultmenu-input {
+    vertical-align: middle;
+}
+
+.p-Resultmenu-input-button {
+    width: 100%;
+    text-align: center;
+    border-radius: 0px;
+    padding: 14px 0;
+    border-bottom: 1px solid #b3b3b3;
+    background: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: $cl-lime;
+}
+
+label,
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-input+label:before {
+    content: "";
+    display: inline-block;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    margin: 0 5px 0 0;
+    border-radius: 100px;
+    border: 1px solid #ccc;
+}
+
+.checkbox-input:checked+label:before {
+    content: "";
+    display: inline-block;
+    background-image: url(https://limehair.xsrv.jp/lime-community/static/img/icon/icn_check.svg);
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    margin: 0 5px 0 0;
+    border-radius: 100px;
+    border: 1px solid #fff;
+}
+
+.dialog-window-fixed-submit {
+    position: fixed;
+    bottom: 11%;
+    width: 80%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: 999999999999;
+}
+
+.p-Resultmenu-input {
+    margin: 15px auto 0;
+    width: 93%;
+    label {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $cl-gray-light;
+        padding: 13px 0 10px;
+        span {
+            width: 85%;
+        }
+    }
+}
+
+.dialog-window-title {
+    margin: 20px auto 0;
+}
+
+.dialog-window-inputflex {}
+
+
+/* third */
+
+.dialog-window-create-tag-input {
+    text-align: center;
+    input[type="text"] {
+        width: 90%;
+        text-align: center;
+        margin: 30px auto 0;
+        border: 1px solid #b3b3b3;
+        padding: 10px 0 10px;
+        line-height: 1;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        font-size: 18px !important;
+        &::-webkit-input-placeholder {
+            font-size: 15px !important;
+            margin: 0 0 0px !important;
+            line-height: 1.5 !important;
+            color: #b3b3b3;
+        }
+    }
+}
+
+.dialog-window-create-tag-title {
+    margin: 75px auto 0;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.dialog-window-create-tag-createbutton {
+    margin: 30px auto 0;
+}

@@ -1,0 +1,76 @@
+@mixin request-02-font-size-m {
+    font-size: 15.5px;
+    @include mq-down(iphone5) {
+        font-size: 12.8px;
+    }
+}
+
+@mixin request-02-font-size-s {
+    font-size: 13.5px;
+    @include mq-down(iphone5) {
+        font-size: 11.8px;
+        letter-spacing: -0.5px;
+    }
+}
+
+.dummy-header {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 3px 10px #aaa;
+    z-index: 999999;
+}
+
+.wrapper-mykarte-profile {
+    padding: 0px 0 90px;
+}
+
+.request-wrapper {
+    background: white;
+    width: 89%;
+    margin: 30px auto 0px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 5px #ccc;
+    overflow: hidden;
+    .request-wrapper-block {
+        background: white;
+        padding: 15px 30px 12px 15px;
+        border-bottom: 1px solid #ccc;
+        position: relative;
+        &:after {
+            position: absolute;
+            bottom: 14px;
+            right: 14px;
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-right: 2px solid $cl-gray-light;
+            border-top: 2px solid $cl-gray-light;
+            transform: rotate(45deg);
+        }
+        .request-wrapper-block-link a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-indent: -999px;
+            z-index: 2;
+            /* 必要であればリンク要素の重なりのベース順序指定 */
+        }
+    }
+}
+
+.request-wrapper-block-title {
+    @include request-02-font-size-m;
+    color: $cl-gray-dark;
+    margin: 0 0 18px;
+    line-height: 1.5;
+}
+
+.request-wrapper-block-value {
+    @include request-02-font-size-m;
+    font-family: "mplus-2c-bold", "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+    color: $cl-gray-dark;
+    line-height: 1.5;
+}

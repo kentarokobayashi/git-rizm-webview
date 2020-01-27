@@ -1,0 +1,177 @@
+// -----------------------------------------------------------------
+// Font size
+// -----------------------------------------------------------------
+$sz-ft-xxxs: 6.5px;
+$sz-ft-xxs: 8px;
+$sz-ft-xs: 10px;
+$sz-ft-s: 12px;
+$sz-ft-m: 15px;
+$sz-ft-l: 20px;
+$sz-ft-xl: 23px;
+$sz-ft-xxl: 30px;
+$ls-ratio: 0.1;
+
+/* letter-spacing ratio */
+
+$lh-ratio: 1.5;
+
+/* line-height ratio */
+
+// -----------------------------------------------------------------
+// Space size
+// -----------------------------------------------------------------
+$sz-sp-xs: 15px;
+$sz-sp-s: 30px;
+$sz-sp-m: 60px;
+$sz-sp-l: 90px;
+$sz-sp-xl: 120px;
+$sz-sp-2xl: 180px;
+// -----------------------------------------------------------------
+// color
+// -----------------------------------------------------------------
+$cl-lime: #15bfab;
+$cl-blue: #4f9ad6;
+$cl-gray: #6f6f6f;
+$cl-stekina-red: #ff595b;
+$cl-orange: #d6944f;
+$cl-pink: #ed6460;
+$cl-gray-light: #b3b3b3;
+$cl-gray-lightest: #f0f0f0;
+$cl-gray-dark: #4d4d4d;
+$cl-white: #fff;
+$cl-stekina-black: #262626;
+$cl-black: #000;
+$cl-shadow: rgba(0, 0, 0, 0.5);
+$cl-font: $cl-gray-dark;
+$cl-bg-panel: $cl-white;
+$cl-red: #ff595b;
+$cl-note-red: #d65c48;
+$cl-stekina-brown: #8e7f6b;
+$cl-stekina-brown-light: #e2ddd7;
+@mixin rizm-gradient {
+    background: linear-gradient(-60deg, #e6417a 0%, #ff595b 100%);
+}
+
+@mixin lime-gradient {
+    background-image: linear-gradient(-30deg, #4f9ad6 0%, #14ceb8 100%);
+}
+
+.bg-lime {
+    background: $cl-lime !important;
+}
+
+.bg-gray-lightest {
+    background: $cl-gray-lightest !important;
+}
+
+.bg-white {
+    background: white !important;
+}
+
+.bg-lime-gradient {
+    @include lime-gradient();
+}
+
+.u-cl-lime {
+    color: $cl-lime;
+}
+
+.u-cl-blue {
+    color: $cl-blue;
+}
+
+.u-cl-gray {
+    color: $cl-gray;
+}
+
+.u-cl-stekina-red {
+    color: $cl-stekina-red;
+}
+
+.u-cl-orange {
+    color: $cl-orange;
+}
+
+.u-cl-pink {
+    color: $cl-pink;
+}
+
+.u-cl-gray-light {
+    color: $cl-gray-light;
+}
+
+.u-cl-gray-lightest {
+    color: $cl-gray-lightest;
+}
+
+.u-cl-gray-dark {
+    color: $cl-gray-dark;
+}
+
+.u-cl-gray-white {
+    color: $cl-white;
+}
+
+.u-cl-stekina-black {
+    color: $cl-stekina-black;
+}
+
+.u-cl-rizm-gradient {
+    color: transparent;
+    background: linear-gradient(270deg, #e6417a 0%, #ff595b 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+// -----------------------------------------------------------------
+// style
+// -----------------------------------------------------------------
+.u-icon-prof img {
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    @include mq-down(iphone5) {
+        width: 21px;
+        height: 21px;
+    }
+}
+
+.u-ta-left {
+    text-align: left !important;
+}
+
+.u-ta-center {
+    text-align: center !important;
+}
+
+.u-ta-right {
+    text-align: right !important;
+}
+
+.u-st-underline {
+    text-decoration: underline !important;
+}
+
+.u-st-nounderline {
+    text-decoration: none !important;
+}
+
+.u-margin-top-5 {
+    margin-top: 5px;
+}
+
+.u-margin-top-10 {
+    margin-top: 5px;
+}
+
+.u-margin-top-minus-5 {
+    margin-top: -5px;
+}
+
+.u-margin-top-minus-10 {
+    margin-top: -10px;
+}
+
+.u-lh-middle {
+    line-height: 1.5;
+}

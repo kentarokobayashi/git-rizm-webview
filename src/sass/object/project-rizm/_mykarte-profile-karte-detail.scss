@@ -1,0 +1,831 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400i,400,700,700i");
+@mixin suteki-size {
+    width: 45px;
+    height: 45px;
+}
+
+.karte-detail-B {
+    .suteki-counter-bg {
+        display: none;
+    }
+}
+
+.suteki-counter-bg {
+    display: none;
+}
+
+
+/* android用に太字補正 */
+
+.android {
+    .karte-detail-menu-area-menu-title-total,
+    .karte-detail-menu-area-menu-price-total,
+    .karte-detail-menu-area-title,
+    .karte-detail-photo-area-title,
+    .karte-detail-menu-area-message-title-center {
+        font-weight: bold;
+    }
+}
+
+
+/* 👇被らないように */
+
+.karte-detail {
+    overflow-x: hidden;
+}
+
+
+/* 👇ステキボタンの大きさ定義 */
+
+.karte-detail-photo-area-main-photo-suteki-large {
+    width: 60px;
+    height: 60px;
+    right: 20px;
+    bottom: 20px;
+    .karte-detail-photo-area-main-photo-suteki-bg {
+        box-shadow: 0px 3px 3px #aaa;
+    }
+}
+
+.karte-detail-photo-area-main-photo-suteki-small {
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    bottom: 10px;
+    .karte-detail-photo-area-main-photo-suteki-bg {
+        box-shadow: 0px 1.5px 3px #ccc;
+    }
+    .suteki-counter {
+        transform-origin: center center !important;
+    }
+    .suteki-counter .suteki-counter-plus {
+        font-size: 30px;
+        margin: 0 3px 0 0;
+        z-index: 9999999;
+    }
+    .suteki-counter .suteki-counter-number {
+        font-size: 32px;
+        letter-spacing: -2px;
+        z-index: 9999999;
+    }
+}
+
+
+/* 👇共通要素 */
+
+.karte-detail-menu-area-message-title {
+    text-align: center;
+    position: relative;
+    height: 30px;
+    width: 90%;
+    margin: 20px auto 10px;
+    @include mq-down(iphone5) {
+        margin: 30px auto 10px;
+    }
+    .karte-detail-menu-area-message-title-center {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        line-height: 2;
+        text-align: center;
+        @include font-size-mm;
+        color: $cl-gray-dark;
+        font-family: "mplus-2c-bold", "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+    }
+    .karte-detail-menu-area-message-title-right {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        button {
+            color: $cl-lime;
+            border: 1px solid $cl-lime;
+            background: white;
+            border-radius: 8px;
+            padding: 5px 20px;
+            font-size: 12px;
+        }
+    }
+}
+
+.karte-detail-menu-area {
+    padding: 0px 0 0;
+    background: white;
+    .karte-detail-menu-area-title {
+        text-align: center;
+        @include font-size-mm;
+        font-family: "mplus-2c-bold", "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+        color: $cl-gray-dark;
+        margin: 0 0 20px;
+    }
+    .karte-detail-menu-area-menu-box {
+        display: table;
+        width: 66%;
+        margin: 0px auto 8px;
+        color: $cl-gray-dark;
+        div {
+            display: table-cell;
+        }
+        .karte-detail-menu-area-menu-title,
+        .karte-detail-menu-area-menu-title-total {
+            width: 60%;
+            @include tutorial-01-font-size-m;
+        }
+        .karte-detail-menu-area-menu-price,
+        .karte-detail-menu-area-menu-price-total {
+            width: 40%;
+            text-align: right;
+            @include tutorial-01-font-size-m;
+        }
+        .karte-detail-menu-area-menu-title-total,
+        .karte-detail-menu-area-menu-price-total {
+            text-align: right;
+            padding: 10px 0 0;
+            @include font-size-mm;
+            font-family: "mplus-2c-bold", "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+        }
+    }
+    .karte-detail-menu-area-total {
+        width: 70%;
+        margin: 0px auto 0;
+        .karte-detail-menu-area-total-title {}
+    }
+}
+
+.karte-detail-message-area {
+    margin: 30px 0 30px;
+    .karte-detail-menu-area-btn {
+        background: #f74d46;
+        box-shadow: 0px 3px 2px #666;
+        width: 83%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 10px;
+        margin: 23px auto 0;
+        border-radius: 10px;
+        color: white;
+        border: none;
+        font-size: 16px;
+        div {
+            margin: 0 2.5px;
+            line-height: 1.5;
+        }
+        img {
+            width: 22px;
+            margin: 4px 0 0;
+        }
+    }
+    .karte-detail-message-area-note {
+        font-size: 11px;
+        color: $cl-gray-light;
+        margin: 12px auto 0;
+        text-align: center;
+        line-height: 1.4;
+    }
+}
+
+.karte-detail-photo-area-main-photo {
+    position: relative;
+    width: 100%;
+    background: white;
+    &:before {
+        content: "";
+        display: block;
+        padding-top: 108%;
+    }
+    .karte-detail-photo-area-main-photo-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.karte-detail-photo-area-main-thumnail {
+    display: flex;
+    width: 97.5%;
+    margin: 8px auto 0;
+    li {}
+    li.active a {
+        img {}
+        &:after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: "";
+            display: block;
+            border: 1.5px solid $cl-lime;
+            z-index: 100;
+            box-sizing: border-box;
+        }
+    }
+    li {
+        list-style: none;
+        flex: 0 0 19%;
+        position: relative;
+        margin: 0 0.5%;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        a {
+            &:before {
+                content: "";
+                display: block;
+                padding-top: 100%;
+            }
+            &:after {
+                /*
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                content: "";
+                display: block;
+                border: 3px solid white;
+                z-index: 100;
+                box-sizing: border-box;
+                */
+            }
+        }
+    }
+}
+
+.karte-detail-menu-area-message-message {
+    padding: 20px 20px 40px;
+    font-size: 14px;
+    line-height: 1.3;
+    box-shadow: 0px 3px 3px #999, inset 0 0 0 4.2px white;
+    background: white;
+    width: 90%;
+    margin: 0px auto 0;
+    word-break: break-all;
+    border-radius: 12px;
+    position: relative;
+    color: $cl-gray-dark;
+    min-height: 180px;
+    a:link,
+    a:active,
+    a:hover,
+    a:visited {
+        color: $cl-red;
+    }
+}
+
+
+/* ボツ
+.karte-detail-photo-area-main-photo-suteki {
+    position: absolute;
+    background: transparent;
+    .karte-detail-photo-area-main-photo-suteki-bg {
+        width: 100%;
+        height: 100%;
+        background: white;
+        border-radius: 100px;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 1;
+    }
+    a {
+        width: 100px;
+        height: 100px;
+    }
+    img {
+        position: absolute;
+        width: 58%;
+        display: flex;
+        z-index: 10;
+        top: 5px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+}
+*/
+
+
+/* 👇メモの影の付け方 */
+
+.private-area {
+    .karte-detail-menu-area-message-message {
+        box-shadow: 0px 3px 3px #555, inset 0 0 0 4.2px white;
+    }
+}
+
+.custmer-area {
+    .karte-detail-menu-area-message-message {
+        box-shadow: 0px 3px 3px #999, inset 0 0 0 4.2px white;
+    }
+}
+
+
+/* 👇美容師さんから共有するエリア特有の装飾 */
+
+.custmer-area {
+    .karte-detail-photomenu {
+        background: white;
+        padding: 0 0 30px;
+    }
+}
+
+
+/* 👇プライベート特有の装飾 */
+
+.private-area {
+    background: $cl-gray-dark;
+    padding: 45px 0 70px;
+    .karte-detail-menu-area-message-title-center {
+        color: white;
+    }
+    .karte-detail-photo-area-title {
+        @include font-size-mm;
+        color: white;
+        font-family: "mplus-2c-bold", "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+        text-align: center;
+    }
+    .karte-detail-photo-area-note {
+        font-size: 12px;
+        color: $cl-gray-light;
+        margin: 12px auto 20px;
+        text-align: center;
+        line-height: 1.4;
+    }
+    .karte-detail-photo-area-main-thumnail-plus {
+        background: $cl-lime;
+        position: relative;
+        &:after,
+        &:before {
+            content: "";
+            display: block;
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &:before {
+            height: 1.5em;
+            width: 0.15em;
+        }
+        &:after {
+            height: 0.15em;
+            width: 1.5em;
+        }
+    }
+}
+
+
+/* 👇ステキボタンの装飾、以下めちゃ長い */
+
+.love-button-area {
+    display: flex;
+    align-items: center;
+    position: relative;
+    @include suteki-size;
+}
+
+.mask {
+    -webkit-clip-path: url(#svgPath);
+    clip-path: url(#svgPath);
+    width: 100%;
+    height: 19px;
+}
+
+.count-1 {
+    background: linear-gradient(0deg, #e6417a 0%, #f85263 15%, white 15%, white 100%) !important;
+}
+
+.count-2 {
+    background: linear-gradient(0deg, #e6417a 0%, #f85263 22%, white 22%, white 100%);
+}
+
+.shape {
+    height: 19px;
+}
+
+.karte-detail-photo-area {
+    .love-button-wrapper {
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        @include suteki-size;
+        z-index: 999999;
+        transform: scale(1.7);
+        @include mq-down(iphone5) {
+            transform: scale(1.4);
+            bottom: 20px;
+            right: 20px;
+        }
+    }
+}
+
+.karte-detail-photo-area-main-photo-suteki {
+    .love-button-wrapper {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        transform: scale(0.8);
+        @include suteki-size;
+        transform-origin: bottom right;
+        .suteki-counter {
+            bottom: 21px;
+            right: 17px;
+            transform-origin: top left;
+            .suteki-counter-bg {
+                background: none;
+            }
+        }
+    }
+}
+
+.love-button {
+    @include suteki-size;
+    border-radius: 50%;
+}
+
+.love-button-wrapper .c-review-card-articleinfo {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    padding: 0px 0 30px;
+}
+
+.love-button-wrapper .love-button-count {
+    margin: 0 0 0px 15px;
+    color: #b3b3b3;
+    position: absolute;
+    top: 12px;
+    left: 29px;
+    font-family: Hiragino Sans, "ヒラギノ角ゴシック", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3";
+}
+
+.love-button-animation .love-button {
+    animation: blink 1s forwards;
+}
+
+.love-button-wrapper .love-button {
+    position: absolute;
+    cursor: pointer;
+    z-index: 9;
+    position: absolute;
+    border-radius: 100px;
+    display: flex;
+    opacity: 1;
+    transform: scale(1);
+    align-items: center;
+    justify-content: center;
+    /* 子要素をflexboxにより中央に配置する */
+    color: #aaa;
+    transition: 0.2s;
+    background: #fff;
+    box-shadow: 0 0px 12px 1.5px rgba(0, 0, 0, 0.1);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    &:active {
+        opacity: 0.7;
+    }
+}
+
+.love-button-wrapper .love-button:hover {
+    box-shadow: 0 0px 17px 2px rgba(0, 0, 0, 0.15);
+    transition-duration: 1;
+}
+
+.love-button-wrapper .love-button:active {
+    opacity: 0.5;
+    transform: scale(1.25);
+    transition-duration: 1.3;
+}
+
+.love-button-wrapper .love-button-heart {
+    margin: 5px 0 0;
+    width: 23px;
+    height: 20px;
+}
+
+
+/* small animation hearts */
+
+svg.fly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: #ff595b;
+}
+
+svg.h {
+    position: absolute;
+    z-index: 8;
+    top: 7px;
+    left: 5px;
+    width: 34px;
+    height: 34px;
+}
+
+svg.h.h-1,
+svg.h.h-2,
+svg.h.h-3,
+svg.h.h-4 {
+    transform: scale(1.5);
+    fill: url(#MyGradient);
+}
+
+svg.h.h-5,
+svg.h.h-6,
+svg.h.h-7,
+svg.h.h-8 {
+    transform: scale(1.5);
+    fill: url(#Gradient);
+}
+
+body .flush-heart {
+    opacity: 0;
+}
+
+body.liked .flush-heart {
+    opacity: 1;
+}
+
+body.liked svg.fly.fly-1 {
+    animation: fly-1 1s 0.1s;
+}
+
+body.liked svg.fly.fly-2 {
+    animation: fly-2 1s 0.1s;
+}
+
+body.liked svg.h {
+    transition: margin cubic-bezier(0.165, 0.84, 0.44, 1) 0.9s, transform 0.2s 1s, fill 0.2s 1s, opacity 0.3s 0.7s;
+    opacity: 0;
+}
+
+body.liked svg.h.h-1,
+body.liked svg.h.h-2,
+body.liked svg.h.h-3,
+body.liked svg.h.h-4 {
+    transform: scale(1.5);
+}
+
+body.liked svg.h.h-5,
+body.liked svg.h.h-6,
+body.liked svg.h.h-7,
+body.liked svg.h.h-8 {
+    transform: scale(1.5);
+}
+
+body.liked svg.h.h-1 {
+    margin-top: -200px;
+}
+
+body.liked svg.h.h-2 {
+    margin-left: 200px;
+}
+
+body.liked svg.h.h-3 {
+    margin-top: 200px;
+}
+
+body.liked svg.h.h-4 {
+    margin-left: -200px;
+}
+
+body.liked svg.h.h-5 {
+    margin-top: -140px;
+    margin-left: 140px;
+}
+
+body.liked svg.h.h-6 {
+    margin-top: 140px;
+    margin-left: 140px;
+}
+
+body.liked svg.h.h-7 {
+    margin-top: -140px;
+    margin-left: -140px;
+}
+
+body.liked svg.h.h-8 {
+    margin-top: 140px;
+    margin-left: -140px;
+}
+
+body.liked div.dot {
+    opacity: 0;
+    transform: translateY(-100px);
+    background: #00e5ff;
+    transition: transform 1s, opacity 0.5s 1s, background 0.1s 0.2s;
+}
+
+body.liked div.dot:after {
+    display: block;
+}
+
+body.liked div.dot.dot-2 {
+    transform: rotate(45deg) translateY(-100px);
+}
+
+body.liked div.dot.dot-3 {
+    transform: rotate(90deg) translateY(-100px);
+}
+
+body.liked div.dot.dot-4 {
+    transform: rotate(135deg) translateY(-100px);
+}
+
+body.liked div.dot.dot-5 {
+    transform: rotate(180deg) translateY(-100px);
+}
+
+body.liked div.dot.dot-6 {
+    transform: rotate(225deg) translateY(-100px);
+}
+
+body.liked div.dot.dot-7 {
+    transform: rotate(270deg) translateY(-100px);
+}
+
+body.liked div.dot.dot-8 {
+    transform: rotate(305deg) translateY(-100px);
+}
+
+.sutekiscalenormal {
+    -webkit-animation-name: scale;
+    animation-name: scale;
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+}
+
+.speechanimation {
+    -webkit-animation-name: scalespeech;
+    animation-name: scalespeech;
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    transform-origin: center center;
+    transform: scale(0.8) translate(0, 0);
+}
+
+
+/* heart animation */
+
+
+/*
+@keyframes scalespeech {
+    0% {
+        -webkit-transform: scale(0.8) translate(0, 0);
+        transform: scale(0.7) translate(0, 0);
+    }
+    100% {
+        -webkit-transform: scale(0.9) translate(0, 0px);
+        transform: scale(0.8) translate(0, 0px);
+    }
+}
+
+*/
+
+@keyframes scale {
+    0% {
+        -webkit-transform: scale(1) translate(0, 0);
+        transform: scale(1) translate(0, 0);
+        opacity: 0.7;
+    }
+    50% {
+        -webkit-transform: scale(1.16) translate(0, 0px);
+        transform: scale(1.15) translate(0, 0px);
+        opacity: 0.7;
+    }
+    100% {
+        -webkit-transform: scale(1) translate(0, 0);
+        transform: scale(1) translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    10% {
+        transform: scale(0.42);
+        background: #8815b7;
+    }
+    100% {
+        background: #e01f4f;
+    }
+}
+
+@keyframes fly-1 {
+    25% {
+        margin: -100px 0 0 100px;
+    }
+    75% {
+        margin: 100px 0 0 -100px;
+        z-index: 5;
+    }
+    100% {
+        z-index: 11;
+    }
+}
+
+@keyframes fly-2 {
+    25% {
+        margin: -100px 0 0 -100px;
+    }
+    75% {
+        margin: 100px 0 0 100px;
+        z-index: 5;
+    }
+    100% {
+        z-index: 11;
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1) translate(0, 0);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1.3) translate(0, 0px);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1) translate(0, 0);
+        opacity: 1;
+    }
+}
+
+.suteki-counter {
+    position: absolute;
+    z-index: 9999;
+    font-family: "Josefin Sans", sans-serif !important;
+    color: #ff595b;
+    display: flex;
+    opacity: 1;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    /*background: url("https://stekina.com/wp-content/uploads/bg-speech-suteki.svg");
+    background-size: cover;*/
+    bottom: 16px;
+    right: 22px;
+    @include mq-down(iphone5) {}
+    .suteki-counter-bg {
+        width: 70px;
+        height: 70px;
+        background: url("https://stekina.com/wp-content/uploads/bg-speech-suteki.svg");
+        background-size: cover;
+        position: absolute;
+        opacity: 0.89;
+    }
+}
+
+.suteki-counter img {
+    position: absolute;
+    z-index: 99;
+}
+
+.suteki-counter .suteki-counter-plus {
+    font-size: 17px;
+    margin: 0 3px 0 0;
+    z-index: 9999999;
+}
+
+.suteki-counter .suteki-counter-number {
+    font-size: 20px;
+    letter-spacing: -2px;
+    z-index: 9999999;
+}
+
+.suteki-scale {
+    background: linear-gradient(-60deg, #e6417a 0%, #ff595b 100%) !important;
+    animation-name: scale;
+    animation-duration: 0.4s;
+}

@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "k-3";
+    src: url("https://limehair.jp/static/fonts/koburinaStdW3.eot?") format("eot"), url("https://limehair.jp/static/fonts/koburinaStdW3.woff2") format("woff2"), url("https://limehair.jp/static/fonts/koburinaStdW3.woff") format("woff");
+}
+
+@font-face {
+    font-family: "k-6";
+    src: url("https://limehair.jp/static/fonts/koburinaStdW6.eot?") format("eot"), url("https://limehair.jp/static/fonts/koburinaStdW6.woff2") format("woff2"), url("https://limehair.jp/static/fonts/koburinaStdW6.woff") format("woff");
+}
+
+body,
+html,
+div,
+p,
+span,
+a {
+    /*  font-family: "mplus-2c-regular", "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Osaka, "MS PGothic", arial, helvetica, sans-serif !important;*/
+    font-family: "k-3";
+}
+
+.bg-gray-lightest {
+    background: $cl-gray-lightest;
+}

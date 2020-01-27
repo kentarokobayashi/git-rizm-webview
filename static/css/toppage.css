@@ -1,0 +1,279 @@
+@charset "UTF-8";
+
+/* 普通のscss */
+
+@import url("http://fonts.googleapis.com/earlyaccess/notosansjapanese.css");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap&subset=japanese");
+.sample {
+    background: url(../img/face.png) 0 0 no-repeat;
+}
+
+@-webkit-keyframes mask {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes mask {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes img-move {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+    70% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+
+@keyframes img-move {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+    70% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+
+.fuwafuwa {
+    -webkit-animation-name: fuwafuwa;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease;
+    -moz-animation-name: fuwafuwa;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+}
+
+@-webkit-keyframes fuwafuwa {
+    0% {
+        -webkit-transform: translate(0, 0);
+    }
+    50% {
+        -webkit-transform: translate(0, -10px);
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sp-hidden {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .sp-hidden {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pc-hidden {
+        display: block !important;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .pc-hidden {
+        display: none !important;
+    }
+}
+
+
+/* common */
+
+div,
+p {
+    font-size: 16px !important;
+    color: #262626;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.c-title {
+    position: relative;
+    font-size: 24px !important;
+    letter-spacing: 3px;
+    color: #262626;
+    font-weight: bold;
+    line-height: 1.25;
+}
+
+.c-title-left:after {
+    content: "";
+    display: block;
+    width: 75px;
+    height: 6px;
+    background-image: -webkit-linear-gradient(329deg, #0288ED 0%, #3DECFD 100%);
+    background-image: linear-gradient(121deg, #0288ED 0%, #3DECFD 100%);
+    margin: 16px 0 30px;
+}
+
+.c-title-center {
+    text-align: center;
+}
+
+.c-title-center:after {
+    content: "";
+    display: block;
+    width: 75px;
+    height: 6px;
+    background-image: -webkit-linear-gradient(329deg, #0288ED 0%, #3DECFD 100%);
+    background-image: linear-gradient(121deg, #0288ED 0%, #3DECFD 100%);
+    margin: 16px auto 30px;
+}
+
+.c-mini-title {
+    font-size: 20px !important;
+    font-weight: bold;
+    color: #262626;
+    margin: 0 0 10px 0;
+}
+
+.c-large {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* ここからメイン */
+
+.p-mv-img img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 280px;
+}
+
+.p-mv-text {
+    margin: -60px 0 0;
+    background: white;
+    width: 90%;
+    display: inline-block;
+    padding: 10px 18px;
+}
+
+.p-mv-text p {
+    font-size: 24px !important;
+    font-weight: bold;
+    line-height: 1.45;
+    letter-spacing: 2px;
+    color: #262626;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.p-problem {
+    margin: 75px 0 0;
+    background-image: -webkit-linear-gradient(top, white 0%, white 10%, #E5FBFF 10%, #E5FBFF 100%);
+    background-image: linear-gradient(180deg, white 0%, white 10%, #E5FBFF 10%, #E5FBFF 100%);
+}
+
+.p-problem .p-problem-img {
+    width: 100%;
+    display: block;
+    margin: 0 30px 45px;
+}
+
+.p-problem img {
+    width: 100%;
+}
+
+.p-yukiyo {
+    padding: 0 20px;
+}
+
+.p-problem-section {
+    padding: 0 0 75px;
+}
+
+.p-coaching {
+    background-image: -webkit-linear-gradient(bottom, white 0%, white 95%, #E5FBFF 95%, #E5FBFF 100%);
+    background-image: linear-gradient(0deg, white 0%, white 95%, #E5FBFF 95%, #E5FBFF 100%);
+}
+
+.p-coaching .p-center-img {
+    margin: 0 0 30px -20px;
+}
+
+.p-coaching-section-img {
+    margin: 0 0 60px;
+}
+
+.p-service .p-coaching-section,
+.p-profile .p-coaching-section {
+    padding: 20px;
+    margin: -45px 0 60px;
+    background: white;
+    display: inline-block;
+    width: 90%;
+    box-shadow: 0 0 57px 0 rgba(0, 0, 0, .14);
+}
+
+.p-service .p-center-img,
+.p-profile .p-center-img {
+    margin: 0 -20px 0px;
+}
+
+.p-contact {
+    background-image: -webkit-linear-gradient(329deg, #0288ED 0%, #3DECFD 100%);
+    background-image: linear-gradient(121deg, #0288ED 0%, #3DECFD 100%);
+    padding: 60px 20px 90px;
+}
+
+.p-contact .p-contact-title {
+    text-align: center;
+    position: relative;
+    font-size: 24px !important;
+    letter-spacing: 3px;
+    color: white;
+    font-weight: bold;
+    line-height: 1.25;
+}
+
+.p-contact .p-contact-title:after {
+    content: "";
+    display: block;
+    width: 75px;
+    height: 6px;
+    background: white;
+    margin: 16px auto 30px;
+}
+
+.p-contact p {
+    color: white !important;
+}
+
+.wpex-row .col {
+    padding: 0 20px !important;
+}

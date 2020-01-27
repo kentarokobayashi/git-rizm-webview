@@ -1,0 +1,346 @@
+.pages-search_stylist {
+    background: $cl-gray-lightest;
+}
+
+.wrapper-search {
+    background: $cl-gray-lightest;
+    padding: 0px 0 0px;
+    height: 100vh;
+    position: relative;
+    .search-header-shadow {
+        position: absolute;
+        height: 32%;
+        width: 100%;
+        box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.07);
+        position: absolute;
+        z-index: 99999;
+        margin: 9px 0 0;
+    }
+    .search-header {
+        height: 32%;
+        width: 100%;
+    }
+    .search-content {
+        height: 100%;
+        //background: yellow;
+    }
+    .search-footer {
+        background: $cl-gray-lightest;
+        width: 100%;
+        display: flex;
+        padding: 30px 0 30px;
+        button {
+            align-self: center;
+        }
+    }
+    .search-header {
+        //background: red;
+        width: 100%;
+        border-bottom: 9px solid $cl-gray-lightest;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        background: $cl-gray-lightest;
+        @include mq-down(iphone5) {
+            border-bottom: 7px solid $cl-gray-lightest;
+        }
+        .search-header-column-01 {
+            height: 70%;
+            position: relative;
+            margin: 0 18px;
+            @include mq-down(iphone5) {
+                margin: 0 15px;
+            }
+            .search-header-title {
+                color: $cl-stekina-black;
+                font-size: 22.5px;
+                line-height: 1.35;
+                @include u-bold();
+                @include mq-down(iphone5) {
+                    font-size: 19.5px;
+                    letter-spacing: -0.5px;
+                    top: 7px;
+                }
+                position: absolute;
+                top: 10px;
+            }
+            .search-header-input-icon {
+                position: absolute;
+                width: 19px;
+                height: 19px;
+                bottom: 16.5px;
+                left: 8px;
+                z-index: 999;
+                @include mq-down(iphone5) {
+                    bottom: 14.5px;
+                }
+                img {
+                    width: 19px;
+                    height: 19px;
+                }
+            }
+            input[type="text"],
+            input[type="number"] {
+                position: absolute;
+                bottom: 6px;
+                width: 73.8%;
+                margin: 0;
+                //height: 40px;
+                padding: 5px 0 6px 23px;
+                border: 2px solid $cl-gray-light;
+                border-radius: 6px;
+                //font-weight: bold;
+                color: #4d4d4d;
+                vertical-align: middle;
+                transition: border-color ease-in-out 0.3s;
+                background-color: white;
+                outline: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                @include font-size-m;
+                display: inline-block;
+                @include u-bold();
+                letter-spacing: -0.3px;
+                @include mq-down(iphone5) {
+                    padding: 3px 0 4px 22px;
+                    width: 74%;
+                }
+                &::-webkit-input-placeholder {
+                    font-size: 11.85px;
+                    letter-spacing: -1.5px;
+                    @include mq-down(iphone5) {
+                        font-size: 10.4px;
+                        letter-spacing: -1.5px;
+                        line-height: 2.5 !important;
+                    }
+                    margin: 12px 0 0;
+                    display: block;
+                    color: $cl-gray-light;
+                    line-height: 2.4 !important;
+                }
+            }
+            /*
+            .button-search {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                bottom: 8px;
+                height: 38px;
+                right: -3px;
+                z-index: 999;
+                width: 23%;
+                font-size: 15px;
+                background: white;
+                border: 2px solid #ff595b;
+                box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.15);
+                color: $cl-stekina-red;
+                font-weight: bold;
+                font-family: "k-6";
+                letter-spacing: -0.5px;
+                padding: 0 !important;
+                @include mq-down(iphone5) {
+                    bottom: 8px;
+                    height: 34px;
+                    font-size: 14.2px;
+                }
+                div {
+                    margin: 0 2px !important;
+                }
+                .button-search-icon,
+                img {
+                    width: 15px;
+                    height: 15px;
+                    display: block;
+                }
+            }
+            */
+            .button-search {
+                position: absolute;
+                text-align: center;
+                bottom: 8px;
+                height: 38px;
+                right: -3px;
+                z-index: 999;
+                width: 16.5%;
+                font-size: 16.5px;
+                background: #15bfab;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.32);
+                color: #ff595b;
+                font-weight: bold;
+                font-family: "k-6";
+                letter-spacing: -0.5px;
+                padding: 0 !important;
+                border: none;
+                color: white;
+                @include mq-down(iphone5) {
+                    bottom: 8px;
+                    height: 34px;
+                    font-size: 14.8px;
+                }
+            }
+        }
+        .search-header-column-02 {
+            height: 30%;
+            background: white;
+            display: flex;
+            align-content: center;
+            button {
+                align-self: center;
+            }
+        }
+        @-webkit-keyframes fuwafuwa {
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+            40% {
+                -webkit-transform: translateY(-13px);
+                transform: translateY(-13px);
+            }
+            60% {
+                -webkit-transform: translateY(-10px);
+                transform: translateY(-10px);
+            }
+        }
+        .search-header-column-firstnavi {
+            position: absolute;
+            margin: auto;
+            bottom: -100px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: $cl-gray-light;
+            @include u-bold();
+            @include mq-down(iphone5) {
+                bottom: -90px;
+            }
+            img {
+                width: 75%;
+                -webkit-animation-name: fuwafuwa;
+                -webkit-animation-duration: 3s;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-direction: alternate;
+                -webkit-animation-timing-function: ease;
+            }
+        }
+    }
+    .search-if-not-found {
+        width: 100%;
+        display: flex;
+        align-content: center;
+    }
+    .search-content {
+        width: 100%;
+        /*position: fixed;
+        top: 32%; */
+        margin: 9px 0 0;
+        overflow-y: auto;
+        //background: black;
+        display: inline-block;
+        -webkit-overflow-scrolling: touch;
+        overflow-x: hidden;
+        /*border-left: 5px solid white;
+        border-right: 5px solid white;*/
+        &:before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 32%;
+        }
+        &:after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 180px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .search-content-stylist-column {
+        background: white;
+        border-bottom: 2px solid $cl-gray-lightest;
+        .search-content-stylist-column-wrapper {
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+        }
+        .search-content-stylist-column-01 {
+            flex: 7;
+            display: flex;
+            align-items: center;
+            position: relative;
+            //プロフ画像
+            .search-content-stylist-column-01-link {
+                a {
+                    width: 100%;
+                    height: 100%;
+                    z-index: 999;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    text-indent: -99999px;
+                    display: block;
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+            .search-content-stylist-column-01-profile {
+                img {
+                    border-radius: 100px;
+                    width: 60px;
+                    height: 60px;
+                    margin: 0 10px 0 0;
+                }
+            }
+            .search-content-stylist-column-01-data {
+                //プロフ名
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+                .search-content-stylist-column-01-data-name {
+                    color: $cl-gray;
+                    @include font-size-m;
+                    margin: 0 0 7px;
+                    word-wrap: break-word;
+                    overflow-wrap: break-word;
+                }
+                .search-content-stylist-column-01-data-salon {
+                    color: $cl-gray-light;
+                    font-size: 11.5px;
+                    word-wrap: break-word;
+                    overflow-wrap: break-word;
+                    @include mq-down(iphone5) {
+                        font-size: 10px;
+                        letter-spacing: -0.5px;
+                    }
+                }
+            }
+        }
+        .search-content-stylist-column-02 {
+            flex: 3;
+            button {
+                margin-left: auto;
+            }
+        }
+    }
+    .search-content::-webkit-scrollbar {
+        width: 10px;
+        margin: 0 5px 0 0;
+    }
+    /*バーの太さ*/
+    .search-content::-webkit-scrollbar-track {
+        background: #eeeeee;
+        border-radius: 10px;
+    }
+    /*バーの背景色*/
+    .search-content::-webkit-scrollbar-thumb {
+        background: $cl-gray-light;
+        border-radius: 10px;
+    }
+}

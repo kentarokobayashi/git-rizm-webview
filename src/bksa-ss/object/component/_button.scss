@@ -1,0 +1,341 @@
+// -----------------------------------------------------------------
+// button
+// -----------------------------------------------------------------
+button,
+input[type="submit"] {
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+}
+
+button.u-button-small {
+    padding: 12px 0px;
+    width: 95px;
+    @include mq-down(iphone5) {
+        width: 85px;
+    }
+    @include font-size-s;
+}
+
+button.u-button-small-long {
+    width: 90%;
+    padding: 12px 0px;
+    @include mq-down(iphone5) {
+        width: 90%;
+    }
+}
+
+button.u-button-small-search {
+    height: 42px;
+    padding: 0 13px;
+    letter-spacing: -0.5px;
+    @include font-size-m;
+    @include mq-down(iphone5) {
+        padding: 0 10px;
+    }
+}
+
+button.u-button-large,
+input.u-button-large {
+    margin-top: 10px;
+    padding: 20px 0px;
+    width: 95%;
+    @include font-size-m;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.18);
+}
+
+button.u-button-large-width60,
+input.u-button-large-width60 {
+    margin-top: 10px;
+    padding: 20px 0px;
+    width: 60%;
+    @include font-size-m;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.18);
+}
+
+button.u-button-middle,
+input.u-button-middle {
+    margin-top: 10px;
+    padding: 15px 0px;
+    width: 84%;
+    @include font-size-s;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.18);
+}
+
+button.u-button-middle-search {
+    padding: 0 15px;
+    @include font-size-m;
+    letter-spacing: -0.5px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    height: 45px;
+    @include mq-down(iphone5) {
+        height: 37px;
+    }
+}
+
+button.u-button-large-search {
+    width: 100%;
+    letter-spacing: -0.5px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    height: 60px;
+    font-size: 18px;
+    @include mq-down(iphone5) {
+        height: 53px;
+        font-size: 14.8px;
+    }
+}
+
+button.u-button-outline-lime {
+    color: $cl-lime;
+    border: 1.5px $cl-lime solid;
+    background: white;
+    &:hover {
+        background: $cl-lime;
+        color: white;
+    }
+    &:visited {
+        background: white;
+        border: 1.5px $cl-lime solid;
+    }
+}
+
+button.u-button-outline-limegray {
+    color: $cl-gray-dark;
+    border: 1.5px $cl-gray-dark solid;
+    background: white;
+    &:hover {
+        background: $cl-gray-dark;
+        color: white;
+    }
+}
+
+button.u-button-outline-stekina {
+    color: $cl-stekina-red !important;
+    border: 1.5px $cl-stekina-red solid;
+    background: white;
+    &:hover {
+        background: $cl-stekina-red;
+        color: white !important;
+    }
+}
+
+button.u-button-outline-gray-light {
+    color: $cl-gray-light;
+    border: 1.5px $cl-gray-light solid;
+    background: white;
+    &:hover {
+        background: $cl-gray-light;
+        color: white;
+    }
+}
+
+button.u-button-outline-gray-sample {
+    color: $cl-gray-light;
+    border: 1px $cl-gray-light solid;
+    background: white;
+}
+
+button.u-button-stekinared,
+input.u-button-stekinared {
+    color: $cl-white;
+    background: $cl-stekina-red;
+    border: none;
+    &:active {
+        background: darken($cl-stekina-red, 4%);
+    }
+}
+
+button.u-button-rizm-gradient {
+    color: $cl-white;
+    @include rizm-gradient();
+    border: none;
+    &:active {
+        background: darken($cl-stekina-red, 4%);
+    }
+}
+
+button.u-button-gray-dark {
+    color: $cl-white;
+    background: #4d4d4d;
+    border: none;
+    &:active {
+        background: darken(#4d4d4d, 4%);
+    }
+}
+
+button.u-button-gray-light {
+    color: $cl-white;
+    background: #b3b3b3;
+    border: none;
+    &:active {
+        background: darken(#b3b3b3, 4%);
+    }
+}
+button.u-button-white {
+padding:8px 17px !important;
+    background: white;
+    border: none;
+    &:active {
+        background: darken(#b3b3b3, 4%);
+    }
+}
+
+
+button.u-button-lime {
+    color: $cl-white;
+    background: $cl-lime;
+    border: none;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+button.u-button-stekinared-gradation {
+    color: $cl-white;
+    @include rizm-gradient();
+    border: none;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+button.u-align-center,
+input.u-align-center {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
+/* icon */
+
+@mixin btn-icn {
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.u-button-icn-middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:before {
+        @include btn-icn();
+        padding: 0 0 0 8px;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+    }
+}
+
+.u-button-icn-search {
+    &:before {
+        background-image: url("icn_search.svg");
+    }
+}
+
+
+/* tag */
+
+button.u-tag-middle {
+    padding: 7px 10px;
+    font-size: 13.5px;
+    letter-spacing: -0.5px;
+    @include mq-down(iphone5) {
+        padding: 6px 7px;
+    }
+}
+
+
+/* toppageのbutton */
+
+.home-check-button {
+    padding: 0px 0 0;
+    margin: 10px 15px 12px;
+    @include mq-down(iphone5) {
+        margin: 5px 12.5px 8.5px;
+    }
+}
+
+.button-round {
+    display: block;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 100px;
+    @include mq-down(iphone5) {
+        display: block;
+        padding: 15px 2px;
+    }
+}
+
+.button-round-large {
+    width: 100%;
+    padding: 15px 17px;
+    @include mq-down(iphone5) {
+        padding: 15px 8px;
+    }
+    box-shadow: 0px 2px 4px 0px rgba(0,
+    0,
+    0,
+    0.5);
+}
+
+.button-round-maintext {
+    @include font-size-m;
+    letter-spacing: -1px;
+    @include mq-down(iphone5) {
+        letter-spacing: -1.2px;
+        float: left;
+        margin: 2px 0 0;
+    }
+}
+
+.button-round-subbutton {
+    font-size: 10px;
+    @include mq-down(iphone5) {
+        font-size: 9px;
+        float: right;
+        letter-spacing: -0.5px;
+        padding: 5px 5px;
+    }
+    display: inline-block;
+    padding: 5px 7px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.button-round-maintext-gradient {
+    @include font-size-m;
+    letter-spacing: -1px;
+    background-image: linear-gradient(-30deg, #4f9ad6 0%, #14ceb8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @include mq-down(iphone5) {
+        letter-spacing: -1.2px;
+        float: left;
+        margin: 2px 0 0;
+    }
+}
+
+.button-round-subbutton-limegradient {
+  font-size: 13px;
+display: inline-block;
+padding: 10px 10.5px;
+    @include mq-down(iphone5) {
+        font-size: 11px;
+        float: right;
+        letter-spacing: -0.5px;
+        padding: 5px 5px;
+    }
+
+
+
+    color:white;
+    font-weight:bold;
+    background-image: linear-gradient(-30deg,
+    #4f9ad6 0%,
+    #14ceb8 100%);
+    border-radius: 5px;
+}

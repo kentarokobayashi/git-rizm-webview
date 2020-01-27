@@ -1,0 +1,39 @@
+.c-list_articles_subtitle {
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 100;
+    font-family: Crowds-Regular;
+    letter-spacing: 6px;
+    &:after {
+        content: "";
+        display: block;
+        border-bottom: 1px solid $cl-gray;
+        width: 48px;
+        height: 1px;
+        margin: 8px auto 15px;
+    }
+}
+
+.c-list_articles_title {
+    text-align: center;
+    font-size: $sz-ft-s;
+    padding-bottom: $sz-sp-s;
+}
+
+.c-article-list {
+    display: flex;
+    .c-contents {
+        margin: 0 0 0 10px;
+    }
+    .contents-title {
+        a {
+            @include linkColor($cl-gray-dark);
+        }
+    }
+    .contents-category {
+        a {
+            @include linkColor($cl-gray-light);
+        }
+    }
+}

@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,600,600i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700,700i&display=swap");
+
+/*************
+font-family
+************/
+
+@font-face {
+    font-family: "mplus-2c-regular";
+    src: url("https://limehair.jp/salon/wp-content/themes/jupiter/fonts/mplus-2c-regular.eot") format("eot"), url("https://limehair.jp/salon/wp-content/themes/jupiter/fonts/mplus-2c-regular.woff2") format("woff2"), url("https://limehair.jp/salon/wp-content/themes/jupiter/fonts/mplus-2c-regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "mplus-2c-bold";
+    src: url("https://limehair.jp/salon/wp-content/themes/jupiter/fonts/mplus-2c-bold.eot") format("eot"), url("https://limehair.jp/salon/wp-content/themes/jupiter/fonts/mplus-2c-bold.woff2") format("woff2"), url("https://limehair.jp/salon/wp-content/themes/jupiter/fonts/mplus-2c-bold.woff") format("woff");
+}
+
+html,
+body,
+body div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video,
+details,
+summary {
+    font-family: "mplus-2c-regular";
+}
+
+@keyframes fuwafuwa {
+    0% {
+        -webkit-transform: translate(0, 0);
+    }
+    30% {
+        -webkit-transform: translate(0, -10px);
+    }
+    70% {
+        -webkit-transform: translate(0, 0);
+    }
+}
+
+.sp-hidden {
+    @include mq-down(tablet) {
+        display: none !important;
+    }
+    @include mq-down(desktop) {
+        display: block !important;
+    }
+}
+
+.pc-hidden {
+    @include mq-down(tablet) {
+        display: block !important;
+    }
+    @include mq-down(desktop) {
+        display: none !important;
+    }
+}
+
+.u-st-medium {
+    font-weight: 300;
+    font-family: "k-3";
+}
+
+.u-st-bold {
+    font-weight: bold;
+    font-family: "k-6";
+}
+
+.u-ls-minus-s {
+    letter-spacing: -0.5px;
+}

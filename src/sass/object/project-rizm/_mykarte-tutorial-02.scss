@@ -1,0 +1,476 @@
+.mykarte-tutorial-wrapper-02 {
+    margin: 0px auto 120px;
+     ::-webkit-input-placeholder {
+        /* Edge */
+        color: $cl-gray-light;
+    }
+     :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: $cl-gray-light;
+    }
+     ::placeholder {
+        color: $cl-gray-light;
+    }
+    @include mq-down(iphone5) {
+        margin: 35px auto;
+    }
+    input,
+    select {
+        @include mq-down(iphone5) {
+            transform: scale(0.6);
+        }
+    }
+}
+
+.mykarte-tutorial-02-section {
+    /*
+        text-align: center;
+        margin: -20px 15px 30px;
+        padding: 40px 0px 40px;
+        box-shadow: 0px 3px 10px #aaa;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        */
+}
+
+
+/* title */
+
+.mykarte-tutorial-02-title {
+    /*@include tutorial-01-font-size-l;*/
+    /*font-size: 30px;*/
+    @include tutorial-01-font-size-ll;
+    margin: 50px 0 50px;
+    font-family: "mplus-2c-bold", "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+    text-align: center;
+    color: $cl-gray-dark;
+    line-height: 1.35;
+}
+
+
+/*
+    .mykarte-tutorial-02-title {
+        border-radius: 10px;
+        font-size: 25px !important;
+        line-height: 1.5 !important;
+        font-weight: 600 !important;
+        text-align: center;
+        color: #fff !important;
+        margin: 0px auto 45px;
+        position: relative;
+        width: 90%;
+        background-image: linear-gradient(-60deg, #e6417a 0%, #ff595b 100%);
+        padding: 20px 0;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.18);
+        font-family: "mplus-2c-bold";
+        &:after {
+            position: absolute;
+            content: "";
+            top: 100%;
+            right: 0%;
+            left: 0%;
+            margin: 0 auto;
+            border: 16px solid transparent;
+            border-top: 20px solid #e05a6e;
+            width: 0;
+            height: 0;
+        }
+    }
+    */
+
+.mykarte-tutorial-02-block {
+    margin: 0px auto 45px;
+    @include mq-down(iphone5) {
+        margin: 25px auto 0;
+    }
+    .mykarte-tutorial-02-block-title {
+        color: $cl-gray-dark;
+        text-align: center;
+        @include tutorial-01-font-size-l;
+        margin: 0 0 5px;
+    }
+    .mykarte-tutorial-02-block-title-center {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin: 0 0 5px;
+        .mykarte-tutorial-02-block-title-center-center {
+            color: $cl-gray-dark;
+            text-align: center;
+            @include tutorial-01-font-size-l;
+            margin: 0 3px;
+        }
+        .mykarte-tutorial-02-block-title-center-right {
+            color: $cl-red;
+            text-align: left;
+            @include tutorial-01-font-size-m;
+        }
+    }
+}
+
+.mykarte-tutorial-02-block-birthday-input {
+    margin: 5px auto 15px;
+    text-align: center;
+    position: relative;
+    @include mq-down(iphone5) {
+        margin: 0 auto 10px;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 8px;
+        bottom: 0;
+        margin: auto;
+        right: 5px;
+        width: 7px;
+        height: 7px;
+        pointer-events: none;
+        border-top: 1.5px solid #4d4d4d;
+        border-right: 1.5px solid #4d4d4d;
+        transform: rotate(135deg);
+        opacity: 0.5;
+        z-index: 999;
+        @include mq-down(iphone5) {
+            width: 7px;
+            height: 7px;
+            right: 10px;
+        }
+    }
+    select {
+        padding: 4px 22px 1.5px 12px !important;
+        outline: 0;
+        width: 100%;
+        background: #fff;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        margin: 4px 3px 0;
+        box-shadow: 0px 1.5px 1.5px #ccc;
+        color: $cl-gray-dark;
+        text-align: center;
+        border: 1px solid #ccc;
+        font-family: "mplus-2c-regular";
+        border-radius: 6px;
+        @include tutorial-01-font-size-l;
+        &:disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        &:hover,
+        &:focus {
+            opacity: 0.8;
+            background: #dfdfdf;
+        }
+        &:-ms-expand {
+            display: none;
+        }
+    }
+}
+
+.mykarte-tutorial-02-block-select {
+    margin: 0 auto 8px;
+    text-align: center;
+    position: relative;
+    width: 240px;
+    @include mq-down(iphone5) {
+        margin: 0 auto 10px;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 9px;
+        width: 10px;
+        height: 10px;
+        pointer-events: none;
+        border-top: 1.5px solid #4d4d4d;
+        border-right: 1.5px solid #4d4d4d;
+        transform: rotate(135deg);
+        opacity: 0.5;
+        z-index: 999;
+        @include mq-down(iphone5) {
+            right: 22px;
+            width: 7px;
+            height: 7px;
+        }
+    }
+    select {
+        padding: 3px 5px;
+        outline: 0;
+        width: 100%;
+        background: #fff;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        margin: 0 auto;
+        box-shadow: 0px 3px 3px #ccc;
+        color: $cl-gray-dark;
+        text-align: center;
+        border: 1px solid #ccc;
+        font-family: "mplus-2c-regular";
+        padding: 5px 10px;
+        @include tutorial-01-font-size-l;
+        &:disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        &:hover,
+        &:focus {
+            opacity: 0.8;
+            background: #dfdfdf;
+        }
+        &:-ms-expand {
+            display: none;
+        }
+    }
+}
+
+.mykarte-tutorial-02-block-birthday {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0 auto 10px;
+    div {
+        margin: 0 3px;
+        color: $cl-gray-dark;
+    }
+}
+
+.mykarte-tutorial-02-block-birthday-text {
+    display: none;
+}
+
+.mykarte-tutorial-02-block-note {
+    color: $cl-gray-light;
+    text-align: center;
+    @include tutorial-01-font-size-s;
+    line-height: 1.35;
+}
+
+.mykarte-tutorial-02-block-note-margin-top20 {
+    margin-top: 10px;
+    @include mq-down(iphone5) {
+        margin-top: 12px !important;
+    }
+    @include mq-down(iphone5) {}
+}
+
+.mykarte-tutorial-wrapper-02 {
+    /*
+        text-align: center;
+        margin: 30px 15px 30px;
+        padding: 20px 0px 40px;
+        box-shadow: 0px 3px 10px #aaa;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        */
+    label,
+    input[type="checkbox"],
+    input[type="radio"] {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        margin: 0 0 12px;
+        color: $cl-gray-dark;
+        @include tutorial-01-font-size-l;
+        border-radius: 6px;
+    }
+    input[type="checkbox"],
+    input[type="radio"] {
+        display: none;
+    }
+    .mykarte-tutorial-02-block-radio {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px auto 0px;
+        width: 75%;
+        .mykarte-tutorial-02-block-radio-input {
+            transform: scale(0.9);
+            margin: 0px 20px 0px;
+        }
+    }
+    .checkbox-input+label {
+        border-radius: 10px;
+        letter-spacing: 1px;
+    }
+    .checkbox-input:checked+label {
+        border-radius: 10px;
+        letter-spacing: 1px;
+    }
+    .checkbox-input+label:before {
+        margin: 0 9px 0 0px;
+        @include input-circle-big();
+        border: 2px #ccc solid;
+        background: white;
+    }
+    .checkbox-input:checked+label:before {
+        content: "";
+        margin: 0 9px 0 0px;
+        @include input-circle-big();
+        background: $cl-lime;
+    }
+    /*
+        .mykarte-tutorial-02-block-radio {
+            display: flex;
+            justify-content: center;
+            margin: 10px auto 0px;
+            width: 75%;
+            .mykarte-tutorial-02-block-radio-input {
+                transform: scale(0.8);
+                margin: 0 -8px;
+            }
+        }
+        .checkbox-input+label {
+            background: white;
+            padding: 8px 27px;
+            box-shadow: 0px 1.5px 1.5px #ccc;
+            border-radius: 10px;
+            border: 1.5px solid #ccc;
+            letter-spacing: 1px;
+        }
+        .checkbox-input:checked+label {
+            background: white;
+            padding: 8px 27px;
+            color: $cl-lime;
+            box-shadow: 0px 2.5px 2.5px #aaa;
+            border-radius: 10px;
+            border: 1.5px solid $cl-lime;
+            letter-spacing: 1px;
+        }
+        .checkbox-input+label:before {
+            margin: 0 9px 0 0px;
+            background: white;
+            @include input-circle-big();
+            border: 2px #ccc solid;
+        }
+        .checkbox-input:checked+label:before {
+            content: "";
+            margin: 0 9px 0 0px;
+            @include input-circle-big();
+            background: $cl-lime;
+        }
+        */
+    /*
+        .checkbox-input+label {
+            background: white;
+            padding: 10px 20px;
+            box-shadow: 0px 1.5px 1.5px #ccc;
+            border-radius: 10px;
+        }
+        .checkbox-input:checked+label {
+            background: $cl-lime;
+            padding: 10px 20px;
+            color: white;
+            box-shadow: 0px 1.5px 1.5px #ccc;
+            border-radius: 10px;
+        }
+        
+        .checkbox-input+label:before {
+            
+            margin: 0 8px 0 0px;
+            background: white;
+            @include input-circle-big();
+        }
+        .checkbox-input:checked+label:before {
+            content: "";
+            margin: 0 8px 0 0px;
+            @include input-circle-big();
+            background: $cl-lime;
+        }
+        */
+}
+
+.mykarte-tutorial-02-block-input-text {
+    text-align: center;
+    margin: 0 auto 10px;
+    @include mq-down(iphone5) {
+        margin: 0 auto 10px;
+    }
+    input {
+        -webkit-appearance: none;
+        border: none;
+        box-shadow: 0px 3px 3px #ccc;
+        color: $cl-gray-dark;
+        border: 1px solid #ccc;
+        font-family: "mplus-2c-regular";
+        width: 240px;
+        padding: 5px 5px;
+        margin: 0 auto;
+        text-align: left;
+        border-radius: 6px;
+    }
+    input[type="text"],
+    input[type="tel"],
+    input[type="number"] {
+        @include tutorial-01-font-size-l;
+    }
+    input[type="email"] {
+        @include tutorial-01-font-size-m;
+        padding: 8px 5px;
+    }
+}
+
+.mykarte-tutorial-02-block-input-textarea {
+    margin: 0 auto;
+    text-align: center;
+    textarea {
+        -webkit-appearance: none;
+        border: none;
+        box-shadow: 0px 3px 3px #ccc;
+        font-family: "mplus-2c-regular";
+        color: $cl-gray-dark;
+        border: 1px solid #ccc;
+        width: 280px;
+        padding: 5px 5px;
+        margin: 0 auto;
+        text-align: left;
+        border-radius: 6px;
+    }
+}
+
+.button-tutorial02-skip {
+    color: $cl-gray-light;
+    @include tutorial-01-font-size-l;
+    text-align: center;
+    border: none;
+    background: transparent;
+    display: block;
+    padding: 4px 5px;
+    margin: 20px auto 30px;
+    @include mq-down(iphone5) {
+        margin: 12px auto 30px;
+        font-size: 15.2px;
+    }
+}
+
+.button-tutorial-submit-active {
+    background: linear-gradient(-60deg, #e6417a 0%, #ff595b 100%);
+    box-shadow: 0px 3px 10px #aaa;
+}
+
+.button-tutorial-submit-disable {
+    background: $cl-gray-light;
+}
+
+.button-tutorial-submit {
+    color: white;
+    padding: 15px 15px;
+    width: 55%;
+    text-align: center;
+    border: none;
+    @include tutorial-01-font-size-l;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    margin: 45px auto 0px;
+    display: block;
+    @include mq-down(iphone5) {
+        font-size: 17px;
+        margin: 35px auto 0px;
+    }
+}

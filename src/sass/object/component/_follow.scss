@@ -1,0 +1,42 @@
+        // -----------------------------------------------------------------
+        // follow
+        // -----------------------------------------------------------------      
+        .c-follow-pink {
+            background: $cl-red;
+            .c-follow-catchtext,
+            .c-follow-stylistname {
+                color: $cl-white;
+            }
+        }
+        
+        .c-follow-shadow {
+            /* Background Blur: */
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.7);
+            .c-follow-catchtext,
+            .c-follow-stylistname {
+                color: $cl-gray-dark;
+            }
+        }
+        
+        .c-follow {
+            width: 80%;
+            margin: 0 auto 75px;
+            padding: 30px 0;
+            .c-follow-catchtext {
+                text-align: center;
+            }
+            .c-follow-catchimage {
+                margin: 20px auto 10px;
+                text-align: center;
+                img {
+                    border-radius: 50%;
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+            .c-follow-stylistname {
+                text-align: center;
+                font-size: $sz-ft-m;
+                margin: 10px auto 15px;
+            }
+        }

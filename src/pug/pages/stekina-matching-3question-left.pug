@@ -1,0 +1,102 @@
+- var dateNow = Date.now();
+doctype html
+html(lang='jp')
+  head
+    title 質問はあと３つです！
+    link(href='static/css/matching.css?'+dateNow, rel='stylesheet')
+    meta(name='viewport', content='width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    meta(charset='UTF-8')
+    meta(name='robots', content='noindex,nofollow')
+    //script(src='https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js')
+    script(src='//jpostal-1006.appspot.com/jquery.jpostal.js', type='text/javascript')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
+  body
+    .matching-questions-wrapper
+      .matching-questions-head
+        .matching-questions-head-ai
+          img(src='https://stekina.com/wp-content/uploads/icon_stekina-ai-illust.png')
+        .matching-questions-head-speech
+          |質問はあと３つです！
+      .matching-questions-content
+            .matching-questions-content-question-box
+                .matching-questions-content-question-box-title
+                  span.matching-questions-content-question-box-title-large
+                    |カットのみ
+                  |の料金について
+                .matching-questions-content-question-box-checkboxs
+                  .matching-questions-content-checkbox
+                    input.checkbox-input(name='checkbox1-1', type='checkbox')
+                    label(for='checkbox1-1')
+                      span ４０００円以上は払えない
+                  .matching-questions-content-checkbox
+                    input#service-02-radio-value01.checkbox-input(name='checkbox1-2', type='checkbox')
+                    label(for='checkbox1-2')
+                      span ５５００円以上は払えない
+                  .matching-questions-content-checkbox
+                    input#service-02-radio-value01.checkbox-input(name='checkbox1-2', type='checkbox')
+                    label(for='checkbox1-2')
+                      span ７０００円以上は払えない
+                  .matching-questions-content-checkbox
+                    input#service-02-radio-value01.checkbox-input(name='checkbox1-2', type='checkbox')
+                    label(for='checkbox1-2')
+                      span ８０００円以上は払えない
+                  .matching-questions-content-checkbox
+                    input#service-02-radio-value01.checkbox-input(name='checkbox1-2', type='checkbox')
+                    label(for='checkbox1-2')
+                      span カット料金はいくらでもOK
+
+            .matching-questions-content-question-box
+                .matching-questions-content-question-box-title
+                  span.matching-questions-content-question-box-title-large
+                    |サロンまで
+                  |の移動時間について
+
+                .matching-questions-content-question-box-checkboxs
+                  .matching-questions-content-checkbox
+                    input.checkbox-input(name='checkbox1-1', type='checkbox')
+                    label(for='checkbox1-1')
+                      span 30分以上は耐えられない
+                  .matching-questions-content-checkbox
+                    input#service-02-radio-value01.checkbox-input(name='checkbox1-2', type='checkbox')
+                    label(for='checkbox1-2')
+                      span 45分以上は耐えられない
+
+                  .matching-questions-content-checkbox
+                    input#service-02-radio-value01.checkbox-input(name='checkbox1-2', type='checkbox')
+                    label(for='checkbox1-2')
+                      span 1時間以上は耐えられない
+
+                  .matching-questions-content-checkbox
+                    input#service-02-radio-value01.checkbox-input(name='checkbox1-2', type='checkbox')
+                    label(for='checkbox1-2')
+                      span 1時間30分以上は耐えられない
+
+                  .matching-questions-content-checkbox
+                    input#service-02-radio-value01.checkbox-input(name='checkbox1-2', type='checkbox')
+                    label(for='checkbox1-2')
+                      span 移動時間は気にしない
+
+            .matching-questions-content-question-box
+                .matching-questions-content-question-box-title
+                  span.matching-questions-content-question-box-title-large
+                    |移動時間の計算
+                  |のために、位置情報オンにするか郵便番号をお願いします
+                .demo-2columns-title
+                  |👇
+                  span.demo-2columns-title-gradient
+                    |どちらか選択してください
+                  |👇
+                .demo-2columns
+                  .common-btn
+                    a(href='#')
+                     |位置情報をオン
+                  .common-btn
+                    a(href='#')
+                     |郵便番号入力
+      .matching-questions-footer
+        .matching-questions-footer-text
+           |質問はあと２つです！もう少し！
+        .common-btn
+          a(href='stekina-matching-2question-left.html')
+           |次へ

@@ -1,0 +1,70 @@
+        // -----------------------------------------------------------------
+        // icon
+        // -----------------------------------------------------------------
+        $title-icons: lime,
+        facebook,
+        twitter,
+        salon,
+        instagram,
+        map,
+        tag,
+        like,
+        love,
+        comment,
+        follow,
+        follow-lime,
+        money,
+        arrow-navi,
+        lime-black,
+        lime-white,
+        question;
+        @each $title-icon in $title-icons {
+            .u-icn-#{$title-icon}-xs:before {
+                @include stekina-icon(12px);
+                background-image: url(#{$img_path}/icon/icn-#{$title-icon}.svg);
+                margin: 0 2px 0 0;
+                vertical-align: sub;
+            }
+            .u-icn-#{$title-icon}-s:before {
+                @include stekina-icon(16px);
+                @include mq-down(iphone5) {
+                    @include stekina-icon(11px);
+                }
+                background-image: url(#{$img_path}/icon/icn-#{$title-icon}.svg);
+                margin: 0 2px 0 0;
+                vertical-align: sub;
+            }
+            .u-icn-#{$title-icon}-m:before {
+                @include stekina-icon(16px);
+                padding: 0px 0 0 14px;
+                background-image: url(#{$img_path}/icon/icn-#{$title-icon}.svg);
+                vertical-align: sub;
+            }
+            .u-icn-#{$title-icon}-l:before {
+                @include stekina-icon(17px);
+                padding: 0 0 0 22px;
+                background-image: url(#{$img_path}/icon/icn-#{$title-icon}.svg);
+                vertical-align: sub;
+            }
+            //xlは使わないかも
+            .u-icn-#{$title-icon}-xl:before {
+                @include stekina-icon(23px);
+                padding: 0px 0 0px 28px;
+                background-position: center top;
+                background-image: url(#{$img_path}/icon/icn-#{$title-icon}.svg);
+                vertical-align: sub;
+            }
+            .u-icn-#{$title-icon}-xxl:before {
+                @include stekina-icon(25px);
+                padding: 0px 0 0px 28px;
+                background-position: center top;
+                background-image: url(#{$img_path}/icon/icn-#{$title-icon}.svg);
+                vertical-align: bototm;
+            }
+            .u-icn-#{$title-icon}-after:after {
+                @include stekina-icon(12px);
+                margin: 0px 0px 1px 5px;
+                background-image: url(#{$img_path}/icon/icn-#{$title-icon}.svg);
+                vertical-align: sub;
+            }
+        }
