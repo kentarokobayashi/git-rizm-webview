@@ -203,3 +203,256 @@ body {
         margin: 0 10px;
     }
 }
+
+.common-macching-card {
+    box-shadow: 0px 3px 10px #999;
+    width: 92.5%;
+    margin: 0 auto 60px;
+    border-radius: 4px;
+    overflow: hidden;
+    .common-macching-card-header {
+        display: flex;
+        align-items: flex-end;
+        color: white;
+        background: $cl-stekina-brown;
+        padding: 8px 0 5px;
+        .common-macching-card-header-left {
+            display: table-cell;
+            width: 87%;
+            font-size: 15px;
+            margin: 0 0 0 8px;
+            font-family: "k-3" !important;
+            .common-macching-card-header-left-large {
+                font-size: 24px;
+                font-family: "k-6" !important;
+            }
+        }
+        .common-macching-card-header-right {
+            display: table-cell;
+            width: 13%;
+            .common-macching-card-header-right-label {
+                font-size: 6px;
+                font-family: "k-6" !important;
+                margin: 0 0 2px;
+            }
+            .common-macching-card-header-right-percent {
+                font-size: 18.5px;
+                font-family: "k-6" !important;
+            }
+            .common-macching-card-header-right-percent-number {
+                font-size: 22px;
+            }
+        }
+    }
+    .common-macching-card-cover {
+        height: 120px;
+        width: 100%;
+        position: relative;
+        .common-macching-card-cover-background {
+            img {
+                object-fit: cover;
+                height: 120px;
+                width: 100%;
+            }
+        }
+        .common-macching-card-cover-profile-img {
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            position: absolute;
+            width: 72px;
+            height: 72px;
+            z-index: 14;
+            img {
+                border: 1px solid white;
+                box-shadow: 0px 3px 10px #999;
+                border-radius: 100px;
+                object-fit: cover;
+            }
+        }
+        .common-macching-card-cover-date {
+            &:before {
+                width: 82%;
+                height: 55%;
+                right: 0px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                background-color: rgba(0, 0, 0, 0.5);
+                display: block;
+                content: "";
+                z-index: 11;
+                position: absolute;
+            }
+            color: white;
+            /*
+            display: flex;
+            align-items: center;
+            */
+        }
+        .common-macching-card-cover-date-left {
+            /*margin: 0 0 0 18px;*/
+            position: absolute;
+            left: 27%;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            height: 40px;
+            z-index: 12;
+            .common-macching-card-cover-date-left-name {
+                font-size: 18px;
+                font-family: "k-6" !important;
+                margin: 0 0 7px;
+            }
+            .common-macching-card-cover-date-left-score {
+                display: flex;
+                font-family: "k-6" !important;
+                .common-macching-card-cover-date-score-list {
+                    display: flex;
+                    align-items: flex-end;
+                    margin: 0 7px 0 0;
+                    font-size: 12px;
+                    img {
+                        height: 12px;
+                        margin: 0 2px 0 0;
+                    }
+                }
+            }
+        }
+        .common-macching-card-cover-date-right {
+            position: absolute;
+            left: 70%;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            font-size: 10px;
+            font-family: "k-6" !important;
+            z-index: 12;
+            display: flex;
+            height: 10px;
+            img {
+                height: 10px;
+                margin: 0 5px 0 0;
+            }
+        }
+    }
+    .common-macching-card-detail {
+        background: white;
+        padding: 10px;
+        .common-macching-card-detail-date {
+            display: flex;
+            padding: 0 0 5px 0;
+            border-bottom: 1px solid $cl-gray-light;
+            .common-macching-card-detail-date-list {
+                display: flex;
+                font-size: 9px;
+                color: $cl-gray-light;
+                margin: 0 5px 0 0;
+                font-family: "k-6" !important;
+                img {
+                    height: 9px;
+                }
+            }
+        }
+        .common-macching-card-detail-escription {
+            font-size: 9px;
+            color: $cl-gray-dark;
+            font-family: "k-3" !important;
+            margin: 4px 0 0;
+        }
+        .common-macching-card-detail-button {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0 0;
+            font-family: "k-6" !important;
+            .common-macching-card-detail-aboslute-speech {
+                position: absolute;
+                top: -60px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: 80%;
+                -webkit-animation-name: fuwafuwa;
+                -webkit-animation-duration: 1s;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-direction: alternate;
+                -webkit-animation-timing-function: ease;
+                -moz-animation-name: fuwafuwa;
+                -moz-animation-duration: 1s;
+                -moz-animation-iteration-count: infinite;
+                -moz-animation-direction: alternate;
+            }
+            a {
+                padding: 10px 25px 10px;
+                display: inline-block;
+                border-radius: 4px;
+                text-decoration: none;
+                text-align: center;
+            }
+            .common-macching-card-detail-button-save a {
+                color: $cl-red;
+                border: 1.5px solid $cl-red;
+            }
+            .common-macching-card-detail-button-reseve {
+                position: relative;
+                a {
+                    @include rizm-gradient();
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.reserve-ux-wrapper {
+    padding: 30px 0 180px;
+}
+
+.reserve-ux-announce {
+    background: white;
+    padding: 6px 6px;
+    border-radius: 100px;
+    display: flex;
+    box-shadow: 0px 3px 10px #999;
+    width: 92.5%;
+    margin: 0 auto 20px;
+    align-items: center;
+    font-family: "k-6" !important;
+    font-size: 16px;
+    letter-spacing: -1px;
+    .reserve-ux-announce-text-red {
+        @include text-gradient();
+    }
+    img {
+        width: 25px;
+        height: 25px;
+        margin: 0 3px 0 0;
+    }
+}
+
+@-webkit-keyframes fuwafuwa {
+    0% {
+        -webkit-transform: translate(0, 0);
+    }
+    50% {
+        -webkit-transform: translate(0, -10px);
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+    }
+}
+
+@-moz-keyframes fuwafuwa {
+    0% {
+        -moz-transform: translate(0, 0);
+    }
+    50% {
+        -moz-transform: translate(0, -10px);
+    }
+    100% {
+        -moz-transform: translate(0, 0);
+    }
+}
