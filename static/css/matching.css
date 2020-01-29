@@ -5804,6 +5804,23 @@ body {
     height: 120px;
     width: 100%;
     position: relative; }
+    .common-macching-card .common-macching-card-cover .common-macching-card-speech-tap-photo img {
+      position: absolute;
+      left: 23%;
+      top: 45px;
+      bottom: 0;
+      margin: auto;
+      z-index: 20;
+      height: 80px;
+      -webkit-animation-name: fuwafuwa;
+      -webkit-animation-duration: 5.5s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-direction: alternate;
+      -webkit-animation-timing-function: ease;
+      -moz-animation-name: fuwafuwa;
+      -moz-animation-duration: 5.5s;
+      -moz-animation-iteration-count: infinite;
+      -moz-animation-direction: alternate; }
     .common-macching-card .common-macching-card-cover .common-macching-card-cover-background {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -5967,7 +5984,7 @@ body {
         -moz-animation-iteration-count: infinite;
         -moz-animation-direction: alternate; }
       .common-macching-card .common-macching-card-detail .common-macching-card-detail-button a {
-        padding: 10px 15px 10px;
+        padding: 10px 10px 10px;
         display: inline-block;
         border-radius: 4px;
         text-decoration: none;
@@ -5985,9 +6002,24 @@ body {
           height: 18px;
           /*画像の高さ*/
           background-image: url(https://stekina.com/wp-content/uploads/icn-bookmark-bold.svg);
+          background-repeat: no-repeat;
           background-size: contain;
           vertical-align: bottom;
-          margin: 0 3px 0 0; }
+          margin: 0 1px 0 0; }
+      .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .selected a:before {
+        content: "";
+        /*何も入れない*/
+        display: inline-block;
+        /*忘れずに！*/
+        width: 18px;
+        /*画像の幅*/
+        height: 18px;
+        /*画像の高さ*/
+        background-size: contain;
+        vertical-align: bottom;
+        margin: 0 1px 0 0;
+        background-repeat: no-repeat;
+        background-image: url(https://stekina.com/wp-content/uploads/icn-bookmark-bold-active.svg) !important; }
       .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-button-reseve {
         position: relative; }
         .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-button-reseve a {

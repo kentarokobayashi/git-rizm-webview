@@ -34,6 +34,8 @@ html(lang='jp')
                         |78
                       span|%
         .common-macching-card-cover
+            .common-macching-card-speech-tap-photo
+              img(src='https://stekina.com/wp-content/uploads/speech-tap-photo.png')
             .common-macching-card-cover-profile-img
                 img(src='https://s3-ap-northeast-1.amazonaws.com/limeapp/karte/owner_photo_approved/3WLF-5365-P48V-5NF2?timestamp=1578464061688')
             .common-macching-card-cover-date
@@ -618,6 +620,10 @@ html(lang='jp')
                 .common-macching-card-detail-button-reseve
                   a(href='https://stekina.com/reserve/H8C8-QF8J/menu')
                     |空席を確認してみる
-
-      //.common-macching-card
-      .common-macching-card
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+    script(type='text/javascript').
+      $('.common-macching-card-detail-button-save').on('click', function() {
+      // 追加したり削除したり
+      $(this).toggleClass('selected');
+      $(this).html('<a href="">保存しました</a>');
+      });
