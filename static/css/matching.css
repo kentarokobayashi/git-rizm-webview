@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -5803,11 +5804,33 @@ body {
     height: 120px;
     width: 100%;
     position: relative; }
-    .common-macching-card .common-macching-card-cover .common-macching-card-cover-background img {
-      -o-object-fit: cover;
-         object-fit: cover;
-      height: 120px;
-      width: 100%; }
+    .common-macching-card .common-macching-card-cover .common-macching-card-cover-background {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .common-macching-card .common-macching-card-cover .common-macching-card-cover-background .common-macching-card-cover-background-left {
+        width: 50%; }
+        .common-macching-card .common-macching-card-cover .common-macching-card-cover-background .common-macching-card-cover-background-left img {
+          -o-object-fit: cover;
+             object-fit: cover;
+          height: 120px;
+          width: 100%; }
+      .common-macching-card .common-macching-card-cover .common-macching-card-cover-background .common-macching-card-cover-background-right {
+        width: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 50%;
+        height: 60px;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        .common-macching-card .common-macching-card-cover .common-macching-card-cover-background .common-macching-card-cover-background-right div {
+          width: 50%; }
+          .common-macching-card .common-macching-card-cover .common-macching-card-cover-background .common-macching-card-cover-background-right div img {
+            -o-object-fit: cover;
+               object-fit: cover;
+            width: 100%;
+            height: 60px; }
     .common-macching-card .common-macching-card-cover .common-macching-card-cover-profile-img {
       left: 10px;
       top: 0;
@@ -5944,7 +5967,7 @@ body {
         -moz-animation-iteration-count: infinite;
         -moz-animation-direction: alternate; }
       .common-macching-card .common-macching-card-detail .common-macching-card-detail-button a {
-        padding: 10px 25px 10px;
+        padding: 10px 15px 10px;
         display: inline-block;
         border-radius: 4px;
         text-decoration: none;
@@ -5952,6 +5975,19 @@ body {
       .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-button-save a {
         color: #ff595b;
         border: 1.5px solid #ff595b; }
+        .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-button-save a:before {
+          content: "";
+          /*何も入れない*/
+          display: inline-block;
+          /*忘れずに！*/
+          width: 18px;
+          /*画像の幅*/
+          height: 18px;
+          /*画像の高さ*/
+          background-image: url(https://stekina.com/wp-content/uploads/icn-bookmark-bold.svg);
+          background-size: contain;
+          vertical-align: bottom;
+          margin: 0 3px 0 0; }
       .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-button-reseve {
         position: relative; }
         .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-button-reseve a {
