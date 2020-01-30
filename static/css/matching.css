@@ -5925,7 +5925,7 @@ body {
       bottom: 0;
       margin: auto;
       font-size: 10px;
-      font-family: "k-6" !important;
+      font-family: "k-3" !important;
       z-index: 12;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -5950,7 +5950,7 @@ body {
         font-size: 9px;
         color: #b3b3b3;
         margin: 0 5px 0 0;
-        font-family: "k-6" !important; }
+        font-family: "k-3" !important; }
         .common-macching-card .common-macching-card-detail .common-macching-card-detail-date .common-macching-card-detail-date-list img {
           height: 9px; }
     .common-macching-card .common-macching-card-detail .common-macching-card-detail-escription {
