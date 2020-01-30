@@ -12,28 +12,88 @@ html(lang='jp')
     meta(name='apple-mobile-web-app-capable', content='yes')
     meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
   body
-    .matching-questions-wrapper
-      .matching-questions-head
-        .matching-questions-head-ai
-          img(src='https://stekina.com/wp-content/uploads/icon_stekina-ai-illust.png')
-        .matching-questions-head-speech
-          |質問はあと４つです！
-      .matching-questions-content
-            .matching-questions-content-question-box(style="margin:0 0 500px !important;")
-                .matching-questions-content-question-box-subtitle
+      #barba-wrapper
+        .barba-container
+          form
+            .matching-questions-wrapper
+              .matching-questions-head
+                .matching-questions-head-ai
+                  img(src='https://stekina.com/wp-content/uploads/icon_stekina-ai-illust.png')
+                .matching-questions-head-speech
                   |相性の良い美容師を紹介するのに重要な質問です！
-                .matching-questions-content-question-box-title
-                  span.matching-questions-content-question-box-title-large
-                    |思い当たること全てにチェックをしてください。
-
-                .matching-questions-content-question-box-checkboxs
-                  .matching-questions-content-checkbox
-                    input.checkbox-input(name='checkbox1-1', type='checkbox')
-                    label(for='checkbox1-1')
-                      span ああああ
-      .matching-questions-footer
-        .matching-questions-footer-text
-           |質問はあと３つです！
-        .common-btn
-          a(href='stekina-matching-3question-left.html')
-           |次へ
+              .matching-questions-content
+                    .matching-questions-content-question-box
+                        .matching-questions-content-question-box-title
+                          span.matching-questions-content-question-box-title-large
+                            |髪や美容
+                          |についての質問
+                        .matching-questions-content-question-box-subtitle
+                          |思い当たること全てにチェック
+                        .matching-questions-content-question-box-checkboxs
+                          .matching-questions-content-checkbox
+                            input.checkbox-input(id='checkbox-beauty-and-hair-01', name='checkbox-beauty-and-hair', type='checkbox')
+                            label(for='checkbox-beauty-and-hair-01')
+                              span 流行には敏感な方かも
+                          .matching-questions-content-checkbox
+                            input.checkbox-input(id='checkbox-beauty-and-hair-02', name='checkbox-beauty-and-hair', type='checkbox')
+                            label(for='checkbox-beauty-and-hair-02')
+                              span 髪質に悩みがある
+                          .matching-questions-content-checkbox
+                            input.checkbox-input(id='checkbox-beauty-and-hair-03', name='checkbox-beauty-and-hair', type='checkbox')
+                            label(for='checkbox-beauty-and-hair-03')
+                              span どんな髪型にしたいかわからない
+                        .matching-questions-content-checkbox
+                          input.checkbox-input(id='checkbox-beauty-and-hair-04', name='checkbox-beauty-and-hair', type='checkbox')
+                          label(for='checkbox-beauty-and-hair-04')
+                            span オシャレになりたい
+                        .matching-questions-content-checkbox
+                          input.checkbox-input(id='checkbox-beauty-and-hair-05', name='checkbox-beauty-and-hair', type='checkbox')
+                          label(for='checkbox-beauty-and-hair-05')
+                            span 癖毛に悩んでてなんとかしたい
+                        .matching-questions-content-checkbox
+                          input.checkbox-input(id='checkbox-beauty-and-hair-06', name='checkbox-beauty-and-hair', type='checkbox')
+                          label(for='checkbox-beauty-and-hair-06')
+                            span 今のヘアスタイルにマンネリ気味
+                        .matching-questions-content-checkbox
+                          input.checkbox-input(id='checkbox-beauty-and-hair-07', name='checkbox-beauty-and-hair', type='checkbox')
+                          label(for='checkbox-beauty-and-hair-07')
+                            span ヘアスタイリングするの好きなほう
+                        .matching-questions-content-checkbox
+                          input.checkbox-input(id='checkbox-beauty-and-hair-08', name='checkbox-beauty-and-hair', type='checkbox')
+                          label(for='checkbox-beauty-and-hair-08')
+                            span 髪のボリュームでないのが悩み
+                        .matching-questions-content-checkbox
+                          input.checkbox-input(id='checkbox-beauty-and-hair-09', name='checkbox-beauty-and-hair', type='checkbox')
+                          label(for='checkbox-beauty-and-hair-09')
+                            span 新しい自分に出会いたい
+                        .matching-questions-content-checkbox
+                          input.checkbox-input(id='checkbox-beauty-and-hair-10', name='checkbox-beauty-and-hair', type='checkbox')
+                          label(for='checkbox-beauty-and-hair-10')
+                            span ヘアスタイル画像みるの好き
+                        .matching-questions-content-checkbox
+                          input.checkbox-input(id='checkbox-beauty-and-hair-11', name='checkbox-beauty-and-hair', type='checkbox')
+                          label(for='checkbox-beauty-and-hair-11')
+                            span 髪が多くて悩んでる
+                        .matching-questions-content-checkbox
+                          input.checkbox-input(id='checkbox-beauty-and-hair-12', name='checkbox-beauty-and-hair', type='checkbox')
+                          label(for='checkbox-beauty-and-hair-12')
+                            span イメチェンしたい
+                        .matching-questions-content-checkbox
+                          input.checkbox-input(id='checkbox-beauty-and-hair-13', name='checkbox-beauty-and-hair', type='checkbox')
+                          label(for='checkbox-beauty-and-hair-13')
+                            span トレンドカラーが気になる
+                        .matching-questions-content-checkbox
+                          input.checkbox-input(id='checkbox-beauty-and-hair-14', name='checkbox-beauty-and-hair', type='checkbox')
+                          label(for='checkbox-beauty-and-hair-14')
+                            span よくストレートパーマかける
+                        .matching-questions-content-checkbox
+                          input.checkbox-input(id='checkbox-beauty-and-hair-15', name='checkbox-beauty-and-hair', type='checkbox')
+                          label(for='checkbox-beauty-and-hair-15')
+                            span ずっと同じ髪型しがちかも
+              .matching-questions-footer
+                .matching-questions-footer-text
+                  |質問はあと３つです！
+                .common-btn
+                  a.common-btn-next(href='stekina-matching-3question-left.html')
+                    |次へ
+      include ../mixin/_footer-matching.pug

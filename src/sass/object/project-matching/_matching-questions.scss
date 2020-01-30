@@ -1,3 +1,32 @@
+@mixin input-circle {
+    border-radius: 100px;
+    content: "";
+    display: block;
+    background-size: contain;
+    border: 1px #ccc solid;
+    width: 28px !important;
+    height: 28px !important;
+    @include mq-down(iphone5) {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@mixin input-circle-big {
+    border-radius: 100px;
+    content: "";
+    display: inline-block;
+    background-size: contain;
+    box-shadow: 0px 3px 3px #ddd, inset 0 0 0 4.2px white;
+    border: 2px $cl-lime solid;
+    width: 33px;
+    height: 33px;
+    @include mq-down(iphone5) {
+        width: 25px;
+        height: 25px;
+    }
+}
+
 @mixin text-gradient {
     @include rizm-gradient();
     -webkit-background-clip: text;
@@ -9,11 +38,11 @@
 }
 
 @mixin font-size-matching-s {
-    font-size: 14.5px;
+    font-size: 13px;
 }
 
 @mixin font-size-matching-m {
-    font-size: 20px;
+    font-size: 18.5px;
 }
 
 @mixin font-size-matching-l {
@@ -54,7 +83,7 @@ body {
     display: flex;
     align-items: flex-end;
     .matching-questions-head-ai {
-        width: 25%;
+        width: 20%;
     }
     .matching-questions-head-speech {
         color: $cl-stekina-brown;
@@ -66,7 +95,7 @@ body {
 .matching-questions-content {
     border-radius: 8px;
     background: white;
-    padding: 30px 10px 30px 20px;
+    padding: 30px 8px 30px 16px;
     margin: 20px 0 0;
     position: relative;
     input[type="checkbox"],
@@ -93,20 +122,27 @@ body {
         }
         .matching-questions-content-question-box-subtitle {
             @include font-size-matching-ss;
-            font-family: "k-6" !important;
+            font-family: "k-3" !important;
             color: $cl-red;
-            margin: -15px 0 15px;
-            text-align: center;
+            margin: 0px 0 30px;
+            text-align: left;
         }
         .matching-questions-content-question-box-title {
             @include font-size-matching-m;
             font-family: "k-6" !important;
-            color: $cl-stekina-black !important;
+            color: $cl-red;
             line-height: 1.5;
-            margin: 0 0 20px;
+            margin: 0 0 0px;
             .matching-questions-content-question-box-title-large {
                 @include font-size-matching-l;
             }
+        }
+        .matching-questions-content-question-box-title-middle {
+            line-height: 1.5;
+            margin: 0 0 0px;
+            font-family: "k-3" !important;
+            @include font-size-matching-m;
+            color: $cl-black;
         }
         .matching-questions-content-checkbox {
             margin: 0 0 22px;
@@ -114,7 +150,69 @@ body {
                 font-weight: 700 !important;
                 @include font-size-matching-m;
                 color: $cl-stekina-black !important;
-                font-family: "k-6", KoburinaGoStd-W6 !important;
+                font-family: "k-3", KoburinaGoStd-W6 !important;
+            }
+            span {
+                width: 90%;
+                margin: 6px 0 0;
+            }
+        }
+    }
+}
+
+.matching-questions-content-question-select {
+    display: flex;
+    .matching-questions-content-question-select-child {
+        position: relative;
+        select {
+            padding: 4px 26px 1.5px 12px !important;
+            outline: 0;
+            background: #fff;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            margin: 4px 3px 0;
+            box-shadow: 0px 1.5px 1.5px #ccc;
+            color: $cl-gray-dark;
+            text-align: center;
+            border: 1px solid #ccc;
+            font-family: "k-3", KoburinaGoStd-W6 !important;
+            border-radius: 6px;
+            display: block;
+            @include font-size-matching-m;
+            &:disabled {
+                opacity: 0.5;
+                pointer-events: none;
+            }
+            &:hover,
+            &:focus {
+                opacity: 0.8;
+                background: #dfdfdf;
+            }
+            &:-ms-expand {
+                display: none;
+            }
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 4px;
+            bottom: 0;
+            margin: auto;
+            right: 11px;
+            width: 8px;
+            height: 8px;
+            pointer-events: none;
+            border-top: 2px solid #4d4d4d;
+            border-right: 2px solid #4d4d4d;
+            transform: rotate(135deg);
+            opacity: 0.5;
+            z-index: 999;
+            @include mq-down(iphone5) {
+                right: 22px;
+                width: 7px;
+                height: 7px;
             }
         }
     }
@@ -147,6 +245,28 @@ body {
         text-decoration: none;
         font-family: "k-6" !important;
     }
+}
+
+.common-btn-toggle {
+    text-align: center;
+    @include rizm-gradient();
+    display: inline-block;
+    padding: 24px 0;
+    text-align: center;
+    width: 145px;
+    color: white;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0px 3px 10px #999;
+    text-decoration: none;
+    font-family: "k-6" !important;
+    border: none;
+}
+
+.common-btn-toggle-disable {
+    border: none;
+    box-shadow: none !important;
+    background: $cl-gray-light !important;
 }
 
 .matching-dialog {
@@ -190,9 +310,33 @@ body {
     font-family: "k-6" !important;
     @include font-size-matching-s;
     text-align: center;
-    margin: 0 0 10px;
+    margin: 30px 0 10px;
     .demo-2columns-title-gradient {
         @include text-gradient();
+    }
+}
+
+.demo-yubin-speech-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    &:before {
+        position: absolute;
+        content: "";
+        display: block;
+        margin: 0 auto;
+        width: 20px;
+        height: 20px;
+        top: 20px;
+        right: 76px;
+        -webkit-transform: rotate(180deg);
+        transform: rotate(45deg);
+        /*box-shadow: 0px 3px 10px #ccc;*/
+        background: white;
+        border-left: 1px #ccc solid;
+        border-top: 1px #ccc solid;
+        background: white;
+        z-index: 100;
     }
 }
 
@@ -202,6 +346,36 @@ body {
     .common-btn {
         margin: 0 10px;
     }
+}
+
+.demo-yubin-speech {
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 5px 6px #ccc;
+    border: 1px #ccc solid;
+    margin: 30px 10px 0 0;
+    border-radius: 8px;
+    width: 90%;
+}
+
+.demo-yubin-text {
+    font-family: "k-3" !important;
+    @include font-size-matching-s;
+    color: $cl-stekina-black;
+    margin: 0 0 10px;
+}
+
+.demo-yubin-input input {
+    box-shadow: 0px 3px 3px #ccc;
+    color: #4d4d4d;
+    border: 1px solid #ccc;
+    font-family: "mplus-2c-regular";
+    padding: 5px 5px;
+    margin: 0 auto;
+    text-align: left;
+    border-radius: 6px;
+    font-family: "k-3" !important;
+    @include font-size-matching-m;
 }
 
 @mixin font-size-common-card-ss {
@@ -218,6 +392,36 @@ body {
 
 @mixin font-size-common-card-l {
     font-size: 24px;
+}
+
+label,
+input[type="checkbox"] {
+    cursor: pointer;
+    display: flex;
+    align-items: top;
+    margin: 0 0 30px;
+    color: $cl-gray-dark;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    display: none;
+}
+
+.checkbox-input+label:before {
+    /* border: 1px #ccc solid; */
+    margin: 0 5px 0 0;
+    background: white;
+    box-shadow: 0px 3px 3px #ddd, inset 0 0 0 4px white;
+    @include input-circle();
+}
+
+.checkbox-input:checked+label:before {
+    content: "";
+    @include input-circle();
+    border: none !important;
+    box-shadow: 0px 3px 3px #ddd;
+    background-image: url(https://stekina.com/wp-content/uploads/icn_rizm.svg);
 }
 
 .common-macching-card {
@@ -542,4 +746,31 @@ body {
     100% {
         -moz-transform: translate(0, 0);
     }
+}
+
+.barba-leave-active,
+.barba-enter-active {
+    transition: opacity 450ms ease;
+}
+
+
+/* initial state */
+
+.barba-leave {
+    opacity: 1;
+}
+
+.barba-enter {
+    opacity: 0;
+}
+
+
+/* ending state */
+
+.barba-leave-to {
+    opacity: 0;
+}
+
+.barba-enter-to {
+    opacity: 1;
 }
