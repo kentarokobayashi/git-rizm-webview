@@ -42,11 +42,11 @@
 }
 
 @mixin font-size-matching-m {
-    font-size: 18.5px;
+    font-size: 20px;
 }
 
 @mixin font-size-matching-l {
-    font-size: 29px;
+    font-size: 36px;
 }
 
 @mixin font-size-matching-xl {
@@ -124,7 +124,7 @@ body {
             @include font-size-matching-ss;
             font-family: "k-3" !important;
             color: $cl-red;
-            margin: 0px 0 30px;
+            margin: 0px 0 10px;
             text-align: left;
         }
         .matching-questions-content-question-box-title {
@@ -150,7 +150,7 @@ body {
                 font-weight: 700 !important;
                 @include font-size-matching-m;
                 color: $cl-stekina-black !important;
-                font-family: "k-3", KoburinaGoStd-W6 !important;
+                font-family: "k-3" !important;
             }
             span {
                 width: 90%;

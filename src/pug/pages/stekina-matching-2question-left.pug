@@ -24,7 +24,8 @@ html(lang='jp')
                       .matching-questions-content-question-box
                           .matching-questions-content-question-box-title
                             span.matching-questions-content-question-box-title-large
-                              |性別について
+                              |性別
+                            span|について
                           .matching-questions-content-question-box-subtitle
                               |どれか１つにチェック
                           .matching-questions-content-question-box-checkboxs
@@ -50,6 +51,7 @@ html(lang='jp')
                           .matching-questions-content-question-select
                                 .matching-questions-content-question-select-child
                                   select(name='birthday-year')
+                                      option(value='default')|年
                                       option(value='1900')|1900年
                                       option(value='1901')|1901年
                                       option(value='1902')|1902年
@@ -173,7 +175,7 @@ html(lang='jp')
                                       option(value='2020')|2020年
                                 .matching-questions-content-question-select-child
                                   select(name='birthday-month')
-                                    //option(value='') 月
+                                    option(value='') 月
                                     option(value='1') 1月
                                     option(value='2') 2月
                                     option(value='3') 3月
@@ -188,7 +190,7 @@ html(lang='jp')
                                     option(value='12') 12月
                                 .matching-questions-content-question-select-child
                                   select(name='birthday-day')
-                                    //option(value='') 日
+                                    option(value='') 日
                                     option(value='1') 1日
                                     option(value='2') 2日
                                     option(value='3') 3日
