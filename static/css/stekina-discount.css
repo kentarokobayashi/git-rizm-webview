@@ -25,6 +25,11 @@
 
 /* letter-spacing ratio */
 /* line-height ratio */
+/*
+
+@mixin rizm-gradient {
+    background: linear-gradient(-25deg, #f24564 0%, #ff595b 100%);
+}*/
 .bg-lime {
   background: #15bfab !important; }
 
@@ -5683,8 +5688,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: -webkit-linear-gradient(150deg, #e6417a 0%, #ff595b 100%);
-  background: linear-gradient(-60deg, #e6417a 0%, #ff595b 100%); }
+  background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
+  background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%); }
   .stekina-discount-bar .stekina-discount-bar-text-small {
     font-size: 11px;
     font-family: "k-6", KoburinaGoStd-W6; }
@@ -5756,8 +5761,8 @@ a {
       .stekina-discount-content .stekina-discount-content-head .stekina-discount-content-head-right .stekina-discount-content-head-right-price-number {
         font-size: 40px;
         font-family: "k-6", KoburinaGoStd-W6;
-        background: -webkit-linear-gradient(150deg, #e6417a 0%, #ff595b 100%);
-        background: linear-gradient(-60deg, #e6417a 0%, #ff595b 100%);
+        background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
+        background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; }
       .stekina-discount-content .stekina-discount-content-head .stekina-discount-content-head-right .stekina-discount-content-head-right-text {
@@ -5766,15 +5771,15 @@ a {
       .stekina-discount-content .stekina-discount-content-head .stekina-discount-content-head-right .stekina-discount-content-head-right-price-yen {
         font-size: 30px;
         font-family: "k-6", KoburinaGoStd-W6;
-        background: -webkit-linear-gradient(150deg, #e6417a 0%, #ff595b 100%);
-        background: linear-gradient(-60deg, #e6417a 0%, #ff595b 100%);
+        background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
+        background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; }
       .stekina-discount-content .stekina-discount-content-head .stekina-discount-content-head-right .stekina-discount-content-head-right-text {
         letter-spacing: -0.5px; }
   .stekina-discount-content .stekina-discount-content-mainbg {
-    background: -webkit-linear-gradient(150deg, #e6417a 0%, #ff595b 100%);
-    background: linear-gradient(-60deg, #e6417a 0%, #ff595b 100%);
+    background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
+    background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
     position: relative;
     border-radius: 4px;
     margin: 0px auto;
@@ -5986,8 +5991,8 @@ a {
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease; }
   .stekina-discount-about .stekina-discount-about-title .stekina-discount-about-title-gradient {
-    background: -webkit-linear-gradient(150deg, #e6417a 0%, #ff595b 100%);
-    background: linear-gradient(-60deg, #e6417a 0%, #ff595b 100%);
+    background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
+    background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: "k-6", KoburinaGoStd-W6; }
@@ -6135,8 +6140,8 @@ a {
   font-weight: bold; }
 
 .common-stekina-discount-title {
-  background: -webkit-linear-gradient(150deg, #e6417a 0%, #ff595b 100%);
-  background: linear-gradient(-60deg, #e6417a 0%, #ff595b 100%);
+  background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
+  background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
   font-size: 26.5px;
   border-radius: 4px;
   color: white;
@@ -6161,19 +6166,19 @@ a {
 .active .stekina-discount-content-main-box-checklist-top-right-price,
 .active .stekina-discount-content-main-box-checklist-bottom-right-price,
 .active .stekina-discount-content-main-box-checklist-top-left-count {
-  background: -webkit-linear-gradient(150deg, #e6417a 0%, #ff595b 100%);
-  background: linear-gradient(-60deg, #e6417a 0%, #ff595b 100%);
+  background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
+  background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
 .active .stekina-discount-content-main-box-checklist-top-left-icon {
-  background: -webkit-linear-gradient(150deg, #e6417a 0%, #ff595b 100%);
-  background: linear-gradient(-60deg, #e6417a 0%, #ff595b 100%); }
+  background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
+  background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%); }
 
 .active .stekina-discount-content-main-box-checklist-bottom-salon .stekina-discount-content-main-box-checklist-bottom-right {
   border-radius: 4px;
-  background: -webkit-linear-gradient(150deg, #e6417a 0%, #ff595b 100%);
-  background: linear-gradient(-60deg, #e6417a 0%, #ff595b 100%);
+  background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
+  background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
   padding: 5px 7px;
   color: white;
   margin: 3px 0 3px !important;

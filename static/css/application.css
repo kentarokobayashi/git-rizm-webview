@@ -29,6 +29,11 @@
 
 /* letter-spacing ratio */
 /* line-height ratio */
+/*
+
+@mixin rizm-gradient {
+    background: linear-gradient(-25deg, #f24564 0%, #ff595b 100%);
+}*/
 .bg-lime {
   background: #15bfab !important; }
 

@@ -12,114 +12,121 @@ html(lang='jp')
   body
       #barba-wrapper
         .barba-container
-          form
-            .matching-questions-wrapper#matching-questions-wrapper
-              .matching-questions-head
-                .matching-questions-head-ai
-                  img(src='https://stekina.com/wp-content/uploads/icon_stekina-ai-illust.png')
-                .matching-questions-head-speech
-                  |質問ページあと３つです！
-              .matching-questions-content
-                    .matching-questions-content-question-box
-                        .matching-questions-content-question-box-title
-                          span.matching-questions-content-question-box-title-large
-                            |カットのみ
-                          |の料金について
-                        .matching-questions-content-question-box-subtitle
-                          |どれか１つにチェック
-                        .matching-questions-content-question-box-checkboxs
-                          .matching-questions-content-checkbox
-                            input.checkbox-input(id='cut-price-01', name='cut-price', type='radio')
-                            label(for='cut-price-01')
-                              span ４０００円以上は払えない
-                          .matching-questions-content-checkbox
-                              input.checkbox-input(id='cut-price-02', name='cut-price', type='radio')
-                              label(for='cut-price-02')
-                               span ５５００円以上は払えない
-                          .matching-questions-content-checkbox
-                            input.checkbox-input(id='cut-price-03', name='cut-price', type='radio')
-                            label(for='cut-price-03')
-                              span ７０００円以上は払えない
-                          .matching-questions-content-checkbox
-                            input.checkbox-input(id='cut-price-04', name='cut-price', type='radio')
-                            label(for='cut-price-04')
-                              span ８０００円以上は払えない
-                          .matching-questions-content-checkbox
-                            input.checkbox-input(id='cut-price-05', name='cut-price', type='radio')
-                            label(for='cut-price-05')
-                              span カット料金はいくらでもOK
+              form
+                .matching-questions-wrapper#matching-questions-wrapper
+                  .matching-questions-head
+                    .matching-questions-head-ai
+                      img(src='https://stekina.com/wp-content/uploads/icon_stekina-ai-illust.png')
+                    .matching-questions-head-speech
+                      |質問ページあと３つです！
+                  .matching-questions-content
+                        .matching-questions-content-question-box
+                            .matching-questions-content-question-box-title
+                              span.matching-questions-content-question-box-title-large
+                                |カットのみ
+                              |の料金について
+                            .matching-questions-content-question-box-subtitle
+                              |どれか１つにチェック
+                            .matching-questions-content-question-box-checkboxs
+                              .matching-questions-content-checkbox
+                                input.checkbox-input(id='cut-price-01', name='cut-price', type='radio')
+                                label(for='cut-price-01')
+                                  span ４０００円以上は払えない
+                              .matching-questions-content-checkbox
+                                  input.checkbox-input(id='cut-price-02', name='cut-price', type='radio')
+                                  label(for='cut-price-02')
+                                    span ５５００円以上は払えない
+                              .matching-questions-content-checkbox
+                                input.checkbox-input(id='cut-price-03', name='cut-price', type='radio')
+                                label(for='cut-price-03')
+                                  span ７０００円以上は払えない
+                              .matching-questions-content-checkbox
+                                input.checkbox-input(id='cut-price-04', name='cut-price', type='radio')
+                                label(for='cut-price-04')
+                                  span ８０００円以上は払えない
+                              .matching-questions-content-checkbox
+                                input.checkbox-input(id='cut-price-05', name='cut-price', type='radio')
+                                label(for='cut-price-05')
+                                  span カット料金はいくらでもOK
 
-                    .matching-questions-content-question-box
-                        .matching-questions-content-question-box-title
-                          span.matching-questions-content-question-box-title-large
-                            |サロンまで
-                          |の移動時間について
-                        .matching-questions-content-question-box-subtitle
-                          |どれか１つにチェック
-                        .matching-questions-content-question-box-checkboxs
-                          .matching-questions-content-checkbox
-                            input.checkbox-input(id='salon-time-01', name='salon-time', type='radio')
-                            label(for='salon-time-01')
-                              span 30分以上は耐えられない
-                          .matching-questions-content-checkbox
-                            input.checkbox-input(id='salon-time-02', name='salon-time', type='radio')
-                            label(for='salon-time-02')
-                              span 45分以上は耐えられない
-                          .matching-questions-content-checkbox
-                            input.checkbox-input(id='salon-time-03', name='salon-time', type='radio')
-                            label(for='salon-time-03')
-                              span 1時間以上は耐えられない
-                          .matching-questions-content-checkbox
-                            input.checkbox-input(id='salon-time-04', name='salon-time', type='radio')
-                            label(for='salon-time-04')
-                              span 1時間30分以上は耐えられない
-                          .matching-questions-content-checkbox
-                            input.checkbox-input(id='salon-time-05', name='salon-time', type='radio')
-                            label(for='salon-time-05')
-                              span 移動時間は気にしない
-                    .matching-questions-content-question-box
-                        .matching-questions-content-question-box-title
-                          span.matching-questions-content-question-box-title-large
-                            |移動時間の計算
-                          span|のため
-                        .matching-questions-content-question-box-title-middle
-                          |位置情報オンにするか郵便番号の入力をお願いします
-                        .demo-2columns-title
-                          |👇
-                          span.demo-2columns-title-gradient
-                            |どちらか選択してください
-                          |👇
-                        .demo-2columns
-                            .common-btn-toggle.common-btn-ichijoho
-                              |位置情報をオン
-                            .common-btn-toggle.common-btn-yubin
-                              |郵便番号入力
-                        .demo-yubin-speech-wrapper(style='display: none')
-                          .demo-yubin-speech
-                                .demo-yubin-text
-                                  |郵便番号を入力してください
-                                .demo-yubin-input
-                                    input(name='postcode', type='number', value='', placeholder='123-4567', required='')
-              .matching-questions-footer
-                .matching-questions-footer-text
-                  |質問ページあと２つです！もう少し！
-                .common-btn
-                  a.common-btn-next(href='stekina-matching-2question-left.html')
-                   |次へ
-
+                        .matching-questions-content-question-box
+                            .matching-questions-content-question-box-title
+                              span.matching-questions-content-question-box-title-large
+                                |サロンまで
+                              |の移動時間について
+                            .matching-questions-content-question-box-subtitle
+                              |どれか１つにチェック
+                            .matching-questions-content-question-box-checkboxs
+                              .matching-questions-content-checkbox
+                                input.checkbox-input(id='salon-time-01', name='salon-time', type='radio')
+                                label(for='salon-time-01')
+                                  span 30分以上は耐えられない
+                              .matching-questions-content-checkbox
+                                input.checkbox-input(id='salon-time-02', name='salon-time', type='radio')
+                                label(for='salon-time-02')
+                                  span 45分以上は耐えられない
+                              .matching-questions-content-checkbox
+                                input.checkbox-input(id='salon-time-03', name='salon-time', type='radio')
+                                label(for='salon-time-03')
+                                  span 1時間以上は耐えられない
+                              .matching-questions-content-checkbox
+                                input.checkbox-input(id='salon-time-04', name='salon-time', type='radio')
+                                label(for='salon-time-04')
+                                  span 1時間30分以上は耐えられない
+                              .matching-questions-content-checkbox
+                                input.checkbox-input(id='salon-time-05', name='salon-time', type='radio')
+                                label(for='salon-time-05')
+                                  span 移動時間は気にしない
+                        .matching-questions-content-question-box
+                            .matching-questions-content-question-box-title
+                              span.matching-questions-content-question-box-title-large
+                                |移動時間の計算
+                              span|のため
+                            .matching-questions-content-question-box-title-middle
+                              |位置情報オンにするか郵便番号の入力をお願いします
+                            .demo-2columns-title
+                              |👇
+                              span.demo-2columns-title-gradient
+                                |どちらか選択してください
+                              |👇
+                            .demo-2columns
+                                .common-btn-toggle.common-btn-ichijoho
+                                  div
+                                    span
+                                      |位置情報をオン
+                                .common-btn-toggle.common-btn-yubin
+                                  div
+                                    span
+                                      |郵便番号入力
+                            .demo-yubin-speech-wrapper(style='display: none')
+                              .demo-yubin-speech
+                                    .demo-yubin-text
+                                      |郵便番号を入力してください
+                                    .demo-yubin-input
+                                        input(name='postcode', type='number', value='', placeholder='123-4567', required='')
+                  .matching-questions-footer
+                    .matching-questions-footer-text
+                      |質問ページあと２つです！もう少し！
+                    .common-btn
+                      a.common-btn-next(href='stekina-matching-2question-left.html')
+                         |次へ
       include ../mixin/_footer-matching.pug
-      script(type='text/javascript').
-        $('.common-btn-toggle').on('click', function() {
-        // 追加したり削除したり
-        $(this).toggleClass('common-btn-toggle-disable');
-        });
-        $('.common-btn-yubin').on('click', function() {
-        // 追加したり削除したり
-          $('.demo-yubin-speech-wrapper').fadeIn();
-        });
-        $('.common-btn-ichijoho').on('click', function() {
-        // 追加したり削除したり
-          $('.demo-yubin-speech-wrapper').hide();
-        });
-     
-        
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js')
+      //script(src='static/js/barba.js')
+      //script(type='text/javascript').
+              $('.common-btn-toggle').on('click', function() {
+              // 追加したり削除したり
+              $(this).toggleClass('common-btn-toggle-disable');
+              });
+              $('.common-btn-yubin').on('click', function() {
+              // 追加したり削除したり
+                $('.demo-yubin-speech-wrapper').fadeIn();
+              });
+              $('.common-btn-ichijoho').on('click', function() {
+              // 追加したり削除したり
+                $('.demo-yubin-speech-wrapper').hide();
+              }); 
+              $('.common-btn-next').click(function () {
+                        //id名#pagetopがクリックされたら、以下の処理を実行
+                        $("html,body").animate({scrollTop:0},"300");
+              });

@@ -229,3 +229,22 @@ html(lang='jp')
                     a.common-btn-next(href='stekina-matching-1question-left.html')
                       |次へ
       include ../mixin/_footer-matching.pug
+      script(type='text/javascript').
+              $('.common-btn-toggle').on('click', function() {
+              // 追加したり削除したり
+              $(this).toggleClass('common-btn-toggle-disable');
+              });
+              $('.common-btn-yubin').on('click', function() {
+              // 追加したり削除したり
+                $('.demo-yubin-speech-wrapper').fadeIn();
+              });
+              $('.common-btn-ichijoho').on('click', function() {
+              // 追加したり削除したり
+                $('.demo-yubin-speech-wrapper').hide();
+              }); 
+              $('.common-btn-next').click(function () {
+                        //id名#pagetopがクリックされたら、以下の処理を実行
+                        $("html,body").animate({scrollTop:0},"300");
+              });
+      //script(src='https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js')
+      //script(src='static/js/barba.js')

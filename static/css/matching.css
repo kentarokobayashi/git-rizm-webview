@@ -25,6 +25,11 @@
 
 /* letter-spacing ratio */
 /* line-height ratio */
+/*
+
+@mixin rizm-gradient {
+    background: linear-gradient(-25deg, #f24564 0%, #ff595b 100%);
+}*/
 .bg-lime {
   background: #15bfab !important; }
 
@@ -5595,14 +5600,48 @@ a.panel-block:hover {
 
 @font-face {
   font-family: "k-3";
-  src: url("https://limehair.jp/static/fonts/koburinaStdW3.eot?") format("eot"), url("https://limehair.jp/static/fonts/koburinaStdW3.woff2") format("woff2"), url("https://limehair.jp/static/fonts/koburinaStdW3.woff") format("woff"); }
+  src: url("../fonts/koburinaStdW3.eot?") format("eot"), url("../fonts/koburinaStdW3.woff2") format("woff2"), url("../fonts/koburinaStdW3.woff") format("woff"); }
 
 @font-face {
   font-family: "k-6";
-  src: url("https://limehair.jp/static/fonts/koburinaStdW6.eot?") format("eot"), url("https://limehair.jp/static/fonts/koburinaStdW6.woff2") format("woff2"), url("https://limehair.jp/static/fonts/koburinaStdW6.woff") format("woff"); }
+  src: url("../fonts/koburinaStdW6.woff2") format("woff2"), url("../fonts/koburinaStdW6.woff") format("woff"), url("../fonts/koburinaStdW6.eot?") format("eot"); }
 
+/*
+@font-face {
+    font-family: "k-3";
+    src: url("https://limehair.jp/static/fonts/koburinaStdW3.eot?") format("eot"), url("https://limehair.jp/static/fonts/koburinaStdW3.woff2") format("woff2"), url("https://limehair.jp/static/fonts/koburinaStdW3.woff") format("woff");
+}
+
+@font-face {
+    font-family: "k-6";
+    src: url("https://limehair.jp/static/fonts/koburinaStdW6.woff2") format("woff2"), url("https://limehair.jp/static/fonts/koburinaStdW6.woff") format("woff"), url("https://limehair.jp/static/fonts/koburinaStdW6.eot?") format("eot");
+}
+*/
+/*
+@font-face {
+    font-family: "Noto-Regular";
+    src: url("https://limehair.jp/static/fonts/NotoSansCJKjp-Regular.eot?") format("eot"), url("https://limehair.jp/static/fonts/NotoSansCJKjp-Regular.woff2") format("woff2"), url("https://limehair.jp/static/fonts/NotoSansCJKjp-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Noto-Bold";
+    src: url("https://limehair.jp/static/fonts/NotoSansCJKjp-Bold.eot?") format("eot"), url("https://limehair.jp/static/fonts/NotoSansCJKjp-Bold.woff2") format("woff2"), url("https://limehair.jp/static/fonts/NotoSansCJKjp-Regular.Bold") format("woff");
+}
+
+
+@font-face {
+    font-family: "Noto-Regular";
+    src: url("../fonts/NotoSansCJKjp-Regular.eot?") format("eot"), url("../fonts/NotoSansCJKjp-Regular.woff2") format("woff2"), url("../fonts/NotoSansCJKjp-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Noto-Bold";
+    src: url("../fonts/NotoSansCJKjp-Bold.eot?") format("eot"), url("../fonts/NotoSansCJKjp-Bold.woff2") format("woff2"), url("../fonts/NotoSansCJKjp-Regular.Bold") format("woff");
+}*/
 body {
-  background: #e2ddd7; }
+  background: #e2ddd7;
+  max-width: 450px;
+  margin: 0 auto; }
 
 .matching-questions-wrapper {
   padding: 15px; }
@@ -5661,7 +5700,8 @@ body {
       line-height: 1.5;
       margin: 0 0 0px; }
       .matching-questions-content .matching-questions-content-question-box .matching-questions-content-question-box-title .matching-questions-content-question-box-title-large {
-        font-size: 36px; }
+        font-size: 36px;
+        letter-spacing: -1px !important; }
     .matching-questions-content .matching-questions-content-question-box .matching-questions-content-question-box-title-middle {
       line-height: 1.5;
       margin: 0 0 0px;
@@ -5745,8 +5785,8 @@ body {
 .common-btn {
   text-align: center; }
   .common-btn a {
-    background: -webkit-linear-gradient(150deg, #e6417a 0%, #ff595b 100%);
-    background: linear-gradient(-60deg, #e6417a 0%, #ff595b 100%);
+    background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
+    background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
     display: inline-block;
     padding: 24px 0;
     text-align: center;
@@ -5760,8 +5800,8 @@ body {
 
 .common-btn-toggle {
   text-align: center;
-  background: -webkit-linear-gradient(150deg, #e6417a 0%, #ff595b 100%);
-  background: linear-gradient(-60deg, #e6417a 0%, #ff595b 100%);
+  background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
+  background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
   display: inline-block;
   padding: 24px 0;
   text-align: center;
@@ -5775,9 +5815,26 @@ body {
   border: none; }
 
 .common-btn-toggle-disable {
-  border: none;
-  box-shadow: none !important;
-  background: #b3b3b3 !important; }
+  border: solid 1.5px transparent;
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), -webkit-linear-gradient(120deg, #e6417a 0%, #ff595b 100%);
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(-30deg, #e6417a 0%, #ff595b 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
+  /*
+    div {
+        background: white;
+        display: inline-block;
+        width: 100%;
+        padding: 24px 0;
+        border-radius: 8px;
+    }
+    */ }
+  .common-btn-toggle-disable span {
+    background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
+    background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 .matching-dialog {
   display: -webkit-box;
@@ -5785,6 +5842,7 @@ body {
   display: flex;
   width: 100%;
   height: 100vh;
+  max-width: 450px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -5831,8 +5889,8 @@ body {
   text-align: center;
   margin: 30px 0 10px; }
   .demo-2columns-title .demo-2columns-title-gradient {
-    background: -webkit-linear-gradient(150deg, #e6417a 0%, #ff595b 100%);
-    background: linear-gradient(-60deg, #e6417a 0%, #ff595b 100%);
+    background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
+    background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
 
@@ -5953,7 +6011,7 @@ input[type="radio"] {
 .common-macching-card {
   box-shadow: 0px 3px 10px #999;
   width: 92.5%;
-  margin: 0 auto 60px;
+  margin: 0 auto 30px;
   border-radius: 4px;
   overflow: hidden; }
   .common-macching-card .common-macching-card-header {
@@ -5965,47 +6023,69 @@ input[type="radio"] {
             align-items: flex-end;
     color: white;
     background: #8e7f6b;
-    padding: 8px 0 5px; }
+    padding: 2px 3px 2px 0px; }
     .common-macching-card .common-macching-card-header .common-macching-card-header-left {
       display: table-cell;
-      width: 87%;
-      font-size: 15px;
+      width: 85%;
+      font-size: 14.7px;
       margin: 0 0 0 8px;
+      letter-spacing: -1.25px;
       font-family: "k-3" !important; }
+      @media screen and (max-width: 374px) {
+        .common-macching-card .common-macching-card-header .common-macching-card-header-left {
+          font-size: 13px; } }
+      .common-macching-card .common-macching-card-header .common-macching-card-header-left span {
+        display: inline-block;
+        margin: 0 1px 0 0; }
       .common-macching-card .common-macching-card-header .common-macching-card-header-left .common-macching-card-header-left-large {
-        font-size: 24px;
-        font-family: "k-6" !important; }
+        /*font-family: "k-6" !important; */
+        letter-spacing: -1px;
+        font-size: 26.5px;
+        font-family: "k-6", "Noto-Bold", "Avenir", "Helvetica Neue", "Helvetica", "Arial", YuGothic, "Yu Gothic", "Hiragino Sans", "ヒラギノ角ゴシック", sans-serif !important; }
+        @media screen and (max-width: 374px) {
+          .common-macching-card .common-macching-card-header .common-macching-card-header-left .common-macching-card-header-left-large {
+            font-size: 23px; } }
     .common-macching-card .common-macching-card-header .common-macching-card-header-right {
       display: table-cell;
-      width: 13%; }
+      width: 15%;
+      text-align: right; }
       .common-macching-card .common-macching-card-header .common-macching-card-header-right .common-macching-card-header-right-label {
-        font-size: 6px;
-        font-family: "k-6" !important;
-        margin: 0 0 2px; }
+        font-size: 8px;
+        font-family: "k-3" !important;
+        margin: 0 4px 0 0px;
+        letter-spacing: -01px; }
+        @media screen and (max-width: 374px) {
+          .common-macching-card .common-macching-card-header .common-macching-card-header-right .common-macching-card-header-right-label {
+            font-size: 6.5px; } }
       .common-macching-card .common-macching-card-header .common-macching-card-header-right .common-macching-card-header-right-percent {
-        font-size: 18.5px;
+        font-size: 17px;
         font-family: "k-6" !important; }
+        @media screen and (max-width: 374px) {
+          .common-macching-card .common-macching-card-header .common-macching-card-header-right .common-macching-card-header-right-percent {
+            font-size: 16px; } }
       .common-macching-card .common-macching-card-header .common-macching-card-header-right .common-macching-card-header-right-percent-number {
-        font-size: 22px; }
+        font-size: 24px;
+        letter-spacing: 3px; }
   .common-macching-card .common-macching-card-cover {
-    height: 120px;
+    height: 110px;
     width: 100%;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
     .common-macching-card .common-macching-card-cover .common-macching-card-speech-tap-photo img {
       position: absolute;
       left: 23%;
-      top: 45px;
+      top: 20px;
       bottom: 0;
       margin: auto;
       z-index: 20;
       height: 80px;
       -webkit-animation-name: fuwafuwa;
-      -webkit-animation-duration: 5.5s;
+      -webkit-animation-duration: 1s;
       -webkit-animation-iteration-count: infinite;
       -webkit-animation-direction: alternate;
       -webkit-animation-timing-function: ease;
       -moz-animation-name: fuwafuwa;
-      -moz-animation-duration: 5.5s;
+      -moz-animation-duration: 1s;
       -moz-animation-iteration-count: infinite;
       -moz-animation-direction: alternate; }
     .common-macching-card .common-macching-card-cover .common-macching-card-cover-background {
@@ -6037,16 +6117,20 @@ input[type="radio"] {
             height: 60px; }
     .common-macching-card .common-macching-card-cover .common-macching-card-cover-profile-img {
       left: 10px;
-      top: 0;
+      top: -3px;
       bottom: 0;
       margin: auto;
       position: absolute;
+      z-index: 14;
       width: 72px;
-      height: 72px;
-      z-index: 14; }
+      height: 72px; }
+      @media screen and (max-width: 374px) {
+        .common-macching-card .common-macching-card-cover .common-macching-card-cover-profile-img {
+          width: 65px;
+          height: 65px; } }
       .common-macching-card .common-macching-card-cover .common-macching-card-cover-profile-img img {
         border: 1px solid white;
-        box-shadow: 0px 3px 10px #999;
+        box-shadow: 0px 3px 3px #444;
         border-radius: 100px;
         -o-object-fit: cover;
            object-fit: cover; }
@@ -6057,13 +6141,13 @@ input[type="radio"] {
             align-items: center;
             */ }
       .common-macching-card .common-macching-card-cover .common-macching-card-cover-date:before {
-        width: 82%;
-        height: 55%;
+        width: 85%;
+        height: 65px;
         right: 0px;
         top: 0;
         bottom: 0;
         margin: auto;
-        background-color: rgba(0, 0, 0, .5);
+        background-color: rgba(0, 0, 0, .58);
         display: block;
         content: "";
         z-index: 11;
@@ -6071,8 +6155,7 @@ input[type="radio"] {
     .common-macching-card .common-macching-card-cover .common-macching-card-cover-date-left {
       /*margin: 0 0 0 18px;*/
       position: absolute;
-      left: 27%;
-      top: 0;
+      top: 8px;
       bottom: 0;
       margin: auto;
       display: -webkit-box;
@@ -6082,12 +6165,19 @@ input[type="radio"] {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      height: 40px;
-      z-index: 12; }
+      height: 42px;
+      z-index: 12;
+      left: 95px; }
+      @media screen and (max-width: 374px) {
+        .common-macching-card .common-macching-card-cover .common-macching-card-cover-date-left {
+          left: 85px; } }
       .common-macching-card .common-macching-card-cover .common-macching-card-cover-date-left .common-macching-card-cover-date-left-name {
-        font-size: 18px;
+        font-size: 17px;
         font-family: "k-6" !important;
-        margin: 0 0 7px; }
+        margin: 0 0 12px; }
+        @media screen and (max-width: 374px) {
+          .common-macching-card .common-macching-card-cover .common-macching-card-cover-date-left .common-macching-card-cover-date-left-name {
+            font-size: 16px; } }
       .common-macching-card .common-macching-card-cover .common-macching-card-cover-date-left .common-macching-card-cover-date-left-score {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -6100,11 +6190,12 @@ input[type="radio"] {
           -webkit-box-align: end;
               -ms-flex-align: end;
                   align-items: flex-end;
-          margin: 0 7px 0 0;
-          font-size: 12px; }
+          margin: 0 12px 0 0;
+          font-size: 12px;
+          letter-spacing: 1px; }
           .common-macching-card .common-macching-card-cover .common-macching-card-cover-date-left .common-macching-card-cover-date-left-score .common-macching-card-cover-date-score-list img {
-            height: 12px;
-            margin: 0 2px 0 0; }
+            height: 10px;
+            margin: 0 3px 0 0; }
     .common-macching-card .common-macching-card-cover .common-macching-card-cover-date-right {
       position: absolute;
       left: 70%;
@@ -6123,28 +6214,48 @@ input[type="radio"] {
         margin: 0 5px 0 0; }
   .common-macching-card .common-macching-card-detail {
     background: white;
-    padding: 10px; }
+    padding: 5px 10px 10px; }
     .common-macching-card .common-macching-card-detail .common-macching-card-detail-date {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      padding: 0 0 5px 0;
-      border-bottom: 1px solid #b3b3b3; }
+      padding: 3px 0px 3px;
+      border-bottom: 1px solid #f0f0f0; }
       .common-macching-card .common-macching-card-detail .common-macching-card-detail-date .common-macching-card-detail-date-list {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        font-size: 9px;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+        font-size: 9.2px;
         color: #b3b3b3;
-        margin: 0 5px 0 0;
-        font-family: "k-3" !important; }
-        .common-macching-card .common-macching-card-detail .common-macching-card-detail-date .common-macching-card-detail-date-list img {
-          height: 9px; }
+        margin: 0 10px 0 0;
+        font-family: "k-3" !important;
+        letter-spacing: -0.3px; }
+        @media screen and (max-width: 374px) {
+          .common-macching-card .common-macching-card-detail .common-macching-card-detail-date .common-macching-card-detail-date-list {
+            font-size: 7px; } }
+        .common-macching-card .common-macching-card-detail .common-macching-card-detail-date .common-macching-card-detail-date-list .common-macching-card-detail-date-icon {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: end;
+              -ms-flex-align: end;
+                  align-items: flex-end;
+          margin: 0 2px 0 0; }
+          .common-macching-card .common-macching-card-detail .common-macching-card-detail-date .common-macching-card-detail-date-list .common-macching-card-detail-date-icon img {
+            height: 11px; }
     .common-macching-card .common-macching-card-detail .common-macching-card-detail-escription {
-      font-size: 9px;
+      font-size: 9.2px;
       color: #4d4d4d;
       font-family: "k-3" !important;
-      margin: 4px 0 0; }
+      margin: 6px 0 0;
+      line-height: 1.5;
+      letter-spacing: -0.5px; }
+      @media screen and (max-width: 374px) {
+        .common-macching-card .common-macching-card-detail .common-macching-card-detail-escription {
+          font-size: 7px; } }
     .common-macching-card .common-macching-card-detail .common-macching-card-detail-button {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -6152,8 +6263,57 @@ input[type="radio"] {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      margin: 10px 0 0;
-      font-family: "k-6" !important; }
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin: 14px 0 0px;
+      font-family: "k-6" !important;
+      position: relative; }
+      .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-button-save-wrapper {
+        position: relative;
+        width: 37%; }
+      .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-aboslute-speech-save {
+        position: absolute;
+        top: -58px;
+        left: -12%;
+        right: 0;
+        margin: auto;
+        width: 120%;
+        /*
+                padding: 5px;
+                background: white;
+                /*box-shadow: 0px 3px 2px #bbb; 
+                border: 1px #ccc solid;
+                border-radius: 4px;
+                width: 90%;
+                @include font-size-common-card-ss();
+                text-align: center;
+                transform: scale(1.45);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 80%;
+                }
+                &:before {
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    margin: 0 auto;
+                    width: 10px;
+                    height: 10px;
+                    bottom: -6px;
+                    left: 0;
+                    right: 0;
+                    transform: rotate(-45deg);
+                    box-shadow: 0px 3px 10px #ccc;
+                    background: white;
+                    border-left: 1px #ccc solid;
+                    border-bottom: 1px #ccc solid;
+                    background: white;
+                    z-index: 100;
+                }
+                */ }
       .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-aboslute-speech {
         position: absolute;
         top: -60px;
@@ -6170,78 +6330,121 @@ input[type="radio"] {
         -moz-animation-duration: 1s;
         -moz-animation-iteration-count: infinite;
         -moz-animation-direction: alternate; }
-      .common-macching-card .common-macching-card-detail .common-macching-card-detail-button a {
-        padding: 10px 10px 10px;
-        display: inline-block;
+      .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-button-save {
+        position: relative;
+        color: #ff595b;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
         border-radius: 4px;
         text-decoration: none;
-        text-align: center; }
-      .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-button-save a {
-        color: #ff595b;
-        border: 1.5px solid #ff595b; }
-        .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-button-save a:before {
+        text-align: center;
+        padding: 13px 0px;
+        width: 100%;
+        border: 1px solid #ff595b;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        font-size: 14.7px; }
+        @media screen and (max-width: 374px) {
+          .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-button-save {
+            font-size: 13px; } }
+        @media screen and (max-width: 374px) {
+          .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-button-save {
+            padding: 8px 10px 8px 15px; } }
+        .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-button-save:before {
           content: "";
-          /*何も入れない*/
           display: inline-block;
-          /*忘れずに！*/
-          width: 18px;
-          /*画像の幅*/
-          height: 18px;
-          /*画像の高さ*/
-          background-image: url(https://stekina.com/wp-content/uploads/icn-bookmark-bold.svg);
+          background-image: url(https://stekina.com/wp-content/uploads/icn-bookmark-button-normal.svg);
           background-repeat: no-repeat;
           background-size: contain;
           vertical-align: bottom;
-          margin: 0 1px 0 0; }
-      .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .selected a:before {
+          margin: 0 0px 0 0;
+          width: 15px;
+          height: 15px; }
+          @media screen and (max-width: 374px) {
+            .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-button-save:before {
+              width: 12px;
+              height: 12px; } }
+      .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .selected:before {
         content: "";
-        /*何も入れない*/
         display: inline-block;
-        /*忘れずに！*/
-        width: 18px;
-        /*画像の幅*/
-        height: 18px;
-        /*画像の高さ*/
         background-size: contain;
         vertical-align: bottom;
-        margin: 0 1px 0 0;
+        margin: 0 0px 0 0;
         background-repeat: no-repeat;
-        background-image: url(https://stekina.com/wp-content/uploads/icn-bookmark-bold-active.svg) !important; }
+        background-image: url(https://stekina.com/wp-content/uploads/icn-bookmark-button-active.svg) !important;
+        width: 15px;
+        height: 15px; }
+        @media screen and (max-width: 374px) {
+          .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .selected:before {
+            width: 12px;
+            height: 12px; } }
       .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-button-reseve {
         position: relative; }
         .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-button-reseve a {
-          background: -webkit-linear-gradient(150deg, #e6417a 0%, #ff595b 100%);
-          background: linear-gradient(-60deg, #e6417a 0%, #ff595b 100%);
-          color: white; }
+          font-size: 14.7px;
+          background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
+          background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
+          color: white;
+          display: inline-block;
+          border-radius: 4px;
+          text-decoration: none;
+          text-align: center;
+          padding: 13px 24px 13px 29px;
+          border: 1px solid #ff595b; }
+          @media screen and (max-width: 374px) {
+            .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-button-reseve a {
+              font-size: 13px; } }
+          @media screen and (max-width: 374px) {
+            .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-button-reseve a {
+              padding: 8px 10px 8px 15px; } }
 
 .reserve-ux-wrapper {
   padding: 30px 0 180px; }
 
 .reserve-ux-announce {
   background: white;
-  padding: 6px 6px;
-  border-radius: 100px;
+  border-radius: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   box-shadow: 0px 3px 10px #999;
   width: 92.5%;
-  margin: 0 auto 20px;
+  margin: 0 auto 25px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-family: "k-6" !important;
-  font-size: 16px;
-  letter-spacing: -1px; }
+  letter-spacing: -1px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 15px;
+  padding: 6px 3px; }
+  @media screen and (max-width: 374px) {
+    .reserve-ux-announce {
+      font-size: 13.4px;
+      padding: 6px 1px; } }
   .reserve-ux-announce .reserve-ux-announce-text-red {
-    background: -webkit-linear-gradient(150deg, #e6417a 0%, #ff595b 100%);
-    background: linear-gradient(-60deg, #e6417a 0%, #ff595b 100%);
+    background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
+    background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    -webkit-text-fill-color: transparent;
+    margin: 0 !important; }
+  .reserve-ux-announce span {
+    margin: 0 0 0 -3px; }
   .reserve-ux-announce img {
-    width: 25px;
-    height: 25px;
-    margin: 0 3px 0 0; }
+    margin: 0 2px 0 0;
+    width: 30px;
+    height: 30px; }
+    @media screen and (max-width: 374px) {
+      .reserve-ux-announce img {
+        width: 27px;
+        height: 27px; } }
 
 @-webkit-keyframes fuwafuwa {
   0% {
@@ -6250,6 +6453,38 @@ input[type="radio"] {
     -webkit-transform: translate(0, -10px); }
   100% {
     -webkit-transform: translate(0, 0); } }
+
+.common-macching-card-detail-aboslute-speech-save-animation {
+  -webkit-animation-name: fadeinout;
+          animation-name: fadeinout;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease; }
+
+@-webkit-keyframes fadeinout {
+  0% {
+    opacity: 0; }
+  3% {
+    opacity: 1; }
+  80% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeinout {
+  0% {
+    opacity: 0; }
+  3% {
+    opacity: 1; }
+  80% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 
 .barba-leave-active,
 .barba-enter-active {
