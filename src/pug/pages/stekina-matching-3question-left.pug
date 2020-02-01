@@ -111,9 +111,9 @@ html(lang='jp')
                       a.common-btn-next(href='stekina-matching-2question-left.html')
                          |次へ
       include ../mixin/_footer-matching.pug
-      script(src='https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js')
+      //script(src='https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js')
       //script(src='static/js/barba.js')
-      //script(type='text/javascript').
+      script(type='text/javascript').
               $('.common-btn-toggle').on('click', function() {
               // 追加したり削除したり
               $(this).toggleClass('common-btn-toggle-disable');
@@ -126,7 +126,7 @@ html(lang='jp')
               // 追加したり削除したり
                 $('.demo-yubin-speech-wrapper').hide();
               }); 
-              $('.common-btn-next').click(function () {
+              //$('.common-btn-next').click(function () {
                         //id名#pagetopがクリックされたら、以下の処理を実行
-                        $("html,body").animate({scrollTop:0},"300");
-              });
+              //         $("html,body").animate({scrollTop:0},"300");
+              //});

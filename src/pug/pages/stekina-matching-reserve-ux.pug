@@ -14,8 +14,53 @@ html(lang='jp')
   body
     #barba-wrapper
       .barba-container 
-        .reserve-ux-wrapper
-          //.common-macching-card
+        //.common-macching-card
+        .common-matching-dialog.common-matching-dialog-first
+                 .common-matching-dialog-wrapper
+                      .common-matching-dialog-wrapper-head
+                        .common-matching-dialog-wrapper-head-text
+                            |満足いただけない場合
+                        .common-matching-dialog-wrapper-head-red
+                            |全額100%返金保証
+                      .common-matching-dialog-body
+                          .common-matching-dialog-body-text
+                            .common-matching-dialog-body-text-top
+                              .common-matching-dialog-body-text-top-column.common-matching-dialog-body-text-top-column-mbottom-5
+                                |あと
+                              .common-matching-dialog-body-text-top-column
+                                #TimeLeft
+                              .common-matching-dialog-body-text-top-column.common-matching-dialog-body-text-top-column-mbottom-5
+                                  |以内に　
+                            .common-matching-dialog-body-text-bottom
+                                    |予約すると適応されます💡
+                          .common-matching-dialog-body-button
+                            button.common-matching-dialog-body-button-first
+                              |OK   
+
+        .common-matching-dialog.common-matching-dialog-second(style='display: none;')
+                 .common-matching-dialog-wrapper
+                      .common-matching-dialog-wrapper-head
+                      .common-matching-dialog-body
+                            div(style='font-family:"k-3"; padding:0 10px;')
+                              |▼保証条件はサービス向上にご協力いただける方！
+                              br
+                              |・めちゃくちゃポジティブに表現する。アンケートはありがたいので
+                              br
+                              |・表示から1時間以内(24時間以内)のご予約で適応されます
+                              br
+                              |・来店サロンの領収書必須です
+                              br
+                              |・アンケートに回答いただき、サービスの向上にご協力いただける方！
+                              br
+                              |・直接オフィス訪問が可能な方！全額100%保証返金
+                              br
+                              |・電話アンケートが可能な方！50%保証返金
+                              br
+                              |・webアンケートが可能な方！20%保証返金
+                            .common-matching-dialog-body-button
+                              button.common-matching-dialog-body-button-second
+                                |OK   
+        .reserve-ux-wrapper            
           .reserve-ux-announce
               .reserve-ux-announce-img
                 img(src='https://stekina.com/wp-content/uploads/icon_stekina-ai-illust.png')
@@ -284,8 +329,6 @@ html(lang='jp')
                     .common-macching-card-detail-button-reseve
                       a(href='https://stekina.com/reserve/H8C8-QF8J/menu')
                         |空席を確認してみる
-
-
           //.common-macching-card
           .common-macching-card
             .common-macching-card-header
@@ -638,6 +681,12 @@ html(lang='jp')
 
     include ../mixin/_footer-matching.pug
     script(type='text/javascript').
+      $(document).ready(function () {
+          $(".common-matching-dialog-first").hide();
+          setTimeout(function () {
+              $(".common-matching-dialog-first").removeClass("add_class").addClass("add_class").fadeIn();
+          }, 1000);
+      });
       $('.common-macching-card-detail-button-save').on('click', function() {
       $('.common-macching-card-detail-aboslute-speech-save').addClass('common-macching-card-detail-aboslute-speech-save-animation');
       // 追加したり削除したり
@@ -650,4 +699,12 @@ html(lang='jp')
       */
       $(this).toggleClass('selected');
       $(this).html('<div class="common-macching-card-detail-button-save-triger">保存しました</div>');
+      });
+
+      $('.common-matching-dialog-body-button-first').on('click', function() {
+      $('.common-matching-dialog-first').hide();
+      $('.common-matching-dialog-second').fadeIn();
+      });
+       $('.common-matching-dialog-body-button-second').on('click', function() {
+      $('.common-matching-dialog').hide()
       });

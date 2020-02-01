@@ -27,6 +27,12 @@
     }
 }
 
+@mixin text-gradient-lime {
+    @include lime-gradient();
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 @mixin text-gradient {
     @include rizm-gradient();
     -webkit-background-clip: text;
@@ -978,4 +984,91 @@ input[type="radio"] {
 
 .barba-enter-to {
     opacity: 1;
+}
+
+.common-matching-dialog {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    max-width: 450px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 99;
+    .common-matching-dialog-wrapper {
+        background: $cl-stekina-brown-light;
+        border-radius: 4px;
+        width: 87.5%;
+        padding: 0 0 45px;
+        margin: -45px 0 0;
+        .common-matching-dialog-wrapper-head {
+            padding: 30px 0;
+            text-align: center;
+            .common-matching-dialog-wrapper-head-text {
+                color: $cl-stekina-black;
+                font-family: "k-6";
+                @include font-size-matching-m();
+                margin: 0 0 7px;
+            }
+            .common-matching-dialog-wrapper-head-red {
+                color: $cl-stekina-black;
+                font-family: "k-6";
+                @include font-size-matching-l();
+                @include text-gradient();
+            }
+        }
+        .common-matching-dialog-body {
+            padding: 45px 0;
+            width: 95%;
+            margin: 0 auto;
+            background: white;
+            border-radius: 4px;
+            .common-matching-dialog-body-text {
+                font-family: "k-6";
+                .common-matching-dialog-body-text-top {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    margin: 0 0 13px;
+                    @include font-size-matching-m();
+                    .common-matching-dialog-body-text-top-column-mbottom-5 {
+                        margin-bottom: 5px;
+                    }
+                    div {
+                        display: inline-block;
+                    }
+                    #TimeLeft {
+                        margin: -3px 0 0;
+                        font-size: 30px;
+                        @include text-gradient-lime();
+                    }
+                    .countdown-number {
+                        font-size: 43px;
+                        letter-spacing: 2px;
+                        margin: 0 1px 0;
+                    }
+                }
+                .common-matching-dialog-body-text-bottom {
+                    text-align: center;
+                    @include font-size-matching-m();
+                }
+            }
+            .common-matching-dialog-body-button {
+                text-align: center;
+                button {
+                    @include font-size-matching-m();
+                    letter-spacing: 2px;
+                    @include rizm-gradient();
+                    width: 80%;
+                    padding: 15px;
+                    border: none;
+                    color: white;
+                    font-family: "k-6";
+                    margin: 30px auto 0;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
 }
