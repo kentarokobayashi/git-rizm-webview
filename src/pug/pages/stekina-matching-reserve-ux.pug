@@ -16,50 +16,78 @@ html(lang='jp')
       .barba-container 
         //.common-macching-card
         .common-matching-dialog.common-matching-dialog-first
-                 .common-matching-dialog-wrapper
-                      .common-matching-dialog-wrapper-head
-                        .common-matching-dialog-wrapper-head-text
+                 .common-matching-henkin-wrapper
+                      .common-matching-henkin-wrapper-head-ai
+                        .common-matching-henkin-wrapper-head-ai-img
+                          img(src='https://stekina.com/wp-content/uploads/icon_stekina-ai-illust.png')
+                        .common-matching-henkin-wrapper-head-ai-text
+                          |ラインと連携してログインをお願いします！
+                      .common-matching-henkin-body
+                          .common-matching-henkin-body-imgline
+                            img(src='https://stekina.com/wp-content/uploads/textline.jpg')
+                          .common-matching-henkin-body-button
+                            button.common-matching-henkin-body-button-first
+                              |ライン連携する👌
+        .common-matching-dialog.common-matching-dialog-second(style='display:none;')
+                 .common-matching-henkin-wrapper
+                      .common-matching-henkin-wrapper-head
+                        .common-matching-henkin-wrapper-head-text
                             |満足いただけない場合
-                        .common-matching-dialog-wrapper-head-red
+                        .common-matching-henkin-wrapper-head-red
                             |全額100%返金保証
-                      .common-matching-dialog-body
-                          .common-matching-dialog-body-text
-                            .common-matching-dialog-body-text-top
-                              .common-matching-dialog-body-text-top-column.common-matching-dialog-body-text-top-column-mbottom-5
+                      .common-matching-henkin-body
+                          .common-matching-henkin-body-text
+                            .common-matching-henkin-body-text-top
+                              .common-matching-henkin-body-text-top-column.common-matching-henkin-body-text-top-column-mbottom-5
                                 |あと
-                              .common-matching-dialog-body-text-top-column
+                              .common-matching-henkin-body-text-top-column
                                 #TimeLeft
-                              .common-matching-dialog-body-text-top-column.common-matching-dialog-body-text-top-column-mbottom-5
+                              .common-matching-henkin-body-text-top-column.common-matching-henkin-body-text-top-column-mbottom-5
                                   |以内に　
-                            .common-matching-dialog-body-text-bottom
+                            .common-matching-henkin-body-text-bottom
                                     |予約すると適応されます💡
-                          .common-matching-dialog-body-button
-                            button.common-matching-dialog-body-button-first
+                          .common-matching-henkin-body-button
+                            button.common-matching-henkin-body-button-second
                               |OK   
-
-        .common-matching-dialog.common-matching-dialog-second(style='display: none;')
-                 .common-matching-dialog-wrapper
-                      .common-matching-dialog-wrapper-head
-                      .common-matching-dialog-body
-                            div(style='font-family:"k-3"; padding:0 10px;')
-                              |▼保証条件はサービス向上にご協力いただける方！
+        .common-matching-dialog.common-matching-dialog-third(style='display: none;')
+                .common-matching-henkin-wrapper
+                  .scroll      
+                      .common-matching-henkin-wrapper-head
+                        .common-matching-henkin-wrapper-head-hosho-joken
+                           img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/02/text-hosho-joken.svg')
+                        .common-matching-henkin-body-03
+                            .common-matching-henkin-body-head
+                              |表示から1時間以内の
                               br
-                              |・めちゃくちゃポジティブに表現する。アンケートはありがたいので
+                              |ご予約で適応されます
+                            .common-matching-henkin-body-contentimg
+                                img(src='https://stekina.com/wp-content/uploads/hosho-joken-1.jpg')
+                        .common-matching-henkin-scroll
+                           |👇スクロールして詳細を確認👇
+                            
+                        .common-matching-henkin-body-03
+                            .common-matching-henkin-body-head
+                              |来店サロンの
                               br
-                              |・表示から1時間以内(24時間以内)のご予約で適応されます
+                              |領収書は必須です
+                            .common-matching-henkin-body-contentimg
+                            img(src='https://stekina.com/wp-content/uploads/hosho-joken-2.jpg')
+                        .common-matching-henkin-body-03
+                            .common-matching-henkin-body-head
+                              |アンケートに回答いただき
                               br
-                              |・来店サロンの領収書必須です
+                              |サービスの向上に
                               br
-                              |・アンケートに回答いただき、サービスの向上にご協力いただける方！
-                              br
-                              |・直接オフィス訪問が可能な方！全額100%保証返金
-                              br
-                              |・電話アンケートが可能な方！50%保証返金
-                              br
-                              |・webアンケートが可能な方！20%保証返金
-                            .common-matching-dialog-body-button
-                              button.common-matching-dialog-body-button-second
-                                |OK   
+                              |ご協力いただける方！
+                            .common-matching-henkin-body-discountimg
+                              img(src='https://stekina.com/wp-content/uploads/hosho-joken-3-renew.jpg')
+                            .common-matching-henkin-body-discountimg
+                              img(src='https://stekina.com/wp-content/uploads/hosho-joken-4-renew.jpg')
+                            .common-matching-henkin-body-discountimg
+                              img(src='https://stekina.com/wp-content/uploads/hosho-joken-5-renew.jpg')
+                            .common-matching-henkin-body-button
+                              button.common-matching-henkin-body-button-second
+                                |閉じる
         .reserve-ux-wrapper            
           .reserve-ux-announce
               .reserve-ux-announce-img
@@ -675,10 +703,24 @@ html(lang='jp')
                     .common-macching-card-detail-button-reseve
                       a(href='https://stekina.com/reserve/H8C8-QF8J/menu')
                         |空席を確認してみる
-        .Timer
-          p カウントダウン終了まで
-          #TimeLeft
-
+          .common-matching-henkin-wrapper-foot
+                      .common-matching-henkin-wrapper-head-02
+                        .common-matching-henkin-wrapper-head-text
+                            |満足いただけない場合
+                        .common-matching-henkin-wrapper-head-red
+                            |全額100%返金保証
+                      .common-matching-henkin-body-02
+                          .common-matching-henkin-body-text
+                            .common-matching-henkin-body-text-top
+                              .common-matching-henkin-body-text-top-column.common-matching-henkin-body-text-top-column-mbottom-5
+                                |あと
+                              .common-matching-henkin-body-text-top-column
+                                #TimeLeft2
+                              .common-matching-henkin-body-text-top-column.common-matching-henkin-body-text-top-column-mbottom-5
+                                  |以内に予約💡
+                          .common-matching-henkin-body-link
+                              a.common-matching-henkin-body-link-open(href='#')
+                                  |保証条件の詳細はコチラ！
     include ../mixin/_footer-matching.pug
     script(type='text/javascript').
       $(document).ready(function () {
@@ -701,10 +743,15 @@ html(lang='jp')
       $(this).html('<div class="common-macching-card-detail-button-save-triger">保存しました</div>');
       });
 
-      $('.common-matching-dialog-body-button-first').on('click', function() {
+      $('.common-matching-henkin-body-button-first').on('click', function() {
       $('.common-matching-dialog-first').hide();
-      $('.common-matching-dialog-second').fadeIn();
+       $('.common-matching-dialog-second').fadeIn()
       });
-       $('.common-matching-dialog-body-button-second').on('click', function() {
-      $('.common-matching-dialog').hide()
+      
+       $('.common-matching-henkin-body-button-second').on('click', function() {
+      $('.common-matching-dialog').hide();
+      });
+      
+       $('.common-matching-henkin-body-link-open').on('click', function() {
+      $('.common-matching-dialog-third').fadeIn()
       });

@@ -1,0 +1,169 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_self
+ */
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+@import "foundation/_mixin.scss";
+@import "foundation/_constant.scss";
+@import "foundation/_reset.scss";
+@import "_bluma.scss";
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:500&display=swap");
+@font-face {
+    font-family: "k-3";
+    src: url("https://limehair.jp/static/fonts/koburinaStdW3.eot?") format("eot"), url("https://limehair.jp/static/fonts/koburinaStdW3.woff2") format("woff2"), url("https://limehair.jp/static/fonts/koburinaStdW3.woff") format("woff");
+}
+
+@font-face {
+    font-family: "k-6";
+    src: url("https://limehair.jp/static/fonts/koburinaStdW6.woff2") format("woff2"), url("https://limehair.jp/static/fonts/koburinaStdW6.woff") format("woff"), url("https://limehair.jp/static/fonts/koburinaStdW6.eot?") format("eot");
+}
+
+
+/*
+@font-face {
+    font-family: "Noto-bold";
+    src: url("https://limehair.jp/static/fonts/NotoSansCJKjp-Bold.woff2") format("woff2"), url("https://limehair.jp/static/fonts/NotoSansCJKjp-Bold.woff") format("woff"), url("https://limehair.jp/static/fonts/NotoSansCJKjp-Bold.eot?") format("eot");
+}
+
+@font-face {
+    font-family: "Noto-Medium";
+    src: url("https://limehair.jp/static/fonts/NotoSansCJKjp-Medium.woff2") format("woff2"), url("https://limehair.jp/static/fonts/NotoSansCJKjp-Medium.woff") format("woff"), url("https://limehair.jp/static/fonts/NotoSansCJKjp-Medium.eot?") format("eot");
+}
+*/
+
+@mixin font-size-lp-l {
+    font-size: 35px;
+    @include mq-down(iphone5) {
+        font-size: 32.5px;
+    }
+}
+
+@mixin font-size-lp-m {
+    font-size: 22.5px;
+    line-height: 1.4;
+}
+
+@mixin font-size-lp-s {
+    font-size: 12.5px;
+    line-height: 1.4;
+}
+
+html,
+body,
+p,
+div {
+    font-family: "k-3";
+}
+
+body {
+    max-width: 450px;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+.matching-lp-mv {
+    height: 450px;
+    width: 100%;
+    background-image: url("https://stekina.com/wp-content/uploads/model.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    .matching-lp-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        height: 100px;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        font-family: "k-3", "Noto Sans JP";
+        letter-spacing: 8px;
+        z-index: 10;
+        line-height: 1.5;
+    }
+    &:before {
+        width: 100%;
+        height: 100%;
+        right: 0px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: block;
+        content: "";
+        z-index: 2;
+        position: absolute;
+    }
+}
+
+.matching-lp-box {
+    padding: 60px 0 15px;
+    .matching-lp-main-title-02 {
+        @include font-size-lp-l;
+        color: $cl-stekina-black;
+        font-family: "k-6", "Noto Sans JP";
+        text-align: left;
+        margin: -15px 15px 45px;
+    }
+    .matching-lp-main-title {
+        @include font-size-lp-l;
+        color: $cl-stekina-black;
+        font-family: "k-6", "Noto Sans JP";
+        text-align: left;
+        margin: 0 15px 45px;
+    }
+    .matching-lp-box-content {
+        margin: 0 0 60px;
+        &:last-child() {
+            margin: 0;
+        }
+    }
+    .matching-lp-content-title {
+        @include font-size-lp-m;
+        color: $cl-stekina-black;
+        font-family: "k-6", "Noto Sans JP";
+        text-align: left;
+        margin: 0px 15px 15px;
+    }
+}
+
+.matching-lp-box-bg-brown {}
+
+footer {
+    background: $cl-stekina-black;
+    padding: 60px 0 120px;
+    .matching-lp-footer-button {
+        text-align: center;
+        a {
+            margin: 0 auto;
+            color: white;
+            width: 70%;
+            border: 1px solid white;
+            border-radius: 4px;
+            padding: 10px 0;
+            margin: 0 auto 45px;
+            text-decoration: none;
+            display: inline-block;
+            @include font-size-lp-m;
+        }
+    }
+    .matching-lp-footer-copyright {
+        @include font-size-lp-s;
+        color: #aaa;
+        text-align: center;
+    }
+}

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -14,6 +13,7 @@
  *= require_self
  */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:500&display=swap");
 .sample {
   background: url(../img/face.png) 0 0 no-repeat; }
 
@@ -5598,1224 +5598,122 @@ a.panel-block:hover {
   .section.is-large {
     padding: 240px 20px; } }
 
-/*
-@font-face {
-    font-family: "k-3";
-    src: url("fonts/koburinaStdW3.eot?") format("eot"), url("fonts/koburinaStdW3.woff2") format("woff2"), url("fonts/koburinaStdW3.woff") format("woff");
-}
-
-@font-face {
-    font-family: "k-6";
-    src: url("fonts/koburinaStdW6.woff2") format("woff2"), url("fonts/koburinaStdW6.woff") format("woff"), url("fonts/koburinaStdW6.eot?") format("eot");
-}
-*/
-/*
 @font-face {
   font-family: "k-3";
-  src: url("../fonts/koburinaStdW3.eot?") format("eot"), url("../fonts/koburinaStdW3.woff2") format("woff2"),
-    url("../fonts/koburinaStdW3.woff") format("woff");
-}
+  src: url("https://limehair.jp/static/fonts/koburinaStdW3.eot?") format("eot"), url("https://limehair.jp/static/fonts/koburinaStdW3.woff2") format("woff2"), url("https://limehair.jp/static/fonts/koburinaStdW3.woff") format("woff"); }
 
 @font-face {
   font-family: "k-6";
-  src: url("../fonts/koburinaStdW6.woff2") format("woff2"), url("../fonts/koburinaStdW6.woff") format("woff"),
-    url("../fonts/koburinaStdW6.eot?") format("eot");
-}
-*/
-/*
+  src: url("https://limehair.jp/static/fonts/koburinaStdW6.woff2") format("woff2"), url("https://limehair.jp/static/fonts/koburinaStdW6.woff") format("woff"), url("https://limehair.jp/static/fonts/koburinaStdW6.eot?") format("eot"); }
 
-@font-face {
-    font-family: "k-3";
-    src: url("https://stekina.com/static/fonts/koburinaStdW3.eot?") format("eot"), url("https://stekina.com/static/fonts/koburinaStdW3.woff2") format("woff2"), url("https://stekina.com/static/fonts/koburinaStdW3.woff") format("woff");
-}
-
-@font-face {
-    font-family: "k-6";
-    src: url("https://stekina.com/static/fonts/koburinaStdW6.woff2") format("woff2"), url("https://stekina.com/static/fonts/koburinaStdW6.woff") format("woff"), url("https://stekina.com/static/fonts/koburinaStdW6.eot?") format("eot");
-}
-*/
 /*
 @font-face {
-    font-family: "k-3";
-    src: url("https://stekina.com/wp-content/themes/monobeauty/fonts/koburinaStdW3.eot?") format("eot"), url("https://stekina.com/wp-content/themes/monobeauty/fonts/koburinaStdW3.woff2") format("woff2"), url("https://stekina.com/wp-content/themes/monobeauty/fonts/koburinaStdW3.woff") format("woff");
+    font-family: "Noto-bold";
+    src: url("https://limehair.jp/static/fonts/NotoSansCJKjp-Bold.woff2") format("woff2"), url("https://limehair.jp/static/fonts/NotoSansCJKjp-Bold.woff") format("woff"), url("https://limehair.jp/static/fonts/NotoSansCJKjp-Bold.eot?") format("eot");
 }
 
 @font-face {
-    font-family: "k-6";
-    src: url("https://stekina.com/wp-content/themes/monobeauty/fonts/koburinaStdW6.woff2") format("woff2"), url("https://stekina.com/wp-content/themes/monobeauty/fonts/koburinaStdW6.woff") format("woff"), url("https://stekina.com/wp-content/themes/monobeauty/fonts/koburinaStdW6.eot?") format("eot");
+    font-family: "Noto-Medium";
+    src: url("https://limehair.jp/static/fonts/NotoSansCJKjp-Medium.woff2") format("woff2"), url("https://limehair.jp/static/fonts/NotoSansCJKjp-Medium.woff") format("woff"), url("https://limehair.jp/static/fonts/NotoSansCJKjp-Medium.eot?") format("eot");
 }
 */
-/*
-@font-face {
-    font-family: "k-3";
-    src: url("https://stekina.com/fonts/koburinaStdW3.eot?") format("eot"), url("https://stekina.com/fonts/koburinaStdW3.woff2") format("woff2"), url("https://stekina.com/fonts/koburinaStdW3.woff") format("woff");
-}
+html,
+body,
+p,
+div {
+  font-family: "k-3"; }
 
-@font-face {
-    font-family: "k-6";
-    src: url("https://stekina.com/fonts/koburinaStdW6.woff2") format("woff2"), url("https://stekina.com/fonts/koburinaStdW6.woff") format("woff"), url("https://stekina.com/fonts/koburinaStdW6.eot?") format("eot");
-}
-*/
-/*
-@font-face {
-    font-family: "Noto-Regular";
-    src: url("https://limehair.jp/static/fonts/NotoSansCJKjp-Regular.eot?") format("eot"), url("https://limehair.jp/static/fonts/NotoSansCJKjp-Regular.woff2") format("woff2"), url("https://limehair.jp/static/fonts/NotoSansCJKjp-Regular.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Noto-Bold";
-    src: url("https://limehair.jp/static/fonts/NotoSansCJKjp-Bold.eot?") format("eot"), url("https://limehair.jp/static/fonts/NotoSansCJKjp-Bold.woff2") format("woff2"), url("https://limehair.jp/static/fonts/NotoSansCJKjp-Regular.Bold") format("woff");
-}
-
-
-@font-face {
-    font-family: "Noto-Regular";
-    src: url("../fonts/NotoSansCJKjp-Regular.eot?") format("eot"), url("../fonts/NotoSansCJKjp-Regular.woff2") format("woff2"), url("../fonts/NotoSansCJKjp-Regular.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Noto-Bold";
-    src: url("../fonts/NotoSansCJKjp-Bold.eot?") format("eot"), url("../fonts/NotoSansCJKjp-Bold.woff2") format("woff2"), url("../fonts/NotoSansCJKjp-Regular.Bold") format("woff");
-}*/
 body {
-  background: #e2ddd7;
   max-width: 450px;
-  margin: 0 auto; }
-
-.matching-questions-wrapper {
-  padding: 15px; }
-
-.matching-questions-head {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end; }
-  .matching-questions-head .matching-questions-head-ai {
-    width: 20%; }
-  .matching-questions-head .matching-questions-head-speech {
-    color: #8e7f6b;
-    font-size: 13px;
-    font-family: "k-6" !important; }
-
-.matching-questions-content {
-  border-radius: 8px;
-  background: white;
-  padding: 30px 8px 30px 16px;
-  margin: 20px 0 0;
-  position: relative; }
-  .matching-questions-content input[type="checkbox"],
-  .matching-questions-content input[type="radio"] {
-    margin: 0 8px 0 0;
-    -webkit-transform: scale(1.16);
-            transform: scale(1.16); }
-  .matching-questions-content::before {
-    position: absolute;
-    content: "";
-    top: -30px;
-    left: 30px;
-    margin: 0 auto;
-    border: 16px solid transparent;
-    border-top: 20px solid white;
-    width: 0;
-    height: 0;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg); }
-  .matching-questions-content .matching-questions-content-question-box {
-    margin: 0 0 90px; }
-    .matching-questions-content .matching-questions-content-question-box:last-child {
-      margin: 0 0 45px; }
-    .matching-questions-content .matching-questions-content-question-box .matching-questions-content-question-box-subtitle {
-      font-size: 12px;
-      font-family: "k-3" !important;
-      color: #ff595b;
-      margin: 0px 0 10px;
-      text-align: left; }
-    .matching-questions-content .matching-questions-content-question-box .matching-questions-content-question-box-title {
-      font-size: 20px;
-      font-family: "k-6" !important;
-      color: #ff595b;
-      line-height: 1.5;
-      margin: 0 0 0px; }
-      @media screen and (max-width: 374px) {
-        .matching-questions-content .matching-questions-content-question-box .matching-questions-content-question-box-title {
-          font-size: 17px; } }
-      .matching-questions-content .matching-questions-content-question-box .matching-questions-content-question-box-title .matching-questions-content-question-box-title-large {
-        font-size: 36px;
-        letter-spacing: -1px !important; }
-        @media screen and (max-width: 374px) {
-          .matching-questions-content .matching-questions-content-question-box .matching-questions-content-question-box-title .matching-questions-content-question-box-title-large {
-            font-size: 32.5px; } }
-    .matching-questions-content .matching-questions-content-question-box .matching-questions-content-question-box-title-middle {
-      line-height: 1.5;
-      margin: 0 0 0px;
-      font-family: "k-3" !important;
-      font-size: 20px;
-      color: #000; }
-      @media screen and (max-width: 374px) {
-        .matching-questions-content .matching-questions-content-question-box .matching-questions-content-question-box-title-middle {
-          font-size: 17px; } }
-    .matching-questions-content .matching-questions-content-question-box .matching-questions-content-checkbox {
-      margin: 0 0 22px; }
-      .matching-questions-content .matching-questions-content-question-box .matching-questions-content-checkbox label {
-        font-weight: 700 !important;
-        font-size: 20px;
-        color: #262626 !important;
-        font-family: "k-3" !important; }
-        @media screen and (max-width: 374px) {
-          .matching-questions-content .matching-questions-content-question-box .matching-questions-content-checkbox label {
-            font-size: 17px; } }
-      .matching-questions-content .matching-questions-content-question-box .matching-questions-content-checkbox span {
-        width: 90%;
-        margin: 6px 0 0; }
-
-.matching-questions-content-question-select {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .matching-questions-content-question-select .matching-questions-content-question-select-child {
-    position: relative; }
-    .matching-questions-content-question-select .matching-questions-content-question-select-child select {
-      padding: 4px 26px 1.5px 12px !important;
-      outline: 0;
-      background: #fff;
-      appearance: none;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      margin: 4px 3px 0;
-      box-shadow: 0px 1.5px 1.5px #ccc;
-      color: #4d4d4d;
-      text-align: center;
-      border: 1px solid #ccc;
-      font-family: "k-3", KoburinaGoStd-W6 !important;
-      border-radius: 6px;
-      display: block;
-      font-size: 20px; }
-      @media screen and (max-width: 374px) {
-        .matching-questions-content-question-select .matching-questions-content-question-select-child select {
-          font-size: 17px; } }
-      .matching-questions-content-question-select .matching-questions-content-question-select-child select:disabled {
-        opacity: 0.5;
-        pointer-events: none; }
-      .matching-questions-content-question-select .matching-questions-content-question-select-child select:hover, .matching-questions-content-question-select .matching-questions-content-question-select-child select:focus {
-        opacity: 0.8;
-        background: #dfdfdf; }
-      .matching-questions-content-question-select .matching-questions-content-question-select-child select:-ms-expand {
-        display: none; }
-    .matching-questions-content-question-select .matching-questions-content-question-select-child:before {
-      content: "";
-      position: absolute;
-      display: block;
-      top: 4px;
-      bottom: 0;
-      margin: auto;
-      right: 11px;
-      width: 8px;
-      height: 8px;
-      pointer-events: none;
-      border-top: 2px solid #4d4d4d;
-      border-right: 2px solid #4d4d4d;
-      -webkit-transform: rotate(135deg);
-              transform: rotate(135deg);
-      opacity: 0.5;
-      z-index: 999; }
-      @media screen and (max-width: 374px) {
-        .matching-questions-content-question-select .matching-questions-content-question-select-child:before {
-          right: 22px;
-          width: 7px;
-          height: 7px; } }
-
-.matching-questions-footer {
-  margin: 30px auto 90px; }
-  .matching-questions-footer .matching-questions-footer-text {
-    color: #8e7f6b;
-    font-size: 13px;
-    font-family: "k-6" !important;
-    text-align: center;
-    margin: 0 0 20px;
-    line-height: 1.45; }
-
-.common-btn {
-  text-align: center; }
-  .common-btn a {
-    background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
-    background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
-    display: inline-block;
-    padding: 24px 0;
-    text-align: center;
-    width: 145px;
-    color: white;
-    margin: 0 auto;
-    border-radius: 8px;
-    box-shadow: 0px 3px 10px #999;
-    text-decoration: none;
-    font-family: "k-6" !important; }
-
-.common-btn-toggle {
-  text-align: center;
-  background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
-  background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
-  display: inline-block;
-  padding: 24px 0;
-  text-align: center;
-  width: 145px;
-  color: white;
   margin: 0 auto;
-  border-radius: 8px;
-  box-shadow: 0px 3px 10px #999;
-  text-decoration: none;
-  font-family: "k-6" !important;
-  border: none; }
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .15); }
 
-.common-btn-toggle-disable {
-  border: solid 1.5px transparent;
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), -webkit-linear-gradient(120deg, #e6417a 0%, #ff595b 100%);
-  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(-30deg, #e6417a 0%, #ff595b 100%);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  box-shadow: 2px 1000px 1px #fff inset;
-  /*
-    div {
-        background: white;
-        display: inline-block;
-        width: 100%;
-        padding: 24px 0;
-        border-radius: 8px;
-    }
-    */ }
-  .common-btn-toggle-disable span {
-    background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
-    background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
-
-.matching-dialog {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.matching-lp-mv {
+  height: 450px;
   width: 100%;
-  height: 100vh;
-  max-width: 450px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: rgba(0, 0, 0, .85);
-  position: fixed;
-  z-index: 99;
-  /*
-    &:before {
-        width: 100%;
-        height: 100vh;
-        position: fixed;
-        z-index: 99;
-        background: black;
-        opacity: 0.9;
-        display: block;
-        content: "";
-    }
-    */ }
-  .matching-dialog img {
-    width: 80%;
-    margin: 0 0 50px; }
-
-.matching-dialog-kari {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: rgba(0, 0, 0, .5);
-  position: fixed; }
-
-.demo-2columns-title {
-  font-family: "k-6" !important;
-  font-size: 13px;
-  text-align: center;
-  margin: 30px 0 10px; }
-  .demo-2columns-title .demo-2columns-title-gradient {
-    background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
-    background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
-
-.demo-yubin-speech-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  background-image: url("https://stekina.com/wp-content/uploads/model.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative; }
-  .demo-yubin-speech-wrapper:before {
+  .matching-lp-mv .matching-lp-text {
     position: absolute;
-    content: "";
-    display: block;
-    margin: 0 auto;
-    width: 20px;
-    height: 20px;
-    top: 20px;
-    right: 76px;
-    -webkit-transform: rotate(180deg);
-    transform: rotate(45deg);
-    /*box-shadow: 0px 3px 10px #ccc;*/
-    background: white;
-    border-left: 1px #ccc solid;
-    border-top: 1px #ccc solid;
-    background: white;
-    z-index: 100; }
-
-.demo-2columns {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .demo-2columns .common-btn {
-    margin: 0 10px; }
-
-.demo-yubin-speech {
-  padding: 20px;
-  background: white;
-  box-shadow: 0px 5px 6px #ccc;
-  border: 1px #ccc solid;
-  margin: 30px 10px 0 0;
-  border-radius: 8px;
-  width: 90%; }
-
-.demo-yubin-text {
-  font-family: "k-3" !important;
-  font-size: 13px;
-  color: #262626;
-  margin: 0 0 10px; }
-
-.demo-yubin-input input {
-  box-shadow: 0px 3px 3px #ccc;
-  color: #4d4d4d;
-  border: 1px solid #ccc;
-  font-family: "mplus-2c-regular";
-  padding: 5px 5px;
-  margin: 0 auto;
-  text-align: left;
-  border-radius: 6px;
-  font-family: "k-3" !important;
-  font-size: 20px; }
-  @media screen and (max-width: 374px) {
-    .demo-yubin-input input {
-      font-size: 17px; } }
-
-label,
-input[type="checkbox"] {
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: top;
-      -ms-flex-align: top;
-          align-items: top;
-  margin: 0 0 30px;
-  color: #4d4d4d; }
-
-input[type="checkbox"],
-input[type="radio"] {
-  display: none; }
-
-.checkbox-input + label:before {
-  /* border: 1px #ccc solid; */
-  margin: 0 5px 0 0;
-  background: white;
-  box-shadow: 0px 3px 3px #ddd, inset 0 0 0 4px white;
-  border-radius: 100px;
-  content: "";
-  display: block;
-  background-size: contain;
-  border: 1px #ccc solid;
-  width: 28px !important;
-  height: 28px !important; }
-  @media screen and (max-width: 374px) {
-    .checkbox-input + label:before {
-      width: 25px;
-      height: 25px; } }
-
-.checkbox-input:checked + label:before {
-  content: "";
-  border-radius: 100px;
-  content: "";
-  display: block;
-  background-size: contain;
-  border: 1px #ccc solid;
-  width: 28px !important;
-  height: 28px !important;
-  border: none !important;
-  box-shadow: 0px 3px 3px #ddd;
-  background-image: url(https://stekina.com/wp-content/uploads/icn_rizm.svg); }
-  @media screen and (max-width: 374px) {
-    .checkbox-input:checked + label:before {
-      width: 25px;
-      height: 25px; } }
-
-.common-macching-card {
-  box-shadow: 0px 3px 10px #999;
-  width: 92.5%;
-  margin: 0 auto 30px;
-  border-radius: 4px;
-  overflow: hidden; }
-  .common-macching-card .common-macching-card-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 100px;
+    text-align: center;
     color: white;
-    background: #8e7f6b;
-    padding: 2px 3px 2px 0px; }
-    .common-macching-card .common-macching-card-header .common-macching-card-header-left {
-      display: table-cell;
-      width: 85%;
-      font-size: 14.7px;
-      margin: 0 0 0 8px;
-      letter-spacing: -1.25px;
-      font-family: "k-3" !important; }
-      @media screen and (max-width: 374px) {
-        .common-macching-card .common-macching-card-header .common-macching-card-header-left {
-          font-size: 13px; } }
-      .common-macching-card .common-macching-card-header .common-macching-card-header-left span {
-        display: inline-block;
-        margin: 0 1px 0 0; }
-      .common-macching-card .common-macching-card-header .common-macching-card-header-left .common-macching-card-header-left-large {
-        /*font-family: "k-6" !important; */
-        letter-spacing: -1px;
-        font-size: 26.5px;
-        font-family: "k-6", "Noto-Bold", "Avenir", "Helvetica Neue", "Helvetica", "Arial", YuGothic, "Yu Gothic", "Hiragino Sans", "ヒラギノ角ゴシック", sans-serif !important; }
-        @media screen and (max-width: 374px) {
-          .common-macching-card .common-macching-card-header .common-macching-card-header-left .common-macching-card-header-left-large {
-            font-size: 23px; } }
-    .common-macching-card .common-macching-card-header .common-macching-card-header-right {
-      display: table-cell;
-      width: 15%;
-      text-align: right; }
-      .common-macching-card .common-macching-card-header .common-macching-card-header-right .common-macching-card-header-right-label {
-        font-size: 8px;
-        font-family: "k-3" !important;
-        margin: 0 4px 0 0px;
-        letter-spacing: -01px; }
-        @media screen and (max-width: 374px) {
-          .common-macching-card .common-macching-card-header .common-macching-card-header-right .common-macching-card-header-right-label {
-            font-size: 6.5px; } }
-      .common-macching-card .common-macching-card-header .common-macching-card-header-right .common-macching-card-header-right-percent {
-        font-size: 17px;
-        font-family: "k-6" !important; }
-        @media screen and (max-width: 374px) {
-          .common-macching-card .common-macching-card-header .common-macching-card-header-right .common-macching-card-header-right-percent {
-            font-size: 16px; } }
-      .common-macching-card .common-macching-card-header .common-macching-card-header-right .common-macching-card-header-right-percent-number {
-        font-size: 24px;
-        letter-spacing: 3px; }
-  .common-macching-card .common-macching-card-cover {
-    height: 110px;
+    font-size: 30px;
+    font-family: "k-3", "Noto Sans JP";
+    letter-spacing: 8px;
+    z-index: 10;
+    line-height: 1.5; }
+  .matching-lp-mv:before {
     width: 100%;
-    position: relative;
-    overflow: hidden; }
-    .common-macching-card .common-macching-card-cover .common-macching-card-speech-tap-photo img {
-      position: absolute;
-      left: 23%;
-      top: 10px;
-      bottom: 0;
-      margin: auto;
-      z-index: 20;
-      height: 80px;
-      -webkit-animation-name: fuwafuwa;
-      -webkit-animation-duration: 1s;
-      -webkit-animation-iteration-count: infinite;
-      -webkit-animation-direction: alternate;
-      -webkit-animation-timing-function: ease;
-      -moz-animation-name: fuwafuwa;
-      -moz-animation-duration: 1s;
-      -moz-animation-iteration-count: infinite;
-      -moz-animation-direction: alternate; }
-    .common-macching-card .common-macching-card-cover .common-macching-card-cover-background {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-      .common-macching-card .common-macching-card-cover .common-macching-card-cover-background .common-macching-card-cover-background-left {
-        width: 50%; }
-        .common-macching-card .common-macching-card-cover .common-macching-card-cover-background .common-macching-card-cover-background-left img {
-          -o-object-fit: cover;
-             object-fit: cover;
-          height: 120px;
-          width: 100%; }
-      .common-macching-card .common-macching-card-cover .common-macching-card-cover-background .common-macching-card-cover-background-right {
-        width: 50%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        width: 50%;
-        height: 60px;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-        .common-macching-card .common-macching-card-cover .common-macching-card-cover-background .common-macching-card-cover-background-right div {
-          width: 50%; }
-          .common-macching-card .common-macching-card-cover .common-macching-card-cover-background .common-macching-card-cover-background-right div img {
-            -o-object-fit: cover;
-               object-fit: cover;
-            width: 100%;
-            height: 60px; }
-    .common-macching-card .common-macching-card-cover .common-macching-card-cover-profile-img {
-      left: 10px;
-      top: -3px;
-      bottom: 0;
-      margin: auto;
-      position: absolute;
-      z-index: 14;
-      width: 72px;
-      height: 72px; }
-      @media screen and (max-width: 374px) {
-        .common-macching-card .common-macching-card-cover .common-macching-card-cover-profile-img {
-          width: 65px;
-          height: 65px; } }
-      .common-macching-card .common-macching-card-cover .common-macching-card-cover-profile-img img {
-        border: 1px solid white;
-        box-shadow: 0px 3px 3px #444;
-        border-radius: 100px;
-        -o-object-fit: cover;
-           object-fit: cover; }
-    .common-macching-card .common-macching-card-cover .common-macching-card-cover-date {
-      color: white;
-      /*
-            display: flex;
-            align-items: center;
-            */ }
-      .common-macching-card .common-macching-card-cover .common-macching-card-cover-date:before {
-        width: 85%;
-        height: 65px;
-        right: 0px;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        background-color: rgba(0, 0, 0, .58);
-        display: block;
-        content: "";
-        z-index: 11;
-        position: absolute; }
-    .common-macching-card .common-macching-card-cover .common-macching-card-cover-date-left {
-      /*margin: 0 0 0 18px;*/
-      position: absolute;
-      top: 8px;
-      bottom: 0;
-      margin: auto;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      height: 42px;
-      z-index: 12;
-      left: 95px; }
-      @media screen and (max-width: 374px) {
-        .common-macching-card .common-macching-card-cover .common-macching-card-cover-date-left {
-          left: 85px; } }
-      .common-macching-card .common-macching-card-cover .common-macching-card-cover-date-left .common-macching-card-cover-date-left-name {
-        font-size: 17px;
-        font-family: "k-6" !important;
-        margin: 0 0 12px; }
-        @media screen and (max-width: 374px) {
-          .common-macching-card .common-macching-card-cover .common-macching-card-cover-date-left .common-macching-card-cover-date-left-name {
-            font-size: 16px; } }
-      .common-macching-card .common-macching-card-cover .common-macching-card-cover-date-left .common-macching-card-cover-date-left-score {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        font-family: "k-6" !important; }
-        .common-macching-card .common-macching-card-cover .common-macching-card-cover-date-left .common-macching-card-cover-date-left-score .common-macching-card-cover-date-score-list {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: end;
-              -ms-flex-align: end;
-                  align-items: flex-end;
-          margin: 0 12px 0 0;
-          font-size: 12px;
-          letter-spacing: 1px; }
-          .common-macching-card .common-macching-card-cover .common-macching-card-cover-date-left .common-macching-card-cover-date-left-score .common-macching-card-cover-date-score-list img {
-            height: 10px;
-            margin: 0 3px 0 0; }
-    .common-macching-card .common-macching-card-cover .common-macching-card-cover-date-right {
-      position: absolute;
-      left: 70%;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-      font-size: 10px;
-      font-family: "k-3" !important;
-      z-index: 12;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      height: 10px; }
-      .common-macching-card .common-macching-card-cover .common-macching-card-cover-date-right img {
-        height: 10px;
-        margin: 0 5px 0 0; }
-  .common-macching-card .common-macching-card-detail {
-    background: white;
-    padding: 5px 10px 10px; }
-    .common-macching-card .common-macching-card-detail .common-macching-card-detail-date {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      padding: 3px 0px 3px;
-      border-bottom: 1px solid #f0f0f0; }
-      .common-macching-card .common-macching-card-detail .common-macching-card-detail-date .common-macching-card-detail-date-list {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: end;
-            -ms-flex-align: end;
-                align-items: flex-end;
-        font-size: 9.2px;
-        color: #b3b3b3;
-        margin: 0 10px 0 0;
-        font-family: "k-3" !important;
-        letter-spacing: -0.3px; }
-        @media screen and (max-width: 374px) {
-          .common-macching-card .common-macching-card-detail .common-macching-card-detail-date .common-macching-card-detail-date-list {
-            font-size: 7px; } }
-        .common-macching-card .common-macching-card-detail .common-macching-card-detail-date .common-macching-card-detail-date-list .common-macching-card-detail-date-icon {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: end;
-              -ms-flex-align: end;
-                  align-items: flex-end;
-          margin: 0 2px 0 0; }
-          .common-macching-card .common-macching-card-detail .common-macching-card-detail-date .common-macching-card-detail-date-list .common-macching-card-detail-date-icon img {
-            height: 11px; }
-        .common-macching-card .common-macching-card-detail .common-macching-card-detail-date .common-macching-card-detail-date-list .common-macching-card-detail-date-text-address {
-          max-width: 100px;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap; }
-    .common-macching-card .common-macching-card-detail .common-macching-card-detail-escription {
-      font-size: 9.2px;
-      color: #4d4d4d;
-      font-family: "k-3" !important;
-      margin: 6px 0 0;
-      line-height: 1.5;
-      letter-spacing: -0.5px; }
-      @media screen and (max-width: 374px) {
-        .common-macching-card .common-macching-card-detail .common-macching-card-detail-escription {
-          font-size: 7px; } }
-    .common-macching-card .common-macching-card-detail .common-macching-card-detail-button {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      margin: 14px 0 0px;
-      font-family: "k-6" !important;
-      position: relative; }
-      .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-button-save-wrapper {
-        position: relative;
-        width: 37%; }
-      .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-aboslute-speech-save {
-        position: absolute;
-        top: -58px;
-        left: -12%;
-        right: 0;
-        margin: auto;
-        width: 120%;
-        /*
-                padding: 5px;
-                background: white;
-                /*box-shadow: 0px 3px 2px #bbb; 
-                border: 1px #ccc solid;
-                border-radius: 4px;
-                width: 90%;
-                @include font-size-common-card-ss();
-                text-align: center;
-                transform: scale(1.45);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                img {
-                    width: 80%;
-                }
-                &:before {
-                    position: absolute;
-                    content: "";
-                    display: block;
-                    margin: 0 auto;
-                    width: 10px;
-                    height: 10px;
-                    bottom: -6px;
-                    left: 0;
-                    right: 0;
-                    transform: rotate(-45deg);
-                    box-shadow: 0px 3px 10px #ccc;
-                    background: white;
-                    border-left: 1px #ccc solid;
-                    border-bottom: 1px #ccc solid;
-                    background: white;
-                    z-index: 100;
-                }
-                */ }
-      .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-aboslute-speech {
-        position: absolute;
-        top: -60px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 80%;
-        z-index: 100;
-        -webkit-animation-name: fuwafuwa;
-        -webkit-animation-duration: 1s;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-direction: alternate;
-        -webkit-animation-timing-function: ease;
-        -moz-animation-name: fuwafuwa;
-        -moz-animation-duration: 1s;
-        -moz-animation-iteration-count: infinite;
-        -moz-animation-direction: alternate; }
-      .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-button-save {
-        position: relative;
-        color: #ff595b;
-        display: -webkit-inline-box;
-        display: -ms-inline-flexbox;
-        display: inline-flex;
-        border-radius: 4px;
-        text-decoration: none;
-        text-align: center;
-        padding: 13px 0px;
-        width: 100%;
-        border: 1px solid #ff595b;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        font-size: 14.7px; }
-        @media screen and (max-width: 374px) {
-          .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-button-save {
-            font-size: 13px; } }
-        @media screen and (max-width: 374px) {
-          .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-button-save {
-            padding: 8px 10px 8px 15px; } }
-        .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-button-save:before {
-          content: "";
-          display: inline-block;
-          background-image: url(https://stekina.com/wp-content/uploads/icn-bookmark-button-normal.svg);
-          background-repeat: no-repeat;
-          background-size: contain;
-          vertical-align: bottom;
-          margin: 0 0px 0 0;
-          width: 15px;
-          height: 15px; }
-          @media screen and (max-width: 374px) {
-            .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-button-save:before {
-              width: 12px;
-              height: 12px; } }
-      .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .selected:before {
-        content: "";
-        display: inline-block;
-        background-size: contain;
-        vertical-align: bottom;
-        margin: 0 0px 0 0;
-        background-repeat: no-repeat;
-        background-image: url(https://stekina.com/wp-content/uploads/icn-bookmark-button-active.svg) !important;
-        width: 15px;
-        height: 15px; }
-        @media screen and (max-width: 374px) {
-          .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .selected:before {
-            width: 12px;
-            height: 12px; } }
-      .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-button-reseve {
-        position: relative; }
-        .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-button-reseve a {
-          font-size: 14.7px;
-          background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
-          background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
-          color: white;
-          display: inline-block;
-          border-radius: 4px;
-          text-decoration: none;
-          text-align: center;
-          padding: 13px 24px 13px 29px;
-          border: 1px solid #ff595b; }
-          @media screen and (max-width: 374px) {
-            .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-button-reseve a {
-              font-size: 13px; } }
-          @media screen and (max-width: 374px) {
-            .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-button-reseve a {
-              padding: 8px 10px 8px 15px; } }
-
-.reserve-ux-wrapper {
-  padding: 30px 0 180px; }
-
-.reserve-ux-announce {
-  background: white;
-  border-radius: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  box-shadow: 0px 3px 10px #999;
-  width: 92.5%;
-  margin: 0 auto 25px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: "k-6" !important;
-  letter-spacing: -1px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 15px;
-  padding: 6px 3px; }
-  @media screen and (max-width: 374px) {
-    .reserve-ux-announce {
-      font-size: 13.4px;
-      padding: 6px 1px; } }
-  .reserve-ux-announce .reserve-ux-announce-text-red {
-    background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
-    background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin: 0 !important; }
-  .reserve-ux-announce span {
-    margin: 0 0 0 -3px; }
-  .reserve-ux-announce img {
-    margin: 0 2px 0 0;
-    width: 30px;
-    height: 30px; }
-    @media screen and (max-width: 374px) {
-      .reserve-ux-announce img {
-        width: 27px;
-        height: 27px; } }
-
-@-webkit-keyframes fuwafuwa {
-  0% {
-    -webkit-transform: translate(0, 0); }
-  50% {
-    -webkit-transform: translate(0, -10px); }
-  100% {
-    -webkit-transform: translate(0, 0); } }
-
-.common-macching-card-detail-aboslute-speech-save-animation {
-  -webkit-animation-name: fadeinout;
-          animation-name: fadeinout;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease; }
-
-@-webkit-keyframes fadeinout {
-  0% {
-    opacity: 0; }
-  3% {
-    opacity: 1; }
-  80% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
-@keyframes fadeinout {
-  0% {
-    opacity: 0; }
-  3% {
-    opacity: 1; }
-  80% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
-.barba-leave-active,
-.barba-enter-active {
-  -webkit-transition: opacity 450ms ease;
-  transition: opacity 450ms ease; }
-
-/* initial state */
-.barba-leave {
-  opacity: 1; }
-
-.barba-enter {
-  opacity: 0; }
-
-/* ending state */
-.barba-leave-to {
-  opacity: 0; }
-
-.barba-enter-to {
-  opacity: 1; }
-
-.common-matching-dialog {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  max-width: 450px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: rgba(0, 0, 0, .7);
-  position: fixed;
-  z-index: 99; }
-
-.common-matching-henkin-wrapper {
-  border-radius: 8px;
-  width: 87.5%;
-  padding: 0 0 0px;
-  margin: -45px 0 0;
-  background: #e2ddd7; }
-
-.common-matching-henkin-wrapper-foot {
-  border-radius: 4px;
-  width: 92.5%;
-  padding: 45px 0 20px;
-  margin: 0px auto 0;
-  background: white; }
-
-.common-matching-henkin-wrapper-head {
-  padding: 30px 0;
-  line-height: 1.5;
-  text-align: center; }
-  .common-matching-henkin-wrapper-head .common-matching-henkin-wrapper-head-hosho-joken {
-    width: 78%;
-    margin: 0 auto 15px; }
-
-.common-matching-henkin-wrapper-head-ai {
-  padding: 25px 15px 10px;
-  line-height: 1.5;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  position: relative; }
-  .common-matching-henkin-wrapper-head-ai::before {
-    position: absolute;
+    height: 100%;
+    right: 0px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, .5);
+    display: block;
     content: "";
-    bottom: -10px;
-    left: 25px;
-    margin: 0 auto;
-    border: 16px solid transparent;
-    border-top: 20px solid white;
-    width: 0;
-    height: 0;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg); }
-  .common-matching-henkin-wrapper-head-ai .common-matching-henkin-wrapper-head-ai-img {
-    width: 21%; }
-  .common-matching-henkin-wrapper-head-ai .common-matching-henkin-wrapper-head-ai-text {
-    color: #8e7f6b;
-    font-size: 12px;
-    font-family: "k-6" !important;
-    margin: 0 0 3px;
-    letter-spacing: -0.5px; }
+    z-index: 2;
+    position: absolute; }
 
-.common-matching-henkin-wrapper-head-02 {
-  padding: 0px 0;
-  text-align: center; }
-
-.common-matching-henkin-wrapper-head-text {
-  color: #262626;
-  font-family: "k-6";
-  font-size: 20px;
-  margin: 0 0 7px; }
-  @media screen and (max-width: 374px) {
-    .common-matching-henkin-wrapper-head-text {
-      font-size: 17px; } }
-
-.common-matching-henkin-wrapper-head-red {
-  color: #262626;
-  font-family: "k-6";
-  font-size: 36px;
-  background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
-  background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
-  @media screen and (max-width: 374px) {
-    .common-matching-henkin-wrapper-head-red {
-      font-size: 32.5px; } }
-
-.common-matching-henkin-body {
-  padding: 45px 0;
-  width: 95%;
-  margin: 0 auto 45px;
-  background: white;
-  border-radius: 4px; }
-
-.common-matching-henkin-body-02 {
-  width: 95%;
-  margin: 30px auto 0;
-  background: white; }
-
-.common-matching-henkin-body-03 {
-  width: 90%;
-  margin: 0px auto 30px;
-  background: white;
-  border-radius: 8px; }
-  .common-matching-henkin-body-03:last-child {
-    padding: 0 0 45px; }
-
-.scroll {
-  overflow-y: scroll;
-  max-height: 450px;
-  -webkit-overflow-scrolling: touch;
-  overflow-y: scroll;
-  scrollbar-color: rgb(102, 51, 153) green;
-  scrollbar-width: thin; }
-
-.common-matching-henkin-scroll {
-  text-align: center;
-  color: #262626;
-  font-family: "k-6";
-  margin: 0 0 15px;
-  font-size: 20px;
-  -webkit-animation-name: fuwafuwa;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  -webkit-animation-timing-function: ease;
-  -moz-animation-name: fuwafuwa;
-  -moz-animation-duration: 1s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-direction: alternate; }
-  @media screen and (max-width: 374px) {
-    .common-matching-henkin-scroll {
-      font-size: 17px; } }
-
-.common-matching-henkin-body-head {
-  font-family: "k-6";
-  font-size: 20px;
-  padding: 25px 0 10px;
-  text-align: center; }
-  @media screen and (max-width: 374px) {
-    .common-matching-henkin-body-head {
-      font-size: 17px; } }
-
-.common-matching-henkin-body-imgline {
-  text-align: center; }
-  .common-matching-henkin-body-imgline img {
-    width: 95%; }
-
-.common-matching-henkin-body-discountimg {
-  margin: 60px auto 0px;
-  text-align: center; }
-  .common-matching-henkin-body-discountimg img {
-    width: 95%;
-    margin: 0px auto 0px; }
-
-.common-matching-henkin-body-text {
-  font-family: "k-6"; }
-  .common-matching-henkin-body-text .common-matching-henkin-body-text-top {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    margin: 0 0 13px;
-    font-size: 20px; }
+.matching-lp-box {
+  padding: 60px 0 15px; }
+  .matching-lp-box .matching-lp-main-title-02 {
+    font-size: 35px;
+    color: #262626;
+    font-family: "k-6", "Noto Sans JP";
+    text-align: left;
+    margin: -15px 15px 45px; }
     @media screen and (max-width: 374px) {
-      .common-matching-henkin-body-text .common-matching-henkin-body-text-top {
-        font-size: 17px; } }
-    .common-matching-henkin-body-text .common-matching-henkin-body-text-top .common-matching-henkin-body-text-top-column-mbottom-5 {
-      margin-bottom: 5px; }
-    .common-matching-henkin-body-text .common-matching-henkin-body-text-top div {
-      display: inline-block; }
-    .common-matching-henkin-body-text .common-matching-henkin-body-text-top #TimeLeft {
-      margin: -3px 0 0;
-      font-size: 30px;
-      background-image: -webkit-linear-gradient(120deg, #4f9ad6 0%, #14ceb8 100%);
-      background-image: linear-gradient(-30deg, #4f9ad6 0%, #14ceb8 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
-    .common-matching-henkin-body-text .common-matching-henkin-body-text-top #TimeLeft2 {
-      font-size: 28px;
-      background-image: -webkit-linear-gradient(120deg, #4f9ad6 0%, #14ceb8 100%);
-      background-image: linear-gradient(-30deg, #4f9ad6 0%, #14ceb8 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
-      .common-matching-henkin-body-text .common-matching-henkin-body-text-top #TimeLeft2 .countdown-number {
-        letter-spacing: 2px;
-        margin: 0 1px 0;
-        font-size: 39px; }
-        @media screen and (max-width: 374px) {
-          .common-matching-henkin-body-text .common-matching-henkin-body-text-top #TimeLeft2 .countdown-number {
-            font-size: 35px; } }
-    .common-matching-henkin-body-text .common-matching-henkin-body-text-top .countdown-number {
-      font-size: 40px;
-      letter-spacing: 2px;
-      margin: 0 1px 0; }
-      @media screen and (max-width: 374px) {
-        .common-matching-henkin-body-text .common-matching-henkin-body-text-top .countdown-number {
-          font-size: 35px; } }
-  .common-matching-henkin-body-text .common-matching-henkin-body-text-bottom {
-    text-align: center;
-    font-size: 20px; }
+      .matching-lp-box .matching-lp-main-title-02 {
+        font-size: 32.5px; } }
+  .matching-lp-box .matching-lp-main-title {
+    font-size: 35px;
+    color: #262626;
+    font-family: "k-6", "Noto Sans JP";
+    text-align: left;
+    margin: 0 15px 45px; }
     @media screen and (max-width: 374px) {
-      .common-matching-henkin-body-text .common-matching-henkin-body-text-bottom {
-        font-size: 17px; } }
+      .matching-lp-box .matching-lp-main-title {
+        font-size: 32.5px; } }
+  .matching-lp-box .matching-lp-box-content {
+    margin: 0 0 60px; }
+    .matching-lp-box .matching-lp-box-content:last-child() {
+      margin: 0; }
+  .matching-lp-box .matching-lp-content-title {
+    font-size: 22.5px;
+    line-height: 1.4;
+    color: #262626;
+    font-family: "k-6", "Noto Sans JP";
+    text-align: left;
+    margin: 0px 15px 15px; }
 
-.common-matching-henkin-body-link {
-  text-align: center;
-  padding: 20px 0 0; }
-  .common-matching-henkin-body-link a:link,
-  .common-matching-henkin-body-link a:visited {
-    color: #8e7f6b;
-    font-size: 12px;
-    text-decoration: underline;
-    font-family: "k-3" !important;
+footer {
+  background: #262626;
+  padding: 60px 0 120px; }
+  footer .matching-lp-footer-button {
     text-align: center; }
-
-.common-matching-henkin-body-button {
-  text-align: center; }
-  .common-matching-henkin-body-button button {
-    font-size: 20px;
-    letter-spacing: 0px;
-    background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
-    background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
-    width: 80%;
-    padding: 15px;
-    border: none;
-    color: white;
-    font-family: "k-6";
-    margin: 30px auto 0;
-    border-radius: 8px;
-    box-shadow: 0px 3px 3px #aaa; }
-    @media screen and (max-width: 374px) {
-      .common-matching-henkin-body-button button {
-        font-size: 17px; } }
+    footer .matching-lp-footer-button a {
+      margin: 0 auto;
+      color: white;
+      width: 70%;
+      border: 1px solid white;
+      border-radius: 4px;
+      padding: 10px 0;
+      margin: 0 auto 45px;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 22.5px;
+      line-height: 1.4; }
+  footer .matching-lp-footer-copyright {
+    font-size: 12.5px;
+    line-height: 1.4;
+    color: #aaa;
+    text-align: center; }
