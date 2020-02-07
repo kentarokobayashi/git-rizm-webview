@@ -13,6 +13,16 @@
  *= require_self
  */
 
+@font-face {
+    font-family: "k-3";
+    src: url("https://stekina.com/fonts/koburinaStdW3.eot?") format("eot"), url("https://stekina.com/fonts/koburinaStdW3.woff2") format("woff2"), url("https://stekina.com/fonts/koburinaStdW3.woff") format("woff");
+}
+
+@font-face {
+    font-family: "k-6";
+    src: url("https://stekina.com/fonts/koburinaStdW6.woff2") format("woff2"), url("https://stekina.com/fonts/koburinaStdW6.woff") format("woff"), url("https://stekina.com/fonts/koburinaStdW6.eot?") format("eot");
+}
+
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
 @import "foundation/_mixin.scss";
 @import "foundation/_constant.scss";

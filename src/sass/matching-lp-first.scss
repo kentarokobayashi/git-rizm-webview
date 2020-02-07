@@ -13,22 +13,22 @@
  *= require_self
  */
 
+@font-face {
+    font-family: "k-3";
+    src: url("https://stekina.com/fonts/koburinaStdW3.eot?") format("eot"), url("https://stekina.com/fonts/koburinaStdW3.woff2") format("woff2"), url("https://stekina.com/fonts/koburinaStdW3.woff") format("woff");
+}
+
+@font-face {
+    font-family: "k-6";
+    src: url("https://stekina.com/fonts/koburinaStdW6.woff2") format("woff2"), url("https://stekina.com/fonts/koburinaStdW6.woff") format("woff"), url("https://stekina.com/fonts/koburinaStdW6.eot?") format("eot");
+}
+
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
 @import "foundation/_mixin.scss";
 @import "foundation/_constant.scss";
 @import "foundation/_reset.scss";
 @import "_bluma.scss";
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:500&display=swap");
-@font-face {
-    font-family: "k-3";
-    src: url("https://limehair.jp/static/fonts/koburinaStdW3.eot?") format("eot"), url("https://limehair.jp/static/fonts/koburinaStdW3.woff2") format("woff2"), url("https://limehair.jp/static/fonts/koburinaStdW3.woff") format("woff");
-}
-
-@font-face {
-    font-family: "k-6";
-    src: url("https://limehair.jp/static/fonts/koburinaStdW6.woff2") format("woff2"), url("https://limehair.jp/static/fonts/koburinaStdW6.woff") format("woff"), url("https://limehair.jp/static/fonts/koburinaStdW6.eot?") format("eot");
-}
-
 
 /*
 @font-face {
@@ -43,14 +43,19 @@
 */
 
 @mixin font-size-lp-l {
-    font-size: 35px;
+    font-size: 40px;
     @include mq-down(iphone5) {
         font-size: 32.5px;
     }
 }
 
 @mixin font-size-lp-m {
-    font-size: 22.5px;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+@mixin font-size-lp-mm {
+    font-size: 16px;
     line-height: 1.4;
 }
 
@@ -66,34 +71,68 @@ div {
     font-family: "k-3";
 }
 
-body {
+.matching-lp-wrapper {
     max-width: 450px;
     margin: 0 auto;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
 }
 
 .matching-lp-mv {
-    height: 450px;
+    animation-name: transition;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    background-size: cover;
+    height: 500px;
     width: 100%;
     background-image: url("https://stekina.com/wp-content/uploads/model.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    .matching-lp-mv-logo {
+        top: 25px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 120px;
+        z-index: 1000;
+        position: absolute;
+    }
     .matching-lp-text {
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 0px;
+        /*left: 20px;*/
+        left: 0px;
         right: 0;
         bottom: 0;
         margin: auto;
-        height: 100px;
-        text-align: center;
-        color: white;
-        font-size: 30px;
-        font-family: "k-3", "Noto Sans JP";
-        letter-spacing: 8px;
         z-index: 10;
-        line-height: 1.5;
+        height: 150px;
+        h1 {
+            font-size: 24px;
+            font-family: "k-3", "Noto Sans JP";
+            color: white;
+            text-align: center;
+            margin: 0 0 20px;
+            display: inline-block;
+            width: 100%;
+            letter-spacing: 5.5px;
+            &:after {
+                width: 50px;
+                height: 3px;
+                margin: 30px auto 0px;
+                display: block;
+                content: "";
+                background: white;
+            }
+        }
+        .matching-lp-text-catch {
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            font-family: "k-3", "Noto Sans JP";
+            letter-spacing: 6px;
+            line-height: 1.5;
+        }
     }
     &:before {
         width: 100%;
@@ -108,6 +147,33 @@ body {
         z-index: 2;
         position: absolute;
     }
+    &:after {
+        width: 100%;
+        height: 90px;
+        right: 0px;
+        top: 0;
+        margin: auto;
+        background-image: linear-gradient(0deg, transparent 0%, rgba(0, 0, 0, 0.7) 70%);
+        display: block;
+        content: "";
+        z-index: 4;
+        position: absolute;
+    }
+}
+
+@keyframes transition {
+    0% {
+        background-image: url("https://stekina.com/wp-content/uploads/model.jpg");
+    }
+    33% {
+        background-image: url("https://stekina.com/wp-content/uploads/model2.jpg");
+    }
+    66% {
+        background-image: url("https://stekina.com/wp-content/uploads/model3.jpg");
+    }
+    100% {
+        background-image: url("https://stekina.com/wp-content/uploads/model.jpg");
+    }
 }
 
 .matching-lp-box {
@@ -117,28 +183,76 @@ body {
         color: $cl-stekina-black;
         font-family: "k-6", "Noto Sans JP";
         text-align: left;
-        margin: -15px 15px 45px;
+        margin: -15px 15px 15px;
     }
     .matching-lp-main-title {
         @include font-size-lp-l;
         color: $cl-stekina-black;
         font-family: "k-6", "Noto Sans JP";
         text-align: left;
-        margin: 0 15px 45px;
+        margin: 0 15px 15px;
     }
     .matching-lp-box-content {
-        margin: 0 0 60px;
+        margin: 0 0 75px;
         &:last-child() {
             margin: 0;
         }
     }
-    .matching-lp-content-title {
+    .matching-lp-box-content-btnhead {
         @include font-size-lp-m;
-        color: $cl-stekina-black;
         font-family: "k-6", "Noto Sans JP";
-        text-align: left;
-        margin: 0px 15px 15px;
+        text-align: center;
+        margin: 0 0 10px;
     }
+    .matching-lp-box-content-line {
+        width: 90%;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.4);
+        background: white;
+        margin: 0 auto 75px;
+        padding: 0 0 20px;
+    }
+}
+
+.matching-lp-box-content-line-linebtn {
+    width: 85%;
+    margin: 20px auto 0;
+    animation: fuwafuwa 2s 0s infinite;
+}
+
+.matching-lp-box-content-linebtn {}
+
+@keyframes fuwafuwa {
+    0% {
+        scale: 1;
+        transform: scale(1);
+    }
+    8% {
+        scale: 1.04;
+        transform: scale(1.04);
+    }
+    17% {
+        scale: 1;
+        transform: scale(1);
+    }
+    25% {
+        scale: 1.02;
+        transform: scale(1.02);
+    }
+    38% {
+        scale: 1;
+        transform: scale(1);
+    }
+    100% {
+        scale: 0;
+    }
+}
+
+.matching-lp-content-title {
+    @include font-size-lp-m;
+    color: $cl-stekina-black;
+    font-family: "k-3", "Noto Sans JP";
+    text-align: left;
+    margin: 15px 15px 0px;
 }
 
 .matching-lp-box-bg-brown {}
@@ -165,5 +279,98 @@ footer {
         @include font-size-lp-s;
         color: #aaa;
         text-align: center;
+    }
+}
+
+.matching-lp-first-dialog {
+    position: fixed;
+    background: $cl-stekina-brown-light;
+    border-radius: 8px;
+    height: 450px;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    width: 90%;
+    max-width: 405px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    .matching-lp-first-head {
+        display: flex;
+        align-items: flex-end;
+        margin: 15px 20px;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "";
+            bottom: -23px;
+            left: 5px;
+            margin: 0 auto;
+            border: 16px solid transparent;
+            border-top: 20px solid white;
+            width: 0;
+            height: 0;
+            transform: rotate(180deg);
+        }
+        .matching-lp-first-head-img {
+            width: 13%;
+        }
+        .matching-lp-first-head-text {
+            color: $cl-stekina-brown;
+            @include font-size-lp-s;
+            margin: 0 0 2px 3px;
+        }
+    }
+    .matching-lp-first-content {
+        background: white;
+        border-radius: 8px;
+        margin: 0px 15px 30px;
+        padding: 15px 15px 30px;
+        color: #262626;
+        @include font-size-lp-mm;
+        line-height: 1.65;
+        .matching-lp-first-content-catch {
+            font-size: 23.5px;
+            line-height: 1.75;
+            font-family: "k-6", "Noto Sans JP";
+            text-align: left;
+            margin: 20px 0px 0px;
+            letter-spacing: 3px;
+            font-size: 23.5px;
+            @include mq-down(iphone5) {
+                font-size: 20px;
+            }
+        }
+        b {
+            font-family: "k-6", "Noto Sans JP";
+        }
+    }
+}
+
+.matching-lp-first-dialogbg {
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    background: black;
+    display: block;
+    position: fixed;
+    z-index: 5;
+    opacity: 0.7;
+}
+
+.common-btn {
+    button {
+        width: 80%;
+        margin: 20px auto 0;
+        padding: 12px 0;
+        display: block;
+        background: linear-gradient(270deg, #e6417a 0%, #ff595b 100%);
+        @include font-size-lp-m;
+        font-family: "k-6", "Noto Sans JP";
+        color: white;
+        border-radius: 8px;
+        border: none;
     }
 }

@@ -14,6 +14,14 @@
  */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:500&display=swap");
+@font-face {
+  font-family: "k-3";
+  src: url("https://stekina.com/fonts/koburinaStdW3.eot?") format("eot"), url("https://stekina.com/fonts/koburinaStdW3.woff2") format("woff2"), url("https://stekina.com/fonts/koburinaStdW3.woff") format("woff"); }
+
+@font-face {
+  font-family: "k-6";
+  src: url("https://stekina.com/fonts/koburinaStdW6.woff2") format("woff2"), url("https://stekina.com/fonts/koburinaStdW6.woff") format("woff"), url("https://stekina.com/fonts/koburinaStdW6.eot?") format("eot"); }
+
 .sample {
   background: url(../img/face.png) 0 0 no-repeat; }
 
@@ -5598,14 +5606,6 @@ a.panel-block:hover {
   .section.is-large {
     padding: 240px 20px; } }
 
-@font-face {
-  font-family: "k-3";
-  src: url("https://limehair.jp/static/fonts/koburinaStdW3.eot?") format("eot"), url("https://limehair.jp/static/fonts/koburinaStdW3.woff2") format("woff2"), url("https://limehair.jp/static/fonts/koburinaStdW3.woff") format("woff"); }
-
-@font-face {
-  font-family: "k-6";
-  src: url("https://limehair.jp/static/fonts/koburinaStdW6.woff2") format("woff2"), url("https://limehair.jp/static/fonts/koburinaStdW6.woff") format("woff"), url("https://limehair.jp/static/fonts/koburinaStdW6.eot?") format("eot"); }
-
 /*
 @font-face {
     font-family: "Noto-bold";
@@ -5623,33 +5623,66 @@ p,
 div {
   font-family: "k-3"; }
 
-body {
+.matching-lp-wrapper {
   max-width: 450px;
   margin: 0 auto;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .15); }
 
 .matching-lp-mv {
-  height: 450px;
+  -webkit-animation-name: transition;
+          animation-name: transition;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  background-size: cover;
+  height: 500px;
   width: 100%;
   background-image: url("https://stekina.com/wp-content/uploads/model.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative; }
+  .matching-lp-mv .matching-lp-mv-logo {
+    top: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 120px;
+    z-index: 1000;
+    position: absolute; }
   .matching-lp-mv .matching-lp-text {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0px;
+    /*left: 20px;*/
+    left: 0px;
     right: 0;
     bottom: 0;
     margin: auto;
-    height: 100px;
-    text-align: center;
-    color: white;
-    font-size: 30px;
-    font-family: "k-3", "Noto Sans JP";
-    letter-spacing: 8px;
     z-index: 10;
-    line-height: 1.5; }
+    height: 150px; }
+    .matching-lp-mv .matching-lp-text h1 {
+      font-size: 24px;
+      font-family: "k-3", "Noto Sans JP";
+      color: white;
+      text-align: center;
+      margin: 0 0 20px;
+      display: inline-block;
+      width: 100%;
+      letter-spacing: 5.5px; }
+      .matching-lp-mv .matching-lp-text h1:after {
+        width: 50px;
+        height: 3px;
+        margin: 30px auto 0px;
+        display: block;
+        content: "";
+        background: white; }
+    .matching-lp-mv .matching-lp-text .matching-lp-text-catch {
+      text-align: center;
+      color: white;
+      font-size: 30px;
+      font-family: "k-3", "Noto Sans JP";
+      letter-spacing: 6px;
+      line-height: 1.5; }
   .matching-lp-mv:before {
     width: 100%;
     height: 100%;
@@ -5662,38 +5695,137 @@ body {
     content: "";
     z-index: 2;
     position: absolute; }
+  .matching-lp-mv:after {
+    width: 100%;
+    height: 90px;
+    right: 0px;
+    top: 0;
+    margin: auto;
+    background-image: -webkit-linear-gradient(bottom, transparent 0%, rgba(0, 0, 0, .7) 70%);
+    background-image: linear-gradient(0deg, transparent 0%, rgba(0, 0, 0, .7) 70%);
+    display: block;
+    content: "";
+    z-index: 4;
+    position: absolute; }
+
+@-webkit-keyframes transition {
+  0% {
+    background-image: url("https://stekina.com/wp-content/uploads/model.jpg"); }
+  33% {
+    background-image: url("https://stekina.com/wp-content/uploads/model2.jpg"); }
+  66% {
+    background-image: url("https://stekina.com/wp-content/uploads/model3.jpg"); }
+  100% {
+    background-image: url("https://stekina.com/wp-content/uploads/model.jpg"); } }
+
+@keyframes transition {
+  0% {
+    background-image: url("https://stekina.com/wp-content/uploads/model.jpg"); }
+  33% {
+    background-image: url("https://stekina.com/wp-content/uploads/model2.jpg"); }
+  66% {
+    background-image: url("https://stekina.com/wp-content/uploads/model3.jpg"); }
+  100% {
+    background-image: url("https://stekina.com/wp-content/uploads/model.jpg"); } }
 
 .matching-lp-box {
   padding: 60px 0 15px; }
   .matching-lp-box .matching-lp-main-title-02 {
-    font-size: 35px;
+    font-size: 40px;
     color: #262626;
     font-family: "k-6", "Noto Sans JP";
     text-align: left;
-    margin: -15px 15px 45px; }
+    margin: -15px 15px 15px; }
     @media screen and (max-width: 374px) {
       .matching-lp-box .matching-lp-main-title-02 {
         font-size: 32.5px; } }
   .matching-lp-box .matching-lp-main-title {
-    font-size: 35px;
+    font-size: 40px;
     color: #262626;
     font-family: "k-6", "Noto Sans JP";
     text-align: left;
-    margin: 0 15px 45px; }
+    margin: 0 15px 15px; }
     @media screen and (max-width: 374px) {
       .matching-lp-box .matching-lp-main-title {
         font-size: 32.5px; } }
   .matching-lp-box .matching-lp-box-content {
-    margin: 0 0 60px; }
+    margin: 0 0 75px; }
     .matching-lp-box .matching-lp-box-content:last-child() {
       margin: 0; }
-  .matching-lp-box .matching-lp-content-title {
-    font-size: 22.5px;
+  .matching-lp-box .matching-lp-box-content-btnhead {
+    font-size: 18px;
     line-height: 1.4;
-    color: #262626;
     font-family: "k-6", "Noto Sans JP";
-    text-align: left;
-    margin: 0px 15px 15px; }
+    text-align: center;
+    margin: 0 0 10px; }
+  .matching-lp-box .matching-lp-box-content-line {
+    width: 90%;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .4);
+    background: white;
+    margin: 0 auto 75px;
+    padding: 0 0 20px; }
+
+.matching-lp-box-content-line-linebtn {
+  width: 85%;
+  margin: 20px auto 0;
+  -webkit-animation: fuwafuwa 2s 0s infinite;
+          animation: fuwafuwa 2s 0s infinite; }
+
+@-webkit-keyframes fuwafuwa {
+  0% {
+    scale: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  8% {
+    scale: 1.04;
+    -webkit-transform: scale(1.04);
+            transform: scale(1.04); }
+  17% {
+    scale: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  25% {
+    scale: 1.02;
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02); }
+  38% {
+    scale: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  100% {
+    scale: 0; } }
+
+@keyframes fuwafuwa {
+  0% {
+    scale: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  8% {
+    scale: 1.04;
+    -webkit-transform: scale(1.04);
+            transform: scale(1.04); }
+  17% {
+    scale: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  25% {
+    scale: 1.02;
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02); }
+  38% {
+    scale: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  100% {
+    scale: 0; } }
+
+.matching-lp-content-title {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #262626;
+  font-family: "k-3", "Noto Sans JP";
+  text-align: left;
+  margin: 15px 15px 0px; }
 
 footer {
   background: #262626;
@@ -5710,10 +5842,100 @@ footer {
       margin: 0 auto 45px;
       text-decoration: none;
       display: inline-block;
-      font-size: 22.5px;
+      font-size: 18px;
       line-height: 1.4; }
   footer .matching-lp-footer-copyright {
     font-size: 12.5px;
     line-height: 1.4;
     color: #aaa;
     text-align: center; }
+
+.matching-lp-first-dialog {
+  position: fixed;
+  background: #e2ddd7;
+  border-radius: 8px;
+  height: 450px;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+  width: 90%;
+  max-width: 405px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99; }
+  .matching-lp-first-dialog .matching-lp-first-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin: 15px 20px;
+    position: relative; }
+    .matching-lp-first-dialog .matching-lp-first-head::before {
+      position: absolute;
+      content: "";
+      bottom: -23px;
+      left: 5px;
+      margin: 0 auto;
+      border: 16px solid transparent;
+      border-top: 20px solid white;
+      width: 0;
+      height: 0;
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg); }
+    .matching-lp-first-dialog .matching-lp-first-head .matching-lp-first-head-img {
+      width: 13%; }
+    .matching-lp-first-dialog .matching-lp-first-head .matching-lp-first-head-text {
+      color: #8e7f6b;
+      font-size: 12.5px;
+      line-height: 1.4;
+      margin: 0 0 2px 3px; }
+  .matching-lp-first-dialog .matching-lp-first-content {
+    background: white;
+    border-radius: 8px;
+    margin: 0px 15px 30px;
+    padding: 15px 15px 30px;
+    color: #262626;
+    font-size: 16px;
+    line-height: 1.4;
+    line-height: 1.65; }
+    .matching-lp-first-dialog .matching-lp-first-content .matching-lp-first-content-catch {
+      font-size: 23.5px;
+      line-height: 1.75;
+      font-family: "k-6", "Noto Sans JP";
+      text-align: left;
+      margin: 20px 0px 0px;
+      letter-spacing: 3px;
+      font-size: 23.5px; }
+      @media screen and (max-width: 374px) {
+        .matching-lp-first-dialog .matching-lp-first-content .matching-lp-first-content-catch {
+          font-size: 20px; } }
+    .matching-lp-first-dialog .matching-lp-first-content b {
+      font-family: "k-6", "Noto Sans JP"; }
+
+.matching-lp-first-dialogbg {
+  width: 100%;
+  margin: auto;
+  height: 100vh;
+  background: black;
+  display: block;
+  position: fixed;
+  z-index: 5;
+  opacity: 0.7; }
+
+.common-btn button {
+  width: 80%;
+  margin: 20px auto 0;
+  padding: 12px 0;
+  display: block;
+  background: -webkit-linear-gradient(right, #e6417a 0%, #ff595b 100%);
+  background: linear-gradient(270deg, #e6417a 0%, #ff595b 100%);
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: "k-6", "Noto Sans JP";
+  color: white;
+  border-radius: 8px;
+  border: none; }

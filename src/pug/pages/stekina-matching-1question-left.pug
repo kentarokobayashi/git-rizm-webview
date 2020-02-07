@@ -14,8 +14,23 @@ html(lang='jp')
   body
       #barba-wrapper
         .barba-container
-          .matching-dialog(style='display: none')
-              img(src='https://stekina.com/wp-content/uploads/keisan.png')        
+          .matching-dialog(style='display:none;')
+            .matching-dialog-progress-wrapper
+                .matching-dialog-progress-icon
+                  img(src='https://stekina.com/wp-content/uploads/icon_stekina-ai-illust.png')  
+                .matching-dialog-progress-text
+                  span|計
+                  span|算
+                  span|中
+                  span|で
+                  span|す
+                  span|…
+                .matching-dialog-progress-gauge
+                  .matching-dialog-text-progress-gauge-bar(style='width:72%')
+                .matching-dialog-progress-percent
+                  span.matching-dialog-progress-percent-number#count(data-from='0', data-to='72') 0
+                  span.matching-dialog-progress-percent-number-text
+                    |%                                   
           .matching-questions-wrapper
             .matching-questions-head
               .matching-questions-head-ai
@@ -123,15 +138,48 @@ html(lang='jp')
                 br
                 |美容師をご紹介いたします
               .common-btn
-                a.common-btn-finish
+                a.common-btn-finish#common-btn-finish
                    |完了
       include ../mixin/_footer-matching.pug
       script.
          $('.common-btn-finish').click(function () {
                  setTimeout(function(){
                  location.href = 'https://stekina.com/stylists/matching';
-                 },3000);
+                 },1500);
                  $('.matching-dialog').fadeIn();
+                 $('.matching-dialog-text-progress-gauge-bar').addClass('matching-dialog-text-progress-gauge-bar-animation');
             });
-      script(src='https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js')
-      script(src='static/js/barba.js')
+      //script(src='https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js')
+      //script(src='static/js/barba.js')
+      script.
+        const el = {
+          count: document.getElementById('count'),
+          button: document.getElementById('common-btn-finish')
+        }
+        const DURATION = 550
+        let isAnimating = false
+
+        el.button.addEventListener('click', e => {
+          if (isAnimating) {
+            return
+          }
+          
+          isAnimating = true
+
+          const from = parseInt(el.count.dataset.from, 10)
+          const to = parseInt(el.count.dataset.to, 10)
+          const startTime = Date.now()
+
+          const timer = setInterval(() => {
+            const elapsedTime = Date.now() - startTime
+            const progress = elapsedTime / DURATION
+            
+            if (progress < 1) {
+              el.count.textContent = Math.floor(from + progress * (to - from))
+            } else {
+              el.count.textContent = to
+              isAnimating = false
+              clearInterval(timer)
+            }
+          }, 16)
+        })
