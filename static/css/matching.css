@@ -6981,8 +6981,7 @@ input[type="radio"] {
   .common-matching-henkin-body-button button {
     font-size: 20px;
     letter-spacing: 0px;
-    background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
-    background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
+    background: #00b900;
     width: 80%;
     padding: 15px;
     border: none;
@@ -6994,3 +6993,41 @@ input[type="radio"] {
     @media screen and (max-width: 374px) {
       .common-matching-henkin-body-button button {
         font-size: 17px; } }
+
+.matching-questions-content-question-box-error {
+  border: 2px red solid;
+  background: #ffe0e0;
+  font-family: "k-6" !important;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 20px 0 30px;
+  position: relative;
+  box-shadow: 0px 3px 3px #aaa;
+  width: 93%; }
+  .matching-questions-content-question-box-error:before {
+    content: "";
+    /*何も入れない*/
+    display: inline-block;
+    /*忘れずに！*/
+    width: 24px;
+    /*画像の幅*/
+    height: 24px;
+    /*画像の高さ*/
+    background-image: url(https://stekina.com/wp-content/uploads/img-chuui-icon.svg);
+    background-size: contain;
+    vertical-align: sub; }
+  .matching-questions-content-question-box-error:after {
+    position: absolute;
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 15px;
+    height: 15px;
+    top: -8px;
+    left: 20px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(45deg);
+    background: #ffe0e0;
+    border-left: 2px red solid;
+    border-top: 2px red solid;
+    z-index: 100; }

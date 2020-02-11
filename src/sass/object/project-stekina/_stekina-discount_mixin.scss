@@ -8,11 +8,14 @@
     src: url("https://limehair.jp/static/fonts/koburinaStdW6.eot?") format("eot"), url("https://limehair.jp/static/fonts/koburinaStdW6.woff2") format("woff2"), url("https://limehair.jp/static/fonts/koburinaStdW6.woff") format("woff");
 }
 
+.common-bold {
+    font-family: "k-6" !important;
+}
+
 body,
 html,
 div,
 p,
-span,
 a {
     /*  font-family: "mplus-2c-regular", "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Osaka, "MS PGothic", arial, helvetica, sans-serif !important;*/
     font-family: "k-3";

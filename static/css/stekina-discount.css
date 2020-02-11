@@ -5606,11 +5606,13 @@ a.panel-block:hover {
   font-family: "k-6";
   src: url("https://limehair.jp/static/fonts/koburinaStdW6.eot?") format("eot"), url("https://limehair.jp/static/fonts/koburinaStdW6.woff2") format("woff2"), url("https://limehair.jp/static/fonts/koburinaStdW6.woff") format("woff"); }
 
+.common-bold {
+  font-family: "k-6" !important; }
+
 body,
 html,
 div,
 p,
-span,
 a {
   /*  font-family: "mplus-2c-regular", "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Osaka, "MS PGothic", arial, helvetica, sans-serif !important;*/
   font-family: "k-3"; }
@@ -5694,7 +5696,7 @@ a {
     font-size: 11px;
     font-family: "k-6", KoburinaGoStd-W6; }
   .stekina-discount-bar .stekina-discount-bar-text-large {
-    font-size: 26.5px;
+    font-size: 25px;
     font-family: "k-6", KoburinaGoStd-W6; }
   .stekina-discount-bar .stekina-discount-bar-text-yen {
     font-family: "k-6", KoburinaGoStd-W6;
@@ -5823,7 +5825,7 @@ a {
         border-bottom: 1px solid #ccc;
         /* top */ }
         .stekina-discount-content .stekina-discount-content-main .stekina-discount-content-main-box .stekina-discount-content-main-box-checklist span.stekina-discount-content-main-box-checklist-shiny {
-          font-size: 14px; }
+          font-size: 11px; }
         .stekina-discount-content .stekina-discount-content-main .stekina-discount-content-main-box .stekina-discount-content-main-box-checklist .stekina-discount-content-main-box-checklist-top {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -5870,7 +5872,7 @@ a {
             display: inline-block; }
           .stekina-discount-content .stekina-discount-content-main .stekina-discount-content-main-box .stekina-discount-content-main-box-checklist .stekina-discount-content-main-box-checklist-top .stekina-discount-content-main-box-checklist-top-left-count {
             font-family: "k-6", KoburinaGoStd-W6;
-            font-size: 26.5px; }
+            font-size: 25px; }
           .stekina-discount-content .stekina-discount-content-main .stekina-discount-content-main-box .stekina-discount-content-main-box-checklist .stekina-discount-content-main-box-checklist-top .stekina-discount-content-main-box-checklist-top-right {
             text-align: right;
             margin: 0 -6px 0 0; }
@@ -5880,7 +5882,7 @@ a {
             .stekina-discount-content .stekina-discount-content-main .stekina-discount-content-main-box .stekina-discount-content-main-box-checklist .stekina-discount-content-main-box-checklist-top .stekina-discount-content-main-box-checklist-top-right .stekina-discount-content-main-box-checklist-top-right-text {
               font-size: 16px; }
             .stekina-discount-content .stekina-discount-content-main .stekina-discount-content-main-box .stekina-discount-content-main-box-checklist .stekina-discount-content-main-box-checklist-top .stekina-discount-content-main-box-checklist-top-right .stekina-discount-content-main-box-checklist-top-right-price {
-              font-size: 26.5px;
+              font-size: 25px;
               color: #b3b3b3 !important; }
       .stekina-discount-content .stekina-discount-content-main .stekina-discount-content-main-box .stekina-discount-content-main-box-checklist-bottom {
         display: -webkit-box;
@@ -5908,7 +5910,7 @@ a {
             font-size: 16px; }
           .stekina-discount-content .stekina-discount-content-main .stekina-discount-content-main-box .stekina-discount-content-main-box-checklist-bottom .stekina-discount-content-main-box-checklist-bottom-right .stekina-discount-content-main-box-checklist-bottom-right-price {
             font-family: "k-6", KoburinaGoStd-W6;
-            font-size: 26.5px;
+            font-size: 25px;
             color: #b3b3b3; }
         .stekina-discount-content .stekina-discount-content-main .stekina-discount-content-main-box .stekina-discount-content-main-box-checklist-bottom .stekina-discount-content-main-box-checklist-bottom-button {
           position: absolute;
@@ -6009,7 +6011,7 @@ a {
   .stekina-discount-about .stekina-discount-about-block-box:last-child {
     margin: 0 auto 15px; }
   .stekina-discount-about .stekina-discount-about-block-box .stekina-discount-about-block-box-title {
-    font-size: 26.5px;
+    font-size: 25px;
     color: #262626;
     font-family: "k-6", KoburinaGoStd-W6;
     letter-spacing: -0.5px;
@@ -6142,7 +6144,7 @@ a {
 .common-stekina-discount-title {
   background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
   background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
-  font-size: 26.5px;
+  font-size: 25px;
   border-radius: 4px;
   color: white;
   display: inline-block;

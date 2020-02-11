@@ -12,265 +12,6 @@ html(lang='jp')
     meta(name='apple-mobile-web-app-capable', content='yes')
     meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
   body.bg-gray-lightest(data-action='tutorial', data-controller='ken')
-      //.stekina-discount-wrapper 
-         //stekina-discount-bar
-         .stekina-discount-bar
-            .stekina-discount-bar-left
-              .stekina-discount-bar-icon
-                 img(src='https://stekina.com/wp-content/uploads/price-icon.svg')
-              .stekina-discount-bar-text
-                    //サロンの場合はstekina-discount-bar-text-monthが追加される
-                    span.stekina-discount-bar-text-month
-                      |12
-                    span.stekina-discount-bar-text-small
-                      |月の         
-                    span.stekina-discount-bar-text-large
-                      |5,000
-                    span.stekina-discount-bar-text-yen
-                      |円
-                    span.stekina-discount-bar-text-small
-                      |割引まで…
-            .stekina-discount-bar-right
-              .stekina-discount-bar-right-text
-                    span.stekina-discount-bar-text-small
-                      |あと
-                    //★★金額はユーザーの状態によって変わる
-                    span.stekina-discount-bar-text-large
-                      |3,100
-                    span.stekina-discount-bar-text-yen
-                      |円 
-            //ゲージによって横幅を定義
-            .stekina-discount-bar-bg(style="width:60%;")
-         //stekina-discount-accountment
-         //.stekina-discount-accountment
-           |あとでやる
-         //stekina-discount-content
-         .stekina-discount-content
-            //stekina-discount-content-head
-            .stekina-discount-content-head
-              .stekina-discount-content-head-left
-                 //★★日付はユーザーの状態によって変わる
-                 |  当月の10/21-11/21まで
-              .stekina-discount-content-head-right
-                .stekina-discount-content-head-right-text
-                  |現在の割引合計額
-                .stekina-discount-content-head-right-price-number 
-                  //★★金額はユーザーの状態によって変わる
-                  |1900
-                .stekina-discount-content-head-right-price-yen
-                  |円
-            .stekina-discount-content-mainbg
-                .stekina-discount-content-main
-                  .stekina-discount-content-main-box
-                      .stekina-discount-content-main-box-title
-                          .stekina-discount-content-main-box-title-main
-                              |毎月定額割引
-                      //ユーザーが条件を満たしている時は<div class="stekina-discount-content-main-box-checklist"にactiveのclassを付与する
-                      .stekina-discount-content-main-box-checklist.active.margin-bottom-10
-                          .stekina-discount-content-main-box-checklist-top
-                              .stekina-discount-content-main-box-checklist-top-left
-                                  .stekina-discount-content-main-box-checklist-top-left-icon
-                                    img(src='https://stekina.com/wp-content/uploads/icn-check.svg')
-                                  .stekina-discount-content-main-box-checklist-top-left-text
-                                    |全員のプロフィール掲載
-                              .stekina-discount-content-main-box-checklist-top-right
-                                  span.stekina-discount-content-main-box-checklist-top-right-text
-                                    |毎月
-                                  span.stekina-discount-content-main-box-checklist-top-right-price(style='letter-spacing:-1px;')
-                                    |1000円
-                                  span.stekina-discount-content-main-box-checklist-top-right-text
-                                    |OFF
-                                  span.stekina-discount-content-main-box-checklist-shiny
-                                    |✨
-                          .stekina-discount-content-main-box-checklist-bottom.stekina-discount-content-main-box-checklist-bottom-salon
-                              .stekina-discount-content-main-box-checklist-bottom-right
-                                          |全員完了済み
-                      .stekina-discount-content-main-box-checklist.margin-bottom-10
-                          .stekina-discount-content-main-box-checklist-top
-                              .stekina-discount-content-main-box-checklist-top-left
-                                  .stekina-discount-content-main-box-checklist-top-left-icon
-                                    img(src='https://stekina.com/wp-content/uploads/icn-check.svg')
-                                  .stekina-discount-content-main-box-checklist-top-left-text
-                                    |全員のステータス表示
-                              .stekina-discount-content-main-box-checklist-top-right
-                                  span.stekina-discount-content-main-box-checklist-top-right-text
-                                    |毎月
-                                  span.stekina-discount-content-main-box-checklist-top-right-price
-                                    |500円
-                                  span.stekina-discount-content-main-box-checklist-top-right-text
-                                    |OFF
-                                  span.stekina-discount-content-main-box-checklist-shiny
-                                    |✨
-                          .stekina-discount-content-main-box-checklist-bottom
-                              .stekina-discount-content-main-box-checklist-bottom-right.stekina-discount-content-main-box-checklist-bottom-salon
-                                  .stekina-discount-content-main-box-checklist-bottom-right-text-salon
-                                    |未完了のスタッフが
-                                  .stekina-discount-content-main-box-checklist-bottom-right-price-salon
-                                    |3名
-                                  .stekina-discount-content-main-box-checklist-bottom-right-text-salon
-                                    |います
-                      .stekina-discount-content-main-box-checklist.active.margin-bottom-10
-                          .stekina-discount-content-main-box-checklist-top
-                              .stekina-discount-content-main-box-checklist-top-left
-                                  .stekina-discount-content-main-box-checklist-top-left-icon
-                                    img(src='https://stekina.com/wp-content/uploads/icn-check.svg')
-                                  .stekina-discount-content-main-box-checklist-top-left-text
-                                    |全員のインスタ連携
-                              .stekina-discount-content-main-box-checklist-top-right
-                                  span.stekina-discount-content-main-box-checklist-top-right-text
-                                    |毎月
-                                  span.stekina-discount-content-main-box-checklist-top-right-price
-                                    |300円
-                                  span.stekina-discount-content-main-box-checklist-top-right-text
-                                    |OFF
-                                  span.stekina-discount-content-main-box-checklist-shiny
-                                    |✨
-                          .stekina-discount-content-main-box-checklist-bottom.stekina-discount-content-main-box-checklist-bottom-salon
-                              .stekina-discount-content-main-box-checklist-bottom-right
-                                          |全員完了済み
-                      .stekina-discount-content-main-box-checklist.margin-bottom-10.active
-                          .stekina-discount-content-main-box-checklist-top
-                              .stekina-discount-content-main-box-checklist-top-left
-                                  .stekina-discount-content-main-box-checklist-top-left-icon
-                                    img(src='https://stekina.com/wp-content/uploads/icn-check.svg')
-                                  .stekina-discount-content-main-box-checklist-top-left-text
-                                    |各自のレビューが5件以上
-                              .stekina-discount-content-main-box-checklist-top-right
-                                  span.stekina-discount-content-main-box-checklist-top-right-text
-                                    |毎月
-                                  span.stekina-discount-content-main-box-checklist-top-right-price
-                                    |300円
-                                  span.stekina-discount-content-main-box-checklist-top-right-text
-                                    |OFF
-                                  span.stekina-discount-content-main-box-checklist-shiny
-                                    |✨
-                          .stekina-discount-content-main-box-checklist-bottom.stekina-discount-content-main-box-checklist-bottom-salon
-                              .stekina-discount-content-main-box-checklist-bottom-right
-                                          |全員完了済み
-                      .stekina-discount-content-main-box-checklist
-                          .stekina-discount-content-main-box-checklist-top
-                              .stekina-discount-content-main-box-checklist-top-left
-                                  .stekina-discount-content-main-box-checklist-top-left-icon
-                                    img(src='https://stekina.com/wp-content/uploads/icn-check.svg')
-                                  .stekina-discount-content-main-box-checklist-top-left-text
-                                    |各自の紹介文が1件以上
-                              .stekina-discount-content-main-box-checklist-top-right
-                                  span.stekina-discount-content-main-box-checklist-top-right-text
-                                    |毎月
-                                  span.stekina-discount-content-main-box-checklist-top-right-price
-                                    |300円
-                                  span.stekina-discount-content-main-box-checklist-top-right-text
-                                    |OFF
-                                  span.stekina-discount-content-main-box-checklist-shiny
-                                    |✨
-                          .stekina-discount-content-main-box-checklist-bottom
-                              .stekina-discount-content-main-box-checklist-bottom-right.stekina-discount-content-main-box-checklist-bottom-salon
-                                  .stekina-discount-content-main-box-checklist-bottom-right-text-salon
-                                    |未完了のスタッフが
-                                  .stekina-discount-content-main-box-checklist-bottom-right-price-salon
-                                    |3名
-                                  .stekina-discount-content-main-box-checklist-bottom-right-text-salon
-                                    |います
-                  .stekina-discount-content-main-box
-                      .stekina-discount-content-main-box-title
-                          .stekina-discount-content-main-box-title-main
-                            |当月のみ割引
-                          .stekina-discount-content-main-box-title-sub
-                            |※サロン全体の総数を表示
-                      //ユーザーが条件を満たしている時は<div class="stekina-discount-content-main-box-checklist"にactiveのclassを付与する
-                      .stekina-discount-content-main-box-checklist.active.margin-bottom-30
-                          .stekina-discount-content-main-box-checklist-top
-                              .stekina-discount-content-main-box-checklist-top-left
-                                  .stekina-discount-content-main-box-checklist-top-left-icon
-                                    img(src='https://stekina.com/wp-content/uploads/icn-check.svg')
-                                  .stekina-discount-content-main-box-checklist-top-left-text
-                                    |今月のお客様からのレビュー投稿数
-                                  .stekina-discount-content-main-box-checklist-top-left-count
-                                    |45件
-                          .stekina-discount-content-main-box-checklist-bottom
-                              .stekina-discount-content-main-box-checklist-bottom-left
-                                |※1件あたり
-                                span.bold|100円
-                                |割引
-                              .stekina-discount-content-main-box-checklist-bottom-right
-                                  .stekina-discount-content-main-box-checklist-bottom-right-text
-                                    |当月のみ
-                                  .stekina-discount-content-main-box-checklist-bottom-right-price
-                                    |4500円
-                                  .stekina-discount-content-main-box-checklist-bottom-right-text
-                                    |OFF
-                                  span.stekina-discount-content-main-box-checklist-shiny
-                                    |✨
-                      .stekina-discount-content-main-box-checklist.active.margin-bottom-30
-                          .stekina-discount-content-main-box-checklist-top
-                              .stekina-discount-content-main-box-checklist-top-left
-                                  .stekina-discount-content-main-box-checklist-top-left-icon
-                                    img(src='https://stekina.com/wp-content/uploads/icn-check.svg')
-                                  .stekina-discount-content-main-box-checklist-top-left-text
-                                    |今月のお客様からのSNSシェア数
-                                  .stekina-discount-content-main-box-checklist-top-left-count
-                                    |13件
-                          .stekina-discount-content-main-box-checklist-bottom
-                              .stekina-discount-content-main-box-checklist-bottom-left
-                                |※1件あたり
-                                span.bold|100円
-                                |割引
-                              .stekina-discount-content-main-box-checklist-bottom-right
-                                  .stekina-discount-content-main-box-checklist-bottom-right-text
-                                    |当月のみ
-                                  .stekina-discount-content-main-box-checklist-bottom-right-price
-                                    |1300円
-                                  .stekina-discount-content-main-box-checklist-bottom-right-text
-                                    |OFF
-                                  span.stekina-discount-content-main-box-checklist-shiny
-                                    |✨
-                      .stekina-discount-content-main-box-checklist.margin-bottom-30
-                          .stekina-discount-content-main-box-checklist-top
-                              .stekina-discount-content-main-box-checklist-top-left
-                                  .stekina-discount-content-main-box-checklist-top-left-icon
-                                    img(src='https://stekina.com/wp-content/uploads/icn-check.svg')
-                                  .stekina-discount-content-main-box-checklist-top-left-text
-                                    |今月のステキナ紹介文投稿数
-                                  .stekina-discount-content-main-box-checklist-top-left-count
-                                    |0件
-                          .stekina-discount-content-main-box-checklist-bottom
-                              .stekina-discount-content-main-box-checklist-bottom-left
-                                |※1件あたり
-                                span.bold|500円
-                                |割引
-                              .stekina-discount-content-main-box-checklist-bottom-right
-                                  .stekina-discount-content-main-box-checklist-bottom-right-text
-                                    |当月のみ
-                                  .stekina-discount-content-main-box-checklist-bottom-right-price
-                                    |0円
-                                  .stekina-discount-content-main-box-checklist-bottom-right-text
-                                    |OFF
-                                  span.stekina-discount-content-main-box-checklist-shiny
-                                    |✨
-                      .stekina-discount-content-main-box-checklist
-                          .stekina-discount-content-main-box-checklist-top
-                              .stekina-discount-content-main-box-checklist-top-left
-                                  .stekina-discount-content-main-box-checklist-top-left-icon
-                                    img(src='https://stekina.com/wp-content/uploads/icn-check.svg')
-                                  .stekina-discount-content-main-box-checklist-top-left-text
-                                    |今月のステキナ紹介文SNSシェア数
-                                  .stekina-discount-content-main-box-checklist-top-left-count
-                                    |0件
-                          .stekina-discount-content-main-box-checklist-bottom
-                              .stekina-discount-content-main-box-checklist-bottom-left
-                                |※1件あたり
-                                span.bold|500円
-                                |割引
-                              .stekina-discount-content-main-box-checklist-bottom-right
-                                  .stekina-discount-content-main-box-checklist-bottom-right-text
-                                    |当月のみ
-                                  .stekina-discount-content-main-box-checklist-bottom-right-price
-                                    |0円
-                                  .stekina-discount-content-main-box-checklist-bottom-right-text
-                                    |OFF
-                                  span.stekina-discount-content-main-box-checklist-shiny
-                                    |✨
-      //
       .stekina-discount-wrapper 
          //stekina-discount-bar
          .stekina-discount-bar
@@ -356,7 +97,7 @@ html(lang='jp')
                                   span.stekina-discount-content-main-box-checklist-top-right-text
                                     |毎月
                                   span.stekina-discount-content-main-box-checklist-top-right-price
-                                    |500円
+                                    |400円
                                   span.stekina-discount-content-main-box-checklist-top-right-text
                                     |OFF
                                   span.stekina-discount-content-main-box-checklist-shiny
@@ -376,7 +117,7 @@ html(lang='jp')
                                   span.stekina-discount-content-main-box-checklist-top-right-text
                                     |毎月
                                   span.stekina-discount-content-main-box-checklist-top-right-price
-                                    |500円
+                                    |400円
                                   span.stekina-discount-content-main-box-checklist-top-right-text
                                     |OFF
                                   span.stekina-discount-content-main-box-checklist-shiny
@@ -392,7 +133,6 @@ html(lang='jp')
                                   .stekina-discount-content-main-box-checklist-top-left-text
                                     |ステータス表示
                                   //回答するボタンは押したら消える？
-
                               .stekina-discount-content-main-box-checklist-top-right
                                   span.stekina-discount-content-main-box-checklist-top-right-text
                                     |毎月
@@ -470,6 +210,23 @@ html(lang='jp')
                                     |OFF
                                   span.stekina-discount-content-main-box-checklist-shiny
                                     |✨
+                      .stekina-discount-content-main-box-checklist.margin-bottom-10
+                          .stekina-discount-content-main-box-checklist-top
+                              .stekina-discount-content-main-box-checklist-top-left
+                                  .stekina-discount-content-main-box-checklist-top-left-icon
+                                    img(src='https://stekina.com/wp-content/uploads/icn-check.svg')
+                                  .stekina-discount-content-main-box-checklist-top-left-text
+                                    |クーポンが3つ以上
+                                  //回答するボタンは押したら消える？
+                              .stekina-discount-content-main-box-checklist-top-right
+                                  span.stekina-discount-content-main-box-checklist-top-right-text
+                                    |毎月
+                                  span.stekina-discount-content-main-box-checklist-top-right-price
+                                    |200円
+                                  span.stekina-discount-content-main-box-checklist-top-right-text
+                                    |OFF
+                                  span.stekina-discount-content-main-box-checklist-shiny
+                                    |✨
                   .stekina-discount-content-main-box
                       .stekina-discount-content-main-box-title
                         .common-stekina-discount-title
@@ -510,7 +267,7 @@ html(lang='jp')
                           .stekina-discount-content-main-box-checklist-bottom
                               .stekina-discount-content-main-box-checklist-bottom-left
                                 |※1件あたり
-                                span.bold|100円
+                                span.common-bold|100円
                                 |割引
                               .stekina-discount-content-main-box-checklist-bottom-right
                                   .stekina-discount-content-main-box-checklist-bottom-right-text
@@ -533,7 +290,7 @@ html(lang='jp')
                           .stekina-discount-content-main-box-checklist-bottom
                               .stekina-discount-content-main-box-checklist-bottom-left
                                 |※1件あたり
-                                span.bold|500円
+                                span.common-bold|500円
                                 |割引
                               .stekina-discount-content-main-box-checklist-bottom-right
                                   .stekina-discount-content-main-box-checklist-bottom-right-text
@@ -556,7 +313,7 @@ html(lang='jp')
                           .stekina-discount-content-main-box-checklist-bottom
                               .stekina-discount-content-main-box-checklist-bottom-left
                                 |※1件あたり
-                                span.bold|500円
+                                span.common-bold|500円
                                 |割引
                               .stekina-discount-content-main-box-checklist-bottom-right
                                   .stekina-discount-content-main-box-checklist-bottom-right-text
