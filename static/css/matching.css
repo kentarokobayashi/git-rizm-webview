@@ -5609,82 +5609,14 @@ a.panel-block:hover {
 /*
 @font-face {
     font-family: "k-3";
-    src: url("fonts/koburinaStdW3.eot?") format("eot"), url("fonts/koburinaStdW3.woff2") format("woff2"), url("fonts/koburinaStdW3.woff") format("woff");
+    src: url("koburinaStdW3.eot?") format("eot"), url("koburinaStdW3.woff") format("woff");
 }
 
 @font-face {
     font-family: "k-6";
-    src: url("fonts/koburinaStdW6.woff2") format("woff2"), url("fonts/koburinaStdW6.woff") format("woff"), url("fonts/koburinaStdW6.eot?") format("eot");
+    src: url("koburinaStdW6.woff") format("woff"), url("koburinaStdW6.eot?") format("eot");
 }
 */
-/*
-@font-face {
-  font-family: "k-3";
-  src: url("../fonts/koburinaStdW3.eot?") format("eot"), url("../fonts/koburinaStdW3.woff2") format("woff2"),
-    url("../fonts/koburinaStdW3.woff") format("woff");
-}
-
-@font-face {
-  font-family: "k-6";
-  src: url("../fonts/koburinaStdW6.woff2") format("woff2"), url("../fonts/koburinaStdW6.woff") format("woff"),
-    url("../fonts/koburinaStdW6.eot?") format("eot");
-}
-*/
-/*
-
-@font-face {
-    font-family: "k-3";
-    src: url("https://stekina.com/static/fonts/koburinaStdW3.eot?") format("eot"), url("https://stekina.com/static/fonts/koburinaStdW3.woff2") format("woff2"), url("https://stekina.com/static/fonts/koburinaStdW3.woff") format("woff");
-}
-
-@font-face {
-    font-family: "k-6";
-    src: url("https://stekina.com/static/fonts/koburinaStdW6.woff2") format("woff2"), url("https://stekina.com/static/fonts/koburinaStdW6.woff") format("woff"), url("https://stekina.com/static/fonts/koburinaStdW6.eot?") format("eot");
-}
-*/
-/*
-@font-face {
-    font-family: "k-3";
-    src: url("https://stekina.com/wp-content/themes/monobeauty/fonts/koburinaStdW3.eot?") format("eot"), url("https://stekina.com/wp-content/themes/monobeauty/fonts/koburinaStdW3.woff2") format("woff2"), url("https://stekina.com/wp-content/themes/monobeauty/fonts/koburinaStdW3.woff") format("woff");
-}
-
-@font-face {
-    font-family: "k-6";
-    src: url("https://stekina.com/wp-content/themes/monobeauty/fonts/koburinaStdW6.woff2") format("woff2"), url("https://stekina.com/wp-content/themes/monobeauty/fonts/koburinaStdW6.woff") format("woff"), url("https://stekina.com/wp-content/themes/monobeauty/fonts/koburinaStdW6.eot?") format("eot");
-}
-*/
-/*
-@font-face {
-    font-family: "k-3";
-    src: url("https://stekina.com/fonts/koburinaStdW3.eot?") format("eot"), url("https://stekina.com/fonts/koburinaStdW3.woff2") format("woff2"), url("https://stekina.com/fonts/koburinaStdW3.woff") format("woff");
-}
-
-@font-face {
-    font-family: "k-6";
-    src: url("https://stekina.com/fonts/koburinaStdW6.woff2") format("woff2"), url("https://stekina.com/fonts/koburinaStdW6.woff") format("woff"), url("https://stekina.com/fonts/koburinaStdW6.eot?") format("eot");
-}
-*/
-/*
-@font-face {
-    font-family: "Noto-Regular";
-    src: url("https://limehair.jp/static/fonts/NotoSansCJKjp-Regular.eot?") format("eot"), url("https://limehair.jp/static/fonts/NotoSansCJKjp-Regular.woff2") format("woff2"), url("https://limehair.jp/static/fonts/NotoSansCJKjp-Regular.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Noto-Bold";
-    src: url("https://limehair.jp/static/fonts/NotoSansCJKjp-Bold.eot?") format("eot"), url("https://limehair.jp/static/fonts/NotoSansCJKjp-Bold.woff2") format("woff2"), url("https://limehair.jp/static/fonts/NotoSansCJKjp-Regular.Bold") format("woff");
-}
-
-
-@font-face {
-    font-family: "Noto-Regular";
-    src: url("../fonts/NotoSansCJKjp-Regular.eot?") format("eot"), url("../fonts/NotoSansCJKjp-Regular.woff2") format("woff2"), url("../fonts/NotoSansCJKjp-Regular.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Noto-Bold";
-    src: url("../fonts/NotoSansCJKjp-Bold.eot?") format("eot"), url("../fonts/NotoSansCJKjp-Bold.woff2") format("woff2"), url("../fonts/NotoSansCJKjp-Regular.Bold") format("woff");
-}*/
 body {
   background: #e2ddd7;
   max-width: 450px;
@@ -6148,7 +6080,7 @@ body {
     border-left: 1px #ccc solid;
     border-top: 1px #ccc solid;
     background: white;
-    z-index: 100; }
+    z-index: 10; }
 
 .demo-2columns {
   display: -webkit-box;
@@ -6273,7 +6205,7 @@ input[type="radio"] {
         /*font-family: "k-6" !important; */
         letter-spacing: -1px;
         font-size: 26.5px;
-        font-family: "k-6", "Noto-Bold", "Avenir", "Helvetica Neue", "Helvetica", "Arial", YuGothic, "Yu Gothic", "Hiragino Sans", "ヒラギノ角ゴシック", sans-serif !important; }
+        font-family: "k-6", "Avenir", "Helvetica Neue", "Helvetica", "Arial", YuGothic, "Yu Gothic", "Hiragino Sans", "ヒラギノ角ゴシック", sans-serif !important; }
         @media screen and (max-width: 374px) {
           .common-macching-card .common-macching-card-header .common-macching-card-header-left .common-macching-card-header-left-large {
             font-size: 23px; } }
@@ -6561,7 +6493,7 @@ input[type="radio"] {
         right: 0;
         margin: auto;
         width: 80%;
-        z-index: 100;
+        z-index: 10;
         -webkit-animation-name: fuwafuwa;
         -webkit-animation-duration: 1s;
         -webkit-animation-iteration-count: infinite;
@@ -6610,7 +6542,7 @@ input[type="radio"] {
             .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-button-save:before {
               width: 12px;
               height: 12px; } }
-      .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .selected:before {
+      .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .saved:before {
         content: "";
         display: inline-block;
         background-size: contain;
@@ -6621,7 +6553,7 @@ input[type="radio"] {
         width: 15px;
         height: 15px; }
         @media screen and (max-width: 374px) {
-          .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .selected:before {
+          .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .saved:before {
             width: 12px;
             height: 12px; } }
       .common-macching-card .common-macching-card-detail .common-macching-card-detail-button .common-macching-card-detail-button-reseve {
@@ -6645,7 +6577,14 @@ input[type="radio"] {
               padding: 8px 10px 8px 15px; } }
 
 .reserve-ux-wrapper {
-  padding: 30px 0 180px; }
+  padding: 20px 0 180px; }
+
+.reserve-ux-henkin-announce {
+  color: #8e7f6b;
+  font-size: 18.5px;
+  font-family: "k-3" !important;
+  margin: 0px auto 15px;
+  text-align: center; }
 
 .reserve-ux-announce {
   background: white;
@@ -6770,6 +6709,39 @@ input[type="radio"] {
   margin: -45px 0 0;
   background: #e2ddd7; }
 
+.scroll {
+  scrollbar-color: rgb(102, 51, 153) green;
+  scrollbar-width: thin; }
+
+.common-matching-dialog-02 {
+  width: 87.5%;
+  max-width: 420px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  position: fixed;
+  z-index: 9999;
+  background: #e2ddd7;
+  overflow-y: scroll;
+  max-height: 450px;
+  border-radius: 8px;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll; }
+
+.common-matching-dialog-02-bg {
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
+  height: 100vh;
+  background: black;
+  display: block;
+  position: fixed;
+  z-index: 100;
+  opacity: 0.7; }
+
 .common-matching-henkin-wrapper-foot {
   border-radius: 4px;
   width: 92.5%;
@@ -6778,7 +6750,7 @@ input[type="radio"] {
   background: white; }
 
 .common-matching-henkin-wrapper-head {
-  padding: 30px 0;
+  padding: 23px 0 17px;
   line-height: 1.5;
   text-align: center; }
   .common-matching-henkin-wrapper-head .common-matching-henkin-wrapper-head-hosho-joken {
@@ -6825,13 +6797,12 @@ input[type="radio"] {
   color: #262626;
   font-family: "k-6";
   font-size: 20px;
-  margin: 0 0 7px; }
+  margin: 0 0 3px; }
   @media screen and (max-width: 374px) {
     .common-matching-henkin-wrapper-head-text {
       font-size: 17px; } }
 
 .common-matching-henkin-wrapper-head-red {
-  color: #262626;
   font-family: "k-6";
   font-size: 36px;
   background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
@@ -6841,6 +6812,14 @@ input[type="radio"] {
   @media screen and (max-width: 374px) {
     .common-matching-henkin-wrapper-head-red {
       font-size: 32.5px; } }
+
+.common-matching-henkin-wrapper-head-red-02 {
+  font-family: "k-6";
+  font-size: 23px;
+  background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
+  background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 .common-matching-henkin-body {
   padding: 45px 0;
@@ -6861,14 +6840,6 @@ input[type="radio"] {
   border-radius: 8px; }
   .common-matching-henkin-body-03:last-child {
     padding: 0 0 45px; }
-
-.scroll {
-  overflow-y: scroll;
-  max-height: 450px;
-  -webkit-overflow-scrolling: touch;
-  overflow-y: scroll;
-  scrollbar-color: rgb(102, 51, 153) green;
-  scrollbar-width: thin; }
 
 .common-matching-henkin-scroll {
   text-align: center;
@@ -6989,10 +6960,15 @@ input[type="radio"] {
     font-family: "k-6";
     margin: 30px auto 0;
     border-radius: 8px;
-    box-shadow: 0px 3px 3px #aaa; }
+    box-shadow: 0px 3px 3px #aaa;
+    background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
+    background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%); }
     @media screen and (max-width: 374px) {
       .common-matching-henkin-body-button button {
         font-size: 17px; } }
+
+.common-matching-henkin-body-button-line button {
+  background: #00b900 !important; }
 
 .matching-questions-content-question-box-error {
   border: 2px red solid;
