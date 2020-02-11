@@ -303,6 +303,9 @@ body {
     text-decoration: none;
     font-family: "k-6" !important;
     border: none;
+    @include mq-down(iphone5) {
+        transform: scale(0.9);
+    }
 }
 
 .common-btn-toggle-disable {
@@ -1384,6 +1387,12 @@ input[type="radio"] {
     position: relative;
     box-shadow: 0px 3px 3px #aaa;
     width: 93%;
+    display: flex;
+    align-items: center;
+    p {
+        width: 90%;
+        margin: 0 0 0 6px;
+    }
     &:before {
         content: "";
         /*何も入れない*/
@@ -1396,6 +1405,7 @@ input[type="radio"] {
         background-image: url(https://stekina.com/wp-content/uploads/img-chuui-icon.svg);
         background-size: contain;
         vertical-align: sub;
+        background-repeat: no-repeat;
     }
     &:after {
         position: absolute;
@@ -1404,13 +1414,62 @@ input[type="radio"] {
         margin: 0 auto;
         width: 15px;
         height: 15px;
-        top: -8px;
+        top: -9px;
         left: 20px;
         -webkit-transform: rotate(180deg);
         transform: rotate(45deg);
         background: lighten(red, 44%);
         border-left: 2px red solid;
         border-top: 2px red solid;
-        z-index: 100;
+        z-index: 2;
+    }
+}
+
+.matching-questions-footer-error {
+    border: 2px red solid;
+    background: lighten(red, 44%);
+    font-family: "k-6" !important;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 30px auto 30px;
+    position: relative;
+    box-shadow: 0px 3px 3px #aaa;
+    width: 94%;
+    display: flex;
+    align-items: center;
+    p {
+        width: 87%;
+        margin: 0 0 0 4px;
+    }
+    &:before {
+        content: "";
+        /*何も入れない*/
+        display: inline-block;
+        /*忘れずに！*/
+        width: 32px;
+        /*画像の幅*/
+        height: 32px;
+        /*画像の高さ*/
+        background-image: url(https://stekina.com/wp-content/uploads/img-chuui-icon.svg);
+        background-size: contain;
+        vertical-align: sub;
+        background-repeat: no-repeat;
+    }
+    &:after {
+        position: absolute;
+        content: "";
+        display: block;
+        margin: 0 auto;
+        width: 15px;
+        height: 15px;
+        top: -9px;
+        left: 0;
+        right: 0;
+        -webkit-transform: rotate(180deg);
+        transform: rotate(45deg);
+        background: lighten(red, 44%);
+        border-left: 2px red solid;
+        border-top: 2px red solid;
+        z-index: 2;
     }
 }

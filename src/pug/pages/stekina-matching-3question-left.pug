@@ -6,6 +6,15 @@ html(lang='jp')
     link(href='static/css/matching.css?'+dateNow, rel='stylesheet')
     meta(name='viewport', content='width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
     meta(charset='UTF-8')
+    style(type='text/css').
+         @font-face {
+          font-family: "k-3";
+          src: url("koburinaStdW3.eot?") format("eot"), url("koburinaStdW3.woff") format("woff");
+        }
+        @font-face {
+          font-family: "k-6";
+          src: url("koburinaStdW6.woff") format("woff"), url("koburinaStdW6.eot?") format("eot");
+        }
     meta(name='robots', content='noindex,nofollow')
     meta(name='apple-mobile-web-app-capable', content='yes')
     meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
@@ -25,8 +34,11 @@ html(lang='jp')
                               span.matching-questions-content-question-box-title-large
                                 |カットのみ
                               |の料金について
+
                             .matching-questions-content-question-box-subtitle
                               |どれか１つにチェック
+                            .matching-questions-content-question-box-error
+                              |どれか１つチェックしてください
                             .matching-questions-content-question-box-checkboxs
                               .matching-questions-content-checkbox
                                 input.checkbox-input(id='cut-price-01', name='cut-price', type='radio')
@@ -56,6 +68,8 @@ html(lang='jp')
                               |の移動時間について
                             .matching-questions-content-question-box-subtitle
                               |どれか１つにチェック
+                            .matching-questions-content-question-box-error
+                              |どれか１つチェックしてください
                             .matching-questions-content-question-box-checkboxs
                               .matching-questions-content-checkbox
                                 input.checkbox-input(id='salon-time-01', name='salon-time', type='radio')
@@ -82,6 +96,8 @@ html(lang='jp')
                               span.matching-questions-content-question-box-title-large
                                 |移動時間の計算
                               span|のため
+                            .matching-questions-content-question-box-error
+                              |どちらか選択して下さい
                             .matching-questions-content-question-box-title-middle
                               |位置情報オンにするか郵便番号の入力をお願いします
                             .demo-2columns-title
@@ -103,13 +119,22 @@ html(lang='jp')
                                     .demo-yubin-text
                                       |郵便番号を入力してください
                                     .demo-yubin-input
-                                        input(name='postcode', type='number', value='', placeholder='123-4567', required='')
+                                        input(name='postcode', type='number', value='', placeholder='1234567', required='')
+                                    .matching-questions-content-question-box-error
+                                      |・郵便番号を入力してください
+                                      br
+                                      |・正しい形式で入力してください
                   .matching-questions-footer
                     .matching-questions-footer-text
                       |質問ページあと２つです！もう少し！
                     .common-btn
                       a.common-btn-next(href='stekina-matching-2question-left.html')
                          |次へ
+                    .matching-questions-footer-error
+                        p
+                          |未記入の項目があります。
+                          br
+                          |お手数ですが入力をお願いします。
       include ../mixin/_footer-matching.pug
       //script(src='https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js')
       //script(src='static/js/barba.js')

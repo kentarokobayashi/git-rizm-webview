@@ -6,6 +6,15 @@ html(lang='jp')
     link(href='static/css/matching.css?'+dateNow, rel='stylesheet')
     meta(name='viewport', content='width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
     meta(charset='UTF-8')
+    style(type='text/css').
+         @font-face {
+          font-family: "k-3";
+          src: url("koburinaStdW3.eot?") format("eot"), url("koburinaStdW3.woff") format("woff");
+        }
+        @font-face {
+          font-family: "k-6";
+          src: url("koburinaStdW6.woff") format("woff"), url("koburinaStdW6.eot?") format("eot");
+        }
     meta(name='robots', content='noindex,nofollow')
     //script(src='https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js')
     meta(name='apple-mobile-web-app-capable', content='yes')
@@ -28,6 +37,8 @@ html(lang='jp')
                             span|について
                           .matching-questions-content-question-box-subtitle
                               |どれか１つにチェック
+                          .matching-questions-content-question-box-error
+                              |どれか１つチェックしてください
                           .matching-questions-content-question-box-checkboxs
                               .matching-questions-content-checkbox
                                 input.checkbox-input(id='sex-01', name='sex', type='radio')
@@ -48,6 +59,13 @@ html(lang='jp')
                             span.matching-questions-content-question-box-title-large
                               |生年月日
                             |はいつですか？
+                          .matching-questions-content-question-box-error
+                             p
+                              |・"年"を選択してください
+                              br
+                              |・"月"を選択してください
+                              br
+                              |・"日"を選択してください
                           .matching-questions-content-question-select
                                 .matching-questions-content-question-select-child
                                   select(name='birthday-year')
@@ -228,6 +246,11 @@ html(lang='jp')
                   .common-btn
                     a.common-btn-next(href='stekina-matching-1question-left.html')
                       |次へ
+                  .matching-questions-footer-error
+                        p
+                          |未記入の項目があります。
+                          br
+                          |お手数ですが入力をお願いします。
       include ../mixin/_footer-matching.pug
       script(type='text/javascript').
               $('.common-btn-toggle').on('click', function() {
