@@ -1,0 +1,85 @@
+mixin mystylist-columns-02-button
+ button(type='button', onclick="location.href='index.html'") 
+  .mystylist-columns-02-icon
+    img(src='https://stekina.com/wp-content/uploads/icn-couseling.png')
+  .mystylist-columns-02-text|相談メッセージ
+doctype html
+html(lang='jp')
+  head
+    title マイカルテ一覧
+    link(href='static/css/application.css?'+dateNow rel='stylesheet')
+    meta(name='viewport', content='width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    meta(charset='UTF-8')
+    meta(name='robots', content='noindex,nofollow')
+    //script(src='https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js')
+    script(src='//jpostal-1006.appspot.com/jquery.jpostal.js', type='text/javascript')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
+  body.bg-gray-lightest(data-action='tutorial', data-controller='ken')
+    .dummy-header(style="")
+      img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/01/header-mykarte.png')
+    .wrapper-mykarte-list
+        //予約中に表示のもの
+        p|メモ※カルテがないときの表記も必要
+        .common-mykarte-archive-list
+          .common-mykarte-archive-list-link
+             a(href='#')|カルテ詳細へ
+          .common-mykarte-archive-list-overray
+             .common-mykarte-archive-overray-list-icon.common-mykarte-archive-overray-list-icon-adujusting
+                |予約中
+             .common-mykarte-archive-overray-list-title
+               |まだ予約確定していません！
+             .common-mykarte-archive-overray-list-title
+               |タップして予約の確認！
+          .common-mykarte-archive-content
+              .common-mykarte-archive-content-left
+                  img(src='https://stekina.com/wp-content/uploads/default-karte-image.png')
+              .common-mykarte-archive-content-right
+                .common-mykarte-archive-content-right-info
+                    .common-mykarte-archive-content-right-info-date
+                      |2020年02月16日 10:40〜
+                    .common-mykarte-archive-content-right-info-stylistinfo
+                      .common-mykarte-archive-content-right-info-stylistinfo-photo
+                        img(src='https://s3-ap-northeast-1.amazonaws.com/limeapp/karte/owner_photo_approved/3W4X-M365-7L8V-4URE?timestamp=1572490888336')
+                      .common-mykarte-archive-content-right-info-stylistinfo-name
+                          |楠美江莉子
+                      .common-mykarte-archive-content-right-info-stylistinfo-salon
+                          |Lily
+                    ul.common-mykarte-archive-content-right-info-menu
+                        li|●カット
+                        li|●カラー
+                    .common-mykarte-archive-content-right-info-totalprice
+                        |15,000円
+                .common-mykarte-archive-content-right-link.common-mykarte-archive-content-right-link-old
+                  |過去の髪型を確認する→    
+        .common-mykarte-archive-list
+          .common-mykarte-archive-list-link
+             a(href='#')|カルテ詳細へ
+          .common-mykarte-archive-list-overray(style='display:none;')
+             .common-mykarte-archive-overray-list-icon.common-mykarte-archive-overray-list-icon-adujusting
+                |予約中
+             .common-mykarte-archive-overray-list-title
+               |まだ予約確定していません！
+             .common-mykarte-archive-overray-list-title
+               |タップして予約の確認！
+          .common-mykarte-archive-content
+              .common-mykarte-archive-content-left
+                  img(src='https://stekina.com/wp-content/uploads/default-karte-image.png')
+              .common-mykarte-archive-content-right
+                .common-mykarte-archive-content-right-info
+                    .common-mykarte-archive-content-right-info-date
+                      |2020年02月16日 10:40〜
+                    .common-mykarte-archive-content-right-info-stylistinfo
+                      .common-mykarte-archive-content-right-info-stylistinfo-photo
+                        img(src='https://s3-ap-northeast-1.amazonaws.com/limeapp/karte/owner_photo_approved/3W4X-M365-7L8V-4URE?timestamp=1572490888336')
+                      .common-mykarte-archive-content-right-info-stylistinfo-name
+                          |楠美江莉子
+                      .common-mykarte-archive-content-right-info-stylistinfo-salon
+                          |Lily
+                    ul.common-mykarte-archive-content-right-info-menu
+                        li|●カット
+                        li|●カラー
+                    .common-mykarte-archive-content-right-info-totalprice
+                        |15,000円
+                .common-mykarte-archive-content-right-link.common-mykarte-archive-content-right-link-old
+                  |過去の髪型を確認する→               
