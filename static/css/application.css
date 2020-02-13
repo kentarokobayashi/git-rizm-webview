@@ -18,6 +18,12 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700,700i&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400i,400,700,700i");
+html,
+body {
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto !important; }
+
 .sample {
   background: url(../img/face.png) 0 0 no-repeat; }
 
@@ -6711,8 +6717,11 @@ a.panel-block:hover {
 .dummy-header {
   position: fixed;
   width: 100%;
-  box-shadow: 0px 3px 10px #aaa;
-  z-index: 999999; }
+  box-shadow: 0px 3px 5px #999;
+  z-index: 999;
+  max-width: 450px; }
+  .dummy-header img {
+    margin: 0 0 -3px !important; }
 
 .wrapper-mykarte-profile {
   padding: 0px 0 90px; }
@@ -7564,6 +7573,261 @@ body.liked div.dot.dot-8 {
           animation-name: scale;
   -webkit-animation-duration: 0.4s;
           animation-duration: 0.4s; }
+
+.common-mykarte-archive-list {
+  width: 76%;
+  margin: 0 auto 33px;
+  position: relative; }
+  .common-mykarte-archive-list .common-mykarte-archive-list-status {
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    z-index: 10;
+    left: -12px;
+    top: -12px;
+    color: white;
+    border-radius: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    letter-spacing: 1px;
+    font-family: "mplus-2c-bold";
+    font-size: 15px; }
+  .common-mykarte-archive-list .common-mykarte-archive-list-status-reserve {
+    background: #ff595b; }
+    .common-mykarte-archive-list .common-mykarte-archive-list-status-reserve img {
+      width: 60%;
+      -webkit-transform: rotate(-10deg);
+              transform: rotate(-10deg); }
+
+.common-mykarte-archive-list-wrapper {
+  width: 100%;
+  height: 140px;
+  border-radius: 10px;
+  position: relative;
+  background: white;
+  overflow: hidden; }
+  .common-mykarte-archive-list-wrapper .common-mykarte-archive-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .common-mykarte-archive-list-wrapper .common-mykarte-archive-content .common-mykarte-archive-content-left {
+      -webkit-box-flex: 3.8;
+          -ms-flex: 3.8;
+              flex: 3.8; }
+      .common-mykarte-archive-list-wrapper .common-mykarte-archive-content .common-mykarte-archive-content-left img {
+        width: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+        height: 140px;
+        -o-object-position: 50% 100%;
+           object-position: 50% 100%; }
+    .common-mykarte-archive-list-wrapper .common-mykarte-archive-content .common-mykarte-archive-content-right {
+      -webkit-box-flex: 6.2;
+          -ms-flex: 6.2;
+              flex: 6.2;
+      font-size: 70%; }
+      .common-mykarte-archive-list-wrapper .common-mykarte-archive-content .common-mykarte-archive-content-right .common-mykarte-archive-content-right-info {
+        padding: 10px 8px 0px;
+        height: 124px;
+        position: relative; }
+        .common-mykarte-archive-list-wrapper .common-mykarte-archive-content .common-mykarte-archive-content-right .common-mykarte-archive-content-right-info .common-mykarte-archive-content-right-info-date {
+          font-family: "mplus-2c-bold";
+          font-size: 12px;
+          color: #4d4d4d;
+          margin: 0 0 7px; }
+        .common-mykarte-archive-list-wrapper .common-mykarte-archive-content .common-mykarte-archive-content-right .common-mykarte-archive-content-right-info .common-mykarte-archive-content-right-info-stylistinfo {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          .common-mykarte-archive-list-wrapper .common-mykarte-archive-content .common-mykarte-archive-content-right .common-mykarte-archive-content-right-info .common-mykarte-archive-content-right-info-stylistinfo .common-mykarte-archive-content-right-info-stylistinfo-photo {
+            margin: 0 6px 0 0; }
+            .common-mykarte-archive-list-wrapper .common-mykarte-archive-content .common-mykarte-archive-content-right .common-mykarte-archive-content-right-info .common-mykarte-archive-content-right-info-stylistinfo .common-mykarte-archive-content-right-info-stylistinfo-photo img {
+              width: 35px;
+              height: 35px;
+              border-radius: 100px; }
+          .common-mykarte-archive-list-wrapper .common-mykarte-archive-content .common-mykarte-archive-content-right .common-mykarte-archive-content-right-info .common-mykarte-archive-content-right-info-stylistinfo .common-mykarte-archive-content-right-info-stylistinfo-text {
+            color: #4d4d4d;
+            font-size: 10.5px;
+            margin: 0 0 1.5px;
+            width: 70%; }
+            .common-mykarte-archive-list-wrapper .common-mykarte-archive-content .common-mykarte-archive-content-right .common-mykarte-archive-content-right-info .common-mykarte-archive-content-right-info-stylistinfo .common-mykarte-archive-content-right-info-stylistinfo-text .common-mykarte-archive-content-right-info-stylistinfo-text-name {
+              margin: 0 0 3px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap; }
+            .common-mykarte-archive-list-wrapper .common-mykarte-archive-content .common-mykarte-archive-content-right .common-mykarte-archive-content-right-info .common-mykarte-archive-content-right-info-stylistinfo .common-mykarte-archive-content-right-info-stylistinfo-text .common-mykarte-archive-content-right-info-stylistinfo-text-salon {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap; }
+        .common-mykarte-archive-list-wrapper .common-mykarte-archive-content .common-mykarte-archive-content-right .common-mykarte-archive-content-right-info ul.common-mykarte-archive-content-right-info-menu {
+          margin: 3px 0 0; }
+          .common-mykarte-archive-list-wrapper .common-mykarte-archive-content .common-mykarte-archive-content-right .common-mykarte-archive-content-right-info ul.common-mykarte-archive-content-right-info-menu li {
+            color: #4d4d4d;
+            font-size: 10.5px;
+            margin: 0 0 2px; }
+        .common-mykarte-archive-list-wrapper .common-mykarte-archive-content .common-mykarte-archive-content-right .common-mykarte-archive-content-right-info .common-mykarte-archive-content-right-info-totalprice {
+          bottom: 3px;
+          left: 10px;
+          position: absolute; }
+      .common-mykarte-archive-list-wrapper .common-mykarte-archive-content .common-mykarte-archive-content-right .common-mykarte-archive-content-right-link {
+        height: 16px;
+        width: 100%;
+        text-align: right;
+        padding: 0px 5px;
+        color: white;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        font-size: 10px; }
+      .common-mykarte-archive-list-wrapper .common-mykarte-archive-content .common-mykarte-archive-content-right .common-mykarte-archive-content-right-link-old {
+        background: #4d4d4d; }
+      .common-mykarte-archive-list-wrapper .common-mykarte-archive-content .common-mykarte-archive-content-right .common-mykarte-archive-content-right-link-reserve {
+        background: #ff595b; }
+
+.common-mykarte-archive-list-link a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+  text-indent: -9999px;
+  z-index: 999; }
+
+.common-mykarte-archive-list-overray {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  z-index: 2; }
+  .common-mykarte-archive-list-overray .common-mykarte-archive-overray-list-title {
+    font-size: 17px;
+    text-align: center;
+    font-family: "mplus-2c-bold";
+    margin: 0 0 15px;
+    line-height: 1.45;
+    letter-spacing: 0.5px; }
+  .common-mykarte-archive-list-overray .common-mykarte-archive-overray-list-text {
+    font-size: 14px;
+    text-align: center;
+    font-family: "mplus-2c-bold";
+    letter-spacing: 0.5px; }
+
+.common-mykarte-archive-status-list-icon {
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px; }
+
+.common-dialog-mykarte {
+  position: fixed;
+  width: 85%;
+  max-width: 383px;
+  height: 450px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1000000;
+  background: white;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .common-dialog-mykarte .common-dialog-mykarte-title {
+    font-size: 19.5px;
+    color: #4d4d4d;
+    margin: 0 0 45px; }
+  .common-dialog-mykarte .common-dialog-mykarte-button {
+    width: 80%; }
+    .common-dialog-mykarte .common-dialog-mykarte-button a {
+      width: 100%;
+      display: block;
+      background: #15bfab;
+      padding: 18px 0;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 19.5px;
+      color: white;
+      text-decoration: none;
+      margin: 0 0 20px; }
+      .common-dialog-mykarte .common-dialog-mykarte-button a:last-child() {
+        margin: 0 0 0px; }
+  .common-dialog-mykarte .common-dialog-mykarte-finish a {
+    color: #15bfab;
+    text-decoration: none;
+    font-size: 19.5px;
+    margin: 30px 0 0;
+    display: block; }
+
+.common-dialog-mykarte-bg {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .45);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 100000; }
+
+.barba-container {
+  width: 100%; }
+
+.barba-container.fadein {
+  -webkit-animation: moveFromLeftFade 0.6s ease;
+          animation: moveFromLeftFade 0.6s ease; }
+
+@-webkit-keyframes moveFromLeftFade {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%); } }
+
+@keyframes moveFromLeftFade {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%); } }
 
 .mystylist-columns {
   padding: 0px 0%;

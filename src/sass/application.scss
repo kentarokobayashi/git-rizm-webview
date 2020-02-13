@@ -13,6 +13,13 @@
  *= require_self
  */
 
+html,
+body {
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto !important;
+}
+
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
 @import "foundation/_mixin.scss";
 @import "foundation/_constant.scss";
@@ -25,4 +32,5 @@
 @import "object/project-rizm/_mykarte-tutorial-02.scss";
 @import "object/project-rizm/_mykarte-profile-request.scss";
 @import "object/project-rizm/_mykarte-profile-karte-detail.scss";
+@import "object/project-rizm/_mykarte-list.scss";
 @import "object/project-rizm/_mystylist-list.scss";

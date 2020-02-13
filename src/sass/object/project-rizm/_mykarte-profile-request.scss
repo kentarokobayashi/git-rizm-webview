@@ -16,8 +16,12 @@
 .dummy-header {
     position: fixed;
     width: 100%;
-    box-shadow: 0px 3px 10px #aaa;
-    z-index: 999999;
+    box-shadow: 0px 3px 5px #999;
+    z-index: 999;
+    max-width: 450px;
+    img {
+        margin: 0 0 -3px !important;
+    }
 }
 
 .wrapper-mykarte-profile {
