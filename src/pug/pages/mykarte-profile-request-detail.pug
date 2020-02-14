@@ -9,7 +9,15 @@ html(lang='jp')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js')
     script(src='//jpostal-1006.appspot.com/jquery.jpostal.js', type='text/javascript')
   body.bg-gray-lightest(data-action='tutorial', data-controller='ken')
+      .common-app-header
+          .common-app-header-left
+            a(href='#' onClick='history.back(); return false;')
+              |back
+          .common-app-header-title
+              |
+          .common-app-header-right
       form
+       div(style='padding:45px 0 0;')
         .mykarte-tutorial-wrapper-01
           //詳細ページはmykarte-tutorial-section-detailで必ず囲む
           .mykarte-tutorial-section-detail

@@ -28,9 +28,45 @@ body {
 @import "_bluma.scss";
 @import "object/project-rizm/_mykarte-photos.scss";
 @import "object/project-rizm/_mykarte-tutorial-01.scss";
-//@import "object/project-rizm/_A-mykarte-tutorial-02.scss";
 @import "object/project-rizm/_mykarte-tutorial-02.scss";
 @import "object/project-rizm/_mykarte-profile-request.scss";
 @import "object/project-rizm/_mykarte-profile-karte-detail.scss";
 @import "object/project-rizm/_mykarte-list.scss";
 @import "object/project-rizm/_mystylist-list.scss";
+.common-app-header {
+    height: 45px;
+    background: white;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    z-index: 999;
+    width: 100%;
+    max-width: 450px;
+    border-bottom: 1px solid $cl-gray-light;
+    .common-app-header-title {
+        color: $cl-gray;
+        font-family: "mplus-2c-bold", "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Osaka, "MS PGothic", arial, helvetica, sans-serif !important;
+    }
+    .common-app-header-left,
+    .common-app-header-right {
+        position: relative;
+        width: 16px;
+        margin: 0 12px 3px;
+        text-indent: -9999px;
+    }
+    .common-app-header-left a {
+        &:after {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-right: 3.5px solid $cl-gray-dark;
+            border-top: 3.5px solid $cl-gray-dark;
+            transform: rotate(-135deg);
+        }
+    }
+}

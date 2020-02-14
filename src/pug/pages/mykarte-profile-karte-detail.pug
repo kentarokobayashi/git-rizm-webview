@@ -58,9 +58,14 @@ html(lang='jp')
     meta(name='apple-mobile-web-app-capable', content='yes')
     meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
   body.bg-gray-lightest(data-action='tutorial', data-controller='ken')
-    #barba-wrapper
-      .barba-container
-        .karte-detail(style='display:fixed; z-index:999999999;')
+        .common-app-header
+            .common-app-header-left
+              a(href='#' onClick='history.back(); return false;')
+                |back
+            .common-app-header-title
+               |2020/01/10 10:30〜
+            .common-app-header-right
+        .karte-detail(style='padding:45px 0 0;')
             .custmer-area
               //karte-detail-photo-area
               .karte-detail-photomenu
@@ -198,7 +203,3 @@ html(lang='jp')
                         .karte-detail-menu-area-message-message-suteki
                         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js')
                         script(src='static/js/suteki.js')
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js')
-    //script(src='static/js/pjax.js')
-    script(type='text/javascript').
-            Barba.Pjax.start();

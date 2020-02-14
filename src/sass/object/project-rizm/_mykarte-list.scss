@@ -1,3 +1,15 @@
+#tab_1 {
+    padding: 190px 0 0;
+}
+
+#tab_2 {
+    padding: 160px 0 0;
+}
+
+#tab_3 {
+    padding: 160px 0 0;
+}
+
 @mixin common-mykarte-archive-list-font-size-s {
     font-size: 10.5px;
     @include mq-down(iphone5) {}
@@ -5,7 +17,9 @@
 
 @mixin common-mykarte-archive-list-font-size-m {
     font-size: 12px;
-    @include mq-down(iphone5) {}
+    @include mq-down(iphone5) {
+        font-size: 10px;
+    }
 }
 
 @mixin common-mykarte-archive-list-font-size-l {
@@ -16,6 +30,168 @@
 @mixin common-mykarte-archive-list-font-size-xl {
     font-size: 19.5px;
     @include mq-down(iphone5) {}
+}
+
+.common-mykarte-header {
+    position: fixed;
+    background: white;
+    width: 100%;
+    z-index: 999;
+    max-width: 450px;
+    box-shadow: 0px 3px 5px #999;
+    min-height: 160px;
+    @include mq-down(iphone5) {
+        height: 150px;
+    }
+    .common-mykarte-header-title {
+        position: relative;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid $cl-gray-dark;
+        .common-mykarte-header-title-setting {
+            position: absolute;
+            right: 12px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            line-height: 2;
+        }
+        .common-mykarte-header-title-center {
+            text-align: center;
+            color: $cl-gray-dark;
+            font-family: "mplus-2c-bold";
+            font-size: 17px;
+        }
+    }
+    .common-mykarte-header-profile {
+        width: 100%;
+        padding: 0 0 4px;
+        border-bottom: 1px solid $cl-gray-light;
+        .common-mykarte-header-profile-content {
+            padding: 16px 10px 20px;
+            display: flex;
+            width: 100%;
+            position: relative;
+            .common-mykarte-header-profile-content-photo {
+                width: 18%;
+                margin: 0 5.2% 0 0;
+                position: relative;
+                &:before {
+                    content: "";
+                    display: block;
+                    padding-top: 100%;
+                    /* 高さを幅の75%に固定 */
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    position: absolute;
+                    border-radius: 100px;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+            .common-mykarte-header-profile-content-detail {
+                width: 60%;
+                .common-mykarte-header-profile-content-detail-text {
+                    margin: 2px 5% 9px 0;
+                    color: $cl-gray-dark;
+                    font-family: "mplus-2c-bold";
+                    font-size: 17px;
+                    @include mq-down(iphone5) {
+                        font-size: 15px;
+                    }
+                }
+                .common-mykarte-header-profile-content-detail-button {
+                    a {
+                        width: 140px;
+                        display: inline-block;
+                        padding: 7px 0 5px;
+                        color: $cl-gray-light;
+                        text-decoration: none;
+                        border: 1px solid $cl-gray-light;
+                        border-radius: 6px;
+                        text-align: center;
+                        font-size: 12px;
+                        @include mq-down(iphone5) {
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+            .common-mykarte-header-profile-content-setting {
+                position: absolute;
+                width: 25px;
+                top: 10px;
+                right: 12px;
+                text-align: right;
+            }
+        }
+    }
+    .common-mykarte-header-profile-date {
+        display: flex;
+        justify-content: center;
+        @include common-mykarte-archive-list-font-size-m;
+        .common-mykarte-header-profile-date-list {
+            margin: 0 13px;
+            color: $cl-gray-light;
+            span.common-mykarte-header-profile-date-list-bold {
+                color: $cl-gray-dark;
+                font-family: "mplus-2c-bold";
+            }
+        }
+    }
+    .common-mykarte-header-navigation {
+        width: 100%;
+        .st0 {
+            fill: #ffffff;
+        }
+        .st1 {
+            fill: none;
+        }
+        .st2 {
+            fill: $cl-gray-light;
+        }
+        .active {
+            .st2 {
+                fill: $cl-lime;
+            }
+            .common-mykarte-header-navigation-text {
+                color: $cl-lime;
+            }
+        }
+        ul {
+            display: flex;
+            width: 100%;
+        }
+        li {
+            width: 33.333%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 3px 0 3px;
+            .common-mykarte-header-navigation-text {
+                font-size: 9.5px;
+                color: $cl-gray-light;
+            }
+            .common-mykarte-header-navigation-svg {
+                height: 28px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            svg {
+                width: 20px;
+            }
+        }
+    }
 }
 
 .wrapper-mykarte-list {}
@@ -46,6 +222,9 @@
             width: 60%;
             transform: rotate(-10deg);
         }
+    }
+    .common-mykarte-archive-list-status-adujsting {
+        background: $cl-lime;
     }
 }
 
@@ -153,6 +332,7 @@
     left: 0;
     text-indent: -9999px;
     z-index: 999;
+    cursor: pointer;
 }
 
 .common-mykarte-archive-list-overray {
@@ -236,6 +416,7 @@
         @include common-mykarte-archive-list-font-size-xl;
         margin: 30px 0 0;
         display: block;
+        cursor: pointer;
     }
 }
 
@@ -250,18 +431,4 @@
     bottom: 0;
     margin: auto;
     z-index: 100000;
-}
-
-.barba-container {
-    width: 100%;
-}
-
-.barba-container.fadein {
-    animation: moveFromLeftFade 0.6s ease;
-}
-
-@keyframes moveFromLeftFade {
-    from {
-        transform: translateX(100%);
-    }
 }
