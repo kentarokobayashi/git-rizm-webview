@@ -213,6 +213,36 @@ div {
     }
 }
 
+.fixed-matching-lp-box-content-line-linebtn {
+    position: fixed;
+    width: 85%;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 380px;
+    border-radius: 100px;
+    box-shadow: 0 2px 8px #999;
+    background: #00c300;
+    overflow: hidden;
+    z-index: 9999;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .fixed-matching-lp-box-content-line-linebtn-content {
+        width: 100%;
+        height: 100%;
+    }
+    img {
+        max-width: 330px;
+        width: 78%;
+        margin: 5px 0 0px 5px;
+        text-align: center;
+    }
+}
+
 .matching-lp-box-content-line-linebtn {
     width: 85%;
     margin: 20px auto 0;

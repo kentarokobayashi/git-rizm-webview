@@ -1,10 +1,11 @@
+- var dateNow = Date.now();
 mixin matching-lp-box-content-line
     .matching-lp-box-content-line
           .matching-lp-box-content-coverimg
              img(src='https://stekina.com/wp-content/uploads/linecover-line.jpg')
           .matching-lp-box-content-line-linebtn
             a(href='https://line.me/R/ti/p/%40741zmjrp', onclick="ga('send','event','line-click','click','line-click-lp');")
-                img(src='https://stekina.com/wp-content/uploads/btn-line-stekinared.svg')                
+                img(src='https://stekina.com/wp-content/uploads/linebutton.svg')                
                 //img(src='https://stekina.com/wp-content/uploads/linebutton.svg')
 doctype html
 html(lang='jp')
@@ -58,6 +59,7 @@ html(lang='jp')
       gtag('js', new Date());
       gtag('config', 'AW-995271502');
   body
+     
     .matching-lp-first-dialog(style='display:none;')
           .matching-lp-first-head
               .matching-lp-first-head-img
@@ -143,6 +145,10 @@ html(lang='jp')
                   |閉じる
     .matching-lp-first-dialogbg(style='display:none;')
     .matching-lp-wrapper
+      .fixed-matching-lp-box-content-line-linebtn(style='display:none;')
+            a(href='https://line.me/R/ti/p/%40741zmjrp', onclick="ga('send','event','line-click','click','line-click-lp');")
+               .fixed-matching-lp-box-content-line-linebtn-content
+                img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/02/line-btn-add.png')
       .matching-lp-mv
         .matching-lp-mv-logo
           img(src='https://stekina.com/public/static/img/common/stekina-logo-white.svg')
@@ -299,6 +305,19 @@ html(lang='jp')
         .matching-lp-footer-copyright
               |Copyright © STEKiNA. All Rights Reserved.
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+    script.
+      $(function() {
+      var topBtn = $('.fixed-matching-lp-box-content-line-linebtn');
+      //スクロールが500に達したらボタン表示
+      $(window).scroll(function () {
+      if ($(this).scrollTop() > 1500) {
+      topBtn.fadeIn();
+      } else {
+      topBtn.fadeOut();
+      }
+      });
+      });
+
     script.
            $('.dialog-open-first').on('click', function() {
               $('.matching-lp-first-dialog').fadeIn()

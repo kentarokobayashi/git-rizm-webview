@@ -288,11 +288,6 @@ html(lang='jp')
             .common-dialog-mykarte-bg(style='display:none;')
             //.common-dialog-mykarte-bg(style='display:none;')
             .common-mykarte-header
-                //.common-mykarte-header-title
-                  .common-mykarte-header-title-setting
-                     |setting
-                  .common-mykarte-header-title-center
-                     |マイカルテ
                 .common-mykarte-header-profile
                   .common-mykarte-header-profile-content
                     .common-mykarte-header-profile-content-photo
@@ -342,10 +337,69 @@ html(lang='jp')
                 //予約中に表示のもの
                 //p(style='margin:0 0 30px;')|メモ※カルテがないときの表記も必要
                 .common-mykarte-archive-list
-
+                  .common-mykarte-archive-list-status.common-mykarte-archive-list-status-reserve
+                    img(src='https://stekina.com/wp-content/uploads/icn-mail.png')
                   .common-mykarte-archive-list-wrapper
                     .common-mykarte-archive-list-link
-                      a.barba-click(href='mykarte-profile-karte-detail.html')|カルテ詳細へ
+                      a(href='mykarte-profile-karte-detail.html')|カルテ詳細へ
+                    .common-mykarte-archive-list-overray
+                      .common-mykarte-archive-overray-list-title
+                        |ヘアケアメッセージ
+                        br
+                        |が届いています！
+                      .common-mykarte-archive-overray-list-text
+                        |タップして確認しよう！
+                    .common-mykarte-archive-content
+                        .common-mykarte-archive-content-left
+                            img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/02/yoko2_1.jpg')
+                        .common-mykarte-archive-content-right
+                          .common-mykarte-archive-content-right-info
+                              .common-mykarte-archive-content-right-info-date
+                                |2020年02月16日 10:40〜
+                              .common-mykarte-archive-content-right-info-stylistinfo
+                                .common-mykarte-archive-content-right-info-stylistinfo-photo
+                                  img(src='https://s3-ap-northeast-1.amazonaws.com/limeapp/karte/owner_photo_approved/TKL5-6P89-SUVW-WPKP?timestamp=1579566351012')
+                                .common-mykarte-archive-content-right-info-stylistinfo-text
+                                  .common-mykarte-archive-content-right-info-stylistinfo-text-name
+                                    |愛澤直人
+                                  .common-mykarte-archive-content-right-info-stylistinfo-text-salon
+                                    |GO TODAY SHAiRE SALON
+                              ul.common-mykarte-archive-content-right-info-menu
+                                  li|●カット
+                                  li|●カラー
+                              .common-mykarte-archive-content-right-info-totalprice
+                                  |15,000円
+                          .common-mykarte-archive-content-right-link.common-mykarte-archive-content-right-link-old
+                            |過去の髪型を確認する→  
+                .common-mykarte-archive-list
+                  .common-mykarte-archive-list-wrapper
+                    .common-mykarte-archive-list-link
+                      a.open-common-dialog-mykarte|カルテ詳細へ
+                    .common-mykarte-archive-content
+                        .common-mykarte-archive-content-left
+                            img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/02/yoko3_1.jpg')
+                        .common-mykarte-archive-content-right
+                          .common-mykarte-archive-content-right-info
+                              .common-mykarte-archive-content-right-info-date
+                                |2020年02月16日 10:40〜
+                              .common-mykarte-archive-content-right-info-stylistinfo
+                                .common-mykarte-archive-content-right-info-stylistinfo-photo
+                                  img(src='https://s3-ap-northeast-1.amazonaws.com/limeapp/karte/owner_photo_approved/3W4X-M365-7L8V-4URE?timestamp=1572490888336')
+                                .common-mykarte-archive-content-right-info-stylistinfo-text
+                                  .common-mykarte-archive-content-right-info-stylistinfo-text-name
+                                    |楠美江莉子
+                                  .common-mykarte-archive-content-right-info-stylistinfo-text-salon
+                                    |Lily
+                              ul.common-mykarte-archive-content-right-info-menu
+                                  li|●カット
+                                  li|●カラー
+                              .common-mykarte-archive-content-right-info-totalprice
+                                  |15,000円
+                          .common-mykarte-archive-content-right-link.common-mykarte-archive-content-right-link-reserve
+                            |予約を確認する→
+
+                    .common-mykarte-archive-list-link
+                      a(href='mykarte-profile-karte-detail.html')|カルテ詳細へ
                     .common-mykarte-archive-content
                         .common-mykarte-archive-content-left
                             img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/02/yoko3_1.jpg')
@@ -368,6 +422,64 @@ html(lang='jp')
                                   |15,000円
                           .common-mykarte-archive-content-right-link.common-mykarte-archive-content-right-link-old
                             |過去の髪型を確認する→  
+                .common-mykarte-archive-list
+                  //「調整中」class「common-mykarte-archive-list-status-adujsting」が付与
+                  .common-mykarte-archive-list-status.common-mykarte-archive-list-status-reserve
+                    |予約中
+                  .common-mykarte-archive-list-wrapper
+                    .common-mykarte-archive-list-link
+                      a.open-common-dialog-mykarte|カルテ詳細へ
+                    .common-mykarte-archive-content
+                        .common-mykarte-archive-content-left
+                            img(src='https://stekina.com/wp-content/uploads/default-karte-image-middle.png')
+                        .common-mykarte-archive-content-right
+                          .common-mykarte-archive-content-right-info
+                              .common-mykarte-archive-content-right-info-date
+                                |2020年02月16日 10:40〜
+                              .common-mykarte-archive-content-right-info-stylistinfo
+                                .common-mykarte-archive-content-right-info-stylistinfo-photo
+                                  img(src='https://s3-ap-northeast-1.amazonaws.com/limeapp/karte/owner_photo_approved/3W4X-M365-7L8V-4URE?timestamp=1572490888336')
+                                .common-mykarte-archive-content-right-info-stylistinfo-text
+                                  .common-mykarte-archive-content-right-info-stylistinfo-text-name
+                                    |楠美江莉子
+                                  .common-mykarte-archive-content-right-info-stylistinfo-text-salon
+                                    |Lily
+                              ul.common-mykarte-archive-content-right-info-menu
+                                  li|●カット
+                                  li|●カラー
+                              .common-mykarte-archive-content-right-info-totalprice
+                                  |15,000円
+                          .common-mykarte-archive-content-right-link.common-mykarte-archive-content-right-link-reserve
+                                |予約を確認する→
+                .common-mykarte-archive-list
+                  //「調整中」class「common-mykarte-archive-list-status-adujsting」が付与
+                  .common-mykarte-archive-list-status.common-mykarte-archive-list-status-reserve
+                    |申込中
+                  .common-mykarte-archive-list-wrapper
+                    .common-mykarte-archive-list-link
+                      a.open-common-dialog-mykarte|カルテ詳細へ
+                    .common-mykarte-archive-content
+                        .common-mykarte-archive-content-left
+                            img(src='https://stekina.com/wp-content/uploads/default-karte-image-middle.png')
+                        .common-mykarte-archive-content-right
+                          .common-mykarte-archive-content-right-info
+                              .common-mykarte-archive-content-right-info-date
+                                |2020年02月16日 10:40〜
+                              .common-mykarte-archive-content-right-info-stylistinfo
+                                .common-mykarte-archive-content-right-info-stylistinfo-photo
+                                  img(src='https://s3-ap-northeast-1.amazonaws.com/limeapp/karte/owner_photo_approved/3W4X-M365-7L8V-4URE?timestamp=1572490888336')
+                                .common-mykarte-archive-content-right-info-stylistinfo-text
+                                  .common-mykarte-archive-content-right-info-stylistinfo-text-name
+                                    |楠美江莉子
+                                  .common-mykarte-archive-content-right-info-stylistinfo-text-salon
+                                    |Lily
+                              ul.common-mykarte-archive-content-right-info-menu
+                                  li|●カット
+                                  li|●カラー
+                              .common-mykarte-archive-content-right-info-totalprice
+                                  |15,000円
+                          .common-mykarte-archive-content-right-link.common-mykarte-archive-content-right-link-reserve
+                            |予約を確認する→
                 .common-mykarte-archive-list
 
                   .common-mykarte-archive-list-wrapper
@@ -398,7 +510,7 @@ html(lang='jp')
                 .common-mykarte-archive-list
                   .common-mykarte-archive-list-wrapper
                     .common-mykarte-archive-list-link
-                      a.barba-click(href='mykarte-profile-karte-detail.html')|カルテ詳細へ
+                      a(href='mykarte-profile-karte-detail.html')|カルテ詳細へ
 
                     .common-mykarte-archive-content
                         .common-mykarte-archive-content-left
@@ -425,7 +537,7 @@ html(lang='jp')
                 .common-mykarte-archive-list
                   .common-mykarte-archive-list-wrapper
                     .common-mykarte-archive-list-link
-                      a.barba-click(href='mykarte-profile-karte-detail.html')|カルテ詳細へ
+                      a(href='mykarte-profile-karte-detail.html')|カルテ詳細へ
                     .common-mykarte-archive-content
                         .common-mykarte-archive-content-left
                            img(src='https://stekina.com/wp-content/uploads/default-karte-image-middle.png')
@@ -508,9 +620,9 @@ html(lang='jp')
                               .common-mykarte-archive-content-right-info-totalprice
                                   |15,000円
                           .common-mykarte-archive-content-right-link.common-mykarte-archive-content-right-link-old
-                            |過去の髪型を確認する→  
+                                |過去の髪型を確認する→  
                 .common-mykarte-archive-list
-              　　　//「調整中」class「.common-mykarte-archive-list-status-reserve」が付与
+                  //「調整中」class「.common-mykarte-archive-list-status-reserve」が付与
                   .common-mykarte-archive-list-status.common-mykarte-archive-list-status-reserve
                     |申込中
                   .common-mykarte-archive-list-wrapper
@@ -545,7 +657,7 @@ html(lang='jp')
                           .common-mykarte-archive-content-right-link.common-mykarte-archive-content-right-link-reserve
                             |予約を確認する→
                 .common-mykarte-archive-list
-               　　 //「予約中」はclass「.common-mykarte-archive-list-status-reserve」が付与
+                  //「予約中」はclass「.common-mykarte-archive-list-status-reserve」が付与
                   .common-mykarte-archive-list-status.common-mykarte-archive-list-status-reserve
                     |予約中
                   .common-mykarte-archive-list-wrapper
@@ -580,7 +692,7 @@ html(lang='jp')
                           .common-mykarte-archive-content-right-link.common-mykarte-archive-content-right-link-reserve
                             |予約を確認する→
                 .common-mykarte-archive-list
-                　　//「予約中」はclass「.common-mykarte-archive-list-status-reserve」が付与
+                  //「予約中」はclass「.common-mykarte-archive-list-status-reserve」が付与
                   .common-mykarte-archive-list-status.common-mykarte-archive-list-status-reserve
                     |予約中
                   .common-mykarte-archive-list-wrapper
@@ -620,7 +732,7 @@ html(lang='jp')
                     img(src='https://stekina.com/wp-content/uploads/icn-mail.png')
                   .common-mykarte-archive-list-wrapper
                     .common-mykarte-archive-list-link
-                      a.barba-click(href='mykarte-profile-karte-detail.html')|カルテ詳細へ
+                      a(href='mykarte-profile-karte-detail.html')|カルテ詳細へ
                     .common-mykarte-archive-list-overray
                       .common-mykarte-archive-overray-list-title
                         //現行のものと違うけど下記の文言でOK by ずまさん
@@ -649,8 +761,6 @@ html(lang='jp')
                                   |15,000円
                           .common-mykarte-archive-content-right-link.common-mykarte-archive-content-right-link-old
                             |過去の髪型を確認する→  
-
-          
                 .common-mykarte-archive-list
 
                   .common-mykarte-archive-list-wrapper
@@ -687,13 +797,7 @@ html(lang='jp')
 
                   .common-mykarte-archive-list-wrapper
                     .common-mykarte-archive-list-link
-                      a.barba-click(href='mykarte-profile-karte-detail.html')|カルテ詳細へ
-                    
-                    //.common-mykarte-archive-list-overray
-                      .common-mykarte-archive-overray-list-title
-                        |まだ予約確定していません！
-                      .common-mykarte-archive-overray-list-text
-                        |タップして予約の確認！
+                      a(href='mykarte-profile-karte-detail.html')|カルテ詳細へ
                     .common-mykarte-archive-content
                         .common-mykarte-archive-content-left
                             img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/02/yoko2_1.jpg')
@@ -719,7 +823,7 @@ html(lang='jp')
                 .common-mykarte-archive-list
                   .common-mykarte-archive-list-wrapper
                     .common-mykarte-archive-list-link
-                      a.barba-click(href='mykarte-profile-karte-detail.html')|カルテ詳細へ
+                      a(href='mykarte-profile-karte-detail.html')|カルテ詳細へ
 
                     .common-mykarte-archive-content
                         .common-mykarte-archive-content-left
