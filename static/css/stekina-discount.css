@@ -6007,7 +6007,7 @@ a {
   margin: 0 auto 30px; }
 
 .stekina-discount-about .stekina-discount-about-block-box {
-  margin: 0 auto 60px; }
+  margin: 0 auto 75px; }
   .stekina-discount-about .stekina-discount-about-block-box:last-child {
     margin: 0 auto 15px; }
   .stekina-discount-about .stekina-discount-about-block-box .stekina-discount-about-block-box-title {
@@ -6017,11 +6017,11 @@ a {
     letter-spacing: -0.5px;
     margin: 0 0 5px; }
   .stekina-discount-about .stekina-discount-about-block-box .stekina-discount-about-block-box-text {
-    font-size: 16px;
+    font-size: 14px;
     color: #4d4d4d;
     letter-spacing: -0.5px;
     line-height: 1.5;
-    font-family: "k-6", KoburinaGoStd-W6;
+    font-family: "k-3";
     /*
             b {
                 font-weight: bold;
@@ -6032,11 +6032,14 @@ a {
     .stekina-discount-about .stekina-discount-about-block-box .stekina-discount-about-block-box-text a:visited {
       color: #ff595b;
       text-decoration: underline;
-      font-family: "k-6", KoburinaGoStd-W6; }
+      font-family: "k-3", KoburinaGoStd-W6; }
     .stekina-discount-about .stekina-discount-about-block-box .stekina-discount-about-block-box-text strong,
     .stekina-discount-about .stekina-discount-about-block-box .stekina-discount-about-block-box-text span {
       font-family: "k-6", KoburinaGoStd-W6;
       color: #4d4d4d; }
+    .stekina-discount-about .stekina-discount-about-block-box .stekina-discount-about-block-box-text .hosoku {
+      font-family: "k-3", KoburinaGoStd-W6;
+      color: #b3b3b3; }
   .stekina-discount-about .stekina-discount-about-block-box .stekina-discount-about-block-box-button a {
     position: relative;
     display: block;
@@ -6186,6 +6189,9 @@ a {
   margin: 3px 0 3px !important;
   font-size: 13.5px;
   font-family: "k-6", KoburinaGoStd-W6; }
+
+.stekina-discount-about-block-box-img {
+  margin: 10px 0; }
 
 /* AB Testing */
 /*
