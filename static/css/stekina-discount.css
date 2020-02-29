@@ -5649,14 +5649,23 @@ a {
     font-size: 16px;
     font-family: "k-6", KoburinaGoStd-W6;
     color: #4d4d4d; }
+    @media screen and (max-width: 374px) {
+      .stekina-discount-announcement .stekina-discount-accountment-text-normal {
+        font-size: 13px; } }
   .stekina-discount-announcement .stekina-discount-accountment-text-normal-red-middle {
     font-size: 32px;
     font-family: "k-6", KoburinaGoStd-W6;
     color: #ff595b; }
+    @media screen and (max-width: 374px) {
+      .stekina-discount-announcement .stekina-discount-accountment-text-normal-red-middle {
+        font-size: 28px; } }
   .stekina-discount-announcement .stekina-discount-accountment-text-normal-red-large {
     font-size: 40px;
     font-family: "k-6", KoburinaGoStd-W6;
     color: #ff595b; }
+    @media screen and (max-width: 374px) {
+      .stekina-discount-announcement .stekina-discount-accountment-text-normal-red-large {
+        font-size: 36px; } }
   .stekina-discount-announcement .stekina-discount-announcement-button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5674,6 +5683,9 @@ a {
       border-radius: 4px;
       color: #ff595b;
       text-decoration: none; }
+      @media screen and (max-width: 374px) {
+        .stekina-discount-announcement .stekina-discount-announcement-button a {
+          font-size: 9.5px; } }
 
 /* stekina-discount-bar */
 .stekina-discount-bar {
@@ -5695,9 +5707,15 @@ a {
   .stekina-discount-bar .stekina-discount-bar-text-small {
     font-size: 11px;
     font-family: "k-6", KoburinaGoStd-W6; }
+    @media screen and (max-width: 374px) {
+      .stekina-discount-bar .stekina-discount-bar-text-small {
+        font-size: 9.5px; } }
   .stekina-discount-bar .stekina-discount-bar-text-large {
     font-size: 25px;
     font-family: "k-6", KoburinaGoStd-W6; }
+    @media screen and (max-width: 374px) {
+      .stekina-discount-bar .stekina-discount-bar-text-large {
+        font-size: 21.3px; } }
   .stekina-discount-bar .stekina-discount-bar-text-yen {
     font-family: "k-6", KoburinaGoStd-W6;
     font-size: 21px; }
@@ -5752,6 +5770,9 @@ a {
       font-size: 11px;
       color: #b3b3b3;
       letter-spacing: -0.5px; }
+      @media screen and (max-width: 374px) {
+        .stekina-discount-content .stekina-discount-content-head .stekina-discount-content-head-left {
+          font-size: 9.5px; } }
     .stekina-discount-content .stekina-discount-content-head .stekina-discount-content-head-right {
       text-align: right;
       position: absolute;
@@ -5767,6 +5788,9 @@ a {
         background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; }
+        @media screen and (max-width: 374px) {
+          .stekina-discount-content .stekina-discount-content-head .stekina-discount-content-head-right .stekina-discount-content-head-right-price-number {
+            font-size: 36px; } }
       .stekina-discount-content .stekina-discount-content-head .stekina-discount-content-head-right .stekina-discount-content-head-right-text {
         font-family: "k-6", KoburinaGoStd-W6;
         color: #4d4d4d; }
@@ -5841,6 +5865,10 @@ a {
             left: 39%;
             top: 0;
             bottom: 3px; }
+            @media screen and (max-width: 374px) {
+              .stekina-discount-content .stekina-discount-content-main .stekina-discount-content-main-box .stekina-discount-content-main-box-checklist .stekina-discount-content-main-box-checklist-top .stekina-discount-content-main-box-checklist-top-button-personal {
+                left: 38%;
+                bottom: 1.5px; } }
           .stekina-discount-content .stekina-discount-content-main .stekina-discount-content-main-box .stekina-discount-content-main-box-checklist .stekina-discount-content-main-box-checklist-top .stekina-discount-content-main-box-checklist-top-button {
             position: absolute;
             display: -webkit-box;
@@ -5868,11 +5896,17 @@ a {
             letter-spacing: -1.3px;
             color: #262626 !important;
             font-size: 16px; }
+            @media screen and (max-width: 374px) {
+              .stekina-discount-content .stekina-discount-content-main .stekina-discount-content-main-box .stekina-discount-content-main-box-checklist .stekina-discount-content-main-box-checklist-top .stekina-discount-content-main-box-checklist-top-left-text {
+                font-size: 13px; } }
           .stekina-discount-content .stekina-discount-content-main .stekina-discount-content-main-box .stekina-discount-content-main-box-checklist .stekina-discount-content-main-box-checklist-top div {
             display: inline-block; }
           .stekina-discount-content .stekina-discount-content-main .stekina-discount-content-main-box .stekina-discount-content-main-box-checklist .stekina-discount-content-main-box-checklist-top .stekina-discount-content-main-box-checklist-top-left-count {
             font-family: "k-6", KoburinaGoStd-W6;
             font-size: 25px; }
+            @media screen and (max-width: 374px) {
+              .stekina-discount-content .stekina-discount-content-main .stekina-discount-content-main-box .stekina-discount-content-main-box-checklist .stekina-discount-content-main-box-checklist-top .stekina-discount-content-main-box-checklist-top-left-count {
+                font-size: 21.3px; } }
           .stekina-discount-content .stekina-discount-content-main .stekina-discount-content-main-box .stekina-discount-content-main-box-checklist .stekina-discount-content-main-box-checklist-top .stekina-discount-content-main-box-checklist-top-right {
             text-align: right;
             margin: 0 -6px 0 0; }
@@ -5881,9 +5915,15 @@ a {
               font-family: "k-6", KoburinaGoStd-W6; }
             .stekina-discount-content .stekina-discount-content-main .stekina-discount-content-main-box .stekina-discount-content-main-box-checklist .stekina-discount-content-main-box-checklist-top .stekina-discount-content-main-box-checklist-top-right .stekina-discount-content-main-box-checklist-top-right-text {
               font-size: 16px; }
+              @media screen and (max-width: 374px) {
+                .stekina-discount-content .stekina-discount-content-main .stekina-discount-content-main-box .stekina-discount-content-main-box-checklist .stekina-discount-content-main-box-checklist-top .stekina-discount-content-main-box-checklist-top-right .stekina-discount-content-main-box-checklist-top-right-text {
+                  font-size: 13px; } }
             .stekina-discount-content .stekina-discount-content-main .stekina-discount-content-main-box .stekina-discount-content-main-box-checklist .stekina-discount-content-main-box-checklist-top .stekina-discount-content-main-box-checklist-top-right .stekina-discount-content-main-box-checklist-top-right-price {
               font-size: 25px;
               color: #b3b3b3 !important; }
+              @media screen and (max-width: 374px) {
+                .stekina-discount-content .stekina-discount-content-main .stekina-discount-content-main-box .stekina-discount-content-main-box-checklist .stekina-discount-content-main-box-checklist-top .stekina-discount-content-main-box-checklist-top-right .stekina-discount-content-main-box-checklist-top-right-price {
+                  font-size: 21.3px; } }
       .stekina-discount-content .stekina-discount-content-main .stekina-discount-content-main-box .stekina-discount-content-main-box-checklist-bottom {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -5902,16 +5942,25 @@ a {
           color: #b3b3b3;
           font-size: 11px;
           margin: 0 0 7px; }
+          @media screen and (max-width: 374px) {
+            .stekina-discount-content .stekina-discount-content-main .stekina-discount-content-main-box .stekina-discount-content-main-box-checklist-bottom .stekina-discount-content-main-box-checklist-bottom-left {
+              font-size: 9.5px; } }
         .stekina-discount-content .stekina-discount-content-main .stekina-discount-content-main-box .stekina-discount-content-main-box-checklist-bottom .stekina-discount-content-main-box-checklist-bottom-right {
           margin: 0 -6px 4px 0; }
           .stekina-discount-content .stekina-discount-content-main .stekina-discount-content-main-box .stekina-discount-content-main-box-checklist-bottom .stekina-discount-content-main-box-checklist-bottom-right .stekina-discount-content-main-box-checklist-bottom-right-text {
             color: #262626;
             font-family: "k-6", KoburinaGoStd-W6;
             font-size: 16px; }
+            @media screen and (max-width: 374px) {
+              .stekina-discount-content .stekina-discount-content-main .stekina-discount-content-main-box .stekina-discount-content-main-box-checklist-bottom .stekina-discount-content-main-box-checklist-bottom-right .stekina-discount-content-main-box-checklist-bottom-right-text {
+                font-size: 13px; } }
           .stekina-discount-content .stekina-discount-content-main .stekina-discount-content-main-box .stekina-discount-content-main-box-checklist-bottom .stekina-discount-content-main-box-checklist-bottom-right .stekina-discount-content-main-box-checklist-bottom-right-price {
             font-family: "k-6", KoburinaGoStd-W6;
             font-size: 25px;
             color: #b3b3b3; }
+            @media screen and (max-width: 374px) {
+              .stekina-discount-content .stekina-discount-content-main .stekina-discount-content-main-box .stekina-discount-content-main-box-checklist-bottom .stekina-discount-content-main-box-checklist-bottom-right .stekina-discount-content-main-box-checklist-bottom-right-price {
+                font-size: 21.3px; } }
         .stekina-discount-content .stekina-discount-content-main .stekina-discount-content-main-box .stekina-discount-content-main-box-checklist-bottom .stekina-discount-content-main-box-checklist-bottom-button {
           position: absolute;
           display: -webkit-box;
@@ -5920,9 +5969,12 @@ a {
           -webkit-box-align: end;
               -ms-flex-align: end;
                   align-items: flex-end;
-          left: 87px;
           top: 0;
-          bottom: 2px; }
+          bottom: 2px;
+          left: 87px; }
+          @media screen and (max-width: 374px) {
+            .stekina-discount-content .stekina-discount-content-main .stekina-discount-content-main-box .stekina-discount-content-main-box-checklist-bottom .stekina-discount-content-main-box-checklist-bottom-button {
+              left: 34px; } }
           .stekina-discount-content .stekina-discount-content-main .stekina-discount-content-main-box .stekina-discount-content-main-box-checklist-bottom .stekina-discount-content-main-box-checklist-bottom-button a {
             background: transparent;
             display: inline-block;
@@ -5968,6 +6020,11 @@ a {
     justify-content: center;
     align-items: center;
     */ }
+  @media screen and (max-width: 374px) {
+    .stekina-discount-content-main-box-checklist-top-left-icon {
+      width: 17px;
+      height: 17px;
+      margin: 0px 2px -4px 0; } }
   .stekina-discount-content-main-box-checklist-top-left-icon img {
     position: absolute;
     width: 70%;
@@ -6016,6 +6073,9 @@ a {
     font-family: "k-6", KoburinaGoStd-W6;
     letter-spacing: -0.5px;
     margin: 0 0 5px; }
+    @media screen and (max-width: 374px) {
+      .stekina-discount-about .stekina-discount-about-block-box .stekina-discount-about-block-box-title {
+        font-size: 21.3px; } }
   .stekina-discount-about .stekina-discount-about-block-box .stekina-discount-about-block-box-text {
     font-size: 14px;
     color: #4d4d4d;
@@ -6152,9 +6212,15 @@ a {
   color: white;
   display: inline-block;
   font-weight: bold;
-  padding: 8px 14px;
   margin: 0 0 15px;
-  letter-spacing: -1px !important; }
+  letter-spacing: -1px !important;
+  padding: 8px 14px; }
+  @media screen and (max-width: 374px) {
+    .common-stekina-discount-title {
+      font-size: 21.3px; } }
+  @media screen and (max-width: 374px) {
+    .common-stekina-discount-title {
+      padding: 8px 10px; } }
 
 .margin-bottom-10 {
   margin-bottom: 10px; }

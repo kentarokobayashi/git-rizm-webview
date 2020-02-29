@@ -10,22 +10,37 @@
 
 @mixin font-size-stekina-discount-s {
     font-size: 11px;
+    @include mq-down(iphone5) {
+        font-size: 9.5px;
+    }
 }
 
 @mixin font-size-stekina-discount-m {
     font-size: 16px;
+    @include mq-down(iphone5) {
+        font-size: 13px;
+    }
 }
 
 @mixin font-size-stekina-discount-l {
     font-size: 25px;
+    @include mq-down(iphone5) {
+        font-size: 21.3px;
+    }
 }
 
 @mixin font-size-stekina-discount-xl {
     font-size: 32px;
+    @include mq-down(iphone5) {
+        font-size: 28px;
+    }
 }
 
 @mixin font-size-stekina-discount-xxl {
     font-size: 40px;
+    @include mq-down(iphone5) {
+        font-size: 36px;
+    }
 }
 
 @mixin font-size-stekina-discount-xxxl {
@@ -265,6 +280,10 @@
                         left: 39%;
                         top: 0;
                         bottom: 3px;
+                        @include mq-down(iphone5) {
+                            left: 38%;
+                            bottom: 1.5px;
+                        }
                     }
                     .stekina-discount-content-main-box-checklist-top-button {
                         position: absolute;
@@ -349,9 +368,12 @@
                     position: absolute;
                     display: flex;
                     align-items: flex-end;
-                    left: 87px;
                     top: 0;
                     bottom: 2px;
+                    left: 87px;
+                    @include mq-down(iphone5) {
+                        left: 34px;
+                    }
                     a {
                         background: transparent;
                         display: inline-block;
@@ -392,6 +414,11 @@
     position: relative;
     width: 20px;
     height: 20px;
+    @include mq-down(iphone5) {
+        width: 17px;
+        height: 17px;
+        margin: 0px 2px -4px 0;
+    }
     border-radius: 100px;
     margin: 0px 3px -3px 0;
     border: $cl-red solid 1px;
@@ -578,9 +605,12 @@
     color: white;
     display: inline-block;
     font-weight: bold;
-    padding: 8px 14px;
     margin: 0 0 15px;
     letter-spacing: -1px !important;
+    padding: 8px 14px;
+    @include mq-down(iphone5) {
+        padding: 8px 10px;
+    }
 }
 
 .margin-bottom-10 {

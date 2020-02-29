@@ -8140,6 +8140,289 @@ body.liked div.dot.dot-8 {
       .mystylist-add-button button {
         font-size: 13.8px; } }
 
+/* layout */
+.salon-foot-sticky {
+  position: fixed;
+  bottom: 30px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  z-index: 100; }
+  .salon-foot-sticky a {
+    text-decoration: none;
+    color: white; }
+  .salon-foot-sticky .salon-foot-sticky-button {
+    width: 92%;
+    height: 50px;
+    background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
+    background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 8px;
+    box-shadow: 0px 3px 10px #999;
+    max-width: 420px; }
+    .salon-foot-sticky .salon-foot-sticky-button .salon-foot-sticky-text {
+      font-family: "mplus-2c-bold";
+      letter-spacing: 1px; }
+
+.salon-profile-header {
+  background: #fff;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  padding: 0px;
+  height: calc(40px + 0.5vw);
+  box-shadow: 0 6px 5px 0 rgba(0, 0, 0, .15);
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  max-width: 450px;
+  z-index: 99999; }
+  .salon-profile-header .salon-profile-header-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .salon-profile-header .salon-profile-header-center img {
+      width: 25px;
+      height: 25px;
+      -o-object-fit: contain;
+         object-fit: contain;
+      border-radius: 100px;
+      box-shadow: 0 0px 5px 0 rgba(0, 0, 0, .15);
+      margin: 0 5px 0 0; }
+  .salon-profile-header .salon-profile-header-left,
+  .salon-profile-header .salon-profile-header-right-button {
+    width: 70px; }
+  .salon-profile-header .salon-profile-header-right-button a {
+    font-size: 12px;
+    color: #15bfab;
+    padding: 3px 6px;
+    border-radius: 6px;
+    border: 1px solid #15bfab; }
+
+.salon-profile-wrapper {
+  background: #fff;
+  max-width: 450px;
+  margin: 0 auto !important;
+  overflow: hidden;
+  margin-bottom: 60px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .15); }
+
+.salon-profile-cover {
+  margin: calc(40px + 0.5vw) 0 0;
+  background-size: cover;
+  position: relative; }
+  .salon-profile-cover .salon-profile-cover-img {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: calc(1.5vw + 80px);
+    padding-top: calc(1.5vw + 60px); }
+    .salon-profile-cover .salon-profile-cover-img img {
+      border-radius: 50%;
+      border: 1px solid #fff;
+      max-width: 130px;
+      height: 130px;
+      -o-object-fit: contain;
+         object-fit: contain;
+      background: white; }
+  .salon-profile-cover h1 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    font-size: calc(18px + 0.5vw);
+    background-color: rgba(0, 0, 0, .55);
+    padding: 15px 0;
+    letter-spacing: 3px;
+    color: #fff; }
+
+.salon-profile-about {
+  padding: 0 0px 7px;
+  border-bottom: 0.5px solid #b3b3b3;
+  margin: 15px 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .salon-profile-about img {
+    width: 20px; }
+  .salon-profile-about span {
+    margin: 0 6px 0 0;
+    color: #b3b3b3;
+    font-size: 11px; }
+
+.salon-profile-about-follow {
+  margin: 30px 15px 0; }
+  .salon-profile-about-follow .salon-profile-about-follow-text {
+    text-align: center;
+    margin: 0 auto 5px;
+    color: #b3b3b3;
+    font-size: 12px; }
+
+.salon-profile-section {
+  margin: 75px 15px 0; }
+  .salon-profile-section h2 {
+    font-family: "mplus-2c-bold";
+    /*padding: 0 0px 10px;
+        border-bottom: 1px solid #b3b3b3;*/
+    font-size: 30px !important; }
+  .salon-profile-section .salon-profile-section-content {
+    position: relative; }
+
+.salon-profile-section-content-stylits {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white; }
+  .salon-profile-section-content-stylits a {
+    width: 47%;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .15);
+    border-radius: 10px;
+    margin: 30px 0 0px;
+    text-decoration: none;
+    color: #4d4d4d; }
+    .salon-profile-section-content-stylits a .salon-profile-section-content-stylist {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .salon-profile-section-content-stylits a .salon-profile-section-content-stylist .salon-profile-section-content-stylist-img img {
+        width: 120px;
+        height: 120px;
+        border-radius: 100px;
+        margin: 15px 0 15px; }
+      .salon-profile-section-content-stylits a .salon-profile-section-content-stylist .salon-profile-section-content-stylist-text {
+        text-align: center;
+        margin: 0 0 15px;
+        width: 80%;
+        font-size: 16px;
+        font-family: "mplus-2c-bold";
+        letter-spacing: 2px; }
+
+/* map*/
+.salon-profile-section-content-salon-address {
+  margin: 15px 0 0;
+  color: #4d4d4d; }
+
+.salon-profile-section-content-salon-map {
+  margin: 15px -15px 0; }
+
+.salon-profile-section-content-carousel-arrow {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 999;
+  opacity: 0.7; }
+
+.salon-profile-section-content-salonimages {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  margin: 20px -15px 0;
+  overflow-y: hidden; }
+  .salon-profile-section-content-salonimages li {
+    background: #fff;
+    padding: 0 5px 0 15px;
+    text-align: center;
+    display: inline-block; }
+    .salon-profile-section-content-salonimages li img {
+      width: 250px;
+      height: 180px;
+      -o-object-fit: cover;
+         object-fit: cover; }
+
+.salon-profile-footer-follow {
+  margin: 75px auto 130px;
+  width: 80%;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .15);
+  padding: 20px 0 30px; }
+  .salon-profile-footer-follow .salon-profile-footer-follow-text {
+    font-size: 12px;
+    color: #4d4d4d;
+    text-align: center;
+    margin: 0 auto 20px; }
+  .salon-profile-footer-follow .salon-profile-footer-follow-img {
+    margin: 20px auto;
+    text-align: center; }
+    .salon-profile-footer-follow .salon-profile-footer-follow-img img {
+      width: 100px;
+      height: 100px;
+      -o-object-fit: contain;
+         object-fit: contain;
+      background: white;
+      border-radius: 100px;
+      border: 1px solid #ccc; }
+  .salon-profile-footer-follow .salon-profile-footer-follow-name {
+    font-size: 18px;
+    color: #4d4d4d;
+    text-align: center;
+    margin: 0 auto 10px; }
+
+.follow-button-wrapper {
+  text-align: center; }
+  .follow-button-wrapper a {
+    color: #15bfab;
+    text-decoration: none;
+    margin: 0 auto; }
+    .follow-button-wrapper a img {
+      height: 20px;
+      margin: 0 4px 0 0; }
+    .follow-button-wrapper a .follow-button {
+      width: 230px;
+      border-radius: 8px;
+      text-align: center;
+      border: 1px solid #15bfab;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      height: 50px;
+      margin: 0 auto; }
+
 .common-app-header {
   height: 45px;
   background: white;

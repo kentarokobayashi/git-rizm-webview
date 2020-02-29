@@ -1,0 +1,337 @@
+@mixin text-gradient {
+    @include rizm-gradient();
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin font-size-stekina-discount-ss {
+    font-size: 8px;
+}
+
+@mixin font-size-stekina-discount-s {
+    font-size: 11px;
+    @include mq-down(iphone5) {
+        font-size: 9.5px;
+    }
+}
+
+@mixin font-size-stekina-discount-m {
+    font-size: 16px;
+    @include mq-down(iphone5) {
+        font-size: 13px;
+    }
+}
+
+@mixin font-size-stekina-discount-l {
+    font-size: 25px;
+    @include mq-down(iphone5) {
+        font-size: 21.3px;
+    }
+}
+
+@mixin font-size-stekina-discount-xl {
+    font-size: 32px;
+    @include mq-down(iphone5) {
+        font-size: 28px;
+    }
+}
+
+@mixin font-size-stekina-discount-xxl {
+    font-size: 40px;
+    @include mq-down(iphone5) {
+        font-size: 36px;
+    }
+}
+
+@mixin font-size-stekina-discount-xxxl {
+    font-size: 50px;
+}
+
+
+/* layout */
+
+.salon-foot-sticky {
+    position: fixed;
+    bottom: 30px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    z-index: 100;
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    .salon-foot-sticky-button {
+        width: 92%;
+        height: 50px;
+        @include rizm-gradient();
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        box-shadow: 0px 3px 10px #999;
+        max-width: 420px;
+        .salon-foot-sticky-text {
+            font-family: "mplus-2c-bold";
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.salon-profile-header {
+    background: #fff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0px;
+    height: calc(40px + 0.5vw);
+    box-shadow: 0 6px 5px 0 rgba(0, 0, 0, 0.15);
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    max-width: 450px;
+    z-index: 99999;
+    .salon-profile-header-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 25px;
+            height: 25px;
+            object-fit: contain;
+            border-radius: 100px;
+            box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.15);
+            margin: 0 5px 0 0;
+        }
+    }
+    .salon-profile-header-left,
+    .salon-profile-header-right-button {
+        width: 70px;
+    }
+    .salon-profile-header-right-button {
+        a {
+            font-size: 12px;
+            color: $cl-lime;
+            padding: 3px 6px;
+            border-radius: 6px;
+            border: 1px solid $cl-lime;
+        }
+    }
+}
+
+.salon-profile-wrapper {
+    background: #fff;
+    max-width: 450px;
+    margin: 0 auto !important;
+    overflow: hidden;
+    margin-bottom: 60px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+.salon-profile-cover {
+    margin: calc(40px + 0.5vw) 0 0;
+    background-size: cover;
+    position: relative;
+    .salon-profile-cover-img {
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: calc(1.5vw + 80px);
+        padding-top: calc(1.5vw + 60px);
+        img {
+            border-radius: 50%;
+            border: 1px solid #fff;
+            max-width: 130px;
+            height: 130px;
+            object-fit: contain;
+            background: white;
+        }
+    }
+    h1 {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        bottom: 0;
+        font-size: calc(18px + 0.5vw);
+        background-color: rgba(0, 0, 0, 0.55);
+        padding: 15px 0;
+        letter-spacing: 3px;
+        color: #fff;
+    }
+}
+
+.salon-profile-about {
+    padding: 0 0px 7px;
+    border-bottom: 0.5px solid #b3b3b3;
+    margin: 15px 15px 0;
+    display: flex;
+    align-items: center;
+    img {
+        width: 20px;
+    }
+    span {
+        margin: 0 6px 0 0;
+        color: $cl-gray-light;
+        font-size: 11px;
+    }
+}
+
+.salon-profile-about-follow {
+    margin: 30px 15px 0;
+    .salon-profile-about-follow-text {
+        text-align: center;
+        margin: 0 auto 5px;
+        color: $cl-gray-light;
+        font-size: 12px;
+    }
+}
+
+.salon-profile-section {
+    margin: 75px 15px 0;
+    h2 {
+        font-family: "mplus-2c-bold";
+        /*padding: 0 0px 10px;
+        border-bottom: 1px solid #b3b3b3;*/
+        font-size: 30px !important;
+    }
+    .salon-profile-section-content {
+        position: relative;
+    }
+}
+
+.salon-profile-section-content-stylits {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+    background: white;
+    a {
+        width: calc(94% / 2);
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        margin: 30px 0 0px;
+        text-decoration: none;
+        color: $cl-gray-dark;
+        .salon-profile-section-content-stylist {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .salon-profile-section-content-stylist-img {
+                img {
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 100px;
+                    margin: 15px 0 15px;
+                }
+            }
+            .salon-profile-section-content-stylist-text {
+                text-align: center;
+                margin: 0 0 15px;
+                width: 80%;
+                font-size: 16px;
+                font-family: "mplus-2c-bold";
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+
+
+/* map*/
+
+.salon-profile-section-content-salon-address {
+    margin: 15px 0 0;
+    color: $cl-gray-dark;
+}
+
+.salon-profile-section-content-salon-map {
+    margin: 15px -15px 0;
+}
+
+.salon-profile-section-content-carousel-arrow {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 999;
+    opacity: 0.7;
+}
+
+.salon-profile-section-content-salonimages {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    margin: 20px -15px 0;
+    overflow-y: hidden;
+    li {
+        background: #fff;
+        padding: 0 5px 0 15px;
+        text-align: center;
+        display: inline-block;
+        img {
+            width: 250px;
+            height: 180px;
+            object-fit: cover;
+        }
+    }
+}
+
+.salon-profile-footer-follow {
+    margin: 75px auto 130px;
+    width: 80%;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+    padding: 20px 0 30px;
+    .salon-profile-footer-follow-text {
+        font-size: 12px;
+        color: $cl-gray-dark;
+        text-align: center;
+        margin: 0 auto 20px;
+    }
+    .salon-profile-footer-follow-img {
+        margin: 20px auto;
+        text-align: center;
+        img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            background: white;
+            border-radius: 100px;
+            border: 1px solid #ccc;
+        }
+    }
+    .salon-profile-footer-follow-name {
+        font-size: 18px;
+        color: $cl-gray-dark;
+        text-align: center;
+        margin: 0 auto 10px;
+    }
+}
+
+.follow-button-wrapper {
+    text-align: center;
+    a {
+        color: $cl-lime;
+        text-decoration: none;
+        margin: 0 auto;
+        img {
+            height: 20px;
+            margin: 0 4px 0 0;
+        }
+        .follow-button {
+            width: 230px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid $cl-lime;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            height: 50px;
+            margin: 0 auto;
+        }
+    }
+}
