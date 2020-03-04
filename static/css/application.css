@@ -8220,6 +8220,9 @@ body.liked div.dot.dot-8 {
     padding: 3px 6px;
     border-radius: 6px;
     border: 1px solid #15bfab; }
+  .salon-profile-header a.follow-button-active {
+    color: white !important;
+    background: #15bfab !important; }
 
 .salon-profile-wrapper {
   background: #fff;
@@ -8232,7 +8235,21 @@ body.liked div.dot.dot-8 {
 .salon-profile-cover {
   margin: calc(40px + 0.5vw) 0 0;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  z-index: 0;
+  overflow: hidden; }
+  .salon-profile-cover:before {
+    content: "";
+    background: inherit;
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="2" /></filter></svg>#filter');
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1; }
   .salon-profile-cover .salon-profile-cover-img {
     margin: 0 auto;
     text-align: center;
@@ -8243,8 +8260,8 @@ body.liked div.dot.dot-8 {
       border: 1px solid #fff;
       max-width: 130px;
       height: 130px;
-      -o-object-fit: contain;
-         object-fit: contain;
+      -o-object-fit: cover;
+         object-fit: cover;
       background: white; }
   .salon-profile-cover h1 {
     position: absolute;
@@ -8258,7 +8275,7 @@ body.liked div.dot.dot-8 {
     color: #fff; }
 
 .salon-profile-about {
-  padding: 0 0px 7px;
+  padding: 0 0px 4px;
   border-bottom: 0.5px solid #b3b3b3;
   margin: 15px 15px 0;
   display: -webkit-box;
@@ -8268,11 +8285,17 @@ body.liked div.dot.dot-8 {
       -ms-flex-align: center;
           align-items: center; }
   .salon-profile-about img {
-    width: 20px; }
+    width: 15px; }
   .salon-profile-about span {
     margin: 0 6px 0 0;
     color: #b3b3b3;
     font-size: 11px; }
+  .salon-profile-about span.salon-profile-about-address {
+    /*max-width: 38%;
+        
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;*/ }
 
 .salon-profile-about-follow {
   margin: 30px 15px 0; }
@@ -8327,22 +8350,54 @@ body.liked div.dot.dot-8 {
         width: 120px;
         height: 120px;
         border-radius: 100px;
-        margin: 15px 0 15px; }
+        margin: 15px 0 15px;
+        -o-object-fit: cover;
+           object-fit: cover; }
       .salon-profile-section-content-stylits a .salon-profile-section-content-stylist .salon-profile-section-content-stylist-text {
         text-align: center;
         margin: 0 0 15px;
         width: 80%;
         font-size: 16px;
         font-family: "mplus-2c-bold";
-        letter-spacing: 2px; }
+        letter-spacing: 2px;
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        max-height: 37px; }
 
 /* map*/
 .salon-profile-section-content-salon-address {
   margin: 15px 0 0;
-  color: #4d4d4d; }
+  color: #4d4d4d;
+  font-size: 14px; }
+  @media screen and (max-width: 374px) {
+    .salon-profile-section-content-salon-address {
+      font-size: 12px; } }
 
 .salon-profile-section-content-salon-map {
   margin: 15px -15px 0; }
+
+.salon-profile-section-content-salon-address-link {
+  margin: 10px 0 0;
+  text-align: right; }
+  .salon-profile-section-content-salon-address-link a {
+    font-size: 14px;
+    text-decoration: underline;
+    color: #15bfab; }
+    @media screen and (max-width: 374px) {
+      .salon-profile-section-content-salon-address-link a {
+        font-size: 12px; } }
+  .salon-profile-section-content-salon-address-link:after {
+    content: "";
+    width: 6px;
+    height: 14px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0px -1px 0px 7px;
+    background-image: url("https://assets.stekina.com/static/img/icon/icn-arrow-navi.svg");
+    vertical-align: middle; }
 
 .salon-profile-section-content-carousel-arrow {
   position: absolute;
@@ -8375,27 +8430,33 @@ body.liked div.dot.dot-8 {
   width: 80%;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .15);
   padding: 20px 0 30px; }
-  .salon-profile-footer-follow .salon-profile-footer-follow-text {
-    font-size: 12px;
-    color: #4d4d4d;
-    text-align: center;
-    margin: 0 auto 20px; }
-  .salon-profile-footer-follow .salon-profile-footer-follow-img {
-    margin: 20px auto;
-    text-align: center; }
-    .salon-profile-footer-follow .salon-profile-footer-follow-img img {
-      width: 100px;
-      height: 100px;
-      -o-object-fit: contain;
-         object-fit: contain;
-      background: white;
-      border-radius: 100px;
-      border: 1px solid #ccc; }
-  .salon-profile-footer-follow .salon-profile-footer-follow-name {
-    font-size: 18px;
-    color: #4d4d4d;
-    text-align: center;
-    margin: 0 auto 10px; }
+  @media screen and (max-width: 374px) {
+    .salon-profile-footer-follow {
+      width: 90%; } }
+
+.salon-profile-footer-follow-text {
+  font-size: 12px;
+  color: #4d4d4d;
+  text-align: center;
+  margin: 0 auto 20px; }
+
+.salon-profile-footer-follow-img {
+  margin: 20px auto;
+  text-align: center; }
+  .salon-profile-footer-follow-img img {
+    width: 100px;
+    height: 100px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    background: white;
+    border-radius: 100px;
+    border: 1px solid #ccc; }
+
+.salon-profile-footer-follow-name {
+  font-size: 18px;
+  color: #4d4d4d;
+  text-align: center;
+  margin: 0 auto 10px; }
 
 .follow-button-wrapper {
   text-align: center; }
@@ -8422,6 +8483,12 @@ body.liked div.dot.dot-8 {
               align-items: center;
       height: 50px;
       margin: 0 auto; }
+  .follow-button-wrapper a.follow-button-active {
+    color: white; }
+    .follow-button-wrapper a.follow-button-active .follow-button {
+      background: #15bfab; }
+      .follow-button-wrapper a.follow-button-active .follow-button .follow-button-icon {
+        display: none; }
 
 .common-app-header {
   height: 45px;

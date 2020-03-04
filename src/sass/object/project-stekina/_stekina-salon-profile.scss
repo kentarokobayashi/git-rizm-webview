@@ -15,6 +15,13 @@
     }
 }
 
+@mixin font-size-stekina-discount-m-02 {
+    font-size: 14px;
+    @include mq-down(iphone5) {
+        font-size: 12px;
+    }
+}
+
 @mixin font-size-stekina-discount-m {
     font-size: 16px;
     @include mq-down(iphone5) {
@@ -122,6 +129,10 @@
             border: 1px solid $cl-lime;
         }
     }
+    a.follow-button-active {
+        color: white !important;
+        background: $cl-lime !important;
+    }
 }
 
 .salon-profile-wrapper {
@@ -137,6 +148,19 @@
     margin: calc(40px + 0.5vw) 0 0;
     background-size: cover;
     position: relative;
+    z-index: 0;
+    overflow: hidden;
+    &:before {
+        content: "";
+        background: inherit;
+        filter: blur(2px);
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        z-index: -1;
+    }
     .salon-profile-cover-img {
         margin: 0 auto;
         text-align: center;
@@ -147,7 +171,7 @@
             border: 1px solid #fff;
             max-width: 130px;
             height: 130px;
-            object-fit: contain;
+            object-fit: cover;
             background: white;
         }
     }
@@ -165,18 +189,25 @@
 }
 
 .salon-profile-about {
-    padding: 0 0px 7px;
+    padding: 0 0px 4px;
     border-bottom: 0.5px solid #b3b3b3;
     margin: 15px 15px 0;
     display: flex;
     align-items: center;
     img {
-        width: 20px;
+        width: 15px;
     }
     span {
         margin: 0 6px 0 0;
         color: $cl-gray-light;
         font-size: 11px;
+    }
+    span.salon-profile-about-address {
+        /*max-width: 38%;
+        
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;*/
     }
 }
 
@@ -226,6 +257,7 @@
                     height: 120px;
                     border-radius: 100px;
                     margin: 15px 0 15px;
+                    object-fit: cover;
                 }
             }
             .salon-profile-section-content-stylist-text {
@@ -235,6 +267,11 @@
                 font-size: 16px;
                 font-family: "mplus-2c-bold";
                 letter-spacing: 2px;
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                max-height: 37px;
             }
         }
     }
@@ -246,10 +283,32 @@
 .salon-profile-section-content-salon-address {
     margin: 15px 0 0;
     color: $cl-gray-dark;
+    @include font-size-stekina-discount-m-02();
 }
 
 .salon-profile-section-content-salon-map {
     margin: 15px -15px 0;
+}
+
+.salon-profile-section-content-salon-address-link {
+    margin: 10px 0 0;
+    text-align: right;
+    a {
+        @include font-size-stekina-discount-m-02();
+        text-decoration: underline;
+        color: $cl-lime;
+    }
+    &:after {
+        content: "";
+        width: 6px;
+        height: 14px;
+        display: inline-block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0px -1px 0px 7px;
+        background-image: url("https://assets.stekina.com/static/img/icon/icn-arrow-navi.svg");
+        vertical-align: middle;
+    }
 }
 
 .salon-profile-section-content-carousel-arrow {
@@ -286,30 +345,36 @@
     width: 80%;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
     padding: 20px 0 30px;
-    .salon-profile-footer-follow-text {
-        font-size: 12px;
-        color: $cl-gray-dark;
-        text-align: center;
-        margin: 0 auto 20px;
+    @include mq-down(iphone5) {
+        width: 90%;
     }
-    .salon-profile-footer-follow-img {
-        margin: 20px auto;
-        text-align: center;
-        img {
-            width: 100px;
-            height: 100px;
-            object-fit: contain;
-            background: white;
-            border-radius: 100px;
-            border: 1px solid #ccc;
-        }
+}
+
+.salon-profile-footer-follow-text {
+    font-size: 12px;
+    color: $cl-gray-dark;
+    text-align: center;
+    margin: 0 auto 20px;
+}
+
+.salon-profile-footer-follow-img {
+    margin: 20px auto;
+    text-align: center;
+    img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        background: white;
+        border-radius: 100px;
+        border: 1px solid #ccc;
     }
-    .salon-profile-footer-follow-name {
-        font-size: 18px;
-        color: $cl-gray-dark;
-        text-align: center;
-        margin: 0 auto 10px;
-    }
+}
+
+.salon-profile-footer-follow-name {
+    font-size: 18px;
+    color: $cl-gray-dark;
+    text-align: center;
+    margin: 0 auto 10px;
 }
 
 .follow-button-wrapper {
@@ -332,6 +397,15 @@
             align-items: center;
             height: 50px;
             margin: 0 auto;
+        }
+    }
+    a.follow-button-active {
+        color: white;
+        .follow-button {
+            background: $cl-lime;
+            .follow-button-icon {
+                display: none;
+            }
         }
     }
 }

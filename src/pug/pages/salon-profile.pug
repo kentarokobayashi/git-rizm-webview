@@ -1,12 +1,19 @@
 - var dateNow = Date.now();
 mixin follow-button
   .follow-button-wrapper
-    a(href='#')
+    a.follow-button-triger(href='#')
+      .follow-button
+        .follow-button-icon
+            img(src='https://assets.stekina.com/static/img/icon/icn-follow-lime.svg')
+        .follow-button-text
+          |フォロー中
+    //a.follow-button-triger(href='#')
       .follow-button
         .follow-button-icon
             img(src='https://assets.stekina.com/static/img/icon/icn-follow-lime.svg')
         .follow-button-text
           |フォローする
+          $('.follow-button-wrapper').html('<div class="follow-button-wrapper"><a class="follow-button-active" href="#"><div class="follow-button follow-button-triger"><div class="follow-button-icon"><img src="https://assets.stekina.com/static/img/icon/icn-follow-lime.svg" /></div><div class="follow-button-text">フォロー中</div></div></div></a>');
 doctype html
 html(lang='jp')
   head
@@ -16,6 +23,13 @@ html(lang='jp')
     meta(charset='UTF-8')
     meta(name='robots', content='noindex,nofollow')
   body
+    //.common-salon-profile-dialog
+        .common-salon-profile-dialog-text
+        　　｜
+        button.common-salon-profile-dialog-button
+        　　|フォロー解除
+        button.common-salon-profile-dialog-subbutton
+           |戻る
     .salon-foot-sticky
       a(href='#')
         .salon-foot-sticky-button
@@ -29,17 +43,19 @@ html(lang='jp')
             img(src='https://beauty-architect.com/lily/wp-content/themes/lily/images/logo.png')
           .salon-profile-headerr-center-text
               |Lily
-        .salon-profile-header-right-button
-          a.salon-profile-header-right-button-triger|フォロー
+        .salon-profile-header-right-button 
+          a.salon-profile-header-right-button-triger.follow-button-triger|フォロー
       .salon-profile-cover(style='background-image: url(https://s3-ap-northeast-1.amazonaws.com/limeapp/salon_snap/KELX-MK6M-7LQV-NQWA/0?etag=d1c8fd6ce37aa26dc149e094406d932a)')
             .salon-profile-cover-img
+              img(src='https://s3-ap-northeast-1.amazonaws.com/limeapp/salon_snap/KELX-MK6M-7LQV-NQWA/5?etag=c91d0b4bd9a273c5770e387bb31d7857') 
+              //
                img(src='https://beauty-architect.com/lily/wp-content/themes/lily/images/logo.png')
             h1.salon-profile-cover-name
               |Lily
       section.salon-profile-about
          div
            img(src='https://assets.stekina.com/static/img/icon/icn-map.svg')
-         span
+         span.salon-profile-about-address
           |東京都渋谷区神宮前
          span
           |美容師歴10年
@@ -66,7 +82,7 @@ html(lang='jp')
                .salon-profile-section-content-stylist-img
                   img(src='https://s3-ap-northeast-1.amazonaws.com/limeapp/karte/owner_photo_approved/KE4F-5K6M-PL8V-7K56?timestamp=1572491116894')              
                .salon-profile-section-content-stylist-text
-                  |寺村優太 髪を綺麗にする人
+                  |寺村優太 髪を綺麗にする人 寺村優太 髪を綺麗にする人
           a(href='')
             .salon-profile-section-content-stylist
                .salon-profile-section-content-stylist-img
@@ -91,6 +107,12 @@ html(lang='jp')
                   img(src='https://s3-ap-northeast-1.amazonaws.com/limeapp/karte/owner_photo_approved/3ELX-5K6M-7L8D-NPBS?timestamp=1572490876501')              
                .salon-profile-section-content-stylist-text
                   |大野道寛
+          a(href='')
+            .salon-profile-section-content-stylist
+               .salon-profile-section-content-stylist-img
+                  img(src='https://s3-ap-northeast-1.amazonaws.com/limeapp/karte/owner_photo_approved/UJV2-WJXJ-GJZ2-A5SH?timestamp=1572491380152')              
+               .salon-profile-section-content-stylist-text
+                  |SHOHEI
       section.salon-profile-section
         .salon-profile-section-title
             h2
@@ -100,6 +122,9 @@ html(lang='jp')
                    |〒1500001 東京都渋谷区神宮前 5-15-11
           .salon-profile-section-content-salon-map
               iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.473001379863!2d139.70461861501508!3d35.66535363845051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca13a71238f%3A0xa0a80373a400d905!2z44CSMTUwLTAwMDEg5p2x5Lqs6YO95riL6LC35Yy656We5a6u5YmN77yV5LiB55uu77yR77yV4oiS77yR77yR!5e0!3m2!1sja!2sjp!4v1582887015237!5m2!1sja!2sjp', width='100%', height='250', frameborder='0', style='border:0;', allowfullscreen='')
+          .salon-profile-section-content-salon-address-link
+                a(href='http://maps.google.com/maps?saddr=&daddr=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E7%A5%9E%E5%AE%AE%E5%89%8D%205-15-11')
+                   |地図アプリで経路を調べる
       section.salon-profile-section
         .salon-profile-section-title
             h2
@@ -129,3 +154,9 @@ html(lang='jp')
             |Lily
           .salon-profile-footer-follow-button
            +follow-button()
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+    script.
+      $('.follow-button-triger').on('click', function() {
+         $('.follow-button-triger').toggleClass("follow-button-active")
+         
+      });
