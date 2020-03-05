@@ -58,6 +58,25 @@ html(lang='jp')
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'AW-995271502');
+    script.
+      (function(g,d,o){
+      g._ltq=g._ltq||[];g._lt=g._lt||function(){g._ltq.push(arguments)};
+      var h=location.protocol==='https:'?'https://d.line-scdn.net':'http://d.line-cdn.net';
+      var s=d.createElement('script');s.async=1;
+      s.src=o||h+'/n/line_tag/public/release/v1/lt.js';
+      var t=d.getElementsByTagName('script')[0];t.parentNode.insertBefore(s,t);
+      })(window, document);
+      _lt('init', {
+      customerType: 'lap',
+      tagId: 'e19e8d35-6ad3-4839-8a8d-df3755e13718'
+      });
+      _lt('send', 'pv', ['e19e8d35-6ad3-4839-8a8d-df3755e13718']);
+    noscript
+      img(src='https://tr.line.me/tag.gif?c_t=lap&t_id=e19e8d35-6ad3-4839-8a8d-df3755e13718&e=pv&noscript=1', height='1', width='1', style='display:none')   
+    script.
+      _lt('send', 'cv', {
+      type: 'Conversion'
+      },['e19e8d35-6ad3-4839-8a8d-df3755e13718']); 
   body
      
     .matching-lp-first-dialog(style='display:none;')

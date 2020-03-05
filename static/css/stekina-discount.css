@@ -6272,9 +6272,9 @@ a {
 */
 /* チュートリアル長いやつ専用で作ったmixin */
 /* title */
-.mykarte-tutorial-head {
+.survay-tutorial-head {
   margin: 0px auto 0px; }
-  .mykarte-tutorial-head .mykarte-tutorial-head-title {
+  .survay-tutorial-head .survay-tutorial-head-title {
     text-align: center;
     color: #262626;
     font-family: "k-6", KoburinaGoStd-W6;
@@ -6282,26 +6282,26 @@ a {
     line-height: 1.2;
     margin: 0px auto 45px; }
     @media screen and (max-width: 374px) {
-      .mykarte-tutorial-head .mykarte-tutorial-head-title {
+      .survay-tutorial-head .survay-tutorial-head-title {
         font-size: 27px; } }
-  .mykarte-tutorial-head .mykarte-tutorial-head-text {
+  .survay-tutorial-head .survay-tutorial-head-text {
     text-align: center;
     color: #4d4d4d;
     font-size: 16.3px;
     margin: 0px auto 25px;
     line-height: 1.5; }
     @media screen and (max-width: 374px) {
-      .mykarte-tutorial-head .mykarte-tutorial-head-text {
+      .survay-tutorial-head .survay-tutorial-head-text {
         font-size: 13.8px; } }
-  .mykarte-tutorial-head .mykarte-tutorial-head-note {
+  .survay-tutorial-head .survay-tutorial-head-note {
     text-align: center;
     color: #ff595b;
     font-size: 16.3px; }
     @media screen and (max-width: 374px) {
-      .mykarte-tutorial-head .mykarte-tutorial-head-note {
+      .survay-tutorial-head .survay-tutorial-head-note {
         font-size: 13.8px; } }
 
-.mykarte-scroll {
+.survay-scroll {
   -webkit-animation-name: fuwafuwa;
           animation-name: fuwafuwa;
   -webkit-animation-duration: 2s;
@@ -6320,7 +6320,7 @@ a {
   margin: 40px 0 30px; }
 
 /* section */
-.mykarte-tutorial-section {
+.survay-tutorial-section {
   text-align: center;
   margin: 30px 15px 30px;
   padding: 0px 0px 40px;
@@ -6329,31 +6329,31 @@ a {
   border-radius: 10px;
   overflow: hidden; }
 
-.mykarte-tutorial-section-detail {
+.survay-tutorial-section-detail {
   text-align: center;
   padding: 40px 0px 90px;
   overflow-x: hidden; }
-  .mykarte-tutorial-section-detail .mykarte-tutorial-section-block-questions {
+  .survay-tutorial-section-detail .survay-tutorial-section-block-questions {
     margin: 0 auto 30px; }
-  .mykarte-tutorial-section-detail .mykarte-tutorial-section-block-subtitle {
+  .survay-tutorial-section-detail .survay-tutorial-section-block-subtitle {
     text-align: center !important;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  .mykarte-tutorial-section-detail .mykarte-tutorial-section-block-subtitle-text {
+  .survay-tutorial-section-detail .survay-tutorial-section-block-subtitle-text {
     text-align: center !important; }
 
 /* title */
-.mykarte-tutorial-section-title-wrapper {
+.survay-tutorial-section-title-wrapper {
   background: -webkit-linear-gradient(150deg, #e6417a 0%, #ff595b 100%);
   background: linear-gradient(-60deg, #e6417a 0%, #ff595b 100%);
   width: 100%;
   padding: 30px 0px 20px;
   margin: 0px 0px 30px; }
-  .mykarte-tutorial-section-title-wrapper img {
+  .survay-tutorial-section-title-wrapper img {
     height: 60px;
     margin: 0px 0px 10px; }
-  .mykarte-tutorial-section-title-wrapper .mykarte-tutorial-section-title {
+  .survay-tutorial-section-title-wrapper .survay-tutorial-section-title {
     font-size: 38px;
     line-height: 1.2;
     /*color: $cl-stekina-black; */
@@ -6365,10 +6365,10 @@ a {
     letter-spacing: -1px;
     margin: 0px auto 0px; }
     @media screen and (max-width: 374px) {
-      .mykarte-tutorial-section-title-wrapper .mykarte-tutorial-section-title {
+      .survay-tutorial-section-title-wrapper .survay-tutorial-section-title {
         font-size: 27px; } }
 
-.mykarte-tutorial-section-block-subtitle {
+.survay-tutorial-section-block-subtitle {
   position: relative;
   /* justify-content: center; */
   margin: 0 0 0px;
@@ -6380,29 +6380,29 @@ a {
   font-size: 27.5px;
   line-height: 1.2; }
   @media screen and (max-width: 374px) {
-    .mykarte-tutorial-section-block-subtitle {
+    .survay-tutorial-section-block-subtitle {
       font-size: 23px; } }
   @media screen and (max-width: 374px) {
-    .mykarte-tutorial-section-block-subtitle {
+    .survay-tutorial-section-block-subtitle {
       margin: 0 auto 5px;
       width: 95%; } }
-  .mykarte-tutorial-section-block-subtitle .mykarte-tutorial-section-block-subtitle-text,
-  .mykarte-tutorial-section-block-subtitle .mykarte-tutorial-section-block-subtitle-number {
+  .survay-tutorial-section-block-subtitle .survay-tutorial-section-block-subtitle-text,
+  .survay-tutorial-section-block-subtitle .survay-tutorial-section-block-subtitle-number {
     color: #4d4d4d;
     font-family: "k-6", KoburinaGoStd-W6;
     text-align: left;
     line-height: 1.25;
     word-break: break-all; }
-  .mykarte-tutorial-section-block-subtitle .mykarte-tutorial-section-block-subtitle-number {
+  .survay-tutorial-section-block-subtitle .survay-tutorial-section-block-subtitle-number {
     color: #ff595b;
     font-size: 32px;
     line-height: 1;
     display: none; }
     @media screen and (max-width: 374px) {
-      .mykarte-tutorial-section-block-subtitle .mykarte-tutorial-section-block-subtitle-number {
+      .survay-tutorial-section-block-subtitle .survay-tutorial-section-block-subtitle-number {
         font-size: 18px; } }
 
-.mykarte-tutorial-section-block-subtitle-02 {
+.survay-tutorial-section-block-subtitle-02 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6417,25 +6417,25 @@ a {
   font-size: 27.5px;
   line-height: 1.2; }
   @media screen and (max-width: 374px) {
-    .mykarte-tutorial-section-block-subtitle-02 {
+    .survay-tutorial-section-block-subtitle-02 {
       font-size: 23px; } }
   @media screen and (max-width: 374px) {
-    .mykarte-tutorial-section-block-subtitle-02 {
+    .survay-tutorial-section-block-subtitle-02 {
       width: 95%; } }
-  .mykarte-tutorial-section-block-subtitle-02 .mykarte-tutorial-section-block-subtitle-text,
-  .mykarte-tutorial-section-block-subtitle-02 .mykarte-tutorial-section-block-subtitle-number {
+  .survay-tutorial-section-block-subtitle-02 .survay-tutorial-section-block-subtitle-text,
+  .survay-tutorial-section-block-subtitle-02 .survay-tutorial-section-block-subtitle-number {
     color: #4d4d4d;
     font-family: "k-6", KoburinaGoStd-W6;
     font-weight: bold;
     text-align: left;
     line-height: 1.5; }
-  .mykarte-tutorial-section-block-subtitle-02 .mykarte-tutorial-section-block-subtitle-number {
+  .survay-tutorial-section-block-subtitle-02 .survay-tutorial-section-block-subtitle-number {
     color: #ff595b;
     font-size: 32px;
     line-height: 1;
     display: none; }
     @media screen and (max-width: 374px) {
-      .mykarte-tutorial-section-block-subtitle-02 .mykarte-tutorial-section-block-subtitle-number {
+      .survay-tutorial-section-block-subtitle-02 .survay-tutorial-section-block-subtitle-number {
         font-size: 18px; } }
 
 .p-Resultmenu-input label {
@@ -6453,58 +6453,58 @@ a {
       font-size: 12.5px;
       letter-spacing: -0.5px; } }
 
-.mykarte-tutorial-section-block-questions {
+.survay-tutorial-section-block-questions {
   position: relative;
   margin: 0 auto 90px;
   width: 82%; }
   @media screen and (max-width: 374px) {
-    .mykarte-tutorial-section-block-questions {
+    .survay-tutorial-section-block-questions {
       margin: 0 auto 75px;
       width: 86% !important; } }
 
-.mykarte-tutorial-section-block-questions-last {
+.survay-tutorial-section-block-questions-last {
   margin: 0 auto 15px !important; }
 
-.mykarte-tutorial-section-block-questions-child {
+.survay-tutorial-section-block-questions-child {
   position: absolute;
   top: 35px;
   left: 30px;
   width: 100%; }
 
-.mykarte-tutorial-section-block-questions-child-02 {
+.survay-tutorial-section-block-questions-child-02 {
   position: absolute;
   top: 315px;
   left: 30px;
   width: 100%; }
 
-.mykarte-tutorial-section-block-subtitle-02-note {
+.survay-tutorial-section-block-subtitle-02-note {
   color: #b3b3b3;
   margin: 10px auto 20px;
   width: 82%;
   text-align: left; }
 
-.mykarte-tutorial-section-block-questions-note {
+.survay-tutorial-section-block-questions-note {
   position: absolute;
   top: 6px;
   left: 70px;
   color: #b3b3b3; }
 
-.mykarte-tutorial-section-block-questions-input {
+.survay-tutorial-section-block-questions-input {
   text-align: left;
   margin: 0 auto; }
 
 /* textarea */
-.mykarte-tutorial-section-block-questions-textarea-child {
+.survay-tutorial-section-block-questions-textarea-child {
   margin: 0 0 0 60px; }
 
-.mykarte-tutorial-section-block-questions-input-textarea {
+.survay-tutorial-section-block-questions-input-textarea {
   margin: 0 0 0 10px;
   font-size: 16.3px; }
   @media screen and (max-width: 374px) {
-    .mykarte-tutorial-section-block-questions-input-textarea {
+    .survay-tutorial-section-block-questions-input-textarea {
       font-size: 13.8px; } }
 
-.mykarte-tutorial-section-block-questions-textarea {
+.survay-tutorial-section-block-questions-textarea {
   -webkit-appearance: none;
   border: none;
   box-shadow: 0px 3px 3px #ccc;
@@ -6512,14 +6512,14 @@ a {
   color: #4d4d4d;
   border: 1px solid #ccc; }
   @media screen and (max-width: 374px) {
-    .mykarte-tutorial-section-block-questions-textarea {
+    .survay-tutorial-section-block-questions-textarea {
       max-width: 200px; } }
 
 /* 入力関連 */
-.mykarte-tutorial-wrapper-01 {
+.survay-tutorial-wrapper-01 {
   margin: 0 0 180px; }
-  .mykarte-tutorial-wrapper-01 label,
-  .mykarte-tutorial-wrapper-01 input[type="checkbox"] {
+  .survay-tutorial-wrapper-01 label,
+  .survay-tutorial-wrapper-01 input[type="checkbox"] {
     cursor: pointer;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6532,13 +6532,13 @@ a {
     font-size: 16.3px;
     font-family: "k-3", KoburinaGoStd-W3; }
     @media screen and (max-width: 374px) {
-      .mykarte-tutorial-wrapper-01 label,
-      .mykarte-tutorial-wrapper-01 input[type="checkbox"] {
+      .survay-tutorial-wrapper-01 label,
+      .survay-tutorial-wrapper-01 input[type="checkbox"] {
         font-size: 13.8px; } }
-  .mykarte-tutorial-wrapper-01 input[type="checkbox"],
-  .mykarte-tutorial-wrapper-01 input[type="radio"] {
+  .survay-tutorial-wrapper-01 input[type="checkbox"],
+  .survay-tutorial-wrapper-01 input[type="radio"] {
     display: none; }
-  .mykarte-tutorial-wrapper-01 .checkbox-input + label:before {
+  .survay-tutorial-wrapper-01 .checkbox-input + label:before {
     /* border: 1px #ccc solid; */
     margin: 0 5px 0 0;
     background: white;
@@ -6551,10 +6551,10 @@ a {
     width: 28px;
     height: 28px; }
     @media screen and (max-width: 374px) {
-      .mykarte-tutorial-wrapper-01 .checkbox-input + label:before {
+      .survay-tutorial-wrapper-01 .checkbox-input + label:before {
         width: 25px;
         height: 25px; } }
-  .mykarte-tutorial-wrapper-01 .checkbox-input:checked + label:before {
+  .survay-tutorial-wrapper-01 .checkbox-input:checked + label:before {
     content: "";
     border-radius: 100px;
     content: "";
@@ -6567,7 +6567,7 @@ a {
     background: #15bfab;
     border: 1.8px #15bfab solid; }
     @media screen and (max-width: 374px) {
-      .mykarte-tutorial-wrapper-01 .checkbox-input:checked + label:before {
+      .survay-tutorial-wrapper-01 .checkbox-input:checked + label:before {
         width: 25px;
         height: 25px; } }
 
@@ -6589,34 +6589,34 @@ a {
   box-shadow: 0px 3px 10px #aaa; }
 
 /* radioとかの横幅 */
-.mykarte-tutorial-section-detail .mykarte-tutorial-section-block-questions-width-50 {
+.survay-tutorial-section-detail .survay-tutorial-section-block-questions-width-50 {
   width: 50% !important; }
 
-.mykarte-tutorial-section-detail .mykarte-tutorial-section-block-questions-width-55 {
+.survay-tutorial-section-detail .survay-tutorial-section-block-questions-width-55 {
   width: 55% !important; }
 
-.mykarte-tutorial-section-detail .mykarte-tutorial-section-block-questions-width-60 {
+.survay-tutorial-section-detail .survay-tutorial-section-block-questions-width-60 {
   width: 60% !important; }
 
-.mykarte-tutorial-section-detail .mykarte-tutorial-section-block-questions-width-65 {
+.survay-tutorial-section-detail .survay-tutorial-section-block-questions-width-65 {
   width: 65% !important; }
 
-.mykarte-tutorial-section-detail .mykarte-tutorial-section-block-questions-width-70 {
+.survay-tutorial-section-detail .survay-tutorial-section-block-questions-width-70 {
   width: 70% !important; }
 
-.mykarte-tutorial-section-detail .mykarte-tutorial-section-block-questions-width-75 {
+.survay-tutorial-section-detail .survay-tutorial-section-block-questions-width-75 {
   width: 75% !important; }
 
-.mykarte-tutorial-section-detail .mykarte-tutorial-section-block-questions-width-80 {
+.survay-tutorial-section-detail .survay-tutorial-section-block-questions-width-80 {
   width: 80% !important; }
 
-.mykarte-tutorial-section-detail .mykarte-tutorial-section-block-questions-width-85 {
+.survay-tutorial-section-detail .survay-tutorial-section-block-questions-width-85 {
   width: 85% !important; }
 
-.mykarte-tutorial-section-detail .mykarte-tutorial-section-block-questions-width-90 {
+.survay-tutorial-section-detail .survay-tutorial-section-block-questions-width-90 {
   width: 90% !important; }
 
-.mykarte-tutorial-section-detail .mykarte-tutorial-section-block-questions-width-95 {
+.survay-tutorial-section-detail .survay-tutorial-section-block-questions-width-95 {
   width: 95% !important; }
 
 /* 細かい余白の値定義 */

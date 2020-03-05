@@ -87,30 +87,30 @@
 
 /* title */
 
-.mykarte-tutorial-head {
+.survay-tutorial-head {
     margin: 0px auto 0px;
-    .mykarte-tutorial-head-title {
+    .survay-tutorial-head-title {
         text-align: center;
         color: $cl-stekina-black;
         font-family: "k-6", KoburinaGoStd-W6;
         @include tutorial-01-font-size-xl;
         margin: 0px auto 45px;
     }
-    .mykarte-tutorial-head-text {
+    .survay-tutorial-head-text {
         text-align: center;
         color: $cl-gray-dark;
         @include tutorial-01-font-size-m;
         margin: 0px auto 25px;
         line-height: 1.5;
     }
-    .mykarte-tutorial-head-note {
+    .survay-tutorial-head-note {
         text-align: center;
         color: $cl-red;
         @include tutorial-01-font-size-m;
     }
 }
 
-.mykarte-scroll {
+.survay-scroll {
     animation-name: fuwafuwa;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -127,7 +127,7 @@
 
 /* section */
 
-.mykarte-tutorial-section {
+.survay-tutorial-section {
     text-align: center;
     margin: 30px 15px 30px;
     padding: 0px 0px 40px;
@@ -137,18 +137,18 @@
     overflow: hidden;
 }
 
-.mykarte-tutorial-section-detail {
+.survay-tutorial-section-detail {
     text-align: center;
     padding: 40px 0px 90px;
     overflow-x: hidden;
-    .mykarte-tutorial-section-block-questions {
+    .survay-tutorial-section-block-questions {
         margin: 0 auto 30px;
     }
-    .mykarte-tutorial-section-block-subtitle {
+    .survay-tutorial-section-block-subtitle {
         text-align: center !important;
         justify-content: center;
     }
-    .mykarte-tutorial-section-block-subtitle-text {
+    .survay-tutorial-section-block-subtitle-text {
         text-align: center !important;
     }
 }
@@ -156,7 +156,7 @@
 
 /* title */
 
-.mykarte-tutorial-section-title-wrapper {
+.survay-tutorial-section-title-wrapper {
     background: linear-gradient(-60deg, #e6417a 0%, #ff595b 100%);
     width: 100%;
     padding: 30px 0px 20px;
@@ -165,7 +165,7 @@
         height: 60px;
         margin: 0px 0px 10px;
     }
-    .mykarte-tutorial-section-title {
+    .survay-tutorial-section-title {
         @include tutorial-01-font-size-xl;
         /*color: $cl-stekina-black; */
         color: white;
@@ -178,7 +178,7 @@
     }
 }
 
-.mykarte-tutorial-section-block-subtitle {
+.survay-tutorial-section-block-subtitle {
     position: relative;
     /* justify-content: center; */
     margin: 0 0 0px;
@@ -192,15 +192,15 @@
         margin: 0 auto 5px;
         width: 95%;
     }
-    .mykarte-tutorial-section-block-subtitle-text,
-    .mykarte-tutorial-section-block-subtitle-number {
+    .survay-tutorial-section-block-subtitle-text,
+    .survay-tutorial-section-block-subtitle-number {
         color: #4d4d4d;
         font-family: "k-6", KoburinaGoStd-W6;
         text-align: left;
         line-height: 1.25;
         word-break: break-all;
     }
-    .mykarte-tutorial-section-block-subtitle-number {
+    .survay-tutorial-section-block-subtitle-number {
         color: $cl-red;
         font-size: 32px;
         line-height: 1;
@@ -211,7 +211,7 @@
     }
 }
 
-.mykarte-tutorial-section-block-subtitle-02 {
+.survay-tutorial-section-block-subtitle-02 {
     display: flex;
     position: relative;
     /* justify-content: center; */
@@ -225,15 +225,15 @@
     @include mq-down(iphone5) {
         width: 95%;
     }
-    .mykarte-tutorial-section-block-subtitle-text,
-    .mykarte-tutorial-section-block-subtitle-number {
+    .survay-tutorial-section-block-subtitle-text,
+    .survay-tutorial-section-block-subtitle-number {
         color: #4d4d4d;
         font-family: "k-6", KoburinaGoStd-W6;
         font-weight: bold;
         text-align: left;
         line-height: 1.5;
     }
-    .mykarte-tutorial-section-block-subtitle-number {
+    .survay-tutorial-section-block-subtitle-number {
         color: $cl-red;
         font-size: 32px;
         line-height: 1;
@@ -252,7 +252,7 @@
     @include tutorial-01-font-size-s;
 }
 
-.mykarte-tutorial-section-block-questions {
+.survay-tutorial-section-block-questions {
     position: relative;
     margin: 0 auto 90px;
     width: 82%;
@@ -262,39 +262,39 @@
     }
 }
 
-.mykarte-tutorial-section-block-questions-last {
+.survay-tutorial-section-block-questions-last {
     margin: 0 auto 15px !important;
 }
 
-.mykarte-tutorial-section-block-questions-child {
+.survay-tutorial-section-block-questions-child {
     position: absolute;
     top: 35px;
     left: 30px;
     width: 100%;
 }
 
-.mykarte-tutorial-section-block-questions-child-02 {
+.survay-tutorial-section-block-questions-child-02 {
     position: absolute;
     top: 315px;
     left: 30px;
     width: 100%;
 }
 
-.mykarte-tutorial-section-block-subtitle-02-note {
+.survay-tutorial-section-block-subtitle-02-note {
     color: $cl-gray-light;
     margin: 10px auto 20px;
     width: 82%;
     text-align: left;
 }
 
-.mykarte-tutorial-section-block-questions-note {
+.survay-tutorial-section-block-questions-note {
     position: absolute;
     top: 6px;
     left: 70px;
     color: $cl-gray-light;
 }
 
-.mykarte-tutorial-section-block-questions-input {
+.survay-tutorial-section-block-questions-input {
     text-align: left;
     margin: 0 auto;
 }
@@ -302,16 +302,16 @@
 
 /* textarea */
 
-.mykarte-tutorial-section-block-questions-textarea-child {
+.survay-tutorial-section-block-questions-textarea-child {
     margin: 0 0 0 60px;
 }
 
-.mykarte-tutorial-section-block-questions-input-textarea {
+.survay-tutorial-section-block-questions-input-textarea {
     margin: 0 0 0 10px;
     @include tutorial-01-font-size-m;
 }
 
-.mykarte-tutorial-section-block-questions-textarea {
+.survay-tutorial-section-block-questions-textarea {
     -webkit-appearance: none;
     border: none;
     box-shadow: 0px 3px 3px #ccc;
@@ -326,7 +326,7 @@
 
 /* 入力関連 */
 
-.mykarte-tutorial-wrapper-01 {
+.survay-tutorial-wrapper-01 {
     margin: 0 0 180px;
     label,
     input[type="checkbox"] {
@@ -378,35 +378,35 @@
 
 /* radioとかの横幅 */
 
-.mykarte-tutorial-section-detail {
-    .mykarte-tutorial-section-block-questions-width-50 {
+.survay-tutorial-section-detail {
+    .survay-tutorial-section-block-questions-width-50 {
         width: 50% !important;
     }
-    .mykarte-tutorial-section-block-questions-width-55 {
+    .survay-tutorial-section-block-questions-width-55 {
         width: 55% !important;
     }
-    .mykarte-tutorial-section-block-questions-width-60 {
+    .survay-tutorial-section-block-questions-width-60 {
         width: 60% !important;
     }
-    .mykarte-tutorial-section-block-questions-width-65 {
+    .survay-tutorial-section-block-questions-width-65 {
         width: 65% !important;
     }
-    .mykarte-tutorial-section-block-questions-width-70 {
+    .survay-tutorial-section-block-questions-width-70 {
         width: 70% !important;
     }
-    .mykarte-tutorial-section-block-questions-width-75 {
+    .survay-tutorial-section-block-questions-width-75 {
         width: 75% !important;
     }
-    .mykarte-tutorial-section-block-questions-width-80 {
+    .survay-tutorial-section-block-questions-width-80 {
         width: 80% !important;
     }
-    .mykarte-tutorial-section-block-questions-width-85 {
+    .survay-tutorial-section-block-questions-width-85 {
         width: 85% !important;
     }
-    .mykarte-tutorial-section-block-questions-width-90 {
+    .survay-tutorial-section-block-questions-width-90 {
         width: 90% !important;
     }
-    .mykarte-tutorial-section-block-questions-width-95 {
+    .survay-tutorial-section-block-questions-width-95 {
         width: 95% !important;
     }
 }
