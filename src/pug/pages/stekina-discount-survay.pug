@@ -2,7 +2,7 @@
 doctype html
 html(lang='jp')
   head
-    title STEKiNA割引
+    title アンケート
     link(href='static/css/stekina-discount.css?'+dateNow rel='stylesheet')
     meta(name='viewport', content='width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
     meta(charset='UTF-8')
@@ -12,265 +12,409 @@ html(lang='jp')
     meta(name='apple-mobile-web-app-capable', content='yes')
     meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
   body.bg-gray-lightest(data-action='tutorial', data-controller='ken')
+   .survay-nokori-header
+     p|アンケート入力完了まであと
+     .nokori-number|number
+     p|項目
+   .survay-nokori-header-bg
+   .survay-dialog-mykarte#confirm-reserve(style='display:none;')
+      .survay-dialog-mykarte-title
+        |アンケート内容について
+      .survay-dialog-mykarte-text
+        img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/03/maintext-survay-dialog.svg')
+      .survay-dialog-mykarte-sublink
+        a(href='https://stekina.com/stekina.html' target='_blank')
+         |お客様との相性って何？
+      button.survay-dialog-mykarte-button.survay-dialog-mykarte-button-triger
+          |OK
+   .survay-dialog-bg(style='display:none;')
    form
     .survay-tutorial-wrapper-01
-      section.survay-tutorial-section
-        .survay-tutorial-head
-          .survay-tutorial-section-title-wrapper
-            .survay-tutorial-section-title-img
-              img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2019/12/icon-whitee.svg')
-            .survay-tutorial-section-title
-              |自分のこだわりや
-              br
-              |好みを選択しよう！
-          .survay-tutorial-head-text
-            | 記入した内容は美容師さんに共有され
-            br
-            | 施術担当時の参考になります！
-          .survay-tutorial-head-note
-            | 全て任意で入力いただけます
-      .survay-scroll 
-            |👇スクロールする
       //▼▼▼接客について
       section.survay-tutorial-section
         .survay-tutorial-section-title-wrapper
           .survay-tutorial-section-title-img
             img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2019/12/icon-whitee.svg')
           .survay-tutorial-section-title
-            |接客について
-        //▼service-01
-        .survay-tutorial-section-block
-          .survay-tutorial-section-block-subtitle
-            .survay-tutorial-section-block-subtitle-text
-              | 話すのが好きですか？
-            .survay-tutorial-section-block-subtitle-chuui
-              |※どれか１つ選択
-          .survay-tutorial-section-block-questions.survay-tutorial-section-block-questions-width-80
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value01', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value01')
-                  span
-                    | 基本しゃべらない
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value02', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value02')
-                  span
-                    |ずっと喋ってる
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value03', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value03')
-                  span|好きでも嫌いでもない
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value04', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value04')
-                  span 聞かれたら答える
-        //▼service-01
-        .survay-tutorial-section-block
-          .survay-tutorial-section-block-subtitle
-            .survay-tutorial-section-block-subtitle-text
-              | 話すのが好きですか？
-          .survay-tutorial-section-block-questions.survay-tutorial-section-block-questions-width-80
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value01', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value01')
-                  span
-                    | 基本しゃべらない
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value02', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value02')
-                  span
-                    |ずっと喋ってる
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value03', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value03')
-                  span|好きでも嫌いでもない
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value04', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value04')
-                  span 聞かれたら答える
-        //▼service-01
-        .survay-tutorial-section-block
-          .survay-tutorial-section-block-subtitle
-            .survay-tutorial-section-block-subtitle-text
-              | 話すのが好きですか？
-          .survay-tutorial-section-block-questions.survay-tutorial-section-block-questions-width-80
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value01', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value01')
-                  span
-                    | 基本しゃべらない
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value02', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value02')
-                  span
-                    |ずっと喋ってる
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value03', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value03')
-                  span|好きでも嫌いでもない
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value04', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value04')
-                  span 聞かれたら答える
+            |①接客について
+        .survay-tutorial-section-blocks
+          //▼cs01
+          .survay-tutorial-section-block
+            .survay-tutorial-section-block-subtitle
+              .survay-tutorial-section-block-subtitle-text
+                | 話すのが好きですか？
+              .survay-tutorial-section-block-subtitle-chuui
+                |※どれか１つ選択
+            .survay-tutorial-section-block-questions.survay-tutorial-section-block-questions-width-80
+                .survay-tutorial-section-block-questions-input
+                  input.checkbox-input(id='cs01-radio-value01', name='cs01-radio', type='radio')
+                  label(for='cs01-radio-value01')
+                    span
+                      | 基本しゃべらない
+                .survay-tutorial-section-block-questions-input
+                  input.checkbox-input(id='cs01-radio-value02', name='cs01-radio', type='radio')
+                  label(for='cs01-radio-value02')
+                    span
+                      |ずっと喋ってる
+                .survay-tutorial-section-block-questions-input
+                  input.checkbox-input(id='cs01-radio-value03', name='cs01-radio', type='radio')
+                  label(for='cs01-radio-value03')
+                    span|好きでも嫌いでもない
+                .survay-tutorial-section-block-questions-input
+                  input.checkbox-input(id='cs01-radio-value04', name='cs01-radio', type='radio')
+                  label(for='cs01-radio-value04')
+                    span 聞かれたら答える
+                .survay-tutorial-section-block-questions-input
+                  input.checkbox-input(id='cs01-radio-value05', name='cs01-radio', type='radio')
+                  label(for='cs01-radio-value05')
+                    span 話題が尽きず話す
+          //▼cs02
+          .survay-tutorial-section-block
+            .survay-tutorial-section-block-subtitle
+              .survay-tutorial-section-block-subtitle-text
+                |聞くのは好きですか？
+              .survay-tutorial-section-block-subtitle-chuui
+                |※どれか１つ選択
+            .survay-tutorial-section-block-questions.survay-tutorial-section-block-questions-width-80
+                .survay-tutorial-section-block-questions-input
+                  input.checkbox-input(id='cs02-radio-value01', name='cs02-radio', type='radio')
+                  label(for='cs02-radio-value01')
+                    span
+                      | 聞いてる方が好き
+                .survay-tutorial-section-block-questions-input
+                  input.checkbox-input(id='cs02-radio-value02', name='cs02-radio', type='radio')
+                  label(for='cs02-radio-value02')
+                    span
+                      |話してる方が多い
+                .survay-tutorial-section-block-questions-input
+                  input.checkbox-input(id='cs02-radio-value03', name='cs02-radio', type='radio')
+                  label(for='cs02-radio-value03')
+                    span|好きでも嫌いでもない
+                .survay-tutorial-section-block-questions-input
+                  input.checkbox-input(id='cs02-radio-value04', name='cs02-radio', type='radio')
+                  label(for='cs02-radio-value04')
+                    span|聞くのも話すのも好き
+                .survay-tutorial-section-block-questions-input
+                  input.checkbox-input(id='cs02-radio-value05', name='cs02-radio', type='radio')
+                  label(for='cs02-radio-value05')
+                    span 基本会話したくない
+
+          //▼cs03
+          .survay-tutorial-section-block
+            .survay-tutorial-section-block-subtitle
+              .survay-tutorial-section-block-subtitle-text
+                | 面白いですか？
+              .survay-tutorial-section-block-subtitle-chuui
+                |※どれか１つ選択
+            .survay-tutorial-section-block-questions.survay-tutorial-section-block-questions-width-80
+                .survay-tutorial-section-block-questions-input
+                  input.checkbox-input(id='cs03-radio-value01', name='cs03-radio', type='radio')
+                  label(for='cs03-radio-value01')
+                    span
+                      |どちらかというと面白い方
+                .survay-tutorial-section-block-questions-input
+                  input.checkbox-input(id='cs03-radio-value02', name='cs03-radio', type='radio')
+                  label(for='cs03-radio-value02')
+                    span
+                      |普通かな
+                .survay-tutorial-section-block-questions-input
+                  input.checkbox-input(id='cs03-radio-value03', name='cs03-radio', type='radio')
+                  label(for='cs03-radio-value03')
+                    span|面白くはないと思う
+          //▼cs04
+          .survay-tutorial-section-block
+            .survay-tutorial-section-block-subtitle
+              .survay-tutorial-section-block-subtitle-text
+                |要望とお任せどっちが嬉しいですか？
+              .survay-tutorial-section-block-subtitle-chuui
+                |※どれか１つ選択
+            .survay-tutorial-section-block-questions.survay-tutorial-section-block-questions-width-80
+                .survay-tutorial-section-block-questions-input
+                  input.checkbox-input(id='cs04-radio-value01', name='cs04-radio', type='radio')
+                  label(for='cs04-radio-value01')
+                    span
+                      |要望を言って欲しい
+                .survay-tutorial-section-block-questions-input
+                  input.checkbox-input(id='cs04-radio-value02', name='cs04-radio', type='radio')
+                  label(for='cs04-radio-value02')
+                    span
+                      |お任せされると嬉しい
+                .survay-tutorial-section-block-questions-input
+                  input.checkbox-input(id='cs04-radio-value03', name='cs04-radio', type='radio')
+                  label(for='cs04-radio-value03')
+                    span|要望は無くても聞き出す
+                .survay-tutorial-section-block-questions-input
+                  input.checkbox-input(id='cs04-radio-value04', name='cs04-radio', type='radio')
+                  label(for='cs04-radio-value04')
+                    span|お任せされる事が多い
       //▼▼▼接客について
       section.survay-tutorial-section
         .survay-tutorial-section-title-wrapper
           .survay-tutorial-section-title-img
             img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2019/12/icon-hasami.svg')
           .survay-tutorial-section-title
-            |技術について
-        //▼service-01
-        .survay-tutorial-section-block
-          .survay-tutorial-section-block-subtitle
-            .survay-tutorial-section-block-subtitle-text
-              | 話すのが好きですか？
-          .survay-tutorial-section-block-questions.survay-tutorial-section-block-questions-width-80
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value01', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value01')
-                  span
-                    | 基本しゃべらない
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value02', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value02')
-                  span
-                    |ずっと喋ってる
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value03', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value03')
-                  span|好きでも嫌いでもない
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value04', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value04')
-                  span 聞かれたら答える
-        //▼service-01
-        .survay-tutorial-section-block
-          .survay-tutorial-section-block-subtitle
-            .survay-tutorial-section-block-subtitle-text
-              | 話すのが好きですか？
-          .survay-tutorial-section-block-questions.survay-tutorial-section-block-questions-width-80
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value01', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value01')
-                  span
-                    | 基本しゃべらない
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value02', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value02')
-                  span
-                    |ずっと喋ってる
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value03', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value03')
-                  span|好きでも嫌いでもない
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value04', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value04')
-                  span 聞かれたら答える
-        //▼service-01
-        .survay-tutorial-section-block
-          .survay-tutorial-section-block-subtitle
-            .survay-tutorial-section-block-subtitle-text
-              | 話すのが好きですか？
-          .survay-tutorial-section-block-questions.survay-tutorial-section-block-questions-width-80
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value01', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value01')
-                  span
-                    | 基本しゃべらない
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value02', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value02')
-                  span
-                    |ずっと喋ってる
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value03', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value03')
-                  span|好きでも嫌いでもない
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value04', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value04')
-                  span 聞かれたら答える
-      //▼▼▼接客について
+            |②技術について
+        .survay-tutorial-section-blocks
+            //▼skill01
+            .survay-tutorial-section-block
+              .survay-tutorial-section-block-subtitle
+                .survay-tutorial-section-block-subtitle-text
+                  |感性と技術だと、
+                  br
+                  |どちら派ですか？
+                .survay-tutorial-section-block-subtitle-chuui
+                  |※どれか１つ選択
+              .survay-tutorial-section-block-questions.survay-tutorial-section-block-questions-width-80
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='skill01-radio-value01', name='skill01-radio', type='radio')
+                    label(for='skill01-radio-value01')
+                      span
+                        |感性派
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='skill01-radio-value02', name='skill01-radio', type='radio')
+                    label(for='skill01-radio-value02')
+                      span
+                        |技術派
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='skill01-radio-value03', name='skill01-radio', type='radio')
+                    label(for='skill01-radio-value03')
+                      span|どっちも自信ない
+            //▼skill02
+            .survay-tutorial-section-block
+              .survay-tutorial-section-block-subtitle
+                .survay-tutorial-section-block-subtitle-text
+                  |センスに自信はありますか？
+                .survay-tutorial-section-block-subtitle-chuui
+                  |※どれか１つ選択
+              .survay-tutorial-section-block-questions.survay-tutorial-section-block-questions-width-80
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='skill02-radio-value01', name='skill02-radio', type='radio')
+                    label(for='skill02-radio-value01')
+                      span
+                        |とても自信あります。
+                        br
+                        |トップレベルです。
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='skill02-radio-value02', name='skill02-radio', type='radio')
+                    label(for='skill02-radio-value02')
+                      span
+                        |自信ある方です
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='skill02-radio-value03', name='skill02-radio', type='radio')
+                    label(for='skill02-radio-value03')
+                      span|普通です
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='skill02-radio-value04', name='skill02-radio', type='radio')
+                    label(for='skill02-radio-value04')
+                      span 自信はあまり無いです
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='skill02-radio-value05', name='skill02-radio', type='radio')
+                    label(for='skill02-radio-value05')
+                      span センスは全くありません
+
+            //▼skill03
+            .survay-tutorial-section-block
+              .survay-tutorial-section-block-subtitle
+                .survay-tutorial-section-block-subtitle-text
+                  |難しい髪質は得意ですか？
+                .survay-tutorial-section-block-subtitle-chuui
+                  |※どれか１つ選択
+              .survay-tutorial-section-block-questions.survay-tutorial-section-block-questions-width-80
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='skill03-radio-value01', name='skill03-radio', type='radio')
+                    label(for='skill03-radio-value01')
+                      span
+                        |とても自信あります。
+                        br
+                        |どんな髪質でも対応可能
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='skill03-radio-value02', name='skill03-radio', type='radio')
+                    label(for='skill03-radio-value02')
+                      span
+                        |自信ある方です
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='skill03-radio-value03', name='skill03-radio', type='radio')
+                    label(for='skill03-radio-value03')
+                      span|普通です
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='skill03-radio-value04', name='skill03-radio', type='radio')
+                    label(for='skill03-radio-value04')
+                      span
+                        |自信はあまり無いです
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='skill03-radio-value05', name='skill03-radio', type='radio')
+                    label(for='skill03-radio-value05')
+                      span|難しい髪質は対応できません
+            //▼skill04
+            .survay-tutorial-section-block
+              .survay-tutorial-section-block-subtitle
+                .survay-tutorial-section-block-subtitle-text
+                  |カウンセリングしますか？自信はありますか？
+                .survay-tutorial-section-block-subtitle-chuui
+                  |※どれか１つ選択
+              .survay-tutorial-section-block-questions.survay-tutorial-section-block-questions-width-80
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='skill04-radio-value01', name='skill04-radio', type='radio')
+                    label(for='skill04-radio-value01')
+                      span
+                        |カウンセリングは傾聴が大事
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='skill04-radio-value02', name='skill04-radio', type='radio')
+                    label(for='skill04-radio-value02')
+                      span
+                        |自信ある。心理学もかなり詳しい
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='skill04-radio-value03', name='skill04-radio', type='radio')
+                    label(for='skill04-radio-value03')
+                      span|カウンセリングは相手の鏡になる事だと思う
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='skill04-radio-value04', name='skill04-radio', type='radio')
+                    label(for='skill04-radio-value04')
+                      span|カウンセリングには興味ない
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='skill04-radio-value05', name='skill04-radio', type='radio')
+                    label(for='skill04-radio-value05')
+                      span|カウンセリングは自分をゼロにする事だと思う
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='skill04-radio-value06', name='skill04-radio', type='radio')
+                    label(for='skill04-radio-value06')
+                      span|カウンセリングで成否がほぼ決まる
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='skill04-radio-value07', name='skill04-radio', type='radio')
+                    label(for='skill04-radio-value07')
+                      span|特に気にしてないけどいい感じにできる
+      //▼▼▼サロンワークについて
       section.survay-tutorial-section
         .survay-tutorial-section-title-wrapper
           .survay-tutorial-section-title-img
             img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2019/12/icon-salon.svg')
           .survay-tutorial-section-title
-            |サロンワークについて
-        //▼service-01
-        .survay-tutorial-section-block
-          .survay-tutorial-section-block-subtitle
-            .survay-tutorial-section-block-subtitle-text
-              | 話すのが好きですか？
-          .survay-tutorial-section-block-questions.survay-tutorial-section-block-questions-width-80
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value01', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value01')
-                  span
-                    | 基本しゃべらない
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value02', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value02')
-                  span
-                    |ずっと喋ってる
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value03', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value03')
-                  span|好きでも嫌いでもない
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value04', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value04')
-                  span 聞かれたら答える
-        //▼service-01
-        .survay-tutorial-section-block
-          .survay-tutorial-section-block-subtitle
-            .survay-tutorial-section-block-subtitle-text
-              | 話すのが好きですか？
-          .survay-tutorial-section-block-questions.survay-tutorial-section-block-questions-width-80
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value01', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value01')
-                  span
-                    | 基本しゃべらない
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value02', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value02')
-                  span
-                    |ずっと喋ってる
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value03', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value03')
-                  span|好きでも嫌いでもない
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value04', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value04')
-                  span 聞かれたら答える
-        //▼service-01
-        .survay-tutorial-section-block
-          .survay-tutorial-section-block-subtitle
-            .survay-tutorial-section-block-subtitle-text
-              | 話すのが好きですか？
-          .survay-tutorial-section-block-questions.survay-tutorial-section-block-questions-width-80
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value01', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value01')
-                  span
-                    | 基本しゃべらない
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value02', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value02')
-                  span
-                    |ずっと喋ってる
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value03', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value03')
-                  span|好きでも嫌いでもない
-              .survay-tutorial-section-block-questions-input
-                input.checkbox-input(id='service-01-radio-value04', name='service-01-radio', type='radio')
-                label(for='service-01-radio-value04')
-                  span 聞かれたら答える
-      //▼▼▼submit
-      button.button-tutorial-submit(type='button', onclick="location.href='A.survay-tutorial-02.html'") 完了
-      p|ここにバリデーション
+            |③サロンワークについて
+        .survay-tutorial-section-blocks
+            //▼salonwork-01
+            .survay-tutorial-section-block
+              .survay-tutorial-section-block-subtitle
+                .survay-tutorial-section-block-subtitle-text
+                  |サロンは広いですか？個室ですか？
+                .survay-tutorial-section-block-subtitle-chuui
+                  |※どれか１つ選択
+              .survay-tutorial-section-block-questions.survay-tutorial-section-block-questions-width-80
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='salonwork-01-radio-value01', name='salonwork-01-radio', type='radio')
+                    label(for='salonwork-01-radio-value01')
+                      span
+                        |セット面も多くフロアも広め
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='salonwork-01-radio-value02', name='salonwork-01-radio', type='radio')
+                    label(for='salonwork-01-radio-value02')
+                      span
+                        |4面以下の小規模サロン
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='salonwork-01-radio-value03', name='salonwork-01-radio', type='radio')
+                    label(for='salonwork-01-radio-value03')
+                      span|個室型のプライベートサロン
+            //▼salonwork-02
+            .survay-tutorial-section-block
+              .survay-tutorial-section-block-subtitle
+                .survay-tutorial-section-block-subtitle-text
+                  |時間についての考え方は？
+                .survay-tutorial-section-block-subtitle-chuui
+                  |※どれか１つ選択
+              .survay-tutorial-section-block-questions.survay-tutorial-section-block-questions-width-80
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='salonwork-02-radio-value01', name='salonwork-02-radio', type='radio')
+                    label(for='salonwork-02-radio-value01')
+                      span
+                        |リラックスできる時間を提供
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='salonwork-02-radio-value02', name='salonwork-02-radio', type='radio')
+                    label(for='salonwork-02-radio-value02')
+                      span
+                        |短時間でバッチリ決める
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='salonwork-02-radio-value03', name='salonwork-02-radio', type='radio')
+                    label(for='salonwork-02-radio-value03')
+                      span|とにかく早い。すぐ終わる
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='salonwork-02-radio-value04', name='salonwork-02-radio', type='radio')
+                    label(for='salonwork-02-radio-value04')
+                      span|ゆったりとした時間を提供
+            //▼salonwork-03
+            .survay-tutorial-section-block
+              .survay-tutorial-section-block-subtitle
+                .survay-tutorial-section-block-subtitle-text
+                  |アシスタント有りorマンツーマン対応？
+                .survay-tutorial-section-block-subtitle-hosoku
+                  |※マンツーマン＝お客様に対して1対1の専属で担当し、他の美容師に交代しない
+                .survay-tutorial-section-block-subtitle-chuui
+                  |※どれか１つ選択
 
+              .survay-tutorial-section-block-questions.survay-tutorial-section-block-questions-width-80
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='salonwork-03-radio-value01', name='salonwork-03-radio', type='radio')
+                    label(for='salonwork-03-radio-value01')
+                      span
+                        |アシスタント有りです
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='salonwork-03-radio-value02', name='salonwork-03-radio', type='radio')
+                    label(for='salonwork-03-radio-value02')
+                      span
+                        |たまにアシスタントがつきます
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='salonwork-03-radio-value03', name='salonwork-03-radio', type='radio')
+                    label(for='salonwork-03-radio-value03')
+                      span|マンツーマン対応が多いです
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='salonwork-03-radio-value04', name='salonwork-03-radio', type='radio')
+                    label(for='salonwork-03-radio-value04')
+                      span 100%マンツーマン対応です
+            //▼salonwork-04
+            .survay-tutorial-section-block
+              .survay-tutorial-section-block-subtitle
+                .survay-tutorial-section-block-subtitle-text
+                  |シャンプーや流しは自分でorアシスタント？
+                .survay-tutorial-section-block-subtitle-chuui
+                  |※どれか１つ選択
+              .survay-tutorial-section-block-questions.survay-tutorial-section-block-questions-width-80
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='salonwork-04-radio-value01', name='salonwork-04-radio', type='radio')
+                    label(for='salonwork-04-radio-value01')
+                      span
+                        |100%自分でシャンプーします
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='salonwork-04-radio-value02', name='salonwork-04-radio', type='radio')
+                    label(for='salonwork-04-radio-value02')
+                      span
+                        |アシスタントがシャンプーします
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='salonwork-04-radio-value03', name='salonwork-04-radio', type='radio')
+                    label(for='salonwork-04-radio-value03')
+                      span|たまにアシスタントが対応します
+                  .survay-tutorial-section-block-questions-input
+                    input.checkbox-input(id='salonwork-04-radio-value04', name='salonwork-04-radio', type='radio')
+                    label(for='salonwork-04-radio-value04')
+                      span たまに自分が対応します
+      //▼▼▼submit
+      button.button-tutorial-submit(type='button', onclick="location.href='stekina-discount-personal.html'") 完了
+   script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+   script(type='text/javascript').
+    $(document).ready(function () {
+        $(".common-matching-dialog-first").hide();
+        setTimeout(function () {
+            $(".survay-dialog-bg").fadeIn();
+            $(".survay-dialog-mykarte").fadeIn();
+        }, 500);
+    });
+    $('.survay-dialog-mykarte-button-triger').on('click', function() {
+      $('.survay-dialog-mykarte#confirm-reserve').hide();
+      $('.survay-dialog-bg').hide();
+    });
+   script(type='text/javascript').
+    $( _=> {
+      // console.log( $.unique( $( 'input[type="radio"]' ).map( ( i, e ) => e.name ).get() ).length ); // ラジオボタンの種類の数
+      const $radios = $( 'input[type="radio"]' );
+      const radio_names = $.unique( $radios.map( ( i, e ) => e.name ).get() );
+      $radios.on( 'change', () => {
+        $( '.nokori-number' ).html( '' + ( radio_names.length - $radios.filter( ':checked' ).length )  );
+      } ).change();
+    } );

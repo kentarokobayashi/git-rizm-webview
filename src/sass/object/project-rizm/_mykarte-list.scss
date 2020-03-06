@@ -392,9 +392,16 @@
         color: $cl-gray-dark;
         margin: 0 0 45px;
     }
+    .common-dialog-mykarte-text {
+        font-size: 25px;
+        color: $cl-gray-dark;
+        margin: 0 auto 45px;
+        width: 90%;
+    }
     .common-dialog-mykarte-button {
         width: 80%;
-        a {
+        a,
+        button {
             width: 100%;
             display: block;
             background: $cl-lime;
@@ -410,14 +417,27 @@
             }
         }
     }
-    .common-dialog-mykarte-finish a {
-        color: $cl-lime;
-        text-decoration: none;
-        @include common-mykarte-archive-list-font-size-xl;
-        margin: 30px 0 0;
+    button.common-dialog-mykarte-button {
+        width: 80%;
         display: block;
-        cursor: pointer;
+        background: $cl-lime;
+        padding: 18px 0;
+        border-radius: 8px;
+        text-align: center;
+        @include common-mykarte-archive-list-font-size-xl;
+        color: white;
+        text-decoration: none;
+        margin: 0 0 20px;
     }
+}
+
+.common-dialog-mykarte-finish a {
+    color: $cl-lime;
+    text-decoration: none;
+    @include common-mykarte-archive-list-font-size-xl;
+    margin: 30px 0 0;
+    display: block;
+    cursor: pointer;
 }
 
 .common-dialog-mykarte-bg {

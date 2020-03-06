@@ -16,14 +16,14 @@
 }
 
 @mixin font-size-stekina-discount-m {
-    font-size: 16px;
+    font-size: 15.5px;
     @include mq-down(iphone5) {
         font-size: 13px;
     }
 }
 
 @mixin font-size-stekina-discount-l {
-    font-size: 25px;
+    font-size: 24px;
     @include mq-down(iphone5) {
         font-size: 21.3px;
     }
@@ -45,6 +45,10 @@
 
 @mixin font-size-stekina-discount-xxxl {
     font-size: 50px;
+}
+
+body.discount-app_banner {
+    background-color: #f0f0f0;
 }
 
 
@@ -127,6 +131,14 @@
     .stekina-discount-bar-text-large {
         @include font-size-stekina-discount-l();
         font-family: "k-6", KoburinaGoStd-W6;
+        margin: 0 -6px 0 0;
+    }
+    .stekina-discount-bar-text-tassei {
+        font-family: "k-6", KoburinaGoStd-W6;
+        font-size: 19.5px;
+        @include mq-down(iphone5) {
+            font-size: 17px;
+        }
     }
     .stekina-discount-bar-text-yen {
         font-family: "k-6", KoburinaGoStd-W6;
@@ -136,11 +148,14 @@
         position: absolute;
         left: 7px;
         top: 0;
-        bottom: -4px;
+        bottom: 0px;
         color: white;
         margin: auto;
         z-index: 10;
         display: inline-table;
+        .stekina-discount-bar-text-yen {
+            margin: 0 -4px 0 0;
+        }
         div {
             display: inline-block;
             font-family: "k-6", KoburinaGoStd-W6;
@@ -156,7 +171,7 @@
         display: inline-table;
         right: 9.5px;
         top: 0;
-        bottom: -4px;
+        bottom: 0px;
         margin: auto;
         color: white;
         z-index: 10;
@@ -173,6 +188,119 @@
 }
 
 
+/* stekina-discount-bar */
+
+.stekina-discount-bar-app {
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    padding: 4px 4px;
+    width: 92.5%;
+    margin: 10px auto 15px;
+    border-radius: 4px;
+    justify-content: flex-end;
+    display: flex;
+    @include rizm-gradient();
+    .stekina-discount-bar-text-small {
+        font-size: 9.5px;
+        font-family: "k-6", KoburinaGoStd-W6;
+        margin: 0 0px 0 0;
+    }
+    .stekina-discount-bar-text-large {
+        font-size: 24px;
+        font-family: "k-6", KoburinaGoStd-W6;
+        margin: 0 -6px 0 0;
+    }
+    .stekina-discount-bar-text-yen {
+        font-family: "k-6", KoburinaGoStd-W6;
+        font-size: 21px;
+    }
+    .stekina-discount-bar-text-tassei {
+        font-family: "k-6", KoburinaGoStd-W6;
+        font-size: 18px;
+        @include mq-down(iphone5) {
+            font-size: 17px;
+        }
+    }
+    .stekina-discount-bar-left {
+        position: absolute;
+        left: 7px;
+        top: 0;
+        bottom: 0px;
+        color: white;
+        margin: auto;
+        z-index: 10;
+        display: inline-table;
+        @include mq-down(iphone5) {
+            transform-origin: left center;
+            transform: scale(0.83, 0.83);
+        }
+        .stekina-discount-bar-text-yen {
+            margin: 0 -4px 0 0;
+        }
+        div {
+            display: inline-block;
+            font-family: "k-6", KoburinaGoStd-W6;
+        }
+        .stekina-discount-bar-text {}
+        img {
+            width: 20px;
+            margin: 0 3px -2px 0;
+        }
+    }
+    .stekina-discount-bar-right {
+        position: absolute;
+        display: inline-table;
+        right: 15%;
+        top: 0;
+        bottom: 0px;
+        margin: auto;
+        color: white;
+        z-index: 10;
+        @include mq-down(iphone5) {
+            transform-origin: right center;
+            transform: scale(0.83, 0.83);
+            right: 18%;
+        }
+        div {
+            display: inline-block;
+        }
+        .stekina-discount-bar-right-text {}
+    }
+    .stekina-discount-bar-bg {
+        background: $cl-gray-dark;
+        height: 100%;
+        display: inline-block;
+    }
+    .stekina-discount-bar-button-confirm {
+        position: absolute;
+        right: 7px;
+        top: 0;
+        bottom: 0;
+        color: $cl-red;
+        margin: auto;
+        z-index: 10;
+        display: inline-table;
+        background: white;
+        font-size: 7.8px;
+        border: 1px solid $cl-red;
+        border-radius: 3px;
+        padding: 7px 4px;
+        box-shadow: 0 2px 4.5px #000;
+        font-family: "k-6", KoburinaGoStd-W6;
+    }
+}
+
+
+/* アプリバナー用で追加 */
+
+.stekina-discount-bar-app-banner {
+    height: 46px;
+    width: 100%;
+    margin: 0;
+}
+
+
 /* .stekina-discount-content */
 
 .stekina-discount-content {
@@ -186,6 +314,7 @@
         font-size: 12px;
         height: 58px;
         .stekina-discount-content-head-left {
+            font-family: "k-3", KoburinaGoStd-W3;
             text-align: left;
             position: absolute;
             bottom: 8px;
@@ -194,6 +323,9 @@
             @include font-size-stekina-discount-s();
             color: $cl-gray-light;
             letter-spacing: -0.5px;
+            @include mq-down(iphone5) {
+                bottom: 6px;
+            }
         }
         .stekina-discount-content-head-right {
             text-align: right;
@@ -208,6 +340,7 @@
                 @include font-size-stekina-discount-xxl();
                 font-family: "k-6", KoburinaGoStd-W6;
                 @include text-gradient();
+                margin: 0 -4px 0 0;
             }
             .stekina-discount-content-head-right-text {
                 font-family: "k-6", KoburinaGoStd-W6;
@@ -250,18 +383,24 @@
             margin-right: auto;
             margin-bottom: 60px;
             &:last-child {
-                margin-bottom: 0px;
+                margin-bottom: -25px;
             }
             .stekina-discount-content-main-box-title {
                 display: flex;
                 align-items: flex-end;
                 .stekina-discount-content-main-box-title-sub {
+                    font-family: "k-3", KoburinaGoStd-W3;
                     margin: 0 0 22px 4px;
                     color: $cl-gray-light;
                     font-size: 11px;
                 }
             }
             /* checklist */
+            .margin-bottom-10 {
+                .stekina-discount-content-main-box-checklist-top-right-price {
+                    margin: 0 -1px !important;
+                }
+            }
             .stekina-discount-content-main-box-checklist {
                 padding: 0 0 3px;
                 margin-left: 6px;
@@ -270,6 +409,7 @@
                 /* top */
                 span.stekina-discount-content-main-box-checklist-shiny {
                     font-size: 11px;
+                    margin: 0 0 0 -4px;
                 }
                 .stekina-discount-content-main-box-checklist-top {
                     display: flex;
@@ -279,11 +419,7 @@
                     .stekina-discount-content-main-box-checklist-top-button-personal {
                         left: 39%;
                         top: 0;
-                        bottom: 3px;
-                        @include mq-down(iphone5) {
-                            left: 38%;
-                            bottom: 1.5px;
-                        }
+                        bottom: 0px;
                     }
                     .stekina-discount-content-main-box-checklist-top-button {
                         position: absolute;
@@ -304,7 +440,7 @@
                     }
                     .stekina-discount-content-main-box-checklist-top-left {
                         text-align: left;
-                        margin: 0 0 3px 0px;
+                        margin: 0 0 1px 0px;
                     }
                     .stekina-discount-content-main-box-checklist-top-left-text {
                         font-family: "k-6", KoburinaGoStd-W6;
@@ -332,6 +468,7 @@
                         .stekina-discount-content-main-box-checklist-top-right-price {
                             @include font-size-stekina-discount-l();
                             color: $cl-gray-light !important;
+                            margin: 0 -4px;
                         }
                     }
                 }
@@ -347,6 +484,7 @@
                     display: inline-block;
                 }
                 .stekina-discount-content-main-box-checklist-bottom-left {
+                    font-family: "k-3", KoburinaGoStd-W3;
                     color: $cl-gray-light;
                     @include font-size-stekina-discount-s();
                     margin: 0 0 7px;
@@ -362,15 +500,16 @@
                         font-family: "k-6", KoburinaGoStd-W6;
                         @include font-size-stekina-discount-l();
                         color: $cl-gray-light;
+                        margin: 0 -4px 0;
                     }
                 }
                 .stekina-discount-content-main-box-checklist-bottom-button {
                     position: absolute;
                     display: flex;
                     align-items: flex-end;
+                    left: 87px;
                     top: 0;
                     bottom: 2px;
-                    left: 87px;
                     @include mq-down(iphone5) {
                         left: 34px;
                     }
@@ -412,15 +551,10 @@
 
 .stekina-discount-content-main-box-checklist-top-left-icon {
     position: relative;
-    width: 20px;
-    height: 20px;
-    @include mq-down(iphone5) {
-        width: 17px;
-        height: 17px;
-        margin: 0px 2px -4px 0;
-    }
+    width: 18px;
+    height: 18px;
     border-radius: 100px;
-    margin: 0px 3px -3px 0;
+    margin: 0px -2px -3px 0;
     border: $cl-red solid 1px;
     /*
     display: flex !important;
@@ -496,8 +630,11 @@
                 font-family: "k-6", KoburinaGoStd-W6;
                 color: $cl-gray-dark;
             }
+            b {
+                font-family: "k-3", KoburinaGoStd-W3;
+            }
             .hosoku {
-                font-family: "k-3", KoburinaGoStd-W6;
+                font-family: "k-3", KoburinaGoStd-W3;
                 color: $cl-gray-light;
             }
         }
@@ -600,14 +737,14 @@
 
 .common-stekina-discount-title {
     @include rizm-gradient();
+    font-family: "k-6", KoburinaGoStd-W6;
     @include font-size-stekina-discount-l();
     border-radius: 4px;
     color: white;
     display: inline-block;
-    font-weight: bold;
+    padding: 8px 14px;
     margin: 0 0 15px;
     letter-spacing: -1px !important;
-    padding: 8px 14px;
     @include mq-down(iphone5) {
         padding: 8px 10px;
     }
@@ -649,10 +786,6 @@
             font-family: "k-6", KoburinaGoStd-W6;
         }
     }
-}
-
-.stekina-discount-about-block-box-img {
-    margin: 10px 0;
 }
 
 

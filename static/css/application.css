@@ -7957,9 +7957,15 @@ body.liked div.dot.dot-8 {
     font-size: 19.5px;
     color: #4d4d4d;
     margin: 0 0 45px; }
+  .common-dialog-mykarte .common-dialog-mykarte-text {
+    font-size: 25px;
+    color: #4d4d4d;
+    margin: 0 auto 45px;
+    width: 90%; }
   .common-dialog-mykarte .common-dialog-mykarte-button {
     width: 80%; }
-    .common-dialog-mykarte .common-dialog-mykarte-button a {
+    .common-dialog-mykarte .common-dialog-mykarte-button a,
+    .common-dialog-mykarte .common-dialog-mykarte-button button {
       width: 100%;
       display: block;
       background: #15bfab;
@@ -7970,15 +7976,28 @@ body.liked div.dot.dot-8 {
       color: white;
       text-decoration: none;
       margin: 0 0 20px; }
-      .common-dialog-mykarte .common-dialog-mykarte-button a:last-child() {
+      .common-dialog-mykarte .common-dialog-mykarte-button a:last-child(),
+      .common-dialog-mykarte .common-dialog-mykarte-button button:last-child() {
         margin: 0 0 0px; }
-  .common-dialog-mykarte .common-dialog-mykarte-finish a {
-    color: #15bfab;
-    text-decoration: none;
-    font-size: 19.5px;
-    margin: 30px 0 0;
+  .common-dialog-mykarte button.common-dialog-mykarte-button {
+    width: 80%;
     display: block;
-    cursor: pointer; }
+    background: #15bfab;
+    padding: 18px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 19.5px;
+    color: white;
+    text-decoration: none;
+    margin: 0 0 20px; }
+
+.common-dialog-mykarte-finish a {
+  color: #15bfab;
+  text-decoration: none;
+  font-size: 19.5px;
+  margin: 30px 0 0;
+  display: block;
+  cursor: pointer; }
 
 .common-dialog-mykarte-bg {
   width: 100%;

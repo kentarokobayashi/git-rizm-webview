@@ -9,10 +9,10 @@
 }
 
 @mixin tutorial-01-font-size-ll {
-    font-size: 27.5px;
+    font-size: 30px;
     line-height: 1.2;
     @include mq-down(iphone5) {
-        font-size: 23px;
+        font-size: 26px;
     }
 }
 
@@ -145,12 +145,12 @@
         margin: 0 auto 30px;
     }
     .survay-tutorial-section-block-subtitle {
-        text-align: center !important;
-        justify-content: center;
+        text-align: left !important;
     }
     .survay-tutorial-section-block-subtitle-text {
-        text-align: center !important;
+        text-align: left !important;
     }
+    .survay-tutorial-section-block-subtitle-chuui {}
 }
 
 
@@ -183,10 +183,11 @@
     /* justify-content: center; */
     margin: 0 0 0px;
     border: none;
-    width: 90%;
+    width: 93.5%;
     padding: 10px 10px;
     margin: 0 auto 15px;
     border-radius: 10px;
+    text-align: left !important;
     @include tutorial-01-font-size-ll;
     @include mq-down(iphone5) {
         margin: 0 auto 5px;
@@ -194,7 +195,7 @@
     }
     .survay-tutorial-section-block-subtitle-text,
     .survay-tutorial-section-block-subtitle-number {
-        color: #4d4d4d;
+        color: $cl-stekina-black;
         font-family: "k-6", KoburinaGoStd-W6;
         text-align: left;
         line-height: 1.25;
@@ -209,6 +210,18 @@
             font-size: 18px;
         }
     }
+    .survay-tutorial-section-block-subtitle-chuui {
+        color: $cl-red;
+        margin: 5px 0 0;
+        @include tutorial-01-font-size-m;
+        font-family: "k-6", KoburinaGoStd-W6;
+    }
+    .survay-tutorial-section-block-subtitle-hosoku {
+        color: $cl-gray-light;
+        margin: 5px 0 0;
+        @include tutorial-01-font-size-m;
+        font-family: "k-6", KoburinaGoStd-W6;
+    }
 }
 
 .survay-tutorial-section-block-subtitle-02 {
@@ -216,18 +229,19 @@
     position: relative;
     /* justify-content: center; */
     border: none;
-    width: 90%;
+    width: 92.5%;
     padding: 10px 10px;
     margin: 0 auto 5px;
     border-radius: 10px;
     text-align: left;
+    color: $cl-stekina-black;
     @include tutorial-01-font-size-ll;
     @include mq-down(iphone5) {
         width: 95%;
     }
     .survay-tutorial-section-block-subtitle-text,
     .survay-tutorial-section-block-subtitle-number {
-        color: #4d4d4d;
+        color: $cl-stekina-black;
         font-family: "k-6", KoburinaGoStd-W6;
         font-weight: bold;
         text-align: left;
@@ -252,10 +266,18 @@
     @include tutorial-01-font-size-s;
 }
 
+.survay-tutorial-section-blocks>.survay-tutorial-section-block:first-child {
+    margin: 30px 0 0 !important;
+}
+
+.survay-tutorial-section-blocks .survay-tutorial-section-block {
+    margin: 90px 0 0;
+}
+
 .survay-tutorial-section-block-questions {
     position: relative;
-    margin: 0 auto 90px;
-    width: 82%;
+    margin: 0px auto 0px;
+    width: 86.5%;
     @include mq-down(iphone5) {
         margin: 0 auto 75px;
         width: 86% !important;
@@ -327,16 +349,20 @@
 /* 入力関連 */
 
 .survay-tutorial-wrapper-01 {
-    margin: 0 0 180px;
+    margin: 90px 0 60px;
+    label span {
+        width: 90%;
+    }
     label,
     input[type="checkbox"] {
         cursor: pointer;
         display: flex;
-        align-items: center;
-        margin: 0 0 12px;
+        align-items: top;
+        /* margin: 0 0 12px;*/
+        margin: 0 0 16px;
         color: $cl-gray-dark;
-        @include tutorial-01-font-size-m;
-        font-family: "k-3", KoburinaGoStd-W3;
+        @include tutorial-01-font-size-l;
+        font-family: "k-6", KoburinaGoStd-W6;
     }
     input[type="checkbox"],
     input[type="radio"] {
@@ -492,4 +518,126 @@
 
 .questions-margin-bottom-200 {
     margin-bottom: 200px;
+}
+
+.survay-dialog-mykarte {
+    position: fixed;
+    width: 90%;
+    max-width: 383px;
+    height: 470px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1000000;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .survay-dialog-mykarte-title {
+        font-size: 22px;
+        color: $cl-stekina-black;
+        margin: 15px 0 45px;
+        font-family: "k-6", KoburinaGoStd-W3;
+    }
+    .survay-dialog-mykarte-text {
+        font-size: 32px;
+        color: $cl-stekina-black;
+        margin: 0 auto 15px;
+        width: 90%;
+        font-family: "k-6", KoburinaGoStd-W6;
+    }
+    .survay-dialog-mykarte-sublink {
+        margin: 0 0 45px;
+        a {
+            font-size: 14px;
+            color: $cl-lime;
+        }
+    }
+    .survay-dialog-mykarte-button {
+        width: 80%;
+        a,
+        button {
+            width: 100%;
+            display: block;
+            background: $cl-lime;
+            padding: 18px 0;
+            border-radius: 8px;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            margin: 0 0 20px;
+            border: none;
+            &:last-child() {
+                margin: 0 0 0px;
+            }
+        }
+    }
+    button.survay-dialog-mykarte-button {
+        font-family: "k-6", KoburinaGoStd-W6;
+        letter-spacing: 2px;
+        width: 80%;
+        display: block;
+        background: $cl-lime;
+        padding: 18px 0;
+        border-radius: 8px;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        margin: 0 0 20px;
+        border: none;
+        font-size: 22px;
+        box-shadow: 0px 3px 5px #aaa;
+    }
+}
+
+.survay-dialog-bg {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 100000;
+}
+
+.survay-nokori-header {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    height: 55px;
+    p {
+        font-size: 14px;
+        color: white;
+        font-family: "k-6", KoburinaGoStd-W6;
+        letter-spacing: 1px;
+    }
+    .nokori-number {
+        font-size: 28px;
+        color: white;
+        font-family: "k-6", KoburinaGoStd-W6;
+        margin: 0 6px 0 0;
+    }
+}
+
+.survay-nokori-header-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    z-index: 10;
+    @include lime-gradient();
+    opacity: 0.9;
 }
