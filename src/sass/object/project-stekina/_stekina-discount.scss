@@ -605,7 +605,10 @@ body.discount-app_banner {
             color: $cl-stekina-black;
             font-family: "k-6", KoburinaGoStd-W6;
             letter-spacing: -0.5px;
-            margin: 0 0 5px;
+            margin: 0 0 10px;
+        }
+        .stekina-discount-about-block-box-img {
+            margin: 0 0 10px;
         }
         .stekina-discount-about-block-box-text {
             font-size: 14px;
@@ -783,6 +786,32 @@ body.discount-app_banner {
             color: white;
             margin: 3px 0 3px !important;
             font-size: 13.5px;
+            font-family: "k-6", KoburinaGoStd-W6;
+        }
+    }
+}
+
+.stekina-discount-about-note {
+    margin: 15px 0 60px;
+    .stekina-discount-about-note-title {
+        text-align: center;
+        font-family: "k-6", KoburinaGoStd-W6;
+        font-size: 18px;
+        margin: 0 0 7px;
+        span {
+            @include text-gradient();
+            font-family: "k-6", KoburinaGoStd-W6;
+            margin: 0 3px;
+        }
+    }
+    .stekina-discount-about-note-text {
+        font-family: "k-3", KoburinaGoStd-W3;
+        text-align: center;
+        color: $cl-gray-dark;
+        font-size: 14.5px;
+        line-height: 1.5;
+        b {
+            color: $cl-stekina-black;
             font-family: "k-6", KoburinaGoStd-W6;
         }
     }

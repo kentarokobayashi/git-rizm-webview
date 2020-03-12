@@ -8620,10 +8620,12 @@ body.discount-app_banner {
     color: #262626;
     font-family: "k-6", KoburinaGoStd-W6;
     letter-spacing: -0.5px;
-    margin: 0 0 5px; }
+    margin: 0 0 10px; }
     @media screen and (max-width: 374px) {
       .stekina-discount-about .stekina-discount-about-block-box .stekina-discount-about-block-box-title {
         font-size: 21.3px; } }
+  .stekina-discount-about .stekina-discount-about-block-box .stekina-discount-about-block-box-img {
+    margin: 0 0 10px; }
   .stekina-discount-about .stekina-discount-about-block-box .stekina-discount-about-block-box-text {
     font-size: 14px;
     color: #4d4d4d;
@@ -8805,6 +8807,30 @@ body.discount-app_banner {
   margin: 3px 0 3px !important;
   font-size: 13.5px;
   font-family: "k-6", KoburinaGoStd-W6; }
+
+.stekina-discount-about-note {
+  margin: 15px 0 60px; }
+  .stekina-discount-about-note .stekina-discount-about-note-title {
+    text-align: center;
+    font-family: "k-6", KoburinaGoStd-W6;
+    font-size: 18px;
+    margin: 0 0 7px; }
+    .stekina-discount-about-note .stekina-discount-about-note-title span {
+      background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
+      background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: "k-6", KoburinaGoStd-W6;
+      margin: 0 3px; }
+  .stekina-discount-about-note .stekina-discount-about-note-text {
+    font-family: "k-3", KoburinaGoStd-W3;
+    text-align: center;
+    color: #4d4d4d;
+    font-size: 14.5px;
+    line-height: 1.5; }
+    .stekina-discount-about-note .stekina-discount-about-note-text b {
+      color: #262626;
+      font-family: "k-6", KoburinaGoStd-W6; }
 
 /* AB Testing */
 /*
