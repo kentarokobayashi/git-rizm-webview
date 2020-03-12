@@ -1,0 +1,105 @@
+- var dateNow = Date.now();
+doctype html
+html(lang='jp')
+  head
+    title 最後の質問です！
+    link(href='static/css/matching.css?'+dateNow, rel='stylesheet')
+    meta(name='viewport', content='width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    meta(charset='UTF-8')
+    style(type='text/css').
+         @font-face {
+          font-family: "k-3";
+          src: url("koburinaStdW3.eot?") format("eot"), url("koburinaStdW3.woff") format("woff");
+        }
+        @font-face {
+          font-family: "k-6";
+          src: url("koburinaStdW6.woff") format("woff"), url("koburinaStdW6.eot?") format("eot");
+        }
+    meta(name='robots', content='noindex,nofollow')
+    //script(src='https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js')
+    script(src='//jpostal-1006.appspot.com/jquery.jpostal.js', type='text/javascript')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
+  body                    
+          .matching-questions-wrapper
+            .matching-questions-head
+              .matching-questions-head-ai
+                img(src='https://stekina.com/wp-content/uploads/icon_stekina-ai-illust.png')
+              .matching-questions-head-speech
+                |ご協力お願いいたします！
+            .matching-questions-content
+                  .matching-questions-content-question-box
+                      .matching-questions-content-question-box-title-black
+                          |⑴ご紹介させていただいた美容師さんの印象はいかがだったでしょうか？
+                      .matching-questions-content-question-box-subtitle
+                          |必須
+                      .matching-questions-content-question-box-checkboxs
+                          .matching-questions-content-checkbox
+                            input.checkbox-input(id='visit-cycle-01', name='visit-cycle', type='checkbox')
+                            label(for='visit-cycle-01')
+                              span AAAAAA
+                          .matching-questions-content-checkbox
+                            input.checkbox-input(id='visit-cycle-02', name='visit-cycle', type='checkbox')
+                            label(for='visit-cycle-02')
+                              span BBBBB 
+                          .matching-questions-content-checkbox
+                            input.checkbox-input(id='visit-cycle-03', name='visit-cycle', type='checkbox')
+                            label(for='visit-cycle-03')
+                              span CCCCCCC
+                          .matching-questions-content-checkbox
+                            input.checkbox-input(id='visit-cycle-04', name='visit-cycle', type='checkbox')
+                            label(for='visit-cycle-04')
+                              span DDDDDDD
+                          .matching-questions-content-checkbox
+                            input.checkbox-input(id='visit-cycle-05', name='visit-cycle', type='checkbox')
+                            label(for='visit-cycle-05')
+                              span EEEEEEEEE
+                      .matching-questions-content-question-box-error
+                              |どれか１つチェックしてください
+                      .matching-questions-content-question-box-textarea
+                         p|上記について具体的にお聞かせくださいませ
+                         textarea#kanso(name='kanso', cols='40', rows='4', maxlength='20', placeholder='こちらに記入してください(任意)')
+
+                  .matching-questions-content-question-box
+                      .matching-questions-content-question-box-title-black
+                          |⑶マッチング機能等がさらにアップデートした際、お知らせを送らせていただいてもよろしいでしょうか？
+                      .matching-questions-content-question-box-subtitle
+                          |必須
+                      .matching-questions-content-question-box-buttons
+                        .matching-questions-content-question-box-buttons-onegai
+                          .matching-questions-content-question-box-buttons-onegai-img
+                            img(src='https://stekina.com/wp-content/uploads/icon_stekina-ai-illust.png')
+                          .matching-questions-content-question-box-buttons-onegai-text
+                            |開発にご協力お願いいたします！ 
+                        button.matching-questions-content-question-box-buttons-agree.matching-questions-content-question-box-buttons-agree-disable
+                          span|OKです
+                        button.matching-questions-content-question-box-buttons-nothankyou.matching-questions-content-question-box-buttons-nothankyou-disable
+                          |興味ありません。結構です
+                      .matching-questions-content-question-box-error
+                              |どれか１つチェックしてください
+                  .matching-questions-content-question-box
+                      .matching-questions-content-question-box-title-black
+                          |直接ヒアリングで5000円プレゼント！もし可能でしたらチェックをお願いいたします
+                      .matching-questions-content-question-box-subtitle
+                          |※直接サービスについてご意見をお伺いさせてくださいませ
+                          br
+                          |※場所は新宿3丁目のオフィスとなります
+                      .matching-questions-content-question-box-checkboxs
+                          .matching-questions-content-checkbox
+                            input.checkbox-input(id='visit-cycle-01', name='visit-cycle', type='checkbox')
+                            label(for='visit-cycle-01')
+                              span 直接ヒアリング可能です
+
+            .matching-questions-footer
+              .matching-questions-footer-text
+                |あなたにピッタリの素敵な
+                br
+                |美容師をご紹介いたします
+              .common-btn
+                a.common-btn-finish#common-btn-finish
+                   |完了
+              .matching-questions-footer-error
+                        p
+                          |未記入の項目があります。
+                          br
+                          |お手数ですが入力をお願いします。

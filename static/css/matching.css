@@ -7078,3 +7078,101 @@ input[type="radio"] {
     border-left: 2px red solid;
     border-top: 2px red solid;
     z-index: 2; }
+
+.matching-questions-content-question-box-title-black {
+  font-size: 28px;
+  font-family: "k-6" !important;
+  color: #262626;
+  line-height: 1.5;
+  margin: 0 0 0px;
+  overflow: hidden;
+  position: relative; }
+  @media screen and (max-width: 374px) {
+    .matching-questions-content-question-box-title-black {
+      font-size: 25px; } }
+
+.matching-questions-content-question-box-textarea {
+  margin: 20px 0 0; }
+  .matching-questions-content-question-box-textarea p {
+    font-size: 13px;
+    font-family: "k-6" !important;
+    text-align: left;
+    margin: 0 10px 10px; }
+  .matching-questions-content-question-box-textarea textarea {
+    border: 1px solid #15bfab;
+    width: 100%;
+    height: 150px;
+    font-size: 13px;
+    color: #4d4d4d;
+    -webkit-appearance: none; }
+
+.matching-questions-content-question-box-buttons {
+  width: 60%;
+  margin: 0 auto; }
+  .matching-questions-content-question-box-buttons .matching-questions-content-question-box-buttons-onegai {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 0 10px; }
+    .matching-questions-content-question-box-buttons .matching-questions-content-question-box-buttons-onegai .matching-questions-content-question-box-buttons-onegai-img {
+      width: 15px;
+      height: 15px; }
+    .matching-questions-content-question-box-buttons .matching-questions-content-question-box-buttons-onegai .matching-questions-content-question-box-buttons-onegai-text {
+      font-size: 12px;
+      background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
+      background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 0 0 0 5px; }
+  .matching-questions-content-question-box-buttons button.matching-questions-content-question-box-buttons-agree-disable {
+    border: solid 1.5px transparent !important;
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), -webkit-linear-gradient(120deg, #e6417a 0%, #ff595b 100%) !important;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(-30deg, #e6417a 0%, #ff595b 100%) !important;
+    background-origin: border-box !important;
+    background-clip: content-box, border-box !important;
+    box-shadow: 2px 1000px 1px #fff inset !important; }
+    .matching-questions-content-question-box-buttons button.matching-questions-content-question-box-buttons-agree-disable span {
+      background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%) !important;
+      background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%) !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important; }
+
+button.matching-questions-content-question-box-buttons-agree {
+  background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
+  background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
+  display: inline-block;
+  padding: 24px 0;
+  text-align: center;
+  width: 100%;
+  color: white;
+  margin: 0 auto 15px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 10px #999;
+  text-decoration: none;
+  font-family: "k-6" !important;
+  font-size: 20px;
+  border: none; }
+  @media screen and (max-width: 374px) {
+    button.matching-questions-content-question-box-buttons-agree {
+      font-size: 17px; } }
+
+button.matching-questions-content-question-box-buttons-nothankyou-disable {
+  opacity: 0.7; }
+
+button.matching-questions-content-question-box-buttons-nothankyou {
+  font-family: "k-6" !important;
+  padding: 24px 0;
+  display: inline-block;
+  color: #8e7f6b;
+  border: 1.5px solid #8e7f6b;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 13px; }
