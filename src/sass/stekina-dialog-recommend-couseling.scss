@@ -1,0 +1,67 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_self
+ */
+
+.common-matching-henkin-wrapper-head-ai {
+    padding: 25px 15px 10px;
+    line-height: 1.5;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        bottom: -10px;
+        left: 25px;
+        margin: 0 auto;
+        border: 16px solid transparent;
+        border-top: 20px solid white;
+        width: 0;
+        height: 0;
+        transform: rotate(180deg);
+    }
+    .common-matching-henkin-wrapper-head-ai-img {
+        width: 21%;
+    }
+    .common-matching-henkin-wrapper-head-ai-text {
+        font-family: "k-6" !important;
+        margin: 0 0 3px;
+        letter-spacing: -0.5px;
+    }
+}
+
+.common-matching-henkin-body {
+    padding: 45px 0;
+    width: 95%;
+    margin: 0 auto 45px;
+    background: white;
+    border-radius: 4px;
+}
+
+.common-matching-henkin-body-02 {
+    width: 95%;
+    margin: 30px auto 0;
+    background: white;
+}
+
+.common-matching-henkin-body-03 {
+    width: 90%;
+    margin: 0px auto 30px;
+    background: white;
+    border-radius: 8px;
+    &:last-child {
+        padding: 0 0 45px;
+    }
+}
