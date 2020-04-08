@@ -1,7 +1,6 @@
-    /*
 @font-face {
     font-family: "koburina";
-    src: font-url("koburinaStdW3.woff") format('woff');
+    src: url("https://limehair.jp/static/fonts/koburinaStdW3.eot?") format("eot"), url("https://limehair.jp/static/fonts/koburinaStdW3.woff2") format("woff2"), url("https://limehair.jp/static/fonts/koburinaStdW3.woff") format("woff");
     font-display: swap;
     font-weight: normal;
     font-style: normal;
@@ -9,357 +8,384 @@
 
 @font-face {
     font-family: "koburina";
-    src: font-url("koburinaStdW6.woff") format('woff');
+    src: url("https://limehair.jp/static/fonts/koburinaStdW6.eot?") format("eot"), url("https://limehair.jp/static/fonts/koburinaStdW6.woff2") format("woff2"), url("https://limehair.jp/static/fonts/koburinaStdW6.woff") format("woff");
     font-display: swap;
     font-weight: bold;
     font-style: normal;
 }
-*/
-    
-    @font-face {
-        font-family: "koburina";
-        src: url("https://limehair.jp/static/fonts/koburinaStdW3.eot?") format("eot"), url("https://limehair.jp/static/fonts/koburinaStdW3.woff2") format("woff2"), url("https://limehair.jp/static/fonts/koburinaStdW3.woff") format("woff");
-        font-display: swap;
-        font-weight: normal;
-        font-style: normal;
+
+@font-face {
+    font-family: "k-3";
+    src: url("koburinaStdW3.eot?") format("eot"), url("koburinaStdW3.woff") format("woff");
+}
+
+@font-face {
+    font-family: "k-6";
+    src: url("koburinaStdW6.woff") format("woff"), url("koburinaStdW6.eot?") format("eot");
+}
+
+@mixin koburina-regular {
+    font-family: "koburina", 'DIN Alternate', 'Noto San,s JP', 'ヒラギノ角ゴ ProN W6', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W6', sans-serif;
+}
+
+@mixin koburina-bold {
+    font-family: "koburina", 'DIN Alternate', 'Noto San,s JP', 'ヒラギノ角ゴ ProN W6', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W6', sans-serif;
+    font-weight: bold;
+}
+
+body,
+html,
+div,
+p,
+span,
+a {
+    font-family: "koburina", 'DIN Alternate', 'Noto San,s JP', 'ヒラギノ角ゴ ProN W6', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W6', sans-serif;
+}
+
+.media-stekina {
+    background: $cl-stekina-brown-light;
+}
+
+.wrapper-stekina-media {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.stekina-media-mv {
+    position: relative;
+    &:before {
+        width: 100%;
+        height: 100%;
+        right: 0px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: block;
+        content: "";
+        z-index: 2;
+        position: absolute;
     }
-    
-    @font-face {
-        font-family: "koburina";
-        src: url("https://limehair.jp/static/fonts/koburinaStdW6.eot?") format("eot"), url("https://limehair.jp/static/fonts/koburinaStdW6.woff2") format("woff2"), url("https://limehair.jp/static/fonts/koburinaStdW6.woff") format("woff");
-        font-display: swap;
+    &:after {
+        width: 100%;
+        height: 90px;
+        right: 0px;
+        top: 0;
+        margin: auto;
+        background-image: linear-gradient(0deg, transparent 0%, rgba(0, 0, 0, 0.7) 70%);
+        display: block;
+        content: "";
+        z-index: 4;
+        position: absolute;
+        opacity: 0.7;
+    }
+    h1.stekina-media-head {
+        position: absolute;
+        z-index: 10;
+    }
+    h1.stekina-media-head-center {
+        position: absolute;
+        z-index: 10;
+        top: 15px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 130px;
+    }
+    .stekina-media-head-right {
+        position: absolute;
+        z-index: 10;
+        top: 26px;
+        width: 30px;
+        right: 10px;
+    }
+    .stekina-media-mv-maintext {
+        position: absolute;
+        z-index: 10;
+        top: 135px;
+        line-height: 1.5;
+        left: 0;
+        right: 0;
+        font-size: 30px;
+        letter-spacing: 8px;
+        margin: auto;
+        color: white;
+        text-align: center;
         font-weight: bold;
-        font-style: normal;
-    }
-    
-    @font-face {
-        font-family: "k-3";
-        src: url("koburinaStdW3.eot?") format("eot"), url("koburinaStdW3.woff") format("woff");
-    }
-    
-    @font-face {
-        font-family: "k-6";
-        src: url("koburinaStdW6.woff") format("woff"), url("koburinaStdW6.eot?") format("eot");
-    }
-    
-    @mixin koburina-regular {
-        font-family: "koburina", 'DIN Alternate', 'Noto San,s JP', 'ヒラギノ角ゴ ProN W6', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W6', sans-serif;
-    }
-    
-    @mixin koburina-bold {
-        font-family: "koburina", 'DIN Alternate', 'Noto San,s JP', 'ヒラギノ角ゴ ProN W6', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W6', sans-serif;
-        font-weight: bold;
-    }
-    
-    body,
-    html,
-    div,
-    p,
-    span,
-    a {
         font-family: "koburina", 'DIN Alternate', 'Noto San,s JP', 'ヒラギノ角ゴ ProN W6', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W6', sans-serif !important;
     }
-    
-    .media-stekina {
-        background: $cl-stekina-brown-light;
+    .stekina-media-mv-subtext {
+        font-size: 14px;
+        letter-spacing: 2px;
+        position: absolute;
+        line-height: 1.5;
+        z-index: 10;
+        top: 240px;
+        left: 0;
+        right: 0;
+        margin: 0;
+        margin: auto;
+        color: white;
+        text-align: center;
+        font-family: "koburina", 'DIN Alternate', 'Noto San,s JP', 'ヒラギノ角ゴ ProN W6', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W6', sans-serif !important;
     }
-    
-    .wrapper-stekina-media {
-        max-width: 450px;
-        margin: 0 auto;
-    }
-    
-    .stekina-media-mv {
-        position: relative;
-        &:before {
-            width: 100%;
-            height: 100%;
-            right: 0px;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-            background-color: rgba(0, 0, 0, 0.5);
-            display: block;
-            content: "";
-            z-index: 2;
-            position: absolute;
-        }
-        &:after {
-            width: 100%;
-            height: 90px;
-            right: 0px;
-            top: 0;
-            margin: auto;
-            background-image: linear-gradient(0deg, transparent 0%, rgba(0, 0, 0, 0.7) 70%);
-            display: block;
-            content: "";
-            z-index: 4;
-            position: absolute;
-            opacity: 0.7;
-        }
-        h1.stekina-media-head {
-            position: absolute;
-            z-index: 10;
-        }
-        h1.stekina-media-head-center {
-            position: absolute;
-            z-index: 10;
-            top: 15px;
-            left: 0;
-            right: 0;
-            margin: auto;
-            width: 130px;
-        }
-        .stekina-media-head-right {
-            position: absolute;
-            z-index: 10;
-            top: 26px;
-            width: 30px;
-            right: 10px;
-        }
-        .stekina-media-mv-maintext {
-            position: absolute;
-            z-index: 10;
-            top: 135px;
-            line-height: 1.5;
-            left: 0;
-            right: 0;
-            font-size: 30px;
-            letter-spacing: 8px;
-            margin: auto;
-            color: white;
-            text-align: center;
-            font-weight: bold;
-            font-family: "koburina", 'DIN Alternate', 'Noto San,s JP', 'ヒラギノ角ゴ ProN W6', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W6', sans-serif !important;
-        }
-        .stekina-media-mv-subtext {
-            font-size: 14px;
-            letter-spacing: 2px;
-            position: absolute;
-            line-height: 1.5;
-            z-index: 10;
-            top: 240px;
-            left: 0;
-            right: 0;
-            margin: 0;
-            margin: auto;
-            color: white;
-            text-align: center;
-            font-family: "koburina", 'DIN Alternate', 'Noto San,s JP', 'ヒラギノ角ゴ ProN W6', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W6', sans-serif !important;
-        }
-        .stekina-media-mv-bg img {
-            object-fit: cover;
-            width: 100%;
-            height: 440px;
-        }
-    }
-    
-    .stekina-media-introduction {
-        position: relative;
+    .stekina-media-mv-bg img {
+        object-fit: cover;
         width: 100%;
-        height: 400px;
-        .stekina-media-introduction-video-speech {
-            top: -30px;
-            right: 0;
-            position: absolute;
-            z-index: 10000;
-            width: 120px;
-            animation-name: fuwafuwa;
-            animation-duration: 4s;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease;
-        }
-        .stekina-media-introduction-video-main {
-            position: absolute;
-            z-index: 1000;
-            top: -28px;
-            left: 0;
-            right: 0;
-            margin: auto;
-            width: 50%;
-        }
-        .stekina-media-introduction-video-bg {
-            position: absolute;
-            z-index: 100;
-            top: -90px;
-            left: 0;
-            right: 0;
-            margin: auto;
-            width: 77%;
+        height: 440px;
+    }
+}
+
+.stekina-media-introduction {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    .stekina-media-introduction-video-speech {
+        top: -30px;
+        right: 0;
+        position: absolute;
+        z-index: 10000;
+        width: 120px;
+        animation-name: fuwafuwa;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+    }
+    .stekina-media-introduction-video-main {
+        position: absolute;
+        z-index: 1000;
+        top: -28px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 50%;
+    }
+    .stekina-media-introduction-video-bg {
+        position: absolute;
+        z-index: 100;
+        top: -90px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 77%;
+    }
+}
+
+.stekina-media-recommend-ai {
+    margin: 20px 0 60px;
+    .stekina-media-recommend-ai-title {
+        font-size: 29px;
+        text-align: center;
+        font-weight: bold;
+        line-height: 1.35;
+        color: $cl-stekina-brown;
+        letter-spacing: 3px;
+        margin: 0 0 20px;
+    }
+    .stekina-media-recommend-ai-img {
+        width: 95%;
+        margin: 0 auto 0px;
+    }
+}
+
+.stekina-media-about-stekina {
+    padding: 0 0 60px;
+    background: linear-gradient(180deg, #e2ddd7 0%, #e2ddd7 120px, white 120px, white 100%);
+    .stekina-media-about-stekina-img {
+        padding: 0 25px;
+        img {
+            margin: 0 auto;
+            width: 100%;
+            object-fit: cover;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px #ccc;
         }
     }
-    
-    .stekina-media-recommend-ai {
-        margin: 20px 0 60px;
-        .stekina-media-recommend-ai-title {
-            font-size: 29px;
-            text-align: center;
-            font-weight: bold;
-            line-height: 1.35;
-            color: $cl-stekina-brown;
-            letter-spacing: 3px;
-            margin: 0 0 20px;
-        }
-        .stekina-media-recommend-ai-img {
-            width: 95%;
-            margin: 0 auto 0px;
-        }
+    .stekina-media-about-stekina-text {
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+        line-height: 1.35;
+        color: $cl-stekina-brown;
+        letter-spacing: 3px;
+        margin: 30px 0 20px;
     }
-    
-    .stekina-media-about-stekina {
-        padding: 0 0 60px;
-        background: linear-gradient(180deg, #e2ddd7 0%, #e2ddd7 120px, white 120px, white 100%);
-        .stekina-media-about-stekina-img {
-            padding: 0 25px;
-            img {
-                margin: 0 auto;
-                width: 100%;
-                object-fit: cover;
-                height: 250px;
-                border-radius: 10px;
-                box-shadow: 0 5px 10px #ccc;
-            }
-        }
-        .stekina-media-about-stekina-text {
-            font-size: 20px;
-            text-align: center;
-            font-weight: bold;
-            line-height: 1.35;
-            color: $cl-stekina-brown;
-            letter-spacing: 3px;
-            margin: 30px 0 20px;
-        }
-        .stekina-media-about-stekina-button {
-            margin: 0 0 0px;
-            a {
-                display: table;
-                margin: 10px auto 0;
-                padding: 12px 20px;
-                border-radius: 8px;
-                text-align: center;
-                font-size: 15px;
-                color: #ff595b;
-                font-weight: bold;
-                width: 240px;
-                border: 1px solid #ff595b;
-                color: #ff595b;
-                background: #fff;
-                letter-spacing: 2px;
-                text-decoration: none;
-            }
-        }
-    }
-    
-    .stekina-media-suteki-stylist-of-japan img {
-        padding: 15px 0 0;
-    }
-    
-    .bg-brown {
-        background: #e2ddd7;
-    }
-    
-    .fixed-button-bottom {
-        display: none;
+    .stekina-media-about-stekina-button {
+        margin: 0 0 0px;
         a {
-            @include rizm-gradient();
-            width: 82%;
+            display: table;
+            margin: 10px auto 0;
+            padding: 12px 20px;
             border-radius: 8px;
-            padding: 8px 20px 10px;
-            box-shadow: 0 5px 10px #999;
-            position: fixed;
-            z-index: 999999;
-            bottom: 20px;
-            left: 0;
-            right: 0;
-            margin: auto;
             text-align: center;
-            animation: fuwafuwa-button 2s 0s infinite;
-            img {
-                width: 92%;
-            }
+            font-size: 15px;
+            color: #ff595b;
+            font-weight: bold;
+            width: 240px;
+            border: 1px solid #ff595b;
+            color: #ff595b;
+            background: #fff;
+            letter-spacing: 2px;
+            text-decoration: none;
         }
     }
-    
-    @keyframes fuwafuwa-button {
-        0% {
-            scale: 1;
-            transform: scale(1);
-        }
-        8% {
-            scale: 1.04;
-            transform: scale(1.04);
-        }
-        17% {
-            scale: 1;
-            transform: scale(1);
-        }
-        25% {
-            scale: 1.02;
-            transform: scale(1.02);
-        }
-        38% {
-            scale: 1;
-            transform: scale(1);
-        }
-        100% {
-            scale: 0;
+}
+
+.stekina-media-section {
+    padding: 0 0 60px;
+}
+
+.stekina-media-section-titlearea {
+    padding: 30px 0 0px;
+    .stekina-media-section-titlearea-h2 {
+        font-size: 23px;
+        text-align: center;
+        font-weight: bold;
+        width: 100%;
+        color: $cl-stekina-brown;
+    }
+    .stekina-media-section-titlearea-despection {
+        width: 90%;
+        margin: 10px auto 0;
+        display: flex;
+        color: $cl-stekina-brown;
+        line-height: 1.25;
+        font-size: 12px;
+    }
+}
+
+.stekina-media-suteki-stylist-of-japan img {
+    padding: 15px 0 0;
+}
+
+.bg-gray {
+    background: $cl-gray-lightest;
+}
+
+.bg-brown {
+    background: #e2ddd7;
+}
+
+.fixed-button-bottom {
+    display: none;
+    a {
+        @include rizm-gradient();
+        width: 82%;
+        border-radius: 8px;
+        padding: 8px 20px 10px;
+        box-shadow: 0 5px 10px #999;
+        position: fixed;
+        z-index: 999999;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        animation: fuwafuwa-button 2s 0s infinite;
+        img {
+            width: 92%;
         }
     }
-    
-    .bounceIn {
-        -webkit-animation-name: bounceIn;
-        animation-name: bounceIn;
-        -webkit-animation-duration: .75s;
-        animation-duration: .75s;
+}
+
+.stekina-media-section-contents {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* 読み込みで補完したscss */
+
+.review-card {
+    background: white;
+}
+
+
+/***************
+     以下アニメーション 
+     **************************/
+
+@keyframes fuwafuwa-button {
+    0% {
+        scale: 1;
+        transform: scale(1);
     }
-    
-    @keyframes bounceIn {
-        0%,
-        20%,
-        40%,
-        60%,
-        80%,
-        100% {
-            -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-        }
-        0% {
-            opacity: 0;
-            -webkit-transform: scale3d(.3, .3, .3);
-            transform: scale3d(.3, .3, .3);
-        }
-        20% {
-            -webkit-transform: scale3d(1.1, 1.1, 1.1);
-            transform: scale3d(1.1, 1.1, 1.1);
-        }
-        40% {
-            -webkit-transform: scale3d(.9, .9, .9);
-            transform: scale3d(.9, .9, .9);
-        }
-        60% {
-            opacity: 1;
-            -webkit-transform: scale3d(1.03, 1.03, 1.03);
-            transform: scale3d(1.03, 1.03, 1.03);
-        }
-        80% {
-            -webkit-transform: scale3d(.97, .97, .97);
-            transform: scale3d(.97, .97, .97);
-        }
-        100% {
-            opacity: 1;
-            -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
-        }
+    8% {
+        scale: 1.04;
+        transform: scale(1.04);
     }
-    
-    @keyframes fuwafuwa {
-        0% {
-            -webkit-transform: translate(0, 0);
-        }
-        50% {
-            -webkit-transform: translate(0, -20px);
-        }
-        100% {
-            -webkit-transform: translate(0, 0);
-        }
+    17% {
+        scale: 1;
+        transform: scale(1);
     }
+    25% {
+        scale: 1.02;
+        transform: scale(1.02);
+    }
+    38% {
+        scale: 1;
+        transform: scale(1);
+    }
+    100% {
+        scale: 0;
+    }
+}
+
+.bounceIn {
+    -webkit-animation-name: bounceIn;
+    animation-name: bounceIn;
+    -webkit-animation-duration: .75s;
+    animation-duration: .75s;
+}
+
+@keyframes bounceIn {
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+    20% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    40% {
+        -webkit-transform: scale3d(.9, .9, .9);
+        transform: scale3d(.9, .9, .9);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.03, 1.03, 1.03);
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+    80% {
+        -webkit-transform: scale3d(.97, .97, .97);
+        transform: scale3d(.97, .97, .97);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes fuwafuwa {
+    0% {
+        -webkit-transform: translate(0, 0);
+    }
+    50% {
+        -webkit-transform: translate(0, -20px);
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+    }
+}
