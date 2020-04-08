@@ -15,13 +15,13 @@
 }
 
 @font-face {
-    font-family: "k-3";
-    src: url("koburinaStdW3.eot?") format("eot"), url("koburinaStdW3.woff") format("woff");
+    font-family: "mplus-2c-regular";
+    src: url("https://limehair.jp/salon/wp-content/themes/jupiter/fonts/mplus-2c-regular.eot") format("eot"), url("https://limehair.jp/salon/wp-content/themes/jupiter/fonts/mplus-2c-regular.woff2") format("woff2"), url("https://limehair.jp/salon/wp-content/themes/jupiter/fonts/mplus-2c-regular.woff") format("woff");
 }
 
 @font-face {
-    font-family: "k-6";
-    src: url("koburinaStdW6.woff") format("woff"), url("koburinaStdW6.eot?") format("eot");
+    font-family: "mplus-2c-bold";
+    src: url("https://limehair.jp/salon/wp-content/themes/jupiter/fonts/mplus-2c-bold.eot") format("eot"), url("https://limehair.jp/salon/wp-content/themes/jupiter/fonts/mplus-2c-bold.woff2") format("woff2"), url("https://limehair.jp/salon/wp-content/themes/jupiter/fonts/mplus-2c-bold.woff") format("woff");
 }
 
 @mixin koburina-regular {
@@ -31,6 +31,10 @@
 @mixin koburina-bold {
     font-family: "koburina", 'DIN Alternate', 'Noto San,s JP', 'ヒラギノ角ゴ ProN W6', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W6', sans-serif;
     font-weight: bold;
+}
+
+body {
+    max-width: 2000px!important;
 }
 
 body,
@@ -43,7 +47,7 @@ a {
 }
 
 .media-stekina {
-    background: $cl-stekina-brown-light;
+    background: #262626;
 }
 
 .wrapper-stekina-media {
@@ -136,6 +140,15 @@ a {
     }
 }
 
+.wrapper-cl-stekina-brown-light {
+    background: $cl-stekina-brown-light;
+    width: 100%;
+}
+
+.wrapper-stekina-media {
+    background: $cl-stekina-brown-light;
+}
+
 .stekina-media-introduction {
     position: relative;
     width: 100%;
@@ -154,11 +167,11 @@ a {
     .stekina-media-introduction-video-main {
         position: absolute;
         z-index: 1000;
-        top: -28px;
+        top: -32px;
         left: 0;
         right: 0;
         margin: auto;
-        width: 50%;
+        width: 52%;
     }
     .stekina-media-introduction-video-bg {
         position: absolute;
@@ -172,7 +185,7 @@ a {
 }
 
 .stekina-media-recommend-ai {
-    margin: 20px 0 60px;
+    margin: 20px 0 90px;
     .stekina-media-recommend-ai-title {
         font-size: 29px;
         text-align: center;
@@ -186,10 +199,53 @@ a {
         width: 95%;
         margin: 0 auto 0px;
     }
+    .stekina-media-recommend-ai-fukidashi {
+        width: 90%;
+        margin: 0 auto 0px;
+        background: white;
+        border-radius: 10px;
+        padding: 20px;
+        line-height: 1.5;
+        margin: 20px auto 0;
+        position: relative;
+        font-family: "koburina";
+        font-weight: bold !important;
+        .stekina-media-recommend-ai-fukidashi-button {
+            a {
+                /*@include rizm-gradient(); */
+                background-color: #00c300;
+                width: 100%;
+                border-radius: 8px;
+                padding: 10px 7px 8px 12px;
+                box-shadow: 0 5px 10px #999;
+                margin: 15px auto;
+                text-align: center;
+                display: block;
+                animation: fuwafuwa-button 2s 0s infinite;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        &:before {
+            position: absolute;
+            content: "";
+            display: block;
+            margin: 0 auto;
+            width: 15px;
+            height: 15px;
+            top: -8px;
+            left: 30px;
+            -webkit-transform: rotate(180deg);
+            transform: rotate(45deg);
+            background: white;
+            z-index: 2;
+        }
+    }
 }
 
 .stekina-media-about-stekina {
-    padding: 0 0 60px;
+    padding: 0 0 75px;
     background: linear-gradient(180deg, #e2ddd7 0%, #e2ddd7 120px, white 120px, white 100%);
     .stekina-media-about-stekina-img {
         padding: 0 25px;
@@ -197,7 +253,7 @@ a {
             margin: 0 auto;
             width: 100%;
             object-fit: cover;
-            height: 250px;
+            height: 230px;
             border-radius: 10px;
             box-shadow: 0 5px 10px #ccc;
         }
@@ -206,9 +262,9 @@ a {
         font-size: 20px;
         text-align: center;
         font-weight: bold;
-        line-height: 1.35;
+        line-height: 1.5;
         color: $cl-stekina-brown;
-        letter-spacing: 3px;
+        letter-spacing: 4.2px;
         margin: 30px 0 20px;
     }
     .stekina-media-about-stekina-button {
@@ -216,13 +272,13 @@ a {
         a {
             display: table;
             margin: 10px auto 0;
-            padding: 12px 20px;
+            padding: 17px 20px;
             border-radius: 8px;
             text-align: center;
             font-size: 15px;
             color: #ff595b;
             font-weight: bold;
-            width: 240px;
+            width: 260px;
             border: 1px solid #ff595b;
             color: #ff595b;
             background: #fff;
@@ -233,17 +289,23 @@ a {
 }
 
 .stekina-media-section {
-    padding: 0 0 60px;
+    padding: 0 0 45px;
 }
 
 .stekina-media-section-titlearea {
-    padding: 30px 0 0px;
+    padding: 45px 0 0px;
     .stekina-media-section-titlearea-h2 {
         font-size: 23px;
         text-align: center;
         font-weight: bold;
         width: 100%;
         color: $cl-stekina-brown;
+    }
+    .stekina-media-section-titlearea-h2-margin-adjust {
+        margin: 0 auto -12px;
+    }
+    .stekina-media-section-titlearea-black {
+        color: $cl-stekina-black;
     }
     .stekina-media-section-titlearea-despection {
         width: 90%;
@@ -252,6 +314,53 @@ a {
         color: $cl-stekina-brown;
         line-height: 1.25;
         font-size: 12px;
+    }
+}
+
+.stekina-media-section-pagenation-backnext {
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 15px 10px 10px;
+    padding: 0 0 0px;
+    padding: 0 2px;
+    width: 100%;
+    .stekina-media-section-pagenation-left,
+    .stekina-media-section-pagenation-right {
+        width: 32%;
+        padding: 0 2px;
+    }
+    .stekina-media-section-pagenation-button {
+        width: 100%;
+        margin: 0 auto;
+        a {
+            display: table;
+            width: 100%;
+            margin: 10px auto 0;
+            padding: 8px 10px;
+            text-align: center;
+            font-size: 14px;
+            border: 0.5px solid $cl-gray-dark;
+            color: #4d4d4d;
+            background: #fff;
+            font-weight: normal !important;
+            border-radius: 6px;
+            text-decoration: none;
+            font-family: "mplus-2c-regular", sans-serif !important;
+            &:after {
+                content: "";
+                width: 6px;
+                height: 14px;
+                display: inline-block;
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin: 0px -1px 0px 7px;
+                background-image: url(https://assets.stekina.com/static/img/icon/icn-arrow-next.svg);
+                vertical-align: middle;
+            }
+        }
     }
 }
 
@@ -270,10 +379,11 @@ a {
 .fixed-button-bottom {
     display: none;
     a {
-        @include rizm-gradient();
-        width: 82%;
+        /* @include rizm-gradient();*/
+        background-color: #00c300;
+        width: 86.5%;
         border-radius: 8px;
-        padding: 8px 20px 10px;
+        padding: 10px 7px 8px 12px;
         box-shadow: 0 5px 10px #999;
         position: fixed;
         z-index: 999999;
@@ -284,7 +394,7 @@ a {
         text-align: center;
         animation: fuwafuwa-button 2s 0s infinite;
         img {
-            width: 92%;
+            width: 98%;
         }
     }
 }
@@ -299,6 +409,51 @@ a {
 
 .review-card {
     background: white;
+}
+
+.review-card-header-title-name,
+.review-card-header-title-name {
+    font-family: "mplus-2c-regular", sans-serif !important;
+}
+
+ul.c-tag-middle a {
+    font-family: "mplus-2c-regular", sans-serif !important;
+}
+
+.review-card-contents-bunsho-readmore a {
+    font-family: "mplus-2c-regular", sans-serif !important;
+}
+
+.love-button-count span {
+    font-family: "mplus-2c-regular", sans-serif !important;
+}
+
+footer {
+    background: #262626 !important;
+    padding: 0px 0 150px !important;
+    .stekina-media-footer-banner {
+        width: 90%;
+        margin: 0 auto;
+        padding: 30px 0 0;
+    }
+    .stekina-media-footer-navi {
+        margin: 90px auto 60px;
+        display: flex;
+        justify-content: center;
+        a {
+            color: white;
+        }
+        div {
+            margin: 0 3px;
+            color: #4a4a4a;
+            font-size: 13.5px;
+        }
+    }
+    .stekina-media-footer-copyright {
+        color: #4d4d4d;
+        font-size: 10px;
+        text-align: center;
+    }
 }
 
 

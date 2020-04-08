@@ -5625,12 +5625,15 @@ a.panel-block:hover {
   font-style: normal; }
 
 @font-face {
-  font-family: "k-3";
-  src: url("koburinaStdW3.eot?") format("eot"), url("koburinaStdW3.woff") format("woff"); }
+  font-family: "mplus-2c-regular";
+  src: url("https://limehair.jp/salon/wp-content/themes/jupiter/fonts/mplus-2c-regular.eot") format("eot"), url("https://limehair.jp/salon/wp-content/themes/jupiter/fonts/mplus-2c-regular.woff2") format("woff2"), url("https://limehair.jp/salon/wp-content/themes/jupiter/fonts/mplus-2c-regular.woff") format("woff"); }
 
 @font-face {
-  font-family: "k-6";
-  src: url("koburinaStdW6.woff") format("woff"), url("koburinaStdW6.eot?") format("eot"); }
+  font-family: "mplus-2c-bold";
+  src: url("https://limehair.jp/salon/wp-content/themes/jupiter/fonts/mplus-2c-bold.eot") format("eot"), url("https://limehair.jp/salon/wp-content/themes/jupiter/fonts/mplus-2c-bold.woff2") format("woff2"), url("https://limehair.jp/salon/wp-content/themes/jupiter/fonts/mplus-2c-bold.woff") format("woff"); }
+
+body {
+  max-width: 2000px !important; }
 
 body,
 html,
@@ -5641,7 +5644,7 @@ a {
   font-family: "koburina", 'DIN Alternate', 'Noto San,s JP', 'ヒラギノ角ゴ ProN W6', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W6', sans-serif; }
 
 .media-stekina {
-  background: #e2ddd7; }
+  background: #262626; }
 
 .wrapper-stekina-media {
   max-width: 450px;
@@ -5725,6 +5728,13 @@ a {
     width: 100%;
     height: 440px; }
 
+.wrapper-cl-stekina-brown-light {
+  background: #e2ddd7;
+  width: 100%; }
+
+.wrapper-stekina-media {
+  background: #e2ddd7; }
+
 .stekina-media-introduction {
   position: relative;
   width: 100%;
@@ -5746,11 +5756,11 @@ a {
   .stekina-media-introduction .stekina-media-introduction-video-main {
     position: absolute;
     z-index: 1000;
-    top: -28px;
+    top: -32px;
     left: 0;
     right: 0;
     margin: auto;
-    width: 50%; }
+    width: 52%; }
   .stekina-media-introduction .stekina-media-introduction-video-bg {
     position: absolute;
     z-index: 100;
@@ -5761,7 +5771,7 @@ a {
     width: 77%; }
 
 .stekina-media-recommend-ai {
-  margin: 20px 0 60px; }
+  margin: 20px 0 90px; }
   .stekina-media-recommend-ai .stekina-media-recommend-ai-title {
     font-size: 29px;
     text-align: center;
@@ -5773,9 +5783,47 @@ a {
   .stekina-media-recommend-ai .stekina-media-recommend-ai-img {
     width: 95%;
     margin: 0 auto 0px; }
+  .stekina-media-recommend-ai .stekina-media-recommend-ai-fukidashi {
+    width: 90%;
+    margin: 0 auto 0px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    line-height: 1.5;
+    margin: 20px auto 0;
+    position: relative;
+    font-family: "koburina";
+    font-weight: bold !important; }
+    .stekina-media-recommend-ai .stekina-media-recommend-ai-fukidashi .stekina-media-recommend-ai-fukidashi-button a {
+      /*@include rizm-gradient(); */
+      background-color: #00c300;
+      width: 100%;
+      border-radius: 8px;
+      padding: 10px 7px 8px 12px;
+      box-shadow: 0 5px 10px #999;
+      margin: 15px auto;
+      text-align: center;
+      display: block;
+      -webkit-animation: fuwafuwa-button 2s 0s infinite;
+              animation: fuwafuwa-button 2s 0s infinite; }
+      .stekina-media-recommend-ai .stekina-media-recommend-ai-fukidashi .stekina-media-recommend-ai-fukidashi-button a img {
+        width: 100%; }
+    .stekina-media-recommend-ai .stekina-media-recommend-ai-fukidashi:before {
+      position: absolute;
+      content: "";
+      display: block;
+      margin: 0 auto;
+      width: 15px;
+      height: 15px;
+      top: -8px;
+      left: 30px;
+      -webkit-transform: rotate(180deg);
+      transform: rotate(45deg);
+      background: white;
+      z-index: 2; }
 
 .stekina-media-about-stekina {
-  padding: 0 0 60px;
+  padding: 0 0 75px;
   background: -webkit-linear-gradient(top, #e2ddd7 0%, #e2ddd7 120px, white 120px, white 100%);
   background: linear-gradient(180deg, #e2ddd7 0%, #e2ddd7 120px, white 120px, white 100%); }
   .stekina-media-about-stekina .stekina-media-about-stekina-img {
@@ -5785,29 +5833,29 @@ a {
       width: 100%;
       -o-object-fit: cover;
          object-fit: cover;
-      height: 250px;
+      height: 230px;
       border-radius: 10px;
       box-shadow: 0 5px 10px #ccc; }
   .stekina-media-about-stekina .stekina-media-about-stekina-text {
     font-size: 20px;
     text-align: center;
     font-weight: bold;
-    line-height: 1.35;
+    line-height: 1.5;
     color: #8e7f6b;
-    letter-spacing: 3px;
+    letter-spacing: 4.2px;
     margin: 30px 0 20px; }
   .stekina-media-about-stekina .stekina-media-about-stekina-button {
     margin: 0 0 0px; }
     .stekina-media-about-stekina .stekina-media-about-stekina-button a {
       display: table;
       margin: 10px auto 0;
-      padding: 12px 20px;
+      padding: 17px 20px;
       border-radius: 8px;
       text-align: center;
       font-size: 15px;
       color: #ff595b;
       font-weight: bold;
-      width: 240px;
+      width: 260px;
       border: 1px solid #ff595b;
       color: #ff595b;
       background: #fff;
@@ -5815,16 +5863,20 @@ a {
       text-decoration: none; }
 
 .stekina-media-section {
-  padding: 0 0 60px; }
+  padding: 0 0 45px; }
 
 .stekina-media-section-titlearea {
-  padding: 30px 0 0px; }
+  padding: 45px 0 0px; }
   .stekina-media-section-titlearea .stekina-media-section-titlearea-h2 {
     font-size: 23px;
     text-align: center;
     font-weight: bold;
     width: 100%;
     color: #8e7f6b; }
+  .stekina-media-section-titlearea .stekina-media-section-titlearea-h2-margin-adjust {
+    margin: 0 auto -12px; }
+  .stekina-media-section-titlearea .stekina-media-section-titlearea-black {
+    color: #262626; }
   .stekina-media-section-titlearea .stekina-media-section-titlearea-despection {
     width: 90%;
     margin: 10px auto 0;
@@ -5834,6 +5886,51 @@ a {
     color: #8e7f6b;
     line-height: 1.25;
     font-size: 12px; }
+
+.stekina-media-section-pagenation-backnext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  margin: 15px 10px 10px;
+  padding: 0 0 0px;
+  padding: 0 2px;
+  width: 100%; }
+  .stekina-media-section-pagenation-backnext .stekina-media-section-pagenation-left,
+  .stekina-media-section-pagenation-backnext .stekina-media-section-pagenation-right {
+    width: 32%;
+    padding: 0 2px; }
+  .stekina-media-section-pagenation-backnext .stekina-media-section-pagenation-button {
+    width: 100%;
+    margin: 0 auto; }
+    .stekina-media-section-pagenation-backnext .stekina-media-section-pagenation-button a {
+      display: table;
+      width: 100%;
+      margin: 10px auto 0;
+      padding: 8px 10px;
+      text-align: center;
+      font-size: 14px;
+      border: 0.5px solid #4d4d4d;
+      color: #4d4d4d;
+      background: #fff;
+      font-weight: normal !important;
+      border-radius: 6px;
+      text-decoration: none;
+      font-family: "mplus-2c-regular", sans-serif !important; }
+      .stekina-media-section-pagenation-backnext .stekina-media-section-pagenation-button a:after {
+        content: "";
+        width: 6px;
+        height: 14px;
+        display: inline-block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0px -1px 0px 7px;
+        background-image: url(https://assets.stekina.com/static/img/icon/icn-arrow-next.svg);
+        vertical-align: middle; }
 
 .stekina-media-suteki-stylist-of-japan img {
   padding: 15px 0 0; }
@@ -5847,11 +5944,11 @@ a {
 .fixed-button-bottom {
   display: none; }
   .fixed-button-bottom a {
-    background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
-    background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
-    width: 82%;
+    /* @include rizm-gradient();*/
+    background-color: #00c300;
+    width: 86.5%;
     border-radius: 8px;
-    padding: 8px 20px 10px;
+    padding: 10px 7px 8px 12px;
     box-shadow: 0 5px 10px #999;
     position: fixed;
     z-index: 999999;
@@ -5863,7 +5960,7 @@ a {
     -webkit-animation: fuwafuwa-button 2s 0s infinite;
             animation: fuwafuwa-button 2s 0s infinite; }
     .fixed-button-bottom a img {
-      width: 92%; }
+      width: 98%; }
 
 .stekina-media-section-contents {
   width: 90%;
@@ -5872,6 +5969,45 @@ a {
 /* 読み込みで補完したscss */
 .review-card {
   background: white; }
+
+.review-card-header-title-name,
+.review-card-header-title-name {
+  font-family: "mplus-2c-regular", sans-serif !important; }
+
+ul.c-tag-middle a {
+  font-family: "mplus-2c-regular", sans-serif !important; }
+
+.review-card-contents-bunsho-readmore a {
+  font-family: "mplus-2c-regular", sans-serif !important; }
+
+.love-button-count span {
+  font-family: "mplus-2c-regular", sans-serif !important; }
+
+footer {
+  background: #262626 !important;
+  padding: 0px 0 150px !important; }
+  footer .stekina-media-footer-banner {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0 0; }
+  footer .stekina-media-footer-navi {
+    margin: 90px auto 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    footer .stekina-media-footer-navi a {
+      color: white; }
+    footer .stekina-media-footer-navi div {
+      margin: 0 3px;
+      color: #4a4a4a;
+      font-size: 13.5px; }
+  footer .stekina-media-footer-copyright {
+    color: #4d4d4d;
+    font-size: 10px;
+    text-align: center; }
 
 /***************
      以下アニメーション 
@@ -6018,13 +6154,13 @@ a {
   display: flex;
   margin: 30px -5px 0; }
 
-.c-recommend-stylist .c-card:hover {
+.c-recommend-stylist .stylist-card:hover {
   -webkit-transition: 0.25s;
   transition: 0.25s;
   opacity: 0.9;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .2); }
 
-.c-card-link a {
+.stylist-card-link a {
   position: absolute;
   top: 0;
   left: 0;
@@ -6033,7 +6169,7 @@ a {
   text-indent: -999px;
   z-index: 9999; }
 
-.c-card {
+.stylist-card {
   width: 47%;
   margin: 0px auto 15px;
   background: #fff;
@@ -6042,13 +6178,12 @@ a {
   overflow: hidden;
   z-index: 100;
   position: relative; }
-  .c-card div {
-    font-family: "M PLUS 1p", sans-serif !important; }
-  .c-card ul.c-tag-small li {
+  .stylist-card div {
+    font-family: "mplus-2c-regular", sans-serif !important; }
+  .stylist-card ul.c-tag-small li {
     display: inline-block; }
-    .c-card ul.c-tag-small li a {
+    .stylist-card ul.c-tag-small li a {
       border: 0.5px solid #4d4d4d;
-      display: inline-block;
       border-radius: 4px;
       padding: calc(0.05vw + 2px) calc(0.2vw + 2px);
       margin: 0px 4px 2px 0;
@@ -6057,36 +6192,38 @@ a {
       box-sizing: content-box;
       font-size: 8px;
       text-decoration: none;
-      font-family: "M PLUS 1p", sans-serif !important; }
+      display: -ms-grid;
+      display: grid;
+      font-family: "mplus-2c-regular", sans-serif !important; }
       @media screen and (max-width: 374px) {
-        .c-card ul.c-tag-small li a {
+        .stylist-card ul.c-tag-small li a {
           font-size: 6px;
           margin: 0px 3px 1.5px 0; } }
-      .c-card ul.c-tag-small li a:hover {
+      .stylist-card ul.c-tag-small li a:hover {
         border: 0.5px solid #4d4d4d;
         display: inline-block;
         background: #f0f0f0;
         color: #6f6f6f; }
-  .c-card .c-card-img img {
+  .stylist-card .stylist-card-img img {
     width: 100%;
     height: calc(8vw + 150px);
     -o-object-fit: cover;
        object-fit: cover; }
-  .c-card .c-card-content {
+  .stylist-card .stylist-card-content {
     padding: 0px 6px 0px;
     height: 64px;
     overflow: hidden;
     /*  border-bottom: 0.5px solid $cl-gray-dark; */ }
     @media screen and (max-width: 374px) {
-      .c-card .c-card-content {
+      .stylist-card .stylist-card-content {
         padding: 0px 6px 0px;
         height: 58px; } }
-    .c-card .c-card-content .c-card-content-title {
+    .stylist-card .stylist-card-content .stylist-card-content-title {
       font-size: calc(10px + 0vw);
       color: #6f6f6f;
       margin: 0 0 4px;
       letter-spacing: -1px; }
-  .c-card .c-card-content-stylist {
+  .stylist-card .stylist-card-content-stylist {
     padding: 5px 7px;
     font-size: 10px;
     height: 43px;
@@ -6097,16 +6234,15 @@ a {
         flex-wrap: wrap;
     color: #b3b3b3; }
     @media screen and (max-width: 374px) {
-      .c-card .c-card-content-stylist {
+      .stylist-card .stylist-card-content-stylist {
         font-size: 8.5px;
         height: 40px; } }
-    .c-card .c-card-content-stylist .c-card-content-stylist-value-one {
+    .stylist-card .stylist-card-content-stylist .stylist-card-content-stylist-value-one {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      width: 100%;
-      font-family: "M PLUS 1p", sans-serif !important; }
-      .c-card .c-card-content-stylist .c-card-content-stylist-value-one:before {
+      width: 100%; }
+      .stylist-card .stylist-card-content-stylist .stylist-card-content-stylist-value-one:before {
         background-image: url(https://stekina.com/static/img/icon/icn-map.svg);
         width: 12.5px;
         height: 12.5px;
@@ -6116,13 +6252,12 @@ a {
         vertical-align: sub;
         display: inline-block;
         content: ""; }
-    .c-card .c-card-content-stylist .c-card-content-stylist-value-two {
+    .stylist-card .stylist-card-content-stylist .stylist-card-content-stylist-value-two {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      width: 38%;
-      font-family: "M PLUS 1p", sans-serif !important; }
-      .c-card .c-card-content-stylist .c-card-content-stylist-value-two:before {
+      width: 38%; }
+      .stylist-card .stylist-card-content-stylist .stylist-card-content-stylist-value-two:before {
         background-image: url(https://stekina.com/static/img/icon/icn-lime.svg);
         width: 12.5px;
         height: 12.5px;
@@ -6132,13 +6267,12 @@ a {
         vertical-align: sub;
         display: inline-block;
         content: ""; }
-    .c-card .c-card-content-stylist .c-card-content-stylist-value-three {
+    .stylist-card .stylist-card-content-stylist .stylist-card-content-stylist-value-three {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      width: 62%;
-      font-family: "M PLUS 1p", sans-serif !important; }
-      .c-card .c-card-content-stylist .c-card-content-stylist-value-three:before {
+      width: 62%; }
+      .stylist-card .stylist-card-content-stylist .stylist-card-content-stylist-value-three:before {
         background-image: url(https://stekina.com/wp-content/uploads/icn_card_price.svg);
         width: 12.5px;
         height: 12.5px;
@@ -6148,24 +6282,24 @@ a {
         vertical-align: sub;
         display: inline-block;
         content: ""; }
-    .c-card .c-card-content-stylist li.c-card-content-user-value {
+    .stylist-card .stylist-card-content-stylist li.stylist-card-content-user-value {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis; }
-  .c-card .c-card-content-user {
+  .stylist-card .stylist-card-content-user {
     padding: 5px 7px;
     font-size: 10px;
     height: 45px;
     color: #b3b3b3; }
     @media screen and (max-width: 374px) {
-      .c-card .c-card-content-user {
+      .stylist-card .stylist-card-content-user {
         font-size: 8.5px;
         height: 42px; } }
-    .c-card .c-card-content-user li.c-card-content-user-value {
+    .stylist-card .stylist-card-content-user li.stylist-card-content-user-value {
       display: inline-block; }
-      .c-card .c-card-content-user li.c-card-content-user-value:not(:last-child) {
+      .stylist-card .stylist-card-content-user li.stylist-card-content-user-value:not(:last-child) {
         margin: 0 10px 0 0px; }
-  .c-card .c-card-content-status-count, .c-card .c-stylist-card-stylistdata, .c-card .c-stylist-card-stylistdata .c-stylist-card-stylistdata-value, .c-stylist-card-stylistdata .c-card .c-stylist-card-stylistdata-value {
+  .stylist-card .stylist-card-content-status-count, .stylist-card .c-stylist-card-stylistdata, .stylist-card .c-stylist-card-stylistdata .c-stylist-card-stylistdata-value, .c-stylist-card-stylistdata .stylist-card .c-stylist-card-stylistdata-value {
     padding: 3px 14px;
     font-size: 13px;
     color: #4d4d4d;
@@ -6176,38 +6310,35 @@ a {
         -ms-flex-pack: start;
             justify-content: flex-start; }
     @media screen and (max-width: 374px) {
-      .c-card .c-card-content-status-count, .c-card .c-stylist-card-stylistdata, .c-card .c-stylist-card-stylistdata .c-stylist-card-stylistdata-value, .c-stylist-card-stylistdata .c-card .c-stylist-card-stylistdata-value {
+      .stylist-card .stylist-card-content-status-count, .stylist-card .c-stylist-card-stylistdata, .stylist-card .c-stylist-card-stylistdata .c-stylist-card-stylistdata-value, .c-stylist-card-stylistdata .stylist-card .c-stylist-card-stylistdata-value {
         font-size: 10.5px; } }
-    .c-card .c-card-content-status-count li, .c-card .c-stylist-card-stylistdata li, .c-stylist-card-stylistdata .c-card .c-stylist-card-stylistdata-value li {
+    .stylist-card .stylist-card-content-status-count li, .stylist-card .c-stylist-card-stylistdata li, .c-stylist-card-stylistdata .stylist-card .c-stylist-card-stylistdata-value li {
       display: block;
       margin: 0 10px 0 0; }
 
-.c-card-salonname {
+.stylist-card-salonname {
   font-size: 9px;
   text-align: center;
   padding: 2px 0;
   color: #4d4d4d;
   height: 16px;
   letter-spacing: 0.5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 90%;
+  margin: 0 auto;
+  line-height: 1.5; }
 
-.c-card-header {
+.stylist-card-header {
   position: relative;
   height: 70px;
   background-size: cover;
   background-repeat: no-repeat; }
   @media screen and (max-width: 374px) {
-    .c-card-header {
+    .stylist-card-header {
       height: 67px; } }
-  .c-card-header .c-card-header-image img {
+  .stylist-card-header .stylist-card-header-image img {
     position: absolute;
     border: 1px solid #fff;
     left: 6px;
@@ -6221,13 +6352,13 @@ a {
     box-sizing: border-box;
     display: inline-block; }
     @media screen and (max-width: 374px) {
-      .c-card-header .c-card-header-image img {
+      .stylist-card-header .stylist-card-header-image img {
         width: 44px;
         height: 44px;
         border-radius: 100%;
         box-sizing: border-box;
         display: inline-block; } }
-  .c-card-header .c-card-header-name {
+  .stylist-card-header .stylist-card-header-name {
     font-size: 12px;
     background-color: rgba(0, 0, 0, .6);
     padding: 3px 0px;
@@ -6236,104 +6367,104 @@ a {
     right: 0px;
     top: 25px; }
     @media screen and (min-width: 769px) {
-      .c-card-header .c-card-header-name {
+      .stylist-card-header .stylist-card-header-name {
         width: 83%; } }
     @media screen and (max-width: 768px) {
-      .c-card-header .c-card-header-name {
+      .stylist-card-header .stylist-card-header-name {
         width: 93%; } }
     @media screen and (max-width: 414px) {
-      .c-card-header .c-card-header-name {
+      .stylist-card-header .stylist-card-header-name {
         width: 78%; } }
     @media screen and (max-width: 374px) {
-      .c-card-header .c-card-header-name {
+      .stylist-card-header .stylist-card-header-name {
         font-size: 6px; } }
-    .c-card-header .c-card-header-name .c-card-header-name-txt {
+    .stylist-card-header .stylist-card-header-name .stylist-card-header-name-txt {
       text-align: left;
       color: #fff;
-      font-size: 15px;
+      font-size: 10.8px;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis; }
       @media screen and (max-width: 374px) {
-        .c-card-header .c-card-header-name .c-card-header-name-txt {
+        .stylist-card-header .stylist-card-header-name .stylist-card-header-name-txt {
           font-size: 12px; } }
       @media screen and (min-width: 769px) {
-        .c-card-header .c-card-header-name .c-card-header-name-txt {
+        .stylist-card-header .stylist-card-header-name .stylist-card-header-name-txt {
           margin: 0 0 0 28px; } }
       @media screen and (max-width: 768px) {
-        .c-card-header .c-card-header-name .c-card-header-name-txt {
+        .stylist-card-header .stylist-card-header-name .stylist-card-header-name-txt {
           margin: 0 0 0 40px; } }
       @media screen and (max-width: 414px) {
-        .c-card-header .c-card-header-name .c-card-header-name-txt {
+        .stylist-card-header .stylist-card-header-name .stylist-card-header-name-txt {
           margin: 0 0 0 25px; } }
       @media screen and (max-width: 374px) {
-        .c-card-header .c-card-header-name .c-card-header-name-txt {
+        .stylist-card-header .stylist-card-header-name .stylist-card-header-name-txt {
           margin: 0 0 0 25px; } }
-  .c-card-header .c-card-header-name {
+  .stylist-card-header .stylist-card-header-name {
     font-size: 12px;
     background-color: rgba(0, 0, 0, .6);
-    padding: 3px 0px;
+    padding: 4.5px 0px;
     letter-spacing: 2px;
     position: absolute;
     right: 0px;
-    top: 30%; }
+    top: 32%; }
     @media screen and (min-width: 769px) {
-      .c-card-header .c-card-header-name {
+      .stylist-card-header .stylist-card-header-name {
         width: 83%; } }
     @media screen and (max-width: 768px) {
-      .c-card-header .c-card-header-name {
+      .stylist-card-header .stylist-card-header-name {
         width: 93%; } }
     @media screen and (max-width: 414px) {
-      .c-card-header .c-card-header-name {
+      .stylist-card-header .stylist-card-header-name {
         width: 78%; } }
     @media screen and (max-width: 374px) {
-      .c-card-header .c-card-header-name {
+      .stylist-card-header .stylist-card-header-name {
         font-size: 6px; } }
   @media screen and (min-width: 769px) {
-    .c-card-header .c-card-header-name-txt-over {
+    .stylist-card-header .stylist-card-header-name-txt-over {
       font-size: 15px !important;
       letter-spacing: 0px; } }
   @media screen and (max-width: 768px) {
-    .c-card-header .c-card-header-name-txt-over {
-      font-size: 15px !important;
-      letter-spacing: -0.5px; } }
+    .stylist-card-header .stylist-card-header-name-txt-over {
+      font-size: 14px !important;
+      letter-spacing: -0.2px; } }
   @media screen and (max-width: 374px) {
-    .c-card-header .c-card-header-name-txt-over {
+    .stylist-card-header .stylist-card-header-name-txt-over {
       font-size: 13.5px !important;
       letter-spacing: -0.5px; } }
 
-.c-card-stylephoto {
+.stylist-card-stylephoto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0; }
-  .c-card-stylephoto .c-card-stylephoto-left,
-  .c-card-stylephoto .c-card-stylephoto-right {
+  .stylist-card-stylephoto .stylist-card-stylephoto-left,
+  .stylist-card-stylephoto .stylist-card-stylephoto-right {
     display: inline-block;
     width: 50%; }
-  .c-card-stylephoto .c-card-stylephoto-left img,
-  .c-card-stylephoto .c-card-stylephoto-right img {
+  .stylist-card-stylephoto .stylist-card-stylephoto-left img,
+  .stylist-card-stylephoto .stylist-card-stylephoto-right img {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover; }
     @media screen and (min-width: 769px) {
-      .c-card-stylephoto .c-card-stylephoto-left img,
-      .c-card-stylephoto .c-card-stylephoto-right img {
+      .stylist-card-stylephoto .stylist-card-stylephoto-left img,
+      .stylist-card-stylephoto .stylist-card-stylephoto-right img {
         height: 150px; } }
     @media screen and (max-width: 768px) {
-      .c-card-stylephoto .c-card-stylephoto-left img,
-      .c-card-stylephoto .c-card-stylephoto-right img {
+      .stylist-card-stylephoto .stylist-card-stylephoto-left img,
+      .stylist-card-stylephoto .stylist-card-stylephoto-right img {
         height: 125px; } }
     @media screen and (max-width: 374px) {
-      .c-card-stylephoto .c-card-stylephoto-left img,
-      .c-card-stylephoto .c-card-stylephoto-right img {
+      .stylist-card-stylephoto .stylist-card-stylephoto-left img,
+      .stylist-card-stylephoto .stylist-card-stylephoto-right img {
         height: 115px; } }
 
 .c-stylist-card-stylistdata .c-stylist-card-stylistdata-value {
   display: inline-block; }
 
-.c-card-footer-count {
+.stylist-card-footer-count {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6345,7 +6476,7 @@ a {
           justify-content: center;
   padding: 4px 2px 3px;
   border-top: 0.5px solid #4d4d4d; }
-  .c-card-footer-count .c-card-footer-count-column {
+  .stylist-card-footer-count .stylist-card-footer-count-column {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6357,20 +6488,20 @@ a {
     font-family: "M PLUS 1p", sans-serif !important;
     line-height: 1.5; }
     @media screen and (max-width: 374px) {
-      .c-card-footer-count .c-card-footer-count-column {
+      .stylist-card-footer-count .stylist-card-footer-count-column {
         font-size: 8.4px;
         padding: 0px 2.2px 0px; } }
-    .c-card-footer-count .c-card-footer-count-column div {
+    .stylist-card-footer-count .stylist-card-footer-count-column div {
       padding: 0 1.5px;
       color: #4d4d4d;
       height: 15.5px; }
       @media screen and (max-width: 374px) {
-        .c-card-footer-count .c-card-footer-count-column div {
+        .stylist-card-footer-count .stylist-card-footer-count-column div {
           height: 13.5px;
           padding: 0 0.5px; } }
-    .c-card-footer-count .c-card-footer-count-column img {
+    .stylist-card-footer-count .stylist-card-footer-count-column img {
       width: 17px;
       height: 15.5px; }
       @media screen and (max-width: 374px) {
-        .c-card-footer-count .c-card-footer-count-column img {
+        .stylist-card-footer-count .stylist-card-footer-count-column img {
           height: 13.5px; } }
