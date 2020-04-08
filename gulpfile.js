@@ -20,7 +20,7 @@ var srcpaths = {
     'sass': './src/sass/**/*.sass',
     'jsx': './src/jsx/**/*.js',
     'jade': './src/jade/**/*.jade',
-    'pug': './src/pug/pages/stekina-dialog-recommend-counseling.pug'
+    'pug': './src/pug/pages/media-stekina.pug'
 }
 
 var dstpaths = {

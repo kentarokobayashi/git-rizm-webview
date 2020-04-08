@@ -20,7 +20,7 @@ html.remodal-is-locked(lang='ja')
     script(src='https://assets.stekina.com/static/js/jquery-3.2.0.min.js')
     script(src='https://assets.stekina.com/static/js/remodal.js')
     script(src='https://assets.stekina.com/static/js/reserve/compiled/app.js?ver=4.10.0')
-    link(href='/static/css/stekina-dialog-recommend-couseling.css', rel='stylesheet')
+    link(href='static/css/stekina-dialog-recommend-couseling.css', rel='stylesheet')
     script(src='https://www.googletagmanager.com/gtag/js?id=UA-60500393-7')
     script.
       window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-60500393-7');
@@ -422,13 +422,19 @@ html.remodal-is-locked(lang='ja')
     script(src='https://static.line-scdn.net/liff/edge/2.1/sdk.js')
     .remodal-overlay.remodal-is-opened(style='display: block;')
     .remodal-wrapper.remodal-is-opened(style='display: block;')
-      #reverve-finish-modal.remodal-is-opened(style='box-sizing: border-box;width: 100%;margin-top: 120px;padding: 20px;-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);color: #2b2e38;background: #fff;')
-          .common-matching-henkin-wrapper-head-ai
-            .common-matching-henkin-wrapper-head-ai-img
-              img(src='https://stekina.com/wp-content/uploads/icon_stekina-ai-illust.png')
-            .common-matching-henkin-wrapper-head-ai-text ラインと連携してログインをお願いします！
-          .common-matching-henkin-body
-            .common-matching-henkin-body-imgline
-              img(src='https://stekina.com/wp-content/uploads/text-dialog-line.jpg')
-            .common-matching-henkin-body-button
-              button.common-matching-henkin-body-button-first(style='background:#00B900 !important;') ライン連携する👌
+      .remodal-wrapper-matching#reverve-finish-modal.remodal-is-opened(style='box-sizing: border-box;-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);')
+            .remodal-wrapper-matching-head
+              .remodal-wrapper-matching-head-img
+                img(src='https://stekina.com/wp-content/uploads/icon_stekina-ai-illust.png')
+              .remodal-wrapper-matching-head-text|美容師さんとのコミュニケーションがスムーズに！
+            .remodal-wrapper-matching-content
+              .remodal-wrapper-matching-content-title
+                img(src='https://stekina.com/wp-content/uploads/remodal-wrapper-matching-content-title.svg')
+              .remodal-wrapper-matching-content-photo
+                img(src='https://stekina.com/wp-content/uploads/remodal-wrapper-matching-content-photo-02.jpg')                
+              .remodal-wrapper-matching-content-button-yes
+                a(href='A-mykarte-tutorial-01.html')
+                  img(src='https://stekina.com/wp-content/uploads/remodal-wrapper-matching-content-button-yes-02.jpg')
+              .remodal-wrapper-matching-content-button-no
+                a(href='#')
+                  img(src='https://stekina.com/wp-content/uploads/remodal-wrapper-matching-content-button-no-02.jpg')
