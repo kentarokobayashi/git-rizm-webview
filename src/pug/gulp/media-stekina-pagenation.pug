@@ -1,0 +1,69 @@
+- var dateNow = Date.now();
+doctype html
+html(lang='jp')
+  head
+    title STEKiNAメディア
+    link(href='https://stekina.com/community/assets/application-0cd9ef953e92fafda8f69d7c040ac2075963fa2d6ccc579def5db048df82c04c.css' rel='stylesheet')
+    link(href='static/css/stekina-discount.css?'+dateNow, rel='stylesheet')
+    meta(name='viewport', content='width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    meta(charset='UTF-8')
+    meta(name='robots', content='noindex,nofollow')
+    script(src='//jpostal-1006.appspot.com/jquery.jpostal.js', type='text/javascript')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
+  body.stekina-brown-light
+   .wrapper-cl-stekina-brown-light
+    .wrapper-stekina-media             
+      //👇全国のステキな美容師一覧
+      section.stekina-media-section.bg-brown
+       div.stekina-media-section-titlearea
+          h2.stekina-media-section-titlearea-h2|全国のステキな美容師一覧
+          div.stekina-media-section-titlearea-despection
+             .stekina-media-section-area-despection-number
+               |①
+             .stekina-media-section-area-despection-text
+               |AIの生成したアルゴリズムにより「お客様に支持され愛されている美容師」がランキング形式で表示されています。
+          div.stekina-media-section-titlearea-despection
+             .stekina-media-section-area-despection-number
+               |②
+             .stekina-media-section-area-despection-text
+               |コチラのランキングは毎日更新されます
+       .stekina-media-section-contents
+         .card-wrapper
+            include _media-stekina-stylists.pug
+            .stekina-media-section-pagenation-backnext
+              .stekina-media-section-pagenation-left
+                .stekina-media-section-pagenation-button
+                  a.u-icn-arrow-back-after(href='media-stekina.html') 前の20件
+              .stekina-media-section-pagenation-center-space
+              .stekina-media-section-pagenation-right
+                .stekina-media-section-pagenation-button
+                  a.u-icn-arrow-next-after(href='#') 次の20件
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+    script.
+      $(function() {
+      var topBtn = $('.fixed-button-bottom');
+      //スクロールが500に達したらボタン表示
+      $(window).scroll(function () {
+      if ($(this).scrollTop() > 1500) {
+      topBtn.fadeIn();
+      } else {
+      topBtn.fadeOut();
+      }
+      });
+      });
+    script(type='text/javascript').
+      $(function() {
+      $(window).scroll(function() {
+      $('.stekina-media-recommend-ai-img-fukidashi').each(function() {
+      var elemPos = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > elemPos - windowHeight - 100) {
+      $(this).addClass('bounceIn');
+      topBtn.fadeIn();
+      //$(this).fadeOut();
+      }
+      });
+      });
+      });

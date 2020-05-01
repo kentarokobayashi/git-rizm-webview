@@ -71,8 +71,12 @@
     }
     .stylist-card-content {
         padding: 0px 6px 0px;
-        height: 64px;
+        height: 60px;
         overflow: hidden;
+        @include mq-down(iphone6) {
+            padding: 0px 6px 0px;
+            height: 64px;
+        }
         @include mq-down(iphone5) {
             padding: 0px 6px 0px;
             height: 58px;

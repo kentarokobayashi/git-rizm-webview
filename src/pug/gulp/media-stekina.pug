@@ -8,16 +8,17 @@ html(lang='jp')
     meta(name='viewport', content='width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
     meta(charset='UTF-8')
     meta(name='robots', content='noindex,nofollow')
-    //script(src='https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js')
     script(src='//jpostal-1006.appspot.com/jquery.jpostal.js', type='text/javascript')
     meta(name='apple-mobile-web-app-capable', content='yes')
     meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
-  body.media-stekina
+  body.bg-stekina-black
    .wrapper-cl-stekina-brown-light
+    //👇追従ボタン（スクロールすると出てくる）
     .fixed-button-bottom
-      a(href='https://line.me/R/ti/p/%40741zmjrp')
+      a(href='https://line.me/R/ti/p/%40741zmjrp', onclick="gtag('event', 'line-click', {'event_category': 'click','event_label': 'line-click-toppage'});")
        img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/04/4c07f030b27554e6167e2891a124fecb.png')
     .wrapper-stekina-media             
+      //👇メインビジュアル
       .stekina-media-mv
           .stekina-media-head-top
             h1.stekina-media-head-center
@@ -34,7 +35,8 @@ html(lang='jp')
             |ステキなヘアライフを送ろう！    
           .stekina-media-mv-bg
            img(src='https://stekina.com/wp-content/uploads/model.jpg')
-      .stekina-media-introduction.bg-brown
+      //👇スマホ動画
+      section.stekina-media-introduction.bg-brown
         .stekina-media-introduction-video
           .stekina-media-introduction-video-speech
               img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/04/speech-aisho.png')
@@ -42,7 +44,8 @@ html(lang='jp')
               video.js-kv.is-port(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/04/RPReplay_Final1585898616.mp4', poster='', playsinline='', muted='', autoplay='', loop='', style='width:100%; margin:0 0 -10px')   
           .stekina-media-introduction-video-bg
             img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/04/media-iphone8-device.png')
-      .stekina-media-recommend-ai.bg-brown
+      //👇AIがあなたにあった美容師を紹介
+      section.stekina-media-recommend-ai.bg-brown
             .stekina-media-recommend-ai-title
                |AIがあなたに
                br
@@ -52,12 +55,13 @@ html(lang='jp')
             .stekina-media-recommend-ai-fukidashi.stekina-media-recommend-ai-img-fukidashi
               |安心して任せられる美容師さんを探すお手伝いをさせてくださいませ😊
               .stekina-media-recommend-ai-fukidashi-button
-                a(href='https://line.me/R/ti/p/%40741zmjrp')
-                  img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/04/4c07f030b27554e6167e2891a124fecb.png')
+                 a(href='https://line.me/R/ti/p/%40741zmjrp', onclick="gtag('event', 'line-click', {'event_category': 'click','event_label': 'line-click-toppage'});")
+                     img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/04/4c07f030b27554e6167e2891a124fecb.png')
             .stekina-media-recommend-ai-img.stekina-media-recommend-ai-img-fukidashi
               //a(href='https://stekina.com/user/matching/step1')
                 img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/04/lime-kun-fukidashi.png')         
-      .stekina-media-about-stekina
+      //👇STEKiNAとは？
+      section.stekina-media-about-stekina
           .stekina-media-about-stekina-img
             img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/04/aboutstekina-3.png')     
           .stekina-media-about-stekina-text
@@ -67,7 +71,7 @@ html(lang='jp')
           .stekina-media-about-stekina-button
            a(href='https://stekina.com/stekina.html')
             |STEKiNAとは？
-      //👇美容プロに評価されている美容師
+      //👇全国のステキな美容師一覧
       section.stekina-media-section.bg-brown
        div.stekina-media-section-titlearea
           h2.stekina-media-section-titlearea-h2|全国のステキな美容師一覧
@@ -83,26 +87,30 @@ html(lang='jp')
                |コチラのランキングは毎日更新されます
        .stekina-media-section-contents
          .card-wrapper
+            //📄以下ライムコミュニティからコピペ
             include _media-stekina-stylists.pug
             .stekina-media-section-pagenation-backnext
               .stekina-media-section-pagenation-left
               .stekina-media-section-pagenation-center-space
               .stekina-media-section-pagenation-right
                 .stekina-media-section-pagenation-button
-                  a.u-icn-arrow-next-after(href='https://stekina.com/stylists?page=2') 次の20件
+                  a.u-icn-arrow-next-after(href='media-stekina-pagenation.html') 次の20件
 
       //👇美容プロに評価されている美容師
       section.stekina-media-section.bg-brown
        .stekina-media-section-titlearea
           h2.stekina-media-section-titlearea-h2.stekina-media-section-titlearea-h2-margin-adjust|美容プロに評価されている美容師
        .stekina-media-section-contents
+         //📄以下ライムコミュニティからコピペ
          include _media-stekina-limecommunity.pug
       //👇お客様に愛されている美容師
       section.stekina-media-section.bg-brown
        .stekina-media-section-titlearea
           h2.stekina-media-section-titlearea-h2.stekina-media-section-titlearea-h2-margin-adjust|お客様に愛されている美容師
        .stekina-media-section-contents
+         //📄以下ライムコミュニティからコピペ
          include _media-stekina-reviews.pug
+      //👇フッター
       footer
         .stekina-media-footer-banner
           a(href='https://stekina.com/how-to-registration-stekina')
@@ -117,7 +125,6 @@ html(lang='jp')
         .stekina-media-footer-copyright
           |copyright @2020 LiME, Inc. All Right Reserved.
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js')
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.js')
     script.
       $(function() {
       var topBtn = $('.fixed-button-bottom');
