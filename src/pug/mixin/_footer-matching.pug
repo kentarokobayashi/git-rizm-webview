@@ -1,28 +1,19 @@
-
-script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js')
-
-script.
-    $(function() {
-    countDown();
-    });
-    function countDown() {
-    var startDateTime = new Date();
-    var endDateTime = new Date("January 01,2021 00:00:00");
-    var left = endDateTime - startDateTime;
-    var a_day = 24 * 60 * 60 * 1000;
-    // 期限から現在までの『残時間の日の部分』
-    var d = Math.floor(left / a_day)
-    // 期限から現在までの『残時間の時間の部分』
-    var h = Math.floor((left % a_day) / (60 * 60 * 1000))
-    // 残時間を秒で割って残分数を出す。
-    // 残分数を60で割ることで、残時間の「時」の余りとして、『残時間の分の部分』を出す
-    var m = Math.floor((left % a_day) / (60 * 1000)) % 60
-    // 残時間をミリ秒で割って、残秒数を出す。
-    // 残秒数を60で割った余りとして、「秒」の余りとしての残「ミリ秒」を出す。
-    // 更にそれを60で割った余りとして、「分」で割った余りとしての『残時間の秒の部分』を出す
-    var s = Math.floor((left % a_day) / 1000) % 60 % 60
-    $("#TimeLeft").html( '<span class="countdown-number">' + m + '</span>分<span class="countdown-number">' + s + '</span>秒');
-    $("#TimeLeft2").html( '<span class="countdown-number">' + m + '</span>分<span class="countdown-number">' + s + '</span>秒');
-    setTimeout('countDown()', 1000);
-    }
-
+.profile-follow-area(style='background-image:url(https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/download.jpg);')
+    .profile-follow-area-recommend-text
+        |\ カワイ ミオ さんをフォローしよう！ /
+    .profile-follow-area-img
+        img(src='https://s3-ap-northeast-1.amazonaws.com/limeapp/karte/owner_photo_approved/3WLF-5365-P48V-5NF2?timestamp=1583483889225')
+    .profile-follow-area-name
+        |カワイ ミオ
+    //フォローしたら.profile-follow-area-button-nofollowを.profile-follow-area-button-already-followに変換
+    button.profile-follow-area-button.profile-follow-area-button-no-follow
+        |フォローする
+footer
+    .stekina-media-footer-banner
+        a(href='https://stekina.com/how-to-registration-stekina')
+        img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/04/a6ae6c15e2bdf7f13e773ae33aacbc92-1.png')
+    .stekina-media-footer-navi
+        div
+        a(href='https://stekina.com/stekina.html') STEKINAとは？
+    .stekina-media-footer-copyright
+        | copyright @2020 LiME, Inc. All Right Reserved.

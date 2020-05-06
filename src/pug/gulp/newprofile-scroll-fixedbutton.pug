@@ -67,7 +67,7 @@ html(lang='jp')
             .fixed-bottom-button-sub
                 a(href='#')|メッセージする
             .fixed-bottom-button-main
-                a(href='#')|空席を確認してみる        
+                a(href='#')|空席を確認してみる           
       //profile-cover
       .profile-top
           .profile-cover(style='background-image:url(https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/download.jpg);')
@@ -745,17 +745,14 @@ html(lang='jp')
       //スクロールが500に達したらボタン表示
       $(window).scroll(function () {
       if ($(this).scrollTop() > 500) {
-        $('.profile-header-content-center-stylist').fadeIn();
-        $('.fixed-bottom').fadeIn();
-        $('.profile-header-content-center-salon').hide();
+      $('.profile-header-content-center-stylist').fadeIn();
+      $('.profile-header-content-center-salon').hide();
       } else {
-        $('.fixed-bottom').hide();
-        $('.profile-header-content-center-stylist').hide();
-        $('.profile-header-content-center-salon').fadeIn();
+      $('.profile-header-content-center-stylist').hide();
+      $('.profile-header-content-center-salon').fadeIn();
       }
       });
       });
-
    script.
       $('.jquery-open-menus').on('click', function() {
         $('.jquery-normal-menu').toggleClass("profile-section-block-normal-menu-show");

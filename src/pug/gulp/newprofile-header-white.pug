@@ -61,13 +61,7 @@ html(lang='jp')
     //👇追従ボタン（スクロールすると出てくる）
     .wrapper-profile
       //ヘッダー
-      include ../mixin/_header-newprofile-brown-normal.pug
-      .fixed-bottom(style='display:none;')
-        .fixed-bottom-wrapper
-            .fixed-bottom-button-sub
-                a(href='#')|メッセージする
-            .fixed-bottom-button-main
-                a(href='#')|空席を確認してみる        
+      include ../mixin/_header-newprofile-white-normal.pug
       //profile-cover
       .profile-top
           .profile-cover(style='background-image:url(https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/download.jpg);')
@@ -461,33 +455,37 @@ html(lang='jp')
                 dd.profile-section-block-normal-menu-price
                   span.profile-section-block-normal-menu-price-yen|6,000
                   span|円    
-       
-              dl.profile-section-block-normal-menu.jquery-normal-menu(style='display:none;')
-                dt.profile-section-block-normal-menu-name|カット+パーマ
-                dd.profile-section-block-normal-menu-price
-                  span.profile-section-block-normal-menu-price-yen|18,500
-                  span|円
-              dl.profile-section-block-normal-menu.jquery-normal-menu(style='display:none;')
-                dt.profile-section-block-normal-menu-name|カット+縮毛矯正+髪質改善トリートメント
-                dd.profile-section-block-normal-menu-price
-                  span.profile-section-block-normal-menu-price-yen|27,000
-                  span|円         
-              dl.profile-section-block-normal-menu.jquery-normal-menu(style='display:none;')
-                dt.profile-section-block-normal-menu-name|小顔眉カット
-                dd.profile-section-block-normal-menu-price
-                  span.profile-section-block-normal-menu-price-yen|6,000
-                  span|円
-              dl.profile-section-block-normal-menu.jquery-normal-menu(style='display:none;')
-                dt.profile-section-block-normal-menu-name|小顔メイクアップ(レッスンも可)
-                dd.profile-section-block-normal-menu-price
-                  span.profile-section-block-normal-menu-price-yen|6,000
-                  span|円    
-              dl.profile-section-block-normal-menu.jquery-normal-menu(style='display:none;')
+              //dl.profile-section-block-normal-menu
                 dt.profile-section-block-normal-menu-name|シャンプーブローのみ
                 dd.profile-section-block-normal-menu-price
                   span.profile-section-block-normal-menu-price-yen|5,500
                   span|円        
-              dl.profile-section-block-normal-menu.jquery-normal-menu(style='display:none;')
+              //dl.profile-section-block-normal-menu.jquery-normal-menu
+                dt.profile-section-block-normal-menu-name|カット+パーマ
+                dd.profile-section-block-normal-menu-price
+                  span.profile-section-block-normal-menu-price-yen|18,500
+                  span|円
+              //dl.profile-section-block-normal-menu.jquery-normal-menu
+                dt.profile-section-block-normal-menu-name|カット+縮毛矯正+髪質改善トリートメント
+                dd.profile-section-block-normal-menu-price
+                  span.profile-section-block-normal-menu-price-yen|27,000
+                  span|円         
+              //dl.profile-section-block-normal-menu.jquery-normal-menu
+                dt.profile-section-block-normal-menu-name|小顔眉カット
+                dd.profile-section-block-normal-menu-price
+                  span.profile-section-block-normal-menu-price-yen|6,000
+                  span|円
+              //dl.profile-section-block-normal-menu.jquery-normal-menu
+                dt.profile-section-block-normal-menu-name|小顔メイクアップ(レッスンも可)
+                dd.profile-section-block-normal-menu-price
+                  span.profile-section-block-normal-menu-price-yen|6,000
+                  span|円    
+              //dl.profile-section-block-normal-menu.jquery-normal-menu
+                dt.profile-section-block-normal-menu-name|シャンプーブローのみ
+                dd.profile-section-block-normal-menu-price
+                  span.profile-section-block-normal-menu-price-yen|5,500
+                  span|円        
+              //dl.profile-section-block-normal-menu.jquery-normal-menu
                 dt.profile-section-block-normal-menu-name|カット+パーマ
                 dd.profile-section-block-normal-menu-price
                   span.profile-section-block-normal-menu-price-yen|18,500
@@ -636,7 +634,7 @@ html(lang='jp')
                     |月
                 .profile-section-block-opening-time-column-flex3-time
                     span.opening-time
-                      |9:00
+                      |10:00
                     span.kigo
                       |~
                     span.closing-time
@@ -745,19 +743,17 @@ html(lang='jp')
       //スクロールが500に達したらボタン表示
       $(window).scroll(function () {
       if ($(this).scrollTop() > 500) {
-        $('.profile-header-content-center-stylist').fadeIn();
-        $('.fixed-bottom').fadeIn();
-        $('.profile-header-content-center-salon').hide();
+      $('.profile-header-content-center-stylist').fadeIn();
+      $('.profile-header-content-center-salon').hide();
       } else {
-        $('.fixed-bottom').hide();
-        $('.profile-header-content-center-stylist').hide();
-        $('.profile-header-content-center-salon').fadeIn();
+      $('.profile-header-content-center-stylist').hide();
+      $('.profile-header-content-center-salon').fadeIn();
       }
       });
       });
-
    script.
       $('.jquery-open-menus').on('click', function() {
-        $('.jquery-normal-menu').toggleClass("profile-section-block-normal-menu-show");
+        $('.jquery-normal-menu').show();} else {
+        $('.jquery-normal-menu').hide();
       }
-      );
+      });

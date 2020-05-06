@@ -1,60 +1,3 @@
-.profile-header {
-    background: $cl-stekina-brown;
-    position: fixed;
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.08);
-    height: 38px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 450px;
-    z-index: index($z, header); // 1
-    .profile-header-content {
-        position: relative;
-        width: 100%;
-        height: 38px;
-        .profile-header-content-center {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-            color: white;
-            font-size: 11.5px;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            .profile-header-content-center-stylist {
-                display: flex;
-                justify-self: center;
-                align-items: center;
-                .profile-header-content-center-stylist-img img {
-                    @include circle(18px);
-                    margin: 0 3px 0 0;
-                    border: 0.5px solid white;
-                }
-            }
-        }
-        .profile-header-content-right {
-            position: absolute;
-            top: 0;
-            right: 10px;
-            bottom: 0;
-            margin: auto;
-            color: white;
-            padding: 0px 9px;
-            font-size: 12px;
-            color: $cl-stekina-brown;
-            background: #FFFFFF;
-            box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.21);
-            border-radius: 100px;
-            line-height: 1;
-            height: 25px;
-        }
-    }
-}
-
 .profile-top {
     height: 410px;
     position: relative;
@@ -89,18 +32,19 @@
         }
     }
     .profile-cover-wrapper {
-        margin: 36px 0 0;
+        margin: 39px 0 0;
         .profile-cover-photo {
             text-align: center;
             width: 93px;
             height: 93px;
             position: relative;
-            margin: 0 auto 21px;
+            margin: 0 auto 23px;
             .profile-cover-photo-official {
                 position: absolute;
-                left: -10px;
-                bottom: -5px;
+                left: -8px;
+                bottom: -3px;
                 z-index: 1;
+                width: 28px;
             }
             .profile-cover-photo-img img {
                 border: 1px solid #FFFFFF;
@@ -114,7 +58,7 @@
         }
         .profile-cover-name {
             color: white;
-            font-size: 22px;
+            font-size: 21px;
             color: #FFFFFF;
             letter-spacing: 1.43px;
             font-weight: bold;
@@ -127,7 +71,7 @@
             justify-content: center;
             color: white;
             .profile-cover-count-list {
-                padding: 0 10px;
+                padding: 0 7px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -136,10 +80,11 @@
                     margin: 4px 2px 0 0;
                 }
                 .profile-cover-count-list-number {
-                    font-size: 14px;
+                    font-size: 13px;
                     color: #FFFFFF;
                     letter-spacing: 0.83px;
                     font-weight: bold;
+                    font-family: Lato;
                 }
             }
         }
@@ -156,20 +101,29 @@
         display: flex;
         padding: 8px 0px 3px;
         border-bottom: 1px solid #f0f0f0;
+        justify-content: space-between;
         .profile-detail-date-list {
             display: flex;
             align-items: center;
             margin: 0px 9px 0 0;
-            .profile-detail-date-list-img {
-                width: 14px;
-            }
-            .profile-detail-date-list-address {
+            .profile-detail-date-list-text {
                 font-size: 9.4px;
                 color: #B3B3B3;
                 letter-spacing: 0;
                 b {
                     font-weight: bold
                 }
+            }
+            .profile-detail-date-list-img {
+                width: 14px;
+                margin: 0 1.5px 0 0;
+            }
+            .profile-detail-date-list-address {
+                max-width: 118px;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 1;
+                overflow: hidden;
             }
         }
     }
@@ -179,38 +133,49 @@
         letter-spacing: 0.51px;
         line-height: 12.59px;
         margin: 8px 0 16px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
     }
     .profile-detail-button {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        .profile-detail-button-sub a {
-            width: 127px;
-            height: 46px;
-            background: #FFFFFF;
-            border: 1.5px solid $cl-lime;
-            border-radius: 4px;
-            box-sizing: border-box;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: $cl-lime;
-            text-decoration: none;
-            font-weight: bold;
+        .profile-detail-button-sub {
+            width: 39%;
+            a {
+                /* width: 127px;*/
+                height: 46px;
+                background: #FFFFFF;
+                border: 1.5px solid $cl-lime;
+                border-radius: 4px;
+                box-sizing: border-box;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $cl-lime;
+                text-decoration: none;
+                font-size: 15px;
+            }
         }
-        .profile-detail-button-main a {
-            width: 184px;
-            height: 46px;
-            border-radius: 4px;
-            border: 2px solid $cl-red;
-            box-sizing: border-box;
-            @include rizm-gradient();
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
+        .profile-detail-button-main {
+            width: 56%;
+            a {
+                font-size: 15px;
+                /*width: 184px;*/
+                height: 46px;
+                border-radius: 4px;
+                border: 2px solid $cl-red;
+                box-sizing: border-box;
+                @include rizm-gradient();
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+            }
         }
     }
 }
@@ -303,7 +268,7 @@
     padding-top: 56.25%;
     border-radius: 6px;
     overflow: hidden;
-    box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, 0.23);
+    box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.13);
     z-index: index($z, child); // 1
 }
 
@@ -332,6 +297,12 @@
     overflow: hidden;
     display: flex;
     position: relative;
+    &:hover {
+        transition: 0.4s;
+        opacity: 0.8;
+        box-shadow: 6px 7px 20px 0 rgba(0, 0, 0, 0.15);
+        transform: translateY(-3px);
+    }
     a.profile-section-block-review-card-link {
         position: absolute;
         z-index: index($z, child); // 1
@@ -343,7 +314,10 @@
         padding: 11px 13.5px 8px;
         position: relative;
         .profile-section-block-review-card-left-have-category {
-            height: 38px !important;
+            height: 41px !important;
+            @include mq-down(iphone6) {
+                height: 38px !important;
+            }
         }
         .profile-section-block-review-card-left-top {
             display: flex;
@@ -352,12 +326,12 @@
             position: relative;
             margin: 0 0 11.5px;
             .profile-section-block-review-card-left-top-img img {
-                @include circle(30px);
+                @include circle(31px);
                 margin: 0 6px 0 0;
             }
             .profile-section-block-review-card-left-top-category {
                 position: absolute;
-                bottom: 1px;
+                bottom: -1px;
                 color: #fff;
                 font-size: 8px;
                 font-weight: bold;
@@ -383,7 +357,7 @@
                 }
                 .profile-section-block-review-card-left-top-order-name {
                     color: #666666;
-                    font-size: 11px;
+                    font-size: 10.7px;
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
@@ -467,6 +441,12 @@
     padding: 10px 15px 7px;
     margin: 25px 0 0;
     position: relative;
+    &:hover {
+        transition: 0.4s;
+        opacity: 0.8;
+        box-shadow: 2px 7px 20px 0 rgba(0, 0, 0, 0.15);
+        transform: translateY(-3px);
+    }
     a.profile-section-block-stekina-shokai-link {
         position: absolute;
         z-index: 10;
@@ -485,20 +465,20 @@
         .profile-section-block-stekina-shokai-head-left-badge {
             position: absolute;
             width: 40px;
-            bottom: -5px;
+            bottom: -8px;
         }
     }
     .profile-section-block-stekina-shokai-head-right {
         margin: 8px 0 0px 10px;
         .profile-section-block-stekina-shokai-head-right-name {
-            font-size: 13px;
-            color: $cl-gray-dark;
+            font-size: 12.3px;
+            color: #666666;
             letter-spacing: 0.78px;
-            margin: 0 0 5px;
+            margin: 0 0 6px;
             font-weight: bold;
         }
         .profile-section-block-stekina-shokai-head-right-salon {
-            font-size: 11px;
+            font-size: 10.7px;
             color: #B3B3B3;
             letter-spacing: 0.78px;
         }
@@ -516,7 +496,7 @@
     }
     .profile-section-block-stekina-shokai-tag {
         display: flex;
-        margin: 10px 0 0;
+        margin: 10px 0 60px;
         li {
             a {
                 border-radius: 5.5px;
@@ -533,13 +513,16 @@
     .profile-section-block-stekina-shokai-footer {
         display: flex;
         align-items: center;
-        margin: 17px 0 0;
+        margin: 0px 4px 0;
+        z-index: index($z, child-2); // 1
+        position: absolute;
+        bottom: 5px;
         .profile-section-block-stekina-shokai-footer-suteki {
             transform-origin: left center;
-            transform: scale(0.58);
+            transform: scale(0.7);
         }
         .profile-section-block-stekina-shokai-footer-number {
-            margin: 0 0 0 -10px;
+            margin: 0 0 0 -5px;
             font-size: 11.5px;
             color: #B3B3B3;
             letter-spacing: 0;
@@ -552,23 +535,29 @@
 
 //普通のメニュー
 .profile-section-block-normal-menus {
+    width: 98%;
+    .profile-section-block-normal-menu-show {
+        display: flex !important;
+    }
     .profile-section-block-normal-menu {
         display: flex;
         font-size: 12.8px;
         color: $cl-gray-dark;
         &:not(:last-child) {
-            margin: 0 0 17px;
+            margin: 0 0 18px;
         }
         .profile-section-block-normal-menu-name {
             width: 75%;
             margin: 0 3% 0 0;
+            line-height: 1.45;
         }
         .profile-section-block-normal-menu-price {
             width: 22%;
             text-align: right;
             span {
                 display: inline-block;
-                font-weight: bold;
+                font-family: Lato;
+                font-weight: 600;
             }
             .profile-section-block-normal-menu-price-yen {
                 margin: 0 2px 0 0;
@@ -582,6 +571,12 @@
     position: relative;
     &:not(:last-child) {
         margin: 0 0 25px;
+    }
+    &:hover {
+        transition: 0.4s;
+        opacity: 0.8;
+        box-shadow: 2px 7px 20px 0 rgba(0, 0, 0, 0.15);
+        transform: translateY(-3px);
     }
     .profile-section-block-coupon-menu-wrapper {
         position: relative;
@@ -640,13 +635,16 @@
                     color: $cl-gray-dark;
                     font-weight: bold;
                     margin: 0 0 4px;
+                    .profile-section-block-coupon-menu-detail-right-price-before {
+                        text-decoration: line-through;
+                    }
                     span {
-                        margin: 0 3px 0 0;
+                        margin: 0 5px 0 0;
                         font-weight: bold;
                     }
                 }
                 .profile-section-block-coupon-menu-detail-right-note {
-                    font-size: 11.7px;
+                    font-size: 11.4px;
                     color: $cl-gray-dark;
                     display: -webkit-box;
                     -webkit-box-orient: vertical;
@@ -680,6 +678,7 @@
                 color: $cl-lime;
                 text-decoration: underline;
                 font-size: 10.3px;
+                margin: 7px -2px 0 0;
                 &:after {
                     content: "";
                     width: 6px;
@@ -730,12 +729,12 @@
         overflow-y: hidden;
         width: 100%;
         white-space: nowrap;
-        height: 200px;
+        height: 185px;
         padding: 0 0 0 10px;
         li {
             display: inline-block;
             width: 292px;
-            height: 200px;
+            height: 185px;
             margin: 0 15px 0 0;
             img {
                 width: 292px;
@@ -750,7 +749,8 @@
 
 //営業時間
 .profile-section-block-opening-time {
-    margin: 0 auto;
+    margin: 0px auto 0;
+    padding: 10px 0 0;
     .profile-section-block-opening-time-column {
         display: flex;
         align-items: flex-end;
@@ -765,14 +765,26 @@
         .profile-section-block-opening-time-column-flex2-dayoftheweek {
             width: 14%;
             color: $cl-gray-light;
-            font-size: 15.5px;
+            font-size: 14.8px;
         }
         .profile-section-block-opening-time-column-flex3-time {
             width: 38%;
             color: $cl-gray-dark;
-            font-size: 15.5px;
+            font-size: 14.8px;
             display: flex;
             justify-content: space-between;
+            letter-spacing: 1px;
+            span {
+                font-family: Lato;
+                font-weight: 400;
+            }
+            .opening-time {
+                width: 40%;
+            }
+            .kigo {
+                width: 20%;
+                text-align: center;
+            }
         }
         .profile-section-block-opening-time-column-flex4-note {
             width: 24%;
@@ -827,7 +839,7 @@
     .profile-follow-area-img {
         text-align: center;
         img {
-            border: 2px solid #FFFFFF;
+            border: 1.2px solid #FFFFFF;
             box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
             @include circle(93px);
             margin: 0 auto 12px;
@@ -836,7 +848,7 @@
     .profile-follow-area-recommend-text {
         font-size: 11px;
         color: #FFFFFF;
-        letter-spacing: 0.7px;
+        letter-spacing: 1.1px;
         text-align: center;
         margin: 0 0 12px;
     }
@@ -844,7 +856,7 @@
         font-weight: bold;
         font-size: 20px;
         color: #FFFFFF;
-        letter-spacing: 1.37px;
+        letter-spacing: 1.9px;
         text-align: center;
         margin: 0 0 22px;
     }
@@ -852,6 +864,7 @@
         width: 45%;
         height: 50px;
         display: flex;
+        letter-spacing: 1px;
         justify-content: center;
         align-items: center;
         @include rizm-gradient();
@@ -861,6 +874,7 @@
         font-weight: bold;
         margin: 0 auto;
         font-size: 14px;
+        border: none;
     }
 }
 
