@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+$z: child,
+header,
+dialog;
 body {
     max-width: 2000px!important;
 }
@@ -40,7 +43,7 @@ a {
 .profile-section-block-title {
     display: flex;
     align-items: center;
-    margin: 0 0 25px;
+    margin: 0 0 20px;
     img {
         width: 30px;
         margin: 4px 11px 0 0;

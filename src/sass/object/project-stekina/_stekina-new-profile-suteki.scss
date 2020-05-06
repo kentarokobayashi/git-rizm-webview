@@ -56,7 +56,7 @@
  
  .love-button {
      cursor: pointer;
-     z-index: 999;
+     z-index: index($z, child); // 1
      background: #fff;
      border-radius: 50%;
      display: inline-block;
@@ -75,7 +75,7 @@
  }
  
  .review-card-compact-articleinfo .love-button {
-     z-index: 9999999999;
+     z-index: index($z, child); // 1
  }
  
  .review-card-compact-articleinfo .love-button-area {
@@ -143,7 +143,7 @@
      position: absolute;
      top: -20px;
      left: 40px;
-     z-index: 9999;
+     z-index: index($z, child); // 1
      font-family: "Josefin Sans", sans-serif !important;
      color: #ff595b;
      display: -ms-flexbox;
