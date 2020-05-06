@@ -38,37 +38,39 @@ html(lang='jp')
               .profile-header-content-center-stylist-img
                 img(src='https://s3-ap-northeast-1.amazonaws.com/limeapp/karte/owner_photo_approved/3WLF-5365-P48V-5NF2?timestamp=1583483889225')
               .profile-header-content-center-stylist-name
-                  |カワイミオ
+                  |カワイ ミオ
           button.profile-header-content-right
               |フォロー
       //profile-cover
       .profile-top
           .profile-cover(style='background-image:url(https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/download.jpg);')
-            .profile-cover-photo
-              .profile-cover-photo-official
-              .profile-cover-photo-img
-                img(src='https://s3-ap-northeast-1.amazonaws.com/limeapp/karte/owner_photo_approved/3WLF-5365-P48V-5NF2?timestamp=1583483889225')
+            .profile-cover-wrapper
+              .profile-cover-photo
+                .profile-cover-photo-official
+                  img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/icn-official-account.svg')
+                .profile-cover-photo-img
+                  img(src='https://s3-ap-northeast-1.amazonaws.com/limeapp/karte/owner_photo_approved/3WLF-5365-P48V-5NF2?timestamp=1583483889225')
+              h1.profile-cover-name|カワイ ミオ
+              .profile-cover-count
+                //ステキ数
+                .profile-cover-count-list
+                  .profile-cover-count-list-img
+                    img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/04/icon-suteki-ranking-personal.svg')
+                  .profile-cover-count-list-number
+                    |999
+                //フォロワー数
+                .profile-cover-count-list
+                  .profile-cover-count-list-img
+                        img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/04/icn-follower-ranking-personal.svg')
+                  .profile-cover-count-list-number
+                    |999
+                //レビュー数
+                .profile-cover-count-list
+                  .profile-cover-count-list-img
+                      img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/icn-count-reviews-white.svg')
+                  .profile-cover-count-list-number
+                    |999
             .profile-cover-bg
-            h1.profile-cover-name|カワイミオ
-            .profile-cover-count
-              //ステキ数
-              .profile-cover-count-list
-                .profile-cover-count-list-img
-                  img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/04/icon-suteki-ranking-personal.svg')
-                .profile-cover-count-list-number
-                  |999
-              //フォロワー数
-              .profile-cover-count-list
-                .profile-cover-count-list-img
-                      img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/04/icn-follower-ranking-personal.svg')
-                .profile-cover-count-list-number
-                  |999
-              //レビュー数
-              .profile-cover-count-list
-                .profile-cover-count-list-img
-                    img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/icn-count-reviews-white.svg')
-                .profile-cover-count-list-number
-                  |999
           //.profile-date
           .profile-detail
             .profile-detail-date
@@ -177,8 +179,8 @@ html(lang='jp')
              .profile-section-block-title-img
               img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/icn-youtube-mono.svg')
              h2|YouTube
-          .profile-section-block-youtube(style='display:none;')
-            iframe(width='560', height='315', src='https://www.youtube.com/embed/Phgf39tDLNY', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
+          .profile-section-block-youtube
+            iframe(width='100%', height='315', src='https://www.youtube.com/embed/Phgf39tDLNY', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
         .profile-section-block
           .profile-section-block-title
              .profile-section-block-title-img
@@ -243,7 +245,6 @@ html(lang='jp')
                  |レビューを詳しくみる
                 .profile-section-block-review-card-right-img
                   img(src='https://limeapp.s3.amazonaws.com/review/review_photo/1944/0faf7600-19ca-420d-822c-d22c94124854')
-           //.profile-section-block-review-card
            .profile-section-block-review-card
               a(href='#').profile-section-block-review-card-link
                 
@@ -299,6 +300,8 @@ html(lang='jp')
                  |レビューを詳しくみる
                 .profile-section-block-review-card-right-img
                   img(src='https://stekina.com/static/img/review-default-thumbnail.jpg')
+           .profile-common-readmore
+              a(href='#')|レビューの一覧
         .profile-section-block
           .profile-section-block-title-stekina-shokai
              h2|
@@ -393,7 +396,9 @@ html(lang='jp')
                      p
                       b|183
                       |ステキ!
-      //メニュー料金&オススメのメニュー
+          .profile-common-readmore
+              a(href='#')|ステキナ紹介文の一覧
+      //メニュー料金&オススメのメニュー(クーポン)
       .profile-section
         .profile-section-block
           .profile-section-block-title
@@ -540,6 +545,28 @@ html(lang='jp')
                       |新規のみ
                     .profile-section-block-coupon-menu-detail-bottom-link
                         |タップして空席を確認
+          .profile-section-block-coupon-menu
+            //空席あるとき
+            a(href='#').common-link
+            .profile-section-block-coupon-menu-wrapper
+                .profile-section-block-coupon-menu-top
+                  .profile-section-block-coupon-menu-top-category
+                    img(src='https://stekina.com/wp-content/uploads/tag_coupon_recommend-menu.jpg')
+                  .profile-section-block-coupon-menu-top-menuname
+                    |👉デザインカット(SB込)+コテ巻きアレンジ付き！限定メニュー10月まで
+                .profile-section-block-coupon-menu-detail
+                  .profile-section-block-coupon-menu-detail-right
+                    .profile-section-block-coupon-menu-detail-right-price
+                      span.profile-section-block-coupon-menu-detail-right-price-before|16,000円
+                      span.profile-section-block-coupon-menu-detail-right-price-arrow|→
+                      span.profile-section-block-coupon-menu-detail-right-price-after|12,400円
+                    .profile-section-block-coupon-menu-detail-right-note
+                      |クーポン[施術時間：60分]これはサンプルメニューです。これはサンプルメニューです。これはサンプルメニューです。これはサンプルメニューです。これはサンプルメニューです。これはサンプルメニューです。
+                .profile-section-block-coupon-menu-detail-bottom
+                    .profile-section-block-coupon-menu-detail-bottom-customer
+                      |新規のみ
+                    .profile-section-block-coupon-menu-detail-bottom-link
+                        |タップして空席を確認
       //アクセス&サロンの雰囲気&営業時間
       .profile-section
         .profile-section-block
@@ -573,6 +600,123 @@ html(lang='jp')
         .profile-section-block
           .profile-section-block-title
              h2|営業時間
+          .profile-section-block-opening-time
+              .profile-section-block-opening-time-column
+                
+                .profile-section-block-opening-time-column-flex1-spacing
+                .profile-section-block-opening-time-column-flex2-dayoftheweek
+                    |月
+                .profile-section-block-opening-time-column-flex3-time
+                    span.opening-time
+                      |10:00
+                    span.kigo
+                      |~
+                    span.closing-time
+                      |20:00
+                .profile-section-block-opening-time-column-flex4-note
+                    |(隔週で定休日)
+              .profile-section-block-opening-time-column
+                .profile-section-block-opening-time-column-flex1-spacing
+                .profile-section-block-opening-time-column-flex2-dayoftheweek
+                    |火
+                .profile-section-block-opening-time-column-flex3-time
+                    |定休日
+                .profile-section-block-opening-time-column-flex4-note
+                   
+              .profile-section-block-opening-time-column
+                .profile-section-block-opening-time-column-flex1-spacing
+                .profile-section-block-opening-time-column-flex2-dayoftheweek
+                    |水
+                .profile-section-block-opening-time-column-flex3-time
+                    span.opening-time
+                      |10:00
+                    span.kigo
+                      |~
+                    span.closing-time
+                      |20:00
+                .profile-section-block-opening-time-column-flex4-note
+                    
+              .profile-section-block-opening-time-column
+                .profile-section-block-opening-time-column-flex1-spacing
+                .profile-section-block-opening-time-column-flex2-dayoftheweek
+                    |木
+                .profile-section-block-opening-time-column-flex3-time
+                    span.opening-time
+                      |10:00
+                    span.kigo
+                      |~
+                    span.closing-time
+                      |20:00
+                .profile-section-block-opening-time-column-flex4-note
+                   
+              .profile-section-block-opening-time-column
+                .profile-section-block-opening-time-column-flex1-spacing
+                .profile-section-block-opening-time-column-flex2-dayoftheweek
+                    |金
+                .profile-section-block-opening-time-column-flex3-time
+                    span.opening-time
+                      |10:00
+                    span.kigo
+                      |~
+                    span.closing-time
+                      |20:00
+                .profile-section-block-opening-time-column-flex4-note
+              .profile-section-block-opening-time-column
+                .profile-section-block-opening-time-column-flex1-spacing
+                .profile-section-block-opening-time-column-flex2-dayoftheweek
+                    |土
+                .profile-section-block-opening-time-column-flex3-time
+                    span.opening-time
+                      |10:00
+                    span.kigo
+                      |~
+                    span.closing-time
+                      |20:00
+                .profile-section-block-opening-time-column-flex4-note
+              .profile-section-block-opening-time-column
+                .profile-section-block-opening-time-column-flex1-spacing
+                .profile-section-block-opening-time-column-flex2-dayoftheweek
+                    |日
+                .profile-section-block-opening-time-column-flex3-time
+                    span.opening-time
+                      |10:00
+                    span.kigo
+                      |~
+                    span.closing-time
+                      |20:00
+                .profile-section-block-opening-time-column-flex4-note
+              .profile-section-block-opening-time-column
+                .profile-section-block-opening-time-column-flex1-spacing
+                .profile-section-block-opening-time-column-flex2-dayoftheweek
+                    |祝
+                .profile-section-block-opening-time-column-flex3-time
+                    span.opening-time
+                      |10:00
+                    span.kigo
+                      |~
+                    span.closing-time
+                      |20:00
+                .profile-section-block-opening-time-column-flex4-note
+      .profile-follow-area(style='background-image:url(https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/download.jpg);')
+            .profile-follow-area-recommend-text
+              |\ カワイ ミオ さんをフォローしよう！ /
+            .profile-follow-area-img
+              img(src='https://s3-ap-northeast-1.amazonaws.com/limeapp/karte/owner_photo_approved/3WLF-5365-P48V-5NF2?timestamp=1583483889225')
+            .profile-follow-area-name
+             |カワイ ミオ
+            //フォローしたら.profile-follow-area-button-nofollowを.profile-follow-area-button-already-followに変換
+            button.profile-follow-area-button.profile-follow-area-button-no-follow
+             |フォローする
+      footer
+        .stekina-media-footer-banner
+          a(href='https://stekina.com/how-to-registration-stekina')
+            img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/04/a6ae6c15e2bdf7f13e773ae33aacbc92-1.png')
+        .stekina-media-footer-navi
+          div
+            a(href='https://stekina.com/stekina.html') STEKINAとは？
+        .stekina-media-footer-copyright
+          | copyright @2020 LiME, Inc. All Right Reserved.
+
    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js')
    script.
       $(function() {

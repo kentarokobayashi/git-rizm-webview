@@ -6266,7 +6266,7 @@ a {
           justify-content: flex-end; }
   .profile-common-readmore a {
     color: #15bfab;
-    text-decoration: underline;
+    text-decoration: none;
     font-size: 12px;
     text-align: right; }
     .profile-common-readmore a:after {
@@ -6302,7 +6302,8 @@ a {
           justify-content: space-between;
   width: 100%;
   max-width: 450px;
-  z-index: 100; }
+  z-index: 100;
+  z-index: 2; }
   .profile-header .profile-header-content {
     position: relative;
     width: 100%;
@@ -6369,11 +6370,12 @@ a {
   z-index: 10; }
 
 .profile-cover {
-  padding-top: 53px;
+  padding-top: 38px;
   height: 286px;
   background-size: cover;
-  position: relative; }
-  .profile-cover:before {
+  position: relative;
+  z-index: 0; }
+  .profile-cover .profile-cover-bg:before {
     width: 100%;
     height: 100%;
     right: 0px;
@@ -6383,73 +6385,70 @@ a {
     background-color: rgba(0, 0, 0, .5);
     display: block;
     content: "";
-    z-index: 2;
+    z-index: -1;
     position: absolute; }
-  .profile-cover .profile-cover-photo {
-    z-index: 2;
-    position: absolute;
-    top: 76px;
-    right: 0px;
-    left: 0px;
-    margin: auto;
-    text-align: center; }
-    .profile-cover .profile-cover-photo .profile-cover-photo-img img {
-      border: 2px solid #FFFFFF;
-      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+  .profile-cover .profile-cover-wrapper {
+    margin: 36px 0 0; }
+    .profile-cover .profile-cover-wrapper .profile-cover-photo {
+      text-align: center;
       width: 93px;
       height: 93px;
-      border-radius: 100%;
-      box-sizing: border-box;
-      display: inline-block; }
-    .profile-cover .profile-cover-photo .profile-cover-bg {
-      width: 100%;
-      height: 100%; }
-  .profile-cover .profile-cover-name {
-    color: white;
-    font-size: 22px;
-    color: #FFFFFF;
-    letter-spacing: 1.43px;
-    position: absolute;
-    top: 190px;
-    right: 0px;
-    left: 0px;
-    font-weight: bold;
-    margin: auto;
-    text-align: center;
-    z-index: 10; }
-  .profile-cover .profile-cover-count {
-    position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    top: 220px;
-    color: white;
-    right: 0px;
-    left: 0px;
-    z-index: 10;
-    margin: auto; }
-    .profile-cover .profile-cover-count .profile-cover-count-list {
-      padding: 0 10px;
+      position: relative;
+      margin: 0 auto 21px; }
+      .profile-cover .profile-cover-wrapper .profile-cover-photo .profile-cover-photo-official {
+        position: absolute;
+        left: -10px;
+        bottom: -5px;
+        z-index: 1; }
+      .profile-cover .profile-cover-wrapper .profile-cover-photo .profile-cover-photo-img img {
+        border: 2px solid #FFFFFF;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+        width: 93px;
+        height: 93px;
+        border-radius: 100%;
+        box-sizing: border-box;
+        display: inline-block; }
+      .profile-cover .profile-cover-wrapper .profile-cover-photo .profile-cover-bg {
+        width: 100%;
+        height: 100%; }
+    .profile-cover .profile-cover-wrapper .profile-cover-name {
+      color: white;
+      font-size: 22px;
+      color: #FFFFFF;
+      letter-spacing: 1.43px;
+      font-weight: bold;
+      margin: auto;
+      text-align: center;
+      z-index: 10;
+      margin: 0 0 5px; }
+    .profile-cover .profile-cover-wrapper .profile-cover-count {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
-              justify-content: center; }
-      .profile-cover .profile-cover-count .profile-cover-count-list img {
-        height: 14px;
-        margin: 4px 2px 0 0; }
-      .profile-cover .profile-cover-count .profile-cover-count-list .profile-cover-count-list-number {
-        font-size: 14px;
-        color: #FFFFFF;
-        letter-spacing: 0.83px;
-        font-weight: bold; }
+              justify-content: center;
+      color: white;
+      z-index: 10; }
+      .profile-cover .profile-cover-wrapper .profile-cover-count .profile-cover-count-list {
+        padding: 0 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .profile-cover .profile-cover-wrapper .profile-cover-count .profile-cover-count-list img {
+          height: 14px;
+          margin: 4px 2px 0 0; }
+        .profile-cover .profile-cover-wrapper .profile-cover-count .profile-cover-count-list .profile-cover-count-list-number {
+          font-size: 14px;
+          color: #FFFFFF;
+          letter-spacing: 0.83px;
+          font-weight: bold; }
 
 .profile-detail {
   background: #FFFFFF;
@@ -6548,15 +6547,17 @@ a {
     border-radius: 5.12px;
     display: inline-block;
     padding: 6px 9px;
-    margin: 0 8px 8px 0;
+    margin: 0 11px 15px 0;
     text-decoration: none; }
 
-.profile-section-block-status .profile-section-block-status-title {
-  font-size: 13px;
-  color: #4d4d4d;
-  letter-spacing: 0.96px;
-  text-align: center;
-  margin: 0 0 11px; }
+.profile-section-block-status {
+  margin: -15px 0 -20px; }
+  .profile-section-block-status .profile-section-block-status-title {
+    font-size: 13px;
+    color: #4d4d4d;
+    letter-spacing: 0.96px;
+    text-align: center;
+    margin: 0 0 11px; }
 
 .profile-section-block-status-table {
   display: -webkit-box;
@@ -6585,6 +6586,7 @@ a {
   .profile-section-block-status-table li:not(:last-child) {
     border-right: 1px solid white; }
 
+/* instagram */
 .profile-section-block-instagram {
   margin: 0 -30px 0 0;
   position: relative; }
@@ -6603,6 +6605,24 @@ a {
       .profile-section-block-instagram ul li img {
         border-radius: 5.89px;
         box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, .12); }
+
+/* youtube */
+.profile-section-block-youtube {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, .23);
+  z-index: 100; }
+
+.profile-section-block-youtube iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+  display: block; }
 
 .profile-section .profile-section-block-review-card:not(:last-child) {
   margin: 0 0 25px; }
@@ -6885,13 +6905,17 @@ a {
       .profile-section-block-coupon-menu .profile-section-block-coupon-menu-wrapper .profile-section-block-coupon-menu-detail .profile-section-block-coupon-menu-detail-left-photo {
         width: 87px;
         height: 87px;
-        margin: 0 8px 0 0; }
+        margin: 0 8px 0 0;
+        -ms-flex-preferred-size: 87px;
+            flex-basis: 87px; }
         .profile-section-block-coupon-menu .profile-section-block-coupon-menu-wrapper .profile-section-block-coupon-menu-detail .profile-section-block-coupon-menu-detail-left-photo img {
           width: 87px;
           height: 87px;
           border-radius: 4px; }
       .profile-section-block-coupon-menu .profile-section-block-coupon-menu-wrapper .profile-section-block-coupon-menu-detail .profile-section-block-coupon-menu-detail-right {
-        width: 70%; }
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1; }
         .profile-section-block-coupon-menu .profile-section-block-coupon-menu-wrapper .profile-section-block-coupon-menu-detail .profile-section-block-coupon-menu-detail-right .profile-section-block-coupon-menu-detail-right-price {
           font-weight: bold;
           font-size: 12px;
@@ -6989,6 +7013,124 @@ a {
            object-fit: cover;
         border-radius: 7.5px;
         box-shadow: 2px 5px 9px 0 rgba(0, 0, 0, .12); }
+
+.profile-section-block-opening-time {
+  margin: 0 auto; }
+  .profile-section-block-opening-time .profile-section-block-opening-time-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 95%;
+    margin: 0 auto; }
+    .profile-section-block-opening-time .profile-section-block-opening-time-column:not(:last-child) {
+      margin: 0 auto 23px; }
+    .profile-section-block-opening-time .profile-section-block-opening-time-column .profile-section-block-opening-time-column-flex1-spacing {
+      width: 20%; }
+    .profile-section-block-opening-time .profile-section-block-opening-time-column .profile-section-block-opening-time-column-flex2-dayoftheweek {
+      width: 14%;
+      color: #b3b3b3;
+      font-size: 15.5px; }
+    .profile-section-block-opening-time .profile-section-block-opening-time-column .profile-section-block-opening-time-column-flex3-time {
+      width: 40%;
+      color: #4d4d4d;
+      font-size: 15.5px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .profile-section-block-opening-time .profile-section-block-opening-time-column .profile-section-block-opening-time-column-flex4-note {
+      width: 24%;
+      color: #b3b3b3;
+      font-size: 9.5px;
+      margin: 0 0 0 2px; }
+
+.profile-follow-area {
+  margin: 40px auto 0;
+  padding: 60px 0;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  z-index: 0;
+  overflow: hidden;
+  /*ブラー効果でボヤけた部分を非表示*/ }
+  .profile-follow-area:after {
+    width: 100%;
+    height: 100%;
+    right: 0px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, .5);
+    display: block;
+    content: "";
+    z-index: -1;
+    position: absolute; }
+  .profile-follow-area:before {
+    content: '';
+    background: inherit;
+    /*.bgImageで設定した背景画像を継承する*/
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="5" /></filter></svg>#filter');
+    filter: blur(5px);
+    position: absolute;
+    /*ブラー効果で画像の端がボヤけた分だけ位置を調整*/
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -2;
+    /*重なり順序を一番下にしておく*/ }
+  .profile-follow-area .profile-follow-area-img {
+    text-align: center; }
+    .profile-follow-area .profile-follow-area-img img {
+      border: 2px solid #FFFFFF;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+      width: 93px;
+      height: 93px;
+      border-radius: 100%;
+      box-sizing: border-box;
+      display: inline-block;
+      margin: 0 auto 12px; }
+  .profile-follow-area .profile-follow-area-recommend-text {
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: 0.7px;
+    text-align: center;
+    margin: 0 0 12px; }
+  .profile-follow-area .profile-follow-area-name {
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: 1.37px;
+    text-align: center;
+    margin: 0 0 22px; }
+  .profile-follow-area .profile-follow-area-button {
+    width: 53%;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
+    background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, .3);
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    margin: 0 auto; }
 
 .jquery-normal-menu {
   display: none; }
