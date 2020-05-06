@@ -75,3 +75,55 @@ a {
         letter-spacing: -0.5px;
     }
 }
+
+.common-link {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+
+.profile-section-block-address {
+    font-size: 13px;
+    color: $cl-gray-dark;
+    line-height: 1.5;
+    margin: 0 0 15px;
+}
+
+.profile-common-readmore {
+    margin: 15px 0 0;
+    display: flex;
+    justify-content: flex-end;
+    a {
+        color: $cl-lime;
+        text-decoration: underline;
+        font-size: 12px;
+        text-align: right;
+        &:after {
+            content: "";
+            width: 6px;
+            height: 14px;
+            display: inline-block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 0px -1px 0px 4px;
+            background-image: url(https://assets.stekina.com/static/img/icon/icn-arrow-navi.svg);
+            vertical-align: middle;
+        }
+    }
+}
+
+
+/* animations */
+
+@keyframes fuwafuwa {
+    0% {
+        -webkit-transform: translate(0, 0);
+    }
+    50% {
+        -webkit-transform: translate(0, -10px);
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+    }
+}

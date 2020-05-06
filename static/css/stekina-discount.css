@@ -6244,6 +6244,51 @@ a {
   font-size: 15px !important;
   letter-spacing: -0.5px; }
 
+.common-link {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%; }
+
+.profile-section-block-address {
+  font-size: 13px;
+  color: #4d4d4d;
+  line-height: 1.5;
+  margin: 0 0 15px; }
+
+.profile-common-readmore {
+  margin: 15px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  .profile-common-readmore a {
+    color: #15bfab;
+    text-decoration: underline;
+    font-size: 12px;
+    text-align: right; }
+    .profile-common-readmore a:after {
+      content: "";
+      width: 6px;
+      height: 14px;
+      display: inline-block;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin: 0px -1px 0px 4px;
+      background-image: url(https://assets.stekina.com/static/img/icon/icn-arrow-navi.svg);
+      vertical-align: middle; }
+
+/* animations */
+@keyframes fuwafuwa {
+  0% {
+    -webkit-transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, -10px); }
+  100% {
+    -webkit-transform: translate(0, 0); } }
+
 .profile-header {
   background: #8e7f6b;
   position: fixed;
@@ -6772,6 +6817,181 @@ a {
       letter-spacing: 0; }
       .profile-section-block-stekina-shokai .profile-section-block-stekina-shokai-footer .profile-section-block-stekina-shokai-footer-number b {
         font-weight: bold; }
+
+.profile-section-block-normal-menus .profile-section-block-normal-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13.5px;
+  color: #4d4d4d; }
+  .profile-section-block-normal-menus .profile-section-block-normal-menu:not(:last-child) {
+    margin: 0 0 17px; }
+  .profile-section-block-normal-menus .profile-section-block-normal-menu .profile-section-block-normal-menu-name {
+    width: 75%;
+    margin: 0 3% 0 0; }
+  .profile-section-block-normal-menus .profile-section-block-normal-menu .profile-section-block-normal-menu-price {
+    width: 22%;
+    text-align: right; }
+    .profile-section-block-normal-menus .profile-section-block-normal-menu .profile-section-block-normal-menu-price span {
+      display: inline-block;
+      font-weight: bold; }
+    .profile-section-block-normal-menus .profile-section-block-normal-menu .profile-section-block-normal-menu-price .profile-section-block-normal-menu-price-yen {
+      margin: 0 2px 0 0; }
+
+.profile-section-block-coupon-menu {
+  position: relative; }
+  .profile-section-block-coupon-menu:not(:last-child) {
+    margin: 0 0 25px; }
+  .profile-section-block-coupon-menu .profile-section-block-coupon-menu-wrapper {
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, .11);
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+    height: 193px; }
+    .profile-section-block-coupon-menu .profile-section-block-coupon-menu-wrapper .profile-section-block-coupon-menu-top {
+      height: 28%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .profile-section-block-coupon-menu .profile-section-block-coupon-menu-wrapper .profile-section-block-coupon-menu-top .profile-section-block-coupon-menu-top-category {
+        width: 14%;
+        display: block;
+        margin: 0 3px 0 0;
+        height: 100%; }
+      .profile-section-block-coupon-menu .profile-section-block-coupon-menu-wrapper .profile-section-block-coupon-menu-top .profile-section-block-coupon-menu-top-menuname {
+        width: 80%;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        font-size: 14.2px;
+        color: #262626;
+        letter-spacing: 0.44px;
+        line-height: 22px;
+        font-weight: bold; }
+    .profile-section-block-coupon-menu .profile-section-block-coupon-menu-wrapper .profile-section-block-coupon-menu-detail {
+      margin: 3% 0 0;
+      padding: 0 10px;
+      height: 44%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%; }
+      .profile-section-block-coupon-menu .profile-section-block-coupon-menu-wrapper .profile-section-block-coupon-menu-detail .profile-section-block-coupon-menu-detail-left-photo {
+        width: 87px;
+        height: 87px;
+        margin: 0 8px 0 0; }
+        .profile-section-block-coupon-menu .profile-section-block-coupon-menu-wrapper .profile-section-block-coupon-menu-detail .profile-section-block-coupon-menu-detail-left-photo img {
+          width: 87px;
+          height: 87px;
+          border-radius: 4px; }
+      .profile-section-block-coupon-menu .profile-section-block-coupon-menu-wrapper .profile-section-block-coupon-menu-detail .profile-section-block-coupon-menu-detail-right {
+        width: 70%; }
+        .profile-section-block-coupon-menu .profile-section-block-coupon-menu-wrapper .profile-section-block-coupon-menu-detail .profile-section-block-coupon-menu-detail-right .profile-section-block-coupon-menu-detail-right-price {
+          font-weight: bold;
+          font-size: 12px;
+          color: #4d4d4d;
+          font-weight: bold;
+          margin: 0 0 4px; }
+          .profile-section-block-coupon-menu .profile-section-block-coupon-menu-wrapper .profile-section-block-coupon-menu-detail .profile-section-block-coupon-menu-detail-right .profile-section-block-coupon-menu-detail-right-price span {
+            margin: 0 3px 0 0;
+            font-weight: bold; }
+        .profile-section-block-coupon-menu .profile-section-block-coupon-menu-wrapper .profile-section-block-coupon-menu-detail .profile-section-block-coupon-menu-detail-right .profile-section-block-coupon-menu-detail-right-note {
+          font-size: 12px;
+          color: #4d4d4d;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 4;
+          overflow: hidden;
+          line-height: 1.3; }
+    .profile-section-block-coupon-menu .profile-section-block-coupon-menu-wrapper .profile-section-block-coupon-menu-detail-bottom {
+      position: absolute;
+      bottom: 5%;
+      width: 100%;
+      padding: 0 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .profile-section-block-coupon-menu .profile-section-block-coupon-menu-wrapper .profile-section-block-coupon-menu-detail-bottom .profile-section-block-coupon-menu-detail-bottom-customer {
+        background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
+        background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
+        display: inline-block;
+        color: white;
+        padding: 4px 7px 4px;
+        font-size: 10.7px;
+        border-radius: 4px;
+        font-weight: bold; }
+      .profile-section-block-coupon-menu .profile-section-block-coupon-menu-wrapper .profile-section-block-coupon-menu-detail-bottom .profile-section-block-coupon-menu-detail-bottom-link {
+        color: #15bfab;
+        text-decoration: underline;
+        font-size: 10.3px; }
+        .profile-section-block-coupon-menu .profile-section-block-coupon-menu-wrapper .profile-section-block-coupon-menu-detail-bottom .profile-section-block-coupon-menu-detail-bottom-link:after {
+          content: "";
+          width: 6px;
+          height: 14px;
+          display: inline-block;
+          background-size: contain;
+          background-repeat: no-repeat;
+          margin: 0px -1px 0px 4px;
+          background-image: url(https://assets.stekina.com/static/img/icon/icn-arrow-navi.svg);
+          vertical-align: middle; }
+
+.profile-section-block-coupon-menu-available-today {
+  position: absolute;
+  bottom: -7px;
+  z-index: 10;
+  width: 120px;
+  right: 118px;
+  -webkit-animation-name: fuwafuwa;
+          animation-name: fuwafuwa;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease; }
+
+.profile-section-block-googlemap {
+  margin: 0 -18px; }
+
+.profile-section-block-salon-atmosphere {
+  position: relative;
+  margin: 0 -30px 0 -10px; }
+  .profile-section-block-salon-atmosphere ul {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    white-space: nowrap;
+    height: 200px;
+    padding: 0 0 0 10px; }
+    .profile-section-block-salon-atmosphere ul li {
+      display: inline-block;
+      width: 292px;
+      height: 200px;
+      margin: 0 15px 0 0; }
+      .profile-section-block-salon-atmosphere ul li img {
+        width: 292px;
+        height: 173px;
+        -o-object-fit: cover;
+           object-fit: cover;
+        border-radius: 7.5px;
+        box-shadow: 2px 5px 9px 0 rgba(0, 0, 0, .12); }
+
+.jquery-normal-menu {
+  display: none; }
 
 /* ステキボタン */
 .love-button-count {
