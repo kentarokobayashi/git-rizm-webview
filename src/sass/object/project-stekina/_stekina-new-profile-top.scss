@@ -1,7 +1,15 @@
 .profile-top {
-    height: 410px;
+    height: 340px;
     position: relative;
     margin: 0 0 12px;
+}
+
+.new-profile-top {
+    .profile-top {
+        height: 410px !important;
+        position: relative;
+        margin: 0 0 12px;
+    }
 }
 
 .profile-detail {
@@ -95,7 +103,6 @@
     background: #FFFFFF;
     border-radius: 7px;
     padding: 0px 13px 0px;
-    height: 139px;
     margin: 0 13px;
     .profile-detail-date {
         display: flex;
@@ -339,12 +346,6 @@
                 border-radius: 3.5px;
                 font-weight: bold;
             }
-            .profile-section-block-review-card-left-top-category-frequently {
-                @include lime-gradient();
-            }
-            .profile-section-block-review-card-left-top-category-royal {
-                @include rizm-gradient();
-            }
             .profile-section-block-review-card-left-top-order {
                 width: 74%;
                 .profile-section-block-review-card-left-top-order-menu {
@@ -422,6 +423,16 @@
             }
         }
     }
+}
+
+.profile-section-block-review-card-left-top-category-frequently,
+.review-category-frequently {
+    @include lime-gradient();
+}
+
+.profile-section-block-review-card-left-top-category-royal,
+.review-category-royal {
+    @include rizm-gradient();
 }
 
 .absolute-carousel-icon img {

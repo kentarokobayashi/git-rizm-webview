@@ -1,0 +1,303 @@
+- var dateNow = Date.now();
+mixin suteki-button
+      .love-button-wrapper
+            .love-button-area
+                .love-button.like
+                  .love-button-heart
+                    .mask(style='background:#aaa; display:flex;   align-items: flex-end;\
+                    justify-content: center;')
+                      .mask-color(style='background:linear-gradient(-60deg,#E6417A 0%,#FF595B 100%) ; height:0%; width:100%;')
+                    // ハートのsvgくり抜き
+                    svg.shape(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewBox='0 0 30 25', xml:space='preserve')
+                      clippath#svgPath
+                        path.st0(d='M16.3,0C12.6,0,11,2.7,11,2.7S9.5,0,5.7,0C2.6,0,0,2.7,0,5.9C0,13.1,11,19,11,19s11-5.9,11-13.1\
+                        C22,2.7,19.4,0,16.3,0z')
+                // ハートのsvgたち
+                .suteki-counter(style='opacity:0;')
+                  span.suteki-counter-plus +
+                  span.suteki-counter-number 0
+                  .suteki-counter-bg
+                .flush-heart
+                  svg.h.h-1(height='40', width='40', viewBox='0 0 320 320')
+                    path.path(d='M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90')
+                    defs
+                      lineargradient#MyGradient(gradientTransform='rotate(-60)')
+                        stop(offset='0%', stop-color='#FF595B')
+                        stop(offset='100%', stop-color='#E6417A')
+                  svg.h.h-2(height='40', width='40', viewBox='0 0 320 320')
+                    path.path(d='M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90')
+                    defs
+                      lineargradient#Gradient(gradientTransform='rotate(-60)')
+                        | >
+                        stop(offset='0%', stop-color='#fe8386')
+                        stop(offset='100%', stop-color='#ec719c')
+                  svg.h.h-3(height='40', width='40', viewBox='0 0 320 320')
+                    path.path(d='M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90')
+                  svg.h.h-4(height='40', width='40', viewBox='0 0 320 320')
+                    path.path(d='M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90')
+                  svg.h.h-5(height='40', width='40', viewBox='0 0 320 320')
+                    path.path(d='M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90')
+                  svg.h.h-6(height='40', width='40', viewBox='0 0 320 320')
+                    path.path(d='M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90')
+                  svg.h.h-7(height='40', width='40', viewBox='0 0 320 320')
+                    path.path(d='M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90')
+                  svg.h.h-8(height='40', width='40', viewBox='0 0 320 320')
+                    path.path(d='M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90')
+                .love-button-area-bg
+doctype html
+html(lang='jp')
+  head
+    title みうさんからカワイ ミオさんへのレビュー
+    //link(href='https://stekina.com/community/assets/application-0cd9ef953e92fafda8f69d7c040ac2075963fa2d6ccc579def5db048df82c04c.css' rel='stylesheet')
+    link(href='static/css/stekina-discount.css?'+dateNow, rel='stylesheet')
+    meta(name='viewport', content='width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    meta(charset='UTF-8')
+    meta(name='robots', content='noindex,nofollow')
+    script(src='//jpostal-1006.appspot.com/jquery.jpostal.js', type='text/javascript')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
+  body.bg-stekina-black
+   .wrapper-cl-stekina-brown-light
+    //👇追従ボタン（スクロールすると出てくる）
+    .wrapper-profile
+      //ヘッダー
+      include ../mixin/_header-newprofile-brown-normal.pug
+      include ../mixin/_fixed-button-bottom-newprofile.pug     
+      //profile-cover
+      .profile-top
+          .profile-cover(style='background-image:url(https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/download.jpg);')
+            .profile-cover-wrapper
+              .profile-cover-photo
+                .profile-cover-photo-official
+                  img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/icn-official-account.svg')
+                .profile-cover-photo-img
+                  img(src='https://s3-ap-northeast-1.amazonaws.com/limeapp/karte/owner_photo_approved/3WLF-5365-P48V-5NF2?timestamp=1583483889225')
+              h1.profile-cover-name
+                |カワイ ミオ
+                //|Ryosuke Shimauchi
+              .profile-cover-count
+                //ステキ数
+                .profile-cover-count-list
+                  .profile-cover-count-list-img
+                    img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/04/icon-suteki-ranking-personal.svg')
+                  .profile-cover-count-list-number
+                    |999
+                //フォロワー数
+                .profile-cover-count-list
+                  .profile-cover-count-list-img
+                        img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/04/icn-follower-ranking-personal.svg')
+                  .profile-cover-count-list-number
+                    |999
+                //レビュー数
+                .profile-cover-count-list
+                  .profile-cover-count-list-img
+                      img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/icn-count-reviews-white.svg')
+                  .profile-cover-count-list-number
+                    |999
+            .profile-cover-bg
+          //.profile-date
+          .profile-detail
+            .profile-detail-date
+                .profile-detail-date-list
+                    //住所
+                    .profile-detail-date-list-img
+                        img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/04/icn_map-ranking-personal.svg')
+                    .profile-detail-date-list-text.profile-detail-date-list-address
+                      |東京都渋谷区神宮前
+                    //美容師歴
+                .profile-detail-date-list
+                    .profile-detail-date-list-img
+                        img(src='https://stekina.com/static/img/icon/icn-lime.svg')
+                    .profile-detail-date-list-text.profile-detail-date-list-address
+                      |美容師歴
+                      b|99
+                      |年
+                .profile-detail-date-list
+                    //平均予算
+                    .profile-detail-date-list-img
+                        img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/04/icn-price-ranking-personal.svg')
+                    .profile-detail-date-list-text.profile-detail-date-list-address
+                      |平均予算
+                      b|11,000
+                      |~
+                      b|12,000
+                      |円
+            .profile-detail-note
+              |年間1500名以上のお客様を担当🗣{ヘアスタイル/メイク/小顔矯正/マッサージ/ファッション/ランジェリーであなた自身の為にサポート！)#ランジェリー美容師年間1500名以上のお客様を担当🗣{ヘアスタイル/メイク/小顔矯正/マッサージ/ファッション/ランジェリーであなた自身の為にサポート！)#ランジェリー美容師
+      //レビュー詳細、なかったら丸ごとdiv取ってOK
+      .profile-section-block-review
+          .profile-section-block-review-detail
+            .profile-section-block-review-detail-head
+              .profile-section-block-review-detail-head-left
+                .profile-section-block-review-detail-head-left-img
+                  img(src='https://stekina.com/static/img/default-prof-photo.png')
+                .profile-section-block-review-detail-head-left-order
+                  .profile-section-block-review-detail-head-left-order-menu|メニュー/トリートメント＋カット＋縮毛強制
+                  .profile-section-block-review-detail-head-left-order-name|みう
+                .profile-section-block-review-detail-head-left-category.review-category-frequently|頻繁に来店しているお客様のレビュー
+              .profile-section-block-review-detail-head-right
+                .profile-section-block-review-detail-head-right-review-date|2020/03/12
+                .profile-section-block-review-detail-head-right-custemer-visit
+                    |来店年数/2年1ヶ月
+                    br 
+                    |来店回数/5回
+            //サムネがないときは丸々削ってOK
+            .profile-section-block-review-detail-thumbnail  
+                .profile-section-block-review-detail-thumbnail-left
+                  img(src='https://limeapp.s3.amazonaws.com/review/review_photo/1944/0faf7600-19ca-420d-822c-d22c94124854')
+                .profile-section-block-review-detail-thumbnail-right
+                    .profile-section-block-review-detail-thumbnail-right-child
+                      img(src='https://limeapp.s3.amazonaws.com/review/review_photo/1944/5760e0f0-c7f4-493f-82dc-aee4bd0170ed')
+                    .profile-section-block-review-detail-thumbnail-right-child
+                      img(src='https://limeapp.s3.amazonaws.com/review/review_photo/1944/93972010-ab14-4666-99c6-cb2801f88972')
+                    .profile-section-block-review-detail-thumbnail-right-child
+                      img(src='https://limeapp.s3.amazonaws.com/review/review_photo/1944/5b7468ea-7132-43ad-a5bd-37097a2371cd')
+                    .profile-section-block-review-detail-thumbnail-right-child
+                      img(src='https://stekina.com/static/img/review-default-thumbnail.jpg')
+            .profile-section-block-review-detail-content
+              |お礼のコメントが遅くなり申し訳ないです💦
+              br
+              |施術から1週間ほど経ちましたが、ばっさり切った髪の毛がするんと内側にまとまるようになり、さらさらつるつるでお手入れもかなり楽になりました！✨
+              br
+              |前に購入したシャンプーセットもお気に入りです🥺💗
+              br
+              |ありがとうございます！
+              br
+              br
+            .profile-section-block-review-detail-suteki
+              .profile-section-block-review-detail-suteki-icon
+                  +suteki-button
+              .profile-section-block-review-detail-suteki-count
+                  p
+                      b|183
+                      |ステキ!
+          //レビューへの返信、なかったら丸ごとdiv取ってOK
+          .profile-section-block-review-comment-byclient
+            .profile-section-block-review-comment-byclient-head                             
+              .profile-section-block-review-comment-byclient-head-left
+                .profile-section-block-review-comment-byclient-head-left-img
+                   img(src='https://s3-ap-northeast-1.amazonaws.com/limeapp/karte/owner_photo_approved/3WLF-5365-P48V-5NF2?timestamp=1583483889225')
+                .profile-section-block-review-comment-byclient-head-left-name
+                  |カワイ ミオ
+              .profile-section-block-review-comment-byclient-head-right-date
+                |2019/12/14
+            .profile-section-block-review-comment-byclient-content
+              |いつもありがとうございます！
+              br
+              br
+              |次回も是非よろしくお願いいたします✨
+          //.profile-review-paging
+                //各要素がなくてもpaging-prev,paging-center,paging-rightのdivは消さないで欲しいです（レイアウト崩れるため）
+                .profile-review-paging-prev
+                    a.u-icn-arrow-back-after(href='#')|前へ
+                .profile-review-paging-center
+                    a(href='#')|レビューの一覧(24件)
+                .profile-review-paging-right
+                    a.u-icn-arrow-next-after(href='#')|次へ
+      //paging
+      .profile-review-paging
+            //各要素がなくてもpaging-prev,paging-center,paging-rightのdivは消さないで欲しいです（レイアウト崩れるため）
+            .profile-review-paging-prev
+                a.u-icn-arrow-back-after(href='newprofile-review-archive.html')|前へ
+            .profile-review-paging-center
+                a(href='newprofile-review-archive.html')|レビューの一覧(24件)
+            .profile-review-paging-right
+                a.u-icn-arrow-next-after(href='newprofile-review-archive.html')|次へ
+      //お客様からのレビュー&美容師からのステキナ紹介文
+      .profile-section
+        .profile-section-block
+          .profile-section-block-title
+             h2|お客様からのレビュー
+                span.profile-section-block-title-sub|(999件)
+          //.profile-section-block-link-blocks
+          .profile-section-block-link-blocks
+           //.profile-section-block-review-card
+           .profile-section-block-review-card
+              a(href='newprofile-review-detail.html').common-link
+              .profile-section-block-review-card-left
+                //頻繁に来店しているお客様のレビューまたは長く来店しているお客様のレビューがあれば「profile-section-block-review-card-left-have-category」を追加。
+                .profile-section-block-review-card-left-top.profile-section-block-review-card-left-have-category
+                  .profile-section-block-review-card-left-top-img
+                    img(src='https://stekina.com/static/img/default-prof-photo.png')
+                  .profile-section-block-review-card-left-top-order
+                    .profile-section-block-review-card-left-top-order-menu
+                      |メニュー/トリートメント＋カット＋縮毛強制
+                    .profile-section-block-review-card-left-top-order-name
+                      |佐藤佳子佐藤佳子佐藤佳子佐藤佳子
+                  //頻繁に来店しているお客様のレビューは右記のクラスを付与「profile-section-block-review-card-left-top-category-frequently」
+                  //長く来店しているお客様のレビューは右記のクラスを付与「profile-section-block-review-card-left-top-category-royal」
+                  .profile-section-block-review-card-left-top-category.profile-section-block-review-card-left-top-category-frequently
+                     |頻繁に来店しているお客様のレビュー
+                .profile-section-block-review-card-left-text
+                 |今日もありがとうございました！いつもながら素敵に仕上げてくださって感謝です〜(*^^*)前回のカットから3ヶ月経っていましたが、形が崩れることなく過ごせていました！今までが自分のオ…
+                .profile-section-block-review-card-left-bottom
+                  .profile-section-block-review-card-left-bottom-suteki-icon
+                      +suteki-button
+                  .profile-section-block-review-card-left-bottom-suteki-count
+                     p
+                      b|183
+                     |ステキ!
+              .profile-section-block-review-card-right
+                .profile-section-block-review-card-right-overray
+                 |レビューを詳しくみる
+                .profile-section-block-review-card-right-img
+                  img(src='https://limeapp.s3.amazonaws.com/review/review_photo/1944/0faf7600-19ca-420d-822c-d22c94124854')
+           .profile-section-block-review-card
+              a(href='newprofile-review-detail.html').common-link
+              .profile-section-block-review-card-left
+                .profile-section-block-review-card-left-top
+                  .profile-section-block-review-card-left-top-img
+                    img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/dummysample.png')
+                  .profile-section-block-review-card-left-top-order
+                    .profile-section-block-review-card-left-top-order-menu
+                      |メニュー/トリートメント＋カット＋縮毛強制
+                    .profile-section-block-review-card-left-top-order-name
+                      |佐藤佳子佐藤佳子佐藤佳子佐藤佳子
+                  
+                .profile-section-block-review-card-left-text
+                 |今日もありがとうございました！いつもながら素敵に仕上げてくださって感謝です〜(*^^*)前回のカットから3ヶ月経っていましたが、形が崩れることなく過ごせていました！今までが自分のオ…
+                .profile-section-block-review-card-left-bottom
+                  .profile-section-block-review-card-left-bottom-suteki-icon
+                      +suteki-button
+                  .profile-section-block-review-card-left-bottom-suteki-count
+                     p
+                      b|183
+                     |ステキ!
+              .profile-section-block-review-card-right
+                .profile-section-block-review-card-right-overray
+                 |レビューを詳しくみる
+                .profile-section-block-review-card-right-img
+                  img(src='https://limeapp.s3.amazonaws.com/review/review_photo/1824/11d98e8d-2430-422e-a51c-eb57ad5a52f1')
+           .profile-section-block-review-card
+              a(href='newprofile-review-detail.html').common-link
+              .profile-section-block-review-card-left
+                .profile-section-block-review-card-left-top.profile-section-block-review-card-left-have-category
+                  .profile-section-block-review-card-left-top-img
+                    img(src='https://stekina.com/static/img/default-prof-photo.png')
+                  .profile-section-block-review-card-left-top-order
+                    .profile-section-block-review-card-left-top-order-menu
+                      |メニュー/トリートメント＋カット＋縮毛強制
+                    .profile-section-block-review-card-left-top-order-name
+                      |佐藤佳子佐藤佳子佐藤佳子佐藤佳子
+                  .profile-section-block-review-card-left-top-category.profile-section-block-review-card-left-top-category-royal
+                     |長く来店しているお客様のレビュー
+                .profile-section-block-review-card-left-text
+                 |今日もありがとうございました！いつもながら素敵に仕上げてくださって感謝です〜(*^^*)前回のカットから3ヶ月経っていましたが、形が崩れることなく過ごせていました！今までが自分のオ…
+                .profile-section-block-review-card-left-bottom
+                  .profile-section-block-review-card-left-bottom-suteki-icon
+                      +suteki-button
+                  .profile-section-block-review-card-left-bottom-suteki-count
+                     p
+                      b|183
+                     |ステキ!
+              .profile-section-block-review-card-right
+                .profile-section-block-review-card-right-overray
+                 |レビューを詳しくみる
+                .profile-section-block-review-card-right-img
+                  img(src='https://limeapp.s3.amazonaws.com/review/review_photo/1944/0faf7600-19ca-420d-822c-d22c94124854')
+           //.profile-section-block-review-card
+           .profile-common-readmore
+              a(href='#')|レビューの一覧
+      include ../mixin/_footer-newprofile
+   include ../mixin/_footer2-newprofile   
+   

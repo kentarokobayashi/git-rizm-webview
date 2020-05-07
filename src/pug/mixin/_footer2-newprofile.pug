@@ -1,0 +1,24 @@
+script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+script(src='static/js/suteki.js')
+script.
+      $(function() {
+      var topBtn = $('.scroll-head-stekina-2019');
+      //スクロールが500に達したらボタン表示
+      $(window).scroll(function () {
+      if ($(this).scrollTop() > 500) {
+        $('.profile-header-content-center-stylist').fadeIn();
+        $('.fixed-bottom').fadeIn();
+        $('.profile-header-content-center-salon').hide();
+      } else {
+        $('.fixed-bottom').hide();
+        $('.profile-header-content-center-stylist').hide();
+        $('.profile-header-content-center-salon').fadeIn();
+      }
+      });
+      });
+
+script.
+      $('.jquery-open-menus').on('click', function() {
+        $('.jquery-normal-menu').toggleClass("profile-section-block-normal-menu-show");
+      }
+      );

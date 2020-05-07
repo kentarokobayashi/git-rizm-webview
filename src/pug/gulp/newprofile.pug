@@ -56,18 +56,13 @@ html(lang='jp')
     script(src='//jpostal-1006.appspot.com/jquery.jpostal.js', type='text/javascript')
     meta(name='apple-mobile-web-app-capable', content='yes')
     meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
-  body.bg-stekina-black
+  body.bg-stekina-black.new-profile-top
    .wrapper-cl-stekina-brown-light
     //👇追従ボタン（スクロールすると出てくる）
     .wrapper-profile
       //ヘッダー
       include ../mixin/_header-newprofile-brown-normal.pug
-      .fixed-bottom(style='display:none;')
-        .fixed-bottom-wrapper
-            .fixed-bottom-button-sub
-                a(href='#')|メッセージする
-            .fixed-bottom-button-main
-                a(href='#')|空席を確認してみる        
+      include ../mixin/_fixed-button-bottom-newprofile.pug     
       //profile-cover
       .profile-top
           .profile-cover(style='background-image:url(https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/download.jpg);')
@@ -249,7 +244,7 @@ html(lang='jp')
           .profile-section-block-link-blocks
            //.profile-section-block-review-card
            .profile-section-block-review-card
-              a(href='#').common-link
+              a(href='newprofile-review-detail.html').common-link
               .profile-section-block-review-card-left
                 //頻繁に来店しているお客様のレビューまたは長く来店しているお客様のレビューがあれば「profile-section-block-review-card-left-have-category」を追加。
                 .profile-section-block-review-card-left-top.profile-section-block-review-card-left-have-category
@@ -279,7 +274,7 @@ html(lang='jp')
                 .profile-section-block-review-card-right-img
                   img(src='https://limeapp.s3.amazonaws.com/review/review_photo/1944/0faf7600-19ca-420d-822c-d22c94124854')
            .profile-section-block-review-card
-              a(href='#').common-link
+              a(href='newprofile-review-detail.html').common-link
               .profile-section-block-review-card-left
                 .profile-section-block-review-card-left-top
                   .profile-section-block-review-card-left-top-img
@@ -305,7 +300,7 @@ html(lang='jp')
                 .profile-section-block-review-card-right-img
                   img(src='https://limeapp.s3.amazonaws.com/review/review_photo/1824/11d98e8d-2430-422e-a51c-eb57ad5a52f1')
            .profile-section-block-review-card
-              a(href='#').common-link
+              a(href='newprofile-review-detail.html').common-link
               .profile-section-block-review-card-left
                 .profile-section-block-review-card-left-top.profile-section-block-review-card-left-have-category
                   .profile-section-block-review-card-left-top-img
@@ -333,7 +328,7 @@ html(lang='jp')
                   img(src='https://limeapp.s3.amazonaws.com/review/review_photo/1944/0faf7600-19ca-420d-822c-d22c94124854')
            //.profile-section-block-review-card
            .profile-common-readmore
-              a(href='#')|レビューの一覧
+              a(href='newprofile-review-archive.html')|レビューの一覧
         .profile-section-block
           .profile-section-block-title-stekina-shokai
              h2|
@@ -725,39 +720,6 @@ html(lang='jp')
                     span.closing-time
                       |20:00
                 .profile-section-block-opening-time-column-flex4-note
-      .profile-follow-area(style='background-image:url(https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/download.jpg);')
-            .profile-follow-area-recommend-text
-              |\ カワイ ミオ さんをフォローしよう！ /
-            .profile-follow-area-img
-              img(src='https://s3-ap-northeast-1.amazonaws.com/limeapp/karte/owner_photo_approved/3WLF-5365-P48V-5NF2?timestamp=1583483889225')
-            .profile-follow-area-name
-             |カワイ ミオ
-            //フォローしたら.profile-follow-area-button-nofollowを.profile-follow-area-button-already-followに変換
-            button.profile-follow-area-button.profile-follow-area-button-no-follow
-             |フォローする
       include ../mixin/_footer-newprofile
-
-   script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js')
-   script(src='static/js/suteki.js')
-   script.
-      $(function() {
-      var topBtn = $('.scroll-head-stekina-2019');
-      //スクロールが500に達したらボタン表示
-      $(window).scroll(function () {
-      if ($(this).scrollTop() > 500) {
-        $('.profile-header-content-center-stylist').fadeIn();
-        $('.fixed-bottom').fadeIn();
-        $('.profile-header-content-center-salon').hide();
-      } else {
-        $('.fixed-bottom').hide();
-        $('.profile-header-content-center-stylist').hide();
-        $('.profile-header-content-center-salon').fadeIn();
-      }
-      });
-      });
-
-   script.
-      $('.jquery-open-menus').on('click', function() {
-        $('.jquery-normal-menu').toggleClass("profile-section-block-normal-menu-show");
-      }
-      );
+   include ../mixin/_footer2-newprofile   
+   

@@ -6178,6 +6178,7 @@ footer {
   100% {
     -webkit-transform: translate(0, 0); } }
 
+/* z-indexの定義 */
 body {
   max-width: 2000px !important; }
 
@@ -6293,60 +6294,59 @@ a {
   width: 100%;
   padding: 0 7px;
   max-width: 450px; }
-
-.fixed-bottom {
-  position: fixed;
-  bottom: 30px;
-  width: 100%;
-  max-width: 450px;
-  z-index: 3; }
-  .fixed-bottom a {
-    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, .2); }
-  .fixed-bottom .fixed-bottom-button-sub {
-    width: 40%; }
-    .fixed-bottom .fixed-bottom-button-sub a {
-      /* width: 127px;*/
-      height: 46px;
-      background: #FFFFFF;
-      border: 2px solid #15bfab;
-      border-radius: 6px;
-      box-sizing: border-box;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      color: #15bfab;
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: bold; }
-  .fixed-bottom .fixed-bottom-button-main {
-    width: 56%; }
-    .fixed-bottom .fixed-bottom-button-main a {
-      font-size: 15px;
-      /*width: 184px;*/
-      height: 46px;
-      border-radius: 6px;
-      border: 2px solid #ff595b;
-      box-sizing: border-box;
-      background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
-      background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      color: white;
-      text-decoration: none;
-      font-weight: bold; }
+  .fixed-bottom-wrapper .fixed-bottom {
+    position: fixed;
+    bottom: 30px;
+    width: 100%;
+    max-width: 450px;
+    z-index: 3; }
+    .fixed-bottom-wrapper .fixed-bottom a {
+      box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, .2); }
+    .fixed-bottom-wrapper .fixed-bottom .fixed-bottom-button-sub {
+      width: 40%; }
+      .fixed-bottom-wrapper .fixed-bottom .fixed-bottom-button-sub a {
+        /* width: 127px;*/
+        height: 46px;
+        background: #FFFFFF;
+        border: 2px solid #15bfab;
+        border-radius: 6px;
+        box-sizing: border-box;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        color: #15bfab;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold; }
+    .fixed-bottom-wrapper .fixed-bottom .fixed-bottom-button-main {
+      width: 56%; }
+      .fixed-bottom-wrapper .fixed-bottom .fixed-bottom-button-main a {
+        font-size: 15px;
+        /*width: 184px;*/
+        height: 46px;
+        border-radius: 6px;
+        border: 2px solid #ff595b;
+        box-sizing: border-box;
+        background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
+        background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        color: white;
+        text-decoration: none;
+        font-weight: bold; }
 
 .profile-section {
   background: #FFFFFF;
@@ -6393,6 +6393,7 @@ a {
   font-size: 15px !important;
   letter-spacing: -0.5px; }
 
+/* ブロック単位の共通リンク */
 .common-link {
   position: absolute;
   z-index: 1;
@@ -6412,7 +6413,10 @@ a {
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end; }
+          justify-content: flex-end;
+  cursor: pointer; }
+  .profile-common-readmore:hover {
+    text-decoration: underline; }
   .profile-common-readmore a {
     color: #15bfab;
     text-decoration: none;
@@ -6439,7 +6443,12 @@ a {
     -webkit-transform: translate(0, 0); } }
 
 .profile-top {
-  height: 410px;
+  height: 340px;
+  position: relative;
+  margin: 0 0 12px; }
+
+.new-profile-top .profile-top {
+  height: 410px !important;
   position: relative;
   margin: 0 0 12px; }
 
@@ -6533,7 +6542,6 @@ a {
   background: #FFFFFF;
   border-radius: 7px;
   padding: 0px 13px 0px;
-  height: 139px;
   margin: 0 13px; }
   .profile-detail .profile-detail-date {
     display: -webkit-box;
@@ -6782,12 +6790,6 @@ a {
         padding: 1px 6px 2.5px;
         border-radius: 3.5px;
         font-weight: bold; }
-      .profile-section-block-review-card .profile-section-block-review-card-left .profile-section-block-review-card-left-top .profile-section-block-review-card-left-top-category-frequently {
-        background-image: -webkit-linear-gradient(120deg, #4f9ad6 0%, #14ceb8 100%);
-        background-image: linear-gradient(-30deg, #4f9ad6 0%, #14ceb8 100%); }
-      .profile-section-block-review-card .profile-section-block-review-card-left .profile-section-block-review-card-left-top .profile-section-block-review-card-left-top-category-royal {
-        background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
-        background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%); }
       .profile-section-block-review-card .profile-section-block-review-card-left .profile-section-block-review-card-left-top .profile-section-block-review-card-left-top-order {
         width: 74%; }
         .profile-section-block-review-card .profile-section-block-review-card-left .profile-section-block-review-card-left-top .profile-section-block-review-card-left-top-order .profile-section-block-review-card-left-top-order-menu {
@@ -6856,6 +6858,16 @@ a {
       -o-object-fit: cover;
          object-fit: cover;
       height: 179px; }
+
+.profile-section-block-review-card-left-top-category-frequently,
+.review-category-frequently {
+  background-image: -webkit-linear-gradient(120deg, #4f9ad6 0%, #14ceb8 100%);
+  background-image: linear-gradient(-30deg, #4f9ad6 0%, #14ceb8 100%); }
+
+.profile-section-block-review-card-left-top-category-royal,
+.review-category-royal {
+  background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
+  background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%); }
 
 .absolute-carousel-icon img {
   position: absolute;
@@ -7298,6 +7310,246 @@ a {
 
 .jquery-normal-menu {
   display: none; }
+
+.profile-section-block-review {
+  width: 93%;
+  border-radius: 8px;
+  margin: 0 auto 8px;
+  padding: 18px 18px 30px;
+  background: #FFFFFF; }
+
+.profile-section-block-review-detail {
+  background: #FFFFFF;
+  border-radius: 8px;
+  margin: 0 -3px 8px;
+  box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, .15); }
+  .profile-section-block-review-detail .profile-section-block-review-detail-head {
+    position: relative;
+    height: 59px;
+    width: 100%; }
+    .profile-section-block-review-detail .profile-section-block-review-detail-head .profile-section-block-review-detail-head-left {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 54px;
+      padding: 8px 0 0 10px; }
+      .profile-section-block-review-detail .profile-section-block-review-detail-head .profile-section-block-review-detail-head-left .profile-section-block-review-detail-head-left-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        box-sizing: border-box;
+        display: inline-block; }
+      .profile-section-block-review-detail .profile-section-block-review-detail-head .profile-section-block-review-detail-head-left .profile-section-block-review-detail-head-left-order {
+        width: 74%;
+        margin: 0 0 0 5px; }
+        .profile-section-block-review-detail .profile-section-block-review-detail-head .profile-section-block-review-detail-head-left .profile-section-block-review-detail-head-left-order .profile-section-block-review-detail-head-left-order-menu {
+          font-size: 7.8px;
+          color: #b3b3b3;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin: 0 0 4px; }
+        .profile-section-block-review-detail .profile-section-block-review-detail-head .profile-section-block-review-detail-head-left .profile-section-block-review-detail-head-left-order .profile-section-block-review-detail-head-left-order-name {
+          color: #666666;
+          font-size: 14px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          letter-spacing: 0.5px; }
+      .profile-section-block-review-detail .profile-section-block-review-detail-head .profile-section-block-review-detail-head-left .profile-section-block-review-detail-head-left-category {
+        position: absolute;
+        bottom: -3px;
+        color: #fff;
+        font-size: 8px;
+        font-weight: bold;
+        padding: 2px 6px 3px;
+        border-radius: 3.5px;
+        font-weight: bold; }
+    .profile-section-block-review-detail .profile-section-block-review-detail-head .profile-section-block-review-detail-head-right .profile-section-block-review-detail-head-right-review-date {
+      position: absolute;
+      right: 9px;
+      top: 9px;
+      font-size: 9.5px;
+      color: #b3b3b3;
+      font-family: Lato; }
+    .profile-section-block-review-detail .profile-section-block-review-detail-head .profile-section-block-review-detail-head-right .profile-section-block-review-detail-head-right-custemer-visit {
+      position: absolute;
+      right: 9px;
+      bottom: 0px;
+      text-align: right;
+      font-size: 7.8px;
+      line-height: 1.6;
+      color: #b3b3b3; }
+  .profile-section-block-review-detail .profile-section-block-review-detail-thumbnail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 220px;
+    padding: 5px 0 0; }
+    .profile-section-block-review-detail .profile-section-block-review-detail-thumbnail .profile-section-block-review-detail-thumbnail-left {
+      height: 220px;
+      width: 50%; }
+      .profile-section-block-review-detail .profile-section-block-review-detail-thumbnail .profile-section-block-review-detail-thumbnail-left img {
+        height: 220px;
+        -o-object-fit: cover;
+           object-fit: cover; }
+    .profile-section-block-review-detail .profile-section-block-review-detail-thumbnail .profile-section-block-review-detail-thumbnail-right {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      height: 220px;
+      width: 50%; }
+      .profile-section-block-review-detail .profile-section-block-review-detail-thumbnail .profile-section-block-review-detail-thumbnail-right .profile-section-block-review-detail-thumbnail-right-child {
+        width: 50%;
+        height: 110px; }
+        .profile-section-block-review-detail .profile-section-block-review-detail-thumbnail .profile-section-block-review-detail-thumbnail-right .profile-section-block-review-detail-thumbnail-right-child img {
+          -o-object-fit: cover;
+             object-fit: cover;
+          height: 110px; }
+  .profile-section-block-review-detail .profile-section-block-review-detail-content {
+    padding: 20px 15px;
+    line-height: 1.8;
+    font-size: 14px;
+    color: #4d4d4d; }
+  .profile-section-block-review-detail .profile-section-block-review-detail-suteki {
+    padding: 0 18px 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .profile-section-block-review-detail .profile-section-block-review-detail-suteki .profile-section-block-review-detail-suteki-icon {
+      margin: 0 8px 0 0; }
+    .profile-section-block-review-detail .profile-section-block-review-detail-suteki .profile-section-block-review-detail-suteki-count {
+      font-size: 16px;
+      color: #B3B3B3; }
+      .profile-section-block-review-detail .profile-section-block-review-detail-suteki .profile-section-block-review-detail-suteki-count b {
+        font-weight: bold; }
+
+.profile-section-block-review-comment-byclient {
+  padding: 12px 10px;
+  box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, .15);
+  position: relative;
+  border-radius: 8px;
+  margin: 20px -3px 0;
+  background: white; }
+  .profile-section-block-review-comment-byclient::before {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    width: 23px;
+    height: 23px;
+    border-right: 15px solid transparent;
+    border-bottom: 18.6025px solid #fff;
+    border-left: 15px solid transparent;
+    top: -23px;
+    left: 40px;
+    -webkit-filter: drop-shadow(0px -3px 10px rgba(0, 0, 0, .12));
+            filter: drop-shadow(0px -3px 10px rgba(0, 0, 0, .12));
+    z-index: 1; }
+  .profile-section-block-review-comment-byclient .profile-section-block-review-comment-byclient-head-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .profile-section-block-review-comment-byclient .profile-section-block-review-comment-byclient-head-left .profile-section-block-review-comment-byclient-head-left-img img {
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      box-sizing: border-box;
+      display: inline-block;
+      margin: 0 5px 0 0; }
+    .profile-section-block-review-comment-byclient .profile-section-block-review-comment-byclient-head-left .profile-section-block-review-comment-byclient-head-left-name {
+      font-size: 14px;
+      color: #666666; }
+  .profile-section-block-review-comment-byclient .profile-section-block-review-comment-byclient-head-right-date {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 9px;
+    font-family: Lato;
+    color: #b3b3b3; }
+  .profile-section-block-review-comment-byclient .profile-section-block-review-comment-byclient-content {
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.75;
+    padding: 10px 2px 6px; }
+
+/* pagenation */
+.profile-review-paging {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  margin: 15px 10px 75px;
+  padding: 0 0 0px; }
+  .profile-review-paging .profile-review-paging-prev,
+  .profile-review-paging .profile-review-paging-right {
+    padding: 0 2px;
+    width: 22.5%; }
+  .profile-review-paging .profile-review-paging-center {
+    width: 50%; }
+    .profile-review-paging .profile-review-paging-center a {
+      /* border-radius: 6px;*/ }
+  .profile-review-paging a.u-icn-arrow-next-after {
+    /*border-radius: 4px 20px 20px 4px;*/ }
+    .profile-review-paging a.u-icn-arrow-next-after:after {
+      content: "";
+      width: 6px;
+      height: 14px;
+      display: inline-block;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin: 0px -1px 0px 7px;
+      background-image: url(https://assets.stekina.com/static/img/icon/icn-arrow-next.svg);
+      /* background-image: url(https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/icn-arrow-next-lime.svg);*/
+      vertical-align: middle; }
+  .profile-review-paging a.u-icn-arrow-back-after {
+    /*border-radius: 20px 4px 4px 20px;*/ }
+    .profile-review-paging a.u-icn-arrow-back-after:before {
+      content: "";
+      width: 6px;
+      height: 14px;
+      display: inline-block;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin: 0px 7px 0px 0px;
+      background-image: url(https://limehair.jp/wp-https-lime/wp-content/uploads/2020/04/icn-arrow-back.svg);
+      /*background-image: url(https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/icn-arrow-back-lime.svg);*/
+      vertical-align: middle; }
+  .profile-review-paging a {
+    border-radius: 8px;
+    border: 1px #ccc solid;
+    display: table;
+    width: 100%;
+    margin: 5px auto 0;
+    padding: 13px 10px;
+    text-align: center;
+    box-shadow: 1.5px 4px 4px 0 rgba(0, 0, 0, .1);
+    color: #4d4d4d;
+    /*color: $cl-lime;*/
+    font-weight: bold;
+    background: #fff;
+    font-weight: normal !important;
+    text-decoration: none;
+    font-size: 14px; }
+    @media screen and (max-width: 374px) {
+      .profile-review-paging a {
+        font-size: 12px; } }
+    .profile-review-paging a:hover,
+    .profile-review-paging a :active {
+      opacity: 0.5; }
 
 .all a {
   position: absolute;

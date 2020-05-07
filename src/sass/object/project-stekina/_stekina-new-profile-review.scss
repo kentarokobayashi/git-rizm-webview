@@ -1,0 +1,257 @@
+.profile-section-block-review {
+    width: 93%;
+    border-radius: 8px;
+    margin: 0 auto 8px;
+    padding: 18px 18px 30px;
+    background: #FFFFFF;
+}
+
+$review-font-sizemini: 7.8px;
+.profile-section-block-review-detail {
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin: 0 -3px 8px;
+    box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, .15);
+    .profile-section-block-review-detail-head {
+        position: relative;
+        height: 59px;
+        width: 100%;
+        .profile-section-block-review-detail-head-left {
+            position: relative;
+            display: flex;
+            height: 54px;
+            padding: 8px 0 0 10px;
+            .profile-section-block-review-detail-head-left-img {
+                @include circle(40px);
+            }
+            .profile-section-block-review-detail-head-left-order {
+                width: 74%;
+                margin: 0 0 0 5px;
+                .profile-section-block-review-detail-head-left-order-menu {
+                    font-size: $review-font-sizemini;
+                    color: $cl-gray-light;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    margin: 0 0 4px;
+                }
+                .profile-section-block-review-detail-head-left-order-name {
+                    color: #666666;
+                    font-size: 14px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    letter-spacing: 0.5px;
+                }
+            }
+            .profile-section-block-review-detail-head-left-category {
+                position: absolute;
+                bottom: -3px;
+                color: #fff;
+                font-size: 8px;
+                font-weight: bold;
+                padding: 2px 6px 3px;
+                border-radius: 3.5px;
+                font-weight: bold;
+            }
+        }
+        .profile-section-block-review-detail-head-right {
+            .profile-section-block-review-detail-head-right-review-date {
+                position: absolute;
+                right: 9px;
+                top: 9px;
+                font-size: 9.5px;
+                color: $cl-gray-light;
+                font-family: Lato;
+            }
+            .profile-section-block-review-detail-head-right-custemer-visit {
+                position: absolute;
+                right: 9px;
+                bottom: 0px;
+                text-align: right;
+                font-size: $review-font-sizemini;
+                line-height: 1.6;
+                color: $cl-gray-light;
+            }
+        }
+    }
+    //レビュー写真のサムネ
+    .profile-section-block-review-detail-thumbnail {
+        $thumbnail-height: 220px;
+        display: flex;
+        height: $thumbnail-height;
+        padding: 5px 0 0;
+        .profile-section-block-review-detail-thumbnail-left {
+            height: $thumbnail-height;
+            width: 50%;
+            img {
+                height: $thumbnail-height;
+                object-fit: cover;
+            }
+        }
+        .profile-section-block-review-detail-thumbnail-right {
+            display: flex;
+            flex-wrap: wrap;
+            height: $thumbnail-height;
+            width: 50%;
+            .profile-section-block-review-detail-thumbnail-right-child {
+                width: 50%;
+                height: $thumbnail-height /2;
+                img {
+                    object-fit: cover;
+                    height: $thumbnail-height /2;
+                }
+            }
+        }
+    }
+    //レビューの文章
+    .profile-section-block-review-detail-content {
+        padding: 20px 15px;
+        line-height: 1.8;
+        font-size: 14px;
+        color: $cl-gray-dark;
+    }
+    //レビューのステキ
+    .profile-section-block-review-detail-suteki {
+        padding: 0 18px 18px;
+        display: flex;
+        align-items: center;
+        .profile-section-block-review-detail-suteki-icon {
+            margin: 0 8px 0 0;
+        }
+        .profile-section-block-review-detail-suteki-count {
+            font-size: 16px;
+            color: #B3B3B3;
+            b {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.profile-section-block-review-comment-byclient {
+    padding: 12px 10px;
+    box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, .15);
+    position: relative;
+    border-radius: 8px;
+    margin: 20px -3px 0;
+    background: white;
+    &::before {
+        content: "";
+        position: absolute;
+        background-color: transparent;
+        width: 23px;
+        height: 23px;
+        border-right: 15px solid transparent;
+        border-bottom: 18.6025px solid #fff;
+        border-left: 15px solid transparent;
+        top: -23px;
+        left: 40px;
+        filter: drop-shadow(0px -3px 10px rgba(0, 0, 0, .12));
+        z-index: index($z, child); // 1
+    }
+    .profile-section-block-review-comment-byclient-head-left {
+        display: flex;
+        align-items: center;
+        .profile-section-block-review-comment-byclient-head-left-img img {
+            @include circle(40px);
+            margin: 0 5px 0 0;
+        }
+        .profile-section-block-review-comment-byclient-head-left-name {
+            font-size: 14px;
+            color: #666666;
+        }
+    }
+    .profile-section-block-review-comment-byclient-head-right-date {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 9px;
+        font-family: Lato;
+        color: $cl-gray-light;
+    }
+    .profile-section-block-review-comment-byclient-content {
+        font-size: 14px;
+        color: #666666;
+        line-height: 1.75;
+        padding: 10px 2px 6px;
+    }
+}
+
+
+/* pagenation */
+
+.profile-review-paging {
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 15px 10px 75px;
+    padding: 0 0 0px;
+    .profile-review-paging-prev,
+    .profile-review-paging-right {
+        padding: 0 2px;
+        width: 22.5%;
+    }
+    .profile-review-paging-center {
+        width: 50%;
+        a {
+            /* border-radius: 6px;*/
+        }
+    }
+    a.u-icn-arrow-next-after {
+        /*border-radius: 4px 20px 20px 4px;*/
+        &:after {
+            content: "";
+            width: 6px;
+            height: 14px;
+            display: inline-block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 0px -1px 0px 7px;
+            background-image: url(https://assets.stekina.com/static/img/icon/icn-arrow-next.svg);
+            /* background-image: url(https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/icn-arrow-next-lime.svg);*/
+            vertical-align: middle;
+        }
+    }
+    a.u-icn-arrow-back-after {
+        /*border-radius: 20px 4px 4px 20px;*/
+        &:before {
+            content: "";
+            width: 6px;
+            height: 14px;
+            display: inline-block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 0px 7px 0px 0px;
+            background-image: url(https://limehair.jp/wp-https-lime/wp-content/uploads/2020/04/icn-arrow-back.svg);
+            /*background-image: url(https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/icn-arrow-back-lime.svg);*/
+            vertical-align: middle;
+        }
+    }
+    a {
+        border-radius: 8px;
+        border: 1px #ccc solid;
+        display: table;
+        width: 100%;
+        margin: 5px auto 0;
+        padding: 13px 10px;
+        text-align: center;
+        box-shadow: 1.5px 4px 4px 0 rgba(0, 0, 0, 0.1);
+        color: #4d4d4d;
+        /*color: $cl-lime;*/
+        font-weight: bold;
+        background: #fff;
+        font-weight: normal !important;
+        text-decoration: none;
+        font-size: 14px;
+        @include mq-down(iphone5) {
+            font-size: 12px;
+        }
+        &:hover,
+         :active {
+            opacity: 0.5;
+        }
+    }
+}
