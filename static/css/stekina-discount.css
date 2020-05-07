@@ -6291,12 +6291,14 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  padding: 0 7px; }
+  padding: 0 7px;
+  max-width: 450px; }
 
 .fixed-bottom {
   position: fixed;
   bottom: 30px;
   width: 100%;
+  max-width: 450px;
   z-index: 3; }
   .fixed-bottom a {
     box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, .2); }
