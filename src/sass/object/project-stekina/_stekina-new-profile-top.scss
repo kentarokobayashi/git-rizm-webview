@@ -1,194 +1,3 @@
-.profile-top {
-    height: 340px;
-    position: relative;
-    margin: 0 0 12px;
-}
-
-.new-profile-top {
-    .profile-top {
-        height: 410px !important;
-        position: relative;
-        margin: 0 0 12px;
-    }
-}
-
-.profile-detail {
-    position: absolute;
-    bottom: 0;
-    z-index: index($z, child);
-}
-
-.profile-cover {
-    padding-top: 38px;
-    height: 286px;
-    background-size: cover;
-    position: relative;
-    z-index: 0;
-    .profile-cover-bg {
-        &:before {
-            width: 100%;
-            height: 100%;
-            right: 0px;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-            background-color: rgba(0, 0, 0, 0.5);
-            display: block;
-            content: "";
-            z-index: -1;
-            position: absolute;
-        }
-    }
-    .profile-cover-wrapper {
-        margin: 39px 0 0;
-        .profile-cover-photo {
-            text-align: center;
-            width: 93px;
-            height: 93px;
-            position: relative;
-            margin: 0 auto 23px;
-            .profile-cover-photo-official {
-                position: absolute;
-                left: -8px;
-                bottom: -3px;
-                z-index: 1;
-                width: 28px;
-            }
-            .profile-cover-photo-img img {
-                border: 1px solid #FFFFFF;
-                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
-                @include circle(93px);
-            }
-            .profile-cover-bg {
-                width: 100%;
-                height: 100%;
-            }
-        }
-        .profile-cover-name {
-            color: white;
-            font-size: 21px;
-            color: #FFFFFF;
-            letter-spacing: 1.43px;
-            font-weight: bold;
-            margin: auto;
-            text-align: center;
-            margin: 0 0 5px;
-        }
-        .profile-cover-count {
-            display: flex;
-            justify-content: center;
-            color: white;
-            .profile-cover-count-list {
-                padding: 0 7px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                img {
-                    height: 14px;
-                    margin: 4px 2px 0 0;
-                }
-                .profile-cover-count-list-number {
-                    font-size: 13px;
-                    color: #FFFFFF;
-                    letter-spacing: 0.83px;
-                    font-weight: bold;
-                    font-family: Lato;
-                }
-            }
-        }
-    }
-}
-
-.profile-detail {
-    background: #FFFFFF;
-    border-radius: 7px;
-    padding: 0px 13px 0px;
-    margin: 0 13px;
-    .profile-detail-date {
-        display: flex;
-        padding: 8px 0px 3px;
-        border-bottom: 1px solid #f0f0f0;
-        justify-content: space-between;
-        .profile-detail-date-list {
-            display: flex;
-            align-items: center;
-            margin: 0px 9px 0 0;
-            .profile-detail-date-list-text {
-                font-size: 9.4px;
-                color: #B3B3B3;
-                letter-spacing: 0;
-                b {
-                    font-weight: bold
-                }
-            }
-            .profile-detail-date-list-img {
-                width: 14px;
-                margin: 0 1.5px 0 0;
-            }
-            .profile-detail-date-list-address {
-                max-width: 118px;
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                -webkit-line-clamp: 1;
-                overflow: hidden;
-            }
-        }
-    }
-    .profile-detail-note {
-        font-size: 7.6px;
-        color: #4D4D4D;
-        letter-spacing: 0.51px;
-        line-height: 12.59px;
-        margin: 8px 0 10px;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 2;
-        overflow: hidden;
-    }
-    .profile-detail-button {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        margin: 12px auto 16px;
-        .profile-detail-button-sub {
-            width: 39%;
-            a {
-                /* width: 127px;*/
-                height: 46px;
-                background: #FFFFFF;
-                border: 1.5px solid $cl-lime;
-                border-radius: 4px;
-                box-sizing: border-box;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: $cl-lime;
-                text-decoration: none;
-                font-size: 15px;
-            }
-        }
-        .profile-detail-button-main {
-            width: 56%;
-            a {
-                font-size: 15px;
-                /*width: 184px;*/
-                height: 46px;
-                border-radius: 4px;
-                border: 2px solid $cl-red;
-                box-sizing: border-box;
-                @include rizm-gradient();
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: white;
-                text-decoration: none;
-                font-weight: bold;
-            }
-        }
-    }
-}
-
-
 /* ステータス・特徴 */
 
 .profile-section-block-usertag {
@@ -317,6 +126,7 @@
         width: 100%;
         height: 100%;
     }
+    /* 通常時 */
     .profile-section-block-review-card-left {
         width: 60%;
         padding: 11px 13.5px 8px;
@@ -403,6 +213,33 @@
             }
         }
     }
+    /* レビューない時の特殊系 */
+    .profile-section-block-review-card-left {
+        .profile-section-block-review-card-left-review-count-0 {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .profile-section-block-review-card-left-review-count-0-text {
+                color: #666;
+                font-size: 11.5px;
+                line-height: 1.5;
+                margin: 0 0 20px;
+            }
+            .profile-section-block-review-card-left-review-count-0-button {
+                color: $cl-lime;
+                padding: 10px 0;
+                text-align: center;
+                display: block;
+                border: 1.35px solid $cl-lime;
+                width: 100%;
+                border-radius: 4px;
+                font-weight: bold;
+            }
+        }
+    }
     .profile-section-block-review-card-right {
         width: 40%;
         position: relative;
@@ -421,6 +258,7 @@
             img {
                 object-fit: cover;
                 height: 179px;
+                width: 100%;
             }
         }
     }
@@ -458,12 +296,6 @@
         opacity: 0.8;
         box-shadow: 2px 7px 20px 0 rgba(0, 0, 0, 0.15);
         transform: translateY(-3px);
-    }
-    a.profile-section-block-stekina-shokai-link {
-        position: absolute;
-        z-index: 10;
-        width: 100%;
-        height: 100%;
     }
     .profile-section-block-stekina-shokai-head {
         display: flex;
@@ -505,6 +337,13 @@
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 5;
         overflow: hidden;
+        p {
+            margin: 0px 0 12px;
+        }
+        a {
+            color: $cl-lime;
+            text-decoration: none;
+        }
     }
     .profile-section-block-stekina-shokai-tag {
         display: flex;
@@ -542,6 +381,152 @@
                 font-weight: bold;
             }
         }
+    }
+}
+
+
+/* 紹介文0の時の表示 */
+
+.profile-section-block-stekina-shokai-count-0 {
+    background: #FFFFFF;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.10);
+    border-radius: 5px;
+    padding: 10px 15px 7px;
+    position: relative;
+    .profile-section-block-stekina-shokai-count-0-head {
+        display: flex;
+        align-items: center;
+        margin: 10px 7px 0 0;
+        .profile-section-block-stekina-shokai-count-0-head-left {
+            position: relative;
+            margin: 0 9px 0 0;
+            height: 46px;
+            .profile-section-block-stekina-shokai-count-0-head-left-img img {
+                @include circle(40px);
+            }
+            .profile-section-block-stekina-shokai-count-0-head-left-badge {
+                position: absolute;
+                width: 40px;
+                bottom: -8px;
+            }
+        }
+        .profile-section-block-stekina-shokai-count-0-head-right {
+            color: #666;
+            font-size: 10px;
+            line-height: 1.5;
+            b {
+                font-weight: bold;
+            }
+        }
+    }
+    .profile-section-block-stekina-shokai-count-0-button button {
+        margin: 60px auto 75px;
+        color: $cl-lime;
+        padding: 15px 0 15px;
+        text-align: center;
+        display: block;
+        border: 1.35px solid $cl-lime;
+        width: 80%;
+        border-radius: 6px;
+        font-weight: bold;
+        &:hover {
+            color: white;
+            background: $cl-lime;
+        }
+    }
+}
+
+
+/* 紹介文0の時の表示（美容師向け） */
+
+.profile-section-block-stekina-shokai-count-0-stylist {
+    background: #FFFFFF;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.10);
+    border-radius: 5px;
+    padding: 10px 20px 7px;
+    position: relative;
+    .profile-section-block-stekina-shokai-count-0-stylist-catch {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        .profile-section-block-stekina-shokai-count-0-stylist-catch-text {
+            width: 70%;
+            padding: 20px 0;
+        }
+        .profile-section-block-stekina-shokai-count-0-stylist-catch-speech {
+            position: absolute;
+            left: -20px;
+            top: 0;
+            animation-name: speechscale;
+            animation-duration: 4.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease;
+        }
+    }
+    .profile-section-block-stekina-shokai-count-0-stylist-discount-last1 {
+        margin: 15px auto 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        color: $cl-gray-dark;
+        .profile-section-block-stekina-shokai-count-0-stylist-discount-last1-flex1-text {
+            font-weight: bold;
+            font-size: 12.5px;
+        }
+        .profile-section-block-stekina-shokai-count-0-stylist-discount-last1-flex2 {
+            @include text-gradient-lime();
+            .profile-section-block-stekina-shokai-count-0-stylist-discount-last1-flex2-number {
+                font-weight: bold;
+                font-size: 28px;
+                font-family: Lato;
+                letter-spacing: 1px;
+                line-height: 1;
+            }
+            .profile-section-block-stekina-shokai-count-0-stylist-discount-last1-flex2-text {
+                font-weight: bold;
+                font-size: 17px;
+                letter-spacing: 1px;
+            }
+        }
+        .profile-section-block-stekina-shokai-count-0-stylist-discount-last1-flex3-text,
+        .profile-section-block-stekina-shokai-count-0-stylist-discount-last1-flex5-text {
+            font-weight: bold;
+            font-size: 12.5px;
+            margin: 0 0 2px;
+        }
+        .profile-section-block-stekina-shokai-count-0-stylist-discount-last1-flex4-img {
+            img {
+                @include circle(15px);
+                margin: 0 2px;
+            }
+        }
+    }
+    .profile-section-block-stekina-shokai-count-0-stylist-discount-button {
+        button {
+            width: 82%;
+            font-size: 19px;
+            /*width: 184px;*/
+            height: 60px;
+            border-radius: 6px;
+            @include lime-gradient();
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin: 13px auto 30px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.45);
+            border: none;
+        }
+    }
+    .profile-section-block-stekina-shokai-count-0-stylist-discount-last1-note {
+        font-size: 8.5px;
+        text-align: center;
+        @include text-gradient-rizm();
+        margin: 0 -10px 3px;
     }
 }
 

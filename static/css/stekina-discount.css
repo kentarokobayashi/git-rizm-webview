@@ -6179,9 +6179,12 @@ footer {
     -webkit-transform: translate(0, 0); } }
 
 /* z-indexの定義 */
+/* bodyの最大横幅 */
 body {
   max-width: 2000px !important; }
 
+/* テキストグラデ一応 重複するかもだけど。 */
+/* font */
 body,
 html,
 div,
@@ -6190,164 +6193,20 @@ span,
 a {
   font-family: 'Noto Sans JP', "koburina", 'DIN Alternate', 'ヒラギノ角ゴ ProN W6', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W6', sans-serif; }
 
+/* 背景の色たち */
 .bg-stekina-black {
   background: #262626; }
 
 .stekina-brown-light {
   background: #e2ddd7; }
 
+/* 全体を囲うwrapper */
 .wrapper-profile {
   max-width: 450px;
   margin: 0 auto;
   width: 100%; }
 
-/* header */
-.profile-header {
-  background: #8e7f6b;
-  position: fixed;
-  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .08);
-  height: 38px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  max-width: 450px;
-  z-index: 3; }
-  .profile-header .profile-header-content {
-    position: relative;
-    width: 100%;
-    height: 38px; }
-    .profile-header .profile-header-content .profile-header-content-center {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      margin: auto;
-      color: white;
-      font-size: 11.5px;
-      width: 65%;
-      letter-spacing: 0.5px;
-      text-align: center;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
-      .profile-header .profile-header-content .profile-header-content-center .profile-header-content-center-link {
-        width: 65%;
-        height: 38px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto; }
-      .profile-header .profile-header-content .profile-header-content-center .profile-header-content-center-stylist {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        justify-self: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center; }
-        .profile-header .profile-header-content .profile-header-content-center .profile-header-content-center-stylist .profile-header-content-center-stylist-img img {
-          width: 18px;
-          height: 18px;
-          border-radius: 100%;
-          box-sizing: border-box;
-          display: inline-block;
-          margin: 0 3px 0 0;
-          border: 0.5px solid white; }
-    .profile-header .profile-header-content .profile-header-content-right {
-      position: absolute;
-      top: 0;
-      right: 10px;
-      bottom: 0;
-      margin: auto;
-      color: white;
-      padding: 0px 9px;
-      font-size: 10.2px;
-      color: #8e7f6b;
-      background: #FFFFFF;
-      box-shadow: 0 6px 18px 0 rgba(0, 0, 0, .21);
-      border-radius: 100px;
-      line-height: 1;
-      height: 19px;
-      border: none; }
-
-/* 追従ボタン */
-.fixed-bottom-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  padding: 0 7px;
-  max-width: 450px; }
-
-.fixed-bottom {
-  position: fixed;
-  bottom: 30px;
-  width: 100%;
-  max-width: 450px;
-  z-index: 3; }
-  .fixed-bottom a {
-    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, .2); }
-  .fixed-bottom .fixed-bottom-button-sub {
-    width: 40%; }
-    .fixed-bottom .fixed-bottom-button-sub a {
-      /* width: 127px;*/
-      height: 46px;
-      background: #FFFFFF;
-      border: 2px solid #15bfab;
-      border-radius: 6px;
-      box-sizing: border-box;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      color: #15bfab;
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: bold; }
-  .fixed-bottom .fixed-bottom-button-main {
-    width: 56%; }
-    .fixed-bottom .fixed-bottom-button-main a {
-      font-size: 15px;
-      /*width: 184px;*/
-      height: 46px;
-      border-radius: 6px;
-      box-sizing: border-box;
-      background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
-      background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      color: white;
-      text-decoration: none;
-      font-weight: bold; }
-
+/* 各セクション */
 .profile-section {
   background: #FFFFFF;
   border-radius: 8px;
@@ -6357,6 +6216,7 @@ a {
   .profile-section .profile-section-block:not(:last-child) {
     margin: 0 auto 60px; }
 
+/* h2 */
 .profile-section-block-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6377,21 +6237,21 @@ a {
     font-weight: bold;
     font-size: 12.5px !important; }
 
-.profile-section-block-title-stekina-shokai h2 {
-  font-weight: bold;
-  font-size: 24.45px;
-  color: #4d4d4d;
-  letter-spacing: -2px; }
-
-.profile-section-block-title-stekina-shokai .profile-section-block-title-sub {
-  font-weight: bold;
-  font-size: 12.5px !important;
-  letter-spacing: -0.5px; }
-
-.profile-section-block-title-stekina-shokai .profile-section-block-title-sub2 {
-  font-weight: bold;
-  font-size: 15px !important;
-  letter-spacing: -0.5px; }
+.profile-section-block-title-stekina-shokai {
+  margin: 0 0 20px; }
+  .profile-section-block-title-stekina-shokai h2 {
+    font-weight: bold;
+    font-size: 24.45px;
+    color: #4d4d4d;
+    letter-spacing: -2px; }
+  .profile-section-block-title-stekina-shokai .profile-section-block-title-sub {
+    font-weight: bold;
+    font-size: 12.5px !important;
+    letter-spacing: -0.5px; }
+  .profile-section-block-title-stekina-shokai .profile-section-block-title-sub2 {
+    font-weight: bold;
+    font-size: 15px !important;
+    letter-spacing: -0.5px; }
 
 /* ブロック単位の共通リンク */
 .common-link {
@@ -6432,212 +6292,6 @@ a {
       margin: 0px -1px 0px 4px;
       background-image: url(https://assets.stekina.com/static/img/icon/icn-arrow-navi.svg);
       vertical-align: middle; }
-
-/* animations */
-@keyframes fuwafuwa {
-  0% {
-    -webkit-transform: translate(0, 0); }
-  50% {
-    -webkit-transform: translate(0, -10px); }
-  100% {
-    -webkit-transform: translate(0, 0); } }
-
-.profile-top {
-  height: 340px;
-  position: relative;
-  margin: 0 0 12px; }
-
-.new-profile-top .profile-top {
-  height: 410px !important;
-  position: relative;
-  margin: 0 0 12px; }
-
-.profile-detail {
-  position: absolute;
-  bottom: 0;
-  z-index: 1; }
-
-.profile-cover {
-  padding-top: 38px;
-  height: 286px;
-  background-size: cover;
-  position: relative;
-  z-index: 0; }
-  .profile-cover .profile-cover-bg:before {
-    width: 100%;
-    height: 100%;
-    right: 0px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    background-color: rgba(0, 0, 0, .5);
-    display: block;
-    content: "";
-    z-index: -1;
-    position: absolute; }
-  .profile-cover .profile-cover-wrapper {
-    margin: 39px 0 0; }
-    .profile-cover .profile-cover-wrapper .profile-cover-photo {
-      text-align: center;
-      width: 93px;
-      height: 93px;
-      position: relative;
-      margin: 0 auto 23px; }
-      .profile-cover .profile-cover-wrapper .profile-cover-photo .profile-cover-photo-official {
-        position: absolute;
-        left: -8px;
-        bottom: -3px;
-        z-index: 1;
-        width: 28px; }
-      .profile-cover .profile-cover-wrapper .profile-cover-photo .profile-cover-photo-img img {
-        border: 1px solid #FFFFFF;
-        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
-        width: 93px;
-        height: 93px;
-        border-radius: 100%;
-        box-sizing: border-box;
-        display: inline-block; }
-      .profile-cover .profile-cover-wrapper .profile-cover-photo .profile-cover-bg {
-        width: 100%;
-        height: 100%; }
-    .profile-cover .profile-cover-wrapper .profile-cover-name {
-      color: white;
-      font-size: 21px;
-      color: #FFFFFF;
-      letter-spacing: 1.43px;
-      font-weight: bold;
-      margin: auto;
-      text-align: center;
-      margin: 0 0 5px; }
-    .profile-cover .profile-cover-wrapper .profile-cover-count {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      color: white; }
-      .profile-cover .profile-cover-wrapper .profile-cover-count .profile-cover-count-list {
-        padding: 0 7px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center; }
-        .profile-cover .profile-cover-wrapper .profile-cover-count .profile-cover-count-list img {
-          height: 14px;
-          margin: 4px 2px 0 0; }
-        .profile-cover .profile-cover-wrapper .profile-cover-count .profile-cover-count-list .profile-cover-count-list-number {
-          font-size: 13px;
-          color: #FFFFFF;
-          letter-spacing: 0.83px;
-          font-weight: bold;
-          font-family: Lato; }
-
-.profile-detail {
-  background: #FFFFFF;
-  border-radius: 7px;
-  padding: 0px 13px 0px;
-  margin: 0 13px; }
-  .profile-detail .profile-detail-date {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 8px 0px 3px;
-    border-bottom: 1px solid #f0f0f0;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    .profile-detail .profile-detail-date .profile-detail-date-list {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      margin: 0px 9px 0 0; }
-      .profile-detail .profile-detail-date .profile-detail-date-list .profile-detail-date-list-text {
-        font-size: 9.4px;
-        color: #B3B3B3;
-        letter-spacing: 0; }
-        .profile-detail .profile-detail-date .profile-detail-date-list .profile-detail-date-list-text b {
-          font-weight: bold; }
-      .profile-detail .profile-detail-date .profile-detail-date-list .profile-detail-date-list-img {
-        width: 14px;
-        margin: 0 1.5px 0 0; }
-      .profile-detail .profile-detail-date .profile-detail-date-list .profile-detail-date-list-address {
-        max-width: 118px;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 1;
-        overflow: hidden; }
-  .profile-detail .profile-detail-note {
-    font-size: 7.6px;
-    color: #4D4D4D;
-    letter-spacing: 0.51px;
-    line-height: 12.59px;
-    margin: 8px 0 10px;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    overflow: hidden; }
-  .profile-detail .profile-detail-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 100%;
-    margin: 12px auto 16px; }
-    .profile-detail .profile-detail-button .profile-detail-button-sub {
-      width: 39%; }
-      .profile-detail .profile-detail-button .profile-detail-button-sub a {
-        /* width: 127px;*/
-        height: 46px;
-        background: #FFFFFF;
-        border: 1.5px solid #15bfab;
-        border-radius: 4px;
-        box-sizing: border-box;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        color: #15bfab;
-        text-decoration: none;
-        font-size: 15px; }
-    .profile-detail .profile-detail-button .profile-detail-button-main {
-      width: 56%; }
-      .profile-detail .profile-detail-button .profile-detail-button-main a {
-        font-size: 15px;
-        /*width: 184px;*/
-        height: 46px;
-        border-radius: 4px;
-        border: 2px solid #ff595b;
-        box-sizing: border-box;
-        background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
-        background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        color: white;
-        text-decoration: none;
-        font-weight: bold; }
 
 /* ステータス・特徴 */
 .profile-section-block-usertag {
@@ -6745,7 +6399,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative; }
+  position: relative;
+  /* 通常時 */
+  /* レビューない時の特殊系 */ }
   .profile-section-block-review-card:hover {
     -webkit-transition: 0.4s;
     transition: 0.4s;
@@ -6842,6 +6498,36 @@ a {
           .profile-section-block-review-card .profile-section-block-review-card-left .profile-section-block-review-card-left-bottom .profile-section-block-review-card-left-bottom-suteki-count p b {
             font-weight: bold;
             display: inline-block; }
+  .profile-section-block-review-card .profile-section-block-review-card-left .profile-section-block-review-card-left-review-count-0 {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .profile-section-block-review-card .profile-section-block-review-card-left .profile-section-block-review-card-left-review-count-0 .profile-section-block-review-card-left-review-count-0-text {
+      color: #666;
+      font-size: 11.5px;
+      line-height: 1.5;
+      margin: 0 0 20px; }
+    .profile-section-block-review-card .profile-section-block-review-card-left .profile-section-block-review-card-left-review-count-0 .profile-section-block-review-card-left-review-count-0-button {
+      color: #15bfab;
+      padding: 10px 0;
+      text-align: center;
+      display: block;
+      border: 1.35px solid #15bfab;
+      width: 100%;
+      border-radius: 4px;
+      font-weight: bold; }
   .profile-section-block-review-card .profile-section-block-review-card-right {
     width: 40%;
     position: relative; }
@@ -6858,7 +6544,8 @@ a {
     .profile-section-block-review-card .profile-section-block-review-card-right .profile-section-block-review-card-right-img img {
       -o-object-fit: cover;
          object-fit: cover;
-      height: 179px; }
+      height: 179px;
+      width: 100%; }
 
 .profile-section-block-review-card-left-top-category-frequently,
 .review-category-frequently {
@@ -6893,11 +6580,6 @@ a {
     box-shadow: 2px 7px 20px 0 rgba(0, 0, 0, .15);
     -webkit-transform: translateY(-3px);
             transform: translateY(-3px); }
-  .profile-section-block-stekina-shokai a.profile-section-block-stekina-shokai-link {
-    position: absolute;
-    z-index: 10;
-    width: 100%;
-    height: 100%; }
   .profile-section-block-stekina-shokai .profile-section-block-stekina-shokai-head {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6937,6 +6619,11 @@ a {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 5;
     overflow: hidden; }
+    .profile-section-block-stekina-shokai .profile-section-block-stekina-shokai-content p {
+      margin: 0px 0 12px; }
+    .profile-section-block-stekina-shokai .profile-section-block-stekina-shokai-content a {
+      color: #15bfab;
+      text-decoration: none; }
   .profile-section-block-stekina-shokai .profile-section-block-stekina-shokai-tag {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6974,6 +6661,162 @@ a {
       letter-spacing: 0; }
       .profile-section-block-stekina-shokai .profile-section-block-stekina-shokai-footer .profile-section-block-stekina-shokai-footer-number b {
         font-weight: bold; }
+
+/* 紹介文0の時の表示 */
+.profile-section-block-stekina-shokai-count-0 {
+  background: #FFFFFF;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, .1);
+  border-radius: 5px;
+  padding: 10px 15px 7px;
+  position: relative; }
+  .profile-section-block-stekina-shokai-count-0 .profile-section-block-stekina-shokai-count-0-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 10px 7px 0 0; }
+    .profile-section-block-stekina-shokai-count-0 .profile-section-block-stekina-shokai-count-0-head .profile-section-block-stekina-shokai-count-0-head-left {
+      position: relative;
+      margin: 0 9px 0 0;
+      height: 46px; }
+      .profile-section-block-stekina-shokai-count-0 .profile-section-block-stekina-shokai-count-0-head .profile-section-block-stekina-shokai-count-0-head-left .profile-section-block-stekina-shokai-count-0-head-left-img img {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        box-sizing: border-box;
+        display: inline-block; }
+      .profile-section-block-stekina-shokai-count-0 .profile-section-block-stekina-shokai-count-0-head .profile-section-block-stekina-shokai-count-0-head-left .profile-section-block-stekina-shokai-count-0-head-left-badge {
+        position: absolute;
+        width: 40px;
+        bottom: -8px; }
+    .profile-section-block-stekina-shokai-count-0 .profile-section-block-stekina-shokai-count-0-head .profile-section-block-stekina-shokai-count-0-head-right {
+      color: #666;
+      font-size: 10px;
+      line-height: 1.5; }
+      .profile-section-block-stekina-shokai-count-0 .profile-section-block-stekina-shokai-count-0-head .profile-section-block-stekina-shokai-count-0-head-right b {
+        font-weight: bold; }
+  .profile-section-block-stekina-shokai-count-0 .profile-section-block-stekina-shokai-count-0-button button {
+    margin: 60px auto 75px;
+    color: #15bfab;
+    padding: 15px 0 15px;
+    text-align: center;
+    display: block;
+    border: 1.35px solid #15bfab;
+    width: 80%;
+    border-radius: 6px;
+    font-weight: bold; }
+    .profile-section-block-stekina-shokai-count-0 .profile-section-block-stekina-shokai-count-0-button button:hover {
+      color: white;
+      background: #15bfab; }
+
+/* 紹介文0の時の表示（美容師向け） */
+.profile-section-block-stekina-shokai-count-0-stylist {
+  background: #FFFFFF;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, .1);
+  border-radius: 5px;
+  padding: 10px 20px 7px;
+  position: relative; }
+  .profile-section-block-stekina-shokai-count-0-stylist .profile-section-block-stekina-shokai-count-0-stylist-catch {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%; }
+    .profile-section-block-stekina-shokai-count-0-stylist .profile-section-block-stekina-shokai-count-0-stylist-catch .profile-section-block-stekina-shokai-count-0-stylist-catch-text {
+      width: 70%;
+      padding: 20px 0; }
+    .profile-section-block-stekina-shokai-count-0-stylist .profile-section-block-stekina-shokai-count-0-stylist-catch .profile-section-block-stekina-shokai-count-0-stylist-catch-speech {
+      position: absolute;
+      left: -20px;
+      top: 0;
+      -webkit-animation-name: speechscale;
+              animation-name: speechscale;
+      -webkit-animation-duration: 4.5s;
+              animation-duration: 4.5s;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-direction: alternate;
+              animation-direction: alternate;
+      -webkit-animation-timing-function: ease;
+              animation-timing-function: ease; }
+  .profile-section-block-stekina-shokai-count-0-stylist .profile-section-block-stekina-shokai-count-0-stylist-discount-last1 {
+    margin: 15px auto 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    color: #4d4d4d; }
+    .profile-section-block-stekina-shokai-count-0-stylist .profile-section-block-stekina-shokai-count-0-stylist-discount-last1 .profile-section-block-stekina-shokai-count-0-stylist-discount-last1-flex1-text {
+      font-weight: bold;
+      font-size: 12.5px; }
+    .profile-section-block-stekina-shokai-count-0-stylist .profile-section-block-stekina-shokai-count-0-stylist-discount-last1 .profile-section-block-stekina-shokai-count-0-stylist-discount-last1-flex2 {
+      background-image: -webkit-linear-gradient(120deg, #4f9ad6 0%, #14ceb8 100%);
+      background-image: linear-gradient(-30deg, #4f9ad6 0%, #14ceb8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+      .profile-section-block-stekina-shokai-count-0-stylist .profile-section-block-stekina-shokai-count-0-stylist-discount-last1 .profile-section-block-stekina-shokai-count-0-stylist-discount-last1-flex2 .profile-section-block-stekina-shokai-count-0-stylist-discount-last1-flex2-number {
+        font-weight: bold;
+        font-size: 28px;
+        font-family: Lato;
+        letter-spacing: 1px;
+        line-height: 1; }
+      .profile-section-block-stekina-shokai-count-0-stylist .profile-section-block-stekina-shokai-count-0-stylist-discount-last1 .profile-section-block-stekina-shokai-count-0-stylist-discount-last1-flex2 .profile-section-block-stekina-shokai-count-0-stylist-discount-last1-flex2-text {
+        font-weight: bold;
+        font-size: 17px;
+        letter-spacing: 1px; }
+    .profile-section-block-stekina-shokai-count-0-stylist .profile-section-block-stekina-shokai-count-0-stylist-discount-last1 .profile-section-block-stekina-shokai-count-0-stylist-discount-last1-flex3-text,
+    .profile-section-block-stekina-shokai-count-0-stylist .profile-section-block-stekina-shokai-count-0-stylist-discount-last1 .profile-section-block-stekina-shokai-count-0-stylist-discount-last1-flex5-text {
+      font-weight: bold;
+      font-size: 12.5px;
+      margin: 0 0 2px; }
+    .profile-section-block-stekina-shokai-count-0-stylist .profile-section-block-stekina-shokai-count-0-stylist-discount-last1 .profile-section-block-stekina-shokai-count-0-stylist-discount-last1-flex4-img img {
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      box-sizing: border-box;
+      display: inline-block;
+      margin: 0 2px; }
+  .profile-section-block-stekina-shokai-count-0-stylist .profile-section-block-stekina-shokai-count-0-stylist-discount-button button {
+    width: 82%;
+    font-size: 19px;
+    /*width: 184px;*/
+    height: 60px;
+    border-radius: 6px;
+    background-image: -webkit-linear-gradient(120deg, #4f9ad6 0%, #14ceb8 100%);
+    background-image: linear-gradient(-30deg, #4f9ad6 0%, #14ceb8 100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    margin: 13px auto 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .45);
+    border: none; }
+  .profile-section-block-stekina-shokai-count-0-stylist .profile-section-block-stekina-shokai-count-0-stylist-discount-last1-note {
+    font-size: 8.5px;
+    text-align: center;
+    background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
+    background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 -10px 3px; }
 
 .profile-section-block-normal-menus {
   width: 98%; }
@@ -7312,7 +7155,8 @@ a {
 .jquery-normal-menu {
   display: none; }
 
-.profile-section-block-review-section {
+.profile-section-block-review-section,
+.profile-section-block-shokai-section {
   width: 93%;
   border-radius: 8px;
   margin: 0 auto 8px;
@@ -7449,26 +7293,87 @@ a {
     .profile-section-block-review .profile-section-block-review-content a {
       color: #15bfab;
       text-decoration: none; }
-  .profile-section-block-review .profile-section-block-review-suteki {
-    padding: 0px 18px 18px;
+
+.profile-section-block-shokai {
+  background: #FFFFFF;
+  border-radius: 8px;
+  margin: 0 -3px 8px;
+  padding: 2px 0 0;
+  box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, .15); }
+  .profile-section-block-shokai .profile-section-block-shokai-head {
+    position: relative;
+    width: 100%;
+    padding: 10px 11px 0 11px !important;
+    height: 63px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .profile-section-block-review .profile-section-block-review-suteki .love-button-wrapper {
-      -webkit-transform-origin: left center;
-              transform-origin: left center;
-      -webkit-transform: scale(0.8);
-              transform: scale(0.8); }
-    .profile-section-block-review .profile-section-block-review-suteki .profile-section-block-review-suteki-icon {
-      margin: 0 2px 0 0; }
-    .profile-section-block-review .profile-section-block-review-suteki .profile-section-block-review-suteki-count {
-      font-size: 13px;
-      color: #B3B3B3; }
-      .profile-section-block-review .profile-section-block-review-suteki .profile-section-block-review-suteki-count b {
-        font-weight: bold; }
+    .profile-section-block-shokai .profile-section-block-shokai-head .profile-section-block-shokai-head-left {
+      position: relative;
+      height: 45px;
+      width: 40px;
+      margin: 0 12px 0 0; }
+      .profile-section-block-shokai .profile-section-block-shokai-head .profile-section-block-shokai-head-left .profile-section-block-shokai-head-left-img img {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        box-sizing: border-box;
+        display: inline-block; }
+      .profile-section-block-shokai .profile-section-block-shokai-head .profile-section-block-shokai-head-left .profile-section-block-shokai-head-left-badge {
+        position: absolute;
+        width: 44px;
+        bottom: -8px;
+        left: 0;
+        right: 0;
+        margin: auto; }
+    .profile-section-block-shokai .profile-section-block-shokai-head .profile-section-block-shokai-head-right .profile-section-block-shokai-head-right-name {
+      color: #666666;
+      font-size: 14.2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      letter-spacing: 0.5px;
+      margin: 0 0 7px;
+      font-weight: bold; }
+    .profile-section-block-shokai .profile-section-block-shokai-head .profile-section-block-shokai-head-right .profile-section-block-shokai-head-right-salon {
+      font-size: 12px;
+      color: #B3B3B3;
+      letter-spacing: 0.78px; }
+  .profile-section-block-shokai .profile-section-block-shokai-content {
+    padding: 6px 12px 20px;
+    margin: 7px 0 0;
+    line-height: 1.7;
+    letter-spacing: -0.2px;
+    font-size: 12.35px;
+    color: #666666; }
+    .profile-section-block-shokai .profile-section-block-shokai-content p {
+      margin: 0px 0 12px; }
+    .profile-section-block-shokai .profile-section-block-shokai-content a {
+      color: #15bfab;
+      text-decoration: none; }
+  .profile-section-block-shokai .profile-section-block-shokai-tag {
+    padding: 0px 12px 0px;
+    margin: 0 0 20px; }
+    .profile-section-block-shokai .profile-section-block-shokai-tag ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .profile-section-block-shokai .profile-section-block-shokai-tag ul li {
+        margin: 0 12px 9px 0; }
+        .profile-section-block-shokai .profile-section-block-shokai-tag ul li a {
+          border-radius: 4px;
+          font-size: 11px;
+          color: #4D4D4D;
+          letter-spacing: 0;
+          padding: 4.5px 9px;
+          border: 0.5px solid #4d4d4d;
+          text-decoration: none;
+          display: inline-block; }
 
 .profile-section-block-review-comment-byclient {
   padding: 12px 10px;
@@ -7531,7 +7436,7 @@ a {
     padding: 10px 2px 6px; }
 
 /* pagenation */
-.profile-review-paging {
+.profile-paging {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7543,45 +7448,23 @@ a {
           align-items: center;
   margin: 15px 10px 75px;
   padding: 0 0 0px; }
-  .profile-review-paging .profile-review-paging-prev-archive,
-  .profile-review-paging .profile-review-paging-next-archive {
+  .profile-paging .profile-paging-prev-archive,
+  .profile-paging .profile-paging-next-archive {
     padding: 0 2px;
     width: 40%; }
-  .profile-review-paging .profile-review-paging-prev-detail,
-  .profile-review-paging .profile-review-paging-next-detail {
+  .profile-paging .profile-paging-prev-detail,
+  .profile-paging .profile-paging-next-detail {
     padding: 0 2px;
     width: 22.5%; }
-  .profile-review-paging .profile-review-paging-center {
+  .profile-paging .profile-paging-center {
     width: 50%; }
-    .profile-review-paging .profile-review-paging-center a {
+    .profile-paging .profile-paging-center a {
       /* border-radius: 6px;*/ }
-  .profile-review-paging a.u-icn-arrow-next-after {
+  .profile-paging a.u-icn-arrow-next-after {
     /*border-radius: 4px 20px 20px 4px;*/ }
-    .profile-review-paging a.u-icn-arrow-next-after:after {
-      content: "";
-      width: 6px;
-      height: 14px;
-      display: inline-block;
-      background-size: contain;
-      background-repeat: no-repeat;
-      margin: 0px -1px 0px 7px;
-      background-image: url(https://assets.stekina.com/static/img/icon/icn-arrow-next.svg);
-      /* background-image: url(https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/icn-arrow-next-lime.svg);*/
-      vertical-align: middle; }
-  .profile-review-paging a.u-icn-arrow-back-after {
-    /*border-radius: 20px 4px 4px 20px;*/ }
-    .profile-review-paging a.u-icn-arrow-back-after:before {
-      content: "";
-      width: 6px;
-      height: 14px;
-      display: inline-block;
-      background-size: contain;
-      background-repeat: no-repeat;
-      margin: 0px 7px 0px 0px;
-      background-image: url(https://limehair.jp/wp-https-lime/wp-content/uploads/2020/04/icn-arrow-back.svg);
-      /*background-image: url(https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/icn-arrow-back-lime.svg);*/
-      vertical-align: middle; }
-  .profile-review-paging a {
+    .profile-paging a.u-icn-arrow-next-after a.u-icn-arrow-back-after {
+      /*border-radius: 20px 4px 4px 20px;*/ }
+  .profile-paging a {
     border-radius: 8px;
     border: 1px #ccc solid;
     display: table;
@@ -7598,11 +7481,76 @@ a {
     text-decoration: none;
     font-size: 14px; }
     @media screen and (max-width: 374px) {
-      .profile-review-paging a {
+      .profile-paging a {
         font-size: 12px; } }
-    .profile-review-paging a:hover,
-    .profile-review-paging a :active {
+    .profile-paging a:hover,
+    .profile-paging a :active {
       opacity: 0.5; }
+
+.profile-paging-shokai a {
+  border-radius: 8px;
+  border: 1px #ccc solid;
+  display: table;
+  width: 70%;
+  margin: 25px auto 75px;
+  padding: 13px 10px;
+  text-align: center;
+  box-shadow: 1.5px 4px 4px 0 rgba(0, 0, 0, .1);
+  color: #4d4d4d;
+  /*color: $cl-lime;*/
+  font-weight: bold;
+  background: #fff;
+  font-weight: normal !important;
+  text-decoration: none;
+  font-size: 14px; }
+  @media screen and (max-width: 374px) {
+    .profile-paging-shokai a {
+      font-size: 12px; } }
+  .profile-paging-shokai a:hover,
+  .profile-paging-shokai a :active {
+    opacity: 0.5; }
+
+.profile-section-block-review-suteki {
+  padding: 0px 18px 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .profile-section-block-review-suteki .love-button-wrapper {
+    -webkit-transform-origin: left center;
+            transform-origin: left center;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); }
+  .profile-section-block-review-suteki .profile-section-block-review-suteki-icon {
+    margin: 0 2px 0 0; }
+  .profile-section-block-review-suteki .profile-section-block-review-suteki-count {
+    font-size: 13px;
+    color: #B3B3B3; }
+    .profile-section-block-review-suteki .profile-section-block-review-suteki-count b {
+      font-weight: bold; }
+
+.content-footer-suteki {
+  padding: 0px 18px 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .content-footer-suteki .love-button-wrapper {
+    -webkit-transform-origin: left center;
+            transform-origin: left center;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); }
+  .content-footer-suteki .content-footer-suteki-icon {
+    margin: 0 2px 0 0; }
+  .content-footer-suteki .content-footer-suteki-count {
+    font-size: 13px;
+    color: #B3B3B3; }
+    .content-footer-suteki .content-footer-suteki-count b {
+      font-weight: bold; }
 
 .all a {
   position: absolute;
@@ -8141,6 +8089,437 @@ svg.h {
 
 .suteki-scale .mask {
   background: white !important; }
+
+/* header */
+.profile-header {
+  background: #8e7f6b;
+  position: fixed;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .08);
+  height: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 450px;
+  z-index: 3; }
+  .profile-header .profile-header-content {
+    position: relative;
+    width: 100%;
+    height: 38px; }
+    .profile-header .profile-header-content .profile-header-content-center {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      color: white;
+      font-size: 11.5px;
+      width: 65%;
+      letter-spacing: 0.5px;
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .profile-header .profile-header-content .profile-header-content-center .profile-header-content-center-link {
+        width: 65%;
+        height: 38px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto; }
+      .profile-header .profile-header-content .profile-header-content-center .profile-header-content-center-stylist {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-self: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .profile-header .profile-header-content .profile-header-content-center .profile-header-content-center-stylist .profile-header-content-center-stylist-img img {
+          width: 18px;
+          height: 18px;
+          border-radius: 100%;
+          box-sizing: border-box;
+          display: inline-block;
+          margin: 0 3px 0 0;
+          border: 0.5px solid white; }
+    .profile-header .profile-header-content .profile-header-content-right {
+      position: absolute;
+      top: 0;
+      right: 10px;
+      bottom: 0;
+      margin: auto;
+      color: white;
+      padding: 0px 9px;
+      font-size: 10.2px;
+      color: #8e7f6b;
+      background: #FFFFFF;
+      box-shadow: 0 6px 18px 0 rgba(0, 0, 0, .21);
+      border-radius: 100px;
+      line-height: 1;
+      height: 19px;
+      border: none; }
+
+/* 追従ボタン */
+.fixed-bottom-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 0 7px;
+  max-width: 450px; }
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 30px;
+  width: 100%;
+  max-width: 450px;
+  z-index: 3; }
+  .fixed-bottom a {
+    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, .2); }
+  .fixed-bottom .fixed-bottom-button-sub {
+    width: 40%; }
+    .fixed-bottom .fixed-bottom-button-sub a {
+      /* width: 127px;*/
+      height: 46px;
+      background: #FFFFFF;
+      border: 1.3px solid #15bfab;
+      border-radius: 6px;
+      box-sizing: border-box;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      color: #15bfab;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: bold; }
+  .fixed-bottom .fixed-bottom-button-main {
+    width: 56%; }
+    .fixed-bottom .fixed-bottom-button-main a {
+      font-size: 15px;
+      /*width: 184px;*/
+      height: 46px;
+      border-radius: 6px;
+      box-sizing: border-box;
+      background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
+      background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      color: white;
+      text-decoration: none;
+      font-weight: bold; }
+
+/* カバーの部分 */
+.profile-top {
+  height: 340px;
+  position: relative;
+  margin: 0 0 12px; }
+
+.new-profile-top .profile-top {
+  height: 410px !important;
+  position: relative;
+  margin: 0 0 12px; }
+
+.profile-detail {
+  position: absolute;
+  bottom: 0;
+  z-index: 1; }
+
+.profile-cover {
+  padding-top: 38px;
+  height: 286px;
+  background-size: cover;
+  position: relative;
+  z-index: 0; }
+  .profile-cover .profile-cover-bg:before {
+    width: 100%;
+    height: 100%;
+    right: 0px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, .5);
+    display: block;
+    content: "";
+    z-index: -1;
+    position: absolute; }
+  .profile-cover .profile-cover-wrapper {
+    margin: 39px 0 0; }
+    .profile-cover .profile-cover-wrapper .profile-cover-photo {
+      text-align: center;
+      width: 93px;
+      height: 93px;
+      position: relative;
+      margin: 0 auto 23px; }
+      .profile-cover .profile-cover-wrapper .profile-cover-photo .profile-cover-photo-official {
+        position: absolute;
+        left: -8px;
+        bottom: -3px;
+        z-index: 1;
+        width: 28px; }
+      .profile-cover .profile-cover-wrapper .profile-cover-photo .profile-cover-photo-img img {
+        border: 1px solid #FFFFFF;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+        width: 93px;
+        height: 93px;
+        border-radius: 100%;
+        box-sizing: border-box;
+        display: inline-block; }
+      .profile-cover .profile-cover-wrapper .profile-cover-photo .profile-cover-bg {
+        width: 100%;
+        height: 100%; }
+    .profile-cover .profile-cover-wrapper .profile-cover-name {
+      color: white;
+      font-size: 21px;
+      color: #FFFFFF;
+      letter-spacing: 1.43px;
+      font-weight: bold;
+      margin: auto;
+      text-align: center;
+      margin: 0 0 5px; }
+      .profile-cover .profile-cover-wrapper .profile-cover-name a {
+        color: white;
+        text-decoration: none; }
+    .profile-cover .profile-cover-wrapper .profile-cover-count {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      color: white; }
+      .profile-cover .profile-cover-wrapper .profile-cover-count .profile-cover-count-list {
+        padding: 0 7px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .profile-cover .profile-cover-wrapper .profile-cover-count .profile-cover-count-list img {
+          height: 14px;
+          margin: 4px 2px 0 0; }
+        .profile-cover .profile-cover-wrapper .profile-cover-count .profile-cover-count-list .profile-cover-count-list-number {
+          font-size: 13px;
+          color: #FFFFFF;
+          letter-spacing: 0.83px;
+          font-weight: bold;
+          font-family: Lato; }
+
+/* animations */
+.profile-detail {
+  background: #FFFFFF;
+  border-radius: 7px;
+  padding: 0px 13px 0px;
+  margin: 0 13px; }
+  .profile-detail .profile-detail-date {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 8px 0px 3px;
+    border-bottom: 1px solid #f0f0f0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .profile-detail .profile-detail-date .profile-detail-date-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin: 0px 9px 0 0; }
+      .profile-detail .profile-detail-date .profile-detail-date-list .profile-detail-date-list-text {
+        font-size: 9.4px;
+        color: #B3B3B3;
+        letter-spacing: 0; }
+        .profile-detail .profile-detail-date .profile-detail-date-list .profile-detail-date-list-text b {
+          font-weight: bold; }
+      .profile-detail .profile-detail-date .profile-detail-date-list .profile-detail-date-list-img {
+        width: 14px;
+        margin: 0 1.5px 0 0; }
+      .profile-detail .profile-detail-date .profile-detail-date-list .profile-detail-date-list-address {
+        max-width: 118px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden; }
+  .profile-detail .profile-detail-note {
+    font-size: 7.6px;
+    color: #4D4D4D;
+    letter-spacing: 0.51px;
+    line-height: 12.59px;
+    margin: 8px 0 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden; }
+  .profile-detail .profile-detail-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    margin: 12px auto 16px; }
+    .profile-detail .profile-detail-button .profile-detail-button-sub {
+      width: 39%; }
+      .profile-detail .profile-detail-button .profile-detail-button-sub a {
+        /* width: 127px;*/
+        height: 46px;
+        background: #FFFFFF;
+        border: 1.5px solid #15bfab;
+        border-radius: 4px;
+        box-sizing: border-box;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        color: #15bfab;
+        text-decoration: none;
+        font-size: 15px; }
+    .profile-detail .profile-detail-button .profile-detail-button-main {
+      width: 56%; }
+      .profile-detail .profile-detail-button .profile-detail-button-main a {
+        font-size: 15px;
+        /*width: 184px;*/
+        height: 46px;
+        border-radius: 4px;
+        box-sizing: border-box;
+        background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
+        background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        color: white;
+        text-decoration: none;
+        font-weight: bold; }
+
+.profile-dialog {
+  position: fixed;
+  -webkit-overflow-scrolling: touch;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 6;
+  display: none; }
+
+.profile-dialog-wrapper {
+  background: white;
+  border-radius: 8px;
+  max-width: 405px;
+  display: table;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 30px 0;
+  width: 90%; }
+  .profile-dialog-wrapper .profile-dialog-title-default {
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #4d4d4d;
+    font-weight: bold;
+    width: 90%;
+    margin: 0 auto 15px;
+    line-height: 1.5; }
+  .profile-dialog-wrapper .profile-dialog-img {
+    width: 85%;
+    margin: 0 auto 20px; }
+
+.profile-dialog-bg {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  margin: auto;
+  height: 100vh;
+  background: black;
+  position: fixed;
+  display: none;
+  opacity: 0.7;
+  top: 0;
+  left: 0; }
+
+/* animations */
+@keyframes fuwafuwa {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, -10px);
+            transform: translate(0, -10px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
+
+@-webkit-keyframes speechscale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes speechscale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
 
 .card-wrapper {
   -webkit-box-pack: justify;

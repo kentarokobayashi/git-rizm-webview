@@ -1,0 +1,231 @@
+- var dateNow = Date.now();
+include ../mixin/_mixin.pug
+doctype html
+html(lang='jp')
+  head
+    title カワイ ミオさんのSTEKiNAレビュー一覧
+    //link(href='https://stekina.com/community/assets/application-0cd9ef953e92fafda8f69d7c040ac2075963fa2d6ccc579def5db048df82c04c.css' rel='stylesheet')
+    link(href='static/css/stekina-discount.css?'+dateNow, rel='stylesheet')
+    meta(name='viewport', content='width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    meta(charset='UTF-8')
+    meta(name='robots', content='noindex,nofollow')
+    script(src='//jpostal-1006.appspot.com/jquery.jpostal.js', type='text/javascript')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
+  body.bg-stekina-black.new-profile-top
+   .wrapper-cl-stekina-brown-light
+    //👇追従ボタン（スクロールすると出てくる）
+    .wrapper-profile
+      //ヘッダー
+      include ../mixin/_header-newprofile-brown-normal.pug
+      include ../mixin/_fixed-button-bottom-newprofile.pug     
+      //profile-cover
+      .profile-top
+        +profile-top
+      //レビュー詳細、なかったら丸ごとdiv取ってOK
+      .profile-section
+        .profile-section-block
+          //title
+          .profile-section-block-title-stekina-shokai
+             h2|
+                span|美容師
+                span.profile-section-block-title-sub2|からの
+                span|ステキナ紹介文 
+                span.profile-section-block-title-sub|(13件)
+          .profile-section-block-stekina-shokai
+             a(href='newprofile-stekina-shokai-detail.html').common-link
+             .profile-section-block-stekina-shokai-head
+                .profile-section-block-stekina-shokai-head-left
+                    .profile-section-block-stekina-shokai-head-left-img
+                        img(src='https://s3-ap-northeast-1.amazonaws.com/limeapp/karte/owner_photo_approved/LPMN-RBAF-ZA48-P48Y?timestamp=1572491192862')
+                    .profile-section-block-stekina-shokai-head-left-badge
+                        img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/04/tag-job-00.svg')
+                .profile-section-block-stekina-shokai-head-right
+                    .profile-section-block-stekina-shokai-head-right-name
+                        |宮原 幸恵
+                    .profile-section-block-stekina-shokai-head-right-salon
+                        |Lily
+             .profile-section-block-stekina-shokai-content
+               p|私の尊敬する美容師です！頭皮や髪の知識は高く特にヘッドキュアの技術力は素晴らしいです。頭皮や髪の悩みなら安心してお任せできます！常にトレンドなどを勉強し、技術も追求する努力家です。説明も丁寧でわかりやすいのでおすすめできる美容師です！
+               p|
+                 a(href='newprofile-review-detail.html')|もっと見る
+             ul.profile-section-block-stekina-shokai-tag
+               li
+                 a(href='#')|カット
+               li
+                 a(href='#')|話しやすい
+               li
+                 a(href='#')|似合わせ得意
+             .profile-section-block-stekina-shokai-footer
+               .profile-section-block-stekina-shokai-footer-suteki
+                  +suteki-button        
+               .profile-section-block-stekina-shokai-footer-number
+                     p
+                      b|183
+                      |ステキ!
+          .profile-section-block-stekina-shokai
+             a(href='newprofile-stekina-shokai-detail.html').common-link       
+             .profile-section-block-stekina-shokai-head
+                .profile-section-block-stekina-shokai-head-left
+                    .profile-section-block-stekina-shokai-head-left-img
+                        img(src='https://s3-ap-northeast-1.amazonaws.com/limeapp/karte/owner_photo_approved/BKLM-6PQR-SUDW-HBPX?timestamp=1572490978440')
+                    .profile-section-block-stekina-shokai-head-left-badge
+                        img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/04/tag-job-00.svg')
+                .profile-section-block-stekina-shokai-head-right
+                    .profile-section-block-stekina-shokai-head-right-name
+                        |釼持 恵梨香
+                    .profile-section-block-stekina-shokai-head-right-salon
+                        |ＩＪＫ OMOTESANDO
+             .profile-section-block-stekina-shokai-content
+               p|私の尊敬する美容師です！頭皮や髪の知識は高く特にヘッドキュアの技術力は素晴らしいです。頭皮や髪の悩みなら安心してお任せできます！常にトレンドなどを勉強し、技術も追求する努力家です。説明も丁寧でわかりやすいのでおすすめできる美容師です！
+               p|
+                 a(href='newprofile-review-detail.html')|もっと見る
+             ul.profile-section-block-stekina-shokai-tag
+               li
+                 a(href='#')|カット
+               li
+                 a(href='#')|話しやすい
+               li
+                 a(href='#')|似合わせ得意
+             .profile-section-block-stekina-shokai-footer
+               .profile-section-block-stekina-shokai-footer-suteki
+                  +suteki-button        
+               .profile-section-block-stekina-shokai-footer-number
+                     p
+                      b|183
+                      |ステキ!
+          .profile-section-block-stekina-shokai
+             a(href='newprofile-stekina-shokai-detail.html').common-link
+             .profile-section-block-stekina-shokai-head
+                .profile-section-block-stekina-shokai-head-left
+                    .profile-section-block-stekina-shokai-head-left-img
+                        img(src='https://s3-ap-northeast-1.amazonaws.com/limeapp/karte/owner_photo_approved/KWLX-MKN5-7LQD-96FE?timestamp=1572491153116')
+                    .profile-section-block-stekina-shokai-head-left-badge
+                        img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/04/tag-job-00.svg')
+                .profile-section-block-stekina-shokai-head-right
+                    .profile-section-block-stekina-shokai-head-right-name
+                        |芝原 俊輔
+                    .profile-section-block-stekina-shokai-head-right-salon
+                        |ＩＪＫ OMOTESANDO
+             .profile-section-block-stekina-shokai-content
+               p
+                  |私の尊敬する美容師です！頭皮や髪の知識は高く特にヘッドキュアの技術力は素晴らしいです。頭皮や髪の悩みなら安心してお任せできます！常にトレンドなどを勉強し、技術も追求する努力家です。説明も丁寧でわかりやすいのでおすすめできる美容師です！
+               p|
+                 a(href='newprofile-review-detail.html')|もっと見る
+             ul.profile-section-block-stekina-shokai-tag
+               li
+                 a(href='#')|カット
+               li
+                 a(href='#')|話しやすい
+               li
+                 a(href='#')|似合わせ得意
+             .profile-section-block-stekina-shokai-footer
+               .profile-section-block-stekina-shokai-footer-suteki
+                  +suteki-button        
+               .profile-section-block-stekina-shokai-footer-number
+                     p
+                      b|183
+                      |ステキ!
+          .profile-section-block-stekina-shokai
+             a(href='newprofile-stekina-shokai-detail.html').common-link
+             .profile-section-block-stekina-shokai-head
+                .profile-section-block-stekina-shokai-head-left
+                    .profile-section-block-stekina-shokai-head-left-img
+                        img(src='https://s3-ap-northeast-1.amazonaws.com/limeapp/karte/owner_photo_approved/LPMN-RBAF-ZA48-P48Y?timestamp=1572491192862')
+                    .profile-section-block-stekina-shokai-head-left-badge
+                        img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/04/tag-job-00.svg')
+                .profile-section-block-stekina-shokai-head-right
+                    .profile-section-block-stekina-shokai-head-right-name
+                        |宮原 幸恵
+                    .profile-section-block-stekina-shokai-head-right-salon
+                        |Lily
+             .profile-section-block-stekina-shokai-content
+               p|私の尊敬する美容師です！頭皮や髪の知識は高く特にヘッドキュアの技術力は素晴らしいです。頭皮や髪の悩みなら安心してお任せできます！常にトレンドなどを勉強し、技術も追求する努力家です。説明も丁寧でわかりやすいのでおすすめできる美容師です！
+               p|
+                 a(href='newprofile-review-detail.html')|もっと見る
+             ul.profile-section-block-stekina-shokai-tag
+               li
+                 a(href='#')|カット
+               li
+                 a(href='#')|話しやすい
+               li
+                 a(href='#')|似合わせ得意
+             .profile-section-block-stekina-shokai-footer
+               .profile-section-block-stekina-shokai-footer-suteki
+                  +suteki-button        
+               .profile-section-block-stekina-shokai-footer-number
+                     p
+                      b|183
+                      |ステキ!
+          .profile-section-block-stekina-shokai
+             a(href='newprofile-stekina-shokai-detail.html').common-link       
+             .profile-section-block-stekina-shokai-head
+                .profile-section-block-stekina-shokai-head-left
+                    .profile-section-block-stekina-shokai-head-left-img
+                        img(src='https://s3-ap-northeast-1.amazonaws.com/limeapp/karte/owner_photo_approved/BKLM-6PQR-SUDW-HBPX?timestamp=1572490978440')
+                    .profile-section-block-stekina-shokai-head-left-badge
+                        img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/04/tag-job-00.svg')
+                .profile-section-block-stekina-shokai-head-right
+                    .profile-section-block-stekina-shokai-head-right-name
+                        |釼持 恵梨香
+                    .profile-section-block-stekina-shokai-head-right-salon
+                        |ＩＪＫ OMOTESANDO
+             .profile-section-block-stekina-shokai-content
+               p|私の尊敬する美容師です！頭皮や髪の知識は高く特にヘッドキュアの技術力は素晴らしいです。頭皮や髪の悩みなら安心してお任せできます！常にトレンドなどを勉強し、技術も追求する努力家です。説明も丁寧でわかりやすいのでおすすめできる美容師です！
+               p|
+                 a(href='newprofile-review-detail.html')|もっと見る
+             ul.profile-section-block-stekina-shokai-tag
+               li
+                 a(href='#')|カット
+               li
+                 a(href='#')|話しやすい
+               li
+                 a(href='#')|似合わせ得意
+             .profile-section-block-stekina-shokai-footer
+               .profile-section-block-stekina-shokai-footer-suteki
+                  +suteki-button        
+               .profile-section-block-stekina-shokai-footer-number
+                     p
+                      b|183
+                      |ステキ!
+          .profile-section-block-stekina-shokai
+             a(href='newprofile-stekina-shokai-detail.html').common-link
+             .profile-section-block-stekina-shokai-head
+                .profile-section-block-stekina-shokai-head-left
+                    .profile-section-block-stekina-shokai-head-left-img
+                        img(src='https://s3-ap-northeast-1.amazonaws.com/limeapp/karte/owner_photo_approved/KWLX-MKN5-7LQD-96FE?timestamp=1572491153116')
+                    .profile-section-block-stekina-shokai-head-left-badge
+                        img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/04/tag-job-00.svg')
+                .profile-section-block-stekina-shokai-head-right
+                    .profile-section-block-stekina-shokai-head-right-name
+                        |芝原 俊輔
+                    .profile-section-block-stekina-shokai-head-right-salon
+                        |ＩＪＫ OMOTESANDO
+             .profile-section-block-stekina-shokai-content
+               p|私の尊敬する美容師です！頭皮や髪の知識は高く特にヘッドキュアの技術力は素晴らしいです。頭皮や髪の悩みなら安心してお任せできます！常にトレンドなどを勉強し、技術も追求する努力家です。説明も丁寧でわかりやすいのでおすすめできる美容師です！
+               p|
+                 a(href='newprofile-review-detail.html')|もっと見る
+             ul.profile-section-block-stekina-shokai-tag
+               li
+                 a(href='#')|カット
+               li
+                 a(href='#')|話しやすい
+               li
+                 a(href='#')|似合わせ得意
+             .profile-section-block-stekina-shokai-footer
+               .profile-section-block-stekina-shokai-footer-suteki
+                  +suteki-button        
+               .profile-section-block-stekina-shokai-footer-number
+                     p
+                      b|183
+                      |ステキ!         
+      //paging
+      .profile-paging
+            //各要素がなくてもpaging-prev,paging-center,paging-rightのdivは消さないで欲しいです（レイアウト崩れるため）
+            .profile-paging-prev-archive
+                //a.u-icn-arrow-back-after(href='newprofile-review-archive.html')|前の８件
+            .profile-paging-next-archive
+                a(href='newprofile-review-archive.html')|次の８件
+      include ../mixin/_footer-newprofile
+   include ../mixin/_footer2-newprofile   
+   

@@ -1,0 +1,56 @@
+.profile-dialog {
+    position: fixed;
+    -webkit-overflow-scrolling: touch;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: index($z, dialog-2); // 1
+    display: none;
+}
+
+.profile-dialog-wrapper {
+    background: white;
+    border-radius: 8px;
+    max-width: 405px;
+    display: table;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px 0;
+    width: 90%;
+    .profile-dialog-title-default {
+        font-size: 24px;
+        letter-spacing: 1px;
+        color: $cl-gray-dark;
+        font-weight: bold;
+        width: 90%;
+        margin: 0 auto 15px;
+        line-height: 1.5;
+    }
+    .profile-dialog-img {
+        width: 85%;
+        margin: 0 auto 20px;
+    }
+    .profile-dialog-button-agree-default {
+        a {}
+    }
+}
+
+.profile-dialog-bg {
+    position: fixed;
+    z-index: index($z, dialog); // 1
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    background: black;
+    position: fixed;
+    display: none;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+}

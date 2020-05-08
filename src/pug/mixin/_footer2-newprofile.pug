@@ -22,3 +22,23 @@ script.
         $('.jquery-normal-menu').toggleClass("profile-section-block-normal-menu-show");
       }
       );
+//アプリインストールしていない人がステキナ紹介文
+script.
+      $('.jquery-open-dialog-shokai-not-install').on('click', function() {
+       $('.profile-dialog-bg').show();
+       $('#dialog-shokai-not-install').show();
+      }
+      );
+script.
+      $('.jquery-open-dialog-review-count-0').on('click', function() {
+       $('.profile-dialog-bg').show();
+       $('#dialog-review-count-zero').show();
+       $('.dialog-review-count-zero').show();
+      }
+      );
+script.
+      $('.close-dialog').on('click', function() {
+       $('.profile-dialog-bg').hide();
+       $('.profile-dialog').hide();
+      }
+      );
