@@ -21,23 +21,69 @@
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 30px 0;
-    width: 90%;
+    padding: 20px 0;
+    width: 80%;
     .profile-dialog-title-default {
-        font-size: 24px;
+        font-size: 19.5px;
         letter-spacing: 1px;
         color: $cl-gray-dark;
         font-weight: bold;
-        width: 90%;
-        margin: 0 auto 15px;
+        width: 87%;
+        margin-left: auto;
+        margin-right: auto;
         line-height: 1.5;
     }
     .profile-dialog-img {
         width: 85%;
-        margin: 0 auto 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .profile-dialog-button-agree-default {
-        a {}
+        a {
+            width: 80%;
+            font-size: 15.5px;
+            /*width: 184px;*/
+            height: 55px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin-left: auto;
+            margin-right: auto;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.45);
+            border: none;
+        }
+    }
+    .profile-dialog-button-agree-default-rizm {
+        a {
+            @include rizm-gradient();
+        }
+    }
+    .profile-dialog-button-agree-default-lime {
+        a {
+            @include lime-gradient();
+        }
+    }
+    .profile-dialog-button-no-default {
+        button {
+            width: 53%;
+            font-size: 11px;
+            /*width: 184px;*/
+            padding: 9px 0;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #b3b3b3;
+            margin-left: auto;
+            margin-right: auto;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid #b3b3b3;
+        }
     }
 }
 
@@ -50,7 +96,7 @@
     background: black;
     position: fixed;
     display: none;
-    opacity: 0.7;
+    opacity: 0.78;
     top: 0;
     left: 0;
 }

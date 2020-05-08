@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
-@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,500,500i,600,600i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,500,500i,600,600i,700,700i,900");
 
 /* z-indexの定義 */
 
@@ -162,4 +162,28 @@ a {
             vertical-align: middle;
         }
     }
+}
+
+.adjust-margin-bottom-5 {
+    margin-bottom: 10px;
+}
+
+.adjust-margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.adjust-margin-bottom-15 {
+    margin-bottom: 15px;
+}
+
+.adjust-margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.adjust-margin-bottom-25 {
+    margin-bottom: 25px;
+}
+
+.adjust-margin-bottom-30 {
+    margin-bottom: 30px;
 }

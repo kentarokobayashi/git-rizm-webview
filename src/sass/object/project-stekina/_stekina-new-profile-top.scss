@@ -62,11 +62,13 @@
         width: 100%;
         white-space: nowrap;
         height: 230px;
+        padding: 0 100px 0 0;
         li {
             display: inline-block;
             width: 226px;
             height: 226px;
             background: #D8D8D8;
+             :not(:last-child) {}
             margin: 0 20px 0 0;
             img {
                 border-radius: 5.89px;
@@ -451,12 +453,13 @@
         justify-content: flex-end;
         width: 100%;
         .profile-section-block-stekina-shokai-count-0-stylist-catch-text {
-            width: 70%;
+            width: 72%;
             padding: 20px 0;
+            margin: 0 -5px;
         }
         .profile-section-block-stekina-shokai-count-0-stylist-catch-speech {
             position: absolute;
-            left: -20px;
+            left: -25px;
             top: 0;
             animation-name: speechscale;
             animation-duration: 4.5s;
@@ -466,7 +469,7 @@
         }
     }
     .profile-section-block-stekina-shokai-count-0-stylist-discount-last1 {
-        margin: 15px auto 0;
+        margin: 10px auto 0;
         display: flex;
         justify-content: center;
         align-items: flex-end;
@@ -479,10 +482,13 @@
             @include text-gradient-lime();
             .profile-section-block-stekina-shokai-count-0-stylist-discount-last1-flex2-number {
                 font-weight: bold;
-                font-size: 28px;
+                font-size: 30px;
                 font-family: Lato;
+                font-weight: 900;
                 letter-spacing: 1px;
                 line-height: 1;
+                margin: 0 1px;
+                vertical-align: text-bottom;
             }
             .profile-section-block-stekina-shokai-count-0-stylist-discount-last1-flex2-text {
                 font-weight: bold;
@@ -727,7 +733,7 @@
         width: 100%;
         white-space: nowrap;
         height: 185px;
-        padding: 0 0 0 10px;
+        padding: 0 100px 0 10px;
         li {
             display: inline-block;
             width: 292px;
