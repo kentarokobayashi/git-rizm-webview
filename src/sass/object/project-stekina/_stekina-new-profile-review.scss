@@ -273,10 +273,16 @@ $review-font-sizemini: 7.8px;
         content: "";
         position: absolute;
         background-color: white;
+        /*
         width: 23px;
         height: 8px;
         top: 0px;
         left: 44px;
+        */
+        width: 110px;
+        height: 15px;
+        top: 0px;
+        left: 10px;
         z-index: index($z, child-2); // 1
     }
     .profile-section-block-review-comment-byclient-head-left {
@@ -336,50 +342,135 @@ $review-font-sizemini: 7.8px;
     }
     a.u-icn-arrow-next-after {
         /*border-radius: 4px 20px 20px 4px;*/
-        // &:after {
-        //   content: "";
-        // width: 6px;
-        //height: 14px;
-        //display: inline-block;
-        //background-size: contain;
-        //background-repeat: no-repeat;
-        //margin: 0px -1px 0px 7px;
-        //background-image: url(https://assets.stekina.com/static/img/icon/icn-arrow-next.svg);
-        //vertical-align: middle;
-        //}
-        a.u-icn-arrow-back-after {
-            /*border-radius: 20px 4px 4px 20px;*/
-            //&:before {
-            //content: "";
-            //width: 6px;
-            //height: 14px;
-            // display: inline-block;
-            // background-size: contain;
-            // background-repeat: no-repeat;
-            // margin: 0px 7px 0px 0px;
-            // background-image: url(https://limehair.jp/wp-https-lime/wp-content/uploads/2020/04/icn-arrow-back.svg);
-            // vertical-align: middle;
-            //  }
+        position: relative;
+        &::after {
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-top: solid 2px $cl-lime;
+            border-right: solid 2px $cl-lime;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            content: "";
+            margin: 0 0 0 5px;
+        }
+        /*  &:after {
+            content: "";
+            width: 10px;
+            height: 15px;
+            display: inline-block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 0px -1px 0px 10px;
+            background-image: url(https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/icn-arrow-next-lime-1.svg);
+            vertical-align: middle;
+        }*/
+    }
+    a.u-icn-arrow-back-after {
+        position: relative;
+        /*border-radius: 20px 4px 4px 20px;*/
+        /*&:before {
+            content: "";
+            width: 10px;
+            height: 15px;
+            display: inline-block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 0px 10px 0px 0px;
+            background-image: url(https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/icn-arrow-back-lime-1.svg);
+            /*background-image: url(https://limehair.jp/wp-https-lime/wp-content/uploads/2020/04/icn-arrow-back.svg);*/
+        /* 
+        }
+        */
+        &::before {
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-bottom: solid 2px $cl-lime;
+            border-left: solid 2px $cl-lime;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            content: "";
+            margin: 0 5px 0 0;
         }
     }
+    a.borderlime {
+        border: 1px solid $cl-lime;
+    }
     a {
+        /*border: 1px $cl-lime solid;*/
         border-radius: 8px;
-        border: 1px #ccc solid;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 5px auto 0;
+        padding: 17px 10px;
+        text-align: center;
+        box-shadow: 1.5px 4px 4px 0 rgba(0, 0, 0, 0.05);
+        color: #666666;
+        font-weight: bold;
+        line-height: 0.7;
+        background: #fff;
+        font-weight: normal !important;
+        text-decoration: none;
+        font-size: 13.5px;
+        @include mq-down(iphone5) {
+            font-size: 12px;
+        }
+        &:hover,
+         :active {
+            opacity: 0.5;
+        }
+    }
+}
+
+.profile-paging-icon-no {
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 15px 10px 75px;
+    padding: 0 0 0px;
+    .profile-paging-prev-archive,
+    .profile-paging-next-archive {
+        padding: 0 2px;
+        width: 40%;
+    }
+    .profile-paging-prev-detail,
+    .profile-paging-next-detail {
+        padding: 0 2px;
+        width: 22.5%;
+    }
+    .profile-paging-center {
+        width: 50%;
+        a {
+            /* border-radius: 6px;*/
+        }
+    }
+    a.u-icn-arrow-next-after {
+        /*border-radius: 4px 20px 20px 4px;*/
+    }
+    a.u-icn-arrow-back-after {
+        /*border-radius: 20px 4px 4px 20px;*/
+    }
+    a {
+        /*border: 1px $cl-lime solid;*/
+        border-radius: 8px;
         display: table;
         width: 100%;
         margin: 5px auto 0;
         padding: 13px 10px;
         text-align: center;
-        box-shadow: 1.5px 4px 4px 0 rgba(0, 0, 0, 0.1);
-        color: #4d4d4d;
-        /*color: $cl-lime;*/
+        box-shadow: 1.5px 4px 4px 0 rgba(0, 0, 0, 0.05);
+        color: $cl-gray-dark;
         font-weight: bold;
         background: #fff;
         font-weight: normal !important;
         text-decoration: none;
-        font-size: 14px;
+        font-size: 13px;
         @include mq-down(iphone5) {
-            font-size: 12px;
+            font-size: 13px;
         }
         &:hover,
          :active {
@@ -398,13 +489,13 @@ $review-font-sizemini: 7.8px;
         padding: 13px 10px;
         text-align: center;
         box-shadow: 1.5px 4px 4px 0 rgba(0, 0, 0, 0.1);
-        color: #4d4d4d;
+        color: #666666;
         /*color: $cl-lime;*/
         font-weight: bold;
         background: #fff;
         font-weight: normal !important;
         text-decoration: none;
-        font-size: 14px;
+        font-size: 13px;
         @include mq-down(iphone5) {
             font-size: 12px;
         }

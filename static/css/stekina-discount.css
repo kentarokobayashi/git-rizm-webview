@@ -6367,7 +6367,7 @@ a {
 
 /* instagram */
 .profile-section-block-instagram {
-  margin: 0 -30px 0 0;
+  margin: 0 -30px 0 -30px;
   position: relative; }
   .profile-section-block-instagram ul {
     overflow-x: scroll;
@@ -6375,7 +6375,7 @@ a {
     width: 100%;
     white-space: nowrap;
     height: 230px;
-    padding: 0 100px 0 0; }
+    padding: 0 100px 0 30px; }
     .profile-section-block-instagram ul li {
       display: inline-block;
       width: 226px;
@@ -7023,14 +7023,14 @@ a {
 
 .profile-section-block-salon-atmosphere {
   position: relative;
-  margin: 0 -30px 0 -10px; }
+  margin: 0 -30px 0 -30px; }
   .profile-section-block-salon-atmosphere ul {
     overflow-x: scroll;
     overflow-y: hidden;
     width: 100%;
     white-space: nowrap;
     height: 185px;
-    padding: 0 100px 0 10px; }
+    padding: 0 100px 0 30px; }
     .profile-section-block-salon-atmosphere ul li {
       display: inline-block;
       width: 292px;
@@ -7423,10 +7423,16 @@ a {
     content: "";
     position: absolute;
     background-color: white;
-    width: 23px;
-    height: 8px;
+    /*
+        width: 23px;
+        height: 8px;
+        top: 0px;
+        left: 44px;
+        */
+    width: 110px;
+    height: 15px;
     top: 0px;
-    left: 44px;
+    left: 10px;
     z-index: 2; }
   .profile-section-block-review-comment-byclient .profile-section-block-review-comment-byclient-head-left {
     display: -webkit-box;
@@ -7484,30 +7490,133 @@ a {
     .profile-paging .profile-paging-center a {
       /* border-radius: 6px;*/ }
   .profile-paging a.u-icn-arrow-next-after {
-    /*border-radius: 4px 20px 20px 4px;*/ }
-    .profile-paging a.u-icn-arrow-next-after a.u-icn-arrow-back-after {
-      /*border-radius: 20px 4px 4px 20px;*/ }
+    /*border-radius: 4px 20px 20px 4px;*/
+    position: relative;
+    /*  &:after {
+            content: "";
+            width: 10px;
+            height: 15px;
+            display: inline-block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 0px -1px 0px 10px;
+            background-image: url(https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/icn-arrow-next-lime-1.svg);
+            vertical-align: middle;
+        }*/ }
+    .profile-paging a.u-icn-arrow-next-after::after {
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-top: solid 2px #15bfab;
+      border-right: solid 2px #15bfab;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      content: "";
+      margin: 0 0 0 5px; }
+  .profile-paging a.u-icn-arrow-back-after {
+    position: relative;
+    /*border-radius: 20px 4px 4px 20px;*/
+    /*&:before {
+            content: "";
+            width: 10px;
+            height: 15px;
+            display: inline-block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 0px 10px 0px 0px;
+            background-image: url(https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/icn-arrow-back-lime-1.svg);
+            /*background-image: url(https://limehair.jp/wp-https-lime/wp-content/uploads/2020/04/icn-arrow-back.svg);*/
+    /* 
+        }
+        */ }
+    .profile-paging a.u-icn-arrow-back-after::before {
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-bottom: solid 2px #15bfab;
+      border-left: solid 2px #15bfab;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      content: "";
+      margin: 0 5px 0 0; }
+  .profile-paging a.borderlime {
+    border: 1px solid #15bfab; }
   .profile-paging a {
+    /*border: 1px $cl-lime solid;*/
     border-radius: 8px;
-    border: 1px #ccc solid;
-    display: table;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
     margin: 5px auto 0;
-    padding: 13px 10px;
+    padding: 17px 10px;
     text-align: center;
-    box-shadow: 1.5px 4px 4px 0 rgba(0, 0, 0, .1);
-    color: #4d4d4d;
-    /*color: $cl-lime;*/
+    box-shadow: 1.5px 4px 4px 0 rgba(0, 0, 0, .05);
+    color: #666666;
     font-weight: bold;
+    line-height: 0.7;
     background: #fff;
     font-weight: normal !important;
     text-decoration: none;
-    font-size: 14px; }
+    font-size: 13.5px; }
     @media screen and (max-width: 374px) {
       .profile-paging a {
         font-size: 12px; } }
     .profile-paging a:hover,
     .profile-paging a :active {
+      opacity: 0.5; }
+
+.profile-paging-icon-no {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  margin: 15px 10px 75px;
+  padding: 0 0 0px; }
+  .profile-paging-icon-no .profile-paging-prev-archive,
+  .profile-paging-icon-no .profile-paging-next-archive {
+    padding: 0 2px;
+    width: 40%; }
+  .profile-paging-icon-no .profile-paging-prev-detail,
+  .profile-paging-icon-no .profile-paging-next-detail {
+    padding: 0 2px;
+    width: 22.5%; }
+  .profile-paging-icon-no .profile-paging-center {
+    width: 50%; }
+    .profile-paging-icon-no .profile-paging-center a {
+      /* border-radius: 6px;*/ }
+  .profile-paging-icon-no a.u-icn-arrow-next-after {
+    /*border-radius: 4px 20px 20px 4px;*/ }
+  .profile-paging-icon-no a.u-icn-arrow-back-after {
+    /*border-radius: 20px 4px 4px 20px;*/ }
+  .profile-paging-icon-no a {
+    /*border: 1px $cl-lime solid;*/
+    border-radius: 8px;
+    display: table;
+    width: 100%;
+    margin: 5px auto 0;
+    padding: 13px 10px;
+    text-align: center;
+    box-shadow: 1.5px 4px 4px 0 rgba(0, 0, 0, .05);
+    color: #4d4d4d;
+    font-weight: bold;
+    background: #fff;
+    font-weight: normal !important;
+    text-decoration: none;
+    font-size: 13px; }
+    @media screen and (max-width: 374px) {
+      .profile-paging-icon-no a {
+        font-size: 13px; } }
+    .profile-paging-icon-no a:hover,
+    .profile-paging-icon-no a :active {
       opacity: 0.5; }
 
 .profile-paging-shokai a {
@@ -7519,13 +7628,13 @@ a {
   padding: 13px 10px;
   text-align: center;
   box-shadow: 1.5px 4px 4px 0 rgba(0, 0, 0, .1);
-  color: #4d4d4d;
+  color: #666666;
   /*color: $cl-lime;*/
   font-weight: bold;
   background: #fff;
   font-weight: normal !important;
   text-decoration: none;
-  font-size: 14px; }
+  font-size: 13px; }
   @media screen and (max-width: 374px) {
     .profile-paging-shokai a {
       font-size: 12px; } }

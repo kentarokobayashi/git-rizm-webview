@@ -54,7 +54,7 @@
 /* instagram */
 
 .profile-section-block-instagram {
-    margin: 0 -30px 0 0;
+    margin: 0 -30px 0 -30px;
     position: relative;
     ul {
         overflow-x: scroll;
@@ -62,7 +62,7 @@
         width: 100%;
         white-space: nowrap;
         height: 230px;
-        padding: 0 100px 0 0;
+        padding: 0 100px 0 30px;
         li {
             display: inline-block;
             width: 226px;
@@ -726,14 +726,14 @@
 //サロンの雰囲気
 .profile-section-block-salon-atmosphere {
     position: relative;
-    margin: 0 -30px 0 -10px;
+    margin: 0 -30px 0 -30px;
     ul {
         overflow-x: scroll;
         overflow-y: hidden;
         width: 100%;
         white-space: nowrap;
         height: 185px;
-        padding: 0 100px 0 10px;
+        padding: 0 100px 0 30px;
         li {
             display: inline-block;
             width: 292px;
