@@ -6191,7 +6191,7 @@ div,
 p,
 span,
 a {
-  font-family: 'Noto Sans JP', "koburina", 'DIN Alternate', 'ヒラギノ角ゴ ProN W6', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W6', sans-serif; }
+  font-family: "Noto Sans JP", "koburina", "DIN Alternate", "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W6", sans-serif; }
 
 /* 背景の色たち */
 .bg-stekina-black {
@@ -6208,7 +6208,7 @@ a {
 
 /* 各セクション */
 .profile-section {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 8px;
   margin: 0 auto 8px;
   width: 93%;
@@ -6293,8 +6293,105 @@ a {
       background-image: url(https://assets.stekina.com/static/img/icon/icn-arrow-navi.svg);
       vertical-align: middle; }
 
+/* 追従ボタン */
+.fixed-bottom-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 0 7px;
+  max-width: 450px; }
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 30px;
+  width: 100%;
+  max-width: 450px;
+  z-index: 3; }
+  .fixed-bottom a {
+    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, .2); }
+  .fixed-bottom .fixed-bottom-button-sub {
+    width: 40%; }
+    .fixed-bottom .fixed-bottom-button-sub a {
+      /* width: 127px;*/
+      height: 46px;
+      background: #ffffff;
+      border: 1.3px solid #15bfab;
+      border-radius: 6px;
+      box-sizing: border-box;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      color: #15bfab;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: bold; }
+  .fixed-bottom .fixed-bottom-button-main {
+    width: 56%; }
+    .fixed-bottom .fixed-bottom-button-main a {
+      font-size: 15px;
+      /*width: 184px;*/
+      height: 46px;
+      border-radius: 6px;
+      box-sizing: border-box;
+      background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
+      background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      color: white;
+      text-decoration: none;
+      font-weight: bold; }
+
+.fixed-bottom-rizm {
+  width: 96%;
+  margin: auto;
+  max-width: 450px;
+  z-index: 3;
+  position: fixed;
+  bottom: 30px;
+  right: 0px;
+  left: 0px; }
+  .fixed-bottom-rizm a {
+    font-size: 15px;
+    /*width: 184px;*/
+    height: 46px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
+    background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, .2); }
+
+/* 細かい調整　*/
 .adjust-margin-bottom-5 {
-  margin-bottom: 10px; }
+  margin-bottom: 5px; }
 
 .adjust-margin-bottom-10 {
   margin-bottom: 10px; }
@@ -6311,6 +6408,54 @@ a {
 .adjust-margin-bottom-30 {
   margin-bottom: 30px; }
 
+.adjust-margin-bottom-35 {
+  margin-bottom: 35px; }
+
+.adjust-margin-bottom-40 {
+  margin-bottom: 40px; }
+
+.adjust-margin-top-5 {
+  margin-top: 5px; }
+
+.adjust-margin-top-10 {
+  margin-top: 10px; }
+
+.adjust-margin-top-15 {
+  margin-top: 15px; }
+
+.adjust-margin-top-20 {
+  margin-top: 20px; }
+
+.adjust-margin-top-25 {
+  margin-top: 25px; }
+
+.adjust-margin-top-30 {
+  margin-top: 30px; }
+
+.adjust-margin-top-35 {
+  margin-top: 35px; }
+
+.adjust-margin-top-40 {
+  margin-top: 40px; }
+
+/* ひよこのscss */
+.wrapper-profile-undisclosed {
+  max-width: 450px;
+  margin: 30px auto; }
+  .wrapper-profile-undisclosed h1 {
+    font-size: 22px;
+    line-height: 1.5;
+    color: #4d4d4d;
+    font-weight: bold;
+    text-align: center; }
+  .wrapper-profile-undisclosed .wrapper-profile-undisclosed-img {
+    margin: 20px auto 15px;
+    width: 50%; }
+  .wrapper-profile-undisclosed .sorry-text {
+    font-size: 13px;
+    color: #4d4d4d;
+    text-align: center; }
+
 /* ステータス・特徴 */
 .profile-section-block-usertag {
   display: -webkit-box;
@@ -6318,7 +6463,7 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  .profile-section-block-usertag li a {
+  .profile-section-block-usertag li {
     font-size: 12px;
     color: #4d4d4d;
     background: #FFFFFF;
@@ -6338,6 +6483,41 @@ a {
     text-align: center;
     margin: 0 0 11px; }
 
+.profile-section-block-status-table-wrap {
+  margin: 0 auto 20px;
+  position: relative;
+  height: 32px;
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 2; }
+
+.profile-section-block-status-table-wrap-nodate .profile-section-block-status-table {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="0.02" /></filter></svg>#filter');
+  -webkit-filter: blur(0.02px);
+          filter: blur(0.02px); }
+
+.profile-section-block-status-table-wrap-overray {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 32px;
+  background-color: rgba(0, 0, 0, .42);
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  z-index: 1;
+  font-size: 12px;
+  letter-spacing: 2px; }
+
 .profile-section-block-status-table {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6346,7 +6526,7 @@ a {
       flex-wrap: wrap;
   border-radius: 4px;
   overflow: hidden;
-  margin: 0 auto 20px; }
+  margin: 0 auto 0px; }
   .profile-section-block-status-table li {
     text-align: center;
     color: white;
@@ -6364,6 +6544,31 @@ a {
             align-items: center; }
   .profile-section-block-status-table li:not(:last-child) {
     border-right: 1px solid white; }
+
+.profile-section-block-sns-defalut-btn {
+  margin: 0 auto 22px; }
+
+.profile-section-block-sns-defalut-btn-note {
+  font-size: 11px;
+  color: #ff595b;
+  letter-spacing: 0.47px;
+  text-align: right;
+  line-height: 17.86px;
+  margin: 0 auto 3px; }
+
+.profile-section-block-sns-defalut-img-text {
+  font-size: 11px;
+  color: #B3B3B3;
+  letter-spacing: 0.47px;
+  text-align: center;
+  line-height: 17.86px;
+  margin: 0 auto 5px; }
+
+.profile-section-block-sns-defalut-img {
+  background: #FFFFFF;
+  box-shadow: 9px 10px 16px 0 rgba(0, 0, 0, .2);
+  border-radius: 6px;
+  overflow: hidden; }
 
 /* instagram */
 .profile-section-block-instagram {
@@ -7184,7 +7389,7 @@ a {
   border-radius: 8px;
   margin: 0 auto 8px;
   padding: 18px 18px 30px;
-  background: #FFFFFF; }
+  background: #ffffff; }
 
 .profile-section-block-review-wrapper {
   margin: 0 0 22px; }
@@ -7203,7 +7408,7 @@ a {
     bottom: 2px !important; }
 
 .profile-section-block-review {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 8px;
   margin: 0 -3px 8px;
   padding: 2px 0 0;
@@ -7318,7 +7523,7 @@ a {
       text-decoration: none; }
 
 .profile-section-block-shokai {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 8px;
   margin: 0 -3px 8px;
   padding: 2px 0 0;
@@ -7363,7 +7568,7 @@ a {
       font-weight: bold; }
     .profile-section-block-shokai .profile-section-block-shokai-head .profile-section-block-shokai-head-right .profile-section-block-shokai-head-right-salon {
       font-size: 12px;
-      color: #B3B3B3;
+      color: #b3b3b3;
       letter-spacing: 0.78px; }
   .profile-section-block-shokai .profile-section-block-shokai-content {
     padding: 6px 12px 20px;
@@ -7377,26 +7582,26 @@ a {
     .profile-section-block-shokai .profile-section-block-shokai-content a {
       color: #15bfab;
       text-decoration: none; }
-  .profile-section-block-shokai .profile-section-block-shokai-tag {
-    padding: 0px 12px 0px;
-    margin: 0 0 20px; }
-    .profile-section-block-shokai .profile-section-block-shokai-tag ul {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
-      .profile-section-block-shokai .profile-section-block-shokai-tag ul li {
-        margin: 0 12px 9px 0; }
-        .profile-section-block-shokai .profile-section-block-shokai-tag ul li a {
-          border-radius: 4px;
-          font-size: 11px;
-          color: #4D4D4D;
-          letter-spacing: 0;
-          padding: 4.5px 9px;
-          border: 0.5px solid #4d4d4d;
-          text-decoration: none;
-          display: inline-block; }
+
+.profile-section-block-shokai-tag {
+  padding: 0px 12px 0px;
+  margin: 0 0 20px; }
+  .profile-section-block-shokai-tag ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .profile-section-block-shokai-tag ul li {
+      margin: 0 12px 9px 0;
+      border-radius: 4px;
+      font-size: 11px;
+      color: #4d4d4d;
+      letter-spacing: 0;
+      padding: 4.5px 9px;
+      border: 0.5px solid #4d4d4d;
+      text-decoration: none;
+      display: inline-block; }
 
 .profile-section-block-review-comment-byclient {
   padding: 16px 10px 12px;
@@ -7659,7 +7864,7 @@ a {
     margin: 0 2px 0 0; }
   .profile-section-block-review-suteki .profile-section-block-review-suteki-count {
     font-size: 13px;
-    color: #B3B3B3; }
+    color: #b3b3b3; }
     .profile-section-block-review-suteki .profile-section-block-review-suteki-count b {
       font-weight: bold; }
 
@@ -7680,7 +7885,7 @@ a {
     margin: 0 2px 0 0; }
   .content-footer-suteki .content-footer-suteki-count {
     font-size: 13px;
-    color: #B3B3B3; }
+    color: #b3b3b3; }
     .content-footer-suteki .content-footer-suteki-count b {
       font-weight: bold; }
 
@@ -8227,20 +8432,49 @@ svg.h {
   background: #8e7f6b;
   position: fixed;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .08);
-  height: 38px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 100%;
   max-width: 450px;
   z-index: 3; }
+  .profile-header .profile-header-content-dairi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 28px;
+    padding: 5px 0 0;
+    position: relative; }
+    .profile-header .profile-header-content-dairi .profile-header-content-dairi {
+      position: absolute;
+      width: 100%;
+      height: 28px;
+      z-index: 1; }
+    .profile-header .profile-header-content-dairi .profile-header-content-dairi-img img {
+      width: 18px;
+      height: 18px;
+      border-radius: 100%;
+      box-sizing: border-box;
+      display: inline-block;
+      margin: 0 5px 0 0;
+      border: 0.5px solid white; }
+    .profile-header .profile-header-content-dairi .profile-header-content-dairi-text {
+      font-size: 10.5px;
+      color: white;
+      letter-spacing: 1px; }
   .profile-header .profile-header-content {
     position: relative;
     width: 100%;
-    height: 38px; }
+    height: 38px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .profile-header .profile-header-content .profile-header-content-center {
       position: absolute;
       top: 0;
@@ -8593,12 +8827,54 @@ svg.h {
   right: 0;
   bottom: 0;
   padding: 20px 0;
-  width: 80%; }
+  width: 85%; }
+  .profile-dialog-wrapper .profile-dialog-close {
+    width: 28x;
+    height: 28px;
+    opacity: 0.3;
+    left: 9px;
+    top: 9px;
+    position: absolute; }
+    .profile-dialog-wrapper .profile-dialog-close:before {
+      position: absolute;
+      left: 15px;
+      content: " ";
+      height: 28px;
+      width: 2px;
+      background-color: #333;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .profile-dialog-wrapper .profile-dialog-close:after {
+      position: absolute;
+      left: 15px;
+      content: " ";
+      height: 28px;
+      width: 2px;
+      background-color: #333;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+  .profile-dialog-wrapper .profile-dialog-title-default-center {
+    text-align: center; }
   .profile-dialog-wrapper .profile-dialog-title-default {
     font-size: 19.5px;
     letter-spacing: 1px;
     color: #4d4d4d;
-    font-weight: bold;
+    width: 87%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5; }
+  .profile-dialog-wrapper .profile-dialog-title-default-normal {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #4d4d4d;
+    width: 87%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5; }
+  .profile-dialog-wrapper .profile-dialog-title-default-normal-note {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #ff595b;
     width: 87%;
     margin-left: auto;
     margin-right: auto;
@@ -8626,8 +8902,30 @@ svg.h {
     margin-left: auto;
     margin-right: auto;
     text-decoration: none;
-    font-weight: bold;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .45);
+    border: none; }
+  .profile-dialog-wrapper .profile-dialog-button-agree-default-big a {
+    width: 80%;
+    font-size: 18px;
+    /*width: 184px;*/
+    height: 80px;
+    border-radius: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    line-height: 1.5;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .45);
+    text-align: center;
     border: none; }
   .profile-dialog-wrapper .profile-dialog-button-agree-default-rizm a {
     background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
@@ -8635,6 +8933,9 @@ svg.h {
   .profile-dialog-wrapper .profile-dialog-button-agree-default-lime a {
     background-image: -webkit-linear-gradient(120deg, #4f9ad6 0%, #14ceb8 100%);
     background-image: linear-gradient(-30deg, #4f9ad6 0%, #14ceb8 100%); }
+  .profile-dialog-wrapper .profile-dialog-button-agree-default-limegreen a {
+    background: #15bfab;
+    box-shadow: none !important; }
   .profile-dialog-wrapper .profile-dialog-button-no-default button {
     width: 53%;
     font-size: 11px;
@@ -8654,8 +8955,72 @@ svg.h {
     margin-left: auto;
     margin-right: auto;
     text-decoration: none;
-    font-weight: bold;
     border: 1px solid #b3b3b3; }
+  .profile-dialog-wrapper .profile-dialog-button-no-default-text a {
+    font-size: 14px;
+    /*width: 184px;*/
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #b3b3b3;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none; }
+
+/* snsのボタン*/
+.profile-dialog-button-sns a {
+  width: 90%;
+  font-size: 15.5px;
+  /*width: 184px;*/
+  height: 55px;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-weight: bold;
+  margin: 0 auto 25px;
+  text-decoration: none;
+  border: none;
+  background: #000; }
+  .profile-dialog-button-sns a :not(:last-child) {
+    margin: 0 auto 25px; }
+
+.profile-dialog-button-sns-line a {
+  background: #00b900; }
+
+.profile-dialog-button-sns-twitter a {
+  background: #1da1f2; }
+
+.profile-dialog-button-sns-facebook a {
+  background: #1877f2; }
+
+.profile-dialog-button-sns-url a {
+  background: #ff595b; }
+
+.profile-dialog-input {
+  text-align: center;
+  margin: 0 auto;
+  width: 90%; }
+  .profile-dialog-input .youtube-register-input {
+    -webkit-appearance: none;
+    padding: 8px 6px;
+    border: 1px solid #15bfab;
+    font-size: 14px;
+    margin: 0 auto; }
 
 .profile-dialog-bg {
   position: fixed;

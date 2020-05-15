@@ -5,7 +5,7 @@ $review-content-font-size: 12.35px;
     border-radius: 8px;
     margin: 0 auto 8px;
     padding: 18px 18px 30px;
-    background: #FFFFFF;
+    background: #ffffff;
 }
 
 .profile-section-block-review-wrapper {
@@ -33,11 +33,11 @@ $review-font-sizemini: 7.8px;
 
 //レビュー詳細
 .profile-section-block-review {
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 8px;
     margin: 0 -3px 8px;
     padding: 2px 0 0;
-    box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, .15);
+    box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.15);
     .profile-section-block-review-head {
         position: relative;
         width: 100%;
@@ -104,7 +104,7 @@ $review-font-sizemini: 7.8px;
     .common-link {}
     .profile-section-block-review-thumbnail {
         $thumbnail-height: 240px;
-        height: $thumbnail-height+5px;
+        height: $thumbnail-height + 5px;
         padding: 5px 0 0;
         position: relative;
         margin: 0 0 5px;
@@ -133,10 +133,10 @@ $review-font-sizemini: 7.8px;
             }
             .profile-section-block-review-thumbnail-right-child {
                 width: 50%;
-                height: $thumbnail-height /2;
+                height: $thumbnail-height / 2;
                 img {
                     object-fit: cover;
-                    height: $thumbnail-height /2;
+                    height: $thumbnail-height / 2;
                     width: 100%;
                 }
             }
@@ -162,11 +162,11 @@ $review-font-sizemini: 7.8px;
 
 //ステキナ紹介文
 .profile-section-block-shokai {
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 8px;
     margin: 0 -3px 8px;
     padding: 2px 0 0;
-    box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, .15);
+    box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.15);
     .profile-section-block-shokai-head {
         position: relative;
         width: 100%;
@@ -204,7 +204,7 @@ $review-font-sizemini: 7.8px;
             }
             .profile-section-block-shokai-head-right-salon {
                 font-size: 12px;
-                color: #B3B3B3;
+                color: #b3b3b3;
                 letter-spacing: 0.78px;
             }
         }
@@ -225,32 +225,31 @@ $review-font-sizemini: 7.8px;
             text-decoration: none;
         }
     }
-    .profile-section-block-shokai-tag {
-        padding: 0px 12px 0px;
-        margin: 0 0 20px;
-        ul {
-            display: flex;
-            flex-wrap: wrap;
-            li {
-                margin: 0 12px 9px 0;
-                a {
-                    border-radius: 4px;
-                    font-size: 11px;
-                    color: #4D4D4D;
-                    letter-spacing: 0;
-                    padding: 4.5px 9px;
-                    border: 0.5px solid #4d4d4d;
-                    text-decoration: none;
-                    display: inline-block;
-                }
-            }
+}
+
+.profile-section-block-shokai-tag {
+    padding: 0px 12px 0px;
+    margin: 0 0 20px;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            margin: 0 12px 9px 0;
+            border-radius: 4px;
+            font-size: 11px;
+            color: #4d4d4d;
+            letter-spacing: 0;
+            padding: 4.5px 9px;
+            border: 0.5px solid #4d4d4d;
+            text-decoration: none;
+            display: inline-block;
         }
     }
 }
 
 .profile-section-block-review-comment-byclient {
     padding: 16px 10px 12px;
-    box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, .15);
+    box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.15);
     position: relative;
     border-radius: 8px;
     margin: 30px -3px 0;
@@ -266,7 +265,7 @@ $review-font-sizemini: 7.8px;
         border-left: 9px solid transparent;
         top: -23px;
         left: 44px;
-        filter: drop-shadow(0px -3px 10px rgba(0, 0, 0, .2));
+        filter: drop-shadow(0px -3px 10px rgba(0, 0, 0, 0.2));
         z-index: index($z, child); // 1
     }
     &::after {
@@ -520,7 +519,7 @@ $review-font-sizemini: 7.8px;
     }
     .profile-section-block-review-suteki-count {
         font-size: 13px;
-        color: #B3B3B3;
+        color: #b3b3b3;
         b {
             font-weight: bold;
         }
@@ -540,7 +539,7 @@ $review-font-sizemini: 7.8px;
     }
     .content-footer-suteki-count {
         font-size: 13px;
-        color: #B3B3B3;
+        color: #b3b3b3;
         b {
             font-weight: bold;
         }

@@ -1,0 +1,22 @@
+- var dateNow = Date.now();
+include ../mixin/_mixin.pug
+doctype html
+html(lang='jp')
+  head
+    title プロフィール表示が非公開の設定になってます！
+    //link(href='https://stekina.com/community/assets/application-0cd9ef953e92fafda8f69d7c040ac2075963fa2d6ccc579def5db048df82c04c.css' rel='stylesheet')
+    link(href='static/css/stekina-discount.css?'+dateNow, rel='stylesheet')
+    meta(name='viewport', content='width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    meta(charset='UTF-8')
+    meta(name='robots', content='noindex,nofollow')
+    script(src='//jpostal-1006.appspot.com/jquery.jpostal.js', type='text/javascript')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
+  body.bg-white
+   .wrapper-profile-undisclosed
+      h1|プロフィール表示が
+        br
+        |非公開の設定になってます！
+      .wrapper-profile-undisclosed-img
+          img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/hiyoko-jet.jpg')
+      p.sorry-text|ビューン

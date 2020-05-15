@@ -1,6 +1,20 @@
-.fixed-bottom(style='display:none;')
-    .fixed-bottom-wrapper
-        .fixed-bottom-button-sub
-            a(href='#')|メッセージする
-        .fixed-bottom-button-main
-            a(href='https://stekina.com/reserve/H8C8-QF8J/menu')|空席を確認してみる   
+if name=='viewrizm'
+  .fixed-bottom-rizm
+        a#jquery-open-dialog-share-sns(href='#')|シェアして応援する
+else
+  .fixed-bottom(style='display:none;')
+      .fixed-bottom-wrapper
+          .fixed-bottom-button-sub
+                    if name=='onlyreserve'
+                      a(href='#')|フォローする
+                    else if name=='onlymessage'
+                      a(href='#')|フォローする
+                    else
+                      a(href='#')|メッセージする
+          .fixed-bottom-button-main
+                    if name=='onlyreserve'
+                      a(href='https://stekina.com/reserve/H8C8-QF8J/menu')|空席を確認してみる
+                    else if name=='onlymessage'
+                        a(href='#')|メッセージする
+                    else
+                    a(href='https://stekina.com/reserve/H8C8-QF8J/menu')|空席を確認してみる 

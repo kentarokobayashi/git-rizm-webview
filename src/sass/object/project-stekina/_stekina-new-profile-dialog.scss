@@ -22,12 +22,58 @@
     right: 0;
     bottom: 0;
     padding: 20px 0;
-    width: 80%;
+    width: 85%;
+    .profile-dialog-close {
+        width: 28x;
+        height: 28px;
+        opacity: 0.3;
+        left: 9px;
+        top: 9px;
+        position: absolute;
+        &:before {
+            position: absolute;
+            left: 15px;
+            content: " ";
+            height: 28px;
+            width: 2px;
+            background-color: #333;
+            transform: rotate(45deg);
+        }
+        &:after {
+            position: absolute;
+            left: 15px;
+            content: " ";
+            height: 28px;
+            width: 2px;
+            background-color: #333;
+            transform: rotate(-45deg);
+        }
+    }
+    .profile-dialog-title-default-center {
+        text-align: center;
+    }
     .profile-dialog-title-default {
         font-size: 19.5px;
         letter-spacing: 1px;
         color: $cl-gray-dark;
-        font-weight: bold;
+        width: 87%;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.5;
+    }
+    .profile-dialog-title-default-normal {
+        font-size: 18px;
+        letter-spacing: 1px;
+        color: $cl-gray-dark;
+        width: 87%;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.5;
+    }
+    .profile-dialog-title-default-normal-note {
+        font-size: 14px;
+        letter-spacing: 1px;
+        color: $cl-red;
         width: 87%;
         margin-left: auto;
         margin-right: auto;
@@ -52,8 +98,27 @@
             margin-left: auto;
             margin-right: auto;
             text-decoration: none;
-            font-weight: bold;
             box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.45);
+            border: none;
+        }
+    }
+    .profile-dialog-button-agree-default-big {
+        a {
+            width: 80%;
+            font-size: 18px;
+            /*width: 184px;*/
+            height: 80px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin-left: auto;
+            margin-right: auto;
+            text-decoration: none;
+            line-height: 1.5;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.45);
+            text-align: center;
             border: none;
         }
     }
@@ -65,6 +130,12 @@
     .profile-dialog-button-agree-default-lime {
         a {
             @include lime-gradient();
+        }
+    }
+    .profile-dialog-button-agree-default-limegreen {
+        a {
+            background: $cl-lime;
+            box-shadow: none !important;
         }
     }
     .profile-dialog-button-no-default {
@@ -81,9 +152,84 @@
             margin-left: auto;
             margin-right: auto;
             text-decoration: none;
-            font-weight: bold;
             border: 1px solid #b3b3b3;
         }
+    }
+    .profile-dialog-button-no-default-text {
+        a {
+            font-size: 14px;
+            /*width: 184px;*/
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #b3b3b3;
+            margin-left: auto;
+            margin-right: auto;
+            text-decoration: none;
+        }
+    }
+}
+
+
+/* snsのボタン*/
+
+.profile-dialog-button-sns {
+    a {
+        width: 90%;
+        font-size: 15.5px;
+        /*width: 184px;*/
+        height: 55px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        margin: 0 auto 25px;
+        text-decoration: none;
+        border: none;
+        background: #000;
+         :not(:last-child) {
+            margin: 0 auto 25px;
+        }
+    }
+}
+
+.profile-dialog-button-sns-line {
+    a {
+        background: #00b900;
+    }
+}
+
+.profile-dialog-button-sns-twitter {
+    a {
+        background: #1da1f2;
+    }
+}
+
+.profile-dialog-button-sns-facebook {
+    a {
+        background: #1877f2;
+    }
+}
+
+.profile-dialog-button-sns-url {
+    a {
+        background: $cl-red;
+    }
+}
+
+.profile-dialog-input {
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    .youtube-register-input {
+        -webkit-appearance: none;
+        padding: 8px 6px;
+        border: 1px solid #15bfab;
+        font-size: 14px;
+        margin: 0 auto;
     }
 }
 

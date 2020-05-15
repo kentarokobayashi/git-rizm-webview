@@ -1,4 +1,5 @@
 - var dateNow = Date.now();
+- var name = 'dairi'
 include ../mixin/_mixin.pug
 doctype html
 html(lang='jp')
@@ -26,32 +27,27 @@ html(lang='jp')
         //タグ
         .profile-section-block
           .profile-section-block-title
-            h2|ステータス・特徴 
+           h2|ステータス・特徴 
           ul.profile-section-block-usertag
-              li
-                  |縮毛強制
-              li
-                |ショート
-              li
-                |クセ毛
-              li
-                |大人かわいい
-              li
-                |落ち着いた雰囲気
-              li
-                |面白い
-              li
-                |縮毛強制
-              li
-                |ショート
-              li
-                |クセ毛
-              li
-                |大人かわいい
-              li
-                |落ち着いた雰囲気
-              li
-                |面白い
+            li
+              |縮毛強制
+            li
+              |ショート
+            li
+              |クセ毛
+            li
+              |縮毛強制
+            li
+              |ショート
+            li
+              |クセ毛
+            li
+              |縮毛強制
+            li
+              |ショート
+            li
+              |クセ毛
+
         //ステータス
         .profile-section-block
             .profile-section-block-status
@@ -102,31 +98,7 @@ html(lang='jp')
                     li(style='background-image: linear-gradient(180deg, #FF82A2 0%, #FC5E87 100%); width:10%')
                      |その他
       .profile-section
-        .profile-section-block
-          .profile-section-block-title
-             .profile-section-block-title-img
-              img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/icn-youtube-mono.svg')
-             h2|YouTube
-          .profile-section-block-sns-defalut-btn-note|※自分にしか表示されません
-          .profile-section-block-sns-defalut-btn
-            a.jquery-open-dialog-youtube(href='#')
-              img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/btn-youtube-4x.png')
-          .profile-section-block-sns-defalut-img-text|表示イメージ
-          .profile-section-block-sns-defalut-img
-            img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/img-keisai-youtube-noshadow.jpg')
-        .profile-section-block
-          .profile-section-block-title
-             .profile-section-block-title-img
-              img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/icn-insta-mono.svg')
-             h2|Instagram
-          .profile-section-block-sns-defalut-btn-note|※自分にしか表示されません
-          .profile-section-block-sns-defalut-btn
-            a(href='#')
-              img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/btn-insta-4x.png')
-          .profile-section-block-sns-defalut-img-text|表示イメージ
-          .profile-section-block-sns-defalut-img
-            img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/img-keisai-insta-noshadow.jpg')
-
+        +profile-sns
       //お客様からのレビュー&美容師からのステキナ紹介文
       .profile-section
         .profile-section-block

@@ -1,0 +1,42 @@
+- var dateNow = Date.now();
+- var name = 'onlyreserve'
+include ../mixin/_mixin.pug
+doctype html
+html(lang='jp')
+  head
+    title カワイ ミオさんのSTEKiNAプロフィール
+    //link(href='https://stekina.com/community/assets/application-0cd9ef953e92fafda8f69d7c040ac2075963fa2d6ccc579def5db048df82c04c.css' rel='stylesheet')
+    link(href='static/css/stekina-discount.css?'+dateNow, rel='stylesheet')
+    meta(name='viewport', content='width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    meta(charset='UTF-8')
+    meta(name='robots', content='noindex,nofollow')
+    script(src='//jpostal-1006.appspot.com/jquery.jpostal.js', type='text/javascript')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
+  body.bg-stekina-black.new-profile-top
+   .wrapper-cl-stekina-brown-light
+    //👇追従ボタン（スクロールすると出てくる）
+    .wrapper-profile
+      //ヘッダー
+      include ../mixin/_header-newprofile-brown-normal.pug
+      include ../mixin/_fixed-button-bottom-newprofile.pug     
+      //profile-cover
+      .profile-top
+        +profile-top
+      .profile-section
+        +profile-status-and-tag
+      .profile-section
+        +profile-sns
+      //お客様からのレビュー&美容師からのステキナ紹介文
+      .profile-section
+        +profile-reviews-top
+        +profile-shokai-top
+      //メニュー料金&オススメのメニュー(クーポン)
+      .profile-section
+        +profile-menu-and-coupon
+      //アクセス&サロンの雰囲気&営業時間
+      .profile-section
+        +profile-access-atmosphere-openingtime
+      include ../mixin/_footer-newprofile
+   include ../mixin/_footer2-newprofile   
+   

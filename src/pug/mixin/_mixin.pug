@@ -114,9 +114,20 @@ mixin profile-top
               |年間1500名以上のお客様を担当🗣{ヘアスタイル/メイク/小顔矯正/マッサージ/ファッション/ランジェリーであなた自身の為にサポート！)#ランジェリー美容師年間1500名以上のお客様を担当🗣{ヘアスタイル/メイク/小顔矯正/マッサージ/ファッション/ランジェリーであなた自身の為にサポート！)#ランジェリー美容師
             .profile-detail-button
                 .profile-detail-button-sub
-                  a(href='#')|メッセージする
+                  if name=='onlyreserve'
+                     a(href='#')|フォローする
+                  else if name=='onlymessage'
+                    a(href='#')|フォローする
+                  else
+                    a(href='#')|メッセージする
                 .profile-detail-button-main
-                  a(href='https://stekina.com/reserve/H8C8-QF8J/menu')|空席を確認してみる
+                  if name=='onlyreserve'
+                     a(href='https://stekina.com/reserve/H8C8-QF8J/menu')|空席を確認してみる
+                  else if name=='onlymessage'
+                      a(href='#')|メッセージする
+                  else
+                   a(href='https://stekina.com/reserve/H8C8-QF8J/menu')|空席を確認してみる
+                  
 
 //お客様からのレビュー
 mixin profile-reviews-top
@@ -357,68 +368,71 @@ mixin profile-status-and-tag
            h2|ステータス・特徴 
           ul.profile-section-block-usertag
             li
-              a(href='#')|縮毛強制
+                |縮毛強制
             li
-              a(href='#')|ショート
+              |ショート
             li
-              a(href='#')|クセ毛
+              |クセ毛
             li
-              a(href='#')|大人かわいい
+              |大人かわいい
             li
-              a(href='#')|落ち着いた雰囲気
+              |落ち着いた雰囲気
             li
-              a(href='#')|面白い
+              |面白い
             li
-              a(href='#')|縮毛強制
+              |縮毛強制
             li
-              a(href='#')|ショート
+              |ショート
             li
-              a(href='#')|クセ毛
+              |クセ毛
             li
-              a(href='#')|大人かわいい
+              |大人かわいい
             li
-              a(href='#')|落ち着いた雰囲気
+              |落ち着いた雰囲気
             li
-              a(href='#')|面白い
+              |面白い
         .profile-section-block
             .profile-section-block-status
                 .profile-section-block-status-title
                    |男女比
-                ul.profile-section-block-status-table
-                  li(style='background-image: linear-gradient(180deg, #4C77CA 0%, #0071BB 100%); width:35%')
-                   |男性 35%
-                  li(style='background-image: linear-gradient(180deg, #FF82A2 0%, #FC5E87 100%); width:65%')
-                   |女性 65%
+                .profile-section-block-status-table-wrap
+                  ul.profile-section-block-status-table
+                    li(style='background-image: linear-gradient(180deg, #4C77CA 0%, #0071BB 100%); width:35%')
+                     |男性 35%
+                    li(style='background-image: linear-gradient(180deg, #FF82A2 0%, #FC5E87 100%); width:65%')
+                     |女性 65%
                 .profile-section-block-status-title
                    |年齢比
-                ul.profile-section-block-status-table
-                  li(style='background-image: linear-gradient(180deg, #23D5C0 1%, #15BFAB 100%); width:15%;')
-                   |10代
-                  li(style='background-image: linear-gradient(180deg, #FEAD51 0%, #FF9924 100%); width:25%;')
-                   |20代
-                  li(style='background-image: linear-gradient(180deg, #C39DFF 0%, #AF7DFF 100%); width:15%;')
-                   |30代
-                  li(style='background-image: linear-gradient(180deg, #4C77CA 0%, #0071BB 100%);width:25%;')
-                   |40代
-                  li(style='background-image: linear-gradient(180deg, #69D2FD 1%, #2AC1FF 100%); width:10%;')
-                   |50代
-                  li(style='background-image: linear-gradient(180deg, #FF82A2 0%, #FC5E87 100%); width:10%')
-                   |60代
+                .profile-section-block-status-table-wrap
+                  ul.profile-section-block-status-table
+                    li(style='background-image: linear-gradient(180deg, #23D5C0 1%, #15BFAB 100%); width:15%;')
+                      |10代
+                    li(style='background-image: linear-gradient(180deg, #FEAD51 0%, #FF9924 100%); width:25%;')
+                      |20代
+                    li(style='background-image: linear-gradient(180deg, #C39DFF 0%, #AF7DFF 100%); width:15%;')
+                      |30代
+                    li(style='background-image: linear-gradient(180deg, #4C77CA 0%, #0071BB 100%);width:25%;')
+                      |40代
+                    li(style='background-image: linear-gradient(180deg, #69D2FD 1%, #2AC1FF 100%); width:10%;')
+                      |50代
+                    li(style='background-image: linear-gradient(180deg, #FF82A2 0%, #FC5E87 100%); width:10%')
+                      |60代
                 .profile-section-block-status-title
                    |メニュー比率
-                ul.profile-section-block-status-table
-                  li(style='background-image: linear-gradient(180deg, #23D5C0 1%, #15BFAB 100%); width:15%;')
-                   |カット
-                  li(style='background-image: linear-gradient(180deg, #FEAD51 0%, #FF9924 100%); width:25%;')
-                   |カラー
-                  li(style='background-image: linear-gradient(180deg, #C39DFF 0%, #AF7DFF 100%); width:15%;')
-                   |パーマ
-                  li(style='background-image: linear-gradient(180deg, #4C77CA 0%, #0071BB 100%);width:25%;')
-                   |ストレート
-                  li(style='background-image: linear-gradient(180deg, #69D2FD 1%, #2AC1FF 100%); width:10%;')
-                   |トリートメント
-                  li(style='background-image: linear-gradient(180deg, #FF82A2 0%, #FC5E87 100%); width:10%')
-                   |その他
+                .profile-section-block-status-table-wrap
+                  ul.profile-section-block-status-table
+                    li(style='background-image: linear-gradient(180deg, #23D5C0 1%, #15BFAB 100%); width:15%;')
+                      |カット
+                    li(style='background-image: linear-gradient(180deg, #FEAD51 0%, #FF9924 100%); width:25%;')
+                      |カラー
+                    li(style='background-image: linear-gradient(180deg, #C39DFF 0%, #AF7DFF 100%); width:15%;')
+                      |パーマ
+                    li(style='background-image: linear-gradient(180deg, #4C77CA 0%, #0071BB 100%);width:25%;')
+                      |ストレート
+                    li(style='background-image: linear-gradient(180deg, #69D2FD 1%, #2AC1FF 100%); width:10%;')
+                      |トリートメント
+                    li(style='background-image: linear-gradient(180deg, #FF82A2 0%, #FC5E87 100%); width:10%')
+                       |その他
 //メニューとクーポン
 mixin profile-menu-and-coupon
         .profile-section-block

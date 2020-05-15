@@ -4,17 +4,15 @@
     display: flex;
     flex-wrap: wrap;
     li {
-        a {
-            font-size: 12px;
-            color: $cl-gray-dark;
-            background: #FFFFFF;
-            box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.10);
-            border-radius: 5.12px;
-            display: inline-block;
-            padding: 6px 9px;
-            margin: 0 11px 15px 0;
-            text-decoration: none;
-        }
+        font-size: 12px;
+        color: $cl-gray-dark;
+        background: #FFFFFF;
+        box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.10);
+        border-radius: 5.12px;
+        display: inline-block;
+        padding: 6px 9px;
+        margin: 0 11px 15px 0;
+        text-decoration: none;
     }
 }
 
@@ -29,12 +27,44 @@
     }
 }
 
+.profile-section-block-status-table-wrap {
+    margin: 0 auto 20px;
+    position: relative;
+    height: 32px;
+    border-radius: 4px;
+    overflow: hidden;
+    z-index: index($z, child-2); // 1
+}
+
+.profile-section-block-status-table-wrap-nodate {
+    .profile-section-block-status-table {
+        filter: blur(0.02px);
+    }
+}
+
+.profile-section-block-status-table-wrap-overray {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 32px;
+    background-color: rgba(0, 0, 0, .42);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: index($z, child); // 1
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
 .profile-section-block-status-table {
     display: flex;
     flex-wrap: wrap;
     border-radius: 4px;
     overflow: hidden;
-    margin: 0 auto 20px;
+    margin: 0 auto 0px;
     li {
         text-align: center;
         color: white;
@@ -48,6 +78,35 @@
     li:not(:last-child) {
         border-right: 1px solid white;
     }
+}
+
+.profile-section-block-sns-defalut-btn {
+    margin: 0 auto 22px;
+}
+
+.profile-section-block-sns-defalut-btn-note {
+    font-size: 11px;
+    color: $cl-red;
+    letter-spacing: 0.47px;
+    text-align: right;
+    line-height: 17.86px;
+    margin: 0 auto 3px;
+}
+
+.profile-section-block-sns-defalut-img-text {
+    font-size: 11px;
+    color: #B3B3B3;
+    letter-spacing: 0.47px;
+    text-align: center;
+    line-height: 17.86px;
+    margin: 0 auto 5px;
+}
+
+.profile-section-block-sns-defalut-img {
+    background: #FFFFFF;
+    box-shadow: 9px 10px 16px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    overflow: hidden;
 }
 
 

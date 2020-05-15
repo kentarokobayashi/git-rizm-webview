@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,500,500i,600,600i,700,700i,900");
 
 /* z-indexの定義 */
@@ -13,7 +13,7 @@ dialog-2;
 /* bodyの最大横幅 */
 
 body {
-    max-width: 2000px!important;
+    max-width: 2000px !important;
 }
 
 
@@ -40,7 +40,7 @@ div,
 p,
 span,
 a {
-    font-family: 'Noto Sans JP', "koburina", 'DIN Alternate', 'ヒラギノ角ゴ ProN W6', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W6', sans-serif;
+    font-family: "Noto Sans JP", "koburina", "DIN Alternate", "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W6", sans-serif;
 }
 
 
@@ -67,7 +67,7 @@ a {
 /* 各セクション */
 
 .profile-section {
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 8px;
     margin: 0 auto 8px;
     width: 93%;
@@ -164,8 +164,94 @@ a {
     }
 }
 
+
+/* 追従ボタン */
+
+.fixed-bottom-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 7px;
+    max-width: 450px;
+}
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 30px;
+    width: 100%;
+    max-width: 450px;
+    z-index: index($z, header); // 1
+    a {
+        box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.2);
+    }
+    .fixed-bottom-button-sub {
+        width: 40%;
+        a {
+            /* width: 127px;*/
+            height: 46px;
+            background: #ffffff;
+            border: 1.3px solid $cl-lime;
+            border-radius: 6px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $cl-lime;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+        }
+    }
+    .fixed-bottom-button-main {
+        width: 56%;
+        a {
+            font-size: 15px;
+            /*width: 184px;*/
+            height: 46px;
+            border-radius: 6px;
+            box-sizing: border-box;
+            @include rizm-gradient();
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+}
+
+.fixed-bottom-rizm {
+    width: 96%;
+    margin: auto;
+    max-width: 450px;
+    z-index: index($z, header); // 1
+    position: fixed;
+    bottom: 30px;
+    right: 0px;
+    left: 0px;
+    a {
+        font-size: 15px;
+        /*width: 184px;*/
+        height: 46px;
+        border-radius: 6px;
+        box-sizing: border-box;
+        @include rizm-gradient();
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.2);
+    }
+}
+
+
+/* 細かい調整　*/
+
 .adjust-margin-bottom-5 {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .adjust-margin-bottom-10 {
@@ -186,4 +272,68 @@ a {
 
 .adjust-margin-bottom-30 {
     margin-bottom: 30px;
+}
+
+.adjust-margin-bottom-35 {
+    margin-bottom: 35px;
+}
+
+.adjust-margin-bottom-40 {
+    margin-bottom: 40px;
+}
+
+.adjust-margin-top-5 {
+    margin-top: 5px;
+}
+
+.adjust-margin-top-10 {
+    margin-top: 10px;
+}
+
+.adjust-margin-top-15 {
+    margin-top: 15px;
+}
+
+.adjust-margin-top-20 {
+    margin-top: 20px;
+}
+
+.adjust-margin-top-25 {
+    margin-top: 25px;
+}
+
+.adjust-margin-top-30 {
+    margin-top: 30px;
+}
+
+.adjust-margin-top-35 {
+    margin-top: 35px;
+}
+
+.adjust-margin-top-40 {
+    margin-top: 40px;
+}
+
+
+/* ひよこのscss */
+
+.wrapper-profile-undisclosed {
+    max-width: 450px;
+    margin: 30px auto;
+    h1 {
+        font-size: 22px;
+        line-height: 1.5;
+        color: $cl-gray-dark;
+        font-weight: bold;
+        text-align: center;
+    }
+    .wrapper-profile-undisclosed-img {
+        margin: 20px auto 15px;
+        width: 50%;
+    }
+    .sorry-text {
+        font-size: 13px;
+        color: $cl-gray-dark;
+        text-align: center;
+    }
 }

@@ -1,0 +1,22 @@
+- var dateNow = Date.now();
+include ../mixin/_mixin.pug
+doctype html
+html(lang='jp')
+  head
+    title ただいま審査中です、もうしばらくお待ちください
+    //link(href='https://stekina.com/community/assets/application-0cd9ef953e92fafda8f69d7c040ac2075963fa2d6ccc579def5db048df82c04c.css' rel='stylesheet')
+    link(href='static/css/stekina-discount.css?'+dateNow, rel='stylesheet')
+    meta(name='viewport', content='width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    meta(charset='UTF-8')
+    meta(name='robots', content='noindex,nofollow')
+    script(src='//jpostal-1006.appspot.com/jquery.jpostal.js', type='text/javascript')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
+  body.bg-white
+   .wrapper-profile-undisclosed
+      h1|ただいま審査中です
+        br
+        |もうしばらくお待ちください
+      .wrapper-profile-undisclosed-img
+          img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/hiyoko.png')
+      p.sorry-text|ごめんなさい💦
