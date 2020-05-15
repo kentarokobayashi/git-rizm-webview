@@ -10,6 +10,10 @@
     display: none;
 }
 
+.profile-dialog-wrapper-gray {
+    background: $cl-gray-lightest !important;
+}
+
 .profile-dialog-wrapper {
     background: white;
     border-radius: 8px;
@@ -85,7 +89,8 @@
         margin-right: auto;
     }
     .profile-dialog-button-agree-default {
-        a {
+        a,
+        button {
             width: 80%;
             font-size: 15.5px;
             /*width: 184px;*/
@@ -123,17 +128,20 @@
         }
     }
     .profile-dialog-button-agree-default-rizm {
-        a {
+        a,
+        button {
             @include rizm-gradient();
         }
     }
     .profile-dialog-button-agree-default-lime {
-        a {
+        a,
+        button {
             @include lime-gradient();
         }
     }
     .profile-dialog-button-agree-default-limegreen {
-        a {
+        a,
+        button {
             background: $cl-lime;
             box-shadow: none !important;
         }
@@ -168,6 +176,73 @@
             margin-right: auto;
             text-decoration: none;
         }
+    }
+}
+
+
+/* レビュー返信 */
+
+.profile-dialog-wrapper-reply {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    .profile-dialog-wrapper-reply-title {
+        font-size: 18px;
+        letter-spacing: 1px;
+        color: $cl-gray-dark;
+        width: 100%;
+        text-align: left;
+        font-weight: bold;
+        line-height: 1.5;
+    }
+    .profile-dialog-wrapper-reply-input {
+        textarea {
+            -webkit-appearance: none;
+            height: auto;
+            max-width: 600px;
+            color: #4d4d4d;
+            font-weight: 400;
+            font-size: 15px;
+            width: 100%;
+            height: 240px;
+            background: #fff;
+            border-radius: 8px;
+            line-height: 1.5;
+            border: 2px solid #27beab;
+            padding: 5px 10px;
+        }
+    }
+}
+
+
+/* ステキナ紹介文の編集 */
+
+.profile-dialog-wrapper-edit-shokai {
+    margin: 10px 0 0;
+    .profile-dialog-wrapper-edit-shokai-title {
+        text-align: center;
+        font-size: 17px;
+        margin: 0 auto 10px;
+    }
+    .profile-dialog-wrapper-edit-shokai-input {
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input {
+            margin: 0 5px 0 0;
+        }
+        select {
+            margin: 0 3px 0 0;
+        }
+    }
+    .profile-dialog-wrapper-edit-shokai-wrap {
+        padding: 15px;
+        width: 90%;
+        margin: 0 auto 30px;
+        border-radius: 4px;
+        background: white;
     }
 }
 

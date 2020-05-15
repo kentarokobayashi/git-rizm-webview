@@ -5643,7 +5643,7 @@ div,
 p,
 span,
 a {
-  font-family: "koburina", 'DIN Alternate', 'Noto San,s JP', 'ヒラギノ角ゴ ProN W6', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W6', sans-serif; }
+  font-family: "koburina", "DIN Alternate", "Noto San,s JP", "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W6", sans-serif; }
 
 .bg-stekina-black {
   background: #262626; }
@@ -5712,7 +5712,7 @@ a {
     color: white;
     text-align: center;
     font-weight: bold;
-    font-family: "koburina", 'DIN Alternate', 'Noto San,s JP', 'ヒラギノ角ゴ ProN W6', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W6', sans-serif !important; }
+    font-family: "koburina", "DIN Alternate", "Noto San,s JP", "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W6", sans-serif !important; }
   .stekina-media-mv .stekina-media-mv-subtext {
     font-size: 14px;
     letter-spacing: 2px;
@@ -5726,14 +5726,14 @@ a {
     margin: auto;
     color: white;
     text-align: center;
-    font-family: "koburina", 'DIN Alternate', 'Noto San,s JP', 'ヒラギノ角ゴ ProN W6', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W6', sans-serif !important; }
+    font-family: "koburina", "DIN Alternate", "Noto San,s JP", "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W6", sans-serif !important; }
   .stekina-media-mv .stekina-media-mv-bg img {
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
     height: 440px; }
 
-.wrapper-cl-stekina-brown-light {
+.wrapper-stekina-brown-light {
   background: #e2ddd7;
   width: 100%; }
 
@@ -5808,7 +5808,7 @@ a {
     line-height: 1.5;
     margin: 20px auto 0;
     position: relative;
-    font-family: "koburina", 'DIN Alternate', 'Noto San,s JP', 'ヒラギノ角ゴ ProN W6', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W6', sans-serif;
+    font-family: "koburina", "DIN Alternate", "Noto San,s JP", "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W6", sans-serif;
     font-weight: bold !important; }
     .stekina-media-recommend-ai .stekina-media-recommend-ai-fukidashi .stekina-media-recommend-ai-fukidashi-button a {
       /*@include rizm-gradient(); */
@@ -6097,8 +6097,8 @@ footer {
 .bounceIn {
   -webkit-animation-name: bounceIn;
   animation-name: bounceIn;
-  -webkit-animation-duration: .75s;
-  animation-duration: .75s; }
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s; }
 
 @-webkit-keyframes bounceIn {
   0%,
@@ -6183,6 +6183,10 @@ footer {
 body {
   max-width: 2000px !important; }
 
+.wrapper-cl-white {
+  background: white;
+  width: 100%; }
+
 /* テキストグラデ一応 重複するかもだけど。 */
 /* font */
 body,
@@ -6204,7 +6208,9 @@ a {
 .wrapper-profile {
   max-width: 450px;
   margin: 0 auto;
-  width: 100%; }
+  width: 100%;
+  background: #e2ddd7;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, .1); }
 
 /* 各セクション */
 .profile-section {
@@ -6466,7 +6472,7 @@ a {
   .profile-section-block-usertag li {
     font-size: 12px;
     color: #4d4d4d;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, .1);
     border-radius: 5.12px;
     display: inline-block;
@@ -6558,14 +6564,14 @@ a {
 
 .profile-section-block-sns-defalut-img-text {
   font-size: 11px;
-  color: #B3B3B3;
+  color: #b3b3b3;
   letter-spacing: 0.47px;
   text-align: center;
   line-height: 17.86px;
   margin: 0 auto 5px; }
 
 .profile-section-block-sns-defalut-img {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 9px 10px 16px 0 rgba(0, 0, 0, .2);
   border-radius: 6px;
   overflow: hidden; }
@@ -6585,7 +6591,7 @@ a {
       display: inline-block;
       width: 226px;
       height: 226px;
-      background: #D8D8D8;
+      background: #d8d8d8;
       margin: 0 20px 0 0; }
       .profile-section-block-instagram ul li img {
         border-radius: 5.89px;
@@ -6617,7 +6623,7 @@ a {
   -o-object-position: 50% 0%;
      object-position: 50% 0%;
   border-radius: 6px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 4px 5px 16px 0 rgba(0, 0, 0, .1);
   overflow: hidden;
   display: -webkit-box;
@@ -6715,7 +6721,7 @@ a {
       .profile-section-block-review-card .profile-section-block-review-card-left .profile-section-block-review-card-left-bottom .profile-section-block-review-card-left-bottom-suteki-count {
         margin: 0 0 0 -15px;
         font-size: 11.5px;
-        color: #B3B3B3;
+        color: #b3b3b3;
         letter-spacing: 0; }
         .profile-section-block-review-card .profile-section-block-review-card-left .profile-section-block-review-card-left-bottom .profile-section-block-review-card-left-bottom-suteki-count p {
           display: inline-block; }
@@ -6791,7 +6797,7 @@ a {
   opacity: 0.7; }
 
 .profile-section-block-stekina-shokai {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, .1);
   border-radius: 5px;
   padding: 10px 15px 7px;
@@ -6831,11 +6837,11 @@ a {
       font-weight: bold; }
     .profile-section-block-stekina-shokai .profile-section-block-stekina-shokai-head-right .profile-section-block-stekina-shokai-head-right-salon {
       font-size: 10.7px;
-      color: #B3B3B3;
+      color: #b3b3b3;
       letter-spacing: 0.78px; }
   .profile-section-block-stekina-shokai .profile-section-block-stekina-shokai-content {
     font-size: 11px;
-    margin: 14px auto 0;
+    margin: 14px auto 20px;
     color: #4d4d4d;
     letter-spacing: 0;
     line-height: 1.75;
@@ -6856,7 +6862,7 @@ a {
     .profile-section-block-stekina-shokai .profile-section-block-stekina-shokai-tag li a {
       border-radius: 5.5px;
       font-size: 9.7px;
-      color: #4D4D4D;
+      color: #4d4d4d;
       letter-spacing: 0;
       padding: 2px 9px;
       border: 0.5px solid #4d4d4d;
@@ -6869,10 +6875,7 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0px 4px 0;
-    z-index: 2;
-    position: absolute;
-    bottom: 5px; }
+    margin: 0px 4px 0; }
     .profile-section-block-stekina-shokai .profile-section-block-stekina-shokai-footer .profile-section-block-stekina-shokai-footer-suteki {
       -webkit-transform-origin: left center;
               transform-origin: left center;
@@ -6881,14 +6884,14 @@ a {
     .profile-section-block-stekina-shokai .profile-section-block-stekina-shokai-footer .profile-section-block-stekina-shokai-footer-number {
       margin: 0 0 0 -5px;
       font-size: 11.5px;
-      color: #B3B3B3;
+      color: #b3b3b3;
       letter-spacing: 0; }
       .profile-section-block-stekina-shokai .profile-section-block-stekina-shokai-footer .profile-section-block-stekina-shokai-footer-number b {
         font-weight: bold; }
 
 /* 紹介文0の時の表示 */
 .profile-section-block-stekina-shokai-count-0 {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, .1);
   border-radius: 5px;
   padding: 10px 15px 7px;
@@ -6937,7 +6940,7 @@ a {
 
 /* 紹介文0の時の表示（美容師向け） */
 .profile-section-block-stekina-shokai-count-0-stylist {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, .1);
   border-radius: 5px;
   padding: 10px 20px 7px;
@@ -7087,7 +7090,7 @@ a {
             transform: translateY(-3px); }
   .profile-section-block-coupon-menu .profile-section-block-coupon-menu-wrapper {
     position: relative;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0 3px 12px 0 rgba(0, 0, 0, .11);
     border-radius: 6px;
     overflow: hidden;
@@ -7220,7 +7223,7 @@ a {
 
 .profile-section-block-address {
   font-size: 12px;
-  color: #4D4D4D;
+  color: #4d4d4d;
   letter-spacing: -0.31px; }
 
 .profile-section-block-googlemap {
@@ -7316,7 +7319,7 @@ a {
     z-index: -1;
     position: absolute; }
   .profile-follow-area:before {
-    content: '';
+    content: "";
     background: inherit;
     /*.bgImageで設定した背景画像を継承する*/
     -webkit-filter: blur(2px);
@@ -7336,7 +7339,7 @@ a {
   .profile-follow-area .profile-follow-area-img {
     text-align: center; }
     .profile-follow-area .profile-follow-area-img img {
-      border: 1.2px solid #FFFFFF;
+      border: 1.2px solid #ffffff;
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
       width: 93px;
       height: 93px;
@@ -7346,14 +7349,14 @@ a {
       margin: 0 auto 12px; }
   .profile-follow-area .profile-follow-area-recommend-text {
     font-size: 11px;
-    color: #FFFFFF;
+    color: #ffffff;
     letter-spacing: 1.1px;
     text-align: center;
     margin: 0 0 12px; }
   .profile-follow-area .profile-follow-area-name {
     font-weight: bold;
     font-size: 20px;
-    color: #FFFFFF;
+    color: #ffffff;
     letter-spacing: 1.9px;
     text-align: center;
     margin: 0 0 22px; }
@@ -7570,6 +7573,29 @@ a {
       font-size: 12px;
       color: #b3b3b3;
       letter-spacing: 0.78px; }
+    .profile-section-block-shokai .profile-section-block-shokai-head .profile-section-block-shokai-head-sub {
+      position: absolute;
+      right: 10px;
+      top: 12px; }
+      .profile-section-block-shokai .profile-section-block-shokai-head .profile-section-block-shokai-head-sub .profile-section-block-shokai-head-sub-date {
+        font-size: 10px;
+        color: #b3b3b3;
+        font-family: Lato;
+        text-align: right; }
+      .profile-section-block-shokai .profile-section-block-shokai-head .profile-section-block-shokai-head-sub .profile-section-block-shokai-head-sub-button {
+        text-align: right; }
+        .profile-section-block-shokai .profile-section-block-shokai-head .profile-section-block-shokai-head-sub .profile-section-block-shokai-head-sub-button button {
+          padding: 6px 15px;
+          color: #ff595b;
+          font-size: 10.5px;
+          border: 1px solid #ff595b;
+          margin: 4px 0 0;
+          letter-spacing: 1.5px; }
+      .profile-section-block-shokai .profile-section-block-shokai-head .profile-section-block-shokai-head-sub .profile-section-block-shokai-head-sub-note {
+        color: #ff595b;
+        text-align: right;
+        font-size: 9px;
+        margin: 4px 0 0; }
   .profile-section-block-shokai .profile-section-block-shokai-content {
     padding: 6px 12px 20px;
     margin: 7px 0 0;
@@ -7582,6 +7608,10 @@ a {
     .profile-section-block-shokai .profile-section-block-shokai-content a {
       color: #15bfab;
       text-decoration: none; }
+
+.profile-section-block-stekina-shokai .profile-section-block-shokai-tag {
+  padding: 0px 0px 0px !important;
+  margin: 0px 0px 20px !important; }
 
 .profile-section-block-shokai-tag {
   padding: 0px 12px 0px;
@@ -7848,13 +7878,29 @@ a {
     opacity: 0.5; }
 
 .profile-section-block-review-suteki {
-  padding: 0px 18px 18px;
+  padding: 10px 18px 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  position: relative; }
+  .profile-section-block-review-suteki .profile-section-block-buttonarea {
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    margin: auto; }
+    .profile-section-block-review-suteki .profile-section-block-buttonarea .profile-section-block-buttonarea-button button {
+      padding: 7px 10px;
+      color: #ff595b;
+      font-size: 10.5px;
+      border: 1px solid #ff595b; }
+    .profile-section-block-review-suteki .profile-section-block-buttonarea .profile-section-block-buttonarea-text {
+      color: #ff595b;
+      text-align: right;
+      font-size: 10px;
+      margin: 6px 0 0; }
   .profile-section-block-review-suteki .love-button-wrapper {
     -webkit-transform-origin: left center;
             transform-origin: left center;
@@ -8815,6 +8861,9 @@ svg.h {
   z-index: 6;
   display: none; }
 
+.profile-dialog-wrapper-gray {
+  background: #f0f0f0 !important; }
+
 .profile-dialog-wrapper {
   background: white;
   border-radius: 8px;
@@ -8883,7 +8932,8 @@ svg.h {
     width: 85%;
     margin-left: auto;
     margin-right: auto; }
-  .profile-dialog-wrapper .profile-dialog-button-agree-default a {
+  .profile-dialog-wrapper .profile-dialog-button-agree-default a,
+  .profile-dialog-wrapper .profile-dialog-button-agree-default button {
     width: 80%;
     font-size: 15.5px;
     /*width: 184px;*/
@@ -8927,13 +8977,16 @@ svg.h {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .45);
     text-align: center;
     border: none; }
-  .profile-dialog-wrapper .profile-dialog-button-agree-default-rizm a {
+  .profile-dialog-wrapper .profile-dialog-button-agree-default-rizm a,
+  .profile-dialog-wrapper .profile-dialog-button-agree-default-rizm button {
     background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
     background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%); }
-  .profile-dialog-wrapper .profile-dialog-button-agree-default-lime a {
+  .profile-dialog-wrapper .profile-dialog-button-agree-default-lime a,
+  .profile-dialog-wrapper .profile-dialog-button-agree-default-lime button {
     background-image: -webkit-linear-gradient(120deg, #4f9ad6 0%, #14ceb8 100%);
     background-image: linear-gradient(-30deg, #4f9ad6 0%, #14ceb8 100%); }
-  .profile-dialog-wrapper .profile-dialog-button-agree-default-limegreen a {
+  .profile-dialog-wrapper .profile-dialog-button-agree-default-limegreen a,
+  .profile-dialog-wrapper .profile-dialog-button-agree-default-limegreen button {
     background: #15bfab;
     box-shadow: none !important; }
   .profile-dialog-wrapper .profile-dialog-button-no-default button {
@@ -8973,6 +9026,64 @@ svg.h {
     margin-left: auto;
     margin-right: auto;
     text-decoration: none; }
+
+/* レビュー返信 */
+.profile-dialog-wrapper-reply {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+  .profile-dialog-wrapper-reply .profile-dialog-wrapper-reply-title {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #4d4d4d;
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.5; }
+  .profile-dialog-wrapper-reply .profile-dialog-wrapper-reply-input textarea {
+    -webkit-appearance: none;
+    height: auto;
+    max-width: 600px;
+    color: #4d4d4d;
+    font-weight: 400;
+    font-size: 15px;
+    width: 100%;
+    height: 240px;
+    background: #fff;
+    border-radius: 8px;
+    line-height: 1.5;
+    border: 2px solid #27beab;
+    padding: 5px 10px; }
+
+/* ステキナ紹介文の編集 */
+.profile-dialog-wrapper-edit-shokai {
+  margin: 10px 0 0; }
+  .profile-dialog-wrapper-edit-shokai .profile-dialog-wrapper-edit-shokai-title {
+    text-align: center;
+    font-size: 17px;
+    margin: 0 auto 10px; }
+  .profile-dialog-wrapper-edit-shokai .profile-dialog-wrapper-edit-shokai-input {
+    margin-right: auto;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .profile-dialog-wrapper-edit-shokai .profile-dialog-wrapper-edit-shokai-input input {
+      margin: 0 5px 0 0; }
+    .profile-dialog-wrapper-edit-shokai .profile-dialog-wrapper-edit-shokai-input select {
+      margin: 0 3px 0 0; }
+  .profile-dialog-wrapper-edit-shokai .profile-dialog-wrapper-edit-shokai-wrap {
+    padding: 15px;
+    width: 90%;
+    margin: 0 auto 30px;
+    border-radius: 4px;
+    background: white; }
 
 /* snsのボタン*/
 .profile-dialog-button-sns a {

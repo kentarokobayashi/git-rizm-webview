@@ -16,6 +16,11 @@ body {
     max-width: 2000px !important;
 }
 
+.wrapper-cl-white {
+    background: white;
+    width: 100%;
+}
+
 
 /* テキストグラデ一応 重複するかもだけど。 */
 
@@ -61,6 +66,8 @@ a {
     max-width: 450px;
     margin: 0 auto;
     width: 100%;
+    background: $cl-stekina-brown-light;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
 }
 
 

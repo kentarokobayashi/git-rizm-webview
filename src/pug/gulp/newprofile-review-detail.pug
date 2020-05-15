@@ -13,7 +13,7 @@ html(lang='jp')
     meta(name='apple-mobile-web-app-capable', content='yes')
     meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
   body.bg-stekina-black.new-profile-top
-   .wrapper-cl-stekina-brown-light
+   .wrapper-cl-white
     //👇追従ボタン（スクロールすると出てくる）
     .wrapper-profile
       //ヘッダー
@@ -73,9 +73,12 @@ html(lang='jp')
                     |大人かわいい
                   li(key='モテ・愛され9642768')
                     |モテ・愛され
-          
-
             .profile-section-block-review-suteki
+              .profile-section-block-buttonarea
+                  .profile-section-block-buttonarea-button
+                    button#jquery-open-dialog-reply-review|レビューに返信する
+                  .profile-section-block-buttonarea-text
+                    |※自分のみ表示
               .profile-section-block-review-suteki-icon
                   +suteki-button
               .profile-section-block-review-suteki-count

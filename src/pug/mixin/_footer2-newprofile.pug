@@ -1,15 +1,48 @@
+.profile-dialog#dialog-edit-stekina-shokai
+   .profile-dialog-wrapper.profile-dialog-wrapper-gray
+      .profile-dialog-wrapper-edit-shokai
+          .profile-dialog-wrapper-edit-shokai-wrap
+                .profile-dialog-wrapper-edit-shokai-title|①ステキナ紹介文の表示・非表示
+                .profile-dialog-wrapper-edit-shokai-input
+                  input#stekina_edit_checkbox(type='checkbox', value='on')
+                  label.checkbox01(for='stekina_edit_checkbox') 表示する
+          .profile-dialog-wrapper-edit-shokai-wrap
+                .profile-dialog-wrapper-edit-shokai-title|②紹介文の表示順
+                .profile-dialog-wrapper-edit-shokai-input
+                    select(type='select_box')
+                      option(value='1') 1
+                      option(value='2') 2
+                      option(value='3') 3
+                      option(value='4') 4
+                      option(value='5') 5
+                      option(value='6') 6
+                      option(value='7') 7
+                      option(value='8') 8
+                      option(value='9') 9
+                    span 番目に表示する
+          .profile-dialog-button-agree-default.profile-dialog-button-agree-default-limegreen.adjust-margin-bottom-5
+                    button.close-dialog|保存する
+.profile-dialog#dialog-reply-review
+   .profile-dialog-wrapper
+      .profile-dialog-wrapper-reply
+        .profile-dialog-wrapper-reply-title.adjust-margin-bottom-10 お客様のレビューに返信しましょう！
+        .profile-dialog-wrapper-reply-input.adjust-margin-bottom-20
+              textarea(placeholder='例）素敵なご感想ありがとうございます！またご来店お待ちしております^^')#review_reply_textarea
+      .profile-dialog-button-agree-default.profile-dialog-button-agree-default-rizm.adjust-margin-bottom-5
+            button.close-dialog|レビューに返信する
+
 .profile-dialog#dialog-share-sns
    .profile-dialog-wrapper
         a(href='#').profile-dialog-close
         div.adjust-margin-top-40
           .profile-dialog-button-sns.profile-dialog-button-sns-facebook
-            a(href='#')|Facebookでシェア
+            a.close-dialog(href='#')|Facebookでシェア
           .profile-dialog-button-sns.profile-dialog-button-sns-twitter
-            a(href='#')|Twitterでツイート
+            a.close-dialog(href='#')|Twitterでツイート
           .profile-dialog-button-sns.profile-dialog-button-sns-line
-            a(href='#')|LINEに送る
+            a.close-dialog(href='#')|LINEに送る
           .profile-dialog-button-sns.profile-dialog-button-sns-url
-            a(href='#')|URLをコピー        
+            a.close-dialog(href='#')|URLをコピー        
 .profile-dialog
     .profile-dialog-wrapper
       div(style='width: 100%; margin: 5px auto; max-width: 380px;')
@@ -206,12 +239,23 @@ script.
       }
       );
 script.
+      $('#jquery-open-dialog-reply-review').on('click', function() {
+      $('.profile-dialog-bg').show();
+       $('#dialog-reply-review').show();
+      }
+      );
+script.
+      $('#jquery-open-dialog-stekina-shokai').on('click', function() {
+       $('.profile-dialog-bg').show();
+       $('#dialog-edit-stekina-shokai').show();
+      }
+      );
+script.
       $('.close-dialog').on('click', function() {
        $('.profile-dialog-bg').hide();
        $('.profile-dialog').hide();
       }
       );
-
 script.
       $('.profile-dialog-close').on('click', function() {
        $('.profile-dialog-bg').hide();

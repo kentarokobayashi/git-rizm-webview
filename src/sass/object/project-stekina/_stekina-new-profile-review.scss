@@ -208,6 +208,34 @@ $review-font-sizemini: 7.8px;
                 letter-spacing: 0.78px;
             }
         }
+        .profile-section-block-shokai-head-sub {
+            position: absolute;
+            right: 10px;
+            top: 12px;
+            .profile-section-block-shokai-head-sub-date {
+                font-size: 10px;
+                color: #b3b3b3;
+                font-family: Lato;
+                text-align: right;
+            }
+            .profile-section-block-shokai-head-sub-button {
+                text-align: right;
+                button {
+                    padding: 6px 15px;
+                    color: #ff595b;
+                    font-size: 10.5px;
+                    border: 1px solid #ff595b;
+                    margin: 4px 0 0;
+                    letter-spacing: 1.5px;
+                }
+            }
+            .profile-section-block-shokai-head-sub-note {
+                color: #ff595b;
+                text-align: right;
+                font-size: 9px;
+                margin: 4px 0 0;
+            }
+        }
     }
     //レビューの文章
     .profile-section-block-shokai-content {
@@ -224,6 +252,13 @@ $review-font-sizemini: 7.8px;
             color: $cl-lime;
             text-decoration: none;
         }
+    }
+}
+
+.profile-section-block-stekina-shokai {
+    .profile-section-block-shokai-tag {
+        padding: 0px 0px 0px !important;
+        margin: 0px 0px 20px !important;
     }
 }
 
@@ -507,9 +542,28 @@ $review-font-sizemini: 7.8px;
 
 //レビューのステキ
 .profile-section-block-review-suteki {
-    padding: 0px 18px 18px;
+    padding: 10px 18px 18px;
     display: flex;
     align-items: center;
+    position: relative;
+    .profile-section-block-buttonarea {
+        position: absolute;
+        right: 10px;
+        top: 9px;
+        margin: auto;
+        .profile-section-block-buttonarea-button button {
+            padding: 7px 10px;
+            color: $cl-red;
+            font-size: 10.5px;
+            border: 1px solid $cl-red;
+        }
+        .profile-section-block-buttonarea-text {
+            color: $cl-red;
+            text-align: right;
+            font-size: 10px;
+            margin: 6px 0 0;
+        }
+    }
     .love-button-wrapper {
         transform-origin: left center;
         transform: scale(0.8);
