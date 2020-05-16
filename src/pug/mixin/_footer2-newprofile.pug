@@ -29,7 +29,7 @@
         .profile-dialog-wrapper-reply-input.adjust-margin-bottom-20
               textarea(placeholder='例）素敵なご感想ありがとうございます！またご来店お待ちしております^^')#review_reply_textarea
       .profile-dialog-button-agree-default.profile-dialog-button-agree-default-rizm.adjust-margin-bottom-5
-            button.close-dialog|レビューに返信する
+            button.open-review|レビューに返信する
 
 .profile-dialog#dialog-share-sns
    .profile-dialog-wrapper
@@ -72,25 +72,45 @@
         div(style='width: 80%; margin: 10px auto 10px; max-width: 350px;')
           img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/button-ok-on-line-connect-dialog-1.png')
 
-.profile-dialog
+.profile-dialog#dialog-need-login-for-follow-gralime
     .profile-dialog-wrapper
       a(href='#').profile-dialog-close
-      .profile-dialog-title-default-normal.adjust-margin-top-30.adjust-margin-bottom-30.profile-dialog-title-default-center
+      .profile-dialog-title-default-normal.adjust-margin-top-30.adjust-margin-bottom-15.profile-dialog-title-default-center.adjust-font-bold
             |「フォロー」の機能を使うには
             br
             |ログインが必要です
-      .profile-dialog-title-default-normal-note.adjust-margin-top-30.adjust-margin-bottom-30.profile-dialog-title-default-center
+      .profile-dialog-title-default-normal-note.adjust-margin-bottom-30.profile-dialog-title-default-center
+            |来店したことのない方の「フォロー」は
+            br
+            |相手には通知されません。
+      .profile-dialog-button-agree-default.profile-dialog-button-agree-default-lime.adjust-margin-bottom-25
+            a.close-dialog(href='#')
+              |ログインする
+      .profile-dialog-button-agree-default.profile-dialog-button-agree-default-lime.adjust-margin-bottom-30
+            a.close-dialog(href='#')
+              |新規会員登録
+      .profile-dialog-button-no-default-text.adjust-margin-bottom-25
+           a.close-dialog(href='#')|戻る
+
+.profile-dialog#dialog-need-login-for-follow
+    .profile-dialog-wrapper
+      a(href='#').profile-dialog-close.close-dialog-follow
+      .profile-dialog-title-default-normal.adjust-margin-top-30.adjust-margin-bottom-15.profile-dialog-title-default-center.adjust-font-bold
+            |「フォロー」の機能を使うには
+            br
+            |ログインが必要です
+      .profile-dialog-title-default-normal-note.adjust-margin-bottom-30.profile-dialog-title-default-center
             |来店したことのない方の「フォロー」は
             br
             |相手には通知されません。
       .profile-dialog-button-agree-default.profile-dialog-button-agree-default-limegreen.adjust-margin-bottom-25
-            a(href='#')
+            a.close-dialog-follow(href='#')
               |ログインする
-      .profile-dialog-button-agree-default.profile-dialog-button-agree-default-limegreen.adjust-margin-bottom-25
-            a(href='#')
+      .profile-dialog-button-agree-default.profile-dialog-button-agree-default-limegreen.adjust-margin-bottom-30
+            a.close-dialog-follow(href='#')
               |新規会員登録
       .profile-dialog-button-no-default-text.adjust-margin-bottom-25
-           a(href='#')|戻る
+           a.close-dialog(href='#')|戻る
 .profile-dialog
     .profile-dialog-wrapper
       a(href='#').profile-dialog-close
@@ -102,7 +122,7 @@
             a(href='#')
               |フォロー解除
       .profile-dialog-button-no-default-text.adjust-margin-bottom-25
-           a(href='#')|戻る
+           a.close-dialog(href='#')|戻る
 .profile-dialog
     .profile-dialog-wrapper
       a(href='#').profile-dialog-close
@@ -156,7 +176,7 @@
             a.jquery-youtube-02(href='#')|掲載する(審査制です)
 .profile-dialog#dialog-review-count-zero
     .profile-dialog-wrapper
-      .profile-dialog-title-default.adjust-margin-bottom-10
+      .profile-dialog-title-default.adjust-margin-bottom-10.adjust-font-bold
         |美容師さんに予約をすると
         br
         |投稿が可能になります！
@@ -168,7 +188,7 @@
             button.close-dialog|閉じる
 .profile-dialog#dialog-shokai-not-install
    .profile-dialog-wrapper
-        .profile-dialog-title-default.adjust-margin-bottom-10
+        .profile-dialog-title-default.adjust-margin-bottom-10.adjust-font-bold
           |美容師のカルテ管理アプリ
           br
           |LiMEから投稿可能！
@@ -217,6 +237,13 @@ script.
        $('.dialog-review-count-zero').show();
       }
       );
+script.
+      $('.open-review').on('click', function() {
+       $('.profile-dialog-bg').hide();
+       $('.profile-dialog').hide();
+       $('.profile-section-block-review-comment-byclient').show();
+      }
+      );
 
 script.
       $('.jquery-open-dialog-youtube').on('click', function() {
@@ -251,6 +278,32 @@ script.
       }
       );
 script.
+      $('#jquery-open-dialog-need-login-for-follow').on('click', function() {
+       $('.profile-dialog-bg').show();
+       $('#dialog-need-login-for-follow').show();
+      }
+      );
+script.
+      $('#jquery-open-dialog-need-login-for-follow-gralime').on('click', function() {
+       $('.profile-dialog-bg').show();
+       $('#dialog-need-login-for-follow-gralime').show();
+      }
+      );
+script.
+      $('.close-dialog-follow').on('click', function() {
+       $('.profile-dialog-bg').hide();
+       $('.profile-dialog').hide();
+       $('.fixed-bottom-button-sub').html('<div class="fixed-bottom-button-sub-active"><a id="" href="#">フォロー中</a></div>');
+       $('button.profile-header-content-right').html('フォロー中');
+       $('button.profile-header-content-right').addClass("profile-header-content-right-active");
+       $('.profile-detail-button-sub').html('<a href="#">フォロー中</a></div>');
+       $('.profile-detail-button-sub').addClass("profile-detail-button-sub-active");
+       $('.profile-follow-area-button').html('フォロー中');
+       $('.profile-follow-area-button').addClass("profile-follow-area-button-active");
+      }
+ );
+  
+script.
       $('.close-dialog').on('click', function() {
        $('.profile-dialog-bg').hide();
        $('.profile-dialog').hide();
@@ -262,3 +315,4 @@ script.
        $('.profile-dialog').hide();
       }
       );
+

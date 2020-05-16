@@ -6396,6 +6396,9 @@ a {
     box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, .2); }
 
 /* 細かい調整　*/
+.adjust-font-bold {
+  font-weight: bold; }
+
 .adjust-margin-bottom-5 {
   margin-bottom: 5px; }
 
@@ -6572,7 +6575,7 @@ a {
 
 .profile-section-block-sns-defalut-img {
   background: #ffffff;
-  box-shadow: 9px 10px 16px 0 rgba(0, 0, 0, .2);
+  box-shadow: 4px 3px 13px 0 rgba(0, 0, 0, .15);
   border-radius: 6px;
   overflow: hidden; }
 
@@ -6585,8 +6588,8 @@ a {
     overflow-y: hidden;
     width: 100%;
     white-space: nowrap;
-    height: 230px;
-    padding: 0 100px 0 30px; }
+    height: 240px;
+    padding: 5px 100px 0 30px; }
     .profile-section-block-instagram ul li {
       display: inline-block;
       width: 226px;
@@ -6604,7 +6607,7 @@ a {
   padding-top: 56.25%;
   border-radius: 6px;
   overflow: hidden;
-  box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, .13);
+  box-shadow: 3px 5px 8px 0 rgba(0, 0, 0, .22);
   z-index: 1; }
 
 .profile-section-block-youtube iframe {
@@ -6858,7 +6861,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 10px 0 60px; }
+    margin: 10px 0 80px; }
     .profile-section-block-stekina-shokai .profile-section-block-stekina-shokai-tag li a {
       border-radius: 5.5px;
       font-size: 9.7px;
@@ -6888,6 +6891,12 @@ a {
       letter-spacing: 0; }
       .profile-section-block-stekina-shokai .profile-section-block-stekina-shokai-footer .profile-section-block-stekina-shokai-footer-number b {
         font-weight: bold; }
+
+.new-profile-top .profile-section-block-stekina-shokai-footer {
+  position: absolute;
+  bottom: 10px;
+  left: 16px;
+  z-index: 1; }
 
 /* 紹介文0の時の表示 */
 .profile-section-block-stekina-shokai-count-0 {
@@ -6986,7 +6995,8 @@ a {
     color: #4d4d4d; }
     .profile-section-block-stekina-shokai-count-0-stylist .profile-section-block-stekina-shokai-count-0-stylist-discount-last1 .profile-section-block-stekina-shokai-count-0-stylist-discount-last1-flex1-text {
       font-weight: bold;
-      font-size: 12.5px; }
+      font-size: 12.5px;
+      margin: 0 0 2px; }
     .profile-section-block-stekina-shokai-count-0-stylist .profile-section-block-stekina-shokai-count-0-stylist-discount-last1 .profile-section-block-stekina-shokai-count-0-stylist-discount-last1-flex2 {
       background-image: -webkit-linear-gradient(120deg, #4f9ad6 0%, #14ceb8 100%);
       background-image: linear-gradient(-30deg, #4f9ad6 0%, #14ceb8 100%);
@@ -7382,6 +7392,13 @@ a {
     margin: 0 auto;
     font-size: 14px;
     border: none; }
+  .profile-follow-area .profile-follow-area-button-active {
+    border: 2px solid #ff595b !important;
+    background: white;
+    color: #ff595b;
+    /*
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;*/ }
 
 .jquery-normal-menu {
   display: none; }
@@ -7585,16 +7602,16 @@ a {
       .profile-section-block-shokai .profile-section-block-shokai-head .profile-section-block-shokai-head-sub .profile-section-block-shokai-head-sub-button {
         text-align: right; }
         .profile-section-block-shokai .profile-section-block-shokai-head .profile-section-block-shokai-head-sub .profile-section-block-shokai-head-sub-button button {
-          padding: 6px 15px;
+          padding: 3px 5px 3px 7px;
           color: #ff595b;
-          font-size: 10.5px;
+          font-size: 10px;
           border: 1px solid #ff595b;
           margin: 4px 0 0;
           letter-spacing: 1.5px; }
       .profile-section-block-shokai .profile-section-block-shokai-head .profile-section-block-shokai-head-sub .profile-section-block-shokai-head-sub-note {
         color: #ff595b;
         text-align: right;
-        font-size: 9px;
+        font-size: 7.5px;
         margin: 4px 0 0; }
   .profile-section-block-shokai .profile-section-block-shokai-content {
     padding: 6px 12px 20px;
@@ -7638,14 +7655,14 @@ a {
   box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, .15);
   position: relative;
   border-radius: 8px;
-  margin: 30px -3px 0;
+  margin: 21px -3px 0;
   background: white; }
   .profile-section-block-review-comment-byclient::before {
     content: "";
     position: absolute;
     background-color: transparent;
-    width: 19px;
-    height: 26px;
+    width: 10px;
+    height: 30px;
     border-right: 9px solid transparent;
     border-bottom: 18.6025px solid #fff;
     border-left: 9px solid transparent;
@@ -7715,7 +7732,7 @@ a {
   .profile-paging .profile-paging-prev-archive,
   .profile-paging .profile-paging-next-archive {
     padding: 0 2px;
-    width: 40%; }
+    width: 33%; }
   .profile-paging .profile-paging-prev-detail,
   .profile-paging .profile-paging-next-detail {
     padding: 0 2px;
@@ -7889,17 +7906,17 @@ a {
   .profile-section-block-review-suteki .profile-section-block-buttonarea {
     position: absolute;
     right: 10px;
-    top: 9px;
+    top: 14px;
     margin: auto; }
     .profile-section-block-review-suteki .profile-section-block-buttonarea .profile-section-block-buttonarea-button button {
-      padding: 7px 10px;
+      padding: 6px 5px;
       color: #ff595b;
-      font-size: 10.5px;
+      font-size: 9px;
       border: 1px solid #ff595b; }
     .profile-section-block-review-suteki .profile-section-block-buttonarea .profile-section-block-buttonarea-text {
       color: #ff595b;
       text-align: right;
-      font-size: 10px;
+      font-size: 9px;
       margin: 6px 0 0; }
   .profile-section-block-review-suteki .love-button-wrapper {
     -webkit-transform-origin: left center;
@@ -8577,12 +8594,16 @@ svg.h {
       padding: 0px 9px;
       font-size: 10.2px;
       color: #8e7f6b;
-      background: #FFFFFF;
+      background: #ffffff;
       box-shadow: 0 6px 18px 0 rgba(0, 0, 0, .21);
       border-radius: 100px;
       line-height: 1;
       height: 19px;
       border: none; }
+
+.profile-header-content-right-active {
+  background: #8e7f6b !important;
+  color: white !important; }
 
 /* 追従ボタン */
 .fixed-bottom-wrapper {
@@ -8609,7 +8630,7 @@ svg.h {
     .fixed-bottom .fixed-bottom-button-sub a {
       /* width: 127px;*/
       height: 46px;
-      background: #FFFFFF;
+      background: #ffffff;
       border: 1.3px solid #15bfab;
       border-radius: 6px;
       box-sizing: border-box;
@@ -8626,6 +8647,9 @@ svg.h {
       text-decoration: none;
       font-size: 15px;
       font-weight: bold; }
+  .fixed-bottom .fixed-bottom-button-sub-active a {
+    background: #15bfab;
+    color: white; }
   .fixed-bottom .fixed-bottom-button-main {
     width: 56%; }
     .fixed-bottom .fixed-bottom-button-main a {
@@ -8651,11 +8675,6 @@ svg.h {
 
 /* カバーの部分 */
 .profile-top {
-  height: 340px;
-  position: relative;
-  margin: 0 0 12px; }
-
-.new-profile-top .profile-top {
   height: 410px !important;
   position: relative;
   margin: 0 0 12px; }
@@ -8698,7 +8717,7 @@ svg.h {
         z-index: 1;
         width: 28px; }
       .profile-cover .profile-cover-wrapper .profile-cover-photo .profile-cover-photo-img img {
-        border: 1px solid #FFFFFF;
+        border: 1px solid #ffffff;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
         width: 93px;
         height: 93px;
@@ -8711,7 +8730,7 @@ svg.h {
     .profile-cover .profile-cover-wrapper .profile-cover-name {
       color: white;
       font-size: 21px;
-      color: #FFFFFF;
+      color: #ffffff;
       letter-spacing: 1.43px;
       font-weight: bold;
       margin: auto;
@@ -8744,14 +8763,14 @@ svg.h {
           margin: 4px 2px 0 0; }
         .profile-cover .profile-cover-wrapper .profile-cover-count .profile-cover-count-list .profile-cover-count-list-number {
           font-size: 13px;
-          color: #FFFFFF;
+          color: #ffffff;
           letter-spacing: 0.83px;
           font-weight: bold;
           font-family: Lato; }
 
 /* animations */
 .profile-detail {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 7px;
   padding: 0px 13px 0px;
   margin: 0 13px; }
@@ -8774,7 +8793,7 @@ svg.h {
       margin: 0px 9px 0 0; }
       .profile-detail .profile-detail-date .profile-detail-date-list .profile-detail-date-list-text {
         font-size: 9.4px;
-        color: #B3B3B3;
+        color: #b3b3b3;
         letter-spacing: 0; }
         .profile-detail .profile-detail-date .profile-detail-date-list .profile-detail-date-list-text b {
           font-weight: bold; }
@@ -8789,7 +8808,7 @@ svg.h {
         overflow: hidden; }
   .profile-detail .profile-detail-note {
     font-size: 7.6px;
-    color: #4D4D4D;
+    color: #4d4d4d;
     letter-spacing: 0.51px;
     line-height: 12.59px;
     margin: 8px 0 10px;
@@ -8811,7 +8830,7 @@ svg.h {
       .profile-detail .profile-detail-button .profile-detail-button-sub a {
         /* width: 127px;*/
         height: 46px;
-        background: #FFFFFF;
+        background: #ffffff;
         border: 1.5px solid #15bfab;
         border-radius: 4px;
         box-sizing: border-box;
@@ -8827,6 +8846,9 @@ svg.h {
         color: #15bfab;
         text-decoration: none;
         font-size: 15px; }
+    .profile-detail .profile-detail-button .profile-detail-button-sub-active a {
+      background: #15bfab !important;
+      color: white !important; }
     .profile-detail .profile-detail-button .profile-detail-button-main {
       width: 56%; }
       .profile-detail .profile-detail-button .profile-detail-button-main a {
@@ -8980,11 +9002,13 @@ svg.h {
   .profile-dialog-wrapper .profile-dialog-button-agree-default-rizm a,
   .profile-dialog-wrapper .profile-dialog-button-agree-default-rizm button {
     background: -webkit-linear-gradient(110deg, #e6417a 20%, #ff595b 100%);
-    background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%); }
+    background: linear-gradient(-20deg, #e6417a 20%, #ff595b 100%);
+    font-weight: bold; }
   .profile-dialog-wrapper .profile-dialog-button-agree-default-lime a,
   .profile-dialog-wrapper .profile-dialog-button-agree-default-lime button {
     background-image: -webkit-linear-gradient(120deg, #4f9ad6 0%, #14ceb8 100%);
-    background-image: linear-gradient(-30deg, #4f9ad6 0%, #14ceb8 100%); }
+    background-image: linear-gradient(-30deg, #4f9ad6 0%, #14ceb8 100%);
+    font-weight: bold; }
   .profile-dialog-wrapper .profile-dialog-button-agree-default-limegreen a,
   .profile-dialog-wrapper .profile-dialog-button-agree-default-limegreen button {
     background: #15bfab;

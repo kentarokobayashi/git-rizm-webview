@@ -115,9 +115,9 @@ mixin profile-top
             .profile-detail-button
                 .profile-detail-button-sub
                   if name=='onlyreserve'
-                     a(href='#')|フォローする
+                      a#jquery-open-dialog-need-login-for-follow(href='#')|フォローする
                   else if name=='onlymessage'
-                    a(href='#')|フォローする
+                      a#jquery-open-dialog-need-login-for-follow(href='#')|フォローする
                   else
                     a(href='#')|メッセージする
                 .profile-detail-button-main
@@ -330,7 +330,9 @@ mixin profile-sns
               img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/icn-youtube-mono.svg')
              h2|YouTube
           .profile-section-block-youtube
-            iframe(width='100%', height='315', src='https://www.youtube.com/embed/Phgf39tDLNY', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
+            iframe(src='https://www.youtube.com/embed/0g9M4LI7Mbg', width='100%', height='315', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
+          div
+           
         .profile-section-block
           .profile-section-block-title
              .profile-section-block-title-img
@@ -607,7 +609,7 @@ mixin profile-access-atmosphere-openingtime
           .profile-section-block-address
             |〒1500001 東京都渋谷区神宮前 5-46-16 IL CENTRO CERENO
           .profile-section-block-googlemap
-            iframe(src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12966.111708073191!2d139.7076632!3d35.6640008!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x36ee22b5e0b84faf!2sIJK%20OMOTESANDO!5e0!3m2!1sja!2sjp!4v1588730848117!5m2!1sja!2sjp', width='100%', height='245', frameborder='0', style='border:0;', allowfullscreen='', aria-hidden='false', tabindex='0')
+            iframe(src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12966.111708073191!2d139.7076632!3d35.6640008!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x36ee22b5e0b84faf!2sIJK%20OMOTESANDO!5e0!3m2!1sja!2sjp!4v1588730848117!5m2!1sja!2sjp', aria-hidden='false', width='100%', height='245', frameborder='0', style='border:0;', allowfullscreen='', tabindex='0')
           .profile-common-readmore
             a(href='#')|地図アプリで経路を調べる
         .profile-section-block

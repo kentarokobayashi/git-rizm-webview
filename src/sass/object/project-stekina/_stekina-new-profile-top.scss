@@ -104,7 +104,7 @@
 
 .profile-section-block-sns-defalut-img {
     background: #ffffff;
-    box-shadow: 9px 10px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 3px 13px 0 rgba(0, 0, 0, 0.15);
     border-radius: 6px;
     overflow: hidden;
 }
@@ -120,8 +120,8 @@
         overflow-y: hidden;
         width: 100%;
         white-space: nowrap;
-        height: 230px;
-        padding: 0 100px 0 30px;
+        height: 240px;
+        padding: 5px 100px 0 30px;
         li {
             display: inline-block;
             width: 226px;
@@ -146,7 +146,7 @@
     padding-top: 56.25%;
     border-radius: 6px;
     overflow: hidden;
-    box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.13);
+    box-shadow: 3px 5px 8px 0 rgba(0, 0, 0, 0.22);
     z-index: index($z, child); // 1
 }
 
@@ -408,7 +408,7 @@
     }
     .profile-section-block-stekina-shokai-tag {
         display: flex;
-        margin: 10px 0 60px;
+        margin: 10px 0 80px;
         li {
             a {
                 border-radius: 5.5px;
@@ -439,6 +439,15 @@
                 font-weight: bold;
             }
         }
+    }
+}
+
+.new-profile-top {
+    .profile-section-block-stekina-shokai-footer {
+        position: absolute;
+        bottom: 10px;
+        left: 16px;
+        z-index: index($z, child); // 1
     }
 }
 
@@ -533,6 +542,7 @@
         .profile-section-block-stekina-shokai-count-0-stylist-discount-last1-flex1-text {
             font-weight: bold;
             font-size: 12.5px;
+            margin: 0 0 2px;
         }
         .profile-section-block-stekina-shokai-count-0-stylist-discount-last1-flex2 {
             @include text-gradient-lime();
@@ -934,6 +944,14 @@
         margin: 0 auto;
         font-size: 14px;
         border: none;
+    }
+    .profile-follow-area-button-active {
+        border: 2px solid $cl-red !important;
+        background: white;
+        color: $cl-red;
+        /*
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;*/
     }
 }
 

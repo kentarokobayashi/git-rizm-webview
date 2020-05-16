@@ -6,15 +6,15 @@ else
       .fixed-bottom-wrapper
           .fixed-bottom-button-sub
                     if name=='onlyreserve'
-                      a(href='#')|フォローする
+                      a#jquery-open-dialog-need-login-for-follow-gralime(href='#')|フォローする
                     else if name=='onlymessage'
-                      a(href='#')|フォローする
+                      a#jquery-open-dialog-need-login-for-follow-gralime(href='#')|フォローする
                     else
-                      a(href='#')|メッセージする
+                      a(href='https://test.stekina.com/user/reserves/15257?register_from=3&stype=&from_action=')|メッセージする
           .fixed-bottom-button-main
                     if name=='onlyreserve'
                       a(href='https://stekina.com/reserve/H8C8-QF8J/menu')|空席を確認してみる
                     else if name=='onlymessage'
-                        a(href='#')|メッセージする
+                        a(href='https://test.stekina.com/user/reserves/15257?register_from=3&stype=&from_action=')|メッセージする
                     else
-                    a(href='https://stekina.com/reserve/H8C8-QF8J/menu')|空席を確認してみる 
+                      a(href='https://stekina.com/reserve/H8C8-QF8J/menu')|空席を確認してみる 

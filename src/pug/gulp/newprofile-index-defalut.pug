@@ -1,4 +1,5 @@
 - var dateNow = Date.now();
+- var name = 'onlyreserve'
 include ../mixin/_mixin.pug
 doctype html
 html(lang='jp')
@@ -29,7 +30,7 @@ html(lang='jp')
             h2|ステータス・特徴 
           ul.profile-section-block-usertag
               li
-                  |縮毛強制
+                |縮毛強制
               li
                 |ショート
               li
@@ -107,7 +108,10 @@ html(lang='jp')
              .profile-section-block-title-img
               img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/icn-youtube-mono.svg')
              h2|YouTube
-          .profile-section-block-sns-defalut-btn-note|※自分にしか表示されません
+          .profile-section-block-sns-defalut-btn-note
+            |※現在審査中です
+            br
+            |※このボタンは自分のみ表示
           .profile-section-block-sns-defalut-btn
             a.jquery-open-dialog-youtube(href='#')
               img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/btn-youtube-4x.png')
@@ -119,13 +123,13 @@ html(lang='jp')
              .profile-section-block-title-img
               img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/icn-insta-mono.svg')
              h2|Instagram
-          .profile-section-block-sns-defalut-btn-note|※自分にしか表示されません
+          .profile-section-block-sns-defalut-btn-note|※このボタンは自分のみ表示
           .profile-section-block-sns-defalut-btn
             a(href='#')
-              img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/btn-insta-4x.png')
+              img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/btn-instagram-on-newprofile.png')
           .profile-section-block-sns-defalut-img-text|表示イメージ
           .profile-section-block-sns-defalut-img
-            img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/img-keisai-insta-noshadow.jpg')
+            img(src='https://limehair.jp/wp-https-lime/wp-content/uploads/2020/05/image-keisai-insta-noshadow-keiryoka.jpg')
 
       //お客様からのレビュー&美容師からのステキナ紹介文
       .profile-section

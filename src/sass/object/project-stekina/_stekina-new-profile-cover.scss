@@ -83,7 +83,7 @@
             padding: 0px 9px;
             font-size: 10.2px;
             color: $cl-stekina-brown;
-            background: #FFFFFF;
+            background: #ffffff;
             box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.21);
             border-radius: 100px;
             line-height: 1;
@@ -91,6 +91,11 @@
             border: none;
         }
     }
+}
+
+.profile-header-content-right-active {
+    background: #8e7f6b !important;
+    color: white !important;
 }
 
 
@@ -118,7 +123,7 @@
         a {
             /* width: 127px;*/
             height: 46px;
-            background: #FFFFFF;
+            background: #ffffff;
             border: 1.3px solid $cl-lime;
             border-radius: 6px;
             box-sizing: border-box;
@@ -129,6 +134,12 @@
             text-decoration: none;
             font-size: 15px;
             font-weight: bold;
+        }
+    }
+    .fixed-bottom-button-sub-active {
+        a {
+            background: $cl-lime;
+            color: white;
         }
     }
     .fixed-bottom-button-main {
@@ -154,17 +165,9 @@
 /* カバーの部分 */
 
 .profile-top {
-    height: 340px;
+    height: 410px !important;
     position: relative;
     margin: 0 0 12px;
-}
-
-.new-profile-top {
-    .profile-top {
-        height: 410px !important;
-        position: relative;
-        margin: 0 0 12px;
-    }
 }
 
 .profile-detail {
@@ -210,8 +213,8 @@
                 width: 28px;
             }
             .profile-cover-photo-img img {
-                border: 1px solid #FFFFFF;
-                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+                border: 1px solid #ffffff;
+                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
                 @include circle(93px);
             }
             .profile-cover-bg {
@@ -222,7 +225,7 @@
         .profile-cover-name {
             color: white;
             font-size: 21px;
-            color: #FFFFFF;
+            color: #ffffff;
             letter-spacing: 1.43px;
             font-weight: bold;
             margin: auto;
@@ -248,7 +251,7 @@
                 }
                 .profile-cover-count-list-number {
                     font-size: 13px;
-                    color: #FFFFFF;
+                    color: #ffffff;
                     letter-spacing: 0.83px;
                     font-weight: bold;
                     font-family: Lato;
@@ -262,7 +265,7 @@
 /* animations */
 
 .profile-detail {
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 7px;
     padding: 0px 13px 0px;
     margin: 0 13px;
@@ -277,10 +280,10 @@
             margin: 0px 9px 0 0;
             .profile-detail-date-list-text {
                 font-size: 9.4px;
-                color: #B3B3B3;
+                color: #b3b3b3;
                 letter-spacing: 0;
                 b {
-                    font-weight: bold
+                    font-weight: bold;
                 }
             }
             .profile-detail-date-list-img {
@@ -298,7 +301,7 @@
     }
     .profile-detail-note {
         font-size: 7.6px;
-        color: #4D4D4D;
+        color: #4d4d4d;
         letter-spacing: 0.51px;
         line-height: 12.59px;
         margin: 8px 0 10px;
@@ -317,7 +320,7 @@
             a {
                 /* width: 127px;*/
                 height: 46px;
-                background: #FFFFFF;
+                background: #ffffff;
                 border: 1.5px solid $cl-lime;
                 border-radius: 4px;
                 box-sizing: border-box;
@@ -327,6 +330,12 @@
                 color: $cl-lime;
                 text-decoration: none;
                 font-size: 15px;
+            }
+        }
+        .profile-detail-button-sub-active {
+            a {
+                background: $cl-lime !important;
+                color: white !important;
             }
         }
         .profile-detail-button-main {
